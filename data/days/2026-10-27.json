@@ -1,7 +1,7 @@
 {
  "date": "2026-10-27",
- "generatedAt": "2026-10-27T23:15:48Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-10-27T23:31:30Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020188,
@@ -34,6 +34,37 @@
      "name": "Dan Vladar",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109018",
+    "slug": "nhl-cbj-phi-2026-10-27",
+    "date": "2026-10-27",
+    "away": "CBJ",
+    "home": "PHI",
+    "live": true,
+    "link": "https://jup.ag/prediction/POLY-1109018",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156463-0",
+      "title": "Blue Jackets",
+      "status": "open",
+      "ask": 0.69,
+      "bid": 0.68,
+      "volume": 12146
+     },
+     "home": {
+      "marketId": "POLY-5156463-1",
+      "title": "Flyers",
+      "status": "open",
+      "ask": 0.32,
+      "bid": 0.31,
+      "volume": 12146
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -44,11 +75,11 @@
    "awayName": "Boston Bruins",
    "homeName": "Carolina Hurricanes",
    "venue": "Lenovo Center",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892586",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "CAR -192",
     "mlAway": 160.0,
     "mlHome": -192.0,
@@ -67,6 +98,37 @@
      "name": "Pyotr Kochetkov",
      "status": "Expected"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109023",
+    "slug": "nhl-bos-car-2026-10-27",
+    "date": "2026-10-27",
+    "away": "BOS",
+    "home": "CAR",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109023",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156488-0",
+      "title": "Bruins",
+      "status": "open",
+      "ask": 0.37,
+      "bid": 0.36,
+      "volume": 63866
+     },
+     "home": {
+      "marketId": "POLY-5156488-1",
+      "title": "Hurricanes",
+      "status": "open",
+      "ask": 0.64,
+      "bid": 0.63,
+      "volume": 63866
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -77,11 +139,11 @@
    "awayName": "Florida Panthers",
    "homeName": "Winnipeg Jets",
    "venue": "Canada Life Centre",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892591",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "FLA -130",
     "mlAway": -130.0,
     "mlHome": 110.0,
@@ -100,6 +162,37 @@
      "name": "Clay Stevenson",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109019",
+    "slug": "nhl-fla-wpg-2026-10-27",
+    "date": "2026-10-27",
+    "away": "FLA",
+    "home": "WPG",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109019",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156468-0",
+      "title": "Panthers",
+      "status": "open",
+      "ask": 0.55,
+      "bid": 0.54,
+      "volume": 77410
+     },
+     "home": {
+      "marketId": "POLY-5156468-1",
+      "title": "Jets",
+      "status": "open",
+      "ask": 0.46,
+      "bid": 0.45,
+      "volume": 77410
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -110,11 +203,11 @@
    "awayName": "Los Angeles Kings",
    "homeName": "Chicago Blackhawks",
    "venue": "United Center",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892587",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "CHI -112",
     "mlAway": -108.0,
     "mlHome": -112.0,
@@ -133,6 +226,37 @@
      "name": "Spencer Knight",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109024",
+    "slug": "nhl-lak-chi-2026-10-27",
+    "date": "2026-10-27",
+    "away": "LAK",
+    "home": "CHI",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109024",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156493-0",
+      "title": "Kings",
+      "status": "open",
+      "ask": 0.51,
+      "bid": 0.5,
+      "volume": 46134
+     },
+     "home": {
+      "marketId": "POLY-5156493-1",
+      "title": "Blackhawks",
+      "status": "open",
+      "ask": 0.5,
+      "bid": 0.49,
+      "volume": 46134
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -143,11 +267,11 @@
    "awayName": "Montr\u00e9al Canadiens",
    "homeName": "St. Louis Blues",
    "venue": "Enterprise Center",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892588",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "MTL -115",
     "mlAway": -115.0,
     "mlHome": -105.0,
@@ -166,6 +290,37 @@
      "name": "Jordan Binnington",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109021",
+    "slug": "nhl-mon-stl-2026-10-27",
+    "date": "2026-10-27",
+    "away": "MTL",
+    "home": "STL",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109021",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156478-0",
+      "title": "Canadiens",
+      "status": "open",
+      "ask": 0.52,
+      "bid": 0.51,
+      "volume": 87309
+     },
+     "home": {
+      "marketId": "POLY-5156478-1",
+      "title": "Blues",
+      "status": "open",
+      "ask": 0.49,
+      "bid": 0.48,
+      "volume": 87309
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -176,11 +331,11 @@
    "awayName": "New Jersey Devils",
    "homeName": "Dallas Stars",
    "venue": "American Airlines Center",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892590",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "DAL -118",
     "mlAway": -102.0,
     "mlHome": -118.0,
@@ -199,6 +354,37 @@
      "name": "Casey DeSmith",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109022",
+    "slug": "nhl-nj-dal-2026-10-27",
+    "date": "2026-10-27",
+    "away": "NJD",
+    "home": "DAL",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109022",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156483-0",
+      "title": "Devils",
+      "status": "open",
+      "ask": 0.47,
+      "bid": 0.46,
+      "volume": 63936
+     },
+     "home": {
+      "marketId": "POLY-5156483-1",
+      "title": "Stars",
+      "status": "open",
+      "ask": 0.54,
+      "bid": 0.53,
+      "volume": 63936
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -209,11 +395,11 @@
    "awayName": "New York Islanders",
    "homeName": "Nashville Predators",
    "venue": "Bridgestone Arena",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892589",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "NSH -122",
     "mlAway": 102.0,
     "mlHome": -122.0,
@@ -232,6 +418,37 @@
      "name": "Juuse Saros",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109020",
+    "slug": "nhl-nyi-nsh-2026-10-27",
+    "date": "2026-10-27",
+    "away": "NYI",
+    "home": "NSH",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109020",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156473-0",
+      "title": "Islanders",
+      "status": "open",
+      "ask": 0.49,
+      "bid": 0.48,
+      "volume": 44439
+     },
+     "home": {
+      "marketId": "POLY-5156473-1",
+      "title": "Predators",
+      "status": "open",
+      "ask": 0.52,
+      "bid": 0.51,
+      "volume": 44439
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -246,7 +463,7 @@
    "final": null,
    "espnId": "401892592",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "UTAH -122",
     "mlAway": 102.0,
     "mlHome": -122.0,
@@ -265,6 +482,37 @@
      "name": "Karel Vejmelka",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109025",
+    "slug": "nhl-min-utah-2026-10-27",
+    "date": "2026-10-27",
+    "away": "MIN",
+    "home": "UTA",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109025",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156498-0",
+      "title": "Wild",
+      "status": "open",
+      "ask": 0.49,
+      "bid": 0.48,
+      "volume": 39840
+     },
+     "home": {
+      "marketId": "POLY-5156498-1",
+      "title": "Utah",
+      "status": "open",
+      "ask": 0.52,
+      "bid": 0.51,
+      "volume": 39840
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -279,7 +527,7 @@
    "final": null,
    "espnId": "401892593",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "VGK -162",
     "mlAway": 136.0,
     "mlHome": -162.0,
@@ -298,6 +546,37 @@
      "name": "Adin Hill",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109026",
+    "slug": "nhl-ott-las-2026-10-27",
+    "date": "2026-10-27",
+    "away": "OTT",
+    "home": "VGK",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109026",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156503-0",
+      "title": "Senators",
+      "status": "open",
+      "ask": 0.41,
+      "bid": 0.4,
+      "volume": 8345
+     },
+     "home": {
+      "marketId": "POLY-5156503-1",
+      "title": "Golden Knights",
+      "status": "open",
+      "ask": 0.6,
+      "bid": 0.59,
+      "volume": 8345
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -312,7 +591,7 @@
    "final": null,
    "espnId": "401892594",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "ANA -218",
     "mlAway": 180.0,
     "mlHome": -218.0,
@@ -331,6 +610,37 @@
      "name": "Lukas Dostal",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109027",
+    "slug": "nhl-van-ana-2026-10-27",
+    "date": "2026-10-27",
+    "away": "VAN",
+    "home": "ANA",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109027",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156508-0",
+      "title": "Canucks",
+      "status": "open",
+      "ask": 0.34,
+      "bid": 0.33,
+      "volume": 8967
+     },
+     "home": {
+      "marketId": "POLY-5156508-1",
+      "title": "Ducks",
+      "status": "open",
+      "ask": 0.67,
+      "bid": 0.66,
+      "volume": 8967
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   },
   {
@@ -345,7 +655,7 @@
    "final": null,
    "espnId": "401892595",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "BUF -148",
     "mlAway": -148.0,
     "mlHome": 124.0,
@@ -364,6 +674,37 @@
      "name": "Yaroslav Askarov",
      "status": "Confirmed"
     }
+   },
+   "jupiter": {
+    "eventId": "POLY-1109028",
+    "slug": "nhl-buf-sj-2026-10-27",
+    "date": "2026-10-27",
+    "away": "BUF",
+    "home": "SJS",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1109028",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5156513-0",
+      "title": "Sabres",
+      "status": "open",
+      "ask": 0.59,
+      "bid": 0.58,
+      "volume": 27774
+     },
+     "home": {
+      "marketId": "POLY-5156513-1",
+      "title": "Sharks",
+      "status": "open",
+      "ask": 0.42,
+      "bid": 0.41,
+      "volume": 27774
+     }
+    },
+    "fetchedAt": "2026-10-27T23:31:30Z",
+    "host": "https://api.jup.ag/prediction/v1"
    }
   }
  ]
