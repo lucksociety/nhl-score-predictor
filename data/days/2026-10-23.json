@@ -1,0 +1,79 @@
+{
+ "date": "2026-10-23",
+ "generatedAt": "2026-10-27T23:01:20Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "games": [
+  {
+   "id": 2026020166,
+   "startUTC": "2026-10-24T00:00:00Z",
+   "away": "MTL",
+   "home": "CHI",
+   "awayName": "Montr\u00e9al Canadiens",
+   "homeName": "Chicago Blackhawks",
+   "venue": "United Center",
+   "state": "OFF",
+   "final": [
+    4,
+    1,
+    "REG"
+   ],
+   "espnId": "401892564",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "MTL -170",
+    "mlAway": -170.0,
+    "mlHome": 142.0,
+    "total": 6.5,
+    "over": -105.0,
+    "under": -115.0,
+    "closing": true
+   },
+   "goalies": {
+    "away": {
+     "name": "Jacob Fowler",
+     "status": "Confirmed"
+    },
+    "home": {
+     "name": "Spencer Knight",
+     "status": "Confirmed"
+    }
+   }
+  },
+  {
+   "id": 2026020167,
+   "startUTC": "2026-10-24T01:00:00Z",
+   "away": "TBL",
+   "home": "COL",
+   "awayName": "Tampa Bay Lightning",
+   "homeName": "Colorado Avalanche",
+   "venue": "Ball Arena",
+   "state": "OFF",
+   "final": [
+    3,
+    6,
+    "REG"
+   ],
+   "espnId": "401892565",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "COL -122",
+    "mlAway": 102.0,
+    "mlHome": -122.0,
+    "total": 6.5,
+    "over": -102.0,
+    "under": -118.0,
+    "closing": true
+   },
+   "goalies": {
+    "away": {
+     "name": "Andrei Vasilevskiy",
+     "status": "Confirmed"
+    },
+    "home": {
+     "name": "Mackenzie Blackwood",
+     "status": "Confirmed"
+    }
+   }
+  }
+ ]
+}

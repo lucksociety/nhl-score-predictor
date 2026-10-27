@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NHL Score Predictor · v3</title>
+<meta name="description" content="Exact-score NHL predictions from the v3 Monte Carlo model, run in your browser.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏒</text></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="puck"></span><div><h1>NHL Score Predictor</h1><p class="sub">Exact-score model <b>v3</b> · Monte Carlo in your browser</p></div></div>
+  <div class="controls">
+    <label class="ctl"><span>Date (ET)</span><input type="date" id="date"></label>
+    <label class="ctl"><span>Precision</span>
+      <select id="precision">
+        <option value="std" selected>Standard · 200k sims</option>
+        <option value="full">Full · 800k sims (matches Python)</option>
+      </select>
+    </label>
+    <button id="simulate" class="btn-sim" disabled>▶ Simulate</button>
+  </div>
+</header>
+<div id="status" class="status">Loading data…</div>
+<div id="progress" class="progress hidden"><div class="bar" id="bar"></div></div>
+<main>
+  <section id="summary" class="summary hidden">
+    <div class="sum-head"><h2>Summary</h2><button id="copy" class="btn-ghost">Copy picks</button></div>
+    <div class="table-wrap"><table id="sumtable"></table></div>
+  </section>
+  <section id="slate" class="slate"></section>
+</main>
+<footer class="foot">
+  <p><b>How it works.</b> A GitHub Action refreshes the schedule (NHL API), ESPN/DraftKings moneylines and totals, probable goalies and season results every hour from 10 AM to 11 PM ET. When you press <b>Simulate</b> the page also re-pulls live odds and goalies from ESPN, then runs the v3 protocol for every game: the de-vigged moneyline and total are fitted exactly (market weight 1.0), the game is simulated with score effects, goalie pulls/empty nets and 3-on-3 OT/shootout, and the pick is the non-tied score with the lowest expected |away error| + |home error| (OT/SO winner gets +1). The OT label is shown when P(OT | that score) ≥ 55%. Without odds the model falls back to team ratings (weaker: backtest MAE ≈2.84 vs 2.79).</p>
+  <p id="datainfo" class="muted"></p>
+  <p class="muted">For entertainment and contest use. Not betting advice.</p>
+</footer>
+<script src="js/model.js"></script>
+<script src="js/espn.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

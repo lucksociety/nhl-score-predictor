@@ -1,0 +1,220 @@
+/* NHL Score Predictor dashboard — UI + orchestration. Model lives in js/model.js (v3). */
+(function () {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const TZ = 'America/New_York';
+  const PREC = { std: { n: 200000, nFit: 40000 }, full: { n: 800000, nFit: 120000 } };
+  const state = { base: null, results: [], index: null, games: [], date: null, out: {}, snapshotAt: null, liveAt: null, liveOk: false };
+
+  const etDate = (d = new Date()) => new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+  const etTime = iso => iso ? new Intl.DateTimeFormat('en-US', { timeZone: TZ, hour: 'numeric', minute: '2-digit' }).format(new Date(iso)) + ' ET' : 'TBD';
+  const etStamp = iso => iso ? new Intl.DateTimeFormat('en-US', { timeZone: TZ, month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }).format(new Date(iso)) + ' ET' : '—';
+  const pct = (x, d = 0) => x == null || isNaN(x) ? '—' : (100 * x).toFixed(d) + '%';
+  const odd = x => x == null ? '—' : (x > 0 ? '+' + x : '' + x);
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const logo = ab => `https://assets.nhle.com/logos/nhl/svg/${ab}_dark.svg`;
+  const key = g => g.away + '|' + g.home;
+  const hasML = o => o && o.mlAway != null && o.mlHome != null;
+  const hasTot = o => o && o.total != null;
+
+  async function getJSON(url, bust = true) {
+    const r = await fetch(url + (bust ? (url.includes('?') ? '&' : '?') + 't=' + Date.now() : ''), { cache: 'no-store' });
+    if (!r.ok) throw new Error(url + ' ' + r.status);
+    return r.json();
+  }
+  function setStatus(html) { $('status').innerHTML = html; }
+
+  async function init() {
+    try {
+      const [base, results, index] = await Promise.all([getJSON('data/base_2025_26.json'), getJSON('data/results_2026_27.json'), getJSON('data/index.json').catch(() => null)]);
+      state.base = base.teams; state.results = results; state.index = index;
+    } catch (e) { setStatus('<span class="warn">Could not load model data: ' + esc(e.message) + '</span>'); return; }
+    const today = etDate();
+    $('date').value = today;
+    $('date').addEventListener('change', () => loadDate($('date').value));
+    $('simulate').addEventListener('click', simulate);
+    $('copy').addEventListener('click', copyPicks);
+    const last = state.results.length ? state.results[state.results.length - 1].date : '—';
+    $('datainfo').textContent = `Ratings data: 2025-26 base + ${state.results.length} completed 2026-27 games (through ${last}). Data refreshed ${state.index ? etStamp(state.index.updatedAt) : '—'}. Model v3 (JS port of sim_v3.py, verified against Python).`;
+    await loadDate(today);
+  }
+
+  function mergeGames(snap, live) {
+    const out = []; const lm = new Map((live || []).map(g => [key(g), g]));
+    const seen = new Set();
+    for (const s of (snap ? snap.games : [])) {
+      const l = lm.get(key(s)); seen.add(key(s));
+      const g = Object.assign({}, s, { goalies: Object.assign({ away: null, home: null }, s.goalies || {}) });
+      g.oddsSource = s.odds && (hasML(s.odds) || hasTot(s.odds)) ? `${s.odds.provider || 'ESPN'} via Action snapshot (${etStamp(snap.generatedAt)})${s.odds.closing ? ', closing line' : ''}` : null;
+      if (l) {
+        const started = l.state === 'in' || l.state === 'post';
+        const snapOK = s.odds && hasML(s.odds) && hasTot(s.odds);
+        // once a game has started, keep the pre-game snapshot line (ESPN may switch to live in-game odds)
+        if (l.odds && (hasML(l.odds) || hasTot(l.odds)) && !(started && snapOK)) { g.odds = l.odds; g.oddsSource = `${l.odds.provider || 'ESPN'} via ESPN live (${etStamp(state.liveAt)})${l.odds.closing ? ', closing line' : ''}`; }
+        for (const sd of ['away', 'home']) if (l.goalies[sd] && l.goalies[sd].name) g.goalies[sd] = l.goalies[sd];
+        if (l.final) g.final = l.final;
+        g.detail = l.detail; g.espnState = l.state;
+        if (!g.startUTC) g.startUTC = l.startUTC;
+      }
+      out.push(g);
+    }
+    for (const l of (live || [])) if (!seen.has(key(l))) {
+      const g = Object.assign({}, l);
+      g.oddsSource = l.odds && (hasML(l.odds) || hasTot(l.odds)) ? `${l.odds.provider || 'ESPN'} via ESPN live (${etStamp(state.liveAt)})` : null;
+      out.push(g);
+    }
+    out.sort((a, b) => (a.startUTC || '').localeCompare(b.startUTC || '') || a.away.localeCompare(b.away));
+    return out;
+  }
+
+  async function fetchSlate(date) {
+    let snap = null, live = null;
+    const [s, l] = await Promise.allSettled([getJSON(`data/days/${date}.json`), ESPNLive.scoreboard(date)]);
+    if (s.status === 'fulfilled') { snap = s.value; state.snapshotAt = snap.generatedAt; } else state.snapshotAt = null;
+    if (l.status === 'fulfilled') { live = l.value; state.liveOk = true; state.liveAt = new Date().toISOString(); } else state.liveOk = false;
+    return mergeGames(snap, live);
+  }
+
+  async function loadDate(date) {
+    state.date = date; state.out = {};
+    $('simulate').disabled = true; $('summary').classList.add('hidden');
+    setStatus('Loading slate for ' + esc(date) + '…');
+    state.games = await fetchSlate(date);
+    renderSlate();
+    if (!state.games.length) { setStatus(`No NHL games found for ${esc(date)}.`); return; }
+    const noOdds = state.games.filter(g => !(hasML(g.odds) && hasTot(g.odds))).length;
+    setStatus(`${state.games.length} game${state.games.length > 1 ? 's' : ''} on ${esc(date)} · odds ${state.liveOk ? 'live from ESPN' : '<span class="warn">from Action snapshot (live ESPN fetch failed)</span>'}` +
+      (state.snapshotAt ? ` · snapshot ${etStamp(state.snapshotAt)}` : '') + (noOdds ? ` · <span class="warn">${noOdds} without full odds → ratings fallback</span>` : '') + ' · press <b>Simulate</b>.');
+    $('simulate').disabled = false;
+  }
+
+  function ratingsAsOf(date) {
+    return NHLModel.teamRatings(state.base, state.results.filter(r => r.date < date));
+  }
+
+  // ---------- simulation (worker pool)
+  function makePool(size) {
+    const ws = []; try { for (let i = 0; i < size; i++) ws.push(new Worker('js/worker.js')); } catch (e) { return null; }
+    return ws;
+  }
+  function runAll(jobs, onDone) {
+    const size = Math.max(1, Math.min(jobs.length, (navigator.hardwareConcurrency || 4) - 1, 8));
+    const pool = makePool(size);
+    if (!pool) {   // no workers (e.g. file://): run on the main thread
+      return jobs.reduce((p, j) => p.then(() => new Promise(res => setTimeout(() => { const t0 = performance.now(); const r = NHLModel.runGame(j.game, j.ratings, j.opts); r.ms = performance.now() - t0; onDone(j.id, r); res(); }, 20))), Promise.resolve());
+    }
+    return new Promise(resolve => {
+      let next = 0, done = 0;
+      const feed = w => { if (next >= jobs.length) return; const j = jobs[next++]; w.postMessage(j); };
+      pool.forEach(w => {
+        w.onmessage = ev => { const { id, ok, result, error } = ev.data; onDone(id, ok ? result : { error }); done++; if (done === jobs.length) { pool.forEach(x => x.terminate()); resolve(); } else feed(w); };
+        w.onerror = ev => { console.error(ev); };
+        feed(w);
+      });
+    });
+  }
+
+  async function simulate() {
+    const btn = $('simulate'); btn.disabled = true; const date = state.date;
+    setStatus('Refreshing live odds and goalies…');
+    state.games = await fetchSlate(date); state.out = {}; renderSlate();
+    const ratings = ratingsAsOf(date);
+    const opts = PREC[$('precision').value] || PREC.std;
+    const jobs = state.games.map((g, i) => ({ id: i, ratings, opts: Object.assign({ seed: 11 }, opts), game: { away: g.away, home: g.home, mlAway: g.odds && g.odds.mlAway, mlHome: g.odds && g.odds.mlHome, total: g.odds && g.odds.total, over: g.odds && g.odds.over, under: g.odds && g.odds.under } }));
+    $('progress').classList.remove('hidden'); $('bar').style.width = '2%';
+    document.querySelectorAll('.card').forEach(c => c.classList.add('running'));
+    const t0 = performance.now(); let n = 0;
+    setStatus(`Simulating ${jobs.length} games (${(opts.n / 1000)}k sims each + market fit)…`);
+    await runAll(jobs, (id, r) => {
+      state.out[id] = r; n++; $('bar').style.width = (100 * n / jobs.length) + '%';
+      renderCard(id); renderSummary();
+      setStatus(`Simulated ${n}/${jobs.length}…`);
+    });
+    const secs = ((performance.now() - t0) / 1000).toFixed(1);
+    setStatus(`Done: ${jobs.length} games simulated in ${secs}s with model v3 (${opts.n / 1000}k sims/game, seed 11 — same inputs give the same picks). Odds ${state.liveOk ? 'live from ESPN at ' + etStamp(state.liveAt) : 'from Action snapshot'}.`);
+    setTimeout(() => $('progress').classList.add('hidden'), 800);
+    btn.disabled = false;
+  }
+
+  // ---------- rendering
+  function goalieHTML(g) {
+    if (!g || !g.name) return '<span class="muted">TBD</span>';
+    return `${esc(g.name)}<span class="badge ${esc(g.status || '')}">${esc(g.status || 'Unconfirmed')}</span>`;
+  }
+  function oddsHTML(g) {
+    const o = g.odds;
+    if (!(hasML(o) && hasTot(o))) {
+      const part = o && (hasML(o) || hasTot(o)) ? ` (only ${hasML(o) ? 'moneyline' : 'total'} available — partial market fit)` : '';
+      return `<div class="warnbox">⚠ No odds — ratings fallback${part}. Pick uses team ratings only (weaker).</div>` + (o && (hasML(o) || hasTot(o)) ? `<div class="odds">${hasML(o) ? `ML <b>${g.away} ${odd(o.mlAway)}</b> / <b>${g.home} ${odd(o.mlHome)}</b>` : ''} ${hasTot(o) ? `Total <b>${o.total}</b> (o ${odd(o.over)} / u ${odd(o.under)})` : ''}</div>` : '');
+    }
+    const ph = NHLModel.devig2(o.mlHome, o.mlAway), po = NHLModel.devig2(o.over ?? -110, o.under ?? -110);
+    return `<div class="odds">ML <b>${g.away} ${odd(o.mlAway)}</b> / <b>${g.home} ${odd(o.mlHome)}</b> · Total <b>${o.total}</b> (o ${odd(o.over)} / u ${odd(o.under)})<br>No-vig: ${g.home} ${pct(ph, 1)} · Over ${pct(po, 1)} · <span class="muted">${esc(g.oddsSource || '')}</span></div>`;
+  }
+  function cardShell(g, i) {
+    const status = g.final ? `Final${g.final[2] && g.final[2] !== 'REG' ? '/' + g.final[2] : ''}: ${g.away} ${g.final[0]}–${g.final[1]} ${g.home}` : (g.detail && g.espnState === 'in' ? 'LIVE · ' + esc(g.detail) : '');
+    return `<div class="card" id="card${i}">
+      <div class="matchup">
+        <div class="team"><img src="${logo(g.away)}" alt="" onerror="this.style.visibility='hidden'"><div class="ab">${g.away}</div><div class="nm">${esc(g.awayName || '')}</div></div>
+        <div class="mid"><div class="at">@</div><div>${etTime(g.startUTC)}</div><div>${esc(g.venue || '')}</div><div>${esc(status)}</div></div>
+        <div class="team"><img src="${logo(g.home)}" alt="" onerror="this.style.visibility='hidden'"><div class="ab">${g.home}</div><div class="nm">${esc(g.homeName || '')}</div></div>
+      </div>
+      <div class="goalies"><div>🥅 ${goalieHTML(g.goalies && g.goalies.away)}</div><div>${goalieHTML(g.goalies && g.goalies.home)} 🥅</div></div>
+      ${oddsHTML(g)}
+      <div class="res" id="res${i}"><p class="muted" style="text-align:center;margin:14px 0">Press Simulate to run the v3 protocol.</p></div>
+    </div>`;
+  }
+  function renderSlate() {
+    $('slate').innerHTML = state.games.map(cardShell).join('');
+    renderSummary();
+  }
+  function pickText(g, o) {
+    const p = o.pick; const win = p.x > p.y ? g.away : g.home;
+    return `${g.away} ${p.x} – ${g.home} ${p.y}` + (p.otLabel ? ` OT (${win})` : '');
+  }
+  function renderCard(i) {
+    const g = state.games[i], o = state.out[i], el = $('res' + i);
+    $('card' + i).classList.remove('running');
+    if (!o || o.error) { el.innerHTML = `<div class="warnbox">Simulation error: ${esc(o && o.error)}</div>`; return; }
+    const p = o.pick, win = p.x > p.y ? g.away : g.home;
+    const fallback = o.mode !== 'market';
+    const res = g.final ? (() => { const fa = g.final[0], fh = g.final[1]; const err = Math.abs(fa - p.x) + Math.abs(fh - p.y); const right = (fa > fh) === (p.x > p.y); return `<div class="result">Actual: <b>${g.away} ${fa} – ${g.home} ${fh}</b>${g.final[2] && g.final[2] !== 'REG' ? ' (' + g.final[2] + ')' : ''} · error <b>${err}</b> · winner ${right ? '✓' : '✗'}</div>`; })() : '';
+    el.innerHTML = `
+      <div class="pickbox"><div class="lbl">Final pick${fallback ? ' · ratings fallback' : ''}</div>
+        <div class="score">${g.away} ${p.x} – ${p.y} ${g.home}${p.otLabel ? `<span class="ot">OT · ${win}</span>` : ''}</div>
+        <div class="meta">P(game goes to OT/SO) <b>${pct(o.pOT, 1)}</b> · P(OT | this score) ${pct(p.potGiven)} · exact-score chance ${pct(p.p, 1)} · E|error| ${p.err.toFixed(2)}</div></div>
+      <div class="wp"><div class="wa" style="width:${(100 * o.pAway).toFixed(1)}%">${g.away} ${pct(o.pAway)}</div><div class="wh">${g.home} ${pct(o.pHome)}</div></div>
+      <div class="kv"><div><span>xG ${g.away}</span><b>${o.ea.toFixed(2)}</b></div><div><span>xG ${g.home}</span><b>${o.eh.toFixed(2)}</b></div><div><span>xG total</span><b>${(o.ea + o.eh).toFixed(2)}</b></div></div>
+      <table class="top5"><thead><tr><th>#</th><th>Top exact scores</th><th>Prob</th><th>P(OT|score)</th><th>E|err|</th></tr></thead><tbody>
+      ${o.top.slice(0, 5).map((t, k) => `<tr class="${t.x === p.x && t.y === p.y ? 'is-pick' : ''}"><td>${k + 1}</td><td>${g.away} ${t.x}–${t.y} ${g.home}</td><td>${pct(t.p, 1)}</td><td>${pct(t.potGiven)}</td><td>${t.err.toFixed(2)}</td></tr>`).join('')}
+      </tbody></table>
+      ${res}
+      <details><summary>Model details</summary>
+        Inputs: ${o.mode === 'market' ? 'market (ML + total, weight 1.0)' : o.mode === 'partial-market' ? 'partial market + ratings' : 'team ratings only'} · regulation rates ${o.rates[0].toFixed(2)} / ${o.rates[1].toFixed(2)} goals/60 (ratings-only ${o.model[0].toFixed(2)} / ${o.model[1].toFixed(2)}) ·
+        ${g.away} goals 0–5,6+: ${o.distA.map(v => pct(v)).join(' / ')} · ${g.home}: ${o.distH.map(v => pct(v)).join(' / ')} ·
+        empty-net share ${pct(o.enShare, 1)} · OT decided in 3-on-3 ${pct(o.pOTgoal)} of OT games · ${(o.n / 1000)}k sims in ${(o.ms / 1000).toFixed(1)}s
+      </details>`;
+  }
+  function renderSummary() {
+    const ids = Object.keys(state.out);
+    if (!ids.length) { $('summary').classList.add('hidden'); return; }
+    $('summary').classList.remove('hidden');
+    let tot = 0, nf = 0, wins = 0;
+    const rows = state.games.map((g, i) => {
+      const o = state.out[i];
+      if (!o) return `<tr><td>${etTime(g.startUTC)}</td><td>${g.away} @ ${g.home}</td><td colspan="8" class="muted">simulating…</td></tr>`;
+      if (o.error) return `<tr><td>${etTime(g.startUTC)}</td><td>${g.away} @ ${g.home}</td><td colspan="8" class="muted">error</td></tr>`;
+      const p = o.pick; let r = '', e = '';
+      if (g.final) { const err = Math.abs(g.final[0] - p.x) + Math.abs(g.final[1] - p.y); tot += err; nf++; if ((g.final[0] > g.final[1]) === (p.x > p.y)) wins++; r = `${g.final[0]}–${g.final[1]}${g.final[2] && g.final[2] !== 'REG' ? ' ' + g.final[2] : ''}`; e = err; }
+      const fav = o.pHome >= 0.5 ? `${g.home} ${pct(o.pHome)}` : `${g.away} ${pct(o.pAway)}`;
+      return `<tr><td>${etTime(g.startUTC)}</td><td>${g.away} @ ${g.home}</td><td class="pick">${pickText(g, o)}</td><td>${p.otLabel ? 'OT' : '—'}</td><td>${pct(o.pOT)}</td><td>${fav}</td><td>${o.ea.toFixed(2)}–${o.eh.toFixed(2)}</td><td>${o.mode === 'market' ? 'Market' : '<span style="color:var(--warn)">Ratings fallback</span>'}</td><td>${r}</td><td>${e}</td></tr>`;
+    }).join('');
+    const foot = nf ? `<tr><td colspan="8" class="muted">Graded games: ${nf} · winners right ${wins}/${nf}</td><td><b>Total err</b></td><td><b>${tot}</b></td></tr>` : '';
+    $('sumtable').innerHTML = `<thead><tr><th>Puck drop</th><th>Game</th><th>Pick</th><th>OT?</th><th>P(OT)</th><th>Win prob</th><th>xG</th><th>Inputs</th><th>Result</th><th>Err</th></tr></thead><tbody>${rows}${foot}</tbody>`;
+  }
+  function copyPicks() {
+    const lines = state.games.map((g, i) => { const o = state.out[i]; return o && !o.error ? `${etTime(g.startUTC)}  ${g.away} @ ${g.home}: ${pickText(g, o)}  · P(OT) ${pct(o.pOT)}` : null; }).filter(Boolean);
+    const txt = `NHL v3 picks · ${state.date}\n` + lines.join('\n');
+    (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => { $('copy').textContent = 'Copied ✓'; setTimeout(() => $('copy').textContent = 'Copy picks', 1500); }).catch(() => prompt('Copy picks:', txt));
+  }
+  init();
+})();

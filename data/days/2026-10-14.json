@@ -1,0 +1,79 @@
+{
+ "date": "2026-10-14",
+ "generatedAt": "2026-10-27T23:01:14Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "games": [
+  {
+   "id": 2026020106,
+   "startUTC": "2026-10-14T23:30:00Z",
+   "away": "MTL",
+   "home": "WSH",
+   "awayName": "Montr\u00e9al Canadiens",
+   "homeName": "Washington Capitals",
+   "venue": "Capital One Arena",
+   "state": "OFF",
+   "final": [
+    4,
+    5,
+    "REG"
+   ],
+   "espnId": "401892504",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "WSH -110",
+    "mlAway": -110.0,
+    "mlHome": -110.0,
+    "total": 6.5,
+    "over": -118.0,
+    "under": -102.0,
+    "closing": true
+   },
+   "goalies": {
+    "away": {
+     "name": "Jakub Dobes",
+     "status": "Confirmed"
+    },
+    "home": {
+     "name": "Charlie Lindgren",
+     "status": "Confirmed"
+    }
+   }
+  },
+  {
+   "id": 2026020107,
+   "startUTC": "2026-10-15T00:30:00Z",
+   "away": "DAL",
+   "home": "COL",
+   "awayName": "Dallas Stars",
+   "homeName": "Colorado Avalanche",
+   "venue": "Ball Arena",
+   "state": "OFF",
+   "final": [
+    3,
+    2,
+    "SO"
+   ],
+   "espnId": "401892505",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "COL -162",
+    "mlAway": 136.0,
+    "mlHome": -162.0,
+    "total": 5.5,
+    "over": -135.0,
+    "under": 114.0,
+    "closing": true
+   },
+   "goalies": {
+    "away": {
+     "name": "Casey DeSmith",
+     "status": "Confirmed"
+    },
+    "home": {
+     "name": "Scott Wedgewood",
+     "status": "Confirmed"
+    }
+   }
+  }
+ ]
+}

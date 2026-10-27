@@ -1,0 +1,71 @@
+:root{--bg:#0b0f17;--panel:#121a27;--panel2:#18222f;--line:#243245;--txt:#e7edf6;--mut:#8ea0b8;--acc:#38bdf8;--acc2:#22d3ee;--good:#34d399;--warn:#fbbf24;--bad:#f87171;--ice:#cfe8ff}
+*{box-sizing:border-box}
+html,body{margin:0;background:radial-gradient(1200px 600px at 10% -10%,#132238 0,transparent 60%),var(--bg);color:var(--txt);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif}
+h1,h2,h3{margin:0}
+.top{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid var(--line);background:rgba(11,15,23,.85);position:sticky;top:0;z-index:5;backdrop-filter:blur(8px)}
+.brand{display:flex;gap:12px;align-items:center}
+.puck{width:34px;height:34px;border-radius:50%;background:linear-gradient(180deg,#2a3546,#05070b);box-shadow:0 0 0 2px #0e1622,0 0 18px rgba(56,189,248,.35)}
+h1{font-size:20px;letter-spacing:.3px}
+.sub{margin:2px 0 0;color:var(--mut);font-size:13px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+.ctl{display:flex;flex-direction:column;font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px;gap:4px}
+input,select{background:var(--panel2);color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;color-scheme:dark}
+.btn-sim{background:linear-gradient(135deg,var(--acc),#6366f1);color:#fff;border:0;border-radius:10px;padding:10px 22px;font-weight:700;font-size:16px;cursor:pointer;box-shadow:0 6px 24px rgba(56,189,248,.3)}
+.btn-sim:disabled{opacity:.5;cursor:not-allowed}
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:6px 12px;cursor:pointer}
+.btn-ghost:hover{border-color:var(--acc)}
+.status{padding:10px 22px;color:var(--mut);font-size:14px}
+.status .warn{color:var(--warn)}
+.progress{height:4px;background:var(--panel2);margin:0 22px;border-radius:4px;overflow:hidden}
+.progress .bar{height:100%;width:0;background:linear-gradient(90deg,var(--acc),var(--acc2));transition:width .3s}
+.hidden{display:none!important}
+main{padding:10px 22px 30px;max-width:1300px;margin:0 auto}
+.summary{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0 18px}
+.sum-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+td.pick{font-weight:800;color:var(--ice)}
+.slate{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
+.card{background:linear-gradient(180deg,var(--panel),#0f1622);border:1px solid var(--line);border-radius:16px;padding:16px;position:relative;overflow:hidden}
+.card.running::after{content:"Simulating…";position:absolute;top:12px;right:14px;font-size:12px;color:var(--acc)}
+.matchup{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.team{display:flex;flex-direction:column;align-items:center;width:38%;text-align:center}
+.team img{width:54px;height:54px;object-fit:contain}
+.team .ab{font-weight:800;font-size:18px;margin-top:2px}
+.team .nm{color:var(--mut);font-size:12px}
+.mid{text-align:center;color:var(--mut);font-size:12px}
+.mid .at{font-size:20px;color:var(--txt);font-weight:700}
+.goalies{display:flex;justify-content:space-between;margin:10px 0 4px;font-size:13px;gap:8px}
+.goalies div{width:48%}
+.goalies div:last-child{text-align:right}
+.badge{display:inline-block;font-size:10.5px;padding:1px 6px;border-radius:999px;margin-left:4px;vertical-align:1px;border:1px solid var(--line);color:var(--mut)}
+.badge.Confirmed{border-color:rgba(52,211,153,.5);color:var(--good)}
+.badge.Expected,.badge.Likely,.badge.Probable{border-color:rgba(251,191,36,.5);color:var(--warn)}
+.odds{font-size:12.5px;color:var(--mut);background:var(--panel2);border-radius:10px;padding:8px 10px;margin:8px 0}
+.odds b{color:var(--txt)}
+.warnbox{background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.45);color:var(--warn);border-radius:10px;padding:8px 10px;font-size:13px;margin:8px 0;font-weight:600}
+.pickbox{text-align:center;margin:12px 0 6px;padding:12px;border-radius:12px;background:radial-gradient(400px 120px at 50% 0,rgba(56,189,248,.16),transparent),var(--panel2);border:1px solid var(--line)}
+.pickbox .lbl{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:1px}
+.pickbox .score{font-size:34px;font-weight:900;letter-spacing:1px;color:#fff}
+.ot{display:inline-block;background:var(--warn);color:#111;font-weight:800;font-size:12px;border-radius:6px;padding:2px 8px;margin-left:8px;vertical-align:8px}
+.pickbox .meta{font-size:12.5px;color:var(--mut)}
+.wp{display:flex;height:22px;border-radius:8px;overflow:hidden;font-size:12px;font-weight:700;margin:10px 0 4px}
+.wp div{display:flex;align-items:center;padding:0 8px;white-space:nowrap}
+.wp .wa{background:#334155;justify-content:flex-start}
+.wp .wh{background:#0e7490;justify-content:flex-end;flex:1}
+.kv{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:8px 0}
+.kv div{background:var(--panel2);border-radius:8px;padding:6px 8px}
+.kv span{display:block;font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px}
+.kv b{font-size:15px}
+.top5{width:100%;font-size:13px;margin-top:6px}
+.top5 td,.top5 th{padding:4px 6px}
+.top5 tr.is-pick td{color:var(--acc);font-weight:700}
+.result{margin-top:8px;font-size:13px;padding:6px 10px;border-radius:8px;background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.3)}
+.muted{color:var(--mut)}
+.foot{max-width:1300px;margin:0 auto;padding:10px 22px 40px;color:var(--mut);font-size:13px}
+.foot b{color:var(--txt)}
+details{margin-top:8px;font-size:12.5px;color:var(--mut)}
+summary{cursor:pointer}
+@media (max-width:600px){.top{padding:12px}.controls{width:100%}.ctl{flex:1}.btn-sim{width:100%}main{padding:8px 10px}.slate{grid-template-columns:1fr}.pickbox .score{font-size:28px}th,td{padding:6px 5px;font-size:13px}}

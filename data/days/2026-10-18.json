@@ -1,0 +1,79 @@
+{
+ "date": "2026-10-18",
+ "generatedAt": "2026-10-27T23:01:18Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "games": [
+  {
+   "id": 2026020135,
+   "startUTC": "2026-10-18T22:00:00Z",
+   "away": "CBJ",
+   "home": "MIN",
+   "awayName": "Columbus Blue Jackets",
+   "homeName": "Minnesota Wild",
+   "venue": "Grand Casino Arena",
+   "state": "OFF",
+   "final": [
+    1,
+    2,
+    "REG"
+   ],
+   "espnId": "401892533",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "MIN -192",
+    "mlAway": 160.0,
+    "mlHome": -192.0,
+    "total": 6.5,
+    "over": 102.0,
+    "under": -122.0,
+    "closing": true
+   },
+   "goalies": {
+    "away": {
+     "name": "Cam Talbot",
+     "status": "Confirmed"
+    },
+    "home": {
+     "name": "Jesper Wallstedt",
+     "status": "Confirmed"
+    }
+   }
+  },
+  {
+   "id": 2026020136,
+   "startUTC": "2026-10-19T00:00:00Z",
+   "away": "CAR",
+   "home": "CGY",
+   "awayName": "Carolina Hurricanes",
+   "homeName": "Calgary Flames",
+   "venue": "Scotiabank Saddledome",
+   "state": "OFF",
+   "final": [
+    2,
+    3,
+    "REG"
+   ],
+   "espnId": "401892534",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "CAR -205",
+    "mlAway": -205.0,
+    "mlHome": 170.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "closing": true
+   },
+   "goalies": {
+    "away": {
+     "name": "Brandon Bussi",
+     "status": "Confirmed"
+    },
+    "home": {
+     "name": "Devin Cooley",
+     "status": "Confirmed"
+    }
+   }
+  }
+ ]
+}
