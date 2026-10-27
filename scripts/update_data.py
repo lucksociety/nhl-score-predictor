@@ -118,6 +118,51 @@ def espn_day(d):
                                             espnScore=[side['away'].get('score'), side['home'].get('score')])
     return out
 
+JUP_HOSTS = ['https://api.jup.ag/prediction/v1', 'https://prediction-market-api.jup.ag/api/v1']
+JUP_AB = {'cal': 'CGY', 'las': 'VGK', 'mon': 'MTL', 'nj': 'NJD', 'sj': 'SJS', 'tb': 'TBL', 'utah': 'UTA', 'la': 'LAK'}
+_JUP = None
+def jupiter_markets():
+    """Jupiter Predict NHL moneyline markets keyed by (date, away, home). Keyless public reads; no wallet."""
+    global _JUP
+    if _JUP is not None: return _JUP
+    import re
+    _JUP = {}
+    for host in JUP_HOSTS:
+        evs, ok = [], True
+        for start in range(0, 600, 100):
+            j = get(f'{host}/events?category=sports&subcategory=nhl&includeMarkets=true&start={start}&end={start + 100}')
+            if j is None: ok = False; break
+            evs += j.get('data', [])
+            if not (j.get('pagination') or {}).get('hasNext'): break
+            time.sleep(2.1)
+        if not ok: continue
+        for e in evs:
+            m = re.match(r'^nhl-([a-z]+)-([a-z]+)-(\d{4}-\d{2}-\d{2})$', (e.get('metadata') or {}).get('slug', ''))
+            if not m: continue
+            ab = lambda x: JUP_AB.get(x, x.upper())
+            A, H, date = ab(m.group(1)), ab(m.group(2)), m.group(3)
+            sides = {}
+            for mk in e.get('markets') or []:
+                if mk.get('sportsMarketType') not in (None, 'moneyline'): continue
+                t = ab(((mk.get('team') or {}).get('abbreviation') or '').lower())
+                side = 'away' if t == A else 'home' if t == H else None
+                if not side: continue
+                pr = mk.get('pricing') or {}
+                sides[side] = dict(marketId=mk.get('marketId'), title=mk.get('title'), status=mk.get('status'),
+                                   ask=pr['buyYesPriceUsd'] / 1e6 if pr.get('buyYesPriceUsd') else None,
+                                   bid=pr['sellYesPriceUsd'] / 1e6 if pr.get('sellYesPriceUsd') else None, volume=pr.get('volume'))
+                rules = mk.get('rulesPrimary') or ''
+            if not sides: continue
+            _JUP[(date, A, H)] = dict(eventId=e['eventId'], slug=e['metadata']['slug'], date=date, away=A, home=H, live=bool(e.get('isLive')),
+                                      link=f"https://jup.ag/prediction/{e['eventId']}", provider=(e.get('markets') or [{}])[0].get('provider'),
+                                      includesOTSO=('overtime' in rules.lower() and 'shootout' in rules.lower()),
+                                      sides=dict(away=sides.get('away'), home=sides.get('home')),
+                                      fetchedAt=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), host=host)
+        print(f'jupiter: {len(_JUP)} NHL game markets via {host}')
+        return _JUP
+    print('jupiter: unavailable', file=sys.stderr)
+    return _JUP
+
 def day_slate(d):
     j = get(f'https://api-web.nhle.com/v1/schedule/{d.isoformat()}')
     games = []
@@ -133,7 +178,8 @@ def day_slate(d):
                           homeName=' '.join(filter(None, [(g['homeTeam'].get('placeName') or {}).get('default'), (g['homeTeam'].get('commonName') or {}).get('default')])),
                           venue=(g.get('venue') or {}).get('default'), state=g.get('gameState'),
                           final=[g['awayTeam'].get('score'), g['homeTeam'].get('score'), (g.get('gameOutcome') or {}).get('lastPeriodType')] if fin else None,
-                          espnId=e.get('espnId'), odds=e.get('odds'), goalies=e.get('goalies') or dict(away=None, home=None)))
+                          espnId=e.get('espnId'), odds=e.get('odds'), goalies=e.get('goalies') or dict(away=None, home=None),
+                          jupiter=jupiter_markets().get((d.isoformat(), A, H))))
     if not games and esp:   # NHL API down: fall back to ESPN slate
         for (A, H), e in esp.items():
             games.append(dict(id=None, startUTC=None, away=A, home=H, awayName=A, homeName=H, venue=None, state=e['espnState'], final=None,
@@ -166,6 +212,8 @@ def main():
                 started = g.get('state') not in ('FUT', 'PRE', None)
                 if p.get('odds') and p['odds'].get('mlHome') is not None and (started or not g.get('odds') or g['odds'].get('mlHome') is None):
                     g['odds'] = p['odds']   # keep last pre-game line once the puck has dropped (or if the feed dropped it)
+                if p.get('jupiter') and (started or not g.get('jupiter')):
+                    g['jupiter'] = p['jupiter']   # keep the last pre-game Jupiter price once the game starts
                 for side in ('away', 'home'):
                     if not g['goalies'].get(side) and (p.get('goalies') or {}).get(side): g['goalies'][side] = p['goalies'][side]
         write(os.path.join(DATA, 'days', f'{d.isoformat()}.json'), s)

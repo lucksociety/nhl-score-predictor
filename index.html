@@ -3,14 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NHL Score Predictor · v3</title>
-<meta name="description" content="Exact-score NHL predictions from the v3 Monte Carlo model, run in your browser.">
+<title>Luck Society NHL Predictor</title>
+<meta name="description" content="Luck Society NHL Predictor: exact-score picks from the v3 Monte Carlo model plus edge vs Jupiter prediction markets.">
+<meta name="theme-color" content="#050b07">
+<meta property="og:title" content="Luck Society NHL Predictor">
+<meta property="og:image" content="assets/banner.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏒</text></svg>">
 </head>
 <body>
-<header class="top">
-  <div class="brand"><span class="puck"></span><div><h1>NHL Score Predictor</h1><p class="sub">Exact-score model <b>v3</b> · Monte Carlo in your browser</p></div></div>
+<header class="hero">
+  <div class="hero-inner">
+    <img class="logo" src="assets/logo.jpg" alt="Luck Society">
+    <div class="hero-text">
+      <div class="eyebrow">Sports Betting • Crypto • Stocks • Predictions 🍀</div>
+      <h1>Luck Society <span>NHL Predictor</span></h1>
+      <p class="sub">Exact-score model <b>v3</b> · Monte Carlo in your browser · edge vs Jupiter prediction markets</p>
+    </div>
+  </div>
+</header>
+<nav class="bar">
   <div class="controls">
     <label class="ctl"><span>Date (ET)</span><input type="date" id="date"></label>
     <label class="ctl"><span>Precision</span>
@@ -19,25 +34,29 @@
         <option value="full">Full · 800k sims (matches Python)</option>
       </select>
     </label>
-    <button id="simulate" class="btn-sim" disabled>▶ Simulate</button>
+    <button id="simulate" class="btn-sim" disabled>Simulate</button>
   </div>
-</header>
+</nav>
 <div id="status" class="status">Loading data…</div>
-<div id="progress" class="progress hidden"><div class="bar" id="bar"></div></div>
+<div id="progress" class="progress hidden"><div class="bar-fill" id="bar"></div></div>
 <main>
   <section id="summary" class="summary hidden">
-    <div class="sum-head"><h2>Summary</h2><button id="copy" class="btn-ghost">Copy picks</button></div>
+    <div class="sum-head"><h2>Tonight's Board</h2><button id="copy" class="btn-ghost">Copy picks</button></div>
     <div class="table-wrap"><table id="sumtable"></table></div>
+    <p class="note" title="v3 fits the DraftKings moneyline and total at full weight, so the model win % is close to the DraftKings no-vig price. Edge here = DraftKings-derived model vs Jupiter price.">Edge is <b>vs a DraftKings-derived model</b>: v3 uses the DraftKings line at full weight, so model win % ≈ DraftKings no-vig. A positive edge means Jupiter is cheaper than DraftKings implies, not an independent read. EV is per $1 after Jupiter's fee.</p>
   </section>
   <section id="slate" class="slate"></section>
 </main>
 <footer class="foot">
-  <p><b>How it works.</b> A GitHub Action refreshes the schedule (NHL API), ESPN/DraftKings moneylines and totals, probable goalies and season results every hour from 10 AM to 11 PM ET. When you press <b>Simulate</b> the page also re-pulls live odds and goalies from ESPN, then runs the v3 protocol for every game: the de-vigged moneyline and total are fitted exactly (market weight 1.0), the game is simulated with score effects, goalie pulls/empty nets and 3-on-3 OT/shootout, and the pick is the non-tied score with the lowest expected |away error| + |home error| (OT/SO winner gets +1). The OT label is shown when P(OT | that score) ≥ 55%. Without odds the model falls back to team ratings (weaker: backtest MAE ≈2.84 vs 2.79).</p>
+  <div class="foot-brand"><img src="assets/logo.jpg" alt=""><span>Luck Society</span></div>
+  <p><b>How it works.</b> A GitHub Action refreshes the schedule (NHL API), ESPN/DraftKings moneylines and totals, probable goalies, Jupiter prediction-market prices and season results every hour from 10 AM to 11 PM ET. When you press <b>Simulate</b> the page also re-pulls live odds and goalies from ESPN and live prices from Jupiter, then runs the v3 protocol for every game: the de-vigged moneyline and total are fitted exactly (market weight 1.0), the game is simulated with score effects, goalie pulls/empty nets and 3-on-3 OT/shootout, and the pick is the non-tied score with the lowest expected |away error| + |home error| (OT/SO winner gets +1). The OT label is shown when P(OT | that score) ≥ 55%. Without odds the model falls back to team ratings.</p>
+  <p><b>Jupiter edge.</b> Jupiter NHL game markets (Polymarket-sourced) resolve on the final score <i>including overtime and shootouts</i>, so they are compared with the model's win probability including OT/SO. Price = YES ask (cost of one $1 contract). Edge = model % − Jupiter ask; "no-vig" divides by the sum of both asks. EV per $1 = model / (ask + fee) − 1 with fee = 0.07 × p × (1 − p) per contract (Jupiter's published fee table; rounded up to the cent per order).</p>
   <p id="datainfo" class="muted"></p>
   <p class="muted">For entertainment and contest use. Not betting advice.</p>
 </footer>
 <script src="js/model.js"></script>
 <script src="js/espn.js"></script>
+<script src="js/jupiter.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
