@@ -1,7 +1,7 @@
 {
  "date": "2026-10-27",
- "generatedAt": "2026-10-28T02:32:32Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-10-28T03:25:10Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020188,
@@ -162,8 +162,12 @@
    "awayName": "Boston Bruins",
    "homeName": "Carolina Hurricanes",
    "venue": "Lenovo Center",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    2,
+    "REG"
+   ],
    "espnId": "401892586",
    "odds": {
     "provider": "Draft Kings",
@@ -310,8 +314,12 @@
    "awayName": "Florida Panthers",
    "homeName": "Winnipeg Jets",
    "venue": "Canada Life Centre",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    5,
+    1,
+    "REG"
+   ],
    "espnId": "401892591",
    "odds": {
     "provider": "Draft Kings",
@@ -479,8 +487,12 @@
    "awayName": "Los Angeles Kings",
    "homeName": "Chicago Blackhawks",
    "venue": "United Center",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    2,
+    "REG"
+   ],
    "espnId": "401892587",
    "odds": {
     "provider": "Draft Kings",
@@ -627,8 +639,12 @@
    "awayName": "Montr\u00e9al Canadiens",
    "homeName": "St. Louis Blues",
    "venue": "Enterprise Center",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    0,
+    "REG"
+   ],
    "espnId": "401892588",
    "odds": {
     "provider": "Draft Kings",
@@ -775,8 +791,12 @@
    "awayName": "New Jersey Devils",
    "homeName": "Dallas Stars",
    "venue": "American Airlines Center",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    5,
+    1,
+    "REG"
+   ],
    "espnId": "401892590",
    "odds": {
     "provider": "Draft Kings",
@@ -923,8 +943,12 @@
    "awayName": "New York Islanders",
    "homeName": "Nashville Predators",
    "venue": "Bridgestone Arena",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    3,
+    "SO"
+   ],
    "espnId": "401892589",
    "odds": {
     "provider": "Draft Kings",
@@ -2469,7 +2493,7 @@
    "awayName": "Buffalo Sabres",
    "homeName": "San Jose Sharks",
    "venue": "SAP Center at San Jose",
-   "state": "PRE",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892595",
    "odds": {
@@ -2916,7 +2940,8 @@
       "xa": 1.077
      }
     },
-    "at": "2026-10-28T02:32:47Z"
+    "at": "2026-10-28T02:32:47Z",
+    "frozen": true
    }
   }
  ]
