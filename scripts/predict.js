@@ -22,6 +22,7 @@ function predictSlate(date, opts = {}) {
     const o = M.runGameV4(g, { n, seed });
     if (o.n !== n) throw new Error(`sim count mismatch ${o.n} != ${n}`);
     const e = B.evaluate(g, o);
+    if (!['FUT', 'PRE'].includes(g.state)) { e.best = null; e.reason = 'game already started (pre-game prediction shown; no live bet)'; }
     Object.assign(row, {
       sims: o.n, simMs: Math.round(o.simMs), rates: o.rates.map(x => +x.toFixed(4)), xg: [+o.ea.toFixed(3), +o.eh.toFixed(3)],
       pick: { away: o.pick.x, home: o.pick.y, ot: !!o.pick.otLabel, winner: o.pick.winner, pScore: +o.pick.p.toFixed(4) },
@@ -42,7 +43,7 @@ function predictSlate(date, opts = {}) {
     games.push(row);
   }
   return { date, model: 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
-           jupiterFetchedAt: (slate.games.find(g => g.jupiter) || {}).jupiter?.fetchedAt || null, games };
+           jupiterFetchedAt: slate.games.map(g => g.jupiter && g.jupiter.fetchedAt).filter(Boolean).sort().pop() || null, games };
 }
 module.exports = { predictSlate, etDate };
 if (require.main === module) {
