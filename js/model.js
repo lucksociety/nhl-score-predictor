@@ -195,12 +195,50 @@
     const laB = la * Math.pow(s, MKT_W_TOTAL) * Math.pow(t, MKT_W_ML), lhB = lh * Math.pow(s, MKT_W_TOTAL) / Math.pow(t, MKT_W_ML);
     const r = simulate(laB, lhB, n, seed);
     const o = analyze(r);
+    o.dist = distributions(r);
     o.mode = hasML && hasTot ? 'market' : (hasML || hasTot) ? 'partial-market' : 'ratings-fallback';
     o.model = [la, lh]; o.rates = [laB, lhB]; o.fit = [s, t]; o.mkt = { pHome, pOver };
     o.version = VERSION;
     return o;
   }
 
-  const api = { VERSION, PARAMS, simulate, teamRatings, baseRates, fitMarket, analyze, runGame, devig2, mlProb, OT_LABEL };
+
+  // ---------- extended distributions (totals / puck line), used by bets.js
+  function distributions(r) {
+    const { a, h, n } = r;
+    const tot = new Float64Array(21), mar = new Float64Array(21);   // total 0..20, margin (home - away) -10..10
+    for (let i = 0; i < n; i++) { tot[Math.min(20, a[i] + h[i])]++; mar[Math.max(-10, Math.min(10, h[i] - a[i])) + 10]++; }
+    for (let k = 0; k < 21; k++) { tot[k] /= n; mar[k] /= n; }
+    return { tot: Array.from(tot), mar: Array.from(mar) };
+  }
+  /** P(total > line) for x.5 lines (push-free); integer lines return {win, push}. Final score incl. OT/SO winner +1. */
+  function pOver(d, line) { let w = 0, push = 0; d.tot.forEach((p, k) => { if (k > line) w += p; else if (k === line) push += p; }); return Number.isInteger(line) ? { win: w, push } : w; }
+  function pUnder(d, line) { let w = 0; d.tot.forEach((p, k) => { if (k < line) w += p; }); return w; }
+  /** P(side covers spread), spread from that side's view e.g. home -1.5 -> margin_home > 1.5 */
+  function pCover(d, side, spread) { let w = 0; d.mar.forEach((p, i) => { const m = (i - 10) * (side === 'home' ? 1 : -1); if (m + spread > 0) w += p; }); return w; }
+
+  /**
+   * v4-independent: simulate from the pre-game v4 expected goals (no market input).
+   * g.v4 = {ra, rh, betaGq, goalies:{away:{gq}, home:{gq}}}; opts.gq = {away, home} overrides the starter's quality
+   * (e.g. a confirmed goalie change): a worse goalie (higher gq) raises the OPPONENT's scoring rate by exp(beta * dgq).
+   */
+  function runGameV4(g, opts) {
+    opts = opts || {};
+    const v = g.v4; if (!v) throw new Error('no v4 rates for ' + g.away + '@' + g.home);
+    const n = opts.n || 400000, seed = opts.seed == null ? 11 : opts.seed;
+    let ra = v.ra, rh = v.rh;
+    const ov = opts.gq || {};
+    if (ov.home != null) ra *= Math.exp(v.betaGq * (ov.home - v.goalies.home.gq));
+    if (ov.away != null) rh *= Math.exp(v.betaGq * (ov.away - v.goalies.away.gq));
+    const t0 = (typeof performance !== 'undefined' ? performance : Date).now();
+    const r = simulate(ra, rh, n, seed);
+    const o = analyze(r);
+    o.dist = distributions(r);
+    o.simMs = (typeof performance !== 'undefined' ? performance : Date).now() - t0;
+    o.mode = 'v4-independent'; o.rates = [ra, rh]; o.model = [v.la, v.lh]; o.version = 'v4-independent';
+    return o;
+  }
+
+  const api = { distributions, pOver, pUnder, pCover, runGameV4, VERSION, PARAMS, simulate, teamRatings, baseRates, fitMarket, analyze, runGame, devig2, mlProb, OT_LABEL };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.NHLModel = api;
 })(typeof self !== 'undefined' ? self : this);

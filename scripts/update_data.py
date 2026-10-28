@@ -141,9 +141,18 @@ def jupiter_markets():
             if not m: continue
             ab = lambda x: JUP_AB.get(x, x.upper())
             A, H, date = ab(m.group(1)), ab(m.group(2)), m.group(3)
-            sides = {}
+            sides = {}; extra = []
             for mk in e.get('markets') or []:
-                if mk.get('sportsMarketType') not in (None, 'moneyline'): continue
+                smt = mk.get('sportsMarketType')
+                if smt in ('totals', 'spreads'):   # not listed for NHL as of Oct 2026; parsed generically if Jupiter adds them
+                    pr = mk.get('pricing') or {}; lab = ((mk.get('marketOptions') or [{}])[0] or {}).get('label')
+                    extra.append(dict(type=smt, marketId=mk.get('marketId'), title=mk.get('title'), label=lab, line=mk.get('sportsLine'),
+                                      team=ab(((mk.get('team') or {}).get('abbreviation') or '').lower()) if mk.get('team') else None,
+                                      ask=pr['buyYesPriceUsd'] / 1e6 if pr.get('buyYesPriceUsd') else None,
+                                      bid=pr['sellYesPriceUsd'] / 1e6 if pr.get('sellYesPriceUsd') else None,
+                                      rules=(mk.get('rulesPrimary') or '')[:600]))
+                    continue
+                if smt not in (None, 'moneyline'): continue
                 t = ab(((mk.get('team') or {}).get('abbreviation') or '').lower())
                 side = 'away' if t == A else 'home' if t == H else None
                 if not side: continue
@@ -156,7 +165,7 @@ def jupiter_markets():
             _JUP[(date, A, H)] = dict(eventId=e['eventId'], slug=e['metadata']['slug'], date=date, away=A, home=H, live=bool(e.get('isLive')),
                                       link=f"https://jup.ag/prediction/{e['eventId']}", provider=(e.get('markets') or [{}])[0].get('provider'),
                                       includesOTSO=('overtime' in rules.lower() and 'shootout' in rules.lower()),
-                                      sides=dict(away=sides.get('away'), home=sides.get('home')),
+                                      sides=dict(away=sides.get('away'), home=sides.get('home')), extra=extra,
                                       fetchedAt=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), host=host)
         print(f'jupiter: {len(_JUP)} NHL game markets via {host}')
         return _JUP
@@ -199,7 +208,8 @@ def main():
             if s['games']: write(os.path.join(DATA, 'days', f'{d.isoformat()}.json'), s); print(d, len(s['games']))
             d += dt.timedelta(days=1)
         return write_index()
-    update_results(today)
+    results = update_results(today)
+    out = []
     for d in (today - dt.timedelta(days=1), today, today + dt.timedelta(days=1)):
         s = day_slate(d)
         if d == today - dt.timedelta(days=1) and not s['games']: continue
@@ -214,8 +224,20 @@ def main():
                     g['odds'] = p['odds']   # keep last pre-game line once the puck has dropped (or if the feed dropped it)
                 if p.get('jupiter') and (started or not g.get('jupiter')):
                     g['jupiter'] = p['jupiter']   # keep the last pre-game Jupiter price once the game starts
+                if p.get('v4') and started:
+                    g['v4'] = p['v4']             # freeze the pre-game v4 prediction
                 for side in ('away', 'home'):
                     if not g['goalies'].get(side) and (p.get('goalies') or {}).get(side): g['goalies'][side] = p['goalies'][side]
+        out.append(s)
+    try:   # model v4-independent (no market inputs)
+        import v4_update
+        rows = v4_update.update_history(results)
+        m = v4_update.annotate(out, rows)
+        print(f"v4: trained through {m['trainedThrough']} on {m['games']} games")
+    except Exception as e:
+        import traceback; traceback.print_exc(); print('v4 failed:', e, file=sys.stderr)
+    for s in out:
+        d = dt.date.fromisoformat(s['date'])
         write(os.path.join(DATA, 'days', f'{d.isoformat()}.json'), s)
         n_odds = sum(1 for g in s['games'] if g['odds'] and g['odds'].get('mlHome') is not None)
         print(f'{d}: {len(s["games"])} games, {n_odds} with moneyline')

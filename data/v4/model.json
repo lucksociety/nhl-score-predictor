@@ -1,0 +1,813 @@
+{
+ "version": "v4-independent",
+ "trainedThrough": "2026-10-26",
+ "trainedAt": "2026-10-27T23:54:48Z",
+ "coef": {
+  "b0": 0.01448,
+  "gf": 0.49489,
+  "xf": 0.53487,
+  "sf": 0.35743,
+  "oga": 0.28113,
+  "oxa": 0.74088,
+  "osa": 0.86331,
+  "ogq": 0.41504,
+  "home": 0.05562,
+  "b2b": -0.07515,
+  "ob2b": 0.03897,
+  "km": -0.00757,
+  "tz": 0.01303,
+  "rest1": 0.007
+ },
+ "hp": {
+  "hl": 25.0,
+  "carry": 0.3,
+  "n0": 20.0,
+  "Kx": 80.0,
+  "lgwin": 1300,
+  "gk_carry": 0.7,
+  "ridge": 1.0
+ },
+ "scale": 0.887,
+ "games": 6747,
+ "league": {
+  "gf": 3.0869,
+  "xf": 3.1676,
+  "sf": 27.708
+ },
+ "teams": {
+  "ANA": {
+   "gf": 3.052,
+   "ga": 3.262,
+   "xf": 3.237,
+   "xa": 3.333,
+   "goalies": [
+    {
+     "id": 8480843,
+     "name": "L. Dostal",
+     "gq": -0.0638,
+     "share": 0.668,
+     "shots": 2695
+    },
+    {
+     "id": 8478024,
+     "name": "V. Husso",
+     "gq": -0.0229,
+     "share": 0.332,
+     "shots": 1410
+    }
+   ]
+  },
+  "BOS": {
+   "gf": 3.387,
+   "ga": 2.796,
+   "xf": 3.212,
+   "xa": 3.173,
+   "goalies": [
+    {
+     "id": 8480280,
+     "name": "J. Swayman",
+     "gq": -0.1307,
+     "share": 0.717,
+     "shots": 3005
+    },
+    {
+     "id": 8480022,
+     "name": "M. DiPietro",
+     "gq": -0.0635,
+     "share": 0.259,
+     "shots": 89
+    }
+   ]
+  },
+  "BUF": {
+   "gf": 3.117,
+   "ga": 3.169,
+   "xf": 3.134,
+   "xa": 3.228,
+   "goalies": [
+    {
+     "id": 8480045,
+     "name": "U. Luukkonen",
+     "gq": -0.0646,
+     "share": 0.78,
+     "shots": 2417
+    },
+    {
+     "id": 8481551,
+     "name": "C. Ellis",
+     "gq": -0.026,
+     "share": 0.203,
+     "shots": 378
+    }
+   ]
+  },
+  "CAR": {
+   "gf": 3.454,
+   "ga": 2.861,
+   "xf": 3.54,
+   "xa": 2.904,
+   "goalies": [
+    {
+     "id": 8481611,
+     "name": "P. Kochetkov",
+     "gq": -0.0767,
+     "share": 0.564,
+     "shots": 1364
+    },
+    {
+     "id": 8483548,
+     "name": "B. Bussi",
+     "gq": 0.0047,
+     "share": 0.407,
+     "shots": 786
+    }
+   ]
+  },
+  "CBJ": {
+   "gf": 2.866,
+   "ga": 3.102,
+   "xf": 3.083,
+   "xa": 3.218,
+   "goalies": [
+    {
+     "id": 8482982,
+     "name": "J. Greaves",
+     "gq": -0.1221,
+     "share": 0.536,
+     "shots": 1504
+    },
+    {
+     "id": 8475660,
+     "name": "C. Talbot",
+     "gq": -0.0624,
+     "share": 0.445,
+     "shots": 2288
+    }
+   ]
+  },
+  "CGY": {
+   "gf": 2.871,
+   "ga": 3.24,
+   "xf": 3.014,
+   "xa": 3.284,
+   "goalies": [
+    {
+     "id": 8482445,
+     "name": "D. Cooley",
+     "gq": -0.095,
+     "share": 0.641,
+     "shots": 847
+    },
+    {
+     "id": 8481692,
+     "name": "D. Wolf",
+     "gq": -0.0478,
+     "share": 0.346,
+     "shots": 2161
+    }
+   ]
+  },
+  "CHI": {
+   "gf": 2.722,
+   "ga": 3.373,
+   "xf": 2.93,
+   "xa": 3.332,
+   "goalies": [
+    {
+     "id": 8481519,
+     "name": "S. Knight",
+     "gq": -0.0896,
+     "share": 0.875,
+     "shots": 2185
+    },
+    {
+     "id": 8482821,
+     "name": "A. Soderblom",
+     "gq": 0.0063,
+     "share": 0.125,
+     "shots": 1572
+    }
+   ]
+  },
+  "COL": {
+   "gf": 3.396,
+   "ga": 3.01,
+   "xf": 3.295,
+   "xa": 3.025,
+   "goalies": [
+    {
+     "id": 8478406,
+     "name": "M. Blackwood",
+     "gq": -0.0963,
+     "share": 0.57,
+     "shots": 2359
+    },
+    {
+     "id": 8475809,
+     "name": "S. Wedgewood",
+     "gq": -0.0732,
+     "share": 0.43,
+     "shots": 1813
+    }
+   ]
+  },
+  "DAL": {
+   "gf": 3.082,
+   "ga": 2.664,
+   "xf": 3.162,
+   "xa": 2.968,
+   "goalies": [
+    {
+     "id": 8479979,
+     "name": "J. Oettinger",
+     "gq": -0.1009,
+     "share": 0.85,
+     "shots": 3090
+    },
+    {
+     "id": 8479193,
+     "name": "C. DeSmith",
+     "gq": -0.105,
+     "share": 0.15,
+     "shots": 1622
+    }
+   ]
+  },
+  "DET": {
+   "gf": 2.912,
+   "ga": 3.069,
+   "xf": 3.154,
+   "xa": 3.124,
+   "goalies": [
+    {
+     "id": 8476434,
+     "name": "J. Gibson",
+     "gq": -0.0669,
+     "share": 0.6,
+     "shots": 2846
+    },
+    {
+     "id": 8480193,
+     "name": "D. Tarasov",
+     "gq": -0.0565,
+     "share": 0.223,
+     "shots": 1417
+    },
+    {
+     "id": 8485545,
+     "name": "M. Postava",
+     "gq": 0.0027,
+     "share": 0.161,
+     "shots": 35
+    }
+   ]
+  },
+  "EDM": {
+   "gf": 3.452,
+   "ga": 3.205,
+   "xf": 3.176,
+   "xa": 3.052,
+   "goalies": [
+    {
+     "id": 8477465,
+     "name": "T. Jarry",
+     "gq": -0.0196,
+     "share": 0.477,
+     "shots": 2284
+    },
+    {
+     "id": 8482221,
+     "name": "D. Levi",
+     "gq": -0.0269,
+     "share": 0.462,
+     "shots": 602
+    },
+    {
+     "id": 8478971,
+     "name": "C. Ingram",
+     "gq": -0.0339,
+     "share": 0.061,
+     "shots": 1554
+    }
+   ]
+  },
+  "FLA": {
+   "gf": 3.016,
+   "ga": 3.131,
+   "xf": 3.224,
+   "xa": 3.155,
+   "goalies": [
+    {
+     "id": 8481033,
+     "name": "A. Schmid",
+     "gq": -0.0488,
+     "share": 0.466,
+     "shots": 1021
+    },
+    {
+     "id": 8474593,
+     "name": "J. Markstrom",
+     "gq": -0.0448,
+     "share": 0.32,
+     "shots": 2629
+    },
+    {
+     "id": 8484900,
+     "name": "C. Black",
+     "gq": -0.0027,
+     "share": 0.137,
+     "shots": 21
+    },
+    {
+     "id": 8480193,
+     "name": "D. Tarasov",
+     "gq": -0.0565,
+     "share": 0.052,
+     "shots": 1417
+    }
+   ]
+  },
+  "LAK": {
+   "gf": 2.937,
+   "ga": 3.142,
+   "xf": 3.059,
+   "xa": 3.088,
+   "goalies": [
+    {
+     "id": 8475311,
+     "name": "D. Kuemper",
+     "gq": -0.0711,
+     "share": 0.662,
+     "shots": 2703
+    },
+    {
+     "id": 8476341,
+     "name": "A. Forsberg",
+     "gq": -0.0798,
+     "share": 0.338,
+     "shots": 1831
+    }
+   ]
+  },
+  "MIN": {
+   "gf": 3.157,
+   "ga": 2.839,
+   "xf": 3.562,
+   "xa": 2.99,
+   "goalies": [
+    {
+     "id": 8482661,
+     "name": "J. Wallstedt",
+     "gq": -0.07,
+     "share": 0.748,
+     "shots": 1051
+    },
+    {
+     "id": 8475717,
+     "name": "C. Pickard",
+     "gq": 0.0144,
+     "share": 0.22,
+     "shots": 956
+    },
+    {
+     "id": 8479406,
+     "name": "F. Gustavsson",
+     "gq": -0.0823,
+     "share": 0.032,
+     "shots": 2612
+    }
+   ]
+  },
+  "MTL": {
+   "gf": 3.134,
+   "ga": 3.07,
+   "xf": 3.253,
+   "xa": 3.283,
+   "goalies": [
+    {
+     "id": 8484170,
+     "name": "J. Fowler",
+     "gq": -0.1262,
+     "share": 0.619,
+     "shots": 459
+    },
+    {
+     "id": 8482487,
+     "name": "J. Dobes",
+     "gq": -0.092,
+     "share": 0.38,
+     "shots": 1190
+    }
+   ]
+  },
+  "NJD": {
+   "gf": 3.101,
+   "ga": 3.031,
+   "xf": 3.348,
+   "xa": 2.964,
+   "goalies": [
+    {
+     "id": 8474596,
+     "name": "J. Allen",
+     "gq": -0.0887,
+     "share": 0.621,
+     "shots": 2181
+    },
+    {
+     "id": 8482076,
+     "name": "N. Daws",
+     "gq": -0.0221,
+     "share": 0.35,
+     "shots": 501
+    }
+   ]
+  },
+  "NSH": {
+   "gf": 3.015,
+   "ga": 3.076,
+   "xf": 3.119,
+   "xa": 3.25,
+   "goalies": [
+    {
+     "id": 8477424,
+     "name": "J. Saros",
+     "gq": -0.0818,
+     "share": 0.616,
+     "shots": 3711
+    },
+    {
+     "id": 8481020,
+     "name": "J. Annunen",
+     "gq": -0.0783,
+     "share": 0.322,
+     "shots": 1111
+    },
+    {
+     "id": 8483575,
+     "name": "M. Murray",
+     "gq": -0.0121,
+     "share": 0.062,
+     "shots": 43
+    }
+   ]
+  },
+  "NYI": {
+   "gf": 2.956,
+   "ga": 2.946,
+   "xf": 3.104,
+   "xa": 3.266,
+   "goalies": [
+    {
+     "id": 8478009,
+     "name": "I. Sorokin",
+     "gq": -0.175,
+     "share": 0.712,
+     "shots": 3465
+    },
+    {
+     "id": 8473575,
+     "name": "S. Varlamov",
+     "gq": -0.0875,
+     "share": 0.269,
+     "shots": 814
+    }
+   ]
+  },
+  "NYR": {
+   "gf": 3.109,
+   "ga": 3.098,
+   "xf": 3.152,
+   "xa": 3.177,
+   "goalies": [
+    {
+     "id": 8482193,
+     "name": "D. Garand",
+     "gq": -0.0516,
+     "share": 0.646,
+     "shots": 295
+    },
+    {
+     "id": 8478048,
+     "name": "I. Shesterkin",
+     "gq": -0.1916,
+     "share": 0.183,
+     "shots": 3201
+    },
+    {
+     "id": 8473503,
+     "name": "J. Reimer",
+     "gq": -0.0348,
+     "share": 0.158,
+     "shots": 1348
+    }
+   ]
+  },
+  "OTT": {
+   "gf": 3.139,
+   "ga": 2.966,
+   "xf": 3.276,
+   "xa": 3.0,
+   "goalies": [
+    {
+     "id": 8476999,
+     "name": "L. Ullmark",
+     "gq": -0.1081,
+     "share": 0.564,
+     "shots": 2578
+    },
+    {
+     "id": 8481035,
+     "name": "S. Ersson",
+     "gq": 0.0592,
+     "share": 0.246,
+     "shots": 1679
+    },
+    {
+     "id": 8477992,
+     "name": "J. Johansson",
+     "gq": 0.0224,
+     "share": 0.161,
+     "shots": 1089
+    }
+   ]
+  },
+  "PHI": {
+   "gf": 2.741,
+   "ga": 3.034,
+   "xf": 2.946,
+   "xa": 3.226,
+   "goalies": [
+    {
+     "id": 8479361,
+     "name": "J. Woll",
+     "gq": -0.1074,
+     "share": 0.52,
+     "shots": 2006
+    },
+    {
+     "id": 8478435,
+     "name": "D. Vladar",
+     "gq": -0.0629,
+     "share": 0.461,
+     "shots": 1944
+    }
+   ]
+  },
+  "PIT": {
+   "gf": 3.242,
+   "ga": 3.198,
+   "xf": 3.262,
+   "xa": 3.288,
+   "goalies": [
+    {
+     "id": 8481668,
+     "name": "A. Silovs",
+     "gq": 0.0125,
+     "share": 0.693,
+     "shots": 1105
+    },
+    {
+     "id": 8483703,
+     "name": "S. Murashov",
+     "gq": 0.0031,
+     "share": 0.26,
+     "shots": 201
+    },
+    {
+     "id": 8479973,
+     "name": "S. Skinner",
+     "gq": -0.0884,
+     "share": 0.047,
+     "shots": 2735
+    }
+   ]
+  },
+  "SEA": {
+   "gf": 3.126,
+   "ga": 3.271,
+   "xf": 3.005,
+   "xa": 3.321,
+   "goalies": [
+    {
+     "id": 8475831,
+     "name": "P. Grubauer",
+     "gq": -0.0379,
+     "share": 0.511,
+     "shots": 1928
+    },
+    {
+     "id": 8478916,
+     "name": "J. Daccord",
+     "gq": -0.0732,
+     "share": 0.452,
+     "shots": 2411
+    }
+   ]
+  },
+  "SJS": {
+   "gf": 3.059,
+   "ga": 3.297,
+   "xf": 3.121,
+   "xa": 3.411,
+   "goalies": [
+    {
+     "id": 8477968,
+     "name": "A. Nedeljkovic",
+     "gq": -0.0363,
+     "share": 0.519,
+     "shots": 2176
+    },
+    {
+     "id": 8482137,
+     "name": "Y. Askarov",
+     "gq": -0.0107,
+     "share": 0.48,
+     "shots": 1340
+    }
+   ]
+  },
+  "STL": {
+   "gf": 3.114,
+   "ga": 3.062,
+   "xf": 3.057,
+   "xa": 3.125,
+   "goalies": [
+    {
+     "id": 8480981,
+     "name": "J. Hofer",
+     "gq": -0.1088,
+     "share": 0.769,
+     "shots": 1815
+    },
+    {
+     "id": 8476412,
+     "name": "J. Binnington",
+     "gq": -0.0047,
+     "share": 0.231,
+     "shots": 2746
+    }
+   ]
+  },
+  "TBL": {
+   "gf": 3.273,
+   "ga": 3.069,
+   "xf": 3.371,
+   "xa": 3.069,
+   "goalies": [
+    {
+     "id": 8476883,
+     "name": "A. Vasilevskiy",
+     "gq": -0.1619,
+     "share": 0.657,
+     "shots": 3339
+    },
+    {
+     "id": 8483710,
+     "name": "D. Hildeby",
+     "gq": -0.0717,
+     "share": 0.317,
+     "shots": 538
+    }
+   ]
+  },
+  "TOR": {
+   "gf": 3.27,
+   "ga": 3.258,
+   "xf": 3.104,
+   "xa": 3.382,
+   "goalies": [
+    {
+     "id": 8475683,
+     "name": "S. Bobrovsky",
+     "gq": -0.0867,
+     "share": 0.61,
+     "shots": 2979
+    },
+    {
+     "id": 8476932,
+     "name": "A. Stolarz",
+     "gq": -0.1096,
+     "share": 0.35,
+     "shots": 1603
+    }
+   ]
+  },
+  "UTA": {
+   "gf": 3.353,
+   "ga": 3.178,
+   "xf": 3.295,
+   "xa": 3.037,
+   "goalies": [
+    {
+     "id": 8478872,
+     "name": "K. Vejmelka",
+     "gq": -0.073,
+     "share": 0.785,
+     "shots": 3163
+    },
+    {
+     "id": 8482657,
+     "name": "S. Cossa",
+     "gq": 0.0335,
+     "share": 0.2,
+     "shots": 57
+    }
+   ]
+  },
+  "VAN": {
+   "gf": 2.885,
+   "ga": 3.692,
+   "xf": 2.814,
+   "xa": 3.545,
+   "goalies": [
+    {
+     "id": 8482447,
+     "name": "L. Meril\u00e4inen",
+     "gq": -0.0243,
+     "share": 0.512,
+     "shots": 714
+    },
+    {
+     "id": 8480947,
+     "name": "K. Lankinen",
+     "gq": 0.0102,
+     "share": 0.461,
+     "shots": 2268
+    }
+   ]
+  },
+  "VGK": {
+   "gf": 3.23,
+   "ga": 3.008,
+   "xf": 3.261,
+   "xa": 2.961,
+   "goalies": [
+    {
+     "id": 8479394,
+     "name": "C. Hart",
+     "gq": -0.0248,
+     "share": 0.594,
+     "shots": 1385
+    },
+    {
+     "id": 8478499,
+     "name": "A. Hill",
+     "gq": -0.0261,
+     "share": 0.403,
+     "shots": 1789
+    }
+   ]
+  },
+  "WPG": {
+   "gf": 2.831,
+   "ga": 3.04,
+   "xf": 3.111,
+   "xa": 3.223,
+   "goalies": [
+    {
+     "id": 8479973,
+     "name": "S. Skinner",
+     "gq": -0.0884,
+     "share": 0.702,
+     "shots": 2735
+    },
+    {
+     "id": 8483532,
+     "name": "C. Stevenson",
+     "gq": -0.0328,
+     "share": 0.207,
+     "shots": 173
+    },
+    {
+     "id": 8476945,
+     "name": "C. Hellebuyck",
+     "gq": -0.1644,
+     "share": 0.063,
+     "shots": 3349
+    }
+   ]
+  },
+  "WSH": {
+   "gf": 3.19,
+   "ga": 3.097,
+   "xf": 3.287,
+   "xa": 3.302,
+   "goalies": [
+    {
+     "id": 8480313,
+     "name": "L. Thompson",
+     "gq": -0.1638,
+     "share": 0.658,
+     "shots": 2700
+    },
+    {
+     "id": 8479292,
+     "name": "C. Lindgren",
+     "gq": -0.0401,
+     "share": 0.325,
+     "shots": 1699
+    }
+   ]
+  }
+ }
+}

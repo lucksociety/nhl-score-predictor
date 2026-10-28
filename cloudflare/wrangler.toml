@@ -1,0 +1,12 @@
+# Luck Society /nhl Discord endpoint. Free Workers plan is enough (no CPU-heavy work here; the sim runs in GitHub Actions).
+# Secret (NOT in this file):  npx wrangler secret put GITHUB_TOKEN
+name = "luck-society-nhl"
+main = "worker.mjs"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+[vars]
+DISCORD_APP_ID = "1564789482514030672"
+DISCORD_PUBLIC_KEY = "f19ee2147ad744622bc418620c60d5b1fe496f87bfb795ff4101b8cce3a30d5d"
+GITHUB_REPO = "lucksociety/nhl-score-predictor"
+SITE = "https://lucksociety.github.io/nhl-score-predictor/"

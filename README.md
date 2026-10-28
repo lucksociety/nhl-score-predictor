@@ -58,3 +58,29 @@ python3 scripts/update_data.py --backfill 2026-09-29 2026-10-25
 ```
 
 No API keys or secrets are used anywhere. For entertainment / contest use; not betting advice.
+
+## v4-independent model (default) and the Discord `/nhl` command
+
+**v4-independent** uses no betting-market input, so its edge against Jupiter is a real disagreement with the market, not a DraftKings copy. Features are built only from games before each date: exponentially weighted (half-life 25 games) goals, MoneyPuck score/venue-adjusted xG and shots for and against; the starting goalie's goals vs expected (shrunk); home ice; back-to-backs, rest and travel. A Poisson regression is refit on 2022-23 onward every Action run (`scripts/v4_model.py`, `scripts/v4_update.py`, history in `data/v4/history.csv.gz`). Expected goals feed the same Monte Carlo as v3 (score effects, goalie pulls/empty nets, 3-on-3 OT, shootout).
+
+### Honest backtest (rolling origin: each season predicted by a model fit only on earlier seasons, 4k sims/game)
+
+| | Exact-score MAE 2023-26 | MAE 2026-27 | Win log loss 2024-26* | Win log loss 2026-27 |
+|---|---|---|---|---|
+| v4-independent | **2.805** | 2.781 | 0.6721 | 0.6625 |
+| v3 ratings-only | 2.828 | 2.791 | 0.6792 | 0.6730 |
+| v3 market-anchored (DraftKings) | 2.793 | 2.759 | 0.6704 | 0.6558 |
+| DraftKings no-vig line | – | – | 0.6700 | 0.6535 |
+
+\*2023-24 stored lines are 3-way regulation prices, so they are left out of moneyline comparisons. v4 clearly beats v3's ratings-only fallback, but **the betting market is still a bit sharper than v4** on win probability, and v4 underpredicts total goals by about 0.1 per game. A flat $1 rule (model > 50% and EV > 0 at DraftKings closing prices) lost 1.2% per bet over 2024-26 (1,628 bets), so treat any edge as thin. No historical Jupiter prices exist to backtest against.
+
+### Best bet rule (dashboard and Discord)
+For each Jupiter market on the game, q is the model probability (final result incl. OT/SO, matching Jupiter's rules) and p is the YES ask. The fee is 0.07·p·(1−p), and EV = q/(p+fee) − 1. A side qualifies only if **q > 50% and EV > 0**. The best bet is the qualifying side with the highest EV; otherwise the game is **NO BET**. Jupiter currently lists **NHL moneylines only**. Totals and puck lines are parsed automatically if they appear; until then they are shown as model leans only.
+
+### Discord `/nhl` architecture
+`/nhl` → Cloudflare Worker (`cloudflare/worker.mjs`, free plan). The Worker checks Discord's Ed25519 signature, replies "thinking…", and triggers `.github/workflows/discord.yml` with the 15-minute interaction token. That workflow refreshes the slate and Jupiter prices, retrains v4, runs 400k sims per game (`scripts/predict.js`), and edits the reply with Luck Society embeds (`scripts/discord_post.js`). If GitHub can't be reached, the Worker posts the latest precomputed `data/predictions/DATE.json` instead.
+
+Secrets are **never** stored in this repo:
+- `GITHUB_TOKEN`: a Worker secret (`wrangler secret put GITHUB_TOKEN`). Use a fine-grained PAT limited to this repo with Contents: read & write, which repository_dispatch requires.
+- The Discord bot token is only needed once, to register the command: `DISCORD_BOT_TOKEN=… node scripts/register_command.js`.
+- The application ID and public key are public and live in `cloudflare/wrangler.toml`.

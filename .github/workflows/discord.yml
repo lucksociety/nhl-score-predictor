@@ -1,0 +1,50 @@
+name: Discord /nhl
+
+# Triggered by the Cloudflare Worker (repository_dispatch, type nhl-command) when someone runs /nhl.
+# client_payload: { token: <15-minute interaction token>, application_id, date? }
+# The interaction token is read from the event file and masked; it is never echoed or committed.
+on:
+  repository_dispatch:
+    types: [nhl-command]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: discord-${{ github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  nhl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Mask interaction token
+        run: |
+          T=$(jq -r '.client_payload.token // empty' "$GITHUB_EVENT_PATH")
+          echo "::add-mask::$T"
+          echo "DISCORD_INTERACTION_TOKEN=$T" >> "$GITHUB_ENV"
+          echo "DISCORD_APP_ID=$(jq -r '.client_payload.application_id // empty' "$GITHUB_EVENT_PATH" | tr -cd '0-9')" >> "$GITHUB_ENV"
+          D=$(jq -r '.client_payload.date // empty' "$GITHUB_EVENT_PATH" | tr -cd '0-9-')
+          echo "SLATE_DATE=${D:-$(TZ=America/New_York date +%F)}" >> "$GITHUB_ENV"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Fresh schedule, goalies, Jupiter prices; retrain v4 (not committed)
+        run: python scripts/update_data.py
+      - name: Run the Monte Carlo (400k sims/game)
+        run: node scripts/predict.js "$SLATE_DATE"
+      - name: Post to Discord
+        run: node scripts/discord_post.js "data/predictions/$SLATE_DATE.json"
+      - name: Report failure to Discord
+        if: failure()
+        run: |
+          curl -sS -X PATCH -H 'Content-Type: application/json' \
+            -d '{"content":"🍀 Sorry, the NHL simulation failed this time. Try /nhl again in a minute."}' \
+            "https://discord.com/api/v10/webhooks/$DISCORD_APP_ID/$DISCORD_INTERACTION_TOKEN/messages/@original" > /dev/null || true

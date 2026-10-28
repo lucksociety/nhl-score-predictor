@@ -114,3 +114,6 @@ summary{cursor:pointer;color:var(--gold3)}
   .top5 th,.top5 td,.edge th,.edge td{padding:3px 4px;font-size:12px;white-space:normal}.top5 th,.edge th{font-size:10px}
   .goalies{font-size:12px}.card{padding:12px}
 }
+.betbox{margin-top:8px;padding:8px 10px;border-radius:10px;font-size:13px;line-height:1.45}
+.betbox.bet{border:1px solid var(--gold);background:rgba(232,185,49,.12)}
+.betbox.nobet{border:1px solid var(--line);background:rgba(31,138,58,.08)}

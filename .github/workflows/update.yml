@@ -28,8 +28,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Fetch schedule, odds, goalies, results
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Fetch schedule, odds, goalies, results; retrain v4
         run: python scripts/update_data.py
+      - name: Precompute v4 Monte Carlo predictions (today + tomorrow, ET)
+        run: |
+          node scripts/predict.js "$(TZ=America/New_York date +%F)"
+          node scripts/predict.js "$(TZ=America/New_York date -d tomorrow +%F)"
       - name: Commit data if changed
         run: |
           git config user.name  "github-actions[bot]"

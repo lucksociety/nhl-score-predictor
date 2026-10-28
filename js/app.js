@@ -1,9 +1,9 @@
-/* Luck Society NHL Predictor dashboard — UI + orchestration. Model lives in js/model.js (v3). */
+/* Luck Society NHL Predictor dashboard — UI + orchestration. Models live in js/model.js (v4-independent default, v3 optional); best-bet rules in js/bets.js. */
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
   const TZ = 'America/New_York';
-  const PREC = { std: { n: 200000, nFit: 40000 }, full: { n: 800000, nFit: 120000 } };
+  const PREC = { std: { n: 400000, nFit: 40000 }, full: { n: 800000, nFit: 120000 } };
   const state = { base: null, results: [], index: null, games: [], date: null, out: {}, snapshotAt: null, liveAt: null, liveOk: false, jup: null, jupAt: null, jupOk: false, jupHost: null, jupErr: null };
 
   const etDate = (d = new Date()) => new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
@@ -19,7 +19,29 @@
   const pp = x => x == null || isNaN(x) ? '—' : Math.abs(x) < 0.0005 ? '0.0' : (x > 0 ? '+' : '−') + Math.abs(100 * x).toFixed(1);
   const cents = x => x == null ? '—' : (100 * x).toFixed(0) + '¢';
   const evp = x => x == null || isNaN(x) ? '—' : (x >= 0 ? '+' : '−') + Math.abs(100 * x).toFixed(1) + '%';
-  const EDGE_TIP = 'Edge vs DraftKings-derived model: v3 fits the DraftKings moneyline at full weight, so model win % ≈ DraftKings no-vig. Edge = model win % (incl. OT/SO) − Jupiter YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.07·p·(1−p).';
+  const TIP_V3 = 'Edge vs DraftKings-derived model: v3 fits the DraftKings moneyline at full weight, so model win % ≈ DraftKings no-vig. Edge = model win % (incl. OT/SO) − Jupiter YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.07·p·(1−p).';
+  const TIP_V4 = 'Independent edge: v4 uses no betting-market input. Edge = model win % (incl. OT/SO) − Jupiter YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.07·p·(1−p). Bet only if model > 50% and EV > 0.';
+  let EDGE_TIP = TIP_V4;
+  const lastName = n => String(n || '').normalize('NFKD').replace(/[\u0300-\u036f.]/g, '').trim().toLowerCase().split(/\s+/).pop();
+  // if the live/confirmed starter differs from the one the Action used, re-weight with that goalie's rating (gq)
+  function gqOverride(g) {
+    const ov = {}, notes = [];
+    for (const sd of ['away', 'home']) {
+      const used = g.v4.goalies[sd], live = g.goalies && g.goalies[sd] && g.goalies[sd].name;
+      if (!live || (used.name && lastName(used.name) === lastName(live))) continue;
+      const hit = (used.table || []).find(t => lastName(t.name) === lastName(live));
+      if (hit) { ov[sd] = hit.gq; notes.push(`${g[sd]} goalie → ${live}`); }
+    }
+    return { ov, notes };
+  }
+  function betHTML(g, o) {
+    if (!o || !o.dist || !window.NHLBets) return '';
+    const e = NHLBets.evaluate(g, o), L = e.leans;
+    const leans = `<div class="muted" style="font-size:11.5px;margin-top:4px">Model leans (no Jupiter market${e.hasTotals || e.hasPL ? ' unless listed above' : ''}): Over 5.5 ${pct(L.o55, 1)} · Over 6.5 ${pct(L.o65, 1)} · ${g.home} −1.5 ${pct(L.homeM15, 1)} · ${g.away} −1.5 ${pct(L.awayM15, 1)}</div>`;
+    if (g.jupInGame) return `<div class="betbox nobet"><b>Best bet:</b> game started — in-game prices not compared with the pre-game model.${leans}</div>`;
+    if (e.best) { const b = e.best; return `<div class="betbox bet">✅ <b>BEST BET: ${esc(b.label)}</b> · model ${pct(b.q, 1)} · Jupiter ${cents(b.ask)} (+${(100 * b.fee).toFixed(1)}¢ fee) · EV <b>${evp(b.ev)}</b>${leans}</div>`; }
+    return `<div class="betbox nobet">⛔ <b>NO BET</b> — ${esc(e.reason)}${leans}</div>`;
+  }
 
   async function getJSON(url, bust = true) {
     const r = await fetch(url + (bust ? (url.includes('?') ? '&' : '?') + 't=' + Date.now() : ''), { cache: 'no-store' });
@@ -37,9 +59,10 @@
     $('date').value = today;
     $('date').addEventListener('change', () => loadDate($('date').value));
     $('simulate').addEventListener('click', simulate);
+    $('model').addEventListener('change', () => { EDGE_TIP = $('model').value === 'v4' ? TIP_V4 : TIP_V3; state.out = {}; renderSlate(); });
     $('copy').addEventListener('click', copyPicks);
     const last = state.results.length ? state.results[state.results.length - 1].date : '—';
-    $('datainfo').textContent = `Ratings data: 2025-26 base + ${state.results.length} completed 2026-27 games (through ${last}). Data refreshed ${state.index ? etStamp(state.index.updatedAt) : '—'}. Model v3 (JS port of sim_v3.py, verified against Python).`;
+    $('datainfo').textContent = `Ratings data: 2025-26 base + ${state.results.length} completed 2026-27 games (through ${last}). Data refreshed ${state.index ? etStamp(state.index.updatedAt) : '—'}. Default model v4-independent (no Vegas input; JS sim verified against Python).`;
     await loadDate(today);
   }
 
@@ -132,7 +155,7 @@
     const size = Math.max(1, Math.min(jobs.length, (navigator.hardwareConcurrency || 4) - 1, 8));
     const pool = makePool(size);
     if (!pool) {   // no workers (e.g. file://): run on the main thread
-      return jobs.reduce((p, j) => p.then(() => new Promise(res => setTimeout(() => { const t0 = performance.now(); const r = NHLModel.runGame(j.game, j.ratings, j.opts); r.ms = performance.now() - t0; onDone(j.id, r); res(); }, 20))), Promise.resolve());
+      return jobs.reduce((p, j) => p.then(() => new Promise(res => setTimeout(() => { const t0 = performance.now(); const r = j.v4 ? NHLModel.runGameV4(j.v4, Object.assign({}, j.opts, { gq: j.v4.gqOverride })) : NHLModel.runGame(j.game, j.ratings, j.opts); r.ms = performance.now() - t0; onDone(j.id, r); res(); }, 20))), Promise.resolve());
     }
     return new Promise(resolve => {
       let next = 0, done = 0;
@@ -151,18 +174,23 @@
     state.games = await fetchSlate(date); state.out = {}; renderSlate();
     const ratings = ratingsAsOf(date);
     const opts = PREC[$('precision').value] || PREC.std;
-    const jobs = state.games.map((g, i) => ({ id: i, ratings, opts: Object.assign({ seed: 11 }, opts), game: { away: g.away, home: g.home, mlAway: g.odds && g.odds.mlAway, mlHome: g.odds && g.odds.mlHome, total: g.odds && g.odds.total, over: g.odds && g.odds.over, under: g.odds && g.odds.under } }));
+    const useV4 = $('model').value === 'v4'; EDGE_TIP = useV4 ? TIP_V4 : TIP_V3; renderSlate();
+    const jobs = state.games.map((g, i) => {
+      const j = { id: i, ratings, opts: Object.assign({ seed: 11 }, opts), game: { away: g.away, home: g.home, mlAway: g.odds && g.odds.mlAway, mlHome: g.odds && g.odds.mlHome, total: g.odds && g.odds.total, over: g.odds && g.odds.over, under: g.odds && g.odds.under } };
+      if (useV4 && g.v4) { const o = gqOverride(g); j.v4 = { away: g.away, home: g.home, v4: g.v4, gqOverride: o.ov }; g.gkNotes = o.notes; }
+      return j;
+    });
     $('progress').classList.remove('hidden'); $('bar').style.width = '2%';
     document.querySelectorAll('.card').forEach(c => c.classList.add('running'));
     const t0 = performance.now(); let n = 0;
-    setStatus(`Simulating ${jobs.length} games (${(opts.n / 1000)}k sims each + market fit)…`);
+    setStatus(`Simulating ${jobs.length} games (${(opts.n / 1000)}k sims each, ${useV4 ? 'v4-independent' : 'v3 + market fit'})…`);
     await runAll(jobs, (id, r) => {
       state.out[id] = r; n++; $('bar').style.width = (100 * n / jobs.length) + '%';
       renderCard(id); renderSummary();
       setStatus(`Simulated ${n}/${jobs.length}…`);
     });
     const secs = ((performance.now() - t0) / 1000).toFixed(1);
-    setStatus(`Done: ${jobs.length} games simulated in ${secs}s with model v3 (${opts.n / 1000}k sims/game, seed 11 — same inputs give the same picks). Odds ${state.liveOk ? 'live from ESPN at ' + etStamp(state.liveAt) : 'from Action snapshot'}; Jupiter prices ${state.jupOk ? 'live at ' + etStamp(state.jupAt) : 'from Action snapshot'}.`);
+    setStatus(`Done: ${jobs.length} games simulated in ${secs}s with model ${useV4 ? 'v4-independent' : 'v3'}${useV4 && jobs.some(j => !j.v4) ? ' (v3 fallback where v4 rates were missing)' : ''} (${opts.n / 1000}k sims/game, seed 11 — same inputs give the same picks). Odds ${state.liveOk ? 'live from ESPN at ' + etStamp(state.liveAt) : 'from Action snapshot'}; Jupiter prices ${state.jupOk ? 'live at ' + etStamp(state.jupAt) : 'from Action snapshot'}.`);
     setTimeout(() => $('progress').classList.add('hidden'), 800);
     btn.disabled = false;
   }
@@ -176,7 +204,7 @@
     const o = g.odds;
     if (!(hasML(o) && hasTot(o))) {
       const part = o && (hasML(o) || hasTot(o)) ? ` (only ${hasML(o) ? 'moneyline' : 'total'} available — partial market fit)` : '';
-      return `<div class="warnbox">⚠ No odds — ratings fallback${part}. Pick uses team ratings only (weaker).</div>` + (o && (hasML(o) || hasTot(o)) ? `<div class="odds">${hasML(o) ? `ML <b>${g.away} ${odd(o.mlAway)}</b> / <b>${g.home} ${odd(o.mlHome)}</b>` : ''} ${hasTot(o) ? `Total <b>${o.total}</b> (o ${odd(o.over)} / u ${odd(o.under)})` : ''}</div>` : '');
+      return (($('model') || {}).value === 'v3' ? `<div class="warnbox">⚠ No odds — v3 ratings fallback${part}. Pick uses team ratings only (weaker).</div>` : '') + (o && (hasML(o) || hasTot(o)) ? `<div class="odds">${hasML(o) ? `ML <b>${g.away} ${odd(o.mlAway)}</b> / <b>${g.home} ${odd(o.mlHome)}</b>` : ''} ${hasTot(o) ? `Total <b>${o.total}</b> (o ${odd(o.over)} / u ${odd(o.under)})` : ''}</div>` : '');
     }
     const ph = NHLModel.devig2(o.mlHome, o.mlAway), po = NHLModel.devig2(o.over ?? -110, o.under ?? -110);
     return `<div class="odds">ML <b>${g.away} ${odd(o.mlAway)}</b> / <b>${g.home} ${odd(o.mlHome)}</b> · Total <b>${o.total}</b> (o ${odd(o.over)} / u ${odd(o.under)})<br>No-vig: ${g.home} ${pct(ph, 1)} · Over ${pct(po, 1)} · <span class="muted">${esc(g.oddsSource || '')}</span></div>`;
@@ -197,7 +225,7 @@
     return `<div class="sect"><span title="${esc(EDGE_TIP)}">Jupiter edge ⓘ</span><a href="${esc(j.link)}" target="_blank" rel="noopener">Open market ↗</a></div>${warn}${otso}
       <table class="edge"><thead><tr><th>Side</th><th title="YES ask / bid per $1 contract">Ask / bid</th><th title="Ask divided by the sum of both asks">No-vig</th><th title="Model win % incl. OT/SO">Model</th><th title="${esc(EDGE_TIP)}">Edge pp</th><th title="EV per $1 staked at the ask, after Jupiter fee 0.07·p·(1−p)">EV/$1</th></tr></thead>
       <tbody>${row('away', g.away)}${row('home', g.home)}</tbody></table>
-      <div class="muted" style="font-size:11.5px;margin-top:3px">${esc(g.jupSource || '')} · overround ${ed.overround == null ? '—' : pp(ed.overround) + ' pp'} · edge vs DraftKings-derived model</div>`;
+      <div class="muted" style="font-size:11.5px;margin-top:3px">${esc(g.jupSource || '')} · overround ${ed.overround == null ? '—' : pp(ed.overround) + ' pp'} · ${EDGE_TIP === TIP_V4 ? 'independent edge (v4, no Vegas input)' : 'edge vs DraftKings-derived model (v3)'}</div>`;
   }
   function bestEdge(g, o) {
     if (!g.jupiter || !o || o.error) return null;
@@ -218,7 +246,7 @@
       <div class="goalies"><div>🥅 ${goalieHTML(g.goalies && g.goalies.away)}</div><div>${goalieHTML(g.goalies && g.goalies.home)} 🥅</div></div>
       ${oddsHTML(g)}
       <div id="jup${i}">${jupHTML(g, null)}</div>
-      <div class="res" id="res${i}"><p class="muted" style="text-align:center;margin:14px 0">Press Simulate to run the v3 protocol.</p></div>
+      <div class="res" id="res${i}"><p class="muted" style="text-align:center;margin:14px 0">Press Simulate to run the model.</p></div>
     </div>`;
   }
   function renderSlate() {
@@ -234,9 +262,9 @@
     $('card' + i).classList.remove('running');
     if (!o || o.error) { el.innerHTML = `<div class="warnbox">Simulation error: ${esc(o && o.error)}</div>`; return; }
     const p = o.pick, win = p.x > p.y ? g.away : g.home;
-    const fallback = o.mode !== 'market';
+    const fallback = o.mode !== 'market' && o.mode !== 'v4-independent';
     const res = g.final ? (() => { const fa = g.final[0], fh = g.final[1]; const err = Math.abs(fa - p.x) + Math.abs(fh - p.y); const right = (fa > fh) === (p.x > p.y); return `<div class="result">Actual: <b>${g.away} ${fa} – ${g.home} ${fh}</b>${g.final[2] && g.final[2] !== 'REG' ? ' (' + g.final[2] + ')' : ''} · error <b>${err}</b> · winner ${right ? '✓' : '✗'}</div>`; })() : '';
-    $('jup' + i).innerHTML = jupHTML(g, o);
+    $('jup' + i).innerHTML = jupHTML(g, o) + betHTML(g, o);
     el.innerHTML = `
       <div class="pickbox"><div class="lbl">Final pick${fallback ? ' · ratings fallback' : ''}</div>
         <div class="score">${g.away} ${p.x} – ${p.y} ${g.home}${p.otLabel ? `<span class="ot">OT · ${win}</span>` : ''}</div>
@@ -248,7 +276,7 @@
       </tbody></table>
       ${res}
       <details><summary>Model details</summary>
-        Inputs: ${o.mode === 'market' ? 'market (ML + total, weight 1.0)' : o.mode === 'partial-market' ? 'partial market + ratings' : 'team ratings only'} · regulation rates ${o.rates[0].toFixed(2)} / ${o.rates[1].toFixed(2)} goals/60 (ratings-only ${o.model[0].toFixed(2)} / ${o.model[1].toFixed(2)}) ·
+        Inputs: ${o.mode === 'v4-independent' ? 'v4-independent: team goals/xG/shots form, starting goalies, home ice, rest & travel — no betting-market input' + (g.gkNotes && g.gkNotes.length ? ' (' + esc(g.gkNotes.join(', ')) + ')' : '') : o.mode === 'market' ? 'market (ML + total, weight 1.0)' : o.mode === 'partial-market' ? 'partial market + ratings' : 'team ratings only'} · regulation rates ${o.rates[0].toFixed(2)} / ${o.rates[1].toFixed(2)} goals/60 (${o.mode === 'v4-independent' ? 'final-goal λ' : 'ratings-only'} ${o.model[0].toFixed(2)} / ${o.model[1].toFixed(2)}) ·
         ${g.away} goals 0–5,6+: ${o.distA.map(v => pct(v)).join(' / ')} · ${g.home}: ${o.distH.map(v => pct(v)).join(' / ')} ·
         empty-net share ${pct(o.enShare, 1)} · OT decided in 3-on-3 ${pct(o.pOTgoal)} of OT games · ${(o.n / 1000)}k sims in ${(o.ms / 1000).toFixed(1)}s
       </details>`;
@@ -268,19 +296,20 @@
       const be = bestEdge(g, o);
       let jp = '<span class="chip none">No Jupiter market</span>', jb = '—';
       if (be) {
-        const j = g.jupiter, b = be.best, good = b.ev > 0 && !g.jupInGame;
+        const j = g.jupiter;
         jp = `<a href="${esc(j.link)}" target="_blank" rel="noopener">${g.away} ${cents(be.ed.away && be.ed.away.ask)} / ${g.home} ${cents(be.ed.home && be.ed.home.ask)}</a>`;
-        jb = g.jupInGame ? `<span class="chip live" title="Game started: in-game price">in-game</span>` :
-          `<span class="${good ? 'chip pos' : b.edge > 0 ? 'soft' : 'neg'}">${b.ab} ${pp(b.edge)} pp · EV ${evp(b.ev)}</span>`;
       }
-      return `<tr><td>${etTime(g.startUTC)}</td><td>${g.away} @ ${g.home}</td><td class="pick">${pickText(g, o)}</td><td>${p.otLabel ? 'OT' : '—'}</td><td>${pct(o.pOT)}</td><td>${fav}</td><td>${jp}</td><td>${jb}</td><td>${o.ea.toFixed(2)}–${o.eh.toFixed(2)}</td><td>${o.mode === 'market' ? 'Market' : '<span style="color:var(--warn)">Ratings fallback</span>'}</td><td>${r}</td><td>${e}</td></tr>`;
+      if (g.jupInGame) jb = `<span class="chip live" title="Game started: in-game price">in-game</span>`;
+      else if (o.dist && window.NHLBets) { const ev = NHLBets.evaluate(g, o); jb = ev.best ? `<span class="chip pos" title="model ${pct(ev.best.q, 1)} vs ask ${cents(ev.best.ask)}">✅ ${esc(ev.best.label)} · EV ${evp(ev.best.ev)}</span>` : `<span class="neg" title="${esc(ev.reason)}">NO BET</span>`; }
+      return `<tr><td>${etTime(g.startUTC)}</td><td>${g.away} @ ${g.home}</td><td class="pick">${pickText(g, o)}</td><td>${p.otLabel ? 'OT' : '—'}</td><td>${pct(o.pOT)}</td><td>${fav}</td><td>${jp}</td><td>${jb}</td><td>${o.ea.toFixed(2)}–${o.eh.toFixed(2)}</td><td>${o.mode === 'v4-independent' ? 'v4 (indep.)' : o.mode === 'market' ? 'v3 Market' : '<span style="color:var(--warn)">v3 ratings fallback</span>'}</td><td>${r}</td><td>${e}</td></tr>`;
     }).join('');
     const foot = nf ? `<tr><td colspan="10" class="muted">Graded games: ${nf} · winners right ${wins}/${nf}</td><td><b>Total err</b></td><td><b>${tot}</b></td></tr>` : '';
-    $('sumtable').innerHTML = `<thead><tr><th>Puck drop</th><th>Game</th><th>Pick</th><th>OT?</th><th>P(OT)</th><th>Win prob</th><th title="Jupiter Predict YES ask per $1 contract (away / home)">Jupiter</th><th title="${esc(EDGE_TIP)}">Best edge · EV/$1</th><th>xG</th><th>Inputs</th><th>Result</th><th>Err</th></tr></thead><tbody>${rows}${foot}</tbody>`;
+    $('sumnote').innerHTML = EDGE_TIP === TIP_V4 ? 'Edge is <b>independent</b>: v4 uses no betting-market input, so a positive EV is a genuine disagreement with Jupiter. Best bet = highest-EV Jupiter side with model &gt; 50% and EV &gt; 0 after fee; otherwise NO BET. Jupiter lists NHL moneylines only (no totals / puck lines), so those are shown as model leans.' : 'Edge is <b>vs a DraftKings-derived model</b> (v3 uses the DraftKings line at full weight), so it mostly measures Jupiter vs DraftKings, not an independent read.';
+    $('sumtable').innerHTML = `<thead><tr><th>Puck drop</th><th>Game</th><th>Pick</th><th>OT?</th><th>P(OT)</th><th>Win prob</th><th title="Jupiter Predict YES ask per $1 contract (away / home)">Jupiter</th><th title="Bet only if model > 50% and EV after Jupiter fee > 0; highest EV qualifying side">Best bet</th><th>xG</th><th>Inputs</th><th>Result</th><th>Err</th></tr></thead><tbody>${rows}${foot}</tbody>`;
   }
   function copyPicks() {
-    const lines = state.games.map((g, i) => { const o = state.out[i]; if (!o || o.error) return null; const be = bestEdge(g, o); return `${etTime(g.startUTC)}  ${g.away} @ ${g.home}: ${pickText(g, o)}  · P(OT) ${pct(o.pOT)}` + (be && !g.jupInGame ? `  · Jupiter edge ${be.best.ab} ${pp(be.best.edge)}pp, EV ${evp(be.best.ev)}` : ''); }).filter(Boolean);
-    const txt = `Luck Society NHL v3 picks · ${state.date}\n` + lines.join('\n');
+    const lines = state.games.map((g, i) => { const o = state.out[i]; if (!o || o.error) return null; const be = bestEdge(g, o); return `${etTime(g.startUTC)}  ${g.away} @ ${g.home}: ${pickText(g, o)}  · P(OT) ${pct(o.pOT)}` + (o.dist && window.NHLBets && !g.jupInGame ? (ev => ev.best ? `  · BEST BET ${ev.best.label} (model ${pct(ev.best.q, 1)}, EV ${evp(ev.best.ev)})` : '  · NO BET')(NHLBets.evaluate(g, o)) : ''); }).filter(Boolean);
+    const txt = `Luck Society NHL ${$('model').value === 'v4' ? 'v4-independent' : 'v3'} picks · ${state.date}\n` + lines.join('\n');
     (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => { $('copy').textContent = 'Copied ✓'; setTimeout(() => $('copy').textContent = 'Copy picks', 1500); }).catch(() => prompt('Copy picks:', txt));
   }
   init();

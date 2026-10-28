@@ -1,7 +1,7 @@
 {
  "date": "2026-10-27",
- "generatedAt": "2026-10-27T23:31:30Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-10-27T23:54:47Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020188,
@@ -65,6 +65,88 @@
     },
     "fetchedAt": "2026-10-27T23:31:30Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.9529,
+    "lh": 2.8917,
+    "ra": 2.6192,
+    "rh": 2.5649,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Cam Talbot",
+      "id": 8475660,
+      "gq": -0.0624,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8482982,
+        "name": "J. Greaves",
+        "gq": -0.1221,
+        "share": 0.536,
+        "shots": 1504
+       },
+       {
+        "id": 8475660,
+        "name": "C. Talbot",
+        "gq": -0.0624,
+        "share": 0.445,
+        "shots": 2288
+       }
+      ]
+     },
+     "home": {
+      "name": "Dan Vladar",
+      "id": 8478435,
+      "gq": -0.0629,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8479361,
+        "name": "J. Woll",
+        "gq": -0.1074,
+        "share": 0.52,
+        "shots": 2006
+       },
+       {
+        "id": 8478435,
+        "name": "D. Vladar",
+        "gq": -0.0629,
+        "share": 0.461,
+        "shots": 1944
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 3,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 668,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.928,
+      "ga": 1.005,
+      "xf": 0.973,
+      "xa": 1.016
+     },
+     "home": {
+      "gf": 0.888,
+      "ga": 0.983,
+      "xf": 0.93,
+      "xa": 1.018
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -79,7 +161,7 @@
    "final": null,
    "espnId": "401892586",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "CAR -192",
     "mlAway": 160.0,
     "mlHome": -192.0,
@@ -96,7 +178,7 @@
     },
     "home": {
      "name": "Pyotr Kochetkov",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "jupiter": {
@@ -127,8 +209,91 @@
       "volume": 63866
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.6861,
+    "lh": 3.5975,
+    "ra": 2.3826,
+    "rh": 3.191,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Jeremy Swayman",
+      "id": 8480280,
+      "gq": -0.1307,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8480280,
+        "name": "J. Swayman",
+        "gq": -0.1307,
+        "share": 0.717,
+        "shots": 3005
+       },
+       {
+        "id": 8480022,
+        "name": "M. DiPietro",
+        "gq": -0.0635,
+        "share": 0.259,
+        "shots": 89
+       }
+      ]
+     },
+     "home": {
+      "name": "Pyotr Kochetkov",
+      "id": 8481611,
+      "gq": -0.0767,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8481611,
+        "name": "P. Kochetkov",
+        "gq": -0.0767,
+        "share": 0.564,
+        "shots": 1364
+       },
+       {
+        "id": 8483548,
+        "name": "B. Bussi",
+        "gq": 0.0047,
+        "share": 0.407,
+        "shots": 786
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 3,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 984,
+     "home": 1063
+    },
+    "form": {
+     "away": {
+      "gf": 1.097,
+      "ga": 0.906,
+      "xf": 1.014,
+      "xa": 1.002
+     },
+     "home": {
+      "gf": 1.119,
+      "ga": 0.927,
+      "xf": 1.117,
+      "xa": 0.917
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -143,7 +308,7 @@
    "final": null,
    "espnId": "401892591",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "FLA -130",
     "mlAway": -130.0,
     "mlHome": 110.0,
@@ -178,21 +343,125 @@
       "marketId": "POLY-5156468-0",
       "title": "Panthers",
       "status": "open",
-      "ask": 0.55,
-      "bid": 0.54,
+      "ask": 0.53,
+      "bid": 0.52,
       "volume": 77410
      },
      "home": {
       "marketId": "POLY-5156468-1",
       "title": "Jets",
       "status": "open",
-      "ask": 0.46,
-      "bid": 0.45,
+      "ask": 0.48,
+      "bid": 0.47,
       "volume": 77410
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.1187,
+    "lh": 2.962,
+    "ra": 2.7663,
+    "rh": 2.6273,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Akira Schmid",
+      "id": 8481033,
+      "gq": -0.0488,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8481033,
+        "name": "A. Schmid",
+        "gq": -0.0488,
+        "share": 0.466,
+        "shots": 1021
+       },
+       {
+        "id": 8474593,
+        "name": "J. Markstrom",
+        "gq": -0.0448,
+        "share": 0.32,
+        "shots": 2629
+       },
+       {
+        "id": 8484900,
+        "name": "C. Black",
+        "gq": -0.0027,
+        "share": 0.137,
+        "shots": 21
+       },
+       {
+        "id": 8480193,
+        "name": "D. Tarasov",
+        "gq": -0.0565,
+        "share": 0.052,
+        "shots": 1417
+       }
+      ]
+     },
+     "home": {
+      "name": "Clay Stevenson",
+      "id": 8483532,
+      "gq": -0.0328,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8479973,
+        "name": "S. Skinner",
+        "gq": -0.0884,
+        "share": 0.702,
+        "shots": 2735
+       },
+       {
+        "id": 8483532,
+        "name": "C. Stevenson",
+        "gq": -0.0328,
+        "share": 0.207,
+        "shots": 173
+       },
+       {
+        "id": 8476945,
+        "name": "C. Hellebuyck",
+        "gq": -0.1644,
+        "share": 0.063,
+        "shots": 3349
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1152,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.977,
+      "ga": 1.014,
+      "xf": 1.018,
+      "xa": 0.996
+     },
+     "home": {
+      "gf": 0.917,
+      "ga": 0.985,
+      "xf": 0.982,
+      "xa": 1.017
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -207,7 +476,7 @@
    "final": null,
    "espnId": "401892587",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "CHI -112",
     "mlAway": -108.0,
     "mlHome": -112.0,
@@ -220,7 +489,7 @@
    "goalies": {
     "away": {
      "name": "Anton Forsberg",
-     "status": "Expected"
+     "status": "Confirmed"
     },
     "home": {
      "name": "Spencer Knight",
@@ -255,8 +524,91 @@
       "volume": 46134
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.9717,
+    "lh": 2.8839,
+    "ra": 2.6359,
+    "rh": 2.558,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Anton Forsberg",
+      "id": 8476341,
+      "gq": -0.0798,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8475311,
+        "name": "D. Kuemper",
+        "gq": -0.0711,
+        "share": 0.662,
+        "shots": 2703
+       },
+       {
+        "id": 8476341,
+        "name": "A. Forsberg",
+        "gq": -0.0798,
+        "share": 0.338,
+        "shots": 1831
+       }
+      ]
+     },
+     "home": {
+      "name": "Spencer Knight",
+      "id": 8481519,
+      "gq": -0.0896,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8481519,
+        "name": "S. Knight",
+        "gq": -0.0896,
+        "share": 0.875,
+        "shots": 2185
+       },
+       {
+        "id": 8482821,
+        "name": "A. Soderblom",
+        "gq": 0.0063,
+        "share": 0.125,
+        "shots": 1572
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 1,
+     "home": 2
+    },
+    "b2b": {
+     "away": 1,
+     "home": 0
+    },
+    "km": {
+     "away": 1148,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.951,
+      "ga": 1.018,
+      "xf": 0.966,
+      "xa": 0.975
+     },
+     "home": {
+      "gf": 0.882,
+      "ga": 1.093,
+      "xf": 0.925,
+      "xa": 1.052
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -271,7 +623,7 @@
    "final": null,
    "espnId": "401892588",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "MTL -115",
     "mlAway": -115.0,
     "mlHome": -105.0,
@@ -319,8 +671,91 @@
       "volume": 87309
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.1222,
+    "lh": 3.1492,
+    "ra": 2.7694,
+    "rh": 2.7934,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Jacob Fowler",
+      "id": 8484170,
+      "gq": -0.1262,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8484170,
+        "name": "J. Fowler",
+        "gq": -0.1262,
+        "share": 0.619,
+        "shots": 459
+       },
+       {
+        "id": 8482487,
+        "name": "J. Dobes",
+        "gq": -0.092,
+        "share": 0.38,
+        "shots": 1190
+       }
+      ]
+     },
+     "home": {
+      "name": "Jordan Binnington",
+      "id": 8476412,
+      "gq": -0.0047,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8480981,
+        "name": "J. Hofer",
+        "gq": -0.1088,
+        "share": 0.769,
+        "shots": 1815
+       },
+       {
+        "id": 8476412,
+        "name": "J. Binnington",
+        "gq": -0.0047,
+        "share": 0.231,
+        "shots": 2746
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 2,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1368,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.015,
+      "ga": 0.995,
+      "xf": 1.027,
+      "xa": 1.036
+     },
+     "home": {
+      "gf": 1.009,
+      "ga": 0.992,
+      "xf": 0.965,
+      "xa": 0.986
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -335,7 +770,7 @@
    "final": null,
    "espnId": "401892590",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "DAL -118",
     "mlAway": -102.0,
     "mlHome": -118.0,
@@ -383,8 +818,91 @@
       "volume": 63936
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.7225,
+    "lh": 2.7741,
+    "ra": 2.4149,
+    "rh": 2.4607,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Connor Hellebuyck",
+      "id": 8476945,
+      "gq": -0.1644,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8474596,
+        "name": "J. Allen",
+        "gq": -0.0887,
+        "share": 0.621,
+        "shots": 2181
+       },
+       {
+        "id": 8482076,
+        "name": "N. Daws",
+        "gq": -0.0221,
+        "share": 0.35,
+        "shots": 501
+       }
+      ]
+     },
+     "home": {
+      "name": "Casey DeSmith",
+      "id": 8479193,
+      "gq": -0.105,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8479979,
+        "name": "J. Oettinger",
+        "gq": -0.1009,
+        "share": 0.85,
+        "shots": 3090
+       },
+       {
+        "id": 8479193,
+        "name": "C. DeSmith",
+        "gq": -0.105,
+        "share": 0.15,
+        "shots": 1622
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 3,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 2193,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.005,
+      "ga": 0.982,
+      "xf": 1.057,
+      "xa": 0.936
+     },
+     "home": {
+      "gf": 0.999,
+      "ga": 0.863,
+      "xf": 0.998,
+      "xa": 0.937
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -399,7 +917,7 @@
    "final": null,
    "espnId": "401892589",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "NSH -122",
     "mlAway": 102.0,
     "mlHome": -122.0,
@@ -447,8 +965,98 @@
       "volume": 44439
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.0306,
+    "lh": 3.1047,
+    "ra": 2.6882,
+    "rh": 2.7538,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Semyon Varlamov",
+      "id": 8473575,
+      "gq": -0.0875,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8478009,
+        "name": "I. Sorokin",
+        "gq": -0.175,
+        "share": 0.712,
+        "shots": 3465
+       },
+       {
+        "id": 8473575,
+        "name": "S. Varlamov",
+        "gq": -0.0875,
+        "share": 0.269,
+        "shots": 814
+       }
+      ]
+     },
+     "home": {
+      "name": "Juuse Saros",
+      "id": 8477424,
+      "gq": -0.0818,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8477424,
+        "name": "J. Saros",
+        "gq": -0.0818,
+        "share": 0.616,
+        "shots": 3711
+       },
+       {
+        "id": 8481020,
+        "name": "J. Annunen",
+        "gq": -0.0783,
+        "share": 0.322,
+        "shots": 1111
+       },
+       {
+        "id": 8483575,
+        "name": "M. Murray",
+        "gq": -0.0121,
+        "share": 0.062,
+        "shots": 43
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 992,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.957,
+      "ga": 0.954,
+      "xf": 0.98,
+      "xa": 1.031
+     },
+     "home": {
+      "gf": 0.977,
+      "ga": 0.996,
+      "xf": 0.985,
+      "xa": 1.026
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -463,7 +1071,7 @@
    "final": null,
    "espnId": "401892592",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "UTAH -122",
     "mlAway": 102.0,
     "mlHome": -122.0,
@@ -511,8 +1119,98 @@
       "volume": 39840
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.1118,
+    "lh": 3.1864,
+    "ra": 2.7602,
+    "rh": 2.8263,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Jesper Wallstedt",
+      "id": 8482661,
+      "gq": -0.07,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8482661,
+        "name": "J. Wallstedt",
+        "gq": -0.07,
+        "share": 0.748,
+        "shots": 1051
+       },
+       {
+        "id": 8475717,
+        "name": "C. Pickard",
+        "gq": 0.0144,
+        "share": 0.22,
+        "shots": 956
+       },
+       {
+        "id": 8479406,
+        "name": "F. Gustavsson",
+        "gq": -0.0823,
+        "share": 0.032,
+        "shots": 2612
+       }
+      ]
+     },
+     "home": {
+      "name": "Karel Vejmelka",
+      "id": 8478872,
+      "gq": -0.073,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8478872,
+        "name": "K. Vejmelka",
+        "gq": -0.073,
+        "share": 0.785,
+        "shots": 3163
+       },
+       {
+        "id": 8482657,
+        "name": "S. Cossa",
+        "gq": 0.0335,
+        "share": 0.2,
+        "shots": 57
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 2,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1290,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.023,
+      "ga": 0.92,
+      "xf": 1.125,
+      "xa": 0.944
+     },
+     "home": {
+      "gf": 1.086,
+      "ga": 1.029,
+      "xf": 1.04,
+      "xa": 0.959
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -527,7 +1225,7 @@
    "final": null,
    "espnId": "401892593",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "VGK -162",
     "mlAway": 136.0,
     "mlHome": -162.0,
@@ -575,8 +1273,98 @@
       "volume": 8345
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.8974,
+    "lh": 3.2697,
+    "ra": 2.57,
+    "rh": 2.9002,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Jonas Johansson",
+      "id": 8477992,
+      "gq": 0.0224,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8476999,
+        "name": "L. Ullmark",
+        "gq": -0.1081,
+        "share": 0.564,
+        "shots": 2578
+       },
+       {
+        "id": 8481035,
+        "name": "S. Ersson",
+        "gq": 0.0592,
+        "share": 0.246,
+        "shots": 1679
+       },
+       {
+        "id": 8477992,
+        "name": "J. Johansson",
+        "gq": 0.0224,
+        "share": 0.161,
+        "shots": 1089
+       }
+      ]
+     },
+     "home": {
+      "name": "Adin Hill",
+      "id": 8478499,
+      "gq": -0.0261,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8479394,
+        "name": "C. Hart",
+        "gq": -0.0248,
+        "share": 0.594,
+        "shots": 1385
+       },
+       {
+        "id": 8478499,
+        "name": "A. Hill",
+        "gq": -0.0261,
+        "share": 0.403,
+        "shots": 1789
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 3,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 3425,
+     "home": 2835
+    },
+    "form": {
+     "away": {
+      "gf": 1.017,
+      "ga": 0.961,
+      "xf": 1.034,
+      "xa": 0.947
+     },
+     "home": {
+      "gf": 1.046,
+      "ga": 0.975,
+      "xf": 1.029,
+      "xa": 0.935
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -591,7 +1379,7 @@
    "final": null,
    "espnId": "401892594",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "ANA -218",
     "mlAway": 180.0,
     "mlHome": -218.0,
@@ -639,8 +1427,91 @@
       "volume": 8967
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.7443,
+    "lh": 4.1273,
+    "ra": 2.4342,
+    "rh": 3.6609,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Kevin Lankinen",
+      "id": 8480947,
+      "gq": 0.0102,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8482447,
+        "name": "L. Meril\u00e4inen",
+        "gq": -0.0243,
+        "share": 0.512,
+        "shots": 714
+       },
+       {
+        "id": 8480947,
+        "name": "K. Lankinen",
+        "gq": 0.0102,
+        "share": 0.461,
+        "shots": 2268
+       }
+      ]
+     },
+     "home": {
+      "name": "Lukas Dostal",
+      "id": 8480843,
+      "gq": -0.0638,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8480843,
+        "name": "L. Dostal",
+        "gq": -0.0638,
+        "share": 0.668,
+        "shots": 2695
+       },
+       {
+        "id": 8478024,
+        "name": "V. Husso",
+        "gq": -0.0229,
+        "share": 0.332,
+        "shots": 1410
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 2,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1773,
+     "home": 3823
+    },
+    "form": {
+     "away": {
+      "gf": 0.935,
+      "ga": 1.196,
+      "xf": 0.888,
+      "xa": 1.119
+     },
+     "home": {
+      "gf": 0.989,
+      "ga": 1.057,
+      "xf": 1.022,
+      "xa": 1.052
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   },
   {
@@ -655,7 +1526,7 @@
    "final": null,
    "espnId": "401892595",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "BUF -148",
     "mlAway": -148.0,
     "mlHome": 124.0,
@@ -703,8 +1574,91 @@
       "volume": 27774
      }
     },
-    "fetchedAt": "2026-10-27T23:31:30Z",
+    "extra": [],
+    "fetchedAt": "2026-10-27T23:54:47Z",
     "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.4811,
+    "lh": 3.3091,
+    "ra": 3.0878,
+    "rh": 2.9351,
+    "betaGq": 0.41504,
+    "goalies": {
+     "away": {
+      "name": "Colten Ellis",
+      "id": 8481551,
+      "gq": -0.026,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8480045,
+        "name": "U. Luukkonen",
+        "gq": -0.0646,
+        "share": 0.78,
+        "shots": 2417
+       },
+       {
+        "id": 8481551,
+        "name": "C. Ellis",
+        "gq": -0.026,
+        "share": 0.203,
+        "shots": 378
+       }
+      ]
+     },
+     "home": {
+      "name": "Yaroslav Askarov",
+      "id": 8482137,
+      "gq": -0.0107,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8477968,
+        "name": "A. Nedeljkovic",
+        "gq": -0.0363,
+        "share": 0.519,
+        "shots": 2176
+       },
+       {
+        "id": 8482137,
+        "name": "Y. Askarov",
+        "gq": -0.0107,
+        "share": 0.48,
+        "shots": 1340
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-26",
+    "rest": {
+     "away": 3,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 3890,
+     "home": 4311
+    },
+    "form": {
+     "away": {
+      "gf": 1.01,
+      "ga": 1.027,
+      "xf": 0.989,
+      "xa": 1.019
+     },
+     "home": {
+      "gf": 0.991,
+      "ga": 1.068,
+      "xf": 0.985,
+      "xa": 1.077
+     }
+    },
+    "at": "2026-10-27T23:54:48Z"
    }
   }
  ]
