@@ -37,11 +37,19 @@
   function betHTML(g, o) {
     if (!o || !o.dist || !window.NHLBets) return '';
     const e = NHLBets.evaluate(g, o), L = e.leans;
-    const leans = `<div class="muted" style="font-size:11.5px;margin-top:4px">Model leans (no Jupiter market${e.hasTotals || e.hasPL ? ' unless listed above' : ''}): Over 5.5 ${pct(L.o55, 1)} · Over 6.5 ${pct(L.o65, 1)} · ${g.home} −1.5 ${pct(L.homeM15, 1)} · ${g.away} −1.5 ${pct(L.awayM15, 1)}</div>`;
+    const nT = e.cands.filter(c => c.type === 'TOTAL').length, nP = e.cands.filter(c => c.type === 'PUCKLINE').length;
+    const row = c => `<tr class="${c.q > 0.5 && c.ev > 0 ? 'posbg' : ''}"><td>${esc(c.label)}</td><td>${pct(c.q, 1)}</td><td>${cents(c.ask)}</td><td class="${c.q > 0.5 && c.ev > 0 ? 'pos' : 'neg'}">${evp(c.ev)}</td></tr>`;
+    const all = e.cands.length ? `<details><summary>All ${e.cands.length} Jupiter sides (ML ${e.cands.length - nT - nP} · totals ${nT} · puck lines ${nP}), by EV</summary>
+      <table class="edge"><thead><tr><th>Side</th><th>Model</th><th>Ask</th><th>EV/$1</th></tr></thead><tbody>${e.cands.map(row).join('')}</tbody></table></details>` : '';
+    const leans = `<div class="muted" style="font-size:11.5px;margin-top:4px">Model: Over 5.5 ${pct(L.o55, 1)} · Over 6.5 ${pct(L.o65, 1)} · ${g.home} −1.5 ${pct(L.homeM15, 1)} · ${g.away} −1.5 ${pct(L.awayM15, 1)}${g.jupiter && g.jupiter.extraIncludesOTSO === false ? ' · <span class="warn">check totals/spread rules (OT/SO)</span>' : ''}</div>${all}`;
     if (g.jupInGame) return `<div class="betbox nobet"><b>Best bet:</b> game started — in-game prices not compared with the pre-game model.${leans}</div>`;
-    if (e.best) { const b = e.best; return `<div class="betbox bet">✅ <b>BEST BET: ${esc(b.label)}</b> · model ${pct(b.q, 1)} · Jupiter ${cents(b.ask)} (+${(100 * b.fee).toFixed(1)}¢ fee) · EV <b>${evp(b.ev)}</b>${leans}</div>`; }
+    if (e.best) {
+      const b = e.best, more = e.others.length ? `<div style="font-size:12px;margin-top:3px">Also qualifies: ${e.others.map(c => `${esc(c.label)} ${pct(c.q, 1)} @ ${cents(c.ask)} (${evp(c.ev)})`).join(' · ')}</div>` : '';
+      return `<div class="betbox bet">✅ <b>BEST BET: ${esc(b.label)}</b> · model ${pct(b.q, 1)} · Jupiter ${cents(b.ask)} (+${(100 * b.fee).toFixed(1)}¢ fee) · EV <b>${evp(b.ev)}</b>${more}${leans}</div>`;
+    }
     return `<div class="betbox nobet">⛔ <b>NO BET</b> — ${esc(e.reason)}${leans}</div>`;
   }
+
 
   async function getJSON(url, bust = true) {
     const r = await fetch(url + (bust ? (url.includes('?') ? '&' : '?') + 't=' + Date.now() : ''), { cache: 'no-store' });
@@ -304,7 +312,7 @@
       return `<tr><td>${etTime(g.startUTC)}</td><td>${g.away} @ ${g.home}</td><td class="pick">${pickText(g, o)}</td><td>${p.otLabel ? 'OT' : '—'}</td><td>${pct(o.pOT)}</td><td>${fav}</td><td>${jp}</td><td>${jb}</td><td>${o.ea.toFixed(2)}–${o.eh.toFixed(2)}</td><td>${o.mode === 'v4-independent' ? 'v4 (indep.)' : o.mode === 'market' ? 'v3 Market' : '<span style="color:var(--warn)">v3 ratings fallback</span>'}</td><td>${r}</td><td>${e}</td></tr>`;
     }).join('');
     const foot = nf ? `<tr><td colspan="10" class="muted">Graded games: ${nf} · winners right ${wins}/${nf}</td><td><b>Total err</b></td><td><b>${tot}</b></td></tr>` : '';
-    $('sumnote').innerHTML = EDGE_TIP === TIP_V4 ? 'Edge is <b>independent</b>: v4 uses no betting-market input, so a positive EV is a genuine disagreement with Jupiter. Best bet = highest-EV Jupiter side with model &gt; 50% and EV &gt; 0 after fee; otherwise NO BET. Jupiter lists NHL moneylines only (no totals / puck lines), so those are shown as model leans.' : 'Edge is <b>vs a DraftKings-derived model</b> (v3 uses the DraftKings line at full weight), so it mostly measures Jupiter vs DraftKings, not an independent read.';
+    $('sumnote').innerHTML = EDGE_TIP === TIP_V4 ? 'Edge is <b>independent</b>: v4 uses no betting-market input, so a positive EV is a genuine disagreement with Jupiter. Best bet = highest-EV Jupiter side with model &gt; 50% and EV &gt; 0 after fee; otherwise NO BET. Every Jupiter side is checked: moneyline, all O/U lines (2.5–9.5) and all alt puck lines (±1.5 to ±3.5); all settle on the final score incl. OT/SO (shootout winner +1), exactly what the simulator produces.' : 'Edge is <b>vs a DraftKings-derived model</b> (v3 uses the DraftKings line at full weight), so it mostly measures Jupiter vs DraftKings, not an independent read.';
     $('sumtable').innerHTML = `<thead><tr><th>Puck drop</th><th>Game</th><th>Pick</th><th>OT?</th><th>P(OT)</th><th>Win prob</th><th title="Jupiter Predict YES ask per $1 contract (away / home)">Jupiter</th><th title="Bet only if model > 50% and EV after Jupiter fee > 0; highest EV qualifying side">Best bet</th><th>xG</th><th>Inputs</th><th>Result</th><th>Err</th></tr></thead><tbody>${rows}${foot}</tbody>`;
   }
   function copyPicks() {

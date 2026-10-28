@@ -1,4 +1,4 @@
-/* Jupiter Predict (prediction markets on Solana) — NHL game moneyline markets.
+/* Jupiter Predict (prediction markets on Solana) — NHL game markets: moneyline, every totals line and every alt puck line (includeAllMarkets=true).
  * Official API: https://api.jup.ag/prediction/v1 (docs: https://developers.jup.ag/docs/prediction). Keyless reads are
  * allowed (0.5 req/s) and CORS is enabled, so the browser fetches directly. Fallback host: prediction-market-api.jup.ag/api/v1
  * (the same API behind jup.ag). No key, no wallet.
@@ -19,7 +19,7 @@
       try {
         const out = [];
         for (let start = 0; start < 600; start += 100) {
-          const r = await fetch(`${host}/events?category=sports&subcategory=nhl&includeMarkets=true&start=${start}&end=${start + 100}`);
+          const r = await fetch(`${host}/events?category=sports&subcategory=nhl&includeMarkets=true&includeAllMarkets=true&start=${start}&end=${start + 100}`);
           if (!r.ok) throw new Error('Jupiter ' + r.status);
           const j = await r.json();
           out.push(...(j.data || []));
@@ -39,8 +39,20 @@
     if (!m) return null;
     const away = toNHL(m[1]), home = toNHL(m[2]), date = m[3];
     const sides = {};
+    const extra = []; let xr = true;
     for (const mk of e.markets || []) {
-      if (mk.sportsMarketType && mk.sportsMarketType !== 'moneyline') continue;
+      const smt = mk.sportsMarketType;
+      if (smt === 'totals' || smt === 'spreads') {   // every O/U line and alt puck line (one Jupiter market per outcome)
+        const lab = ((mk.marketOptions || [])[0] || {}).label || '', pr = mk.pricing || {};
+        const r = String(mk.rulesPrimary || '').toLowerCase(); xr = xr && /overtime/.test(r) && /shootout/.test(r) && /one goal will be added/.test(r);
+        const it = { type: smt, marketId: mk.marketId, label: lab, status: mk.status, ask: pr.buyYesPriceUsd ? pr.buyYesPriceUsd / 1e6 : null,
+                     bid: pr.sellYesPriceUsd ? pr.sellYesPriceUsd / 1e6 : null, volume: pr.volume };
+        const m2 = smt === 'totals' ? lab.match(/^\s*([OU])\s*([\d.]+)/) : lab.match(/^\s*([A-Za-z]{2,4})\s*([+-][\d.]+)/);
+        if (!m2) continue;
+        if (smt === 'totals') Object.assign(it, { ou: m2[1], line: +m2[2] }); else Object.assign(it, { team: toNHL(m2[1]), line: +m2[2] });
+        extra.push(it); continue;
+      }
+      if (smt && smt !== 'moneyline') continue;
       const t = toNHL(mk.team && mk.team.abbreviation);
       const side = t === away ? 'away' : t === home ? 'home' : null;
       if (!side) continue;
@@ -57,6 +69,7 @@
       eventId: e.eventId, slug, date, away, home, title: e.metadata.title, live: !!e.isLive, active: e.isActive,
       link: `https://jup.ag/prediction/${e.eventId}`, provider: (e.markets && e.markets[0] && e.markets[0].provider) || null,
       includesOTSO: /overtime/i.test(rules) && /shootout/i.test(rules), sides: { away: strip(sides.away), home: strip(sides.home) },
+      extra, extraIncludesOTSO: extra.length ? xr : null,
     };
   }
   const strip = s => s ? (({ rules, ...rest }) => rest)(s) : null;

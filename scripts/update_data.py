@@ -122,7 +122,7 @@ JUP_HOSTS = ['https://api.jup.ag/prediction/v1', 'https://prediction-market-api.
 JUP_AB = {'cal': 'CGY', 'las': 'VGK', 'mon': 'MTL', 'nj': 'NJD', 'sj': 'SJS', 'tb': 'TBL', 'utah': 'UTA', 'la': 'LAK'}
 _JUP = None
 def jupiter_markets():
-    """Jupiter Predict NHL moneyline markets keyed by (date, away, home). Keyless public reads; no wallet."""
+    """Jupiter Predict NHL markets (moneyline + all totals + all alt spreads, includeAllMarkets=true) keyed by (date, away, home)."""
     global _JUP
     if _JUP is not None: return _JUP
     import re
@@ -130,7 +130,7 @@ def jupiter_markets():
     for host in JUP_HOSTS:
         evs, ok = [], True
         for start in range(0, 600, 100):
-            j = get(f'{host}/events?category=sports&subcategory=nhl&includeMarkets=true&start={start}&end={start + 100}')
+            j = get(f'{host}/events?category=sports&subcategory=nhl&includeMarkets=true&includeAllMarkets=true&start={start}&end={start + 100}')
             if j is None: ok = False; break
             evs += j.get('data', [])
             if not (j.get('pagination') or {}).get('hasNext'): break
@@ -141,16 +141,20 @@ def jupiter_markets():
             if not m: continue
             ab = lambda x: JUP_AB.get(x, x.upper())
             A, H, date = ab(m.group(1)), ab(m.group(2)), m.group(3)
-            sides = {}; extra = []
+            sides = {}; extra = []; xr = []
             for mk in e.get('markets') or []:
                 smt = mk.get('sportsMarketType')
-                if smt in ('totals', 'spreads'):   # not listed for NHL as of Oct 2026; parsed generically if Jupiter adds them
-                    pr = mk.get('pricing') or {}; lab = ((mk.get('marketOptions') or [{}])[0] or {}).get('label')
-                    extra.append(dict(type=smt, marketId=mk.get('marketId'), title=mk.get('title'), label=lab, line=mk.get('sportsLine'),
-                                      team=ab(((mk.get('team') or {}).get('abbreviation') or '').lower()) if mk.get('team') else None,
-                                      ask=pr['buyYesPriceUsd'] / 1e6 if pr.get('buyYesPriceUsd') else None,
-                                      bid=pr['sellYesPriceUsd'] / 1e6 if pr.get('sellYesPriceUsd') else None,
-                                      rules=(mk.get('rulesPrimary') or '')[:600]))
+                if smt in ('totals', 'spreads'):   # every O/U line and alt puck line; one Jupiter market per outcome
+                    pr = mk.get('pricing') or {}; lab = ((mk.get('marketOptions') or [{}])[0] or {}).get('label') or ''
+                    r = (mk.get('rulesPrimary') or '').lower(); xr.append('overtime' in r and 'shootout' in r and 'one goal will be added' in r)
+                    it = dict(type=smt, marketId=mk.get('marketId'), label=lab, status=mk.get('status'),
+                              ask=pr['buyYesPriceUsd'] / 1e6 if pr.get('buyYesPriceUsd') else None,
+                              bid=pr['sellYesPriceUsd'] / 1e6 if pr.get('sellYesPriceUsd') else None, volume=pr.get('volume'))
+                    mm = re.match(r'^\s*([OU])\s*([\d.]+)', lab) if smt == 'totals' else re.match(r'^\s*([A-Za-z]{2,4})\s*([+-][\d.]+)', lab)
+                    if not mm: continue
+                    if smt == 'totals': it.update(ou=mm.group(1), line=float(mm.group(2)))
+                    else: it.update(team=ab(mm.group(1).lower()), line=float(mm.group(2)))
+                    extra.append(it)
                     continue
                 if smt not in (None, 'moneyline'): continue
                 t = ab(((mk.get('team') or {}).get('abbreviation') or '').lower())
@@ -166,6 +170,7 @@ def jupiter_markets():
                                       link=f"https://jup.ag/prediction/{e['eventId']}", provider=(e.get('markets') or [{}])[0].get('provider'),
                                       includesOTSO=('overtime' in rules.lower() and 'shootout' in rules.lower()),
                                       sides=dict(away=sides.get('away'), home=sides.get('home')), extra=extra,
+                                      extraIncludesOTSO=all(xr) if xr else None,
                                       fetchedAt=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), host=host)
         print(f'jupiter: {len(_JUP)} NHL game markets via {host}')
         return _JUP

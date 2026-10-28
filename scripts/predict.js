@@ -22,7 +22,7 @@ function predictSlate(date, opts = {}) {
     const o = M.runGameV4(g, { n, seed });
     if (o.n !== n) throw new Error(`sim count mismatch ${o.n} != ${n}`);
     const e = B.evaluate(g, o);
-    if (!['FUT', 'PRE'].includes(g.state)) { e.best = null; e.reason = 'game already started (pre-game prediction shown; no live bet)'; }
+    if (!['FUT', 'PRE'].includes(g.state)) { e.best = null; e.others = []; e.qualifying = 0; e.reason = 'game already started (pre-game prediction shown; no live bet)'; }
     Object.assign(row, {
       sims: o.n, simMs: Math.round(o.simMs), rates: o.rates.map(x => +x.toFixed(4)), xg: [+o.ea.toFixed(3), +o.eh.toFixed(3)],
       pick: { away: o.pick.x, home: o.pick.y, ot: !!o.pick.otLabel, winner: o.pick.winner, pScore: +o.pick.p.toFixed(4) },
@@ -30,6 +30,9 @@ function predictSlate(date, opts = {}) {
       top: o.top.slice(0, 3).map(c => ({ a: c.x, h: c.y, p: +c.p.toFixed(4) })),
       v4goalies: { away: g.v4.goalies.away.name || 'team blend', home: g.v4.goalies.home.name || 'team blend' },
       best: e.best && { type: e.best.type, label: e.best.label, q: +e.best.q.toFixed(4), ask: e.best.ask, fee: +e.best.fee.toFixed(4), ev: +e.best.ev.toFixed(4), edge: +e.best.edge.toFixed(4) },
+      others: (e.others || []).map(c => ({ type: c.type, label: c.label, q: +c.q.toFixed(4), ask: c.ask, ev: +c.ev.toFixed(4) })),
+      qualifying: e.qualifying || 0, sidesChecked: e.cands.length,
+      markets: { ml: e.cands.filter(c => c.type === 'ML').length, totals: e.cands.filter(c => c.type === 'TOTAL').length, puckline: e.cands.filter(c => c.type === 'PUCKLINE').length },
       noBetReason: e.best ? null : e.reason,
       cands: e.cands.map(c => ({ type: c.type, label: c.label, q: +c.q.toFixed(4), ask: c.ask, ev: +c.ev.toFixed(4) })),
       leans: Object.fromEntries(Object.entries(e.leans).map(([k, v]) => [k, +v.toFixed(4)])), jupiterTotals: e.hasTotals, jupiterPuckLine: e.hasPL,
@@ -43,6 +46,7 @@ function predictSlate(date, opts = {}) {
     games.push(row);
   }
   return { date, model: 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
+           priceSource: 'Jupiter Predict API (api.jup.ag/prediction/v1, includeAllMarkets): YES ask per outcome + Jupiter fee 0.07*p*(1-p)',
            jupiterFetchedAt: slate.games.map(g => g.jupiter && g.jupiter.fetchedAt).filter(Boolean).sort().pop() || null, games };
 }
 module.exports = { predictSlate, etDate };

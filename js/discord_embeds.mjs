@@ -19,13 +19,13 @@ export function gameEmbed(g) {
   if (g.best) {
     e.color = GOLD;
     lines.push(`✅ **BEST BET: ${g.best.label}** · model ${pct(g.best.q)} · Jupiter ${cents(g.best.ask)} (+${cents(g.best.fee)} fee) · EV **+${pct(g.best.ev)}**`);
+    if (g.others && g.others.length) lines.push(`Also qualifies: ${g.others.map(c => `${c.label} ${pct(c.q)} @ ${cents(c.ask)} (+${pct(c.ev)})`).join(' · ')}`);
   } else {
     e.color = GREEN;
-    const ml = (g.cands || []).filter(c => c.type === 'ML').map(c => `${c.label.replace(' ML', '')} ${cents(c.ask)} (EV ${c.ev >= 0 ? '+' : ''}${pct(c.ev)})`).join(' · ');
-    lines.push(`⛔ **NO BET** — ${g.noBetReason}${ml ? `\nJupiter ML: ${ml}` : ''}`);
+    lines.push(`⛔ **NO BET** — ${g.noBetReason}`);
   }
-  const L = g.leans;
-  lines.push(`-# O5.5 ${pct(L.o55)} · O6.5 ${pct(L.o65)} · ${g.home} −1.5 ${pct(L.homeM15)} · ${g.away} −1.5 ${pct(L.awayM15)}${g.jupiterTotals || g.jupiterPuckLine ? '' : ' · totals/puck lines not on Jupiter'}`);
+  const L = g.leans, mk = g.markets || {};
+  lines.push(`-# Checked ${g.sidesChecked || 0} Jupiter sides (ML ${mk.ml || 0} · totals ${mk.totals || 0} · puck lines ${mk.puckline || 0}) · model O5.5 ${pct(L.o55)} · O6.5 ${pct(L.o65)} · ${g.home} −1.5 ${pct(L.homeM15)} · ${g.away} −1.5 ${pct(L.awayM15)}`);
   e.description = lines.join('\n');
   if (g.jupiterLink) e.url = g.jupiterLink;
   return e;
@@ -37,7 +37,7 @@ export function payloads(P) {
     title: `🍀 Luck Society NHL — ${P.date}`, url: SITE, color: GOLD, thumbnail: { url: LOGO },
     description: `${P.games.length} games · model **v4-independent** (no Vegas input) · ${(P.sims / 1000).toFixed(0)}k Monte Carlo sims/game\n` +
       `Best bets: **${bets.length}** ${bets.length ? '— ' + bets.map(g => `${g.best.label} (+${pct(g.best.ev)})`).join(', ') : ''}\n` +
-      `-# Rule: bet only if model win prob > 50% AND EV after Jupiter fee > 0. Prices as of ${P.jupiterFetchedAt ? new Date(P.jupiterFetchedAt).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }) + ' ET' : 'n/a'}. Not financial advice.`,
+      `-# Every Jupiter market checked (moneyline, all O/U lines, all alt puck lines; settle on final score incl. OT/SO). Rule: bet only if model prob > 50% AND EV after Jupiter fee > 0. Prices as of ${P.jupiterFetchedAt ? new Date(P.jupiterFetchedAt).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }) + ' ET' : 'n/a'}. Not financial advice.`,
     footer: { text: 'Luck Society · score = min-expected-error pick · OT/SO winner +1' },
   };
   const embeds = [head, ...P.games.map(gameEmbed)];

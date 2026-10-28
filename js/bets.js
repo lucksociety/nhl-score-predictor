@@ -1,5 +1,5 @@
 /* Best-bet engine (shared by the dashboard and the Discord poster).
- * Candidates: Jupiter moneyline sides (+ totals / spreads if Jupiter lists them for the game). Price = ask; fee = 0.07*p*(1-p).
+ * Candidates: every side of every Jupiter market on the game: moneyline, all O/U lines, all alt puck lines. Price = ask; fee = 0.07*p*(1-p).
  * EV per $1 = q/(p+fee) - 1. A side qualifies only if model prob q > 50% AND EV after fee > 0. Best bet = highest-EV qualifier,
  * else NO BET. Jupiter NHL resolution is the final result incl. OT/SO, so q uses the full simulated final score. */
 (function (root) {
@@ -19,14 +19,18 @@
       if (c) cands.push(c);
     }
     for (const x of (j && j.extra) || []) {
-      const lab = String(x.label || x.title || ''); let m;
-      if (x.type === 'totals' && (m = lab.match(/^\s*([OU])\w*\s*([\d.]+)/i))) {
-        const line = +m[2], over = m[1].toUpperCase() === 'O';
-        const q = over ? M.pOver(o.dist, line) : M.pUnder(o.dist, line);
-        if (typeof q === 'number') { const c = cand('TOTAL', `${over ? 'Over' : 'Under'} ${line}`, q, x); if (c) cands.push(c); }
-      } else if (x.type === 'spreads' && (m = lab.match(/([A-Z]{2,4})\s*([+-][\d.]+)/i))) {
-        const t = m[1].toUpperCase(), side = t === g.home ? 'home' : t === g.away ? 'away' : null;
-        if (side) { const c = cand('PUCKLINE', `${g[side]} ${m[2]}`, M.pCover(o.dist, side, +m[2]), x, { side }); if (c) cands.push(c); }
+      if (x.status && x.status !== 'open') continue;
+      let ou = x.ou, line = x.line, team = x.team, m;
+      const lab = String(x.label || x.title || '');
+      if (x.type === 'totals' && !ou && (m = lab.match(/^\s*([OU])\w*\s*([\d.]+)/i))) { ou = m[1].toUpperCase(); line = +m[2]; }
+      if (x.type === 'spreads' && !team && (m = lab.match(/([A-Z]{2,4})\s*([+-][\d.]+)/i))) { team = m[1].toUpperCase(); line = +m[2]; }
+      if (line == null || Number.isInteger(line)) continue;   // half lines only (no pushes)
+      if (x.type === 'totals') {
+        const over = ou === 'O', q = over ? M.pOver(o.dist, line) : M.pUnder(o.dist, line);
+        const c = cand('TOTAL', `${over ? 'Over' : 'Under'} ${line}`, q, x, { line }); if (c) cands.push(c);
+      } else if (x.type === 'spreads') {
+        const side = team === g.home ? 'home' : team === g.away ? 'away' : null;
+        if (side) { const c = cand('PUCKLINE', `${g[side]} ${line > 0 ? '+' : ''}${line}`, M.pCover(o.dist, side, line), x, { side, line }); if (c) cands.push(c); }
       }
     }
     cands.sort((a, b) => b.ev - a.ev);
@@ -43,7 +47,7 @@
       homeM15: M.pCover(o.dist, 'home', -1.5), awayP15: M.pCover(o.dist, 'away', 1.5),
       awayM15: M.pCover(o.dist, 'away', -1.5), homeP15: M.pCover(o.dist, 'home', 1.5),
     };
-    return { best: ok[0] || null, cands, reason, leans, hasTotals: cands.some(c => c.type === 'TOTAL'), hasPL: cands.some(c => c.type === 'PUCKLINE') };
+    return { best: ok[0] || null, others: ok.slice(1, 4), qualifying: ok.length, cands, reason, leans, hasTotals: cands.some(c => c.type === 'TOTAL'), hasPL: cands.some(c => c.type === 'PUCKLINE') };
   }
   const api = { evaluate, fee, MIN_PROB };
   root.NHLBets = api;

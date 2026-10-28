@@ -87,9 +87,12 @@ def annotate(slates, rows):
     """slates: list of day-slate dicts (ascending dates). Adds g['v4'] for every game not yet started; started games keep
     their frozen pre-game v4 (copied by caller from the previous file)."""
     S, b, recs = M.train(rows)
+    # scoring-level recalibration: actual / predicted goals over the last 1000 games (league scoring drifts up; out-of-sample
+    # this never hurt and improved holdout log-likelihood in 2025-26 and 2026-27)
+    tail = recs[-1000:]; calib = sum(f['a'] + f['h'] for f in tail) / sum(sum(M.predict(f, b)) for f in tail)
     through = rows[-1]['date']; bq = float(b[1 + M.FEATS.index('ogq')])
     model = dict(version='v4-independent', trainedThrough=through, trainedAt=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
-                 coef=dict(zip(['b0'] + M.FEATS, [round(float(x), 5) for x in b])), hp=M.HP, scale=M.SCALE, games=len(rows),
+                 coef=dict(zip(['b0'] + M.FEATS, [round(float(x), 5) for x in b])), calib=round(calib, 5), hp=M.HP, scale=M.SCALE, games=len(rows),
                  league=dict(gf=round(S.lg['gf'], 4), xf=round(S.lg['xf'], 4), sf=round(S.lg['sf'], 3)),
                  teams={t: dict(gf=round((s['gf'] + 20 * S.lg['gf']) / (s['w'] + 20), 3), ga=round((s['ga'] + 20 * S.lg['gf']) / (s['w'] + 20), 3),
                                 xf=round((s['xf'] + 20 * S.lg['xf']) / (s['w'] + 20), 3), xa=round((s['xa'] + 20 * S.lg['xf']) / (s['w'] + 20), 3),
@@ -106,14 +109,14 @@ def annotate(slates, rows):
             names = {sd: ((g.get('goalies') or {}).get(sd) or {}).get('name') for sd in ('away', 'home')}
             ids = {sd: match_goalie(S, g[sd], names[sd]) for sd in ('away', 'home')}
             f = S.features(s['date'], g['away'], g['home'], ids['away'], ids['home'], prev_games=[x for x in sched if x[0] > through])
-            la, lh = M.predict(f, b)
+            la, lh = (x * calib for x in M.predict(f, b))
             gk = {}
             for sd, k in (('away', 'a'), ('home', 'h')):
                 mode = f[k + '_gkmode']
                 gk[sd] = dict(name=names[sd] if mode != 'blend' else None, id=ids[sd], gq=round(f[k + '_gq'], 4), mode=mode,
                               table=goalie_table(S, g[sd]))
             g['v4'] = dict(version='v4-independent', la=round(la, 4), lh=round(lh, 4), ra=round(la * M.SCALE, 4), rh=round(lh * M.SCALE, 4),
-                           betaGq=round(bq, 5), goalies=gk, trainedThrough=through,
+                           betaGq=round(bq, 5), calib=round(calib, 4), goalies=gk, trainedThrough=through,
                            rest=dict(away=f['a_rest'], home=f['h_rest']), b2b=dict(away=f['a_b2b'], home=f['h_b2b']), km=dict(away=round(f['a_km']), home=round(f['h_km'])),
                            form=dict(away=dict(gf=round(f['a_gf'], 3), ga=round(f['a_ga'], 3), xf=round(f['a_xf'], 3), xa=round(f['a_xa'], 3)),
                                      home=dict(gf=round(f['h_gf'], 3), ga=round(f['h_ga'], 3), xf=round(f['h_xf'], 3), xa=round(f['h_xa'], 3))),
