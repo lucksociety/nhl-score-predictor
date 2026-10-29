@@ -1,0 +1,20 @@
+{
+  "calibration_proposals": {
+    "v4-independent": {
+      "minimum_days": 30,
+      "minimum_games": 500,
+      "status": "insufficient_forward_sample"
+    }
+  },
+  "forecast_policy": "Last pre-game freeze per event per model version. No retrospectively generated forecast is graded.",
+  "forecasts": 14,
+  "generated_at": "2026-10-29T19:40:57.186168+00:00",
+  "last_successful_refresh": "2026-10-29T19:29:17+00:00",
+  "project": "nhl-score-predictor",
+  "settled_by_version": {
+    "v4-independent": {
+      "n": 0
+    }
+  },
+  "warnings": []
+}
