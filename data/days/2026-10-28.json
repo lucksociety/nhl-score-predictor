@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "generatedAt": "2026-10-29T01:10:25Z",
+ "generatedAt": "2026-10-29T03:48:08Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
@@ -11,8 +11,12 @@
    "awayName": "Philadelphia Flyers",
    "homeName": "Washington Capitals",
    "venue": "Capital One Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    5,
+    "REG"
+   ],
    "espnId": "401892596",
    "odds": {
     "provider": "Draft Kings",
@@ -470,8 +474,12 @@
    "awayName": "Calgary Flames",
    "homeName": "Edmonton Oilers",
    "venue": "Rogers Place",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    0,
+    4,
+    "REG"
+   ],
    "espnId": "401892597",
    "odds": {
     "provider": "Draft Kings",
@@ -936,8 +944,12 @@
    "awayName": "New Jersey Devils",
    "homeName": "Colorado Avalanche",
    "venue": "Ball Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    2,
+    5,
+    "REG"
+   ],
    "espnId": "401892598",
    "odds": {
     "provider": "Draft Kings",
@@ -1402,7 +1414,7 @@
    "awayName": "Toronto Maple Leafs",
    "homeName": "Seattle Kraken",
    "venue": "Climate Pledge Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892599",
    "odds": {
@@ -1423,7 +1435,7 @@
     },
     "home": {
      "name": "Philipp Grubauer",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "jupiter": {
@@ -1849,7 +1861,8 @@
       "xa": 1.048
      }
     },
-    "at": "2026-10-29T01:10:26Z"
+    "at": "2026-10-29T01:10:26Z",
+    "frozen": true
    }
   }
  ]
