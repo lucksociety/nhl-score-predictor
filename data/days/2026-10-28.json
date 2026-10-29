@@ -1,7 +1,7 @@
 {
  "date": "2026-10-28",
- "generatedAt": "2026-10-29T03:48:08Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-10-29T06:08:16Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020199,
@@ -474,7 +474,7 @@
    "awayName": "Calgary Flames",
    "homeName": "Edmonton Oilers",
    "venue": "Rogers Place",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     0,
     4,
@@ -944,7 +944,7 @@
    "awayName": "New Jersey Devils",
    "homeName": "Colorado Avalanche",
    "venue": "Ball Arena",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     2,
     5,
@@ -1414,8 +1414,12 @@
    "awayName": "Toronto Maple Leafs",
    "homeName": "Seattle Kraken",
    "venue": "Climate Pledge Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    5,
+    "REG"
+   ],
    "espnId": "401892599",
    "odds": {
     "provider": "Draft Kings",
