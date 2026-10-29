@@ -60,7 +60,7 @@
 
   async function init() {
     try {
-      const [base, results, index] = await Promise.all([getJSON('data/base_2025_26.json'), getJSON('data/results_2026_27.json'), getJSON('data/index.json').catch(() => null)]);
+      const [base, results, index] = await Promise.all([getJSON('data/base_2025_26.json'), getJSON('data/results_current.json').catch(() => getJSON('data/results_2026_27.json')), getJSON('data/index.json').catch(() => null)]);
       state.base = base.teams; state.results = results; state.index = index;
     } catch (e) { setStatus('<span class="warn">Could not load model data: ' + esc(e.message) + '</span>'); return; }
     const today = etDate();
