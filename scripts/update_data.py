@@ -14,7 +14,9 @@ from zoneinfo import ZoneInfo
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
 ET = ZoneInfo('America/New_York')
-SEASON_START = dt.date(2026, 9, 29)
+def season_start(today):
+    return dt.date(today.year if today.month >= 7 else today.year - 1, 9, 1)
+
 ESPN2NHL = {'LA': 'LAK', 'NJ': 'NJD', 'SJ': 'SJS', 'TB': 'TBL', 'UTAH': 'UTA', 'WAS': 'WSH'}
 
 def get(url, tries=3):
@@ -40,16 +42,17 @@ def write(path, obj):
 
 # ---------------------------------------------------------------- results (for ratings)
 def update_results(today):
-    path = os.path.join(DATA, 'results_2026_27.json')
+    year=season_start(today).year
+    path = os.path.join(DATA, f'results_{year}_{(year+1)%100:02d}.json')
     res = json.load(open(path)) if os.path.exists(path) else []
     by_id = {r['id']: r for r in res}
-    start = SEASON_START
+    start = season_start(today)
     if res:
-        start = max(SEASON_START, dt.date.fromisoformat(max(r['date'] for r in res)) - dt.timedelta(days=3))
+        start = max(season_start(today), dt.date.fromisoformat(max(r['date'] for r in res)) - dt.timedelta(days=3))
     d = start
     while d <= today:
         j = get(f'https://api-web.nhle.com/v1/schedule/{d.isoformat()}')
-        if not j: break
+        if j is None: raise RuntimeError('NHL results feed unavailable; preserving prior published data')
         for day in j.get('gameWeek', []):
             for g in day.get('games', []):
                 if g.get('gameType') != 2 or g.get('gameState') not in ('OFF', 'FINAL'): continue
@@ -60,6 +63,7 @@ def update_results(today):
         d += dt.timedelta(days=7)
     res = sorted(by_id.values(), key=lambda r: (r['date'], r['id']))
     write(path, res)
+    write(os.path.join(DATA, 'results_current.json'), res)
     print(f'results: {len(res)} completed games through {res[-1]["date"] if res else "-"}')
     return res
 
@@ -241,6 +245,7 @@ def main():
         print(f"v4: trained through {m['trainedThrough']} on {m['games']} games")
     except Exception as e:
         import traceback; traceback.print_exc(); print('v4 failed:', e, file=sys.stderr)
+        raise RuntimeError('NHL model refresh failed; refusing to publish stale inputs') from e
     for s in out:
         d = dt.date.fromisoformat(s['date'])
         write(os.path.join(DATA, 'days', f'{d.isoformat()}.json'), s)

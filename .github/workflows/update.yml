@@ -39,11 +39,16 @@ jobs:
         run: |
           node scripts/predict.js "$(TZ=America/New_York date +%F)"
           node scripts/predict.js "$(TZ=America/New_York date -d tomorrow +%F)"
+      - name: Preserve pre-game forecasts before later refreshes replace them
+        run: |
+          python3 scripts/model_learning.py --capture-only
+          mkdir -p learning/captures
+          cp learning/inbox.jsonl "learning/captures/${GITHUB_RUN_ID}.jsonl"
       - name: Commit data if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
+          git add data learning/captures
           if git diff --cached --quiet; then echo "no changes"; else
             git commit -m "data: refresh $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
             git pull --rebase origin main && git push origin HEAD:main
