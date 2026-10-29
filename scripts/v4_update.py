@@ -86,6 +86,7 @@ def goalie_table(S, team):
 def annotate(slates, rows):
     """slates: list of day-slate dicts (ascending dates). Adds g['v4'] for every game not yet started; started games keep
     their frozen pre-game v4 (copied by caller from the previous file)."""
+    rows = sorted(rows, key=lambda r: (r["date"], r["id"]))
     S, b, recs = M.train(rows)
     # scoring-level recalibration: actual / predicted goals over the last 1000 games (league scoring drifts up; out-of-sample
     # this never hurt and improved holdout log-likelihood in 2025-26 and 2026-27)
@@ -104,7 +105,7 @@ def annotate(slates, rows):
             if g.get('v4') and g.get('v4', {}).get('frozen'): continue
             started = g.get('state') not in ('FUT', 'PRE', None)
             if started and g.get('v4'): g['v4']['frozen'] = True; continue
-            if s['date'] <= through and started:   # game already in history; never recompute (would leak its own result)
+            if s['date'] <= through:   # game already in history; never recompute (would leak its own result)
                 continue
             names = {sd: ((g.get('goalies') or {}).get(sd) or {}).get('name') for sd in ('away', 'home')}
             ids = {sd: match_goalie(S, g[sd], names[sd]) for sd in ('away', 'home')}
