@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "generatedAt": "2026-10-28T23:56:55Z",
+ "generatedAt": "2026-10-29T01:10:25Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
@@ -470,7 +470,7 @@
    "awayName": "Calgary Flames",
    "homeName": "Edmonton Oilers",
    "venue": "Rogers Place",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892597",
    "odds": {
@@ -924,7 +924,8 @@
       "xa": 0.964
      }
     },
-    "at": "2026-10-28T23:56:56Z"
+    "at": "2026-10-28T23:56:56Z",
+    "frozen": true
    }
   },
   {
@@ -935,7 +936,7 @@
    "awayName": "New Jersey Devils",
    "homeName": "Colorado Avalanche",
    "venue": "Ball Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892598",
    "odds": {
@@ -1389,7 +1390,8 @@
       "xa": 0.955
      }
     },
-    "at": "2026-10-28T23:56:56Z"
+    "at": "2026-10-28T23:56:56Z",
+    "frozen": true
    }
   },
   {
@@ -1441,7 +1443,7 @@
       "status": "open",
       "ask": 0.55,
       "bid": 0.54,
-      "volume": 189259
+      "volume": 192623
      },
      "home": {
       "marketId": "POLY-5179051-1",
@@ -1449,7 +1451,7 @@
       "status": "open",
       "ask": 0.46,
       "bid": 0.45,
-      "volume": 189259
+      "volume": 192623
      }
     },
     "extra": [
@@ -1459,7 +1461,7 @@
       "label": "O 4.5",
       "status": "open",
       "ask": 0.86,
-      "bid": 0.84,
+      "bid": 0.83,
       "volume": 56,
       "ou": "O",
       "line": 4.5
@@ -1469,7 +1471,7 @@
       "marketId": "POLY-5179052-1",
       "label": "U 4.5",
       "status": "open",
-      "ask": 0.16,
+      "ask": 0.17,
       "bid": 0.14,
       "volume": 56,
       "ou": "U",
@@ -1481,7 +1483,7 @@
       "label": "O 5.5",
       "status": "open",
       "ask": 0.65,
-      "bid": 0.63,
+      "bid": 0.64,
       "volume": 29,
       "ou": "O",
       "line": 5.5
@@ -1491,7 +1493,7 @@
       "marketId": "POLY-5179053-1",
       "label": "U 5.5",
       "status": "open",
-      "ask": 0.37,
+      "ask": 0.36,
       "bid": 0.35,
       "volume": 29,
       "ou": "U",
@@ -1504,7 +1506,7 @@
       "status": "open",
       "ask": 0.53,
       "bid": 0.52,
-      "volume": 12491,
+      "volume": 14373,
       "ou": "O",
       "line": 6.5
      },
@@ -1515,7 +1517,7 @@
       "status": "open",
       "ask": 0.48,
       "bid": 0.47,
-      "volume": 12491,
+      "volume": 14373,
       "ou": "U",
       "line": 6.5
      },
@@ -1568,7 +1570,7 @@
       "marketId": "POLY-6301161-0",
       "label": "SEA -3.5",
       "status": "open",
-      "ask": 0.08,
+      "ask": 0.1,
       "bid": 0.04,
       "volume": 0,
       "team": "SEA",
@@ -1580,7 +1582,7 @@
       "label": "TOR +3.5",
       "status": "open",
       "ask": 0.96,
-      "bid": 0.92,
+      "bid": 0.9,
       "volume": 0,
       "team": "TOR",
       "line": 3.5
@@ -1592,7 +1594,7 @@
       "status": "open",
       "ask": 0.17,
       "bid": 0.16,
-      "volume": 73,
+      "volume": 333,
       "team": "SEA",
       "line": -2.5
      },
@@ -1603,7 +1605,7 @@
       "status": "open",
       "ask": 0.84,
       "bid": 0.83,
-      "volume": 73,
+      "volume": 333,
       "team": "TOR",
       "line": 2.5
      },
@@ -1614,7 +1616,7 @@
       "status": "open",
       "ask": 0.27,
       "bid": 0.26,
-      "volume": 14874,
+      "volume": 15021,
       "team": "SEA",
       "line": -1.5
      },
@@ -1625,7 +1627,7 @@
       "status": "open",
       "ask": 0.74,
       "bid": 0.73,
-      "volume": 14874,
+      "volume": 15021,
       "team": "TOR",
       "line": 1.5
      },
@@ -1679,7 +1681,7 @@
       "label": "O 2.5",
       "status": "open",
       "ask": 0.98,
-      "bid": 0.973,
+      "bid": 0.971,
       "volume": 0,
       "ou": "O",
       "line": 2.5
@@ -1689,7 +1691,7 @@
       "marketId": "POLY-6301166-1",
       "label": "U 2.5",
       "status": "open",
-      "ask": 0.027,
+      "ask": 0.029,
       "bid": 0.02,
       "volume": 0,
       "ou": "U",
@@ -1701,8 +1703,8 @@
       "label": "O 3.5",
       "status": "open",
       "ask": 0.91,
-      "bid": 0.9,
-      "volume": 101,
+      "bid": 0.89,
+      "volume": 784,
       "ou": "O",
       "line": 3.5
      },
@@ -1711,9 +1713,9 @@
       "marketId": "POLY-6301167-1",
       "label": "U 3.5",
       "status": "open",
-      "ask": 0.1,
+      "ask": 0.11,
       "bid": 0.09,
-      "volume": 101,
+      "volume": 784,
       "ou": "U",
       "line": 3.5
      },
@@ -1722,8 +1724,8 @@
       "marketId": "POLY-6301168-0",
       "label": "O 8.5",
       "status": "open",
-      "ask": 0.25,
-      "bid": 0.22,
+      "ask": 0.26,
+      "bid": 0.23,
       "volume": 0,
       "ou": "O",
       "line": 8.5
@@ -1733,8 +1735,8 @@
       "marketId": "POLY-6301168-1",
       "label": "U 8.5",
       "status": "open",
-      "ask": 0.78,
-      "bid": 0.75,
+      "ask": 0.77,
+      "bid": 0.74,
       "volume": 0,
       "ou": "U",
       "line": 8.5
@@ -1763,16 +1765,16 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-10-28T23:56:55Z",
+    "fetchedAt": "2026-10-29T01:10:25Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.5269,
-    "lh": 3.568,
-    "ra": 3.1284,
+    "la": 3.5268,
+    "lh": 3.5681,
+    "ra": 3.1283,
     "rh": 3.1649,
-    "betaGq": 0.41994,
+    "betaGq": 0.42005,
     "calib": 1.0197,
     "goalies": {
      "away": {
@@ -1847,7 +1849,7 @@
       "xa": 1.048
      }
     },
-    "at": "2026-10-28T23:56:56Z"
+    "at": "2026-10-29T01:10:26Z"
    }
   }
  ]
