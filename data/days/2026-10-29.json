@@ -1,7 +1,7 @@
 {
  "date": "2026-10-29",
- "generatedAt": "2026-10-30T01:18:05Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-10-30T03:51:37Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020206,
@@ -11,8 +11,12 @@
    "awayName": "Columbus Blue Jackets",
    "homeName": "Carolina Hurricanes",
    "venue": "Lenovo Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    3,
+    "REG"
+   ],
    "espnId": "401892603",
    "odds": {
     "provider": "Draft Kings",
@@ -470,8 +474,12 @@
    "awayName": "Utah Mammoth",
    "homeName": "Pittsburgh Penguins",
    "venue": "PPG Paints Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    3,
+    "OT"
+   ],
    "espnId": "401892602",
    "odds": {
     "provider": "Draft Kings",
@@ -936,8 +944,12 @@
    "awayName": "Winnipeg Jets",
    "homeName": "Tampa Bay Lightning",
    "venue": "Benchmark International Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    6,
+    "REG"
+   ],
    "espnId": "401892601",
    "odds": {
     "provider": "Draft Kings",
@@ -1402,8 +1414,12 @@
    "awayName": "Chicago Blackhawks",
    "homeName": "Detroit Red Wings",
    "venue": "Little Caesars Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    4,
+    "REG"
+   ],
    "espnId": "401892600",
    "odds": {
     "provider": "Draft Kings",
@@ -1868,8 +1884,12 @@
    "awayName": "Boston Bruins",
    "homeName": "St. Louis Blues",
    "venue": "Enterprise Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    4,
+    "REG"
+   ],
    "espnId": "401892604",
    "odds": {
     "provider": "Draft Kings",
@@ -2327,8 +2347,12 @@
    "awayName": "Montr\u00e9al Canadiens",
    "homeName": "Dallas Stars",
    "venue": "American Airlines Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    5,
+    2,
+    "REG"
+   ],
    "espnId": "401892606",
    "odds": {
     "provider": "Draft Kings",
@@ -2786,8 +2810,12 @@
    "awayName": "New York Islanders",
    "homeName": "Minnesota Wild",
    "venue": "Grand Casino Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    3,
+    "OT"
+   ],
    "espnId": "401892607",
    "odds": {
     "provider": "Draft Kings",
@@ -3245,8 +3273,12 @@
    "awayName": "Washington Capitals",
    "homeName": "Nashville Predators",
    "venue": "Bridgestone Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    3,
+    "REG"
+   ],
    "espnId": "401892605",
    "odds": {
     "provider": "Draft Kings",
@@ -3711,7 +3743,7 @@
    "awayName": "Buffalo Sabres",
    "homeName": "Anaheim Ducks",
    "venue": "Honda Center",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892608",
    "odds": {
@@ -3728,11 +3760,11 @@
    "goalies": {
     "away": {
      "name": "Colten Ellis",
-     "status": "Expected"
+     "status": "Confirmed"
     },
     "home": {
-     "name": "Lukas Dostal",
-     "status": "Expected"
+     "name": "Ville Husso",
+     "status": "Confirmed"
     }
    },
    "jupiter": {
@@ -4158,7 +4190,8 @@
       "xa": 1.062
      }
     },
-    "at": "2026-10-30T01:18:05Z"
+    "at": "2026-10-30T01:18:05Z",
+    "frozen": true
    }
   },
   {
@@ -4169,7 +4202,7 @@
    "awayName": "Ottawa Senators",
    "homeName": "Los Angeles Kings",
    "venue": "Crypto.com Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892609",
    "odds": {
@@ -4623,7 +4656,8 @@
       "xa": 0.981
      }
     },
-    "at": "2026-10-30T01:18:05Z"
+    "at": "2026-10-30T01:18:05Z",
+    "frozen": true
    }
   },
   {
@@ -4634,7 +4668,7 @@
    "awayName": "Vancouver Canucks",
    "homeName": "San Jose Sharks",
    "venue": "SAP Center at San Jose",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892610",
    "odds": {
@@ -5081,7 +5115,8 @@
       "xa": 1.086
      }
     },
-    "at": "2026-10-30T01:18:05Z"
+    "at": "2026-10-30T01:18:05Z",
+    "frozen": true
    }
   }
  ]
