@@ -1,0 +1,1182 @@
+{
+ "date": "2026-11-01",
+ "generatedAt": "2026-10-31T06:04:08Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
+ "games": [
+  {
+   "id": 2026020227,
+   "startUTC": "2026-11-01T18:00:00Z",
+   "away": "WPG",
+   "home": "CAR",
+   "awayName": "Winnipeg Jets",
+   "homeName": "Carolina Hurricanes",
+   "venue": "Lenovo Center",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892624",
+   "odds": null,
+   "goalies": {
+    "away": {
+     "name": "Stuart Skinner",
+     "status": "Expected"
+    },
+    "home": {
+     "name": "Pyotr Kochetkov",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1137734",
+    "slug": "nhl-wpg-car-2026-11-01",
+    "date": "2026-11-01",
+    "away": "WPG",
+    "home": "CAR",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1137734",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5329746-0",
+      "title": "Jets",
+      "status": "open",
+      "ask": 0.29,
+      "bid": 0.28,
+      "volume": 2066
+     },
+     "home": {
+      "marketId": "POLY-5329746-1",
+      "title": "Hurricanes",
+      "status": "open",
+      "ask": 0.72,
+      "bid": 0.71,
+      "volume": 2066
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5329747-0",
+      "label": "O 4.5",
+      "status": "open",
+      "ask": 0.82,
+      "bid": 0.73,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329747-1",
+      "label": "U 4.5",
+      "status": "open",
+      "ask": 0.27,
+      "bid": 0.18,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329748-0",
+      "label": "O 5.5",
+      "status": "open",
+      "ask": 0.58,
+      "bid": 0.52,
+      "volume": 0,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329748-1",
+      "label": "U 5.5",
+      "status": "open",
+      "ask": 0.48,
+      "bid": 0.42,
+      "volume": 0,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329749-0",
+      "label": "O 6.5",
+      "status": "open",
+      "ask": 0.47,
+      "bid": 0.41,
+      "volume": 0,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329749-1",
+      "label": "U 6.5",
+      "status": "open",
+      "ask": 0.59,
+      "bid": 0.53,
+      "volume": 0,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329750-0",
+      "label": "O 7.5",
+      "status": "open",
+      "ask": 0.28,
+      "bid": 0.24,
+      "volume": 0,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329750-1",
+      "label": "U 7.5",
+      "status": "open",
+      "ask": 0.76,
+      "bid": 0.72,
+      "volume": 0,
+      "ou": "U",
+      "line": 7.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-10-31T06:04:07Z",
+    "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.373,
+    "lh": 3.971,
+    "ra": 2.1049,
+    "rh": 3.5223,
+    "betaGq": 0.42303,
+    "calib": 1.0223,
+    "goalies": {
+     "away": {
+      "name": "Stuart Skinner",
+      "id": 8479973,
+      "gq": -0.0822,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8479973,
+        "name": "S. Skinner",
+        "gq": -0.0822,
+        "share": 0.551,
+        "shots": 2756
+       },
+       {
+        "id": 8483532,
+        "name": "C. Stevenson",
+        "gq": -0.015,
+        "share": 0.237,
+        "shots": 197
+       },
+       {
+        "id": 8482076,
+        "name": "N. Daws",
+        "gq": -0.0333,
+        "share": 0.158,
+        "shots": 547
+       },
+       {
+        "id": 8476945,
+        "name": "C. Hellebuyck",
+        "gq": -0.1653,
+        "share": 0.037,
+        "shots": 3388
+       }
+      ]
+     },
+     "home": {
+      "name": "Pyotr Kochetkov",
+      "id": 8481611,
+      "gq": -0.0828,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8481611,
+        "name": "P. Kochetkov",
+        "gq": -0.0828,
+        "share": 0.691,
+        "shots": 1405
+       },
+       {
+        "id": 8483548,
+        "name": "B. Bussi",
+        "gq": 0.0047,
+        "share": 0.289,
+        "shots": 786
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-30",
+    "rest": {
+     "away": 2,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1083,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.908,
+      "ga": 1.041,
+      "xf": 0.967,
+      "xa": 1.035
+     },
+     "home": {
+      "gf": 1.099,
+      "ga": 0.906,
+      "xf": 1.108,
+      "xa": 0.91
+     }
+    },
+    "at": "2026-10-31T06:04:09Z"
+   }
+  },
+  {
+   "id": 2026020228,
+   "startUTC": "2026-11-01T20:30:00Z",
+   "away": "MIN",
+   "home": "WSH",
+   "awayName": "Minnesota Wild",
+   "homeName": "Washington Capitals",
+   "venue": "Capital One Arena",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892625",
+   "odds": null,
+   "goalies": {
+    "away": {
+     "name": "Jesper Wallstedt",
+     "status": "Expected"
+    },
+    "home": {
+     "name": "Charlie Lindgren",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1137735",
+    "slug": "nhl-min-wsh-2026-11-01",
+    "date": "2026-11-01",
+    "away": "MIN",
+    "home": "WSH",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1137735",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5329751-0",
+      "title": "Wild",
+      "status": "open",
+      "ask": 0.53,
+      "bid": 0.52,
+      "volume": 271
+     },
+     "home": {
+      "marketId": "POLY-5329751-1",
+      "title": "Capitals",
+      "status": "open",
+      "ask": 0.48,
+      "bid": 0.47,
+      "volume": 271
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5329752-0",
+      "label": "O 4.5",
+      "status": "open",
+      "ask": 0.83,
+      "bid": 0.75,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329752-1",
+      "label": "U 4.5",
+      "status": "open",
+      "ask": 0.25,
+      "bid": 0.17,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329753-0",
+      "label": "O 5.5",
+      "status": "open",
+      "ask": 0.61,
+      "bid": 0.55,
+      "volume": 0,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329753-1",
+      "label": "U 5.5",
+      "status": "open",
+      "ask": 0.45,
+      "bid": 0.39,
+      "volume": 0,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329754-0",
+      "label": "O 6.5",
+      "status": "open",
+      "ask": 0.5,
+      "bid": 0.46,
+      "volume": 0,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329754-1",
+      "label": "U 6.5",
+      "status": "open",
+      "ask": 0.54,
+      "bid": 0.5,
+      "volume": 0,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329755-0",
+      "label": "O 7.5",
+      "status": "open",
+      "ask": 0.3,
+      "bid": 0.25,
+      "volume": 5,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329755-1",
+      "label": "U 7.5",
+      "status": "open",
+      "ask": 0.75,
+      "bid": 0.7,
+      "volume": 5,
+      "ou": "U",
+      "line": 7.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-10-31T06:04:07Z",
+    "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.5115,
+    "lh": 3.1714,
+    "ra": 3.1147,
+    "rh": 2.8131,
+    "betaGq": 0.42303,
+    "calib": 1.0223,
+    "goalies": {
+     "away": {
+      "name": "Jesper Wallstedt",
+      "id": 8482661,
+      "gq": -0.0717,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8482661,
+        "name": "J. Wallstedt",
+        "gq": -0.0717,
+        "share": 0.821,
+        "shots": 1104
+       },
+       {
+        "id": 8475717,
+        "name": "C. Pickard",
+        "gq": 0.0144,
+        "share": 0.156,
+        "shots": 956
+       }
+      ]
+     },
+     "home": {
+      "name": "Charlie Lindgren",
+      "id": 8479292,
+      "gq": -0.0391,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8480313,
+        "name": "L. Thompson",
+        "gq": -0.1641,
+        "share": 0.598,
+        "shots": 2725
+       },
+       {
+        "id": 8479292,
+        "name": "C. Lindgren",
+        "gq": -0.0391,
+        "share": 0.389,
+        "shots": 1726
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-30",
+    "rest": {
+     "away": 3,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1487,
+     "home": 912
+    },
+    "form": {
+     "away": {
+      "gf": 1.019,
+      "ga": 0.916,
+      "xf": 1.106,
+      "xa": 0.943
+     },
+     "home": {
+      "gf": 1.054,
+      "ga": 0.993,
+      "xf": 1.044,
+      "xa": 1.031
+     }
+    },
+    "at": "2026-10-31T06:04:09Z"
+   }
+  },
+  {
+   "id": 2026020229,
+   "startUTC": "2026-11-01T21:00:00Z",
+   "away": "UTA",
+   "home": "PHI",
+   "awayName": "Utah Mammoth",
+   "homeName": "Philadelphia Flyers",
+   "venue": "Xfinity Mobile Arena",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892626",
+   "odds": null,
+   "goalies": {
+    "away": {
+     "name": "Karel Vejmelka",
+     "status": "Expected"
+    },
+    "home": {
+     "name": "Dan Vladar",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1137736",
+    "slug": "nhl-utah-phi-2026-11-01",
+    "date": "2026-11-01",
+    "away": "UTA",
+    "home": "PHI",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1137736",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5329756-0",
+      "title": "Utah",
+      "status": "open",
+      "ask": 0.61,
+      "bid": 0.6,
+      "volume": 131
+     },
+     "home": {
+      "marketId": "POLY-5329756-1",
+      "title": "Flyers",
+      "status": "open",
+      "ask": 0.4,
+      "bid": 0.39,
+      "volume": 131
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5329757-0",
+      "label": "O 4.5",
+      "status": "open",
+      "ask": 0.83,
+      "bid": 0.73,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329757-1",
+      "label": "U 4.5",
+      "status": "open",
+      "ask": 0.27,
+      "bid": 0.17,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329758-0",
+      "label": "O 5.5",
+      "status": "open",
+      "ask": 0.57,
+      "bid": 0.54,
+      "volume": 0,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329758-1",
+      "label": "U 5.5",
+      "status": "open",
+      "ask": 0.46,
+      "bid": 0.43,
+      "volume": 0,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329759-0",
+      "label": "O 6.5",
+      "status": "open",
+      "ask": 0.46,
+      "bid": 0.41,
+      "volume": 0,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329759-1",
+      "label": "U 6.5",
+      "status": "open",
+      "ask": 0.59,
+      "bid": 0.54,
+      "volume": 0,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329760-0",
+      "label": "O 7.5",
+      "status": "open",
+      "ask": 0.27,
+      "bid": 0.24,
+      "volume": 0,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329760-1",
+      "label": "U 7.5",
+      "status": "open",
+      "ask": 0.76,
+      "bid": 0.73,
+      "volume": 0,
+      "ou": "U",
+      "line": 7.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-10-31T06:04:07Z",
+    "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.4252,
+    "lh": 2.7541,
+    "ra": 3.0382,
+    "rh": 2.4429,
+    "betaGq": 0.42303,
+    "calib": 1.0223,
+    "goalies": {
+     "away": {
+      "name": "Karel Vejmelka",
+      "id": 8478872,
+      "gq": -0.0725,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8478872,
+        "name": "K. Vejmelka",
+        "gq": -0.0725,
+        "share": 0.69,
+        "shots": 3193
+       },
+       {
+        "id": 8482657,
+        "name": "S. Cossa",
+        "gq": 0.0383,
+        "share": 0.3,
+        "shots": 91
+       }
+      ]
+     },
+     "home": {
+      "name": "Dan Vladar",
+      "id": 8478435,
+      "gq": -0.056,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8479361,
+        "name": "J. Woll",
+        "gq": -0.1076,
+        "share": 0.526,
+        "shots": 2035
+       },
+       {
+        "id": 8478435,
+        "name": "D. Vladar",
+        "gq": -0.056,
+        "share": 0.461,
+        "shots": 1959
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-30",
+    "rest": {
+     "away": 3,
+     "home": 4
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 414,
+     "home": 194
+    },
+    "form": {
+     "away": {
+      "gf": 1.069,
+      "ga": 1.025,
+      "xf": 1.05,
+      "xa": 0.955
+     },
+     "home": {
+      "gf": 0.887,
+      "ga": 1.007,
+      "xf": 0.935,
+      "xa": 1.021
+     }
+    },
+    "at": "2026-10-31T06:04:09Z"
+   }
+  },
+  {
+   "id": 2026020230,
+   "startUTC": "2026-11-01T23:00:00Z",
+   "away": "EDM",
+   "home": "NYR",
+   "awayName": "Edmonton Oilers",
+   "homeName": "New York Rangers",
+   "venue": "Madison Square Garden",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892627",
+   "odds": null,
+   "goalies": {
+    "away": {
+     "name": "Matt Tomkins",
+     "status": "Expected"
+    },
+    "home": {
+     "name": "Dylan Garand",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1137737",
+    "slug": "nhl-edm-nyr-2026-11-01",
+    "date": "2026-11-01",
+    "away": "EDM",
+    "home": "NYR",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1137737",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5329761-0",
+      "title": "Oilers",
+      "status": "open",
+      "ask": 0.48,
+      "bid": 0.46,
+      "volume": 7416
+     },
+     "home": {
+      "marketId": "POLY-5329761-1",
+      "title": "Rangers",
+      "status": "open",
+      "ask": 0.54,
+      "bid": 0.52,
+      "volume": 7416
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5329762-0",
+      "label": "O 4.5",
+      "status": "open",
+      "ask": 0.94,
+      "bid": 0.68,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329762-1",
+      "label": "U 4.5",
+      "status": "open",
+      "ask": 0.32,
+      "bid": 0.06,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329763-0",
+      "label": "O 5.5",
+      "status": "open",
+      "ask": 0.65,
+      "bid": 0.57,
+      "volume": 0,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329763-1",
+      "label": "U 5.5",
+      "status": "open",
+      "ask": 0.43,
+      "bid": 0.35,
+      "volume": 0,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329764-0",
+      "label": "O 6.5",
+      "status": "open",
+      "ask": 0.54,
+      "bid": 0.46,
+      "volume": 0,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329764-1",
+      "label": "U 6.5",
+      "status": "open",
+      "ask": 0.54,
+      "bid": 0.46,
+      "volume": 0,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329765-0",
+      "label": "O 7.5",
+      "status": "open",
+      "ask": 0.32,
+      "bid": 0.27,
+      "volume": 0,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329765-1",
+      "label": "U 7.5",
+      "status": "open",
+      "ask": 0.73,
+      "bid": 0.68,
+      "volume": 0,
+      "ou": "U",
+      "line": 7.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-10-31T06:04:07Z",
+    "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.0457,
+    "lh": 3.3254,
+    "ra": 2.7015,
+    "rh": 2.9496,
+    "betaGq": 0.42303,
+    "calib": 1.0223,
+    "goalies": {
+     "away": {
+      "name": "Matt Tomkins",
+      "id": 8477035,
+      "gq": -0.0063,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8477465,
+        "name": "T. Jarry",
+        "gq": -0.0263,
+        "share": 0.56,
+        "shots": 2308
+       },
+       {
+        "id": 8482221,
+        "name": "D. Levi",
+        "gq": -0.0269,
+        "share": 0.388,
+        "shots": 602
+       },
+       {
+        "id": 8478971,
+        "name": "C. Ingram",
+        "gq": -0.0339,
+        "share": 0.052,
+        "shots": 1554
+       }
+      ]
+     },
+     "home": {
+      "name": "Dylan Garand",
+      "id": 8482193,
+      "gq": -0.0516,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8482193,
+        "name": "D. Garand",
+        "gq": -0.0516,
+        "share": 0.646,
+        "shots": 295
+       },
+       {
+        "id": 8478048,
+        "name": "I. Shesterkin",
+        "gq": -0.1916,
+        "share": 0.183,
+        "shots": 3201
+       },
+       {
+        "id": 8473503,
+        "name": "J. Reimer",
+        "gq": -0.0348,
+        "share": 0.158,
+        "shots": 1348
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-30",
+    "rest": {
+     "away": 1,
+     "home": 5
+    },
+    "b2b": {
+     "away": 1,
+     "home": 0
+    },
+    "km": {
+     "away": 34,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.12,
+      "ga": 1.01,
+      "xf": 1.003,
+      "xa": 0.957
+     },
+     "home": {
+      "gf": 1.007,
+      "ga": 1.003,
+      "xf": 0.995,
+      "xa": 1.003
+     }
+    },
+    "at": "2026-10-31T06:04:09Z"
+   }
+  },
+  {
+   "id": 2026020231,
+   "startUTC": "2026-11-02T01:00:00Z",
+   "away": "OTT",
+   "home": "ANA",
+   "awayName": "Ottawa Senators",
+   "homeName": "Anaheim Ducks",
+   "venue": "Honda Center",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892628",
+   "odds": null,
+   "goalies": {
+    "away": {
+     "name": "Jonas Johansson",
+     "status": "Expected"
+    },
+    "home": {
+     "name": "Lukas Dostal",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1137738",
+    "slug": "nhl-ott-ana-2026-11-01",
+    "date": "2026-11-01",
+    "away": "OTT",
+    "home": "ANA",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1137738",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5329766-0",
+      "title": "Senators",
+      "status": "open",
+      "ask": 0.51,
+      "bid": 0.46,
+      "volume": 1321
+     },
+     "home": {
+      "marketId": "POLY-5329766-1",
+      "title": "Ducks",
+      "status": "open",
+      "ask": 0.54,
+      "bid": 0.49,
+      "volume": 1321
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5329767-0",
+      "label": "O 4.5",
+      "status": "open",
+      "ask": 0.86,
+      "bid": 0.76,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329767-1",
+      "label": "U 4.5",
+      "status": "open",
+      "ask": 0.24,
+      "bid": 0.14,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329768-0",
+      "label": "O 5.5",
+      "status": "open",
+      "ask": 0.78,
+      "bid": 0.46,
+      "volume": 0,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329768-1",
+      "label": "U 5.5",
+      "status": "open",
+      "ask": 0.54,
+      "bid": 0.22,
+      "volume": 0,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329769-0",
+      "label": "O 6.5",
+      "status": "open",
+      "ask": 0.52,
+      "bid": 0.45,
+      "volume": 0,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329769-1",
+      "label": "U 6.5",
+      "status": "open",
+      "ask": 0.55,
+      "bid": 0.48,
+      "volume": 0,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329770-0",
+      "label": "O 7.5",
+      "status": "open",
+      "ask": 0.44,
+      "bid": 0.17,
+      "volume": 0,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5329770-1",
+      "label": "U 7.5",
+      "status": "open",
+      "ask": 0.83,
+      "bid": 0.56,
+      "volume": 0,
+      "ou": "U",
+      "line": 7.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-10-31T06:04:07Z",
+    "host": "https://api.jup.ag/prediction/v1"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.1405,
+    "lh": 3.5186,
+    "ra": 2.7856,
+    "rh": 3.121,
+    "betaGq": 0.42303,
+    "calib": 1.0223,
+    "goalies": {
+     "away": {
+      "name": "Jonas Johansson",
+      "id": 8477992,
+      "gq": 0.0192,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8477992,
+        "name": "J. Johansson",
+        "gq": 0.0192,
+        "share": 0.407,
+        "shots": 1132
+       },
+       {
+        "id": 8476999,
+        "name": "L. Ullmark",
+        "gq": -0.1081,
+        "share": 0.399,
+        "shots": 2578
+       },
+       {
+        "id": 8481035,
+        "name": "S. Ersson",
+        "gq": 0.0542,
+        "share": 0.174,
+        "shots": 1701
+       }
+      ]
+     },
+     "home": {
+      "name": "Lukas Dostal",
+      "id": 8480843,
+      "gq": -0.0592,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8480843,
+        "name": "L. Dostal",
+        "gq": -0.0592,
+        "share": 0.606,
+        "shots": 2728
+       },
+       {
+        "id": 8478024,
+        "name": "V. Husso",
+        "gq": -0.0073,
+        "share": 0.394,
+        "shots": 1441
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-10-30",
+    "rest": {
+     "away": 1,
+     "home": 3
+    },
+    "b2b": {
+     "away": 1,
+     "home": 0
+    },
+    "km": {
+     "away": 535,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.014,
+      "ga": 0.995,
+      "xf": 1.024,
+      "xa": 0.979
+     },
+     "home": {
+      "gf": 1.03,
+      "ga": 1.109,
+      "xf": 1.024,
+      "xa": 1.061
+     }
+    },
+    "at": "2026-10-31T06:04:09Z"
+   }
+  }
+ ]
+}
