@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "generatedAt": "2026-10-31T00:58:59Z",
+ "generatedAt": "2026-10-31T03:34:45Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -11,7 +11,7 @@
    "awayName": "New Jersey Devils",
    "homeName": "Vegas Golden Knights",
    "venue": "T-Mobile Arena",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     5,
     2,
@@ -481,8 +481,12 @@
    "awayName": "Winnipeg Jets",
    "homeName": "Florida Panthers",
    "venue": "Amerant Bank Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    5,
+    "REG"
+   ],
    "espnId": "401892612",
    "odds": {
     "provider": "Draft Kings",
@@ -961,8 +965,12 @@
    "awayName": "Seattle Kraken",
    "homeName": "Calgary Flames",
    "venue": "Scotiabank Saddledome",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    6,
+    "REG"
+   ],
    "espnId": "401892613",
    "odds": {
     "provider": "DraftKings",
