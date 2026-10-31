@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "generatedAt": "2026-10-30T23:31:46Z",
+ "generatedAt": "2026-10-31T00:58:59Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -11,8 +11,12 @@
    "awayName": "New Jersey Devils",
    "homeName": "Vegas Golden Knights",
    "venue": "T-Mobile Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    5,
+    2,
+    "REG"
+   ],
    "espnId": "401892611",
    "odds": {
     "provider": "Draft Kings",
@@ -957,7 +961,7 @@
    "awayName": "Seattle Kraken",
    "homeName": "Calgary Flames",
    "venue": "Scotiabank Saddledome",
-   "state": "PRE",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892613",
    "odds": {
@@ -974,7 +978,7 @@
    "goalies": {
     "away": {
      "name": "Philipp Grubauer",
-     "status": "Expected"
+     "status": "Confirmed"
     },
     "home": {
      "name": "Dustin Wolf",
@@ -1404,7 +1408,8 @@
       "xa": 1.036
      }
     },
-    "at": "2026-10-30T23:31:47Z"
+    "at": "2026-10-30T23:31:47Z",
+    "frozen": true
    }
   }
  ]
