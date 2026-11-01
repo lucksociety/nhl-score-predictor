@@ -40,14 +40,16 @@
     cands.sort((a, b) => b.ev - a.ev);
     const start = Date.parse(g.startUTC);
     const pregame = Number.isFinite(start) && now < start && ['FUT', 'PRE'].includes(g.state) && !j?.live && j?.active !== false;
-    const ok = pregame ? cands.filter(c => c.executable && c.q > MIN_PROB && c.ev > 0) : [];
+    for (const c of cands) c.monteCarloSE = Number.isFinite(o.n) && o.n > 0 ? Math.sqrt(c.q * (1 - c.q) / o.n) : Infinity;
+    // This only bounds numerical sampling noise; it does not claim the model itself is calibrated.
+    const ok = pregame ? cands.filter(c => c.executable && c.q > MIN_PROB && c.ev > 0 && c.edge > 1.96 * c.monteCarloSE) : [];
     let reason = null;
     if (!ok.length) {
       if (!pregame) reason = 'game started, market live, or start unavailable — no pregame bet';
       else if (!cands.length) reason = 'no Jupiter market';
       else if (!cands.some(c => c.executable)) reason = 'no open two-sided quote within 10¢ with traded volume';
       else if (!cands.some(c => c.q > MIN_PROB)) reason = 'no side above 50%';
-      else reason = 'no positive edge after fees on the >50% side';
+      else reason = 'no >50% side with positive edge after fees outside Monte Carlo sampling noise';
     }
     // model leans on standard lines (no Jupiter price -> informational only, never a bet)
     const leans = {

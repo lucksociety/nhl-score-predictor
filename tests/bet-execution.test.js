@@ -3,7 +3,7 @@ const B = require('../js/bets');
 const now = Date.parse('2026-11-01T17:00:00Z');
 const base = () => ({ away: 'SEA', home: 'CGY', startUTC: '2026-11-01T18:00:00Z', state: 'FUT',
   jupiter: { active: true, live: false, sides: { away: { ask: .5, bid: .49, status: 'open', volume: 1000 } } } });
-const o = { pAway: .6, pHome: .4, dist: { tot: [1], mar: [1] } };
+const o = { n: 400000, pAway: .6, pHome: .4, dist: { tot: [1], mar: [1] } };
 const evaluate = g => B.evaluate(g, o, { now });
 assert(evaluate(base()).best);
 for (const mod of [
@@ -14,6 +14,8 @@ for (const mod of [
   g => { g.startUTC = null; }, g => { g.state = 'LIVE'; }
 ]) { const g = base(); mod(g); assert.equal(evaluate(g).best, null); }
 assert.equal(B.evaluate(base(), { ...o, pAway: .5 }, { now }).best, null);
+assert.equal(B.evaluate(base(), { ...o, pAway: .5176 }, { now }).best, null, '0.01pp edge is below 400k-sim sampling uncertainty');
+assert.equal(B.evaluate(base(), { ...o, n: undefined }, { now }).best, null, 'unverified simulation count must fail closed');
 (async () => {
   const { payloads } = await import('../js/discord_embeds.mjs');
   const best = { label: 'STALE_SELECTION', q: .6, ask: .5, ev: .1 };
