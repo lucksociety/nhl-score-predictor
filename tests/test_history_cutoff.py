@@ -35,3 +35,32 @@ def test_stale_future_feed_never_gets_rates_from_later_history(monkeypatch, tmp_
     U.annotate([{"date":"2026-01-01", "games":games}], [{"date":"2026-01-02", "id":1}])
     assert "v4" not in games[0]
     assert games[1]["v4"] == frozen
+
+
+def test_early_final_preserves_evening_coverage_without_same_day_leakage(monkeypatch, tmp_path):
+    import v4_update as U
+    import numpy as np
+    from datetime import datetime, timezone
+    class State:
+        lg = {"gf":3., "xf":3., "sf":30.}
+        T = {}
+        teamgk = {}
+        def features(self,*args,**kwargs):
+            f={}
+            for s in ('a','h'):
+                for k in ['rest','b2b','km','gf','ga','xf','xa']:f[s+'_'+k]=1.
+                f[s+'_gkmode']='blend';f[s+'_gq']=0.
+            return f
+    seen=[]
+    def train(rows):
+        seen.append([r['date']for r in rows]);return State(),np.zeros(1+len(M.FEATS)),[{'a':3,'h':3}]
+    monkeypatch.setattr(U,'DATA',str(tmp_path));(tmp_path/'v4').mkdir()
+    monkeypatch.setattr(M,'train',train);monkeypatch.setattr(M,'predict',lambda f,b:(3.,3.))
+    rows=[{'date':'2026-10-31','id':1},{'date':'2026-11-01','id':2}]
+    def game(start):return {'state':'FUT','away':'BOS','home':'TOR','startUTC':start}
+    late=game('2026-11-01T23:00:00Z');late2=game('2026-11-02T01:00:00Z');tomorrow=game('2026-11-02T23:00:00Z')
+    U.annotate([{'date':'2026-11-01','games':[late,late2]},{'date':'2026-11-02','games':[tomorrow]}],rows,now=datetime(2026,11,1,20,tzinfo=timezone.utc))
+    assert late['v4']['trainedThrough']=='2026-10-31'
+    assert late2['v4']['trainedThrough']=='2026-10-31'
+    assert tomorrow['v4']['trainedThrough']=='2026-11-01'
+    assert seen==[['2026-10-31','2026-11-01'],['2026-10-31']], 'one strict refit per date, reused for all remaining games'
