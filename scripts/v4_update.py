@@ -83,7 +83,7 @@ def goalie_table(S, team):
     return [dict(id=g, name=S.gkname.get(g, ''), gq=round(S.gq(g), 4), share=round(w / tot, 3), shots=round(S.GK.get(g, [0, 0, 0])[2]))
             for g, w in sorted(m.items(), key=lambda x: -x[1]) if w / tot >= 0.03]
 
-def annotate(slates, rows):
+def annotate(slates, rows, now=None):
     """slates: list of day-slate dicts (ascending dates). Adds g['v4'] for every game not yet started; started games keep
     their frozen pre-game v4 (copied by caller from the previous file)."""
     rows = sorted(rows, key=lambda r: (r["date"], r["id"]))
@@ -100,16 +100,36 @@ def annotate(slates, rows):
                                 goalies=goalie_table(S, t)) for t, s in sorted(S.T.items()) if t in M.ARENA and t != 'ARI'})
     json.dump(model, open(os.path.join(DATA, 'v4', 'model.json'), 'w'), indent=1)
     sched = [(s['date'], g['away'], g['home']) for s in slates for g in s['games']]
+    now = now or dt.datetime.now(dt.timezone.utc)
+    base_fit = (S, b, calib, through, bq)
+    date_fits = {}
     for s in slates:
         for g in s['games']:
             if g.get('v4') and g.get('v4', {}).get('frozen'): continue
-            started = g.get('state') not in ('FUT', 'PRE', None)
+            try:
+                start = dt.datetime.fromisoformat(g.get('startUTC', '').replace('Z', '+00:00'))
+                start_valid = start.tzinfo is not None
+            except (ValueError, TypeError):
+                start_valid = False
+            started = g.get('state') not in ('FUT', 'PRE', None) or not start_valid or now >= start
             if started and g.get('v4'): g['v4']['frozen'] = True; continue
-            if s['date'] <= through:   # game already in history; never recompute (would leak its own result)
-                continue
+            if started: continue
+            if s['date'] <= through:
+                # An early final must not erase coverage of the evening games. Refit on dates strictly
+                # before this slate; never borrow the current full fit, which now includes same-day results.
+                if s['date'] not in date_fits:
+                    past = [r for r in rows if r['date'] < s['date']]
+                    if not past: continue
+                    state, coef, records = M.train(past)
+                    tail = records[-1000:]
+                    adjustment = sum(f['a'] + f['h'] for f in tail) / sum(sum(M.predict(f, coef)) for f in tail)
+                    date_fits[s['date']] = (state, coef, adjustment, past[-1]['date'], float(coef[1 + M.FEATS.index('ogq')]))
+                S, b, calib, fit_through, bq = date_fits[s['date']]
+            else:
+                S, b, calib, fit_through, bq = base_fit
             names = {sd: ((g.get('goalies') or {}).get(sd) or {}).get('name') for sd in ('away', 'home')}
             ids = {sd: match_goalie(S, g[sd], names[sd]) for sd in ('away', 'home')}
-            f = S.features(s['date'], g['away'], g['home'], ids['away'], ids['home'], prev_games=[x for x in sched if x[0] > through])
+            f = S.features(s['date'], g['away'], g['home'], ids['away'], ids['home'], prev_games=[x for x in sched if x[0] > fit_through])
             la, lh = (x * calib for x in M.predict(f, b))
             gk = {}
             for sd, k in (('away', 'a'), ('home', 'h')):
@@ -117,7 +137,7 @@ def annotate(slates, rows):
                 gk[sd] = dict(name=names[sd] if mode != 'blend' else None, id=ids[sd], gq=round(f[k + '_gq'], 4), mode=mode,
                               table=goalie_table(S, g[sd]))
             g['v4'] = dict(version='v4-independent', la=round(la, 4), lh=round(lh, 4), ra=round(la * M.SCALE, 4), rh=round(lh * M.SCALE, 4),
-                           betaGq=round(bq, 5), calib=round(calib, 4), goalies=gk, trainedThrough=through,
+                           betaGq=round(bq, 5), calib=round(calib, 4), goalies=gk, trainedThrough=fit_through,
                            rest=dict(away=f['a_rest'], home=f['h_rest']), b2b=dict(away=f['a_b2b'], home=f['h_b2b']), km=dict(away=round(f['a_km']), home=round(f['h_km'])),
                            form=dict(away=dict(gf=round(f['a_gf'], 3), ga=round(f['a_ga'], 3), xf=round(f['a_xf'], 3), xa=round(f['a_xa'], 3)),
                                      home=dict(gf=round(f['h_gf'], 3), ga=round(f['h_ga'], 3), xf=round(f['h_xf'], 3), xa=round(f['h_xa'], 3))),
