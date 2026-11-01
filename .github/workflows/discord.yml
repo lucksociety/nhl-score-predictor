@@ -74,6 +74,15 @@ jobs:
           F="data/predictions/$SLATE_DATE.json"
           if [ "$DRY_RUN" = "true" ]; then node scripts/discord_post.js "$F" --dry-run | head -c 1500; echo; echo "dry run: nothing posted"; exit 0; fi
           if [ "$MODE" = "webhook" ]; then node scripts/discord_post.js "$F" --webhook; else node scripts/discord_post.js "$F"; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nhl-model-${{ github.run_id }}
+          path: |
+            data/predictions/${{ env.SLATE_DATE }}.json
+            out/discord.json
+          retention-days: 90
+          if-no-files-found: warn
       - name: Report failure to Discord
         if: failure() && env.MODE == 'interaction' && env.DRY_RUN != 'true'
         run: |

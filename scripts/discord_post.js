@@ -22,6 +22,8 @@ if (require.main === module) (async () => {
   ({ payloads } = await import('../js/discord_embeds.mjs'));
   const P = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
   const msgs = payloads(P);
+  fs.mkdirSync('out', { recursive: true });
+  fs.writeFileSync('out/discord.json', JSON.stringify(msgs));
   for (const m of msgs) { const n = JSON.stringify(m.embeds).length; if (n > 6000 * 1.3) console.error('warning: large message', n); }
   if (process.argv.includes('--dry-run')) { console.log(JSON.stringify(msgs, null, 1)); process.exit(0); }
   const E = process.env, wh = E.DISCORD_WEBHOOK_URL;

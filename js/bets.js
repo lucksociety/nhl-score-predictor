@@ -6,13 +6,17 @@
   const M = root.NHLModel || (typeof require !== 'undefined' ? require('./model.js') : null);
   const fee = p => 0.07 * p * (1 - p);
   const MIN_PROB = 0.5;
+  const MAX_SPREAD = 0.10;
   function cand(type, label, q, x, extra) {
-    if (!x || !x.ask || q == null) return null;
+    if (!x || !Number.isFinite(q) || q < 0 || q > 1) return null;
     const p = x.ask, f = fee(p);
-    return Object.assign({ type, label, q, ask: p, fee: f, cost: p + f, edge: q - (p + f), ev: q / (p + f) - 1, marketId: x.marketId }, extra || {});
+    if (!Number.isFinite(p) || p <= 0 || p >= 1) return null;
+    const executable = (!x.status || x.status === 'open') && Number.isFinite(x.bid) && x.bid > 0 && x.bid <= p && p - x.bid <= MAX_SPREAD + 1e-9 && Number.isFinite(Number(x.volume)) && Number(x.volume) > 0;
+    return Object.assign({ type, label, q, ask: p, bid: x.bid, volume: x.volume, executable,
+      fee: f, cost: p + f, edge: q - (p + f), ev: q / (p + f) - 1, marketId: x.marketId }, extra || {});
   }
   /** o = runGameV4 output (needs o.dist); g = game with g.jupiter (sides + optional extra); returns {best, cands, reason, leans} */
-  function evaluate(g, o) {
+  function evaluate(g, o, { now = Date.now() } = {}) {
     const j = g.jupiter, cands = [];
     if (j && j.sides) for (const s of ['away', 'home']) {
       const c = cand('ML', `${g[s]} ML`, s === 'home' ? o.pHome : o.pAway, j.sides[s], { side: s });
@@ -34,10 +38,14 @@
       }
     }
     cands.sort((a, b) => b.ev - a.ev);
-    const ok = cands.filter(c => c.q > MIN_PROB && c.ev > 0);
+    const start = Date.parse(g.startUTC);
+    const pregame = Number.isFinite(start) && now < start && ['FUT', 'PRE'].includes(g.state) && !j?.live && j?.active !== false;
+    const ok = pregame ? cands.filter(c => c.executable && c.q > MIN_PROB && c.ev > 0) : [];
     let reason = null;
     if (!ok.length) {
-      if (!cands.length) reason = 'no Jupiter market';
+      if (!pregame) reason = 'game started, market live, or start unavailable — no pregame bet';
+      else if (!cands.length) reason = 'no Jupiter market';
+      else if (!cands.some(c => c.executable)) reason = 'no open two-sided quote within 10¢ with traded volume';
       else if (!cands.some(c => c.q > MIN_PROB)) reason = 'no side above 50%';
       else reason = 'no positive edge after fees on the >50% side';
     }
