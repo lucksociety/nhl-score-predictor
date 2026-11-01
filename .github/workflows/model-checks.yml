@@ -22,6 +22,7 @@ jobs:
         run: |
           python -m pytest -q tests
           node cloudflare/test.mjs
+          node tests/bet-execution.test.js
       - name: Prospective evaluation regressions
         run: python3 -m unittest discover -s scripts -p test_model_learning.py
       - name: Evergreen data and reconciliation regressions

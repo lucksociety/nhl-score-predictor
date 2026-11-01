@@ -32,6 +32,9 @@ export function gameEmbed(g) {
 }
 
 export function payloads(P) {
+  // Refresh the clock after simulation/network work; a stale PRE flag is insufficient.
+  P = { ...P, games: P.games.map(g => !Number.isFinite(Date.parse(g.start)) || Date.now() >= Date.parse(g.start)
+    ? { ...g, best: null, others: [], noBetReason: 'scheduled start passed or unavailable — no pregame bet' } : g) };
   const bets = P.games.filter(g => g.best);
   const head = {
     title: `🍀 Luck Society NHL — ${P.date}`, url: SITE, color: GOLD, thumbnail: { url: LOGO },
