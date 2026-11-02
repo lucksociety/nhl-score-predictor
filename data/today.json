@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "generatedAt": "2026-11-02T02:13:24Z",
+ "generatedAt": "2026-11-02T03:45:59Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -1807,8 +1807,12 @@
    "awayName": "Ottawa Senators",
    "homeName": "Anaheim Ducks",
    "venue": "Honda Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    3,
+    6,
+    "REG"
+   ],
    "espnId": "401892628",
    "odds": {
     "provider": "DraftKings",
