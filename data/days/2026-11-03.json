@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generatedAt": "2026-11-02T06:34:41Z",
+ "generatedAt": "2026-11-02T11:56:12Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
  "games": [
   {
@@ -126,7 +126,7 @@
       "label": "O 7.5",
       "status": "open",
       "ask": 0.36,
-      "bid": 0.14,
+      "bid": 0.26,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -136,7 +136,7 @@
       "marketId": "POLY-5406752-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.86,
+      "ask": 0.74,
       "bid": 0.64,
       "volume": 0,
       "ou": "U",
@@ -144,15 +144,15 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.1725,
-    "lh": 3.0339,
-    "ra": 2.814,
-    "rh": 2.6911,
+    "la": 3.172,
+    "lh": 3.0335,
+    "ra": 2.8136,
+    "rh": 2.6907,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
@@ -225,10 +225,10 @@
       "gf": 0.916,
       "ga": 1.001,
       "xf": 0.959,
-      "xa": 1.016
+      "xa": 1.015
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -268,17 +268,17 @@
       "marketId": "POLY-5406728-0",
       "title": "Stars",
       "status": "open",
-      "ask": 0.51,
-      "bid": 0.5,
-      "volume": 35
+      "ask": 0.5,
+      "bid": 0.49,
+      "volume": 218
      },
      "home": {
       "marketId": "POLY-5406728-1",
       "title": "Capitals",
       "status": "open",
-      "ask": 0.5,
-      "bid": 0.49,
-      "volume": 35
+      "ask": 0.51,
+      "bid": 0.5,
+      "volume": 218
      }
     },
     "extra": [
@@ -309,9 +309,9 @@
       "marketId": "POLY-5406732-0",
       "label": "O 5.5",
       "status": "open",
-      "ask": 0.6,
+      "ask": 0.56,
       "bid": 0.5,
-      "volume": 0,
+      "volume": 79,
       "ou": "O",
       "line": 5.5
      },
@@ -321,8 +321,8 @@
       "label": "U 5.5",
       "status": "open",
       "ask": 0.5,
-      "bid": 0.4,
-      "volume": 0,
+      "bid": 0.44,
+      "volume": 79,
       "ou": "U",
       "line": 5.5
      },
@@ -372,15 +372,15 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.0077,
-    "lh": 2.9198,
-    "ra": 2.6678,
-    "rh": 2.5899,
+    "la": 3.014,
+    "lh": 2.9187,
+    "ra": 2.6734,
+    "rh": 2.5889,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
@@ -409,13 +409,13 @@
      "home": {
       "name": "Logan Thompson",
       "id": 8480313,
-      "gq": -0.1605,
+      "gq": -0.1616,
       "mode": "named",
       "table": [
        {
         "id": 8480313,
         "name": "L. Thompson",
-        "gq": -0.1605,
+        "gq": -0.1616,
         "share": 0.663,
         "shots": 2753
        },
@@ -452,11 +452,11 @@
      "home": {
       "gf": 1.033,
       "ga": 1.009,
-      "xf": 1.041,
-      "xa": 1.03
+      "xf": 1.04,
+      "xa": 1.034
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -496,17 +496,17 @@
       "marketId": "POLY-5406757-0",
       "title": "Red Wings",
       "status": "open",
-      "ask": 0.33,
-      "bid": 0.32,
-      "volume": 655
+      "ask": 0.32,
+      "bid": 0.31,
+      "volume": 847
      },
      "home": {
       "marketId": "POLY-5406757-1",
       "title": "Lightning",
       "status": "open",
-      "ask": 0.68,
-      "bid": 0.67,
-      "volume": 655
+      "ask": 0.69,
+      "bid": 0.68,
+      "volume": 847
      }
     },
     "extra": [
@@ -537,7 +537,7 @@
       "marketId": "POLY-5406762-0",
       "label": "O 5.5",
       "status": "open",
-      "ask": 0.6,
+      "ask": 0.74,
       "bid": 0.54,
       "volume": 0,
       "ou": "O",
@@ -549,7 +549,7 @@
       "label": "U 5.5",
       "status": "open",
       "ask": 0.46,
-      "bid": 0.4,
+      "bid": 0.26,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -581,9 +581,9 @@
       "marketId": "POLY-5406766-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.44,
-      "bid": 0.31,
-      "volume": 0,
+      "ask": 0.3,
+      "bid": 0.11,
+      "volume": 15,
       "ou": "O",
       "line": 7.5
      },
@@ -592,23 +592,23 @@
       "marketId": "POLY-5406766-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.69,
-      "bid": 0.56,
-      "volume": 0,
+      "ask": 0.89,
+      "bid": 0.7,
+      "volume": 15,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.6091,
-    "lh": 3.626,
-    "ra": 2.3143,
-    "rh": 3.2163,
+    "la": 2.6088,
+    "lh": 3.6255,
+    "ra": 2.314,
+    "rh": 3.2158,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
@@ -687,11 +687,11 @@
      "home": {
       "gf": 1.086,
       "ga": 1.009,
-      "xf": 1.068,
+      "xf": 1.067,
       "xa": 0.97
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -731,16 +731,16 @@
       "marketId": "POLY-5406799-0",
       "title": "Wild",
       "status": "open",
-      "ask": 0.63,
-      "bid": 0.62,
+      "ask": 0.62,
+      "bid": 0.61,
       "volume": 82
      },
      "home": {
       "marketId": "POLY-5406799-1",
       "title": "Flyers",
       "status": "open",
-      "ask": 0.38,
-      "bid": 0.37,
+      "ask": 0.39,
+      "bid": 0.38,
       "volume": 82
      }
     },
@@ -794,8 +794,8 @@
       "marketId": "POLY-5406806-0",
       "label": "O 6.5",
       "status": "open",
-      "ask": 0.45,
-      "bid": 0.39,
+      "ask": 0.47,
+      "bid": 0.38,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -805,8 +805,8 @@
       "marketId": "POLY-5406806-1",
       "label": "U 6.5",
       "status": "open",
-      "ask": 0.61,
-      "bid": 0.55,
+      "ask": 0.62,
+      "bid": 0.53,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -817,7 +817,7 @@
       "label": "O 7.5",
       "status": "open",
       "ask": 0.34,
-      "bid": 0.07,
+      "bid": 0.24,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -827,7 +827,7 @@
       "marketId": "POLY-5406807-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.93,
+      "ask": 0.76,
       "bid": 0.66,
       "volume": 0,
       "ou": "U",
@@ -835,28 +835,28 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.3998,
-    "lh": 2.6985,
-    "ra": 3.0156,
-    "rh": 2.3936,
+    "la": 3.421,
+    "lh": 2.7021,
+    "ra": 3.0345,
+    "rh": 2.3968,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
      "away": {
       "name": "Jesper Wallstedt",
       "id": 8482661,
-      "gq": -0.0823,
+      "gq": -0.082,
       "mode": "named",
       "table": [
        {
         "id": 8482661,
         "name": "J. Wallstedt",
-        "gq": -0.0823,
+        "gq": -0.082,
         "share": 0.849,
         "shots": 1131
        },
@@ -878,7 +878,7 @@
        {
         "id": 8478435,
         "name": "D. Vladar",
-        "gq": -0.0538,
+        "gq": -0.0564,
         "share": 0.545,
         "shots": 1981
        },
@@ -909,17 +909,17 @@
      "away": {
       "gf": 1.033,
       "ga": 0.902,
-      "xf": 1.103,
+      "xf": 1.106,
       "xa": 0.944
      },
      "home": {
       "gf": 0.914,
       "ga": 1.005,
-      "xf": 0.931,
-      "xa": 1.014
+      "xf": 0.934,
+      "xa": 1.02
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -1045,7 +1045,7 @@
       "label": "O 7.5",
       "status": "open",
       "ask": 0.41,
-      "bid": 0.1,
+      "bid": 0.31,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -1055,7 +1055,7 @@
       "marketId": "POLY-5406818-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.9,
+      "ask": 0.69,
       "bid": 0.59,
       "volume": 0,
       "ou": "U",
@@ -1063,15 +1063,15 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.0953,
-    "lh": 3.0817,
-    "ra": 2.7455,
-    "rh": 2.7334,
+    "la": 3.1053,
+    "lh": 3.0686,
+    "ra": 2.7544,
+    "rh": 2.7218,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
@@ -1106,7 +1106,7 @@
        {
         "id": 8482193,
         "name": "D. Garand",
-        "gq": -0.0491,
+        "gq": -0.0538,
         "share": 0.702,
         "shots": 319
        },
@@ -1150,11 +1150,11 @@
      "home": {
       "gf": 0.988,
       "ga": 1.01,
-      "xf": 0.995,
-      "xa": 1.0
+      "xf": 0.987,
+      "xa": 1.004
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -1194,17 +1194,17 @@
       "marketId": "POLY-5406771-0",
       "title": "Utah",
       "status": "open",
-      "ask": 0.56,
-      "bid": 0.55,
-      "volume": 29
+      "ask": 0.55,
+      "bid": 0.54,
+      "volume": 35
      },
      "home": {
       "marketId": "POLY-5406771-1",
       "title": "Maple Leafs",
       "status": "open",
-      "ask": 0.45,
-      "bid": 0.44,
-      "volume": 29
+      "ask": 0.46,
+      "bid": 0.45,
+      "volume": 35
      }
     },
     "extra": [
@@ -1257,7 +1257,7 @@
       "marketId": "POLY-5406777-0",
       "label": "O 6.5",
       "status": "open",
-      "ask": 0.73,
+      "ask": 0.72,
       "bid": 0.42,
       "volume": 0,
       "ou": "O",
@@ -1269,7 +1269,7 @@
       "label": "U 6.5",
       "status": "open",
       "ask": 0.58,
-      "bid": 0.27,
+      "bid": 0.28,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -1279,7 +1279,7 @@
       "marketId": "POLY-5406779-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.51,
+      "ask": 0.41,
       "bid": 0.31,
       "volume": 0,
       "ou": "O",
@@ -1291,35 +1291,35 @@
       "label": "U 7.5",
       "status": "open",
       "ask": 0.69,
-      "bid": 0.49,
+      "bid": 0.59,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.6046,
-    "lh": 3.241,
-    "ra": 3.1973,
-    "rh": 2.8747,
+    "la": 3.6157,
+    "lh": 3.2472,
+    "ra": 3.2071,
+    "rh": 2.8803,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
      "away": {
       "name": "Karel Vejmelka",
       "id": 8478872,
-      "gq": -0.0658,
+      "gq": -0.0667,
       "mode": "named",
       "table": [
        {
         "id": 8478872,
         "name": "K. Vejmelka",
-        "gq": -0.0658,
+        "gq": -0.0667,
         "share": 0.738,
         "shots": 3213
        },
@@ -1372,17 +1372,17 @@
      "away": {
       "gf": 1.065,
       "ga": 1.047,
-      "xf": 1.042,
-      "xa": 0.95
+      "xf": 1.048,
+      "xa": 0.953
      },
      "home": {
       "gf": 1.068,
       "ga": 1.056,
       "xf": 0.981,
-      "xa": 1.052
+      "xa": 1.051
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -1424,7 +1424,7 @@
       "status": "open",
       "ask": 0.49,
       "bid": 0.48,
-      "volume": 102
+      "volume": 107
      },
      "home": {
       "marketId": "POLY-5406786-1",
@@ -1432,7 +1432,7 @@
       "status": "open",
       "ask": 0.52,
       "bid": 0.51,
-      "volume": 102
+      "volume": 107
      }
     },
     "extra": [
@@ -1464,7 +1464,7 @@
       "label": "O 5.5",
       "status": "open",
       "ask": 0.66,
-      "bid": 0.61,
+      "bid": 0.58,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -1474,7 +1474,7 @@
       "marketId": "POLY-5406790-1",
       "label": "U 5.5",
       "status": "open",
-      "ask": 0.39,
+      "ask": 0.42,
       "bid": 0.34,
       "volume": 0,
       "ou": "U",
@@ -1508,7 +1508,7 @@
       "label": "O 7.5",
       "status": "open",
       "ask": 0.41,
-      "bid": 0.31,
+      "bid": 0.16,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -1518,7 +1518,7 @@
       "marketId": "POLY-5406795-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.69,
+      "ask": 0.84,
       "bid": 0.59,
       "volume": 0,
       "ou": "U",
@@ -1526,15 +1526,15 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.2372,
-    "lh": 3.3193,
-    "ra": 2.8714,
-    "rh": 2.9442,
+    "la": 3.2368,
+    "lh": 3.3189,
+    "ra": 2.871,
+    "rh": 2.9438,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
@@ -1583,7 +1583,7 @@
        {
         "id": 8479973,
         "name": "S. Skinner",
-        "gq": -0.0734,
+        "gq": -0.0751,
         "share": 0.033,
         "shots": 2773
        }
@@ -1607,7 +1607,7 @@
      "away": {
       "gf": 1.04,
       "ga": 0.974,
-      "xf": 1.023,
+      "xf": 1.022,
       "xa": 0.933
      },
      "home": {
@@ -1617,7 +1617,7 @@
       "xa": 1.048
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -1659,7 +1659,7 @@
       "status": "open",
       "ask": 0.38,
       "bid": 0.37,
-      "volume": 4224
+      "volume": 5696
      },
      "home": {
       "marketId": "POLY-5406831-1",
@@ -1667,7 +1667,7 @@
       "status": "open",
       "ask": 0.63,
       "bid": 0.62,
-      "volume": 4224
+      "volume": 5696
      }
     },
     "extra": [
@@ -1743,7 +1743,7 @@
       "label": "O 7.5",
       "status": "open",
       "ask": 0.36,
-      "bid": 0.07,
+      "bid": 0.26,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -1753,7 +1753,7 @@
       "marketId": "POLY-5406839-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.93,
+      "ask": 0.74,
       "bid": 0.64,
       "volume": 0,
       "ou": "U",
@@ -1761,35 +1761,35 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.7854,
-    "lh": 3.6689,
-    "ra": 2.4707,
-    "rh": 3.2543,
+    "la": 2.7848,
+    "lh": 3.6936,
+    "ra": 2.4701,
+    "rh": 3.2763,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
      "away": {
       "name": "Stuart Skinner",
       "id": 8479973,
-      "gq": -0.0734,
+      "gq": -0.0751,
       "mode": "named",
       "table": [
        {
         "id": 8479973,
         "name": "S. Skinner",
-        "gq": -0.0734,
+        "gq": -0.0751,
         "share": 0.621,
         "shots": 2773
        },
        {
         "id": 8483532,
         "name": "C. Stevenson",
-        "gq": -0.012,
+        "gq": -0.0177,
         "share": 0.2,
         "shots": 212
        },
@@ -1850,7 +1850,7 @@
       "gf": 0.886,
       "ga": 1.071,
       "xf": 0.964,
-      "xa": 1.039
+      "xa": 1.049
      },
      "home": {
       "gf": 1.035,
@@ -1859,7 +1859,7 @@
       "xa": 1.031
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -1899,17 +1899,17 @@
       "marketId": "POLY-5406820-0",
       "title": "Oilers",
       "status": "open",
-      "ask": 0.4,
-      "bid": 0.39,
-      "volume": 19189
+      "ask": 0.41,
+      "bid": 0.4,
+      "volume": 25399
      },
      "home": {
       "marketId": "POLY-5406820-1",
       "title": "Devils",
       "status": "open",
-      "ask": 0.61,
-      "bid": 0.6,
-      "volume": 19189
+      "ask": 0.6,
+      "bid": 0.59,
+      "volume": 25399
      }
     },
     "extra": [
@@ -1940,8 +1940,8 @@
       "marketId": "POLY-5406823-0",
       "label": "O 5.5",
       "status": "open",
-      "ask": 0.64,
-      "bid": 0.58,
+      "ask": 0.66,
+      "bid": 0.56,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -1951,8 +1951,8 @@
       "marketId": "POLY-5406823-1",
       "label": "U 5.5",
       "status": "open",
-      "ask": 0.42,
-      "bid": 0.36,
+      "ask": 0.44,
+      "bid": 0.34,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -1984,7 +1984,7 @@
       "marketId": "POLY-5406825-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.45,
+      "ask": 0.41,
       "bid": 0.31,
       "volume": 0,
       "ou": "O",
@@ -1996,22 +1996,22 @@
       "label": "U 7.5",
       "status": "open",
       "ask": 0.69,
-      "bid": 0.55,
+      "bid": 0.59,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.8522,
-    "lh": 3.3836,
-    "ra": 2.5299,
-    "rh": 3.0013,
+    "la": 2.8586,
+    "lh": 3.3624,
+    "ra": 2.5355,
+    "rh": 2.9825,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
@@ -2038,7 +2038,7 @@
        {
         "id": 8477035,
         "name": "M. Tomkins",
-        "gq": -0.0309,
+        "gq": -0.0205,
         "share": 0.157,
         "shots": 91
        },
@@ -2098,8 +2098,8 @@
      "away": {
       "gf": 1.125,
       "ga": 0.967,
-      "xf": 1.002,
-      "xa": 0.953
+      "xf": 1.006,
+      "xa": 0.945
      },
      "home": {
       "gf": 1.025,
@@ -2108,7 +2108,7 @@
       "xa": 0.925
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -2150,7 +2150,7 @@
       "status": "open",
       "ask": 0.68,
       "bid": 0.67,
-      "volume": 103
+      "volume": 901
      },
      "home": {
       "marketId": "POLY-5406845-1",
@@ -2158,7 +2158,7 @@
       "status": "open",
       "ask": 0.33,
       "bid": 0.32,
-      "volume": 103
+      "volume": 901
      }
     },
     "extra": [
@@ -2189,7 +2189,7 @@
       "marketId": "POLY-5406849-0",
       "label": "O 5.5",
       "status": "open",
-      "ask": 0.6,
+      "ask": 0.61,
       "bid": 0.52,
       "volume": 0,
       "ou": "O",
@@ -2201,7 +2201,7 @@
       "label": "U 5.5",
       "status": "open",
       "ask": 0.48,
-      "bid": 0.4,
+      "bid": 0.39,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -2234,7 +2234,7 @@
       "label": "O 7.5",
       "status": "open",
       "ask": 0.34,
-      "bid": 0.15,
+      "bid": 0.24,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -2244,7 +2244,7 @@
       "marketId": "POLY-5406853-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.85,
+      "ask": 0.76,
       "bid": 0.66,
       "volume": 0,
       "ou": "U",
@@ -2252,28 +2252,28 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.768,
-    "lh": 2.7118,
-    "ra": 3.3422,
-    "rh": 2.4053,
+    "la": 3.7861,
+    "lh": 2.7111,
+    "ra": 3.3583,
+    "rh": 2.4048,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
      "away": {
       "name": "Pyotr Kochetkov",
       "id": 8481611,
-      "gq": -0.0956,
+      "gq": -0.0955,
       "mode": "named",
       "table": [
        {
         "id": 8481611,
         "name": "P. Kochetkov",
-        "gq": -0.0956,
+        "gq": -0.0955,
         "share": 0.739,
         "shots": 1431
        },
@@ -2333,17 +2333,17 @@
      "away": {
       "gf": 1.127,
       "ga": 0.884,
-      "xf": 1.107,
-      "xa": 0.912
+      "xf": 1.117,
+      "xa": 0.911
      },
      "home": {
       "gf": 0.984,
       "ga": 1.01,
-      "xf": 0.998,
+      "xf": 0.997,
       "xa": 1.027
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   },
   {
@@ -2446,8 +2446,8 @@
       "marketId": "POLY-5406865-0",
       "label": "O 6.5",
       "status": "open",
-      "ask": 0.72,
-      "bid": 0.46,
+      "ask": 0.57,
+      "bid": 0.52,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -2457,8 +2457,8 @@
       "marketId": "POLY-5406865-1",
       "label": "U 6.5",
       "status": "open",
-      "ask": 0.54,
-      "bid": 0.28,
+      "ask": 0.48,
+      "bid": 0.43,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -2468,7 +2468,7 @@
       "marketId": "POLY-5406867-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.5,
+      "ask": 0.41,
       "bid": 0.31,
       "volume": 0,
       "ou": "O",
@@ -2480,22 +2480,22 @@
       "label": "U 7.5",
       "status": "open",
       "ask": 0.69,
-      "bid": 0.5,
+      "bid": 0.59,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-02T06:34:39Z",
+    "fetchedAt": "2026-11-02T11:56:10Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.902,
-    "lh": 3.2017,
-    "ra": 3.4611,
-    "rh": 2.8399,
+    "la": 3.8843,
+    "lh": 3.2101,
+    "ra": 3.4453,
+    "rh": 2.8473,
     "betaGq": 0.41769,
     "calib": 1.0263,
     "goalies": {
@@ -2522,7 +2522,7 @@
        {
         "id": 8476316,
         "name": "L. Brossoit",
-        "gq": -0.0501,
+        "gq": -0.0539,
         "share": 0.158,
         "shots": 427
        }
@@ -2568,8 +2568,8 @@
      "away": {
       "gf": 1.052,
       "ga": 1.103,
-      "xf": 1.028,
-      "xa": 1.054
+      "xf": 1.02,
+      "xa": 1.058
      },
      "home": {
       "gf": 0.946,
@@ -2578,7 +2578,7 @@
       "xa": 1.108
      }
     },
-    "at": "2026-11-02T06:34:42Z"
+    "at": "2026-11-02T11:56:33Z"
    }
   }
  ]
