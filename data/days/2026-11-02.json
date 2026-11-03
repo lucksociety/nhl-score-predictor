@@ -1,7 +1,7 @@
 {
  "date": "2026-11-02",
- "generatedAt": "2026-11-03T03:02:10Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-11-03T03:53:28Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020233,
@@ -495,7 +495,7 @@
    "awayName": "Vegas Golden Knights",
    "homeName": "Boston Bruins",
    "venue": "TD Garden",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     2,
     3,
@@ -958,8 +958,12 @@
    "awayName": "Colorado Avalanche",
    "homeName": "Chicago Blackhawks",
    "venue": "United Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    5,
+    2,
+    "REG"
+   ],
    "espnId": "401892631",
    "odds": {
     "provider": "Draft Kings",
