@@ -1,7 +1,7 @@
 {
  "date": "2026-11-04",
- "generatedAt": "2026-11-03T07:04:18Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
+ "generatedAt": "2026-11-03T20:27:57Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020248,
@@ -14,7 +14,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892645",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "FLA -250",
+    "mlAway": 205.0,
+    "mlHome": -250.0,
+    "total": 5.5,
+    "over": -135.0,
+    "under": 114.0,
+    "mlAwayOpen": 205.0,
+    "mlHomeOpen": -250.0
+   },
    "goalies": {
     "away": {
      "name": "Spencer Knight",
@@ -42,7 +52,7 @@
       "status": "open",
       "ask": 0.31,
       "bid": 0.3,
-      "volume": 0
+      "volume": 496
      },
      "home": {
       "marketId": "POLY-5431618-1",
@@ -50,7 +60,7 @@
       "status": "open",
       "ask": 0.7,
       "bid": 0.69,
-      "volume": 0
+      "volume": 496
      }
     },
     "extra": [
@@ -59,8 +69,8 @@
       "marketId": "POLY-5431619-0",
       "label": "O 4.5",
       "status": "open",
-      "ask": 0.89,
-      "bid": 0.6,
+      "ask": 0.8,
+      "bid": 0.76,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -70,8 +80,8 @@
       "marketId": "POLY-5431619-1",
       "label": "U 4.5",
       "status": "open",
-      "ask": 0.4,
-      "bid": 0.11,
+      "ask": 0.24,
+      "bid": 0.2,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -81,8 +91,8 @@
       "marketId": "POLY-5431620-0",
       "label": "O 5.5",
       "status": "open",
-      "ask": 0.6,
-      "bid": 0.5,
+      "ask": 0.57,
+      "bid": 0.53,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -92,8 +102,8 @@
       "marketId": "POLY-5431620-1",
       "label": "U 5.5",
       "status": "open",
-      "ask": 0.5,
-      "bid": 0.4,
+      "ask": 0.47,
+      "bid": 0.43,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -103,8 +113,8 @@
       "marketId": "POLY-5431621-0",
       "label": "O 6.5",
       "status": "open",
-      "ask": 0.59,
-      "bid": 0.27,
+      "ask": 0.46,
+      "bid": 0.42,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -114,8 +124,8 @@
       "marketId": "POLY-5431621-1",
       "label": "U 6.5",
       "status": "open",
-      "ask": 0.73,
-      "bid": 0.41,
+      "ask": 0.58,
+      "bid": 0.54,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -125,8 +135,8 @@
       "marketId": "POLY-5431622-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.42,
-      "bid": 0.08,
+      "ask": 0.26,
+      "bid": 0.22,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -136,15 +146,235 @@
       "marketId": "POLY-5431622-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.92,
-      "bid": 0.58,
+      "ask": 0.78,
+      "bid": 0.74,
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639245-0",
+      "label": "FLA -1.5",
+      "status": "open",
+      "ask": 0.49,
+      "bid": 0.45,
+      "volume": 0,
+      "team": "FLA",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639245-1",
+      "label": "CHI +1.5",
+      "status": "open",
+      "ask": 0.55,
+      "bid": 0.51,
+      "volume": 0,
+      "team": "CHI",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639246-0",
+      "label": "FLA -3.5",
+      "status": "open",
+      "ask": 0.93,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "FLA",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639246-1",
+      "label": "CHI +3.5",
+      "status": "open",
+      "ask": 0.97,
+      "bid": 0.07,
+      "volume": 0,
+      "team": "CHI",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639247-0",
+      "label": "FLA -2.5",
+      "status": "open",
+      "ask": 0.36,
+      "bid": 0.33,
+      "volume": 0,
+      "team": "FLA",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639247-1",
+      "label": "CHI +2.5",
+      "status": "open",
+      "ask": 0.67,
+      "bid": 0.64,
+      "volume": 0,
+      "team": "CHI",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639248-0",
+      "label": "CHI -1.5",
+      "status": "open",
+      "ask": 0.17,
+      "bid": 0.13,
+      "volume": 0,
+      "team": "CHI",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639248-1",
+      "label": "FLA +1.5",
+      "status": "open",
+      "ask": 0.87,
+      "bid": 0.83,
+      "volume": 0,
+      "team": "FLA",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639249-0",
+      "label": "CHI -3.5",
+      "status": "open",
+      "ask": 0.73,
+      "bid": 0.01,
+      "volume": 0,
+      "team": "CHI",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639249-1",
+      "label": "FLA +3.5",
+      "status": "open",
+      "ask": 0.99,
+      "bid": 0.27,
+      "volume": 0,
+      "team": "FLA",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639250-0",
+      "label": "CHI -2.5",
+      "status": "open",
+      "ask": 0.24,
+      "bid": 0.04,
+      "volume": 0,
+      "team": "CHI",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639250-1",
+      "label": "FLA +2.5",
+      "status": "open",
+      "ask": 0.96,
+      "bid": 0.76,
+      "volume": 0,
+      "team": "FLA",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639251-0",
+      "label": "O 2.5",
+      "status": "open",
+      "ask": 0.98,
+      "bid": 0.78,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639251-1",
+      "label": "U 2.5",
+      "status": "open",
+      "ask": 0.22,
+      "bid": 0.02,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639252-0",
+      "label": "O 3.5",
+      "status": "open",
+      "ask": 0.88,
+      "bid": 0.84,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639252-1",
+      "label": "U 3.5",
+      "status": "open",
+      "ask": 0.16,
+      "bid": 0.12,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639253-0",
+      "label": "O 8.5",
+      "status": "open",
+      "ask": 0.19,
+      "bid": 0.14,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639253-1",
+      "label": "U 8.5",
+      "status": "open",
+      "ask": 0.86,
+      "bid": 0.81,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639254-0",
+      "label": "O 9.5",
+      "status": "open",
+      "ask": 0.26,
+      "bid": 0.05,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639254-1",
+      "label": "U 9.5",
+      "status": "open",
+      "ask": 0.95,
+      "bid": 0.74,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-03T07:04:17Z",
+    "fetchedAt": "2026-11-03T20:27:57Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
@@ -242,7 +472,7 @@
       "xa": 0.986
      }
     },
-    "at": "2026-11-03T07:04:19Z"
+    "at": "2026-11-03T21:28:15Z"
    }
   },
   {
@@ -256,14 +486,24 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892644",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "BUF -135",
+    "mlAway": 114.0,
+    "mlHome": -135.0,
+    "total": 6.5,
+    "over": -122.0,
+    "under": 102.0,
+    "mlAwayOpen": 124.0,
+    "mlHomeOpen": -148.0
+   },
    "goalies": {
     "away": {
      "name": "Samuel Ersson",
      "status": "Expected"
     },
     "home": {
-     "name": "Ukko-Pekka Luukkonen",
+     "name": "Colten Ellis",
      "status": "Expected"
     }
    },
@@ -282,17 +522,17 @@
       "marketId": "POLY-5431623-0",
       "title": "Senators",
       "status": "open",
-      "ask": 0.46,
-      "bid": 0.45,
-      "volume": 262
+      "ask": 0.45,
+      "bid": 0.44,
+      "volume": 547
      },
      "home": {
       "marketId": "POLY-5431623-1",
       "title": "Sabres",
       "status": "open",
-      "ask": 0.55,
-      "bid": 0.54,
-      "volume": 262
+      "ask": 0.56,
+      "bid": 0.55,
+      "volume": 547
      }
     },
     "extra": [
@@ -301,8 +541,8 @@
       "marketId": "POLY-5431624-0",
       "label": "O 4.5",
       "status": "open",
-      "ask": 0.95,
-      "bid": 0.61,
+      "ask": 0.86,
+      "bid": 0.81,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -312,8 +552,8 @@
       "marketId": "POLY-5431624-1",
       "label": "U 4.5",
       "status": "open",
-      "ask": 0.39,
-      "bid": 0.05,
+      "ask": 0.19,
+      "bid": 0.14,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -323,8 +563,8 @@
       "marketId": "POLY-5431625-0",
       "label": "O 5.5",
       "status": "open",
-      "ask": 0.71,
-      "bid": 0.5,
+      "ask": 0.65,
+      "bid": 0.61,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -334,8 +574,8 @@
       "marketId": "POLY-5431625-1",
       "label": "U 5.5",
       "status": "open",
-      "ask": 0.5,
-      "bid": 0.29,
+      "ask": 0.39,
+      "bid": 0.35,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -345,8 +585,8 @@
       "marketId": "POLY-5431626-0",
       "label": "O 6.5",
       "status": "open",
-      "ask": 0.59,
-      "bid": 0.32,
+      "ask": 0.55,
+      "bid": 0.53,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -356,8 +596,8 @@
       "marketId": "POLY-5431626-1",
       "label": "U 6.5",
       "status": "open",
-      "ask": 0.68,
-      "bid": 0.41,
+      "ask": 0.47,
+      "bid": 0.45,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -367,8 +607,8 @@
       "marketId": "POLY-5431627-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.35,
-      "bid": 0.14,
+      "ask": 0.34,
+      "bid": 0.3,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -378,22 +618,242 @@
       "marketId": "POLY-5431627-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.86,
-      "bid": 0.65,
+      "ask": 0.7,
+      "bid": 0.66,
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639235-0",
+      "label": "BUF -1.5",
+      "status": "open",
+      "ask": 0.36,
+      "bid": 0.32,
+      "volume": 0,
+      "team": "BUF",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639235-1",
+      "label": "OTT +1.5",
+      "status": "open",
+      "ask": 0.68,
+      "bid": 0.64,
+      "volume": 0,
+      "team": "OTT",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639236-0",
+      "label": "BUF -3.5",
+      "status": "open",
+      "ask": 0.55,
+      "bid": 0.01,
+      "volume": 0,
+      "team": "BUF",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639236-1",
+      "label": "OTT +3.5",
+      "status": "open",
+      "ask": 0.99,
+      "bid": 0.45,
+      "volume": 0,
+      "team": "OTT",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639237-0",
+      "label": "BUF -2.5",
+      "status": "open",
+      "ask": 0.26,
+      "bid": 0.21,
+      "volume": 0,
+      "team": "BUF",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639237-1",
+      "label": "OTT +2.5",
+      "status": "open",
+      "ask": 0.79,
+      "bid": 0.74,
+      "volume": 0,
+      "team": "OTT",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639238-0",
+      "label": "OTT -1.5",
+      "status": "open",
+      "ask": 0.26,
+      "bid": 0.22,
+      "volume": 0,
+      "team": "OTT",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639238-1",
+      "label": "BUF +1.5",
+      "status": "open",
+      "ask": 0.78,
+      "bid": 0.74,
+      "volume": 0,
+      "team": "BUF",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639239-0",
+      "label": "OTT -3.5",
+      "status": "open",
+      "ask": 0.92,
+      "bid": 0.01,
+      "volume": 0,
+      "team": "OTT",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639239-1",
+      "label": "BUF +3.5",
+      "status": "open",
+      "ask": 0.99,
+      "bid": 0.08,
+      "volume": 0,
+      "team": "BUF",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639240-0",
+      "label": "OTT -2.5",
+      "status": "open",
+      "ask": 0.32,
+      "bid": 0.07,
+      "volume": 0,
+      "team": "OTT",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639240-1",
+      "label": "BUF +2.5",
+      "status": "open",
+      "ask": 0.93,
+      "bid": 0.68,
+      "volume": 0,
+      "team": "BUF",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639241-0",
+      "label": "O 2.5",
+      "status": "open",
+      "ask": 0.99,
+      "bid": 0.13,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639241-1",
+      "label": "U 2.5",
+      "status": "open",
+      "ask": 0.87,
+      "bid": 0.01,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639242-0",
+      "label": "O 3.5",
+      "status": "open",
+      "ask": 0.95,
+      "bid": 0.74,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639242-1",
+      "label": "U 3.5",
+      "status": "open",
+      "ask": 0.26,
+      "bid": 0.05,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639243-0",
+      "label": "O 8.5",
+      "status": "open",
+      "ask": 0.25,
+      "bid": 0.21,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639243-1",
+      "label": "U 8.5",
+      "status": "open",
+      "ask": 0.79,
+      "bid": 0.75,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639244-0",
+      "label": "O 9.5",
+      "status": "open",
+      "ask": 0.36,
+      "bid": 0.08,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639244-1",
+      "label": "U 9.5",
+      "status": "open",
+      "ask": 0.92,
+      "bid": 0.64,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-03T07:04:17Z",
+    "fetchedAt": "2026-11-03T20:27:57Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.3331,
+    "la": 3.385,
     "lh": 3.4245,
-    "ra": 2.9564,
+    "ra": 3.0025,
     "rh": 3.0375,
     "betaGq": 0.41638,
     "calib": 1.0266,
@@ -428,9 +888,9 @@
       ]
      },
      "home": {
-      "name": "Ukko-Pekka Luukkonen",
-      "id": 8480045,
-      "gq": -0.0679,
+      "name": "Colten Ellis",
+      "id": 8481551,
+      "gq": -0.0308,
       "mode": "named",
       "table": [
        {
@@ -477,7 +937,7 @@
       "xa": 1.021
      }
     },
-    "at": "2026-11-03T07:04:19Z"
+    "at": "2026-11-03T21:28:15Z"
    }
   },
   {
@@ -491,7 +951,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892647",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "SEA -155",
+    "mlAway": 130.0,
+    "mlHome": -155.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": 140.0,
+    "mlHomeOpen": -166.0
+   },
    "goalies": {
     "away": {
      "name": "Dustin Wolf",
@@ -519,7 +989,7 @@
       "status": "open",
       "ask": 0.43,
       "bid": 0.42,
-      "volume": 362
+      "volume": 401
      },
      "home": {
       "marketId": "POLY-5431628-1",
@@ -527,7 +997,7 @@
       "status": "open",
       "ask": 0.58,
       "bid": 0.57,
-      "volume": 362
+      "volume": 401
      }
     },
     "extra": [
@@ -536,8 +1006,8 @@
       "marketId": "POLY-5431629-0",
       "label": "O 4.5",
       "status": "open",
-      "ask": 0.95,
-      "bid": 0.62,
+      "ask": 0.82,
+      "bid": 0.78,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -547,8 +1017,8 @@
       "marketId": "POLY-5431629-1",
       "label": "U 4.5",
       "status": "open",
-      "ask": 0.38,
-      "bid": 0.05,
+      "ask": 0.22,
+      "bid": 0.18,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -558,8 +1028,8 @@
       "marketId": "POLY-5431630-0",
       "label": "O 5.5",
       "status": "open",
-      "ask": 0.66,
-      "bid": 0.57,
+      "ask": 0.6,
+      "bid": 0.56,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -569,8 +1039,8 @@
       "marketId": "POLY-5431630-1",
       "label": "U 5.5",
       "status": "open",
-      "ask": 0.43,
-      "bid": 0.34,
+      "ask": 0.44,
+      "bid": 0.4,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -580,8 +1050,8 @@
       "marketId": "POLY-5431631-0",
       "label": "O 6.5",
       "status": "open",
-      "ask": 0.65,
-      "bid": 0.33,
+      "ask": 0.49,
+      "bid": 0.46,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -591,8 +1061,8 @@
       "marketId": "POLY-5431631-1",
       "label": "U 6.5",
       "status": "open",
-      "ask": 0.67,
-      "bid": 0.35,
+      "ask": 0.54,
+      "bid": 0.51,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -602,8 +1072,8 @@
       "marketId": "POLY-5431632-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.41,
-      "bid": 0.12,
+      "ask": 0.29,
+      "bid": 0.24,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -613,15 +1083,235 @@
       "marketId": "POLY-5431632-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.88,
-      "bid": 0.59,
+      "ask": 0.76,
+      "bid": 0.71,
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639224-0",
+      "label": "SEA -1.5",
+      "status": "open",
+      "ask": 0.38,
+      "bid": 0.36,
+      "volume": 0,
+      "team": "SEA",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639224-1",
+      "label": "CAL +1.5",
+      "status": "open",
+      "ask": 0.64,
+      "bid": 0.62,
+      "volume": 0,
+      "team": "CGY",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639225-0",
+      "label": "SEA -3.5",
+      "status": "open",
+      "ask": 0.91,
+      "bid": 0.01,
+      "volume": 0,
+      "team": "SEA",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639225-1",
+      "label": "CAL +3.5",
+      "status": "open",
+      "ask": 0.99,
+      "bid": 0.09,
+      "volume": 0,
+      "team": "CGY",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639226-0",
+      "label": "SEA -2.5",
+      "status": "open",
+      "ask": 0.26,
+      "bid": 0.21,
+      "volume": 0,
+      "team": "SEA",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639226-1",
+      "label": "CAL +2.5",
+      "status": "open",
+      "ask": 0.79,
+      "bid": 0.74,
+      "volume": 0,
+      "team": "CGY",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639227-0",
+      "label": "CAL -1.5",
+      "status": "open",
+      "ask": 0.26,
+      "bid": 0.22,
+      "volume": 0,
+      "team": "CGY",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639227-1",
+      "label": "SEA +1.5",
+      "status": "open",
+      "ask": 0.78,
+      "bid": 0.74,
+      "volume": 0,
+      "team": "SEA",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639228-0",
+      "label": "CAL -3.5",
+      "status": "open",
+      "ask": 0.55,
+      "bid": 0.01,
+      "volume": 0,
+      "team": "CGY",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639228-1",
+      "label": "SEA +3.5",
+      "status": "open",
+      "ask": 0.99,
+      "bid": 0.45,
+      "volume": 0,
+      "team": "SEA",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639229-0",
+      "label": "CAL -2.5",
+      "status": "open",
+      "ask": 0.29,
+      "bid": 0.06,
+      "volume": 0,
+      "team": "CGY",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639229-1",
+      "label": "SEA +2.5",
+      "status": "open",
+      "ask": 0.94,
+      "bid": 0.71,
+      "volume": 0,
+      "team": "SEA",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639230-0",
+      "label": "O 2.5",
+      "status": "open",
+      "ask": 0.99,
+      "bid": 0.53,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639230-1",
+      "label": "U 2.5",
+      "status": "open",
+      "ask": 0.47,
+      "bid": 0.01,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639231-0",
+      "label": "O 3.5",
+      "status": "open",
+      "ask": 0.94,
+      "bid": 0.72,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639231-1",
+      "label": "U 3.5",
+      "status": "open",
+      "ask": 0.28,
+      "bid": 0.06,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639232-0",
+      "label": "O 8.5",
+      "status": "open",
+      "ask": 0.21,
+      "bid": 0.16,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639232-1",
+      "label": "U 8.5",
+      "status": "open",
+      "ask": 0.84,
+      "bid": 0.79,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639234-0",
+      "label": "O 9.5",
+      "status": "open",
+      "ask": 0.27,
+      "bid": 0.06,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639234-1",
+      "label": "U 9.5",
+      "status": "open",
+      "ask": 0.94,
+      "bid": 0.73,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-03T07:04:17Z",
+    "fetchedAt": "2026-11-03T20:27:57Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
@@ -712,7 +1402,7 @@
       "xa": 1.028
      }
     },
-    "at": "2026-11-03T07:04:19Z"
+    "at": "2026-11-03T21:28:15Z"
    }
   },
   {
@@ -726,7 +1416,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892646",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "LA -155",
+    "mlAway": 130.0,
+    "mlHome": -155.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": 140.0,
+    "mlHomeOpen": -166.0
+   },
    "goalies": {
     "away": {
      "name": "Yaroslav Askarov",
@@ -752,17 +1452,17 @@
       "marketId": "POLY-5431633-0",
       "title": "Sharks",
       "status": "open",
-      "ask": 0.43,
-      "bid": 0.42,
-      "volume": 5
+      "ask": 0.4,
+      "bid": 0.39,
+      "volume": 250
      },
      "home": {
       "marketId": "POLY-5431633-1",
       "title": "Kings",
       "status": "open",
-      "ask": 0.58,
-      "bid": 0.57,
-      "volume": 5
+      "ask": 0.61,
+      "bid": 0.6,
+      "volume": 250
      }
     },
     "extra": [
@@ -771,8 +1471,8 @@
       "marketId": "POLY-5431634-0",
       "label": "O 4.5",
       "status": "open",
-      "ask": 0.93,
-      "bid": 0.61,
+      "ask": 0.82,
+      "bid": 0.78,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -782,8 +1482,8 @@
       "marketId": "POLY-5431634-1",
       "label": "U 4.5",
       "status": "open",
-      "ask": 0.39,
-      "bid": 0.07,
+      "ask": 0.22,
+      "bid": 0.18,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -793,8 +1493,8 @@
       "marketId": "POLY-5431635-0",
       "label": "O 5.5",
       "status": "open",
-      "ask": 0.6,
-      "bid": 0.5,
+      "ask": 0.59,
+      "bid": 0.55,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -804,8 +1504,8 @@
       "marketId": "POLY-5431635-1",
       "label": "U 5.5",
       "status": "open",
-      "ask": 0.5,
-      "bid": 0.4,
+      "ask": 0.45,
+      "bid": 0.41,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -815,8 +1515,8 @@
       "marketId": "POLY-5431636-0",
       "label": "O 6.5",
       "status": "open",
-      "ask": 0.58,
-      "bid": 0.28,
+      "ask": 0.49,
+      "bid": 0.46,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -826,8 +1526,8 @@
       "marketId": "POLY-5431636-1",
       "label": "U 6.5",
       "status": "open",
-      "ask": 0.72,
-      "bid": 0.42,
+      "ask": 0.54,
+      "bid": 0.51,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -837,8 +1537,8 @@
       "marketId": "POLY-5431637-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.43,
-      "bid": 0.08,
+      "ask": 0.28,
+      "bid": 0.25,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -848,15 +1548,235 @@
       "marketId": "POLY-5431637-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.92,
-      "bid": 0.57,
+      "ask": 0.75,
+      "bid": 0.72,
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639213-0",
+      "label": "LAK -1.5",
+      "status": "open",
+      "ask": 0.4,
+      "bid": 0.36,
+      "volume": 0,
+      "team": "LAK",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639213-1",
+      "label": "SJ +1.5",
+      "status": "open",
+      "ask": 0.64,
+      "bid": 0.6,
+      "volume": 0,
+      "team": "SJS",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639214-0",
+      "label": "LAK -3.5",
+      "status": "open",
+      "ask": 0.74,
+      "bid": 0.01,
+      "volume": 0,
+      "team": "LAK",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639214-1",
+      "label": "SJ +3.5",
+      "status": "open",
+      "ask": 0.99,
+      "bid": 0.26,
+      "volume": 0,
+      "team": "SJS",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639215-0",
+      "label": "LAK -2.5",
+      "status": "open",
+      "ask": 0.28,
+      "bid": 0.23,
+      "volume": 0,
+      "team": "LAK",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639215-1",
+      "label": "SJ +2.5",
+      "status": "open",
+      "ask": 0.77,
+      "bid": 0.72,
+      "volume": 0,
+      "team": "SJS",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639217-0",
+      "label": "SJ -1.5",
+      "status": "open",
+      "ask": 0.24,
+      "bid": 0.2,
+      "volume": 0,
+      "team": "SJS",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639217-1",
+      "label": "LAK +1.5",
+      "status": "open",
+      "ask": 0.8,
+      "bid": 0.76,
+      "volume": 0,
+      "team": "LAK",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639218-0",
+      "label": "SJ -3.5",
+      "status": "open",
+      "ask": 0.42,
+      "bid": 0.01,
+      "volume": 0,
+      "team": "SJS",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639218-1",
+      "label": "LAK +3.5",
+      "status": "open",
+      "ask": 0.99,
+      "bid": 0.58,
+      "volume": 0,
+      "team": "LAK",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639219-0",
+      "label": "SJ -2.5",
+      "status": "open",
+      "ask": 0.3,
+      "bid": 0.06,
+      "volume": 0,
+      "team": "SJS",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6639219-1",
+      "label": "LAK +2.5",
+      "status": "open",
+      "ask": 0.94,
+      "bid": 0.7,
+      "volume": 0,
+      "team": "LAK",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639220-0",
+      "label": "O 2.5",
+      "status": "open",
+      "ask": 0.98,
+      "bid": 0.64,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639220-1",
+      "label": "U 2.5",
+      "status": "open",
+      "ask": 0.36,
+      "bid": 0.02,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639221-0",
+      "label": "O 3.5",
+      "status": "open",
+      "ask": 0.94,
+      "bid": 0.72,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639221-1",
+      "label": "U 3.5",
+      "status": "open",
+      "ask": 0.28,
+      "bid": 0.06,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639222-0",
+      "label": "O 8.5",
+      "status": "open",
+      "ask": 0.2,
+      "bid": 0.16,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639222-1",
+      "label": "U 8.5",
+      "status": "open",
+      "ask": 0.84,
+      "bid": 0.8,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639223-0",
+      "label": "O 9.5",
+      "status": "open",
+      "ask": 0.26,
+      "bid": 0.06,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6639223-1",
+      "label": "U 9.5",
+      "status": "open",
+      "ask": 0.94,
+      "bid": 0.74,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-03T07:04:17Z",
+    "fetchedAt": "2026-11-03T20:27:57Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
@@ -940,7 +1860,7 @@
       "xa": 0.973
      }
     },
-    "at": "2026-11-03T07:04:19Z"
+    "at": "2026-11-03T21:28:15Z"
    }
   }
  ]
