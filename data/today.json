@@ -1,7 +1,7 @@
 {
  "date": "2026-11-02",
- "generatedAt": "2026-11-02T22:39:57Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-03T03:02:10Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020233,
@@ -11,8 +11,12 @@
    "awayName": "Detroit Red Wings",
    "homeName": "Florida Panthers",
    "venue": "Amerant Bank Arena",
-   "state": "FUT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    5,
+    3,
+    "REG"
+   ],
    "espnId": "401892630",
    "odds": {
     "provider": "Draft Kings",
@@ -479,7 +483,8 @@
       "xa": 0.984
      }
     },
-    "at": "2026-11-02T22:39:58Z"
+    "at": "2026-11-02T22:39:58Z",
+    "frozen": true
    }
   },
   {
@@ -490,8 +495,12 @@
    "awayName": "Vegas Golden Knights",
    "homeName": "Boston Bruins",
    "venue": "TD Garden",
-   "state": "FUT",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    2,
+    3,
+    "SO"
+   ],
    "espnId": "401892629",
    "odds": {
     "provider": "Draft Kings",
@@ -507,7 +516,7 @@
    "goalies": {
     "away": {
      "name": "Carter Hart",
-     "status": "Expected"
+     "status": "Confirmed"
     },
     "home": {
      "name": "Jeremy Swayman",
@@ -937,7 +946,8 @@
       "xa": 1.008
      }
     },
-    "at": "2026-11-02T22:39:58Z"
+    "at": "2026-11-02T22:39:58Z",
+    "frozen": true
    }
   },
   {
@@ -948,7 +958,7 @@
    "awayName": "Colorado Avalanche",
    "homeName": "Chicago Blackhawks",
    "venue": "United Center",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892631",
    "odds": {
@@ -965,7 +975,7 @@
    "goalies": {
     "away": {
      "name": "Mackenzie Blackwood",
-     "status": "Expected"
+     "status": "Confirmed"
     },
     "home": {
      "name": "Spencer Knight",
@@ -1395,7 +1405,8 @@
       "xa": 1.066
      }
     },
-    "at": "2026-11-02T22:39:58Z"
+    "at": "2026-11-02T22:39:58Z",
+    "frozen": true
    }
   },
   {
@@ -1406,7 +1417,7 @@
    "awayName": "Calgary Flames",
    "homeName": "San Jose Sharks",
    "venue": "SAP Center at San Jose",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892632",
    "odds": {
@@ -1860,7 +1871,8 @@
       "xa": 1.098
      }
     },
-    "at": "2026-11-02T22:39:58Z"
+    "at": "2026-11-02T22:39:58Z",
+    "frozen": true
    }
   }
  ]
