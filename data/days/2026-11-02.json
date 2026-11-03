@@ -1,7 +1,7 @@
 {
  "date": "2026-11-02",
- "generatedAt": "2026-11-03T03:53:28Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-03T04:50:09Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020233,
@@ -958,7 +958,7 @@
    "awayName": "Colorado Avalanche",
    "homeName": "Chicago Blackhawks",
    "venue": "United Center",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     5,
     2,
@@ -1421,8 +1421,12 @@
    "awayName": "Calgary Flames",
    "homeName": "San Jose Sharks",
    "venue": "SAP Center at San Jose",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    2,
+    1,
+    "REG"
+   ],
    "espnId": "401892632",
    "odds": {
     "provider": "Draft Kings",
