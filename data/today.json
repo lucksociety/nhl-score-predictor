@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generatedAt": "2026-11-04T01:36:46Z",
+ "generatedAt": "2026-11-04T04:17:00Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -11,8 +11,12 @@
    "awayName": "Colorado Avalanche",
    "homeName": "Columbus Blue Jackets",
    "venue": "Nationwide Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    7,
+    "REG"
+   ],
    "espnId": "401892641",
    "odds": {
     "provider": "Draft Kings",
@@ -470,8 +474,12 @@
    "awayName": "Dallas Stars",
    "homeName": "Washington Capitals",
    "venue": "Capital One Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    6,
+    5,
+    "REG"
+   ],
    "espnId": "401892640",
    "odds": {
     "provider": "Draft Kings",
@@ -929,8 +937,12 @@
    "awayName": "Detroit Red Wings",
    "homeName": "Tampa Bay Lightning",
    "venue": "Benchmark International Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    4,
+    "REG"
+   ],
    "espnId": "401892635",
    "odds": {
     "provider": "Draft Kings",
@@ -1395,8 +1407,12 @@
    "awayName": "Minnesota Wild",
    "homeName": "Philadelphia Flyers",
    "venue": "Xfinity Mobile Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    2,
+    "REG"
+   ],
    "espnId": "401892638",
    "odds": {
     "provider": "Draft Kings",
@@ -1854,8 +1870,12 @@
    "awayName": "St. Louis Blues",
    "homeName": "New York Rangers",
    "venue": "Madison Square Garden",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    3,
+    "REG"
+   ],
    "espnId": "401892637",
    "odds": {
     "provider": "Draft Kings",
@@ -2320,8 +2340,12 @@
    "awayName": "Utah Mammoth",
    "homeName": "Toronto Maple Leafs",
    "venue": "Scotiabank Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    2,
+    "REG"
+   ],
    "espnId": "401892633",
    "odds": {
     "provider": "Draft Kings",
@@ -2779,8 +2803,12 @@
    "awayName": "Vegas Golden Knights",
    "homeName": "Pittsburgh Penguins",
    "venue": "PPG Paints Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    2,
+    "REG"
+   ],
    "espnId": "401892639",
    "odds": {
     "provider": "Draft Kings",
@@ -3245,8 +3273,12 @@
    "awayName": "Winnipeg Jets",
    "homeName": "Montr\u00e9al Canadiens",
    "venue": "Centre Bell",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    5,
+    4,
+    "OT"
+   ],
    "espnId": "401892634",
    "odds": {
     "provider": "Draft Kings",
@@ -3718,8 +3750,12 @@
    "awayName": "Edmonton Oilers",
    "homeName": "New Jersey Devils",
    "venue": "Prudential Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    4,
+    "SO"
+   ],
    "espnId": "401892636",
    "odds": {
     "provider": "Draft Kings",
@@ -4198,8 +4234,12 @@
    "awayName": "Carolina Hurricanes",
    "homeName": "Nashville Predators",
    "venue": "Bridgestone Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    4,
+    "REG"
+   ],
    "espnId": "401892642",
    "odds": {
     "provider": "DraftKings",
@@ -4573,7 +4613,7 @@
    "awayName": "Anaheim Ducks",
    "homeName": "Vancouver Canucks",
    "venue": "Rogers Arena",
-   "state": "PRE",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892643",
    "odds": {
@@ -5027,7 +5067,8 @@
       "xa": 1.108
      }
     },
-    "at": "2026-11-04T01:36:47Z"
+    "at": "2026-11-04T01:36:47Z",
+    "frozen": true
    }
   }
  ]
