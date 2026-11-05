@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "generatedAt": "2026-11-05T01:43:40Z",
+ "generatedAt": "2026-11-05T04:35:17Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
@@ -11,8 +11,12 @@
    "awayName": "Chicago Blackhawks",
    "homeName": "Florida Panthers",
    "venue": "Amerant Bank Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    5,
+    "REG"
+   ],
    "espnId": "401892645",
    "odds": {
     "provider": "DraftKings",
@@ -484,8 +488,12 @@
    "awayName": "Ottawa Senators",
    "homeName": "Buffalo Sabres",
    "venue": "KeyBank Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    1,
+    "REG"
+   ],
    "espnId": "401892644",
    "odds": {
     "provider": "DraftKings",
@@ -950,7 +958,7 @@
    "awayName": "Calgary Flames",
    "homeName": "Seattle Kraken",
    "venue": "Climate Pledge Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892647",
    "odds": {
@@ -1404,7 +1412,8 @@
       "xa": 1.028
      }
     },
-    "at": "2026-11-05T01:43:41Z"
+    "at": "2026-11-05T01:43:41Z",
+    "frozen": true
    }
   },
   {
@@ -1415,7 +1424,7 @@
    "awayName": "San Jose Sharks",
    "homeName": "Los Angeles Kings",
    "venue": "Crypto.com Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892646",
    "odds": {
@@ -1862,7 +1871,8 @@
       "xa": 0.972
      }
     },
-    "at": "2026-11-05T01:43:41Z"
+    "at": "2026-11-05T01:43:41Z",
+    "frozen": true
    }
   }
  ]
