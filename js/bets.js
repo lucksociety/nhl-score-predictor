@@ -7,11 +7,12 @@
   const fee = p => 0.07 * p * (1 - p);
   const MIN_PROB = 0.5;
   const MAX_SPREAD = 0.10;
+  const MAX_QUOTE_AGE_MS = 5 * 60 * 1000;
   function cand(type, label, q, x, extra) {
     if (!x || !Number.isFinite(q) || q < 0 || q > 1) return null;
     const p = x.ask, f = fee(p);
     if (!Number.isFinite(p) || p <= 0 || p >= 1) return null;
-    const executable = (!x.status || x.status === 'open') && Number.isFinite(x.bid) && x.bid > 0 && x.bid <= p && p - x.bid <= MAX_SPREAD + 1e-9 && Number.isFinite(Number(x.volume)) && Number(x.volume) > 0;
+    const executable = x.includesOTSO === true && !x.periodType && x.status === 'open' && Number.isFinite(x.bid) && x.bid > 0 && x.bid <= p && p - x.bid <= MAX_SPREAD + 1e-9 && Number.isFinite(Number(x.volume)) && Number(x.volume) > 0;
     return Object.assign({ type, label, q, ask: p, bid: x.bid, volume: x.volume, executable,
       fee: f, cost: p + f, edge: q - (p + f), ev: q / (p + f) - 1, marketId: x.marketId }, extra || {});
   }
@@ -28,8 +29,9 @@
       const lab = String(x.label || x.title || '');
       if (x.type === 'totals' && !ou && (m = lab.match(/^\s*([OU])\w*\s*([\d.]+)/i))) { ou = m[1].toUpperCase(); line = +m[2]; }
       if (x.type === 'spreads' && !team && (m = lab.match(/([A-Z]{2,4})\s*([+-][\d.]+)/i))) { team = m[1].toUpperCase(); line = +m[2]; }
-      if (line == null || Number.isInteger(line)) continue;   // half lines only (no pushes)
+      if (!Number.isFinite(line) || Math.abs(line % 1) !== 0.5) continue;   // half lines only (no pushes)
       if (x.type === 'totals') {
+        if (!['O', 'U'].includes(ou)) continue;
         const over = ou === 'O', q = over ? M.pOver(o.dist, line) : M.pUnder(o.dist, line);
         const c = cand('TOTAL', `${over ? 'Over' : 'Under'} ${line}`, q, x, { line }); if (c) cands.push(c);
       } else if (x.type === 'spreads') {
@@ -40,14 +42,17 @@
     cands.sort((a, b) => b.ev - a.ev);
     const start = Date.parse(g.startUTC);
     const pregame = Number.isFinite(start) && now < start && ['FUT', 'PRE'].includes(g.state) && !j?.live && j?.active !== false;
+    const fetched = Date.parse(j?.fetchedAt);
+    const quoteFresh = Number.isFinite(fetched) && fetched <= now && now - fetched <= MAX_QUOTE_AGE_MS;
     for (const c of cands) c.monteCarloSE = Number.isFinite(o.n) && o.n > 0 ? Math.sqrt(c.q * (1 - c.q) / o.n) : Infinity;
     // This only bounds numerical sampling noise; it does not claim the model itself is calibrated.
-    const ok = pregame ? cands.filter(c => c.executable && c.q > MIN_PROB && c.ev > 0 && c.edge > 1.96 * c.monteCarloSE) : [];
+    const ok = pregame && quoteFresh ? cands.filter(c => c.executable && c.q - 1.96 * c.monteCarloSE > MIN_PROB && c.ev > 0 && c.edge > 1.96 * c.monteCarloSE) : [];
     let reason = null;
     if (!ok.length) {
       if (!pregame) reason = 'game started, market live, or start unavailable — no pregame bet';
+      else if (!quoteFresh) reason = 'Jupiter quote is missing, from the future, or older than five minutes';
       else if (!cands.length) reason = 'no Jupiter market';
-      else if (!cands.some(c => c.executable)) reason = 'no open two-sided quote within 10¢ with traded volume';
+      else if (!cands.some(c => c.executable)) reason = 'no verified full-game OT/SO two-sided quote within 10¢ with traded volume';
       else if (!cands.some(c => c.q > MIN_PROB)) reason = 'no side above 50%';
       else reason = 'no >50% side with positive edge after fees outside Monte Carlo sampling noise';
     }

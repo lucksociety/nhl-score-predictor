@@ -33,8 +33,15 @@ export function gameEmbed(g) {
 
 export function payloads(P) {
   // Refresh the clock after simulation/network work; a stale PRE flag is insufficient.
-  P = { ...P, games: P.games.map(g => !Number.isFinite(Date.parse(g.start)) || Date.now() >= Date.parse(g.start)
-    ? { ...g, best: null, others: [], noBetReason: 'scheduled start passed or unavailable — no pregame bet' } : g) };
+  const now = Date.now();
+  P = { ...P, games: P.games.map(g => {
+    const fetched = Date.parse(g.quoteFetchedAt);
+    const reason = !Number.isFinite(Date.parse(g.start)) || now >= Date.parse(g.start)
+      ? 'scheduled start passed or unavailable — no pregame bet'
+      : !Number.isFinite(fetched) || fetched > now || now - fetched > 5 * 60 * 1000
+        ? 'quote unavailable or older than five minutes — refresh before betting' : null;
+    return reason ? { ...g, best: null, others: [], noBetReason: reason } : g;
+  }) };
   const bets = P.games.filter(g => g.best);
   const head = {
     title: `🍀 Luck Society NHL — ${P.date}`, url: SITE, color: GOLD, thumbnail: { url: LOGO },

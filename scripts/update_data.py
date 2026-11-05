@@ -147,11 +147,14 @@ def jupiter_markets():
             A, H, date = ab(m.group(1)), ab(m.group(2)), m.group(3)
             sides = {}; extra = []; xr = []
             for mk in e.get('markets') or []:
+                if mk.get('periodType'): continue
                 smt = mk.get('sportsMarketType')
                 if smt in ('totals', 'spreads'):   # every O/U line and alt puck line; one Jupiter market per outcome
                     pr = mk.get('pricing') or {}; lab = ((mk.get('marketOptions') or [{}])[0] or {}).get('label') or ''
                     r = (mk.get('rulesPrimary') or '').lower(); xr.append('overtime' in r and 'shootout' in r and 'one goal will be added' in r)
                     it = dict(type=smt, marketId=mk.get('marketId'), label=lab, status=mk.get('status'),
+                              includesOTSO=('overtime' in r and 'shootout' in r and 'one goal will be added' in r),
+                              periodType=mk.get('periodType'),
                               ask=pr['buyYesPriceUsd'] / 1e6 if pr.get('buyYesPriceUsd') else None,
                               bid=pr['sellYesPriceUsd'] / 1e6 if pr.get('sellYesPriceUsd') else None, volume=pr.get('volume'))
                     mm = re.match(r'^\s*([OU])\s*([\d.]+)', lab) if smt == 'totals' else re.match(r'^\s*([A-Za-z]{2,4})\s*([+-][\d.]+)', lab)
@@ -165,7 +168,10 @@ def jupiter_markets():
                 side = 'away' if t == A else 'home' if t == H else None
                 if not side: continue
                 pr = mk.get('pricing') or {}
+                rules = (mk.get('rulesPrimary') or '').lower()
                 sides[side] = dict(marketId=mk.get('marketId'), title=mk.get('title'), status=mk.get('status'),
+                                   includesOTSO=('overtime' in rules and 'shootout' in rules),
+                                   periodType=mk.get('periodType'),
                                    ask=pr['buyYesPriceUsd'] / 1e6 if pr.get('buyYesPriceUsd') else None,
                                    bid=pr['sellYesPriceUsd'] / 1e6 if pr.get('sellYesPriceUsd') else None, volume=pr.get('volume'))
                 rules = mk.get('rulesPrimary') or ''
