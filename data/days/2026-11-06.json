@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generatedAt": "2026-11-05T07:08:42Z",
+ "generatedAt": "2026-11-05T08:19:12Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
  "games": [
   {
@@ -40,7 +40,9 @@
       "marketId": "POLY-5504958-0",
       "title": "Blue Jackets",
       "status": "open",
-      "ask": 0.4,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.39,
       "bid": 0.38,
       "volume": 538
      },
@@ -48,8 +50,10 @@
       "marketId": "POLY-5504958-1",
       "title": "Sabres",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.62,
-      "bid": 0.6,
+      "bid": 0.61,
       "volume": 538
      }
     },
@@ -59,8 +63,10 @@
       "marketId": "POLY-5504959-0",
       "label": "O 4.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.93,
-      "bid": 0.6,
+      "bid": 0.61,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -70,7 +76,9 @@
       "marketId": "POLY-5504959-1",
       "label": "U 4.5",
       "status": "open",
-      "ask": 0.4,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.39,
       "bid": 0.07,
       "volume": 0,
       "ou": "U",
@@ -81,8 +89,10 @@
       "marketId": "POLY-5504960-0",
       "label": "O 5.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.72,
-      "bid": 0.42,
+      "bid": 0.47,
       "volume": 5,
       "ou": "O",
       "line": 5.5
@@ -92,7 +102,9 @@
       "marketId": "POLY-5504960-1",
       "label": "U 5.5",
       "status": "open",
-      "ask": 0.58,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.53,
       "bid": 0.28,
       "volume": 5,
       "ou": "U",
@@ -103,8 +115,10 @@
       "marketId": "POLY-5504961-0",
       "label": "O 6.5",
       "status": "open",
-      "ask": 0.61,
-      "bid": 0.32,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.58,
+      "bid": 0.47,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -114,8 +128,10 @@
       "marketId": "POLY-5504961-1",
       "label": "U 6.5",
       "status": "open",
-      "ask": 0.68,
-      "bid": 0.39,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.53,
+      "bid": 0.42,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -125,8 +141,10 @@
       "marketId": "POLY-5504962-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.33,
-      "bid": 0.14,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.32,
+      "bid": 0.15,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -136,15 +154,17 @@
       "marketId": "POLY-5504962-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.86,
-      "bid": 0.67,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.85,
+      "bid": 0.68,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-05T07:08:41Z",
+    "fetchedAt": "2026-11-05T08:19:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
@@ -228,7 +248,7 @@
       "xa": 1.022
      }
     },
-    "at": "2026-11-05T07:08:43Z"
+    "at": "2026-11-05T08:19:13Z"
    }
   },
   {
@@ -268,6 +288,8 @@
       "marketId": "POLY-5504968-0",
       "title": "Ducks",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.48,
       "bid": 0.46,
       "volume": 93
@@ -276,6 +298,8 @@
       "marketId": "POLY-5504968-1",
       "title": "Flames",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.54,
       "bid": 0.52,
       "volume": 93
@@ -287,6 +311,8 @@
       "marketId": "POLY-5504969-0",
       "label": "O 4.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.95,
       "bid": 0.65,
       "volume": 0,
@@ -298,6 +324,8 @@
       "marketId": "POLY-5504969-1",
       "label": "U 4.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.35,
       "bid": 0.05,
       "volume": 0,
@@ -309,7 +337,9 @@
       "marketId": "POLY-5504970-0",
       "label": "O 5.5",
       "status": "open",
-      "ask": 0.67,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.78,
       "bid": 0.57,
       "volume": 0,
       "ou": "O",
@@ -320,8 +350,10 @@
       "marketId": "POLY-5504970-1",
       "label": "U 5.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.43,
-      "bid": 0.33,
+      "bid": 0.22,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -331,6 +363,8 @@
       "marketId": "POLY-5504971-0",
       "label": "O 6.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.68,
       "bid": 0.36,
       "volume": 0,
@@ -342,6 +376,8 @@
       "marketId": "POLY-5504971-1",
       "label": "U 6.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.64,
       "bid": 0.32,
       "volume": 0,
@@ -353,8 +389,10 @@
       "marketId": "POLY-5504972-0",
       "label": "O 7.5",
       "status": "open",
-      "ask": 0.35,
-      "bid": 0.31,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.33,
+      "bid": 0.15,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -364,15 +402,17 @@
       "marketId": "POLY-5504972-1",
       "label": "U 7.5",
       "status": "open",
-      "ask": 0.69,
-      "bid": 0.65,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.85,
+      "bid": 0.67,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-05T07:08:41Z",
+    "fetchedAt": "2026-11-05T08:19:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
@@ -470,7 +510,7 @@
       "xa": 1.03
      }
     },
-    "at": "2026-11-05T07:08:43Z"
+    "at": "2026-11-05T08:19:13Z"
    }
   },
   {
@@ -510,17 +550,21 @@
       "marketId": "POLY-5504963-0",
       "title": "Sharks",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.31,
-      "bid": 0.29,
-      "volume": 270
+      "bid": 0.3,
+      "volume": 363
      },
      "home": {
       "marketId": "POLY-5504963-1",
       "title": "Wild",
       "status": "open",
-      "ask": 0.71,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.7,
       "bid": 0.69,
-      "volume": 270
+      "volume": 363
      }
     },
     "extra": [
@@ -529,6 +573,8 @@
       "marketId": "POLY-5504964-0",
       "label": "O 4.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.9,
       "bid": 0.62,
       "volume": 0,
@@ -540,6 +586,8 @@
       "marketId": "POLY-5504964-1",
       "label": "U 4.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.38,
       "bid": 0.1,
       "volume": 0,
@@ -551,8 +599,10 @@
       "marketId": "POLY-5504965-0",
       "label": "O 5.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.65,
-      "bid": 0.53,
+      "bid": 0.4,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -562,7 +612,9 @@
       "marketId": "POLY-5504965-1",
       "label": "U 5.5",
       "status": "open",
-      "ask": 0.47,
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.6,
       "bid": 0.35,
       "volume": 0,
       "ou": "U",
@@ -573,6 +625,8 @@
       "marketId": "POLY-5504966-0",
       "label": "O 6.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.58,
       "bid": 0.28,
       "volume": 0,
@@ -584,6 +638,8 @@
       "marketId": "POLY-5504966-1",
       "label": "U 6.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.72,
       "bid": 0.42,
       "volume": 0,
@@ -595,6 +651,8 @@
       "marketId": "POLY-5504967-0",
       "label": "O 7.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.33,
       "bid": 0.24,
       "volume": 0,
@@ -606,6 +664,8 @@
       "marketId": "POLY-5504967-1",
       "label": "U 7.5",
       "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
       "ask": 0.76,
       "bid": 0.67,
       "volume": 0,
@@ -614,7 +674,7 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-05T07:08:41Z",
+    "fetchedAt": "2026-11-05T08:19:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
@@ -698,7 +758,7 @@
       "xa": 0.945
      }
     },
-    "at": "2026-11-05T07:08:43Z"
+    "at": "2026-11-05T08:19:13Z"
    }
   }
  ]
