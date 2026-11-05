@@ -1,7 +1,7 @@
 {
  "date": "2026-11-04",
- "generatedAt": "2026-11-05T04:35:17Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-05T07:08:41Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020248,
@@ -958,8 +958,12 @@
    "awayName": "Calgary Flames",
    "homeName": "Seattle Kraken",
    "venue": "Climate Pledge Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    2,
+    "OT"
+   ],
    "espnId": "401892647",
    "odds": {
     "provider": "Draft Kings",
@@ -1424,8 +1428,12 @@
    "awayName": "San Jose Sharks",
    "homeName": "Los Angeles Kings",
    "venue": "Crypto.com Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    7,
+    "REG"
+   ],
    "espnId": "401892646",
    "odds": {
     "provider": "Draft Kings",
