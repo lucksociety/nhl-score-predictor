@@ -1,7 +1,7 @@
 {
  "date": "2026-11-05",
- "generatedAt": "2026-11-06T04:33:33Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-06T07:07:47Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020257,
@@ -4746,7 +4746,7 @@
    "awayName": "Anaheim Ducks",
    "homeName": "Edmonton Oilers",
    "venue": "Rogers Place",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     5,
     4,
@@ -5290,8 +5290,12 @@
    "awayName": "Nashville Predators",
    "homeName": "Colorado Avalanche",
    "venue": "Ball Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    2,
+    "OT"
+   ],
    "espnId": "401892658",
    "odds": {
     "provider": "DraftKings",
