@@ -2,10 +2,9 @@
  * 1. verifies the Ed25519 signature (DISCORD_PUBLIC_KEY), answers PING
  * 2. /nhl -> responds "deferred" (type 5) within 3 s, then dispatches the GitHub Actions workflow (discord.yml), which runs the
  *    full v4 Monte Carlo with fresh Jupiter prices and edits this reply (interaction token valid 15 min)
- * 3. if the dispatch fails, posts the precomputed predictions (refreshed every Pages update) instead.
+ * 3. if dispatch fails, reports the failure without publishing cached bets.
  * vars: DISCORD_APP_ID, DISCORD_PUBLIC_KEY, GITHUB_REPO, SITE   secret: GITHUB_TOKEN (fine-grained PAT, this repo, Contents: write)
  * The Worker never sees the bot token. */
-import { payloads } from '../js/discord_embeds.mjs';
 
 const hex = h => new Uint8Array(h.match(/../g).map(b => parseInt(b, 16)));
 const json = (o, s = 200) => new Response(JSON.stringify(o), { status: s, headers: { 'content-type': 'application/json' } });
@@ -35,17 +34,8 @@ async function dispatch(env, token, date) {
 
 async function fallback(env, token, date, why) {
   const base = `https://discord.com/api/v10/webhooks/${env.DISCORD_APP_ID}/${token}`;
-  let msgs;
-  try {
-    const r = await fetch(`${env.SITE}data/predictions/${date}.json?t=${Date.now()}`);
-    if (!r.ok) throw new Error('no cached predictions ' + r.status);
-    msgs = payloads(await r.json());
-    msgs[0].content = `-# Live re-simulation unavailable (${why}); showing the latest precomputed run.`;
-  } catch (e) {
-    msgs = [{ content: `🍀 Couldn't run the simulator right now (${why}). See ${env.SITE}` }];
-  }
-  for (let i = 0; i < msgs.length; i++)
-    await fetch(i ? base : `${base}/messages/@original`, { method: i ? 'POST' : 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify(msgs[i]) });
+  await fetch(`${base}/messages/@original`, {method:'PATCH', headers:{'content-type':'application/json'},
+    body:JSON.stringify({content:`🍀 Fresh simulation could not start (${why}). No bets recommended. Please rerun /nhl. ${env.SITE}`})});
 }
 
 export default {

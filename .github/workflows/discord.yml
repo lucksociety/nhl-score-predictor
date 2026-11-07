@@ -56,7 +56,7 @@ jobs:
         with:
           node-version: '20'
       - name: Fresh schedule, goalies, Jupiter prices; retrain v4 (not committed)
-        run: python scripts/update_data.py
+        run: python scripts/update_data.py --date "$SLATE_DATE"
       - name: Run the Monte Carlo (400k sims/game)
         run: node scripts/predict.js "$SLATE_DATE"
       - name: Preserve pre-game forecasts for prospective evaluation

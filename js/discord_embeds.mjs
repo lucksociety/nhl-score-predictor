@@ -17,6 +17,7 @@ export function gameEmbed(g) {
     `Win: ${g.away} ${pct(g.pAway)} · ${g.home} ${pct(g.pHome)} · P(OT) ${pct(g.pOT)}`,
     `Goalies: ${gk('away')} vs ${gk('home')} · xG ${g.xg[0].toFixed(2)}–${g.xg[1].toFixed(2)}`,
   ];
+  if (g.availability) lines.push(`Availability checked ${g.availability.checkedAt} · ${g.availability.blockReason || "current injury/roster feeds checked; goalie status above"}`);
   if (g.best) {
     e.color = GOLD;
     lines.push(`✅ **BEST BET: ${g.best.label}** · model ${pct(g.best.q)} · Jupiter ${cents(g.best.ask)} (+${cents(g.best.fee)} fee) · EV **+${pct(g.best.ev)}**`);
@@ -38,11 +39,11 @@ export function payloads(P) {
   const now = Date.now();
   P = { ...P, games: P.games.map(g => {
     const fetched = Date.parse(g.quoteFetchedAt);
-    const reason = g.best && !B.scoreSupports(g.best, g, g.pick) ? 'bet does not win at displayed predicted score'
+    const reason = g.availability?.blockReason || (g.best && !B.scoreSupports(g.best, g, g.pick) ? 'bet does not win at displayed predicted score'
       : !Number.isFinite(Date.parse(g.start)) || now >= Date.parse(g.start)
       ? 'scheduled start passed or unavailable — no pregame bet'
       : !Number.isFinite(fetched) || fetched > now || now - fetched > 5 * 60 * 1000
-        ? 'quote unavailable or older than five minutes — refresh before betting' : null;
+        ? 'quote unavailable or older than five minutes — refresh before betting' : null);
     return reason ? { ...g, best: null, others: [], noBetReason: reason } : { ...g, others: (g.others || []).filter(c => B.scoreSupports(c, g, g.pick)) };
   }) };
   const bets = P.games.filter(g => g.best);

@@ -68,11 +68,13 @@
       c.sensitivityEV = c.sensitivityLower / c.cost - 1;
     }
     // This only bounds numerical sampling noise; it does not claim the model itself is calibrated.
-    const ok = pregame && quoteFresh ? cands.filter(c => c.scoreConsistent && c.executable && c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0) : [];
+    const availabilityOK = !g.availability?.blockReason;
+    const ok = pregame && quoteFresh && availabilityOK ? cands.filter(c => c.scoreConsistent && c.executable && c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0) : [];
     ok.sort((a, b) => b.sensitivityLower - a.sensitivityLower || b.ev - a.ev);
     let reason = null;
     if (!ok.length) {
-      if (!pregame) reason = 'game started, market live, or start unavailable — no pregame bet';
+      if (!availabilityOK) reason = g.availability.blockReason;
+      else if (!pregame) reason = 'game started, market live, or start unavailable — no pregame bet';
       else if (!quoteFresh) reason = 'Jupiter quote is missing, from the future, or older than five minutes';
       else if (!cands.length) reason = 'no Jupiter market';
       else if (!cands.some(c => c.executable)) reason = 'no verified full-game OT/SO two-sided quote within 10¢ with traded volume';
