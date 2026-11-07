@@ -22,5 +22,8 @@ const nr = await W.fetch(new Request('https://w.test/', { method: 'POST', body: 
 calls.length = 0; r = await req({ type: 2, token: 'TOK', data: { name: 'nhl' } });
 ok(r[1] === '{"type":5}' && calls.length === 1 && calls[0][1].includes('/repos/o/r/dispatches') && JSON.parse(calls[0][2]).client_payload.token === 'TOK', '/nhl -> deferred + GitHub dispatch');
 calls.length = 0; ghStatus = 401; r = await req({ type: 2, token: 'TOK', data: { name: 'nhl', options: [{ name: 'day', value: 'tomorrow' }] } });
-ok(r[1] === '{"type":5}' && calls.some(c => c[0] === 'PATCH' && c[1].endsWith('@original')), 'dispatch failure -> fallback posts cached predictions');
+ok(r[1] === '{"type":5}' && calls.some(c => c[0] === 'PATCH' && c[1].endsWith('@original')), 'dispatch failure -> no cached recommendations');
 console.log(calls.map(c => c[0] + ' ' + c[1]).join('\n'));
+
+ok(!calls.some(c=>c[0]==='GET'), 'failed refresh never fetches a cached forecast');
+ok(calls.filter(c=>c[0]==='PATCH').every(c=>JSON.parse(c[2]).content.includes('No bets recommended')), 'failed refresh explicitly withholds bets');

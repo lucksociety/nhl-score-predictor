@@ -22,7 +22,7 @@ ESPN2NHL = {'LA': 'LAK', 'NJ': 'NJD', 'SJ': 'SJS', 'TB': 'TBL', 'UTAH': 'UTA', '
 def get(url, tries=3):
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (nhl-score-predictor)'})
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (nhl-score-predictor)', 'Cache-Control':'no-cache'})
             with urllib.request.urlopen(req, timeout=25) as r:
                 return json.loads(r.read().decode())
         except Exception as e:
@@ -225,7 +225,8 @@ def main():
         return write_index()
     results = update_results(today)
     out = []
-    for d in (today - dt.timedelta(days=1), today, today + dt.timedelta(days=1)):
+    requested = dt.date.fromisoformat(sys.argv[sys.argv.index('--date')+1]) if '--date' in sys.argv else today
+    for d in sorted({today - dt.timedelta(days=1), today, today + dt.timedelta(days=1), requested}):
         s = day_slate(d)
         if d == today - dt.timedelta(days=1) and not s['games']: continue
         prev_path = os.path.join(DATA, 'days', f'{d.isoformat()}.json')
@@ -242,8 +243,10 @@ def main():
                 if p.get('v4') and started:
                     g['v4'] = p['v4']             # freeze the pre-game v4 prediction
                 for side in ('away', 'home'):
-                    if not g['goalies'].get(side) and (p.get('goalies') or {}).get(side): g['goalies'][side] = p['goalies'][side]
+                    if started and not g['goalies'].get(side) and (p.get('goalies') or {}).get(side): g['goalies'][side] = p['goalies'][side]
         out.append(s)
+    import availability
+    availability.refresh(out, get)
     try:   # model v4-independent (no market inputs)
         import v4_update
         rows = v4_update.update_history(results)
@@ -252,6 +255,7 @@ def main():
     except Exception as e:
         import traceback; traceback.print_exc(); print('v4 failed:', e, file=sys.stderr)
         raise RuntimeError('NHL model refresh failed; refusing to publish stale inputs') from e
+    availability.finalize(out)
     for s in out:
         d = dt.date.fromisoformat(s['date'])
         write(os.path.join(DATA, 'days', f'{d.isoformat()}.json'), s)

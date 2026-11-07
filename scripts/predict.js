@@ -17,7 +17,7 @@ function predictSlate(date, opts = {}) {
   const t0 = Date.now(), games = [];
   for (const g of slate.games) {
     const row = { id: g.id, away: g.away, home: g.home, awayName: g.awayName, homeName: g.homeName, start: g.startUTC, time: etTime(g.startUTC),
-                  state: g.state, final: g.final, goalies: g.goalies, quoteFetchedAt: g.jupiter?.fetchedAt || null, jupiterLink: g.jupiter && g.jupiter.link };
+                  availability: g.availability, state: g.state, final: g.final, goalies: g.goalies, quoteFetchedAt: g.jupiter?.fetchedAt || null, jupiterLink: g.jupiter && g.jupiter.link };
     if (!g.v4) { row.error = 'no v4 rates (game already in the model history or data missing)'; games.push(row); continue; }
     const o = M.runGameV4(g, { n, seed });
     if (o.n !== n) throw new Error(`sim count mismatch ${o.n} != ${n}`);
