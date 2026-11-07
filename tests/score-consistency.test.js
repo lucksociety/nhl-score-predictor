@@ -1,0 +1,5 @@
+const assert=require('node:assert/strict'),B=require('../js/bets');
+const g={away:'A',home:'H'},pick={away:2,home:4};
+for(const [type,label,yes] of [['TOTAL','Over 6.5',false],['TOTAL','Under 6.5',true],['TOTAL','Over 6',false],['ML','H ML',true],['ML','A ML',false],['PUCKLINE','A +2.5',true],['PUCKLINE','A +1.5',false],['PUCKLINE','H -2',false]])assert.equal(B.scoreSupports({type,label},g,pick),yes,label);
+assert.equal(B.scoreSupports({type:'ML',label:'H ML'},g,{}),false);
+(async()=>{const {payloads}=await import('../js/discord_embeds.mjs');const best={type:'TOTAL',label:'Over 6.5',q:.7,ask:.5,ev:.2};const row={...g,pick,start:new Date(Date.now()+3600000).toISOString(),quoteFetchedAt:new Date().toISOString(),best,others:[best],pAway:.3,pHome:.7,pOT:.2,xg:[2,4],leans:{},markets:{}};assert(!JSON.stringify(payloads({date:'2099-01-01',games:[row],sims:400000})).includes('Over 6.5'));assert.equal(row.best,best);console.log('NHL score consistency and cached Discord guard passed');})().catch(e=>{console.error(e);process.exitCode=1});

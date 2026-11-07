@@ -1,3 +1,4 @@
+import B from './bets.js';
 /* Discord embed builder for /nhl (shared by scripts/discord_post.js and the Cloudflare Worker fallback). */
 const GOLD = 0xE8B931, GREEN = 0x1F8A3A, GREY = 0x2A3A22;
 const SITE = 'https://lucksociety.github.io/nhl-score-predictor/';
@@ -37,11 +38,12 @@ export function payloads(P) {
   const now = Date.now();
   P = { ...P, games: P.games.map(g => {
     const fetched = Date.parse(g.quoteFetchedAt);
-    const reason = !Number.isFinite(Date.parse(g.start)) || now >= Date.parse(g.start)
+    const reason = g.best && !B.scoreSupports(g.best, g, g.pick) ? 'bet does not win at displayed predicted score'
+      : !Number.isFinite(Date.parse(g.start)) || now >= Date.parse(g.start)
       ? 'scheduled start passed or unavailable — no pregame bet'
       : !Number.isFinite(fetched) || fetched > now || now - fetched > 5 * 60 * 1000
         ? 'quote unavailable or older than five minutes — refresh before betting' : null;
-    return reason ? { ...g, best: null, others: [], noBetReason: reason } : g;
+    return reason ? { ...g, best: null, others: [], noBetReason: reason } : { ...g, others: (g.others || []).filter(c => B.scoreSupports(c, g, g.pick)) };
   }) };
   const bets = P.games.filter(g => g.best);
   const head = {

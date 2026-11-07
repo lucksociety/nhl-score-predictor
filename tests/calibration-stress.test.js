@@ -4,7 +4,7 @@ const now=Date.parse('2026-11-07T12:00:00Z');
 const quote=(line,ask)=>({type:'totals',ou:'U',line,ask,bid:ask-.01,volume:100,status:'open',includesOTSO:true});
 const g={away:'A',home:'H',startUTC:'2026-11-08T00:00:00Z',state:'FUT',jupiter:{fetchedAt:new Date(now).toISOString(),sides:{},extra:[quote(6.5,.60)]}};
 const d=q=>({tot:[0,0,0,0,0,0,q,1-q],mar:[0]});
-const o={n:400000,pHome:.5,pAway:.5,dist:d(.62)};
+const o={pick:{away:3,home:2},n:400000,pHome:.5,pAway:.5,dist:d(.62)};
 assert(B.evaluate(g,o,{now}).best,'baseline-only edge is positive');
 const before=JSON.stringify(o);
 assert(!B.evaluate(g,{...o,calibrationStress:[{n:100000,pHome:.5,pAway:.5,dist:d(.60)}]},{now}).best,'fragile edge must fail sensitivity check');

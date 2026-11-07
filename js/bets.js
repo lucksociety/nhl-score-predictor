@@ -8,6 +8,17 @@
   const MIN_PROB = 0.5;
   const MAX_SPREAD = 0.10;
   const MAX_QUOTE_AGE_MS = 5 * 60 * 1000;
+  function scoreSupports(c, g, pick) {
+    const a = pick?.away ?? pick?.x, h = pick?.home ?? pick?.y;
+    if (![a,h].every(x => Number.isInteger(x) && x >= 0)) return false;
+    const label = String(c.label || '').replace(/−/g, '-');
+    if (c.type === 'ML') return label === `${g.home} ML` ? h > a : label === `${g.away} ML` ? a > h : false;
+    const total = /^(Over|Under) ([0-9]+(?:\.[0-9]+)?)$/.exec(label);
+    if (c.type === 'TOTAL' && total) return total[1] === 'Over' ? a+h > +total[2] : a+h < +total[2];
+    const spread = /^([A-Z0-9]+) ([+-][0-9]+(?:\.[0-9]+)?)$/.exec(label);
+    if (c.type === 'PUCKLINE' && spread) return spread[1] === g.home ? h + +spread[2] > a : spread[1] === g.away ? a + +spread[2] > h : false;
+    return false;
+  }
   function cand(type, label, q, x, extra) {
     if (!x || !Number.isFinite(q) || q < 0 || q > 1) return null;
     const p = x.ask, f = fee(p);
@@ -39,6 +50,7 @@
         if (side) { const c = cand('PUCKLINE', `${g[side]} ${line > 0 ? '+' : ''}${line}`, M.pCover(o.dist, side, line), x, { side, line }); if (c) cands.push(c); }
       }
     }
+    for (const c of cands) c.scoreConsistent = scoreSupports(c, g, o.pick);
     cands.sort((a, b) => b.ev - a.ev);
     const start = Date.parse(g.startUTC);
     const pregame = Number.isFinite(start) && now < start && ['FUT', 'PRE'].includes(g.state) && !j?.live && j?.active !== false;
@@ -56,7 +68,7 @@
       c.sensitivityEV = c.sensitivityLower / c.cost - 1;
     }
     // This only bounds numerical sampling noise; it does not claim the model itself is calibrated.
-    const ok = pregame && quoteFresh ? cands.filter(c => c.executable && c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0) : [];
+    const ok = pregame && quoteFresh ? cands.filter(c => c.scoreConsistent && c.executable && c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0) : [];
     ok.sort((a, b) => b.sensitivityLower - a.sensitivityLower || b.ev - a.ev);
     let reason = null;
     if (!ok.length) {
@@ -75,7 +87,7 @@
     };
     return { best: ok[0] || null, others: ok.slice(1, 4), qualifying: ok.length, cands, reason, leans, hasTotals: cands.some(c => c.type === 'TOTAL'), hasPL: cands.some(c => c.type === 'PUCKLINE') };
   }
-  const api = { evaluate, fee, MIN_PROB };
+  const api = { evaluate, fee, MIN_PROB, scoreSupports };
   root.NHLBets = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof self !== 'undefined' ? self : globalThis);

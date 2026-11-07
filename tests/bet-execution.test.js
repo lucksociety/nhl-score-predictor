@@ -3,7 +3,7 @@ const B = require('../js/bets');
 const now = Date.parse('2026-11-01T17:00:00Z');
 const base = () => ({ away: 'SEA', home: 'CGY', startUTC: '2026-11-01T18:00:00Z', state: 'FUT',
   jupiter: { fetchedAt: new Date(now).toISOString(), active: true, live: false, sides: { away: { ask: .5, bid: .49, status: 'open', includesOTSO: true, volume: 1000 } } } });
-const o = { n: 400000, pAway: .6, pHome: .4, dist: { tot: [1], mar: [1] } };
+const o = { pick: {away:4,home:2}, n: 400000, pAway: .6, pHome: .4, dist: { tot: [1], mar: [1] } };
 const evaluate = g => B.evaluate(g, o, { now });
 assert(evaluate(base()).best);
 for (const mod of [
@@ -42,17 +42,17 @@ for (const mod of [
 }
 (async () => {
   const { payloads } = await import('../js/discord_embeds.mjs');
-  const best = { label: 'STALE_SELECTION', q: .6, ask: .5, ev: .1 };
+  const best = { type:'ML', label: 'SEA ML', q: .6, ask: .5, ev: .1 };
   const row = { id: 1, away: 'SEA', home: 'CGY', start: '2000-01-01T00:00:00Z',
     pick: { away: 3, home: 2 }, pAway: .6, pHome: .4, pOT: .2, xg: [3, 2],
     best, others: [best], leans: {}, markets: {} };
   const messages = payloads({ date: '2000-01-01', games: [row], sims: 400000 });
-  assert(!JSON.stringify(messages).includes('STALE_SELECTION'));
+  assert(!JSON.stringify(messages).includes('SEA ML'));
   assert.equal(row.best, best, 'publishing must not rewrite frozen forecasts');
   const future = { ...row, start: new Date(Date.now() + 3600000).toISOString(),
     quoteFetchedAt: new Date(Date.now() - 300001).toISOString() };
-  assert(!JSON.stringify(payloads({ date: '2026-11-05', games: [future], sims: 400000 })).includes('STALE_SELECTION'));
+  assert(!JSON.stringify(payloads({ date: '2026-11-05', games: [future], sims: 400000 })).includes('SEA ML'));
   const fresh = { ...future, quoteFetchedAt: new Date().toISOString() };
-  assert(JSON.stringify(payloads({ date: '2026-11-05', games: [fresh], sims: 400000 })).includes('STALE_SELECTION'));
+  assert(JSON.stringify(payloads({ date: '2026-11-05', games: [fresh], sims: 400000 })).includes('SEA ML'));
   console.log('NHL quote integrity, >50% probability, stale state/start and final publication-clock checks passed');
 })().catch(e => { console.error(e); process.exitCode = 1; });
