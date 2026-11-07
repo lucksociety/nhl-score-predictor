@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generatedAt": "2026-11-07T01:06:05Z",
+ "generatedAt": "2026-11-07T03:59:19Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -11,8 +11,12 @@
    "awayName": "Columbus Blue Jackets",
    "homeName": "Buffalo Sabres",
    "venue": "KeyBank Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    5,
+    "REG"
+   ],
    "espnId": "401892659",
    "odds": {
     "provider": "Draft Kings",
@@ -530,8 +534,12 @@
    "awayName": "Anaheim Ducks",
    "homeName": "Calgary Flames",
    "venue": "Scotiabank Saddledome",
-   "state": "PRE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    5,
+    3,
+    "REG"
+   ],
    "espnId": "401892661",
    "odds": {
     "provider": "DraftKings",
@@ -965,8 +973,12 @@
    "awayName": "San Jose Sharks",
    "homeName": "Minnesota Wild",
    "venue": "Grand Casino Arena",
-   "state": "PRE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    1,
+    4,
+    "REG"
+   ],
    "espnId": "401892660",
    "odds": {
     "provider": "DraftKings",
