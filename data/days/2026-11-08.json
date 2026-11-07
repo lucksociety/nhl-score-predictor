@@ -1,7 +1,7 @@
 {
  "date": "2026-11-08",
- "generatedAt": "2026-11-07T12:20:04Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
+ "generatedAt": "2026-11-07T16:43:47Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020277,
@@ -14,10 +14,20 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892674",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "BOS -135",
+    "mlAway": 114.0,
+    "mlHome": -135.0,
+    "total": 6.5,
+    "over": 100.0,
+    "under": -120.0,
+    "mlAwayOpen": 114.0,
+    "mlHomeOpen": -135.0
+   },
    "goalies": {
     "away": {
-     "name": "Akira Schmid",
+     "name": "Jacob Markstrom",
      "status": "Expected"
     },
     "home": {
@@ -42,9 +52,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.44,
-      "bid": 0.43,
-      "volume": 714
+      "ask": 0.46,
+      "bid": 0.44,
+      "volume": 1996
      },
      "home": {
       "marketId": "POLY-5609555-1",
@@ -52,9 +62,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.57,
-      "bid": 0.56,
-      "volume": 714
+      "ask": 0.56,
+      "bid": 0.54,
+      "volume": 1996
      }
     },
     "extra": [
@@ -65,8 +75,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.94,
-      "bid": 0.61,
+      "ask": 0.85,
+      "bid": 0.62,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -78,8 +88,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.39,
-      "bid": 0.06,
+      "ask": 0.38,
+      "bid": 0.15,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -91,8 +101,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.49,
+      "ask": 0.62,
+      "bid": 0.57,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -104,8 +114,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.51,
-      "bid": 0.23,
+      "ask": 0.43,
+      "bid": 0.38,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -117,8 +127,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.66,
-      "bid": 0.28,
+      "ask": 0.49,
+      "bid": 0.44,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -130,8 +140,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.72,
-      "bid": 0.34,
+      "ask": 0.56,
+      "bid": 0.51,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -143,8 +153,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.34,
-      "bid": 0.08,
+      "ask": 0.33,
+      "bid": 0.21,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -156,30 +166,30 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.92,
-      "bid": 0.66,
+      "ask": 0.79,
+      "bid": 0.67,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-07T12:20:02Z",
+    "fetchedAt": "2026-11-07T16:43:47Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.8078,
-    "lh": 3.3917,
-    "ra": 2.4905,
-    "rh": 3.0084,
-    "betaGq": 0.40972,
+    "la": 2.8079,
+    "lh": 3.4136,
+    "ra": 2.4906,
+    "rh": 3.0278,
+    "betaGq": 0.4104,
     "calib": 1.023,
     "goalies": {
      "away": {
-      "name": "Akira Schmid",
-      "id": 8481033,
-      "gq": -0.0571,
+      "name": "Jacob Markstrom",
+      "id": 8474593,
+      "gq": -0.0416,
       "mode": "named",
       "table": [
        {
@@ -255,7 +265,7 @@
       "xa": 0.997
      }
     },
-    "at": "2026-11-07T12:20:04Z"
+    "at": "2026-11-07T16:43:48Z"
    }
   },
   {
@@ -269,7 +279,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892675",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "BUF -108",
+    "mlAway": -112.0,
+    "mlHome": -108.0,
+    "total": 6.5,
+    "over": -105.0,
+    "under": -115.0,
+    "mlAwayOpen": -112.0,
+    "mlHomeOpen": -108.0
+   },
    "goalies": {
     "away": {
      "name": "Carter Hart",
@@ -299,7 +319,7 @@
       "periodType": null,
       "ask": 0.5,
       "bid": 0.49,
-      "volume": 1117
+      "volume": 1122
      },
      "home": {
       "marketId": "POLY-5609560-1",
@@ -309,7 +329,7 @@
       "periodType": null,
       "ask": 0.51,
       "bid": 0.5,
-      "volume": 1117
+      "volume": 1122
      }
     },
     "extra": [
@@ -321,7 +341,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.61,
+      "bid": 0.62,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -333,7 +353,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.39,
+      "ask": 0.38,
       "bid": 0.05,
       "volume": 0,
       "ou": "U",
@@ -346,9 +366,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.63,
-      "bid": 0.6,
-      "volume": 0,
+      "ask": 0.62,
+      "bid": 0.59,
+      "volume": 9,
       "ou": "O",
       "line": 5.5
      },
@@ -359,9 +379,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.4,
-      "bid": 0.37,
-      "volume": 0,
+      "ask": 0.41,
+      "bid": 0.38,
+      "volume": 9,
       "ou": "U",
       "line": 5.5
      },
@@ -372,8 +392,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.65,
-      "bid": 0.28,
+      "ask": 0.5,
+      "bid": 0.48,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -385,8 +405,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.72,
-      "bid": 0.35,
+      "ask": 0.52,
+      "bid": 0.5,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -398,8 +418,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.28,
-      "bid": 0.25,
+      "ask": 0.29,
+      "bid": 0.26,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -411,24 +431,24 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.75,
-      "bid": 0.72,
+      "ask": 0.74,
+      "bid": 0.71,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-07T12:20:02Z",
+    "fetchedAt": "2026-11-07T16:43:47Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.3096,
-    "lh": 3.0344,
-    "ra": 2.9356,
-    "rh": 2.6916,
-    "betaGq": 0.40972,
+    "la": 3.3097,
+    "lh": 3.0346,
+    "ra": 2.9357,
+    "rh": 2.6917,
+    "betaGq": 0.4104,
     "calib": 1.023,
     "goalies": {
      "away": {
@@ -503,7 +523,7 @@
       "xa": 1.018
      }
     },
-    "at": "2026-11-07T12:20:04Z"
+    "at": "2026-11-07T16:43:48Z"
    }
   },
   {
@@ -517,7 +537,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892677",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "TB -125",
+    "mlAway": -125.0,
+    "mlHome": 105.0,
+    "total": 6.5,
+    "over": 100.0,
+    "under": -120.0,
+    "mlAwayOpen": -125.0,
+    "mlHomeOpen": 105.0
+   },
    "goalies": {
     "away": {
      "name": "Dennis Hildeby",
@@ -545,8 +575,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.58,
+      "ask": 0.58,
+      "bid": 0.57,
       "volume": 29
      },
      "home": {
@@ -555,8 +585,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.42,
-      "bid": 0.41,
+      "ask": 0.43,
+      "bid": 0.42,
       "volume": 29
      }
     },
@@ -569,7 +599,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.63,
+      "bid": 0.65,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -581,7 +611,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.37,
+      "ask": 0.35,
       "bid": 0.05,
       "volume": 0,
       "ou": "U",
@@ -594,8 +624,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.62,
-      "bid": 0.6,
+      "ask": 0.61,
+      "bid": 0.58,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -607,8 +637,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.4,
-      "bid": 0.38,
+      "ask": 0.42,
+      "bid": 0.39,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -620,8 +650,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.67,
-      "bid": 0.32,
+      "ask": 0.5,
+      "bid": 0.46,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -633,8 +663,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.68,
-      "bid": 0.33,
+      "ask": 0.54,
+      "bid": 0.5,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -646,8 +676,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.4,
-      "bid": 0.12,
+      "ask": 0.34,
+      "bid": 0.21,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -659,24 +689,24 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.6,
+      "ask": 0.79,
+      "bid": 0.66,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-07T12:20:02Z",
+    "fetchedAt": "2026-11-07T16:43:47Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.3092,
-    "lh": 3.0946,
-    "ra": 2.9353,
-    "rh": 2.7449,
-    "betaGq": 0.40972,
+    "la": 3.3091,
+    "lh": 3.0942,
+    "ra": 2.9352,
+    "rh": 2.7446,
+    "betaGq": 0.4104,
     "calib": 1.023,
     "goalies": {
      "away": {
@@ -758,7 +788,7 @@
       "xa": 1.034
      }
     },
-    "at": "2026-11-07T12:20:04Z"
+    "at": "2026-11-07T16:43:48Z"
    }
   },
   {
@@ -772,7 +802,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892676",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "NJ -135",
+    "mlAway": -135.0,
+    "mlHome": 114.0,
+    "total": 6.5,
+    "over": 102.0,
+    "under": -122.0,
+    "mlAwayOpen": -135.0,
+    "mlHomeOpen": 114.0
+   },
    "goalies": {
     "away": {
      "name": "Jake Allen",
@@ -800,9 +840,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.55,
-      "bid": 0.54,
-      "volume": 538
+      "ask": 0.58,
+      "bid": 0.57,
+      "volume": 548
      },
      "home": {
       "marketId": "POLY-5609570-1",
@@ -810,9 +850,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.46,
-      "bid": 0.45,
-      "volume": 538
+      "ask": 0.43,
+      "bid": 0.42,
+      "volume": 548
      }
     },
     "extra": [
@@ -824,7 +864,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.65,
+      "bid": 0.67,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -836,7 +876,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.35,
+      "ask": 0.33,
       "bid": 0.05,
       "volume": 0,
       "ou": "U",
@@ -849,8 +889,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.64,
-      "bid": 0.59,
+      "ask": 0.61,
+      "bid": 0.58,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -862,8 +902,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.41,
-      "bid": 0.36,
+      "ask": 0.42,
+      "bid": 0.39,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -875,8 +915,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.7,
-      "bid": 0.36,
+      "ask": 0.5,
+      "bid": 0.47,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -888,8 +928,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.64,
-      "bid": 0.3,
+      "ask": 0.53,
+      "bid": 0.5,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -901,8 +941,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.29,
-      "bid": 0.25,
+      "ask": 0.28,
+      "bid": 0.26,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -914,24 +954,24 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.75,
-      "bid": 0.71,
+      "ask": 0.74,
+      "bid": 0.72,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-07T12:20:02Z",
+    "fetchedAt": "2026-11-07T16:43:47Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.495,
-    "lh": 2.8809,
-    "ra": 3.1,
-    "rh": 2.5554,
-    "betaGq": 0.40972,
+    "la": 3.4946,
+    "lh": 2.8808,
+    "ra": 3.0997,
+    "rh": 2.5553,
+    "betaGq": 0.4104,
     "calib": 1.023,
     "goalies": {
      "away": {
@@ -1013,7 +1053,7 @@
       "xa": 1.059
      }
     },
-    "at": "2026-11-07T12:20:04Z"
+    "at": "2026-11-07T16:43:48Z"
    }
   },
   {
@@ -1027,7 +1067,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892678",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "PHI -118",
+    "mlAway": -118.0,
+    "mlHome": -102.0,
+    "total": 5.5,
+    "over": -125.0,
+    "under": 105.0,
+    "mlAwayOpen": -118.0,
+    "mlHomeOpen": -102.0
+   },
    "goalies": {
     "away": {
      "name": "Joseph Woll",
@@ -1057,7 +1107,7 @@
       "periodType": null,
       "ask": 0.51,
       "bid": 0.5,
-      "volume": 940
+      "volume": 1040
      },
      "home": {
       "marketId": "POLY-5609575-1",
@@ -1067,7 +1117,7 @@
       "periodType": null,
       "ask": 0.5,
       "bid": 0.49,
-      "volume": 940
+      "volume": 1040
      }
     },
     "extra": [
@@ -1078,8 +1128,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.85,
-      "bid": 0.58,
+      "ask": 0.8,
+      "bid": 0.61,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -1091,8 +1141,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.42,
-      "bid": 0.15,
+      "ask": 0.39,
+      "bid": 0.2,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -1130,8 +1180,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.53,
-      "bid": 0.24,
+      "ask": 0.46,
+      "bid": 0.36,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -1143,8 +1193,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.76,
-      "bid": 0.47,
+      "ask": 0.64,
+      "bid": 0.54,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -1157,7 +1207,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.2,
-      "bid": 0.06,
+      "bid": 0.16,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -1169,7 +1219,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.94,
+      "ask": 0.84,
       "bid": 0.8,
       "volume": 0,
       "ou": "U",
@@ -1177,16 +1227,16 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-07T12:20:02Z",
+    "fetchedAt": "2026-11-07T16:43:47Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.0488,
+    "la": 3.0487,
     "lh": 2.9919,
-    "ra": 2.7043,
+    "ra": 2.7042,
     "rh": 2.6538,
-    "betaGq": 0.40972,
+    "betaGq": 0.4104,
     "calib": 1.023,
     "goalies": {
      "away": {
@@ -1268,7 +1318,7 @@
       "xa": 1.025
      }
     },
-    "at": "2026-11-07T12:20:04Z"
+    "at": "2026-11-07T16:43:48Z"
    }
   },
   {
@@ -1282,7 +1332,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892679",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "ANA -135",
+    "mlAway": 114.0,
+    "mlHome": -135.0,
+    "total": 6.5,
+    "over": -125.0,
+    "under": 105.0,
+    "mlAwayOpen": 114.0,
+    "mlHomeOpen": -135.0
+   },
    "goalies": {
     "away": {
      "name": "Sergei Murashov",
@@ -1312,7 +1372,7 @@
       "periodType": null,
       "ask": 0.48,
       "bid": 0.47,
-      "volume": 49
+      "volume": 763
      },
      "home": {
       "marketId": "POLY-5609580-1",
@@ -1322,7 +1382,7 @@
       "periodType": null,
       "ask": 0.53,
       "bid": 0.52,
-      "volume": 49
+      "volume": 763
      }
     },
     "extra": [
@@ -1359,7 +1419,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.87,
+      "ask": 0.73,
       "bid": 0.57,
       "volume": 0,
       "ou": "O",
@@ -1373,7 +1433,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.43,
-      "bid": 0.13,
+      "bid": 0.27,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -1385,8 +1445,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.43,
+      "ask": 0.56,
+      "bid": 0.53,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -1398,8 +1458,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.57,
-      "bid": 0.23,
+      "ask": 0.47,
+      "bid": 0.44,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -1411,8 +1471,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.4,
-      "bid": 0.37,
+      "ask": 0.37,
+      "bid": 0.34,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -1424,24 +1484,24 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.63,
-      "bid": 0.6,
+      "ask": 0.66,
+      "bid": 0.63,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-07T12:20:02Z",
+    "fetchedAt": "2026-11-07T16:43:47Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.1596,
-    "lh": 3.9033,
-    "ra": 2.8026,
-    "rh": 3.4623,
-    "betaGq": 0.40972,
+    "la": 3.1595,
+    "lh": 3.9038,
+    "ra": 2.8025,
+    "rh": 3.4627,
+    "betaGq": 0.4104,
     "calib": 1.023,
     "goalies": {
      "away": {
@@ -1523,7 +1583,7 @@
       "xa": 1.043
      }
     },
-    "at": "2026-11-07T12:20:04Z"
+    "at": "2026-11-07T16:43:48Z"
    }
   }
  ]
