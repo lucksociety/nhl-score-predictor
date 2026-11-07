@@ -236,6 +236,17 @@
     o.dist = distributions(r);
     o.simMs = (typeof performance !== 'undefined' ? performance : Date).now() - t0;
     o.mode = 'v4-independent'; o.rates = [ra, rh]; o.model = [v.la, v.lh]; o.version = 'v4-independent';
+    // Parameter sensitivity, separate from Monte Carlo precision. These scale endpoints were
+    // evaluated chronologically before Nov. 6 (research/REVIEW-2026-11-05.md). They are not a CI.
+    if (opts.calibrationStress !== false) {
+      const sn = Math.min(n, 100000);
+      o.calibrationStress = [0.86 / 0.887, 0.91 / 0.887].map(scale => {
+        const r = simulate(ra * scale, rh * scale, sn, seed);
+        const a = analyze(r);
+        return { scale, n: sn, pHome: a.pHome, pAway: a.pAway, dist: distributions(r) };
+      });
+    }
+    o.simMs = (typeof performance !== 'undefined' ? performance : Date).now() - t0;
     return o;
   }
 

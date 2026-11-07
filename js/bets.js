@@ -44,9 +44,20 @@
     const pregame = Number.isFinite(start) && now < start && ['FUT', 'PRE'].includes(g.state) && !j?.live && j?.active !== false;
     const fetched = Date.parse(j?.fetchedAt);
     const quoteFresh = Number.isFinite(fetched) && fetched <= now && now - fetched <= MAX_QUOTE_AGE_MS;
-    for (const c of cands) c.monteCarloSE = Number.isFinite(o.n) && o.n > 0 ? Math.sqrt(c.q * (1 - c.q) / o.n) : Infinity;
+    for (const c of cands) {
+      c.monteCarloSE = Number.isFinite(o.n) && o.n > 0 ? Math.sqrt(c.q * (1 - c.q) / o.n) : Infinity;
+      const variants = [{ q: c.q, n: o.n }, ...(o.calibrationStress || []).map(s => ({ n: s.n,
+        q: c.type === 'ML' ? (c.side === 'home' ? s.pHome : s.pAway)
+          : c.type === 'TOTAL' ? (c.label.startsWith('Over') ? M.pOver(s.dist, c.line) : M.pUnder(s.dist, c.line))
+          : M.pCover(s.dist, c.side, c.line) }))];
+      c.sensitivityMin = Math.min(...variants.map(s => s.q));
+      c.sensitivityLower = Math.min(...variants.map(s => Number.isFinite(s.n) && s.n > 0
+        ? s.q - 1.96 * Math.sqrt(s.q * (1 - s.q) / s.n) : -Infinity));
+      c.sensitivityEV = c.sensitivityLower / c.cost - 1;
+    }
     // This only bounds numerical sampling noise; it does not claim the model itself is calibrated.
-    const ok = pregame && quoteFresh ? cands.filter(c => c.executable && c.q - 1.96 * c.monteCarloSE > MIN_PROB && c.ev > 0 && c.edge > 1.96 * c.monteCarloSE) : [];
+    const ok = pregame && quoteFresh ? cands.filter(c => c.executable && c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0) : [];
+    ok.sort((a, b) => b.sensitivityLower - a.sensitivityLower || b.ev - a.ev);
     let reason = null;
     if (!ok.length) {
       if (!pregame) reason = 'game started, market live, or start unavailable — no pregame bet';
@@ -54,7 +65,7 @@
       else if (!cands.length) reason = 'no Jupiter market';
       else if (!cands.some(c => c.executable)) reason = 'no verified full-game OT/SO two-sided quote within 10¢ with traded volume';
       else if (!cands.some(c => c.q > MIN_PROB)) reason = 'no side above 50%';
-      else reason = 'no >50% side with positive edge after fees outside Monte Carlo sampling noise';
+      else reason = 'no >50% side keeps positive EV across scoring-calibration sensitivity scenarios';
     }
     // model leans on standard lines (no Jupiter price -> informational only, never a bet)
     const leans = {

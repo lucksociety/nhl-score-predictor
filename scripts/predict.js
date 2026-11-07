@@ -29,7 +29,7 @@ function predictSlate(date, opts = {}) {
       pAway: +o.pAway.toFixed(4), pHome: +o.pHome.toFixed(4), pOT: +o.pOT.toFixed(4),
       top: o.top.slice(0, 3).map(c => ({ a: c.x, h: c.y, p: +c.p.toFixed(4) })),
       v4goalies: { away: g.v4.goalies.away.name || 'team blend', home: g.v4.goalies.home.name || 'team blend' },
-      best: e.best && { type: e.best.type, label: e.best.label, q: +e.best.q.toFixed(4), ask: e.best.ask, bid: e.best.bid, volume: e.best.volume, marketId: e.best.marketId, fee: e.best.fee, cost: e.best.cost, ev: +e.best.ev.toFixed(4), edge: +e.best.edge.toFixed(4) },
+      best: e.best && { type: e.best.type, label: e.best.label, q: +e.best.q.toFixed(4), ask: e.best.ask, bid: e.best.bid, volume: e.best.volume, marketId: e.best.marketId, fee: e.best.fee, cost: e.best.cost, ev: +e.best.ev.toFixed(4), edge: +e.best.edge.toFixed(4), sensitivityMin: e.best.sensitivityMin, sensitivityLower: e.best.sensitivityLower, sensitivityEV: e.best.sensitivityEV },
       others: (e.others || []).map(c => ({ type: c.type, label: c.label, q: +c.q.toFixed(4), ask: c.ask, ev: +c.ev.toFixed(4) })),
       qualifying: e.qualifying || 0, sidesChecked: e.cands.length,
       markets: { ml: e.cands.filter(c => c.type === 'ML').length, totals: e.cands.filter(c => c.type === 'TOTAL').length, puckline: e.cands.filter(c => c.type === 'PUCKLINE').length },

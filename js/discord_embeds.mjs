@@ -19,6 +19,7 @@ export function gameEmbed(g) {
   if (g.best) {
     e.color = GOLD;
     lines.push(`✅ **BEST BET: ${g.best.label}** · model ${pct(g.best.q)} · Jupiter ${cents(g.best.ask)} (+${cents(g.best.fee)} fee) · EV **+${pct(g.best.ev)}**`);
+    if (Number.isFinite(g.best.sensitivityMin)) lines.push(`Scoring sensitivity minimum: ${pct(g.best.sensitivityMin)} · EV remains positive after sensitivity and sampling checks (stress test, not a confidence interval).`);
     if (g.others && g.others.length) lines.push(`Also qualifies: ${g.others.map(c => `${c.label} ${pct(c.q)} @ ${cents(c.ask)} (+${pct(c.ev)})`).join(' · ')}`);
   } else {
     e.color = GREEN;
@@ -52,7 +53,17 @@ export function payloads(P) {
   };
   const embeds = [head, ...P.games.map(gameEmbed)];
   const msgs = [];
-  for (let i = 0; i < embeds.length; i += 10) msgs.push({ embeds: embeds.slice(i, i + 10), allowed_mentions: { parse: [] } });
+  const size = e => (e.title || '').length + (e.description || '').length + (e.footer?.text || '').length
+    + (e.fields || []).reduce((n, f) => n + (f.name || '').length + (f.value || '').length, 0);
+  let batch = [], chars = 0;
+  for (const e of embeds) {
+    const n = size(e);
+    if (batch.length && (batch.length === 10 || chars + n > 5800)) {
+      msgs.push({ embeds: batch, allowed_mentions: { parse: [] } }); batch = []; chars = 0;
+    }
+    batch.push(e); chars += n;
+  }
+  if (batch.length) msgs.push({ embeds: batch, allowed_mentions: { parse: [] } });
   if (!P.games.length) msgs[0].embeds[0].description = `No NHL games on ${P.date}.`;
   return msgs;
 }

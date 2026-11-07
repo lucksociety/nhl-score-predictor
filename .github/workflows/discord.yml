@@ -83,6 +83,17 @@ jobs:
             out/discord.json
           retention-days: 90
           if-no-files-found: warn
+      - name: Preserve delivered recommendations for market-specific calibration
+        if: success() && env.DRY_RUN != 'true'
+        continue-on-error: true
+        run: python3 scripts/bet_learning.py --capture
+      - uses: actions/upload-artifact@v4
+        if: success() && env.DRY_RUN != 'true'
+        with:
+          name: bet-learning-${{ github.run_id }}
+          path: learning/bets-inbox.jsonl
+          retention-days: 90
+          if-no-files-found: warn
       - name: Report failure to Discord
         if: failure() && env.MODE == 'interaction' && env.DRY_RUN != 'true'
         run: |
