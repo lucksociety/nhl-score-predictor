@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "generatedAt": "2026-11-08T02:11:09Z",
+ "generatedAt": "2026-11-08T03:44:46Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
@@ -533,7 +533,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1324,7 +1324,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2093,7 +2093,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2405,8 +2405,12 @@
    "awayName": "Montr\u00e9al Canadiens",
    "homeName": "Toronto Maple Leafs",
    "venue": "Scotiabank Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    2,
+    "REG"
+   ],
    "espnId": "401892665",
    "odds": {
     "provider": "DraftKings",
@@ -2916,7 +2920,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3250,8 +3254,12 @@
    "awayName": "New Jersey Devils",
    "homeName": "New York Islanders",
    "venue": "UBS Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    5,
+    4,
+    "OT"
+   ],
    "espnId": "401892667",
    "odds": {
     "provider": "DraftKings",
@@ -3768,7 +3776,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4020,8 +4028,12 @@
    "awayName": "Utah Mammoth",
    "homeName": "Ottawa Senators",
    "venue": "Canadian Tire Centre",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    4,
+    "REG"
+   ],
    "espnId": "401892666",
    "odds": {
     "provider": "DraftKings",
@@ -4538,7 +4550,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4812,8 +4824,12 @@
    "awayName": "Chicago Blackhawks",
    "homeName": "Carolina Hurricanes",
    "venue": "Lenovo Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    2,
+    9,
+    "REG"
+   ],
    "espnId": "401892668",
    "odds": {
     "provider": "DraftKings",
@@ -5323,7 +5339,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5561,8 +5577,12 @@
    "awayName": "San Jose Sharks",
    "homeName": "Dallas Stars",
    "venue": "American Airlines Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    3,
+    4,
+    "REG"
+   ],
    "espnId": "401892669",
    "odds": {
     "provider": "DraftKings",
@@ -6072,7 +6092,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6346,7 +6366,7 @@
    "awayName": "Tampa Bay Lightning",
    "homeName": "Minnesota Wild",
    "venue": "Grand Casino Arena",
-   "state": "LIVE",
+   "state": "CRIT",
    "final": null,
    "espnId": "401892670",
    "odds": {
@@ -6857,7 +6877,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7115,7 +7135,7 @@
    "awayName": "Detroit Red Wings",
    "homeName": "Colorado Avalanche",
    "venue": "Ball Arena",
-   "state": "PRE",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892671",
    "odds": {
@@ -7542,7 +7562,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8321,7 +8341,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8597,7 +8617,7 @@
    "awayName": "Vancouver Canucks",
    "homeName": "Edmonton Oilers",
    "venue": "Rogers Place",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892673",
    "odds": {
@@ -9023,8 +9043,99 @@
     "fetchedAt": "2026-11-08T02:11:08Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.6685,
+    "lh": 4.2393,
+    "ra": 2.367,
+    "rh": 3.7602,
+    "betaGq": 0.40972,
+    "calib": 1.023,
+    "goalies": {
+     "away": {
+      "name": "Leevi Merilainen",
+      "id": 8482447,
+      "gq": -0.0016,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8482447,
+        "name": "L. Meril\u00e4inen",
+        "gq": -0.0016,
+        "share": 0.66,
+        "shots": 817
+       },
+       {
+        "id": 8480947,
+        "name": "K. Lankinen",
+        "gq": 0.0169,
+        "share": 0.328,
+        "shots": 2290
+       }
+      ]
+     },
+     "home": {
+      "name": "Devon Levi",
+      "id": 8482221,
+      "gq": -0.0269,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8477465,
+        "name": "T. Jarry",
+        "gq": -0.0331,
+        "share": 0.511,
+        "shots": 2360
+       },
+       {
+        "id": 8477035,
+        "name": "M. Tomkins",
+        "gq": -0.0053,
+        "share": 0.267,
+        "shots": 112
+       },
+       {
+        "id": 8482221,
+        "name": "D. Levi",
+        "gq": -0.0269,
+        "share": 0.196,
+        "shots": 602
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-06",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1194,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.948,
+      "ga": 1.217,
+      "xf": 0.898,
+      "xa": 1.099
+     },
+     "home": {
+      "gf": 1.122,
+      "ga": 0.984,
+      "xf": 0.999,
+      "xa": 0.953
+     }
+    },
+    "at": "2026-11-08T02:11:12Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-08T02:11:10.141259+00:00",
+    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9032,8 +9143,8 @@
        {
         "name": "Tom Willander",
         "position": "D",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-06T14:10Z"
+        "status": "Out",
+        "updatedAt": "2026-11-08T02:38Z"
        },
        {
         "name": "Filip Chytil",
@@ -9317,97 +9428,7 @@
      }
     },
     "problems": [],
-    "blockReason": null
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 2.6685,
-    "lh": 4.2393,
-    "ra": 2.367,
-    "rh": 3.7602,
-    "betaGq": 0.40972,
-    "calib": 1.023,
-    "goalies": {
-     "away": {
-      "name": "Leevi Merilainen",
-      "id": 8482447,
-      "gq": -0.0016,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8482447,
-        "name": "L. Meril\u00e4inen",
-        "gq": -0.0016,
-        "share": 0.66,
-        "shots": 817
-       },
-       {
-        "id": 8480947,
-        "name": "K. Lankinen",
-        "gq": 0.0169,
-        "share": 0.328,
-        "shots": 2290
-       }
-      ]
-     },
-     "home": {
-      "name": "Devon Levi",
-      "id": 8482221,
-      "gq": -0.0269,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8477465,
-        "name": "T. Jarry",
-        "gq": -0.0331,
-        "share": 0.511,
-        "shots": 2360
-       },
-       {
-        "id": 8477035,
-        "name": "M. Tomkins",
-        "gq": -0.0053,
-        "share": 0.267,
-        "shots": 112
-       },
-       {
-        "id": 8482221,
-        "name": "D. Levi",
-        "gq": -0.0269,
-        "share": 0.196,
-        "shots": 602
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-06",
-    "rest": {
-     "away": 2,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 1194,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 0.948,
-      "ga": 1.217,
-      "xf": 0.898,
-      "xa": 1.099
-     },
-     "home": {
-      "gf": 1.122,
-      "ga": 0.984,
-      "xf": 0.999,
-      "xa": 0.953
-     }
-    },
-    "at": "2026-11-08T02:11:12Z"
+    "blockReason": "VAN recent skater absences not individually modeled: Tom Willander"
    }
   }
  ]
