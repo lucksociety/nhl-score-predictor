@@ -7,20 +7,20 @@
     }
   },
   "forecast_policy": "Last pre-game freeze per event per model version. No retrospectively generated forecast is graded.",
-  "forecasts": 747,
-  "generated_at": "2026-11-07T16:59:30.785100+00:00",
-  "last_successful_refresh": "2026-11-07T16:44:39+00:00",
+  "forecasts": 847,
+  "generated_at": "2026-11-08T17:15:10.524809+00:00",
+  "last_successful_refresh": "2026-11-08T10:58:55+00:00",
   "project": "nhl-score-predictor",
   "settled_by_version": {
     "v4-independent": {
-      "brier_multiclass_sum": 0.44085757000000003,
-      "log_loss": 0.6310986464496557,
-      "margin_mae": 1.8786935483870968,
-      "n": 62,
-      "score_mae_per_team": 1.3376532258064515,
-      "score_n": 62,
-      "total_mae": 1.8930806451612903,
-      "winner_accuracy": 0.5806451612903226
+      "brier_multiclass_sum": 0.431309932972973,
+      "log_loss": 0.620860003971504,
+      "margin_mae": 1.8707837837837837,
+      "n": 74,
+      "score_mae_per_team": 1.292783783783784,
+      "score_n": 74,
+      "total_mae": 1.821162162162162,
+      "winner_accuracy": 0.6216216216216216
     }
   },
   "warnings": []

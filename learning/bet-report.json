@@ -1,7 +1,63 @@
 {
-  "settled_by_model_and_market": {},
-  "pending_or_ungradable": 5,
+  "settled_by_model_and_market": {
+    "v4-independent / sensitivity-confidence-v1 / moneyline": {
+      "n": 1,
+      "wins": 1,
+      "win_rate": 1,
+      "mean_probability": 0.511,
+      "brier": 0.239121,
+      "log_loss": 0.6713856887784326,
+      "flat_cost_roi": 0.9704705286575381,
+      "reliability": [
+        {
+          "lower_exclusive": 0.5,
+          "upper_inclusive": 0.6,
+          "n": 1,
+          "mean_probability": 0.511,
+          "win_rate": 1
+        }
+      ],
+      "calibration_status": "monitor_only_no_automatic_probability_changes",
+      "calibration_proposal": {
+        "status": "insufficient_forward_sample",
+        "minimum_games": 500,
+        "minimum_days": 30
+      }
+    },
+    "v4-independent / sensitivity-confidence-v1 / spreads": {
+      "n": 5,
+      "wins": 3,
+      "win_rate": 0.6,
+      "mean_probability": 0.6759000000000001,
+      "brier": 0.25948109,
+      "log_loss": 0.7221974378280039,
+      "flat_cost_roi": -0.06740392134012843,
+      "reliability": [
+        {
+          "lower_exclusive": 0.6,
+          "upper_inclusive": 0.7,
+          "n": 4,
+          "mean_probability": 0.655475,
+          "win_rate": 0.75
+        },
+        {
+          "lower_exclusive": 0.7,
+          "upper_inclusive": 0.8,
+          "n": 1,
+          "mean_probability": 0.7576,
+          "win_rate": 0
+        }
+      ],
+      "calibration_status": "monitor_only_no_automatic_probability_changes",
+      "calibration_proposal": {
+        "status": "insufficient_forward_sample",
+        "minimum_games": 500,
+        "minimum_days": 30
+      }
+    }
+  },
+  "pending_or_ungradable": 0,
   "policy": "Delivered primary recommendation only; last pregame publication per event, including NO BET. Not actual trades. No automatic calibration promotion.",
-  "generated_at": "2026-11-07T16:59:31.815557+00:00",
-  "records": 12
+  "generated_at": "2026-11-08T17:15:11.838794+00:00",
+  "records": 22
 }
