@@ -1,7 +1,7 @@
 {
  "date": "2026-11-08",
- "generatedAt": "2026-11-08T03:44:47Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-08T06:27:00Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020277,
@@ -15,7 +15,7 @@
    "final": null,
    "espnId": "401892674",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "BOS -135",
     "mlAway": 114.0,
     "mlHome": -135.0,
@@ -54,7 +54,7 @@
       "periodType": null,
       "ask": 0.45,
       "bid": 0.44,
-      "volume": 2280
+      "volume": 9977
      },
      "home": {
       "marketId": "POLY-5609555-1",
@@ -64,7 +64,7 @@
       "periodType": null,
       "ask": 0.56,
       "bid": 0.55,
-      "volume": 2280
+      "volume": 9977
      }
     },
     "extra": [
@@ -103,7 +103,7 @@
       "periodType": null,
       "ask": 0.58,
       "bid": 0.57,
-      "volume": 596,
+      "volume": 613,
       "ou": "O",
       "line": 5.5
      },
@@ -116,7 +116,7 @@
       "periodType": null,
       "ask": 0.43,
       "bid": 0.42,
-      "volume": 596,
+      "volume": 613,
       "ou": "U",
       "line": 5.5
      },
@@ -179,7 +179,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.34,
+      "ask": 0.35,
       "bid": 0.33,
       "volume": 0,
       "team": "BOS",
@@ -193,7 +193,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.67,
-      "bid": 0.66,
+      "bid": 0.65,
       "volume": 0,
       "team": "FLA",
       "line": 1.5
@@ -205,8 +205,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.12,
-      "bid": 0.06,
+      "ask": 0.13,
+      "bid": 0.04,
       "volume": 0,
       "team": "BOS",
       "line": -3.5
@@ -218,8 +218,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.94,
-      "bid": 0.88,
+      "ask": 0.96,
+      "bid": 0.87,
       "volume": 0,
       "team": "FLA",
       "line": 3.5
@@ -231,8 +231,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.22,
-      "bid": 0.21,
+      "ask": 0.23,
+      "bid": 0.22,
       "volume": 0,
       "team": "BOS",
       "line": -2.5
@@ -244,8 +244,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.79,
-      "bid": 0.78,
+      "ask": 0.78,
+      "bid": 0.77,
       "volume": 0,
       "team": "FLA",
       "line": 2.5
@@ -310,7 +310,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.16,
-      "bid": 0.15,
+      "bid": 0.14,
       "volume": 0,
       "team": "FLA",
       "line": -2.5
@@ -322,7 +322,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.85,
+      "ask": 0.86,
       "bid": 0.84,
       "volume": 0,
       "team": "BOS",
@@ -388,8 +388,8 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.2,
-      "bid": 0.18,
-      "volume": 0,
+      "bid": 0.19,
+      "volume": 12,
       "ou": "O",
       "line": 8.5
      },
@@ -400,9 +400,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.82,
+      "ask": 0.81,
       "bid": 0.8,
-      "volume": 0,
+      "volume": 12,
       "ou": "U",
       "line": 8.5
      },
@@ -413,7 +413,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.1,
+      "ask": 0.09,
       "bid": 0.06,
       "volume": 0,
       "ou": "O",
@@ -427,18 +427,18 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.94,
-      "bid": 0.9,
+      "bid": 0.91,
       "volume": 0,
       "ou": "U",
       "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-08T03:44:44Z",
+    "fetchedAt": "2026-11-08T06:26:59Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -697,11 +697,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.8135,
-    "lh": 3.4512,
-    "ra": 2.4956,
-    "rh": 3.0612,
-    "betaGq": 0.4023,
+    "la": 2.8159,
+    "lh": 3.4522,
+    "ra": 2.4977,
+    "rh": 3.0621,
+    "betaGq": 0.40291,
     "calib": 1.0251,
     "goalies": {
      "away": {
@@ -771,8 +771,8 @@
     },
     "form": {
      "away": {
-      "gf": 1.021,
-      "ga": 1.008,
+      "gf": 1.02,
+      "ga": 1.007,
       "xf": 1.034,
       "xa": 0.986
      },
@@ -783,7 +783,7 @@
       "xa": 0.996
      }
     },
-    "at": "2026-11-08T03:44:49Z"
+    "at": "2026-11-08T06:27:03Z"
    }
   },
   {
@@ -798,7 +798,7 @@
    "final": null,
    "espnId": "401892675",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "VGK -112",
     "mlAway": -112.0,
     "mlHome": -108.0,
@@ -837,7 +837,7 @@
       "periodType": null,
       "ask": 0.5,
       "bid": 0.49,
-      "volume": 1482
+      "volume": 1997
      },
      "home": {
       "marketId": "POLY-5609560-1",
@@ -847,7 +847,7 @@
       "periodType": null,
       "ask": 0.51,
       "bid": 0.5,
-      "volume": 1482
+      "volume": 1997
      }
     },
     "extra": [
@@ -858,8 +858,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.81,
-      "bid": 0.79,
+      "ask": 0.82,
+      "bid": 0.78,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -871,8 +871,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.21,
-      "bid": 0.19,
+      "ask": 0.22,
+      "bid": 0.18,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -1119,7 +1119,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.96,
+      "bid": 0.961,
       "volume": 0,
       "ou": "O",
       "line": 2.5
@@ -1131,7 +1131,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.04,
+      "ask": 0.039,
       "bid": 0.02,
       "volume": 0,
       "ou": "U",
@@ -1144,7 +1144,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.89,
+      "ask": 0.9,
       "bid": 0.86,
       "volume": 0,
       "ou": "O",
@@ -1158,7 +1158,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.14,
-      "bid": 0.11,
+      "bid": 0.1,
       "volume": 0,
       "ou": "U",
       "line": 3.5
@@ -1217,11 +1217,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-08T03:44:44Z",
+    "fetchedAt": "2026-11-08T06:26:59Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1464,11 +1464,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.3177,
-    "lh": 3.0399,
-    "ra": 2.9428,
-    "rh": 2.6964,
-    "betaGq": 0.4023,
+    "la": 3.3174,
+    "lh": 3.0414,
+    "ra": 2.9426,
+    "rh": 2.6977,
+    "betaGq": 0.40291,
     "calib": 1.0251,
     "goalies": {
      "away": {
@@ -1531,19 +1531,19 @@
     },
     "form": {
      "away": {
-      "gf": 1.017,
+      "gf": 1.016,
       "ga": 0.943,
       "xf": 1.016,
       "xa": 0.936
      },
      "home": {
-      "gf": 1.026,
+      "gf": 1.025,
       "ga": 0.993,
       "xf": 0.997,
       "xa": 1.019
      }
     },
-    "at": "2026-11-08T03:44:49Z"
+    "at": "2026-11-08T06:27:03Z"
    }
   },
   {
@@ -1558,7 +1558,7 @@
    "final": null,
    "espnId": "401892677",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "TB -142",
     "mlAway": -142.0,
     "mlHome": 120.0,
@@ -1595,9 +1595,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.6,
+      "ask": 0.59,
       "bid": 0.58,
-      "volume": 1483
+      "volume": 2640
      },
      "home": {
       "marketId": "POLY-5609565-1",
@@ -1606,8 +1606,8 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.42,
-      "bid": 0.4,
-      "volume": 1483
+      "bid": 0.41,
+      "volume": 2640
      }
     },
     "extra": [
@@ -1645,7 +1645,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.59,
-      "bid": 0.56,
+      "bid": 0.58,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -1657,7 +1657,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.44,
+      "ask": 0.42,
       "bid": 0.41,
       "volume": 0,
       "ou": "U",
@@ -1671,7 +1671,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.48,
-      "bid": 0.45,
+      "bid": 0.47,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -1683,7 +1683,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.55,
+      "ask": 0.53,
       "bid": 0.52,
       "volume": 0,
       "ou": "U",
@@ -1696,8 +1696,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.28,
-      "bid": 0.25,
+      "ask": 0.27,
+      "bid": 0.26,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -1709,8 +1709,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.75,
-      "bid": 0.72,
+      "ask": 0.74,
+      "bid": 0.73,
       "volume": 0,
       "ou": "U",
       "line": 7.5
@@ -1722,9 +1722,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.37,
+      "ask": 0.35,
       "bid": 0.34,
-      "volume": 0,
+      "volume": 81,
       "team": "TBL",
       "line": -1.5
      },
@@ -1736,8 +1736,8 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.66,
-      "bid": 0.63,
-      "volume": 0,
+      "bid": 0.65,
+      "volume": 81,
       "team": "WPG",
       "line": 1.5
      },
@@ -1748,7 +1748,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.49,
+      "ask": 0.09,
       "bid": 0.03,
       "volume": 0,
       "team": "WPG",
@@ -1762,7 +1762,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.51,
+      "bid": 0.91,
       "volume": 0,
       "team": "TBL",
       "line": 3.5
@@ -1774,8 +1774,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.16,
-      "bid": 0.13,
+      "ask": 0.15,
+      "bid": 0.14,
       "volume": 0,
       "team": "WPG",
       "line": -2.5
@@ -1787,8 +1787,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.87,
-      "bid": 0.84,
+      "ask": 0.86,
+      "bid": 0.85,
       "volume": 0,
       "team": "TBL",
       "line": 2.5
@@ -1800,8 +1800,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.24,
-      "bid": 0.21,
+      "ask": 0.23,
+      "bid": 0.22,
       "volume": 0,
       "team": "WPG",
       "line": -1.5
@@ -1813,8 +1813,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.79,
-      "bid": 0.76,
+      "ask": 0.78,
+      "bid": 0.77,
       "volume": 0,
       "team": "TBL",
       "line": 1.5
@@ -1826,7 +1826,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.28,
+      "ask": 0.14,
       "bid": 0.05,
       "volume": 0,
       "team": "TBL",
@@ -1840,7 +1840,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.72,
+      "bid": 0.86,
       "volume": 0,
       "team": "WPG",
       "line": 3.5
@@ -1852,8 +1852,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.26,
-      "bid": 0.23,
+      "ask": 0.23,
+      "bid": 0.22,
       "volume": 0,
       "team": "TBL",
       "line": -2.5
@@ -1865,8 +1865,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.74,
+      "ask": 0.78,
+      "bid": 0.77,
       "volume": 0,
       "team": "WPG",
       "line": 2.5
@@ -1931,7 +1931,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.21,
-      "bid": 0.19,
+      "bid": 0.18,
       "volume": 0,
       "ou": "O",
       "line": 8.5
@@ -1943,7 +1943,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.81,
+      "ask": 0.82,
       "bid": 0.79,
       "volume": 0,
       "ou": "U",
@@ -1977,11 +1977,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-08T03:44:44Z",
+    "fetchedAt": "2026-11-08T06:26:59Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2230,11 +2230,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.6109,
-    "lh": 2.8513,
-    "ra": 3.2028,
-    "rh": 2.5291,
-    "betaGq": 0.4023,
+    "la": 3.3356,
+    "lh": 2.9767,
+    "ra": 2.9587,
+    "rh": 2.6403,
+    "betaGq": 0.40291,
     "calib": 1.0251,
     "goalies": {
      "away": {
@@ -2247,15 +2247,15 @@
         "id": 8476883,
         "name": "A. Vasilevskiy",
         "gq": -0.1582,
-        "share": 0.828,
+        "share": 0.699,
         "shots": 3440
        },
        {
         "id": 8483710,
         "name": "D. Hildeby",
-        "gq": -0.0717,
-        "share": 0.158,
-        "shots": 538
+        "gq": -0.0668,
+        "share": 0.29,
+        "shots": 560
        }
       ]
      },
@@ -2291,32 +2291,32 @@
     },
     "trainedThrough": "2026-11-07",
     "rest": {
-     "away": 3,
+     "away": 1,
      "home": 3
     },
     "b2b": {
-     "away": 0,
+     "away": 1,
      "home": 0
     },
     "km": {
-     "away": 2740,
+     "away": 628,
      "home": 0
     },
     "form": {
      "away": {
-      "gf": 1.093,
+      "gf": 1.096,
       "ga": 0.981,
-      "xf": 1.07,
-      "xa": 0.962
+      "xf": 1.073,
+      "xa": 0.958
      },
      "home": {
       "gf": 0.932,
-      "ga": 1.063,
+      "ga": 1.062,
       "xf": 0.983,
       "xa": 1.033
      }
     },
-    "at": "2026-11-08T03:44:49Z"
+    "at": "2026-11-08T06:27:03Z"
    }
   },
   {
@@ -2331,10 +2331,10 @@
    "final": null,
    "espnId": "401892676",
    "odds": {
-    "provider": "Draft Kings",
-    "details": "NJ -142",
-    "mlAway": -142.0,
-    "mlHome": 120.0,
+    "provider": "DraftKings",
+    "details": "NJ -148",
+    "mlAway": -148.0,
+    "mlHome": 124.0,
     "total": 6.5,
     "over": 105.0,
     "under": -125.0,
@@ -2370,7 +2370,7 @@
       "periodType": null,
       "ask": 0.58,
       "bid": 0.57,
-      "volume": 3547
+      "volume": 3788
      },
      "home": {
       "marketId": "POLY-5609570-1",
@@ -2380,7 +2380,7 @@
       "periodType": null,
       "ask": 0.43,
       "bid": 0.42,
-      "volume": 3547
+      "volume": 3788
      }
     },
     "extra": [
@@ -2391,7 +2391,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.79,
+      "ask": 0.8,
       "bid": 0.78,
       "volume": 0,
       "ou": "O",
@@ -2405,7 +2405,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.22,
-      "bid": 0.21,
+      "bid": 0.2,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -2495,9 +2495,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.35,
-      "bid": 0.34,
-      "volume": 0,
+      "ask": 0.36,
+      "bid": 0.35,
+      "volume": 81,
       "team": "NJD",
       "line": -1.5
      },
@@ -2508,9 +2508,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.66,
-      "bid": 0.65,
-      "volume": 0,
+      "ask": 0.65,
+      "bid": 0.64,
+      "volume": 81,
       "team": "TOR",
       "line": 1.5
      },
@@ -2573,7 +2573,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.24,
+      "ask": 0.23,
       "bid": 0.22,
       "volume": 0,
       "team": "TOR",
@@ -2587,7 +2587,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.78,
-      "bid": 0.76,
+      "bid": 0.77,
       "volume": 0,
       "team": "NJD",
       "line": 1.5
@@ -2599,7 +2599,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.15,
+      "ask": 0.13,
       "bid": 0.05,
       "volume": 0,
       "team": "NJD",
@@ -2613,7 +2613,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.85,
+      "bid": 0.87,
       "volume": 0,
       "team": "TOR",
       "line": 3.5
@@ -2626,8 +2626,8 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.24,
-      "bid": 0.22,
-      "volume": 0,
+      "bid": 0.23,
+      "volume": 38,
       "team": "NJD",
       "line": -2.5
      },
@@ -2638,9 +2638,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.78,
+      "ask": 0.77,
       "bid": 0.76,
-      "volume": 0,
+      "volume": 38,
       "team": "TOR",
       "line": 2.5
      },
@@ -2652,7 +2652,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.953,
+      "bid": 0.96,
       "volume": 0,
       "ou": "O",
       "line": 2.5
@@ -2664,7 +2664,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.047,
+      "ask": 0.04,
       "bid": 0.02,
       "volume": 0,
       "ou": "U",
@@ -2750,11 +2750,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-08T03:44:44Z",
+    "fetchedAt": "2026-11-08T06:26:59Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3039,11 +3039,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.5772,
-    "lh": 2.7901,
-    "ra": 3.1729,
-    "rh": 2.4748,
-    "betaGq": 0.4023,
+    "la": 3.5792,
+    "lh": 2.7903,
+    "ra": 3.1748,
+    "rh": 2.475,
+    "betaGq": 0.40291,
     "calib": 1.0251,
     "goalies": {
      "away": {
@@ -3119,13 +3119,13 @@
       "xa": 0.921
      },
      "home": {
-      "gf": 1.045,
+      "gf": 1.044,
       "ga": 1.057,
       "xf": 0.971,
       "xa": 1.056
      }
     },
-    "at": "2026-11-08T03:44:49Z"
+    "at": "2026-11-08T06:27:03Z"
    }
   },
   {
@@ -3140,7 +3140,7 @@
    "final": null,
    "espnId": "401892678",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "PHI -112",
     "mlAway": -112.0,
     "mlHome": -108.0,
@@ -3179,7 +3179,7 @@
       "periodType": null,
       "ask": 0.51,
       "bid": 0.5,
-      "volume": 1207
+      "volume": 1737
      },
      "home": {
       "marketId": "POLY-5609575-1",
@@ -3189,7 +3189,7 @@
       "periodType": null,
       "ask": 0.5,
       "bid": 0.49,
-      "volume": 1207
+      "volume": 1737
      }
     },
     "extra": [
@@ -3202,7 +3202,7 @@
       "periodType": null,
       "ask": 0.77,
       "bid": 0.75,
-      "volume": 4020,
+      "volume": 4222,
       "ou": "O",
       "line": 4.5
      },
@@ -3215,7 +3215,7 @@
       "periodType": null,
       "ask": 0.25,
       "bid": 0.23,
-      "volume": 4020,
+      "volume": 4222,
       "ou": "U",
       "line": 4.5
      },
@@ -3228,7 +3228,7 @@
       "periodType": null,
       "ask": 0.53,
       "bid": 0.52,
-      "volume": 0,
+      "volume": 24,
       "ou": "O",
       "line": 5.5
      },
@@ -3241,7 +3241,7 @@
       "periodType": null,
       "ask": 0.48,
       "bid": 0.47,
-      "volume": 0,
+      "volume": 24,
       "ou": "U",
       "line": 5.5
      },
@@ -3252,7 +3252,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.42,
+      "ask": 0.43,
       "bid": 0.41,
       "volume": 0,
       "ou": "O",
@@ -3266,7 +3266,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.59,
-      "bid": 0.58,
+      "bid": 0.57,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -3304,8 +3304,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.28,
-      "bid": 0.27,
+      "ask": 0.3,
+      "bid": 0.28,
       "volume": 0,
       "team": "PHI",
       "line": -1.5
@@ -3317,8 +3317,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.73,
-      "bid": 0.72,
+      "ask": 0.72,
+      "bid": 0.7,
       "volume": 0,
       "team": "CGY",
       "line": 1.5
@@ -3434,8 +3434,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.18,
-      "bid": 0.17,
+      "ask": 0.19,
+      "bid": 0.18,
       "volume": 0,
       "team": "PHI",
       "line": -2.5
@@ -3447,8 +3447,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.83,
-      "bid": 0.82,
+      "ask": 0.82,
+      "bid": 0.81,
       "volume": 0,
       "team": "CGY",
       "line": 2.5
@@ -3512,7 +3512,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.16,
+      "ask": 0.17,
       "bid": 0.15,
       "volume": 0,
       "ou": "O",
@@ -3526,7 +3526,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.85,
-      "bid": 0.84,
+      "bid": 0.83,
       "volume": 0,
       "ou": "U",
       "line": 8.5
@@ -3559,11 +3559,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-08T03:44:44Z",
+    "fetchedAt": "2026-11-08T06:26:59Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3826,11 +3826,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.0622,
-    "lh": 3.061,
-    "ra": 2.7162,
-    "rh": 2.7151,
-    "betaGq": 0.4023,
+    "la": 3.0628,
+    "lh": 3.0624,
+    "ra": 2.7167,
+    "rh": 2.7163,
+    "betaGq": 0.40291,
     "calib": 1.0251,
     "goalies": {
      "away": {
@@ -3912,7 +3912,7 @@
       "xa": 1.029
      }
     },
-    "at": "2026-11-08T03:44:49Z"
+    "at": "2026-11-08T06:27:03Z"
    }
   },
   {
@@ -3927,7 +3927,7 @@
    "final": null,
    "espnId": "401892679",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "ANA -120",
     "mlAway": 100.0,
     "mlHome": -120.0,
@@ -3966,7 +3966,7 @@
       "periodType": null,
       "ask": 0.47,
       "bid": 0.46,
-      "volume": 1639
+      "volume": 1999
      },
      "home": {
       "marketId": "POLY-5609580-1",
@@ -3976,7 +3976,7 @@
       "periodType": null,
       "ask": 0.54,
       "bid": 0.53,
-      "volume": 1639
+      "volume": 1999
      }
     },
     "extra": [
@@ -3987,7 +3987,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.86,
+      "ask": 0.87,
       "bid": 0.84,
       "volume": 0,
       "ou": "O",
@@ -4001,7 +4001,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.16,
-      "bid": 0.14,
+      "bid": 0.13,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -4014,7 +4014,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.68,
-      "bid": 0.66,
+      "bid": 0.67,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -4026,7 +4026,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.34,
+      "ask": 0.33,
       "bid": 0.32,
       "volume": 0,
       "ou": "U",
@@ -4039,8 +4039,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.56,
+      "ask": 0.58,
+      "bid": 0.57,
       "volume": 43,
       "ou": "O",
       "line": 6.5
@@ -4052,8 +4052,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.44,
-      "bid": 0.41,
+      "ask": 0.43,
+      "bid": 0.42,
       "volume": 43,
       "ou": "U",
       "line": 6.5
@@ -4065,8 +4065,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.38,
-      "bid": 0.35,
+      "ask": 0.37,
+      "bid": 0.36,
       "volume": 4,
       "ou": "O",
       "line": 7.5
@@ -4078,8 +4078,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.65,
-      "bid": 0.62,
+      "ask": 0.64,
+      "bid": 0.63,
       "volume": 4,
       "ou": "U",
       "line": 7.5
@@ -4091,8 +4091,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.32,
-      "bid": 0.29,
+      "ask": 0.33,
+      "bid": 0.32,
       "volume": 0,
       "team": "ANA",
       "line": -1.5
@@ -4104,8 +4104,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.71,
-      "bid": 0.68,
+      "ask": 0.68,
+      "bid": 0.67,
       "volume": 0,
       "team": "PIT",
       "line": 1.5
@@ -4117,8 +4117,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.25,
-      "bid": 0.06,
+      "ask": 0.12,
+      "bid": 0.07,
       "volume": 0,
       "team": "ANA",
       "line": -3.5
@@ -4130,8 +4130,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.94,
-      "bid": 0.75,
+      "ask": 0.93,
+      "bid": 0.88,
       "volume": 0,
       "team": "PIT",
       "line": 3.5
@@ -4144,7 +4144,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.22,
-      "bid": 0.2,
+      "bid": 0.21,
       "volume": 0,
       "team": "ANA",
       "line": -2.5
@@ -4156,7 +4156,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.8,
+      "ask": 0.79,
       "bid": 0.78,
       "volume": 0,
       "team": "PIT",
@@ -4169,7 +4169,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.29,
+      "ask": 0.28,
       "bid": 0.26,
       "volume": 0,
       "team": "PIT",
@@ -4183,7 +4183,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.74,
-      "bid": 0.71,
+      "bid": 0.72,
       "volume": 0,
       "team": "ANA",
       "line": 1.5
@@ -4195,8 +4195,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.71,
-      "bid": 0.03,
+      "ask": 0.11,
+      "bid": 0.04,
       "volume": 0,
       "team": "PIT",
       "line": -3.5
@@ -4208,8 +4208,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.97,
-      "bid": 0.29,
+      "ask": 0.96,
+      "bid": 0.89,
       "volume": 0,
       "team": "ANA",
       "line": 3.5
@@ -4221,7 +4221,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.19,
+      "ask": 0.18,
       "bid": 0.17,
       "volume": 0,
       "team": "PIT",
@@ -4235,7 +4235,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.83,
-      "bid": 0.81,
+      "bid": 0.82,
       "volume": 0,
       "team": "ANA",
       "line": 2.5
@@ -4248,7 +4248,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.961,
+      "bid": 0.963,
       "volume": 0,
       "ou": "O",
       "line": 2.5
@@ -4260,7 +4260,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.039,
+      "ask": 0.037,
       "bid": 0.02,
       "volume": 0,
       "ou": "U",
@@ -4273,8 +4273,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.92,
-      "bid": 0.89,
+      "ask": 0.93,
+      "bid": 0.9,
       "volume": 0,
       "ou": "O",
       "line": 3.5
@@ -4286,8 +4286,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.11,
-      "bid": 0.08,
+      "ask": 0.1,
+      "bid": 0.07,
       "volume": 0,
       "ou": "U",
       "line": 3.5
@@ -4346,11 +4346,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-08T03:44:44Z",
+    "fetchedAt": "2026-11-08T06:26:59Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4627,11 +4627,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.4834,
-    "lh": 3.734,
-    "ra": 3.0898,
-    "rh": 3.3121,
-    "betaGq": 0.4023,
+    "la": 3.1619,
+    "lh": 3.9121,
+    "ra": 2.8046,
+    "rh": 3.4701,
+    "betaGq": 0.40291,
     "calib": 1.0251,
     "goalies": {
      "away": {
@@ -4644,15 +4644,15 @@
         "id": 8481668,
         "name": "A. Silovs",
         "gq": 0.0226,
-        "share": 0.733,
+        "share": 0.619,
         "shots": 1186
        },
        {
         "id": 8483703,
         "name": "S. Murashov",
-        "gq": 0.022,
-        "share": 0.243,
-        "shots": 228
+        "gq": 0.0104,
+        "share": 0.361,
+        "shots": 256
        }
       ]
      },
@@ -4688,23 +4688,23 @@
     },
     "trainedThrough": "2026-11-07",
     "rest": {
-     "away": 3,
+     "away": 1,
      "home": 2
     },
     "b2b": {
-     "away": 0,
+     "away": 1,
      "home": 0
     },
     "km": {
-     "away": 3412,
+     "away": 44,
      "home": 1941
     },
     "form": {
      "away": {
-      "gf": 1.029,
-      "ga": 1.073,
-      "xf": 1.017,
-      "xa": 1.038
+      "gf": 1.043,
+      "ga": 1.061,
+      "xf": 1.008,
+      "xa": 1.037
      },
      "home": {
       "gf": 1.09,
@@ -4713,7 +4713,7 @@
       "xa": 1.042
      }
     },
-    "at": "2026-11-08T03:44:49Z"
+    "at": "2026-11-08T06:27:03Z"
    }
   }
  ]

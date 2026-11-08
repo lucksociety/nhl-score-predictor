@@ -1,7 +1,7 @@
 {
  "date": "2026-11-07",
- "generatedAt": "2026-11-08T03:44:46Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-08T06:26:59Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020265,
@@ -533,7 +533,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1324,7 +1324,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2093,7 +2093,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2920,7 +2920,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3776,7 +3776,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4550,7 +4550,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4824,7 +4824,7 @@
    "awayName": "Chicago Blackhawks",
    "homeName": "Carolina Hurricanes",
    "venue": "Lenovo Center",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     2,
     9,
@@ -5339,7 +5339,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5459,6 +5459,12 @@
      "home": {
       "injuries": [
        {
+        "name": "William Carrier",
+        "position": "LW",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-08T04:04Z"
+       },
+       {
         "name": "Jordan Staal",
         "position": "C",
         "status": "Injured Reserve",
@@ -5577,7 +5583,7 @@
    "awayName": "San Jose Sharks",
    "homeName": "Dallas Stars",
    "venue": "American Airlines Center",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     3,
     4,
@@ -6092,7 +6098,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6366,8 +6372,12 @@
    "awayName": "Tampa Bay Lightning",
    "homeName": "Minnesota Wild",
    "venue": "Grand Casino Arena",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    3,
+    "OT"
+   ],
    "espnId": "401892670",
    "odds": {
     "provider": "DraftKings",
@@ -6877,7 +6887,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7135,8 +7145,12 @@
    "awayName": "Detroit Red Wings",
    "homeName": "Colorado Avalanche",
    "venue": "Ball Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    0,
+    4,
+    "REG"
+   ],
    "espnId": "401892671",
    "odds": {
     "provider": "Draft Kings",
@@ -7562,7 +7576,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7830,8 +7844,12 @@
    "awayName": "Pittsburgh Penguins",
    "homeName": "Los Angeles Kings",
    "venue": "Crypto.com Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    5,
+    2,
+    "REG"
+   ],
    "espnId": "401892672",
    "odds": {
     "provider": "DraftKings",
@@ -8341,7 +8359,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8617,8 +8635,12 @@
    "awayName": "Vancouver Canucks",
    "homeName": "Edmonton Oilers",
    "venue": "Rogers Place",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    4,
+    "REG"
+   ],
    "espnId": "401892673",
    "odds": {
     "provider": "Draft Kings",
@@ -9135,7 +9157,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T03:44:47.228578+00:00",
+    "checkedAt": "2026-11-08T06:27:01.006041+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9276,6 +9298,12 @@
      },
      "home": {
       "injuries": [
+       {
+        "name": "Ryan Nugent-Hopkins",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-08T05:22Z"
+       },
        {
         "name": "Isaac Howard",
         "position": "LW",
