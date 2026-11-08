@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "generatedAt": "2026-11-08T18:44:43Z",
+ "generatedAt": "2026-11-08T22:43:49Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
@@ -533,7 +533,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1322,7 +1322,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2098,7 +2098,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2200,6 +2200,10 @@
        {
         "id": 8476459,
         "name": "Mika Zibanejad"
+       },
+       {
+        "id": 8481743,
+        "name": "Marc Del Gaizo"
        },
        {
         "id": 8480434,
@@ -2330,6 +2334,10 @@
        {
         "id": 8483570,
         "name": "Ben Meyers"
+       },
+       {
+        "id": 8483012,
+        "name": "Logan Morrison"
        },
        {
         "id": 8483497,
@@ -2925,7 +2933,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3075,8 +3083,8 @@
        {
         "name": "Morgan Rielly",
         "position": "D",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-08T01:27Z"
+        "status": "Out",
+        "updatedAt": "2026-11-08T21:47Z"
        },
        {
         "name": "Kirill Marchenko",
@@ -3244,7 +3252,7 @@
      }
     },
     "problems": [],
-    "blockReason": null
+    "blockReason": "TOR recent skater absences not individually modeled: Morgan Rielly"
    }
   },
   {
@@ -3777,11 +3785,17 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Anthony Mantha",
+        "position": "RW",
+        "status": "Out",
+        "updatedAt": "2026-11-08T21:56Z"
+       },
        {
         "name": "Seamus Casey",
         "position": "D",
@@ -4018,7 +4032,7 @@
      }
     },
     "problems": [],
-    "blockReason": null
+    "blockReason": "NJD recent skater absences not individually modeled: Anthony Mantha"
    }
   },
   {
@@ -4551,7 +4565,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5330,7 +5344,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6089,7 +6103,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6878,18 +6892,11 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
-      "injuries": [
-       {
-        "name": "Yanni Gourde",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-04T17:51Z"
-       }
-      ],
+      "injuries": [],
       "roster": [
        {
         "id": 8478519,
@@ -7567,7 +7574,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8338,7 +8345,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8408,6 +8415,10 @@
        {
         "id": 8471215,
         "name": "Evgeni Malkin"
+       },
+       {
+        "id": 8483487,
+        "name": "Rutger McGroarty"
        },
        {
         "id": 8478438,
@@ -9132,7 +9143,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T18:44:44.191891+00:00",
+    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9428,10 +9439,6 @@
        {
         "id": 8482221,
         "name": "Devon Levi"
-       },
-       {
-        "id": 8477035,
-        "name": "Matt Tomkins"
        }
       ]
      }
