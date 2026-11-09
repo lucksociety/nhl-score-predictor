@@ -45,7 +45,7 @@ function predictSlate(date, opts = {}) {
     }
     games.push(row);
   }
-  return { date, model: 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
+  return { date, model: slate.games.some(g=>g.v4?.skaterAdjustment) ? 'v4-independent-skater-v1' : 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
            priceSource: 'Jupiter Predict API (api.jup.ag/prediction/v1, includeAllMarkets): YES ask per outcome + Jupiter fee 0.07*p*(1-p)',
            jupiterFetchedAt: slate.games.map(g => g.jupiter && g.jupiter.fetchedAt).filter(Boolean).sort().pop() || null, games };
 }

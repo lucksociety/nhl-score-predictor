@@ -246,6 +246,18 @@
         return { scale, n: sn, pHome: a.pHome, pAway: a.pAway, dist: distributions(r) };
       });
     }
+    // A new skater layer may never create an edge that fails the original team forecast.
+    // Also test unresolved-skater OUT lineups. These are sensitivity scenarios, not probability bounds.
+    if (opts.calibrationStress !== false && v.skaterAdjustment?.scenarios) {
+      const sn=Math.min(n,100000);
+      for(const scenario of v.skaterAdjustment.scenarios) for(const scale of [1,0.86/0.887,0.91/0.887]) {
+        let [sa,sh]=scenario.rates;
+        if(ov.home!=null)sa*=Math.exp(v.betaGq*(ov.home-v.goalies.home.gq));
+        if(ov.away!=null)sh*=Math.exp(v.betaGq*(ov.away-v.goalies.away.gq));
+        const r=simulate(sa*scale,sh*scale,sn,seed),a=analyze(r);
+        o.calibrationStress.push({label:scenario.label,scale,n:sn,pHome:a.pHome,pAway:a.pAway,dist:distributions(r)});
+      }
+    }
     o.simMs = (typeof performance !== 'undefined' ? performance : Date).now() - t0;
     return o;
   }

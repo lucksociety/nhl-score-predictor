@@ -1,5 +1,5 @@
 """Fresh market-free NHL availability. Goalies feed the existing fitted model;
-new skater absences are disclosed and withheld from betting, not assigned invented goal penalties.
+skater changes are handled by the fitted participation layer; unresolved inputs still withhold bets.
 """
 import datetime as dt
 from concurrent.futures import ThreadPoolExecutor
@@ -27,7 +27,7 @@ def refresh(slates,get,now=None):
     def roster(team):
         body=get(f'https://api-web.nhle.com/v1/roster/{team}/current')
         if not isinstance(body,dict) or not all(isinstance(body.get(k),list) for k in ('forwards','defensemen','goalies')):return team,None
-        return team,[{'id':p['id'],'name':((p.get('firstName') or {}).get('default','')+' '+(p.get('lastName') or {}).get('default','')).strip()} for k in ('forwards','defensemen','goalies') for p in body[k]]
+        return team,[{'id':p['id'],'position':p.get('positionCode'),'name':((p.get('firstName') or {}).get('default','')+' '+(p.get('lastName') or {}).get('default','')).strip()} for k in ('forwards','defensemen','goalies') for p in body[k]]
     with ThreadPoolExecutor(max_workers=8) as pool:rosters=dict(pool.map(roster,sorted(teams)))
     for slate in slates:
         for g in slate['games']:
@@ -44,7 +44,8 @@ def finalize(slates):
     for slate in slates:
         for g in slate['games']:
             a=g.get('availability') or {};reasons=list(a.get('problems',[]));through=(g.get('v4') or {}).get('trainedThrough')
-            for side in ('away','home'):
+            if a.get('skaterModelStatus')=='unavailable':reasons.append('Skater adjustment unavailable: '+a.get('skaterModelReason','unknown'))
+            for side in (() if a.get('skaterModelStatus') in ('adjusted','unavailable') else ('away','home')):
                 rows=(a.get('sides',{}).get(side) or {}).get('injuries',[])
                 new=[x['name'] for x in rows if x['position']!='G' and x['status'] in UNAVAILABLE and through and str(x.get('updatedAt') or '')[:10]>through]
                 if new:reasons.append(f"{g[side]} recent skater absences not individually modeled: {', '.join(new[:3])}")
