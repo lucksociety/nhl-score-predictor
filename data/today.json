@@ -1,7 +1,7 @@
 {
  "date": "2026-11-08",
- "generatedAt": "2026-11-09T02:29:38Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-11-09T03:57:30Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020277,
@@ -533,7 +533,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
+    "checkedAt": "2026-11-09T03:57:30.597181+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1306,7 +1306,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
+    "checkedAt": "2026-11-09T03:57:30.597181+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2078,7 +2078,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
+    "checkedAt": "2026-11-09T03:57:30.597181+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2332,8 +2332,12 @@
    "awayName": "New Jersey Devils",
    "homeName": "Toronto Maple Leafs",
    "venue": "Scotiabank Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    0,
+    "REG"
+   ],
    "espnId": "401892676",
    "odds": {
     "provider": "Draft Kings",
@@ -2850,7 +2854,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
+    "checkedAt": "2026-11-09T03:57:30.597181+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2961,6 +2965,12 @@
      },
      "home": {
       "injuries": [
+       {
+        "name": "Colton Sissons",
+        "position": "C",
+        "status": "Out",
+        "updatedAt": "2026-11-09T02:28Z"
+       },
        {
         "name": "Jack Roslovic",
         "position": "C",
@@ -3139,7 +3149,7 @@
      }
     },
     "problems": [],
-    "blockReason": "NJD recent skater absences not individually modeled: Anthony Mantha; TOR recent skater absences not individually modeled: Jack Roslovic, Morgan Rielly"
+    "blockReason": "NJD recent skater absences not individually modeled: Anthony Mantha; TOR recent skater absences not individually modeled: Colton Sissons, Jack Roslovic, Morgan Rielly"
    }
   },
   {
@@ -3150,8 +3160,12 @@
    "awayName": "Philadelphia Flyers",
    "homeName": "Calgary Flames",
    "venue": "Scotiabank Saddledome",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    4,
+    "OT"
+   ],
    "espnId": "401892678",
    "odds": {
     "provider": "Draft Kings",
@@ -3668,7 +3682,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
+    "checkedAt": "2026-11-09T03:57:30.597181+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3942,8 +3956,12 @@
    "awayName": "Pittsburgh Penguins",
    "homeName": "Anaheim Ducks",
    "venue": "Honda Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    2,
+    5,
+    "REG"
+   ],
    "espnId": "401892679",
    "odds": {
     "provider": "Draft Kings",
@@ -4460,7 +4478,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
+    "checkedAt": "2026-11-09T03:57:30.597181+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {

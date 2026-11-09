@@ -1,7 +1,7 @@
 {
  "date": "2026-11-09",
- "generatedAt": "2026-11-09T02:29:38Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-11-09T03:57:30Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020283,
@@ -15,7 +15,7 @@
    "final": null,
    "espnId": "401892680",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "EDM -155",
     "mlAway": 130.0,
     "mlHome": -155.0,
@@ -54,7 +54,7 @@
       "periodType": null,
       "ask": 0.42,
       "bid": 0.41,
-      "volume": 6181
+      "volume": 6280
      },
      "home": {
       "marketId": "POLY-5651096-1",
@@ -64,7 +64,7 @@
       "periodType": null,
       "ask": 0.59,
       "bid": 0.58,
-      "volume": 6181
+      "volume": 6280
      }
     },
     "extra": [
@@ -179,8 +179,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.36,
-      "bid": 0.35,
+      "ask": 0.37,
+      "bid": 0.36,
       "volume": 0,
       "team": "EDM",
       "line": -1.5
@@ -192,8 +192,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.65,
-      "bid": 0.64,
+      "ask": 0.64,
+      "bid": 0.63,
       "volume": 0,
       "team": "NYR",
       "line": 1.5
@@ -205,7 +205,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.18,
+      "ask": 0.17,
       "bid": 0.06,
       "volume": 0,
       "team": "EDM",
@@ -219,7 +219,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.94,
-      "bid": 0.82,
+      "bid": 0.83,
       "volume": 0,
       "team": "NYR",
       "line": 3.5
@@ -283,7 +283,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.17,
+      "ask": 0.15,
       "bid": 0.03,
       "volume": 0,
       "team": "NYR",
@@ -297,7 +297,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.83,
+      "bid": 0.85,
       "volume": 0,
       "team": "EDM",
       "line": 3.5
@@ -336,7 +336,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.96,
+      "bid": 0.961,
       "volume": 0,
       "ou": "O",
       "line": 2.5
@@ -348,7 +348,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.04,
+      "ask": 0.039,
       "bid": 0.02,
       "volume": 0,
       "ou": "U",
@@ -361,8 +361,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.89,
-      "bid": 0.87,
+      "ask": 0.9,
+      "bid": 0.88,
       "volume": 0,
       "ou": "O",
       "line": 3.5
@@ -374,8 +374,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.13,
-      "bid": 0.11,
+      "ask": 0.12,
+      "bid": 0.1,
       "volume": 0,
       "ou": "U",
       "line": 3.5
@@ -388,7 +388,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.23,
-      "bid": 0.21,
+      "bid": 0.2,
       "volume": 0,
       "ou": "O",
       "line": 8.5
@@ -400,7 +400,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.79,
+      "ask": 0.8,
       "bid": 0.77,
       "volume": 0,
       "ou": "U",
@@ -434,11 +434,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-09T02:29:38Z",
+    "fetchedAt": "2026-11-09T03:57:29Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
+    "checkedAt": "2026-11-09T03:57:30.597181+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -757,12 +757,12 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.9492,
-    "lh": 3.5109,
-    "ra": 2.616,
-    "rh": 3.1142,
-    "betaGq": 0.40118,
-    "calib": 1.0242,
+    "la": 2.9464,
+    "lh": 3.5078,
+    "ra": 2.6135,
+    "rh": 3.1114,
+    "betaGq": 0.40627,
+    "calib": 1.0236,
     "goalies": {
      "away": {
       "name": "Joonas Korpisalo",
@@ -857,7 +857,7 @@
       "xa": 0.946
      }
     },
-    "at": "2026-11-09T02:29:40Z"
+    "at": "2026-11-09T03:57:32Z"
    }
   },
   {
@@ -872,13 +872,13 @@
    "final": null,
    "espnId": "401892681",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "PHI -135",
     "mlAway": -135.0,
     "mlHome": 114.0,
     "total": 6.5,
-    "over": 105.0,
-    "under": -125.0,
+    "over": 110.0,
+    "under": -130.0,
     "mlAwayOpen": -122.0,
     "mlHomeOpen": 102.0
    },
@@ -911,7 +911,7 @@
       "periodType": null,
       "ask": 0.56,
       "bid": 0.55,
-      "volume": 775
+      "volume": 806
      },
      "home": {
       "marketId": "POLY-5651101-1",
@@ -921,7 +921,7 @@
       "periodType": null,
       "ask": 0.45,
       "bid": 0.44,
-      "volume": 775
+      "volume": 806
      }
     },
     "extra": [
@@ -1062,7 +1062,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.22,
+      "ask": 0.18,
       "bid": 0.03,
       "volume": 0,
       "team": "VAN",
@@ -1076,7 +1076,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.78,
+      "bid": 0.82,
       "volume": 0,
       "team": "PHI",
       "line": 3.5
@@ -1140,8 +1140,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.23,
-      "bid": 0.04,
+      "ask": 0.24,
+      "bid": 0.05,
       "volume": 0,
       "team": "PHI",
       "line": -3.5
@@ -1153,8 +1153,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.96,
-      "bid": 0.77,
+      "ask": 0.95,
+      "bid": 0.76,
       "volume": 0,
       "team": "VAN",
       "line": 3.5
@@ -1219,7 +1219,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.88,
-      "bid": 0.86,
+      "bid": 0.85,
       "volume": 0,
       "ou": "O",
       "line": 3.5
@@ -1231,7 +1231,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.14,
+      "ask": 0.15,
       "bid": 0.12,
       "volume": 0,
       "ou": "U",
@@ -1245,7 +1245,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.19,
-      "bid": 0.17,
+      "bid": 0.18,
       "volume": 0,
       "ou": "O",
       "line": 8.5
@@ -1257,7 +1257,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.83,
+      "ask": 0.82,
       "bid": 0.81,
       "volume": 0,
       "ou": "U",
@@ -1291,11 +1291,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-09T02:29:38Z",
+    "fetchedAt": "2026-11-09T03:57:29Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
+    "checkedAt": "2026-11-09T03:57:30.597181+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1554,12 +1554,12 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.4708,
-    "lh": 2.9137,
-    "ra": 3.0786,
-    "rh": 2.5844,
-    "betaGq": 0.40118,
-    "calib": 1.0242,
+    "la": 3.2032,
+    "lh": 3.0565,
+    "ra": 2.8413,
+    "rh": 2.7111,
+    "betaGq": 0.40627,
+    "calib": 1.0236,
     "goalies": {
      "away": {
       "name": "Joseph Woll",
@@ -1570,15 +1570,15 @@
        {
         "id": 8478435,
         "name": "D. Vladar",
-        "gq": -0.057,
-        "share": 0.52,
-        "shots": 2002
+        "gq": -0.0529,
+        "share": 0.594,
+        "shots": 2028
        },
        {
         "id": 8479361,
         "name": "J. Woll",
         "gq": -0.1086,
-        "share": 0.472,
+        "share": 0.399,
         "shots": 2063
        }
       ]
@@ -1608,23 +1608,23 @@
     },
     "trainedThrough": "2026-11-08",
     "rest": {
-     "away": 4,
+     "away": 1,
      "home": 2
     },
     "b2b": {
-     "away": 0,
+     "away": 1,
      "home": 0
     },
     "km": {
-     "away": 3902,
+     "away": 674,
      "home": 817
     },
     "form": {
      "away": {
-      "gf": 0.902,
-      "ga": 1.01,
-      "xf": 0.936,
-      "xa": 1.023
+      "gf": 0.905,
+      "ga": 1.016,
+      "xf": 0.944,
+      "xa": 1.02
      },
      "home": {
       "gf": 0.94,
@@ -1633,7 +1633,7 @@
       "xa": 1.093
      }
     },
-    "at": "2026-11-09T02:29:40Z"
+    "at": "2026-11-09T03:57:32Z"
    }
   },
   {
@@ -1648,7 +1648,7 @@
    "final": null,
    "espnId": "401892682",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "NYI -135",
     "mlAway": -135.0,
     "mlHome": 114.0,
@@ -1687,7 +1687,7 @@
       "periodType": null,
       "ask": 0.57,
       "bid": 0.56,
-      "volume": 3743
+      "volume": 3793
      },
      "home": {
       "marketId": "POLY-5651106-1",
@@ -1697,7 +1697,7 @@
       "periodType": null,
       "ask": 0.44,
       "bid": 0.43,
-      "volume": 3743
+      "volume": 3793
      }
     },
     "extra": [
@@ -1838,7 +1838,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.24,
+      "ask": 0.17,
       "bid": 0.03,
       "volume": 0,
       "team": "SJS",
@@ -1852,7 +1852,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.76,
+      "bid": 0.83,
       "volume": 0,
       "team": "NYI",
       "line": 3.5
@@ -1916,7 +1916,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.25,
+      "ask": 0.23,
       "bid": 0.05,
       "volume": 0,
       "team": "NYI",
@@ -1930,7 +1930,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.75,
+      "bid": 0.77,
       "volume": 0,
       "team": "SJS",
       "line": 3.5
@@ -1968,8 +1968,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.97,
-      "bid": 0.83,
+      "ask": 0.98,
+      "bid": 0.951,
       "volume": 0,
       "ou": "O",
       "line": 2.5
@@ -1981,8 +1981,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.17,
-      "bid": 0.03,
+      "ask": 0.049,
+      "bid": 0.02,
       "volume": 0,
       "ou": "U",
       "line": 2.5
@@ -1994,8 +1994,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.89,
-      "bid": 0.87,
+      "ask": 0.88,
+      "bid": 0.86,
       "volume": 0,
       "ou": "O",
       "line": 3.5
@@ -2007,8 +2007,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.13,
-      "bid": 0.11,
+      "ask": 0.14,
+      "bid": 0.12,
       "volume": 0,
       "ou": "U",
       "line": 3.5
@@ -2047,7 +2047,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.1,
-      "bid": 0.06,
+      "bid": 0.07,
       "volume": 0,
       "ou": "O",
       "line": 9.5
@@ -2059,7 +2059,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.94,
+      "ask": 0.93,
       "bid": 0.9,
       "volume": 0,
       "ou": "U",
@@ -2067,11 +2067,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-09T02:29:38Z",
+    "fetchedAt": "2026-11-09T03:57:29Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
+    "checkedAt": "2026-11-09T03:57:30.597181+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2342,12 +2342,12 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.4985,
-    "lh": 3.1196,
-    "ra": 3.1031,
-    "rh": 2.7671,
-    "betaGq": 0.40118,
-    "calib": 1.0242,
+    "la": 3.4993,
+    "lh": 3.1177,
+    "ra": 3.1039,
+    "rh": 2.7654,
+    "betaGq": 0.40627,
+    "calib": 1.0236,
     "goalies": {
      "away": {
       "name": "Ilya Sorokin",
@@ -2421,7 +2421,7 @@
       "xa": 1.096
      }
     },
-    "at": "2026-11-09T02:29:40Z"
+    "at": "2026-11-09T03:57:32Z"
    }
   }
  ]
