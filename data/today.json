@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "generatedAt": "2026-11-09T01:09:59Z",
+ "generatedAt": "2026-11-09T02:29:38Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -533,7 +533,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
+    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1306,7 +1306,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
+    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1556,8 +1556,12 @@
    "awayName": "Tampa Bay Lightning",
    "homeName": "Winnipeg Jets",
    "venue": "Canada Life Centre",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    4,
+    "REG"
+   ],
    "espnId": "401892677",
    "odds": {
     "provider": "Draft Kings",
@@ -2074,11 +2078,18 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
+    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
-      "injuries": [],
+      "injuries": [
+       {
+        "name": "Brayden Point",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-09T01:15Z"
+       }
+      ],
       "roster": [
        {
         "id": 8478519,
@@ -2839,7 +2850,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
+    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3657,7 +3668,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
+    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4449,7 +4460,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
+    "checkedAt": "2026-11-09T02:29:38.844938+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
