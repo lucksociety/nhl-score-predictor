@@ -1,7 +1,7 @@
 {
  "date": "2026-11-08",
- "generatedAt": "2026-11-08T22:43:49Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-09T01:09:59Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020277,
@@ -533,7 +533,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
+    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -791,8 +791,12 @@
    "awayName": "Vegas Golden Knights",
    "homeName": "Buffalo Sabres",
    "venue": "KeyBank Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    1,
+    "REG"
+   ],
    "espnId": "401892675",
    "odds": {
     "provider": "Draft Kings",
@@ -1302,7 +1306,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
+    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1552,7 +1556,7 @@
    "awayName": "Tampa Bay Lightning",
    "homeName": "Winnipeg Jets",
    "venue": "Canada Life Centre",
-   "state": "PRE",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892677",
    "odds": {
@@ -1573,7 +1577,7 @@
     },
     "home": {
      "name": "Stuart Skinner",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "jupiter": {
@@ -1978,8 +1982,99 @@
     "fetchedAt": "2026-11-08T22:43:49Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.3364,
+    "lh": 2.9655,
+    "ra": 2.9594,
+    "rh": 2.6304,
+    "betaGq": 0.40289,
+    "calib": 1.0251,
+    "goalies": {
+     "away": {
+      "name": "Andrei Vasilevskiy",
+      "id": 8476883,
+      "gq": -0.1582,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8476883,
+        "name": "A. Vasilevskiy",
+        "gq": -0.1582,
+        "share": 0.699,
+        "shots": 3440
+       },
+       {
+        "id": 8483710,
+        "name": "D. Hildeby",
+        "gq": -0.063,
+        "share": 0.29,
+        "shots": 560
+       }
+      ]
+     },
+     "home": {
+      "name": "Stuart Skinner",
+      "id": 8479973,
+      "gq": -0.0711,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8479973,
+        "name": "S. Skinner",
+        "gq": -0.0711,
+        "share": 0.73,
+        "shots": 2821
+       },
+       {
+        "id": 8483532,
+        "name": "C. Stevenson",
+        "gq": -0.0177,
+        "share": 0.143,
+        "shots": 212
+       },
+       {
+        "id": 8482076,
+        "name": "N. Daws",
+        "gq": -0.0346,
+        "share": 0.095,
+        "shots": 547
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-07",
+    "rest": {
+     "away": 1,
+     "home": 3
+    },
+    "b2b": {
+     "away": 1,
+     "home": 0
+    },
+    "km": {
+     "away": 628,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.096,
+      "ga": 0.981,
+      "xf": 1.074,
+      "xa": 0.954
+     },
+     "home": {
+      "gf": 0.932,
+      "ga": 1.062,
+      "xf": 0.983,
+      "xa": 1.033
+     }
+    },
+    "at": "2026-11-08T22:43:52Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
+    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2216,96 +2311,6 @@
     },
     "problems": [],
     "blockReason": "WPG recent skater absences not individually modeled: Josh Morrissey, Elias Salomonsson"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.3364,
-    "lh": 2.9655,
-    "ra": 2.9594,
-    "rh": 2.6304,
-    "betaGq": 0.40289,
-    "calib": 1.0251,
-    "goalies": {
-     "away": {
-      "name": "Andrei Vasilevskiy",
-      "id": 8476883,
-      "gq": -0.1582,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8476883,
-        "name": "A. Vasilevskiy",
-        "gq": -0.1582,
-        "share": 0.699,
-        "shots": 3440
-       },
-       {
-        "id": 8483710,
-        "name": "D. Hildeby",
-        "gq": -0.063,
-        "share": 0.29,
-        "shots": 560
-       }
-      ]
-     },
-     "home": {
-      "name": "Stuart Skinner",
-      "id": 8479973,
-      "gq": -0.0711,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8479973,
-        "name": "S. Skinner",
-        "gq": -0.0711,
-        "share": 0.73,
-        "shots": 2821
-       },
-       {
-        "id": 8483532,
-        "name": "C. Stevenson",
-        "gq": -0.0177,
-        "share": 0.143,
-        "shots": 212
-       },
-       {
-        "id": 8482076,
-        "name": "N. Daws",
-        "gq": -0.0346,
-        "share": 0.095,
-        "shots": 547
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-07",
-    "rest": {
-     "away": 1,
-     "home": 3
-    },
-    "b2b": {
-     "away": 1,
-     "home": 0
-    },
-    "km": {
-     "away": 628,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 1.096,
-      "ga": 0.981,
-      "xf": 1.074,
-      "xa": 0.954
-     },
-     "home": {
-      "gf": 0.932,
-      "ga": 1.062,
-      "xf": 0.983,
-      "xa": 1.033
-     }
-    },
-    "at": "2026-11-08T22:43:52Z"
    }
   },
   {
@@ -2316,7 +2321,7 @@
    "awayName": "New Jersey Devils",
    "homeName": "Toronto Maple Leafs",
    "venue": "Scotiabank Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892676",
    "odds": {
@@ -2742,8 +2747,99 @@
     "fetchedAt": "2026-11-08T22:43:49Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.5742,
+    "lh": 2.8013,
+    "ra": 3.1703,
+    "rh": 2.4847,
+    "betaGq": 0.40289,
+    "calib": 1.0251,
+    "goalies": {
+     "away": {
+      "name": "Connor Hellebuyck",
+      "id": 8476945,
+      "gq": -0.1572,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8474596,
+        "name": "J. Allen",
+        "gq": -0.0806,
+        "share": 0.457,
+        "shots": 2248
+       },
+       {
+        "id": 8476945,
+        "name": "C. Hellebuyck",
+        "gq": -0.1572,
+        "share": 0.407,
+        "shots": 3441
+       },
+       {
+        "id": 8482076,
+        "name": "N. Daws",
+        "gq": -0.0346,
+        "share": 0.125,
+        "shots": 547
+       }
+      ]
+     },
+     "home": {
+      "name": "Anthony Stolarz",
+      "id": 8476932,
+      "gq": -0.1114,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8475683,
+        "name": "S. Bobrovsky",
+        "gq": -0.0792,
+        "share": 0.69,
+        "shots": 3060
+       },
+       {
+        "id": 8476932,
+        "name": "A. Stolarz",
+        "gq": -0.1114,
+        "share": 0.289,
+        "shots": 1631
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-07",
+    "rest": {
+     "away": 1,
+     "home": 1
+    },
+    "b2b": {
+     "away": 1,
+     "home": 1
+    },
+    "km": {
+     "away": 577,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.051,
+      "ga": 0.989,
+      "xf": 1.059,
+      "xa": 0.925
+     },
+     "home": {
+      "gf": 1.044,
+      "ga": 1.057,
+      "xf": 0.972,
+      "xa": 1.056
+     }
+    },
+    "at": "2026-11-08T22:43:52Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
+    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2854,6 +2950,12 @@
      },
      "home": {
       "injuries": [
+       {
+        "name": "Jack Roslovic",
+        "position": "C",
+        "status": "Out",
+        "updatedAt": "2026-11-09T00:11Z"
+       },
        {
         "name": "Morgan Rielly",
         "position": "D",
@@ -3026,97 +3128,7 @@
      }
     },
     "problems": [],
-    "blockReason": "NJD recent skater absences not individually modeled: Anthony Mantha; TOR recent skater absences not individually modeled: Morgan Rielly"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.5742,
-    "lh": 2.8013,
-    "ra": 3.1703,
-    "rh": 2.4847,
-    "betaGq": 0.40289,
-    "calib": 1.0251,
-    "goalies": {
-     "away": {
-      "name": "Connor Hellebuyck",
-      "id": 8476945,
-      "gq": -0.1572,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8474596,
-        "name": "J. Allen",
-        "gq": -0.0806,
-        "share": 0.457,
-        "shots": 2248
-       },
-       {
-        "id": 8476945,
-        "name": "C. Hellebuyck",
-        "gq": -0.1572,
-        "share": 0.407,
-        "shots": 3441
-       },
-       {
-        "id": 8482076,
-        "name": "N. Daws",
-        "gq": -0.0346,
-        "share": 0.125,
-        "shots": 547
-       }
-      ]
-     },
-     "home": {
-      "name": "Anthony Stolarz",
-      "id": 8476932,
-      "gq": -0.1114,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8475683,
-        "name": "S. Bobrovsky",
-        "gq": -0.0792,
-        "share": 0.69,
-        "shots": 3060
-       },
-       {
-        "id": 8476932,
-        "name": "A. Stolarz",
-        "gq": -0.1114,
-        "share": 0.289,
-        "shots": 1631
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-07",
-    "rest": {
-     "away": 1,
-     "home": 1
-    },
-    "b2b": {
-     "away": 1,
-     "home": 1
-    },
-    "km": {
-     "away": 577,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 1.051,
-      "ga": 0.989,
-      "xf": 1.059,
-      "xa": 0.925
-     },
-     "home": {
-      "gf": 1.044,
-      "ga": 1.057,
-      "xf": 0.972,
-      "xa": 1.056
-     }
-    },
-    "at": "2026-11-08T22:43:52Z"
+    "blockReason": "NJD recent skater absences not individually modeled: Anthony Mantha; TOR recent skater absences not individually modeled: Jack Roslovic, Morgan Rielly"
    }
   },
   {
@@ -3127,7 +3139,7 @@
    "awayName": "Philadelphia Flyers",
    "homeName": "Calgary Flames",
    "venue": "Scotiabank Saddledome",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892678",
    "odds": {
@@ -3553,8 +3565,99 @@
     "fetchedAt": "2026-11-08T22:43:49Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.011,
+    "lh": 3.0617,
+    "ra": 2.6707,
+    "rh": 2.7157,
+    "betaGq": 0.40289,
+    "calib": 1.0251,
+    "goalies": {
+     "away": {
+      "name": "Dan Vladar",
+      "id": 8478435,
+      "gq": -0.057,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8478435,
+        "name": "D. Vladar",
+        "gq": -0.057,
+        "share": 0.52,
+        "shots": 2002
+       },
+       {
+        "id": 8479361,
+        "name": "J. Woll",
+        "gq": -0.1086,
+        "share": 0.472,
+        "shots": 2063
+       }
+      ]
+     },
+     "home": {
+      "name": "Devin Cooley",
+      "id": 8482445,
+      "gq": -0.0939,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8481692,
+        "name": "D. Wolf",
+        "gq": -0.0522,
+        "share": 0.671,
+        "shots": 2290
+       },
+       {
+        "id": 8482445,
+        "name": "D. Cooley",
+        "gq": -0.0939,
+        "share": 0.229,
+        "shots": 856
+       },
+       {
+        "id": 8482949,
+        "name": "A. Sergeev",
+        "gq": -0.0135,
+        "share": 0.1,
+        "shots": 53
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-07",
+    "rest": {
+     "away": 3,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 3257,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.903,
+      "ga": 1.01,
+      "xf": 0.936,
+      "xa": 1.023
+     },
+     "home": {
+      "gf": 0.909,
+      "ga": 1.04,
+      "xf": 0.923,
+      "xa": 1.029
+     }
+    },
+    "at": "2026-11-08T22:43:52Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
+    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3818,96 +3921,6 @@
     },
     "problems": [],
     "blockReason": "CGY recent skater absences not individually modeled: Brennan Othmann, Kevin Bahl"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.011,
-    "lh": 3.0617,
-    "ra": 2.6707,
-    "rh": 2.7157,
-    "betaGq": 0.40289,
-    "calib": 1.0251,
-    "goalies": {
-     "away": {
-      "name": "Dan Vladar",
-      "id": 8478435,
-      "gq": -0.057,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8478435,
-        "name": "D. Vladar",
-        "gq": -0.057,
-        "share": 0.52,
-        "shots": 2002
-       },
-       {
-        "id": 8479361,
-        "name": "J. Woll",
-        "gq": -0.1086,
-        "share": 0.472,
-        "shots": 2063
-       }
-      ]
-     },
-     "home": {
-      "name": "Devin Cooley",
-      "id": 8482445,
-      "gq": -0.0939,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8481692,
-        "name": "D. Wolf",
-        "gq": -0.0522,
-        "share": 0.671,
-        "shots": 2290
-       },
-       {
-        "id": 8482445,
-        "name": "D. Cooley",
-        "gq": -0.0939,
-        "share": 0.229,
-        "shots": 856
-       },
-       {
-        "id": 8482949,
-        "name": "A. Sergeev",
-        "gq": -0.0135,
-        "share": 0.1,
-        "shots": 53
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-07",
-    "rest": {
-     "away": 3,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 3257,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 0.903,
-      "ga": 1.01,
-      "xf": 0.936,
-      "xa": 1.023
-     },
-     "home": {
-      "gf": 0.909,
-      "ga": 1.04,
-      "xf": 0.923,
-      "xa": 1.029
-     }
-    },
-    "at": "2026-11-08T22:43:52Z"
    }
   },
   {
@@ -3918,7 +3931,7 @@
    "awayName": "Pittsburgh Penguins",
    "homeName": "Anaheim Ducks",
    "venue": "Honda Center",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892679",
    "odds": {
@@ -3935,11 +3948,11 @@
    "goalies": {
     "away": {
      "name": "Arturs Silovs",
-     "status": "Expected"
+     "status": "Confirmed"
     },
     "home": {
      "name": "Laurent Brossoit",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "jupiter": {
@@ -4344,12 +4357,109 @@
     "fetchedAt": "2026-11-08T22:43:49Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.1725,
+    "lh": 3.9239,
+    "ra": 2.814,
+    "rh": 3.4805,
+    "betaGq": 0.40289,
+    "calib": 1.0251,
+    "goalies": {
+     "away": {
+      "name": "Arturs Silovs",
+      "id": 8481668,
+      "gq": 0.0226,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8481668,
+        "name": "A. Silovs",
+        "gq": 0.0226,
+        "share": 0.619,
+        "shots": 1186
+       },
+       {
+        "id": 8483703,
+        "name": "S. Murashov",
+        "gq": 0.0052,
+        "share": 0.361,
+        "shots": 256
+       }
+      ]
+     },
+     "home": {
+      "name": "Laurent Brossoit",
+      "id": 8476316,
+      "gq": -0.0356,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8480843,
+        "name": "L. Dostal",
+        "gq": -0.0543,
+        "share": 0.462,
+        "shots": 2739
+       },
+       {
+        "id": 8476316,
+        "name": "L. Brossoit",
+        "gq": -0.0356,
+        "share": 0.339,
+        "shots": 477
+       },
+       {
+        "id": 8478024,
+        "name": "V. Husso",
+        "gq": -0.012,
+        "share": 0.199,
+        "shots": 1451
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-07",
+    "rest": {
+     "away": 1,
+     "home": 2
+    },
+    "b2b": {
+     "away": 1,
+     "home": 0
+    },
+    "km": {
+     "away": 44,
+     "home": 1941
+    },
+    "form": {
+     "away": {
+      "gf": 1.043,
+      "ga": 1.061,
+      "xf": 1.014,
+      "xa": 1.041
+     },
+     "home": {
+      "gf": 1.09,
+      "ga": 1.103,
+      "xf": 1.023,
+      "xa": 1.042
+     }
+    },
+    "at": "2026-11-08T22:43:52Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-08T22:43:50.006255+00:00",
+    "checkedAt": "2026-11-09T01:09:59.684082+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Ville Koivunen",
+        "position": "RW",
+        "status": "Out",
+        "updatedAt": "2026-11-08T23:22Z"
+       },
        {
         "name": "Elmer Soderblom",
         "position": "LW",
@@ -4622,97 +4732,7 @@
      }
     },
     "problems": [],
-    "blockReason": null
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.1725,
-    "lh": 3.9239,
-    "ra": 2.814,
-    "rh": 3.4805,
-    "betaGq": 0.40289,
-    "calib": 1.0251,
-    "goalies": {
-     "away": {
-      "name": "Arturs Silovs",
-      "id": 8481668,
-      "gq": 0.0226,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8481668,
-        "name": "A. Silovs",
-        "gq": 0.0226,
-        "share": 0.619,
-        "shots": 1186
-       },
-       {
-        "id": 8483703,
-        "name": "S. Murashov",
-        "gq": 0.0052,
-        "share": 0.361,
-        "shots": 256
-       }
-      ]
-     },
-     "home": {
-      "name": "Laurent Brossoit",
-      "id": 8476316,
-      "gq": -0.0356,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8480843,
-        "name": "L. Dostal",
-        "gq": -0.0543,
-        "share": 0.462,
-        "shots": 2739
-       },
-       {
-        "id": 8476316,
-        "name": "L. Brossoit",
-        "gq": -0.0356,
-        "share": 0.339,
-        "shots": 477
-       },
-       {
-        "id": 8478024,
-        "name": "V. Husso",
-        "gq": -0.012,
-        "share": 0.199,
-        "shots": 1451
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-07",
-    "rest": {
-     "away": 1,
-     "home": 2
-    },
-    "b2b": {
-     "away": 1,
-     "home": 0
-    },
-    "km": {
-     "away": 44,
-     "home": 1941
-    },
-    "form": {
-     "away": {
-      "gf": 1.043,
-      "ga": 1.061,
-      "xf": 1.014,
-      "xa": 1.041
-     },
-     "home": {
-      "gf": 1.09,
-      "ga": 1.103,
-      "xf": 1.023,
-      "xa": 1.042
-     }
-    },
-    "at": "2026-11-08T22:43:52Z"
+    "blockReason": "PIT recent skater absences not individually modeled: Ville Koivunen"
    }
   }
  ]
