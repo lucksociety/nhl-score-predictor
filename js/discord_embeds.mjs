@@ -18,6 +18,8 @@ export function gameEmbed(g) {
     `Goalies: ${gk('away')} vs ${gk('home')} · xG ${g.xg[0].toFixed(2)}–${g.xg[1].toFixed(2)}`,
   ];
   if (g.availability) lines.push(`Availability checked ${g.availability.checkedAt} · ${g.availability.blockReason || "current injury/roster feeds checked; goalie status above"}`);
+  if(g.availability?.skaterAdjustment){const a=g.availability.skaterAdjustment;const names=Object.values(a.sides).flatMap(s=>s.absences.map(p=>p.name));lines.push(`Skaters: expected lineup adjusted${names.length?' for '+names.join(', '):''} · xG ${a.baseGoals.map(x=>x.toFixed(2)).join('–')} → ${a.adjustedGoals.map(x=>x.toFixed(2)).join('–')}`);}
+
   if (g.best) {
     e.color = GOLD;
     lines.push(`✅ **BEST BET: ${g.best.label}** · model ${pct(g.best.q)} · Jupiter ${cents(g.best.ask)} (+${cents(g.best.fee)} fee) · EV **+${pct(g.best.ev)}**`);

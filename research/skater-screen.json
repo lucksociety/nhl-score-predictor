@@ -1,0 +1,36 @@
+{
+  "penalty": 1000,
+  "results": [
+    {
+      "period": "2025_later",
+      "coef": [
+        0.01858900277590858,
+        -0.008072122243085568
+      ],
+      "games": 913,
+      "baseline_poisson_score": -0.47093365450465896,
+      "adjusted_poisson_score": -0.4714056159055438,
+      "day_bootstrap95_improvement": [
+        3.5748729249046163e-05,
+        0.0008857391510045182
+      ]
+    },
+    {
+      "period": "2026",
+      "coef": [
+        0.03494545874900493,
+        -0.004441398485151365
+      ],
+      "games": 282,
+      "baseline_poisson_score": -0.5544309748754134,
+      "adjusted_poisson_score": -0.5551952587720974,
+      "day_bootstrap95_improvement": [
+        -0.0003025106817982836,
+        0.0017624910479256022
+      ]
+    }
+  ],
+  "protocol": "Prior-statistics-only features; same-game participation identity known (optimistic versus expected live lineups). Outcome is full-game goals. No betting price inputs.",
+  "input_sha256": "e072a356366ccac554756379b8cf65a27cb8085c09ab863faab17c7d19ae75bd",
+  "selection_note": "All four nonzero candidates worsened early-2025 validation versus the baseline; strongest shrinkage (1000) was least harmful. Later periods are reported without retuning. This supports conservative sensitivity use, not an established improvement in the point model."
+}

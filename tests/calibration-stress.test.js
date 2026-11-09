@@ -25,3 +25,12 @@ console.log('Scoring parameter sensitivity and confidence-first positive-EV sele
  for(const m of messages){assert(m.embeds.length<=10);assert(m.embeds.reduce((n,e)=>n+(e.title||'').length+(e.description||'').length+(e.footer?.text||'').length,0)<=6000);}
  console.log('Full-card Discord character and embed limits passed');
 })().catch(e=>{console.error(e);process.exitCode=1;});
+
+const lineupGame=structuredClone(game);
+lineupGame.v4.ra=2.9;lineupGame.v4.skaterAdjustment={scenarios:[{label:'unadjusted team baseline',rates:[3,3]}]};
+const ls=M.runGameV4(lineupGame,{n:1000,seed:11});
+assert.equal(ls.calibrationStress.length,5);
+assert(ls.calibrationStress.some(s=>s.label==='unadjusted team baseline'&&s.scale===1));
+const baselineAgain=M.runGameV4(game,{n:1000,seed:11,calibrationStress:false});
+const originalScenario=ls.calibrationStress.find(s=>s.label==='unadjusted team baseline'&&s.scale===1);
+assert.equal(originalScenario.pHome,baselineAgain.pHome,'unadjusted lineup scenario must reproduce the original model');

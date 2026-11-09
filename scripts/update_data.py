@@ -255,6 +255,8 @@ def main():
     except Exception as e:
         import traceback; traceback.print_exc(); print('v4 failed:', e, file=sys.stderr)
         raise RuntimeError('NHL model refresh failed; refusing to publish stale inputs') from e
+    import skaters
+    skaters.refresh_and_apply(out, rows, get)
     availability.finalize(out)
     for s in out:
         d = dt.date.fromisoformat(s['date'])
