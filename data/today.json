@@ -1,1535 +1,336 @@
 {
- "date": "2026-11-09",
- "generatedAt": "2026-11-10T03:44:45Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "date": "2026-11-10",
+ "generatedAt": "2026-11-10T05:30:20Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
-   "id": 2026020283,
-   "startUTC": "2026-11-10T01:00:00Z",
-   "away": "NYR",
-   "home": "EDM",
-   "awayName": "New York Rangers",
-   "homeName": "Edmonton Oilers",
-   "venue": "Rogers Place",
-   "state": "OVER",
+   "id": 2026020286,
+   "startUTC": "2026-11-11T00:00:00Z",
+   "away": "COL",
+   "home": "TOR",
+   "awayName": "Colorado Avalanche",
+   "homeName": "Toronto Maple Leafs",
+   "venue": "Scotiabank Arena",
+   "state": "FUT",
    "final": null,
-   "espnId": "401892680",
+   "espnId": "401892683",
    "odds": {
     "provider": "DraftKings",
-    "details": "EDM -162",
-    "mlAway": 136.0,
-    "mlHome": -162.0,
+    "details": "COL -155",
+    "mlAway": -155.0,
+    "mlHome": 130.0,
     "total": 6.5,
-    "over": -112.0,
-    "under": -108.0,
-    "mlAwayOpen": 130.0,
-    "mlHomeOpen": -155.0
+    "over": -115.0,
+    "under": -105.0,
+    "mlAwayOpen": -162.0,
+    "mlHomeOpen": 136.0
    },
    "goalies": {
     "away": {
-     "name": "Dylan Garand",
-     "status": "Confirmed"
+     "name": "Mackenzie Blackwood",
+     "status": "Expected"
     },
     "home": {
-     "name": "Devon Levi",
-     "status": "Confirmed"
+     "name": "Sergei Bobrovsky",
+     "status": "Expected"
     }
    },
    "jupiter": {
-    "eventId": "POLY-1183208",
-    "slug": "nhl-nyr-edm-2026-11-09",
-    "date": "2026-11-09",
-    "away": "NYR",
-    "home": "EDM",
+    "eventId": "POLY-1188855",
+    "slug": "nhl-col-tor-2026-11-10",
+    "date": "2026-11-10",
+    "away": "COL",
+    "home": "TOR",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1183208",
+    "link": "https://jup.ag/prediction/POLY-1188855",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-5651096-0",
-      "title": "Rangers",
+      "marketId": "POLY-5689447-0",
+      "title": "Avalanche",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.4,
-      "bid": 0.39,
-      "volume": 217450
+      "ask": 0.59,
+      "bid": 0.58,
+      "volume": 9536
      },
      "home": {
-      "marketId": "POLY-5651096-1",
-      "title": "Oilers",
+      "marketId": "POLY-5689447-1",
+      "title": "Maple Leafs",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.61,
-      "bid": 0.6,
-      "volume": 217450
+      "ask": 0.42,
+      "bid": 0.41,
+      "volume": 9536
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-5651097-0",
+      "marketId": "POLY-5689448-0",
       "label": "O 4.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.82,
+      "ask": 0.84,
       "bid": 0.81,
-      "volume": 42,
+      "volume": 0,
       "ou": "O",
       "line": 4.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651097-1",
+      "marketId": "POLY-5689448-1",
       "label": "U 4.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.19,
-      "bid": 0.18,
-      "volume": 42,
+      "bid": 0.16,
+      "volume": 0,
       "ou": "U",
       "line": 4.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651098-0",
+      "marketId": "POLY-5689449-0",
       "label": "O 5.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.63,
       "bid": 0.62,
-      "volume": 198,
+      "volume": 0,
       "ou": "O",
       "line": 5.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651098-1",
+      "marketId": "POLY-5689449-1",
       "label": "U 5.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.38,
       "bid": 0.37,
-      "volume": 198,
+      "volume": 0,
       "ou": "U",
       "line": 5.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651099-0",
+      "marketId": "POLY-5689450-0",
       "label": "O 6.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.52,
       "bid": 0.51,
-      "volume": 4108,
+      "volume": 34,
       "ou": "O",
       "line": 6.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651099-1",
+      "marketId": "POLY-5689450-1",
       "label": "U 6.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.49,
       "bid": 0.48,
-      "volume": 4108,
+      "volume": 34,
       "ou": "U",
       "line": 6.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651100-0",
+      "marketId": "POLY-5689451-0",
       "label": "O 7.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.31,
+      "ask": 0.32,
       "bid": 0.3,
-      "volume": 722,
+      "volume": 0,
       "ou": "O",
       "line": 7.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651100-1",
+      "marketId": "POLY-5689451-1",
       "label": "U 7.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.7,
-      "bid": 0.69,
-      "volume": 722,
+      "bid": 0.68,
+      "volume": 0,
       "ou": "U",
       "line": 7.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872857-0",
-      "label": "EDM -1.5",
+      "marketId": "POLY-6908782-0",
+      "label": "COL -1.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.38,
       "bid": 0.37,
-      "volume": 11920,
-      "team": "EDM",
+      "volume": 25,
+      "team": "COL",
       "line": -1.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872857-1",
-      "label": "NYR +1.5",
+      "marketId": "POLY-6908782-1",
+      "label": "TOR +1.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.63,
       "bid": 0.62,
-      "volume": 11920,
-      "team": "NYR",
+      "volume": 25,
+      "team": "TOR",
       "line": 1.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872858-0",
-      "label": "EDM -3.5",
+      "marketId": "POLY-6908783-0",
+      "label": "TOR -3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.14,
-      "bid": 0.1,
+      "ask": 0.13,
+      "bid": 0.03,
       "volume": 0,
-      "team": "EDM",
+      "team": "TOR",
       "line": -3.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872858-1",
-      "label": "NYR +3.5",
+      "marketId": "POLY-6908783-1",
+      "label": "COL +3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.9,
-      "bid": 0.86,
+      "ask": 0.97,
+      "bid": 0.87,
       "volume": 0,
-      "team": "NYR",
+      "team": "COL",
       "line": 3.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872859-0",
-      "label": "EDM -2.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.26,
-      "bid": 0.25,
-      "volume": 336,
-      "team": "EDM",
-      "line": -2.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872859-1",
-      "label": "NYR +2.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.75,
-      "bid": 0.74,
-      "volume": 336,
-      "team": "NYR",
-      "line": 2.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872860-0",
-      "label": "NYR -1.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.22,
-      "bid": 0.21,
-      "volume": 1,
-      "team": "NYR",
-      "line": -1.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872860-1",
-      "label": "EDM +1.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.79,
-      "bid": 0.78,
-      "volume": 1,
-      "team": "EDM",
-      "line": 1.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872861-0",
-      "label": "NYR -3.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.07,
-      "bid": 0.04,
-      "volume": 0,
-      "team": "NYR",
-      "line": -3.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872861-1",
-      "label": "EDM +3.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.96,
-      "bid": 0.93,
-      "volume": 0,
-      "team": "EDM",
-      "line": 3.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872862-0",
-      "label": "NYR -2.5",
+      "marketId": "POLY-6908784-0",
+      "label": "TOR -2.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.14,
       "bid": 0.13,
-      "volume": 103,
-      "team": "NYR",
+      "volume": 0,
+      "team": "TOR",
       "line": -2.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872862-1",
-      "label": "EDM +2.5",
+      "marketId": "POLY-6908784-1",
+      "label": "COL +2.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.87,
       "bid": 0.86,
-      "volume": 103,
-      "team": "EDM",
+      "volume": 0,
+      "team": "COL",
       "line": 2.5
      },
      {
-      "type": "totals",
-      "marketId": "POLY-6872863-0",
-      "label": "O 2.5",
+      "type": "spreads",
+      "marketId": "POLY-6908785-0",
+      "label": "TOR -1.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.988,
-      "bid": 0.964,
-      "volume": 15,
-      "ou": "O",
+      "ask": 0.22,
+      "bid": 0.21,
+      "volume": 0,
+      "team": "TOR",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908785-1",
+      "label": "COL +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.78,
+      "volume": 0,
+      "team": "COL",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908786-0",
+      "label": "COL -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.26,
+      "bid": 0.25,
+      "volume": 0,
+      "team": "COL",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908786-1",
+      "label": "TOR +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.75,
+      "bid": 0.74,
+      "volume": 0,
+      "team": "TOR",
       "line": 2.5
      },
      {
-      "type": "totals",
-      "marketId": "POLY-6872863-1",
-      "label": "U 2.5",
+      "type": "spreads",
+      "marketId": "POLY-6908787-0",
+      "label": "COL -3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.036,
-      "bid": 0.012,
-      "volume": 15,
-      "ou": "U",
-      "line": 2.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6872864-0",
-      "label": "O 3.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.91,
-      "bid": 0.89,
-      "volume": 1644,
-      "ou": "O",
-      "line": 3.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6872864-1",
-      "label": "U 3.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.11,
-      "bid": 0.09,
-      "volume": 1644,
-      "ou": "U",
-      "line": 3.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6872865-0",
-      "label": "O 8.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.23,
-      "bid": 0.2,
-      "volume": 64,
-      "ou": "O",
-      "line": 8.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6872865-1",
-      "label": "U 8.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.8,
-      "bid": 0.77,
-      "volume": 64,
-      "ou": "U",
-      "line": 8.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6872866-0",
-      "label": "O 9.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.11,
+      "ask": 0.14,
       "bid": 0.08,
       "volume": 0,
-      "ou": "O",
-      "line": 9.5
+      "team": "COL",
+      "line": -3.5
      },
      {
-      "type": "totals",
-      "marketId": "POLY-6872866-1",
-      "label": "U 9.5",
+      "type": "spreads",
+      "marketId": "POLY-6908787-1",
+      "label": "TOR +3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.92,
-      "bid": 0.89,
+      "bid": 0.86,
       "volume": 0,
-      "ou": "U",
-      "line": 9.5
-     }
-    ],
-    "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-09T23:20:23Z",
-    "host": "https://api.jup.ag/prediction/v1"
-   },
-   "v4": {
-    "version": "v4-independent-skater-v1",
-    "la": 2.9331,
-    "lh": 3.4788,
-    "ra": 2.6016,
-    "rh": 3.0857,
-    "betaGq": 0.40627,
-    "calib": 1.0236,
-    "goalies": {
-     "away": {
-      "name": "Dylan Garand",
-      "id": 8482193,
-      "gq": -0.0764,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8482193,
-        "name": "D. Garand",
-        "gq": -0.0764,
-        "share": 0.666,
-        "shots": 377
-       },
-       {
-        "id": 8476914,
-        "name": "J. Korpisalo",
-        "gq": -0.0196,
-        "share": 0.154,
-        "shots": 1881
-       },
-       {
-        "id": 8478048,
-        "name": "I. Shesterkin",
-        "gq": -0.1916,
-        "share": 0.093,
-        "shots": 3201
-       },
-       {
-        "id": 8473503,
-        "name": "J. Reimer",
-        "gq": -0.0348,
-        "share": 0.08,
-        "shots": 1348
-       }
-      ]
-     },
-     "home": {
-      "name": "Devon Levi",
-      "id": 8482221,
-      "gq": -0.0276,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8477465,
-        "name": "T. Jarry",
-        "gq": -0.0331,
-        "share": 0.432,
-        "shots": 2360
-       },
-       {
-        "id": 8482221,
-        "name": "D. Levi",
-        "gq": -0.0276,
-        "share": 0.32,
-        "shots": 624
-       },
-       {
-        "id": 8477035,
-        "name": "M. Tomkins",
-        "gq": -0.0053,
-        "share": 0.226,
-        "shots": 112
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-08",
-    "rest": {
-     "away": 2,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 907,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 0.994,
-      "ga": 0.982,
-      "xf": 1.015,
-      "xa": 0.995
-     },
-     "home": {
-      "gf": 1.123,
-      "ga": 0.974,
-      "xf": 0.997,
-      "xa": 0.946
-     }
-    },
-    "at": "2026-11-09T23:20:25Z",
-    "skaterAdjustment": {
-     "policy": "skater-context-sensitivity-v1",
-     "dataThrough": "2026-11-08",
-     "baseGoals": [
-      2.946,
-      3.4273
-     ],
-     "adjustedGoals": [
-      2.9330731232878304,
-      3.4788437933748892
-     ],
-     "featureDelta": [
-      -0.07272685059251383,
-      0.4179143074213362
-     ],
-     "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
-     "sides": {
-      "away": {
-       "players": [
-        {
-         "id": 8476459,
-         "position": "C",
-         "name": "Mika Zibanejad"
-        },
-        {
-         "id": 8476468,
-         "position": "C",
-         "name": "J.T. Miller"
-        },
-        {
-         "id": 8482109,
-         "position": "L",
-         "name": "Alexis Lafreni\u00e8re"
-        },
-        {
-         "id": 8481604,
-         "position": "R",
-         "name": "Pavel Dorofeyev"
-        },
-        {
-         "id": 8484210,
-         "position": "R",
-         "name": "Gabe Perreault"
-        },
-        {
-         "id": 8482157,
-         "position": "L",
-         "name": "Will Cuylle"
-        },
-        {
-         "id": 8480009,
-         "position": "R",
-         "name": "Eeli Tolvanen"
-        },
-        {
-         "id": 8477416,
-         "position": "R",
-         "name": "Oliver Bjorkstrand"
-        },
-        {
-         "id": 8483690,
-         "position": "C",
-         "name": "Noah Laba"
-        },
-        {
-         "id": 8480813,
-         "position": "C",
-         "name": "Joseph Veleno"
-        },
-        {
-         "id": 8481789,
-         "position": "L",
-         "name": "Tye Kartye"
-        },
-        {
-         "id": 8476822,
-         "position": "C",
-         "name": "Luke Glendening"
-        },
-        {
-         "id": 8479323,
-         "position": "D",
-         "name": "Adam Fox"
-        },
-        {
-         "id": 8478882,
-         "position": "D",
-         "name": "Vladislav Gavrikov"
-        },
-        {
-         "id": 8477969,
-         "position": "D",
-         "name": "Marcus Pettersson"
-        },
-        {
-         "id": 8482073,
-         "position": "D",
-         "name": "Braden Schneider"
-        },
-        {
-         "id": 8481525,
-         "position": "D",
-         "name": "Matthew Robertson"
-        },
-        {
-         "id": 8481743,
-         "position": "D",
-         "name": "Marc Del Gaizo"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Alberts Smits",
-         "id": 8485957,
-         "status": "Out",
-         "baselineParticipation": 0.6512,
-         "productionAbovePositionMean": -0.0954
-        },
-        {
-         "name": "Sean Durzi",
-         "id": 8480434,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.5129,
-         "productionAbovePositionMean": 0.0407
-        },
-        {
-         "name": "Joe Veleno",
-         "id": null,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0,
-         "productionAbovePositionMean": null,
-         "note": "not on current official roster and no recorded participation; no baseline contribution to remove"
-        },
-        {
-         "name": "Aidan Thompson",
-         "id": null,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0,
-         "productionAbovePositionMean": null,
-         "note": "not on current official roster and no recorded participation; no baseline contribution to remove"
-        },
-        {
-         "name": "Adam Sykora",
-         "id": 8483669,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0853,
-         "productionAbovePositionMean": -0.0135
-        }
-       ]
-      },
-      "home": {
-       "players": [
-        {
-         "id": 8478402,
-         "position": "C",
-         "name": "Connor McDavid"
-        },
-        {
-         "id": 8477934,
-         "position": "C",
-         "name": "Leon Draisaitl"
-        },
-        {
-         "id": 8475786,
-         "position": "L",
-         "name": "Zach Hyman"
-        },
-        {
-         "id": 8476454,
-         "position": "C",
-         "name": "Ryan Nugent-Hopkins"
-        },
-        {
-         "id": 8477450,
-         "position": "C",
-         "name": "Jason Dickinson"
-        },
-        {
-         "id": 8481617,
-         "position": "R",
-         "name": "Vasily Podkolzin"
-        },
-        {
-         "id": 8477953,
-         "position": "R",
-         "name": "Kasperi Kapanen"
-        },
-        {
-         "id": 8480029,
-         "position": "L",
-         "name": "Alex Formenton"
-        },
-        {
-         "id": 8486161,
-         "position": "R",
-         "name": "Owen Michaels"
-        },
-        {
-         "id": 8478472,
-         "position": "R",
-         "name": "Mathieu Joseph"
-        },
-        {
-         "id": 8479365,
-         "position": "C",
-         "name": "Trent Frederic"
-        },
-        {
-         "id": 8480842,
-         "position": "C",
-         "name": "Filip Hallander"
-        },
-        {
-         "id": 8480803,
-         "position": "D",
-         "name": "Evan Bouchard"
-        },
-        {
-         "id": 8475218,
-         "position": "D",
-         "name": "Mattias Ekholm"
-        },
-        {
-         "id": 8478013,
-         "position": "D",
-         "name": "Jake Walman"
-        },
-        {
-         "id": 8478854,
-         "position": "D",
-         "name": "Ryan Shea"
-        },
-        {
-         "id": 8476473,
-         "position": "D",
-         "name": "Connor Murphy"
-        },
-        {
-         "id": 8482166,
-         "position": "D",
-         "name": "Shakir Mukhamadullin"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Colton Dach",
-         "id": 8482703,
-         "status": "Out",
-         "baselineParticipation": 0.5715,
-         "productionAbovePositionMean": -0.1467
-        },
-        {
-         "name": "Isaac Howard",
-         "id": 8483455,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.5398,
-         "productionAbovePositionMean": -0.1456
-        },
-        {
-         "name": "Alec Regula",
-         "id": 8480831,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0623,
-         "productionAbovePositionMean": -0.0786
-        },
-        {
-         "name": "Matt Savoie",
-         "id": 8483512,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.2916,
-         "productionAbovePositionMean": -0.0286
-        },
-        {
-         "name": "Mattias Janmark",
-         "id": 8477406,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.1281,
-         "productionAbovePositionMean": -0.1944
-        }
-       ]
-      }
-     },
-     "scenarios": [
-      {
-       "label": "unadjusted team baseline",
-       "rates": [
-        2.6131,
-        3.04
-       ]
-      }
-     ]
-    },
-    "frozen": true
-   },
-   "availability": {
-    "checkedAt": "2026-11-10T03:44:45.708368+00:00",
-    "source": "ESPN live injuries + NHL current rosters",
-    "sides": {
-     "away": {
-      "injuries": [
-       {
-        "name": "Alberts Smits",
-        "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-09T17:10Z"
-       },
-       {
-        "name": "Sean Durzi",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-05T19:23Z"
-       },
-       {
-        "name": "Igor Shesterkin",
-        "position": "G",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-11T21:06Z"
-       },
-       {
-        "name": "Joe Veleno",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-10T17:18Z"
-       },
-       {
-        "name": "Aidan Thompson",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-09-29T16:39Z"
-       },
-       {
-        "name": "Adam Sykora",
-        "position": "LW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-09-29T01:35Z"
-       }
-      ],
-      "roster": [
-       {
-        "id": 8477416,
-        "position": "R",
-        "name": "Oliver Bjorkstrand"
-       },
-       {
-        "id": 8482877,
-        "position": "R",
-        "name": "Jaroslav Chmelar"
-       },
-       {
-        "id": 8482157,
-        "position": "L",
-        "name": "Will Cuylle"
-       },
-       {
-        "id": 8481604,
-        "position": "R",
-        "name": "Pavel Dorofeyev"
-       },
-       {
-        "id": 8476822,
-        "position": "C",
-        "name": "Luke Glendening"
-       },
-       {
-        "id": 8481789,
-        "position": "L",
-        "name": "Tye Kartye"
-       },
-       {
-        "id": 8483690,
-        "position": "C",
-        "name": "Noah Laba"
-       },
-       {
-        "id": 8482109,
-        "position": "L",
-        "name": "Alexis Lafreni\u00e8re"
-       },
-       {
-        "id": 8476468,
-        "position": "C",
-        "name": "J.T. Miller"
-       },
-       {
-        "id": 8484210,
-        "position": "R",
-        "name": "Gabe Perreault"
-       },
-       {
-        "id": 8482460,
-        "position": "C",
-        "name": "Matt Rempe"
-       },
-       {
-        "id": 8483669,
-        "position": "L",
-        "name": "Adam Sykora"
-       },
-       {
-        "id": 8480009,
-        "position": "R",
-        "name": "Eeli Tolvanen"
-       },
-       {
-        "id": 8480813,
-        "position": "C",
-        "name": "Joseph Veleno"
-       },
-       {
-        "id": 8476459,
-        "position": "C",
-        "name": "Mika Zibanejad"
-       },
-       {
-        "id": 8481743,
-        "position": "D",
-        "name": "Marc Del Gaizo"
-       },
-       {
-        "id": 8480434,
-        "position": "D",
-        "name": "Sean Durzi"
-       },
-       {
-        "id": 8479323,
-        "position": "D",
-        "name": "Adam Fox"
-       },
-       {
-        "id": 8478882,
-        "position": "D",
-        "name": "Vladislav Gavrikov"
-       },
-       {
-        "id": 8482666,
-        "position": "D",
-        "name": "Scott Morrow"
-       },
-       {
-        "id": 8477969,
-        "position": "D",
-        "name": "Marcus Pettersson"
-       },
-       {
-        "id": 8481525,
-        "position": "D",
-        "name": "Matthew Robertson"
-       },
-       {
-        "id": 8482073,
-        "position": "D",
-        "name": "Braden Schneider"
-       },
-       {
-        "id": 8485957,
-        "position": "D",
-        "name": "Alberts Smits"
-       },
-       {
-        "id": 8482193,
-        "position": "G",
-        "name": "Dylan Garand"
-       },
-       {
-        "id": 8476914,
-        "position": "G",
-        "name": "Joonas Korpisalo"
-       },
-       {
-        "id": 8478048,
-        "position": "G",
-        "name": "Igor Shesterkin"
-       }
-      ]
-     },
-     "home": {
-      "injuries": [
-       {
-        "name": "Colton Dach",
-        "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-09T17:48Z"
-       },
-       {
-        "name": "Isaac Howard",
-        "position": "LW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-06T00:04Z"
-       },
-       {
-        "name": "Alec Regula",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-01T14:11Z"
-       },
-       {
-        "name": "Matt Savoie",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-01T14:05Z"
-       },
-       {
-        "name": "Frederik Andersen",
-        "position": "G",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-09-29T17:53Z"
-       },
-       {
-        "name": "Mattias Janmark",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-09-29T17:52Z"
-       }
-      ],
-      "roster": [
-       {
-        "id": 8482703,
-        "position": "C",
-        "name": "Colton Dach"
-       },
-       {
-        "id": 8477450,
-        "position": "C",
-        "name": "Jason Dickinson"
-       },
-       {
-        "id": 8477934,
-        "position": "C",
-        "name": "Leon Draisaitl"
-       },
-       {
-        "id": 8480029,
-        "position": "L",
-        "name": "Alex Formenton"
-       },
-       {
-        "id": 8479365,
-        "position": "C",
-        "name": "Trent Frederic"
-       },
-       {
-        "id": 8480842,
-        "position": "C",
-        "name": "Filip Hallander"
-       },
-       {
-        "id": 8483455,
-        "position": "L",
-        "name": "Isaac Howard"
-       },
-       {
-        "id": 8475786,
-        "position": "L",
-        "name": "Zach Hyman"
-       },
-       {
-        "id": 8477406,
-        "position": "C",
-        "name": "Mattias Janmark"
-       },
-       {
-        "id": 8479368,
-        "position": "L",
-        "name": "Max Jones"
-       },
-       {
-        "id": 8478472,
-        "position": "R",
-        "name": "Mathieu Joseph"
-       },
-       {
-        "id": 8477953,
-        "position": "R",
-        "name": "Kasperi Kapanen"
-       },
-       {
-        "id": 8478402,
-        "position": "C",
-        "name": "Connor McDavid"
-       },
-       {
-        "id": 8486161,
-        "position": "R",
-        "name": "Owen Michaels"
-       },
-       {
-        "id": 8476454,
-        "position": "C",
-        "name": "Ryan Nugent-Hopkins"
-       },
-       {
-        "id": 8481617,
-        "position": "R",
-        "name": "Vasily Podkolzin"
-       },
-       {
-        "id": 8483512,
-        "position": "C",
-        "name": "Matt Savoie"
-       },
-       {
-        "id": 8480803,
-        "position": "D",
-        "name": "Evan Bouchard"
-       },
-       {
-        "id": 8475218,
-        "position": "D",
-        "name": "Mattias Ekholm"
-       },
-       {
-        "id": 8480834,
-        "position": "D",
-        "name": "Ty Emberson"
-       },
-       {
-        "id": 8482166,
-        "position": "D",
-        "name": "Shakir Mukhamadullin"
-       },
-       {
-        "id": 8476473,
-        "position": "D",
-        "name": "Connor Murphy"
-       },
-       {
-        "id": 8480831,
-        "position": "D",
-        "name": "Alec Regula"
-       },
-       {
-        "id": 8478854,
-        "position": "D",
-        "name": "Ryan Shea"
-       },
-       {
-        "id": 8478013,
-        "position": "D",
-        "name": "Jake Walman"
-       },
-       {
-        "id": 8475883,
-        "position": "G",
-        "name": "Frederik Andersen"
-       },
-       {
-        "id": 8477465,
-        "position": "G",
-        "name": "Tristan Jarry"
-       },
-       {
-        "id": 8482221,
-        "position": "G",
-        "name": "Devon Levi"
-       }
-      ]
-     }
-    },
-    "problems": [],
-    "blockReason": "NYR recent skater absences not individually modeled: Alberts Smits; EDM recent skater absences not individually modeled: Colton Dach"
-   }
-  },
-  {
-   "id": 2026020284,
-   "startUTC": "2026-11-10T02:30:00Z",
-   "away": "PHI",
-   "home": "VAN",
-   "awayName": "Philadelphia Flyers",
-   "homeName": "Vancouver Canucks",
-   "venue": "Rogers Arena",
-   "state": "LIVE",
-   "final": null,
-   "espnId": "401892681",
-   "odds": {
-    "provider": "DraftKings",
-    "details": "PHI -135",
-    "mlAway": -135.0,
-    "mlHome": 114.0,
-    "total": 6.5,
-    "over": 110.0,
-    "under": -130.0,
-    "mlAwayOpen": -122.0,
-    "mlHomeOpen": 102.0
-   },
-   "goalies": {
-    "away": {
-     "name": "Joseph Woll",
-     "status": "Confirmed"
-    },
-    "home": {
-     "name": "Leevi Merilainen",
-     "status": "Confirmed"
-    }
-   },
-   "jupiter": {
-    "eventId": "POLY-1183209",
-    "slug": "nhl-phi-van-2026-11-09",
-    "date": "2026-11-09",
-    "away": "PHI",
-    "home": "VAN",
-    "live": false,
-    "link": "https://jup.ag/prediction/POLY-1183209",
-    "provider": "polymarket",
-    "includesOTSO": true,
-    "sides": {
-     "away": {
-      "marketId": "POLY-5651101-0",
-      "title": "Flyers",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.56,
-      "bid": 0.55,
-      "volume": 23921
-     },
-     "home": {
-      "marketId": "POLY-5651101-1",
-      "title": "Canucks",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.45,
-      "bid": 0.44,
-      "volume": 23921
-     }
-    },
-    "extra": [
-     {
-      "type": "totals",
-      "marketId": "POLY-5651102-0",
-      "label": "O 4.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.8,
-      "bid": 0.79,
-      "volume": 18177,
-      "ou": "O",
-      "line": 4.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-5651102-1",
-      "label": "U 4.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.21,
-      "bid": 0.2,
-      "volume": 18177,
-      "ou": "U",
-      "line": 4.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-5651103-0",
-      "label": "O 5.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.59,
-      "bid": 0.58,
-      "volume": 734,
-      "ou": "O",
-      "line": 5.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-5651103-1",
-      "label": "U 5.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.42,
-      "bid": 0.41,
-      "volume": 734,
-      "ou": "U",
-      "line": 5.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-5651104-0",
-      "label": "O 6.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.48,
-      "bid": 0.46,
-      "volume": 3246,
-      "ou": "O",
-      "line": 6.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-5651104-1",
-      "label": "U 6.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.54,
-      "bid": 0.52,
-      "volume": 3246,
-      "ou": "U",
-      "line": 6.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-5651105-0",
-      "label": "O 7.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.27,
-      "bid": 0.26,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-5651105-1",
-      "label": "U 7.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.74,
-      "bid": 0.73,
-      "volume": 0,
-      "ou": "U",
-      "line": 7.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872847-0",
-      "label": "PHI -1.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.34,
-      "bid": 0.33,
-      "volume": 72,
-      "team": "PHI",
-      "line": -1.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872847-1",
-      "label": "VAN +1.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.67,
-      "bid": 0.66,
-      "volume": 72,
-      "team": "VAN",
-      "line": 1.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872848-0",
-      "label": "VAN -3.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.08,
-      "bid": 0.05,
-      "volume": 0,
-      "team": "VAN",
-      "line": -3.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872848-1",
-      "label": "PHI +3.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.95,
-      "bid": 0.92,
-      "volume": 0,
-      "team": "PHI",
+      "team": "TOR",
       "line": 3.5
      },
      {
-      "type": "spreads",
-      "marketId": "POLY-6872849-0",
-      "label": "VAN -2.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.16,
-      "bid": 0.15,
-      "volume": 9,
-      "team": "VAN",
-      "line": -2.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872849-1",
-      "label": "PHI +2.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.85,
-      "bid": 0.84,
-      "volume": 9,
-      "team": "PHI",
-      "line": 2.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872850-0",
-      "label": "VAN -1.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.25,
-      "bid": 0.24,
-      "volume": 0,
-      "team": "VAN",
-      "line": -1.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872850-1",
-      "label": "PHI +1.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.76,
-      "bid": 0.75,
-      "volume": 0,
-      "team": "PHI",
-      "line": 1.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872851-0",
-      "label": "PHI -3.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.11,
-      "bid": 0.07,
-      "volume": 0,
-      "team": "PHI",
-      "line": -3.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872851-1",
-      "label": "VAN +3.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.93,
-      "bid": 0.89,
-      "volume": 0,
-      "team": "VAN",
-      "line": 3.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872852-0",
-      "label": "PHI -2.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.23,
-      "bid": 0.22,
-      "volume": 2174,
-      "team": "PHI",
-      "line": -2.5
-     },
-     {
-      "type": "spreads",
-      "marketId": "POLY-6872852-1",
-      "label": "VAN +2.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.78,
-      "bid": 0.77,
-      "volume": 2174,
-      "team": "VAN",
-      "line": 2.5
-     },
-     {
       "type": "totals",
-      "marketId": "POLY-6872853-0",
+      "marketId": "POLY-6908788-0",
       "label": "O 2.5",
       "status": "open",
       "includesOTSO": true,
@@ -1542,7 +343,7 @@
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872853-1",
+      "marketId": "POLY-6908788-1",
       "label": "U 2.5",
       "status": "open",
       "includesOTSO": true,
@@ -1555,1250 +356,2183 @@
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872854-0",
+      "marketId": "POLY-6908789-0",
       "label": "O 3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.86,
-      "volume": 68,
+      "ask": 0.9,
+      "bid": 0.88,
+      "volume": 0,
       "ou": "O",
       "line": 3.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872854-1",
+      "marketId": "POLY-6908789-1",
       "label": "U 3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.14,
-      "bid": 0.12,
-      "volume": 68,
+      "ask": 0.12,
+      "bid": 0.1,
+      "volume": 0,
       "ou": "U",
       "line": 3.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872855-0",
+      "marketId": "POLY-6908790-0",
       "label": "O 8.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.19,
-      "bid": 0.18,
-      "volume": 12,
+      "ask": 0.24,
+      "bid": 0.21,
+      "volume": 0,
       "ou": "O",
       "line": 8.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872855-1",
+      "marketId": "POLY-6908790-1",
       "label": "U 8.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.82,
-      "bid": 0.81,
-      "volume": 12,
+      "ask": 0.79,
+      "bid": 0.76,
+      "volume": 0,
       "ou": "U",
       "line": 8.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872856-0",
+      "marketId": "POLY-6908791-0",
       "label": "O 9.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.09,
-      "bid": 0.07,
-      "volume": 43,
+      "ask": 0.12,
+      "bid": 0.09,
+      "volume": 0,
       "ou": "O",
       "line": 9.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872856-1",
+      "marketId": "POLY-6908791-1",
       "label": "U 9.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.93,
-      "bid": 0.91,
-      "volume": 43,
+      "ask": 0.91,
+      "bid": 0.88,
+      "volume": 0,
       "ou": "U",
       "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-09T23:20:23Z",
+    "fetchedAt": "2026-11-10T05:30:20Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
-   "v4": {
-    "version": "v4-independent-skater-v1",
-    "la": 3.2286,
-    "lh": 3.0597,
-    "ra": 2.8637,
-    "rh": 2.714,
-    "betaGq": 0.40627,
-    "calib": 1.0236,
-    "goalies": {
-     "away": {
-      "name": "Joseph Woll",
-      "id": 8479361,
-      "gq": -0.1086,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8478435,
-        "name": "D. Vladar",
-        "gq": -0.054,
-        "share": 0.594,
-        "shots": 2028
-       },
-       {
-        "id": 8479361,
-        "name": "J. Woll",
-        "gq": -0.1086,
-        "share": 0.399,
-        "shots": 2063
-       }
-      ]
-     },
-     "home": {
-      "name": "Leevi Merilainen",
-      "id": 8482447,
-      "gq": -0.0019,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8482447,
-        "name": "L. Meril\u00e4inen",
-        "gq": -0.0019,
-        "share": 0.712,
-        "shots": 846
-       },
-       {
-        "id": 8480947,
-        "name": "K. Lankinen",
-        "gq": 0.0169,
-        "share": 0.278,
-        "shots": 2290
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-08",
-    "rest": {
-     "away": 1,
-     "home": 2
-    },
-    "b2b": {
-     "away": 1,
-     "home": 0
-    },
-    "km": {
-     "away": 674,
-     "home": 817
-    },
-    "form": {
-     "away": {
-      "gf": 0.905,
-      "ga": 1.016,
-      "xf": 0.94,
-      "xa": 1.023
-     },
-     "home": {
-      "gf": 0.94,
-      "ga": 1.214,
-      "xf": 0.893,
-      "xa": 1.093
-     }
-    },
-    "at": "2026-11-09T23:20:25Z",
-    "skaterAdjustment": {
-     "policy": "skater-context-sensitivity-v1",
-     "dataThrough": "2026-11-08",
-     "baseGoals": [
-      3.1936,
-      3.0621
-     ],
-     "adjustedGoals": [
-      3.2285754166578102,
-      3.0597432249247514
-     ],
-     "featureDelta": [
-      0.3139621998220987,
-      0.017869994720109084
-     ],
-     "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
-     "sides": {
-      "away": {
-       "players": [
-        {
-         "id": 8478439,
-         "position": "R",
-         "name": "Travis Konecny"
-        },
-        {
-         "id": 8481533,
-         "position": "C",
-         "name": "Trevor Zegras"
-        },
-        {
-         "id": 8477989,
-         "position": "C",
-         "name": "Christian Dvorak"
-        },
-        {
-         "id": 8482159,
-         "position": "R",
-         "name": "Tyson Foerster"
-        },
-        {
-         "id": 8476461,
-         "position": "C",
-         "name": "Sean Couturier"
-        },
-        {
-         "id": 8480015,
-         "position": "R",
-         "name": "Owen Tippett"
-        },
-        {
-         "id": 8484387,
-         "position": "R",
-         "name": "Matvei Michkov"
-        },
-        {
-         "id": 8480220,
-         "position": "L",
-         "name": "Noah Cates"
-        },
-        {
-         "id": 8485406,
-         "position": "R",
-         "name": "Porter Martone"
-        },
-        {
-         "id": 8478047,
-         "position": "L",
-         "name": "Michael Bunting"
-        },
-        {
-         "id": 8484142,
-         "position": "C",
-         "name": "Denver Barkey"
-        },
-        {
-         "id": 8478569,
-         "position": "C",
-         "name": "Noel Acciari"
-        },
-        {
-         "id": 8477948,
-         "position": "D",
-         "name": "Travis Sanheim"
-        },
-        {
-         "id": 8481546,
-         "position": "D",
-         "name": "Cam York"
-        },
-        {
-         "id": 8482142,
-         "position": "D",
-         "name": "Jamie Drysdale"
-        },
-        {
-         "id": 8484148,
-         "position": "D",
-         "name": "Oliver Bonk"
-        },
-        {
-         "id": 8476372,
-         "position": "D",
-         "name": "Nick Seeler"
-        },
-        {
-         "id": 8481122,
-         "position": "D",
-         "name": "Simon Benoit"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Erik Gustafsson",
-         "id": 8476979,
-         "status": "Day-To-Day",
-         "baselineParticipation": 0.0,
-         "productionAbovePositionMean": -0.0109
-        },
-        {
-         "name": "Rasmus Ristolainen",
-         "id": 8477499,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.3404,
-         "productionAbovePositionMean": -0.0205
-        },
-        {
-         "name": "Nikita Grebenkin",
-         "id": 8483733,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.1585,
-         "productionAbovePositionMean": -0.1465
-        }
-       ]
-      },
-      "home": {
-       "players": [
-        {
-         "id": 8480012,
-         "position": "C",
-         "name": "Elias Pettersson"
-        },
-        {
-         "id": 8478444,
-         "position": "R",
-         "name": "Brock Boeser"
-        },
-        {
-         "id": 8482079,
-         "position": "C",
-         "name": "Marco Rossi"
-        },
-        {
-         "id": 8478498,
-         "position": "L",
-         "name": "Jake DeBrusk"
-        },
-        {
-         "id": 8482055,
-         "position": "L",
-         "name": "Drew O'Connor"
-        },
-        {
-         "id": 8483476,
-         "position": "R",
-         "name": "Jonathan Lekkerim\u00e4ki"
-        },
-        {
-         "id": 8483499,
-         "position": "L",
-         "name": "Liam Ohgren"
-        },
-        {
-         "id": 8481024,
-         "position": "C",
-         "name": "Linus Karlsson"
-        },
-        {
-         "id": 8475848,
-         "position": "R",
-         "name": "Brendan Gallagher"
-        },
-        {
-         "id": 8481032,
-         "position": "L",
-         "name": "Paul Cotter"
-        },
-        {
-         "id": 8484136,
-         "position": "C",
-         "name": "Max Sasson"
-        },
-        {
-         "id": 8484901,
-         "position": "C",
-         "name": "Jacob Quillan"
-        },
-        {
-         "id": 8479425,
-         "position": "D",
-         "name": "Filip Hronek"
-        },
-        {
-         "id": 8484798,
-         "position": "D",
-         "name": "Zeev Buium"
-        },
-        {
-         "id": 8476467,
-         "position": "D",
-         "name": "Jamie Oleksiak"
-        },
-        {
-         "id": 8483678,
-         "position": "D",
-         "name": "Elias Pettersson"
-        },
-        {
-         "id": 8478465,
-         "position": "D",
-         "name": "Guillaume Brisebois"
-        },
-        {
-         "id": 8474568,
-         "position": "D",
-         "name": "Luke Schenn"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Filip Chytil",
-         "id": 8480078,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.3063,
-         "productionAbovePositionMean": -0.0485
-        },
-        {
-         "name": "Tom Willander",
-         "id": 8484240,
-         "status": "Out",
-         "baselineParticipation": 0.8353,
-         "productionAbovePositionMean": -0.0341
-        },
-        {
-         "name": "Akil Thomas",
-         "id": 8480851,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0,
-         "productionAbovePositionMean": -0.1089
-        },
-        {
-         "name": "Mackenzie MacEachern",
-         "id": 8476907,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0115,
-         "productionAbovePositionMean": -0.0118
-        }
-       ]
-      }
-     },
-     "scenarios": [
-      {
-       "label": "unadjusted team baseline",
-       "rates": [
-        2.8327,
-        2.7161
-       ]
-      },
-      {
-       "label": "PHI questionable skaters OUT",
-       "rates": [
-        2.8637463945754775,
-        2.7139922405082544
-       ]
-      }
-     ]
-    },
-    "frozen": true
-   },
    "availability": {
-    "checkedAt": "2026-11-10T03:44:45.708368+00:00",
+    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
-        "name": "Erik Gustafsson",
-        "position": "D",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-09T20:55Z"
-       },
-       {
-        "name": "Rasmus Ristolainen",
+        "name": "Josh Manson",
         "position": "D",
         "status": "Injured Reserve",
-        "updatedAt": "2026-10-27T14:26Z"
+        "updatedAt": "2026-11-09T22:18Z"
        },
        {
-        "name": "Nikita Grebenkin",
-        "position": "RW",
+        "name": "Zachary L'Heureux",
+        "position": "LW",
         "status": "Injured Reserve",
-        "updatedAt": "2026-10-10T16:58Z"
+        "updatedAt": "2026-10-23T21:39Z"
        }
       ],
       "roster": [
        {
-        "id": 8478569,
-        "position": "C",
-        "name": "Noel Acciari"
+        "id": 8486171,
+        "position": "R",
+        "name": "T.J. Hughes"
        },
        {
-        "id": 8484142,
+        "id": 8475172,
         "position": "C",
-        "name": "Denver Barkey"
+        "name": "Nazem Kadri"
        },
        {
-        "id": 8478047,
+        "id": 8480448,
+        "position": "C",
+        "name": "Parker Kelly"
+       },
+       {
+        "id": 8482742,
         "position": "L",
-        "name": "Michael Bunting"
+        "name": "Zachary L'Heureux"
        },
        {
-        "id": 8480220,
+        "id": 8476455,
         "position": "L",
-        "name": "Noah Cates"
+        "name": "Gabriel Landeskog"
        },
        {
-        "id": 8476461,
+        "id": 8477476,
+        "position": "L",
+        "name": "Artturi Lehkonen"
+       },
+       {
+        "id": 8477492,
         "position": "C",
-        "name": "Sean Couturier"
+        "name": "Nathan MacKinnon"
        },
        {
-        "id": 8477989,
+        "id": 8480039,
         "position": "C",
-        "name": "Christian Dvorak"
+        "name": "Martin Necas"
        },
        {
-        "id": 8482159,
-        "position": "R",
-        "name": "Tyson Foerster"
-       },
-       {
-        "id": 8483733,
-        "position": "R",
-        "name": "Nikita Grebenkin"
-       },
-       {
-        "id": 8483787,
-        "position": "R",
-        "name": "Cole Knuble"
-       },
-       {
-        "id": 8478439,
-        "position": "R",
-        "name": "Travis Konecny"
-       },
-       {
-        "id": 8485406,
-        "position": "R",
-        "name": "Porter Martone"
-       },
-       {
-        "id": 8484387,
-        "position": "R",
-        "name": "Matvei Michkov"
-       },
-       {
-        "id": 8480015,
-        "position": "R",
-        "name": "Owen Tippett"
-       },
-       {
-        "id": 8481533,
+        "id": 8475754,
         "position": "C",
-        "name": "Trevor Zegras"
+        "name": "Brock Nelson"
        },
        {
-        "id": 8481122,
+        "id": 8481186,
+        "position": "R",
+        "name": "Logan O'Connor"
+       },
+       {
+        "id": 8478462,
+        "position": "C",
+        "name": "Nicolas Roy"
+       },
+       {
+        "id": 8475768,
+        "position": "L",
+        "name": "Jaden Schwartz"
+       },
+       {
+        "id": 8482768,
+        "position": "C",
+        "name": "Fedor Svechkov"
+       },
+       {
+        "id": 8470613,
         "position": "D",
-        "name": "Simon Benoit"
+        "name": "Brent Burns"
        },
        {
-        "id": 8484148,
+        "id": 8482942,
         "position": "D",
-        "name": "Oliver Bonk"
+        "name": "Alex Gagne"
        },
        {
-        "id": 8482142,
+        "id": 8478454,
         "position": "D",
-        "name": "Jamie Drysdale"
+        "name": "Noah Juulsen"
        },
        {
-        "id": 8483460,
+        "id": 8476967,
         "position": "D",
-        "name": "David Jiricek"
+        "name": "Brett Kulak"
        },
        {
-        "id": 8477499,
+        "id": 8480069,
         "position": "D",
-        "name": "Rasmus Ristolainen"
+        "name": "Cale Makar"
        },
        {
-        "id": 8477948,
+        "id": 8484258,
         "position": "D",
-        "name": "Travis Sanheim"
+        "name": "Sam Malinski"
        },
        {
-        "id": 8476372,
+        "id": 8476312,
         "position": "D",
-        "name": "Nick Seeler"
+        "name": "Josh Manson"
        },
        {
-        "id": 8481546,
+        "id": 8478038,
         "position": "D",
-        "name": "Cam York"
+        "name": "Devon Toews"
        },
        {
-        "id": 8478435,
+        "id": 8478406,
         "position": "G",
-        "name": "Dan Vladar"
+        "name": "Mackenzie Blackwood"
        },
        {
-        "id": 8479361,
+        "id": 8475809,
         "position": "G",
-        "name": "Joseph Woll"
+        "name": "Scott Wedgewood"
        }
       ]
      },
      "home": {
       "injuries": [
        {
-        "name": "Filip Chytil",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-09T18:22Z"
-       },
-       {
-        "name": "Tom Willander",
+        "name": "Morgan Rielly",
         "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-09T18:22Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-09T14:28Z"
        },
        {
-        "name": "Akil Thomas",
+        "name": "Colton Sissons",
         "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-09-29T17:05Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-09T14:28Z"
        },
        {
-        "name": "Mackenzie MacEachern",
+        "name": "Jack Roslovic",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-09T14:28Z"
+       },
+       {
+        "name": "Kirill Marchenko",
+        "position": "RW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-29T17:28Z"
+       },
+       {
+        "name": "Miles Wood",
         "position": "LW",
         "status": "Injured Reserve",
-        "updatedAt": "2026-09-29T17:03Z"
+        "updatedAt": "2026-10-29T00:11Z"
        },
        {
-        "name": "Thatcher Demko",
+        "name": "Nick Blankenburg",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-23T15:29Z"
+       },
+       {
+        "name": "Marshall Rifai",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-23T02:22Z"
+       },
+       {
+        "name": "Max Domi",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-30T18:51Z"
+       },
+       {
+        "name": "Cade Webber",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-29T14:55Z"
+       },
+       {
+        "name": "Elvis Merzlikins",
         "position": "G",
         "status": "Injured Reserve",
-        "updatedAt": "2026-09-28T17:58Z"
+        "updatedAt": "2026-09-29T14:24Z"
+       },
+       {
+        "name": "William Villeneuve",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-29T04:30Z"
        }
       ],
       "roster": [
        {
-        "id": 8483395,
-        "position": "L",
-        "name": "Arshdeep Bains"
+        "id": 8476927,
+        "position": "C",
+        "name": "Teddy Blueger"
        },
        {
-        "id": 8478444,
+        "id": 8484158,
         "position": "R",
-        "name": "Brock Boeser"
+        "name": "Easton Cowan"
        },
        {
-        "id": 8480078,
+        "id": 8479520,
+        "position": "L",
+        "name": "Brandon Duhaime"
+       },
+       {
+        "id": 8480870,
         "position": "C",
-        "name": "Filip Chytil"
+        "name": "Bo Groulx"
        },
        {
-        "id": 8481032,
-        "position": "L",
-        "name": "Paul Cotter"
+        "id": 8478057,
+        "position": "C",
+        "name": "Dakota Joshua"
        },
        {
-        "id": 8478498,
-        "position": "L",
-        "name": "Jake DeBrusk"
-       },
-       {
-        "id": 8475848,
+        "id": 8479772,
         "position": "R",
-        "name": "Brendan Gallagher"
+        "name": "Zack MacEwen"
        },
        {
-        "id": 8481024,
-        "position": "C",
-        "name": "Linus Karlsson"
-       },
-       {
-        "id": 8483476,
+        "id": 8480893,
         "position": "R",
-        "name": "Jonathan Lekkerim\u00e4ki"
+        "name": "Kirill Marchenko"
        },
        {
-        "id": 8482055,
+        "id": 8479318,
+        "position": "C",
+        "name": "Auston Matthews"
+       },
+       {
+        "id": 8486067,
         "position": "L",
-        "name": "Drew O'Connor"
+        "name": "Gavin McKenna"
        },
        {
-        "id": 8483499,
+        "id": 8477939,
+        "position": "R",
+        "name": "William Nylander"
+       },
+       {
+        "id": 8477426,
         "position": "L",
-        "name": "Liam Ohgren"
+        "name": "Nick Paul"
        },
        {
-        "id": 8480012,
+        "id": 8478458,
         "position": "C",
-        "name": "Elias Pettersson"
+        "name": "Jack Roslovic"
        },
        {
-        "id": 8484901,
+        "id": 8476925,
         "position": "C",
-        "name": "Jacob Quillan"
+        "name": "Colton Sissons"
        },
        {
-        "id": 8482079,
+        "id": 8475166,
         "position": "C",
-        "name": "Marco Rossi"
+        "name": "John Tavares"
        },
        {
-        "id": 8484136,
-        "position": "C",
-        "name": "Max Sasson"
+        "id": 8477425,
+        "position": "L",
+        "name": "Miles Wood"
        },
        {
-        "id": 8478465,
+        "id": 8483565,
         "position": "D",
-        "name": "Guillaume Brisebois"
+        "name": "Nick Blankenburg"
        },
        {
-        "id": 8484798,
+        "id": 8475171,
         "position": "D",
-        "name": "Zeev Buium"
+        "name": "Oliver Ekman-Larsson"
        },
        {
-        "id": 8479425,
+        "id": 8476931,
         "position": "D",
-        "name": "Filip Hronek"
+        "name": "Jake McCabe"
        },
        {
-        "id": 8483768,
+        "id": 8484287,
         "position": "D",
-        "name": "Victor Mancini"
+        "name": "Cole McWard"
        },
        {
-        "id": 8476467,
+        "id": 8477541,
         "position": "D",
-        "name": "Jamie Oleksiak"
+        "name": "Dakota Mermis"
        },
        {
-        "id": 8483678,
+        "id": 8478178,
         "position": "D",
-        "name": "Elias Pettersson"
+        "name": "Darren Raddysh"
        },
        {
-        "id": 8474568,
+        "id": 8476853,
         "position": "D",
-        "name": "Luke Schenn"
+        "name": "Morgan Rielly"
        },
        {
-        "id": 8484240,
+        "id": 8483546,
         "position": "D",
-        "name": "Tom Willander"
+        "name": "Marshall Rifai"
        },
        {
-        "id": 8477967,
+        "id": 8479442,
+        "position": "D",
+        "name": "Troy Stecher"
+       },
+       {
+        "id": 8475690,
+        "position": "D",
+        "name": "Chris Tanev"
+       },
+       {
+        "id": 8482515,
         "position": "G",
-        "name": "Thatcher Demko"
+        "name": "Artur Akhtyamov"
        },
        {
-        "id": 8480947,
+        "id": 8475683,
         "position": "G",
-        "name": "Kevin Lankinen"
+        "name": "Sergei Bobrovsky"
        },
        {
-        "id": 8482447,
+        "id": 8476932,
         "position": "G",
-        "name": "Leevi Meril\u00e4inen"
+        "name": "Anthony Stolarz"
        }
       ]
      }
     },
     "problems": [],
-    "blockReason": "VAN recent skater absences not individually modeled: Filip Chytil, Tom Willander"
+    "skaterModelStatus": "unavailable",
+    "skaterModelReason": "skater game logs missing completed team games",
+    "blockReason": "Skater adjustment unavailable: skater game logs missing completed team games"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.8693,
+    "lh": 2.9612,
+    "ra": 3.4321,
+    "rh": 2.6266,
+    "betaGq": 0.4069,
+    "calib": 1.023,
+    "goalies": {
+     "away": {
+      "name": "Mackenzie Blackwood",
+      "id": 8478406,
+      "gq": -0.1005,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8478406,
+        "name": "M. Blackwood",
+        "gq": -0.1005,
+        "share": 0.734,
+        "shots": 2498
+       },
+       {
+        "id": 8475809,
+        "name": "S. Wedgewood",
+        "gq": -0.0621,
+        "share": 0.266,
+        "shots": 1822
+       }
+      ]
+     },
+     "home": {
+      "name": "Sergei Bobrovsky",
+      "id": 8475683,
+      "gq": -0.0792,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8475683,
+        "name": "S. Bobrovsky",
+        "gq": -0.0792,
+        "share": 0.584,
+        "shots": 3060
+       },
+       {
+        "id": 8476932,
+        "name": "A. Stolarz",
+        "gq": -0.1103,
+        "share": 0.398,
+        "shots": 1659
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-09",
+    "rest": {
+     "away": 3,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 2162,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.107,
+      "ga": 0.959,
+      "xf": 1.052,
+      "xa": 0.943
+     },
+     "home": {
+      "gf": 1.018,
+      "ga": 1.062,
+      "xf": 0.963,
+      "xa": 1.053
+     }
+    },
+    "at": "2026-11-10T05:30:38Z"
    }
   },
   {
-   "id": 2026020285,
-   "startUTC": "2026-11-10T03:00:00Z",
-   "away": "NYI",
-   "home": "SJS",
-   "awayName": "New York Islanders",
-   "homeName": "San Jose Sharks",
-   "venue": "SAP Center at San Jose",
-   "state": "LIVE",
+   "id": 2026020287,
+   "startUTC": "2026-11-11T00:00:00Z",
+   "away": "MIN",
+   "home": "MTL",
+   "awayName": "Minnesota Wild",
+   "homeName": "Montr\u00e9al Canadiens",
+   "venue": "Centre Bell",
+   "state": "FUT",
    "final": null,
-   "espnId": "401892682",
+   "espnId": "401892684",
    "odds": {
     "provider": "DraftKings",
-    "details": "NYI -142",
-    "mlAway": -142.0,
-    "mlHome": 120.0,
+    "details": "MIN -125",
+    "mlAway": -125.0,
+    "mlHome": 105.0,
     "total": 6.5,
-    "over": -102.0,
-    "under": -118.0,
-    "mlAwayOpen": -130.0,
-    "mlHomeOpen": 110.0
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": -118.0,
+    "mlHomeOpen": -102.0
    },
    "goalies": {
     "away": {
-     "name": "Ilya Sorokin",
-     "status": "Confirmed"
+     "name": "Jesper Wallstedt",
+     "status": "Expected"
     },
     "home": {
-     "name": "Yaroslav Askarov",
-     "status": "Confirmed"
+     "name": "Jacob Fowler",
+     "status": "Expected"
     }
    },
    "jupiter": {
-    "eventId": "POLY-1183210",
-    "slug": "nhl-nyi-sj-2026-11-09",
-    "date": "2026-11-09",
-    "away": "NYI",
-    "home": "SJS",
+    "eventId": "POLY-1188858",
+    "slug": "nhl-min-mon-2026-11-10",
+    "date": "2026-11-10",
+    "away": "MIN",
+    "home": "MTL",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1183210",
+    "link": "https://jup.ag/prediction/POLY-1188858",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-5651106-0",
-      "title": "Islanders",
+      "marketId": "POLY-5689459-0",
+      "title": "Wild",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.57,
-      "bid": 0.56,
-      "volume": 131557
+      "ask": 0.52,
+      "bid": 0.51,
+      "volume": 3102
      },
      "home": {
-      "marketId": "POLY-5651106-1",
-      "title": "Sharks",
+      "marketId": "POLY-5689459-1",
+      "title": "Canadiens",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.44,
-      "bid": 0.43,
-      "volume": 131557
+      "ask": 0.49,
+      "bid": 0.48,
+      "volume": 3102
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-5651107-0",
+      "marketId": "POLY-5689461-0",
       "label": "O 4.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.8,
       "bid": 0.79,
-      "volume": 51,
+      "volume": 0,
       "ou": "O",
       "line": 4.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651107-1",
+      "marketId": "POLY-5689461-1",
       "label": "U 4.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.21,
       "bid": 0.2,
-      "volume": 51,
+      "volume": 0,
       "ou": "U",
       "line": 4.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651108-0",
+      "marketId": "POLY-5689462-0",
       "label": "O 5.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.58,
-      "volume": 952,
+      "ask": 0.58,
+      "bid": 0.57,
+      "volume": 5,
       "ou": "O",
       "line": 5.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651108-1",
+      "marketId": "POLY-5689462-1",
       "label": "U 5.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.42,
-      "bid": 0.41,
-      "volume": 952,
+      "ask": 0.43,
+      "bid": 0.42,
+      "volume": 5,
       "ou": "U",
       "line": 5.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651109-0",
+      "marketId": "POLY-5689463-0",
       "label": "O 6.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.48,
-      "bid": 0.47,
-      "volume": 5122,
+      "ask": 0.47,
+      "bid": 0.46,
+      "volume": 3,
       "ou": "O",
       "line": 6.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651109-1",
+      "marketId": "POLY-5689463-1",
       "label": "U 6.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.53,
-      "bid": 0.52,
-      "volume": 5122,
+      "ask": 0.54,
+      "bid": 0.53,
+      "volume": 3,
       "ou": "U",
       "line": 6.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651110-0",
+      "marketId": "POLY-5689465-0",
       "label": "O 7.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.27,
       "bid": 0.26,
-      "volume": 15,
+      "volume": 22,
       "ou": "O",
       "line": 7.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-5651110-1",
+      "marketId": "POLY-5689465-1",
       "label": "U 7.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.74,
       "bid": 0.73,
-      "volume": 15,
+      "volume": 22,
       "ou": "U",
       "line": 7.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872837-0",
-      "label": "NYI -1.5",
+      "marketId": "POLY-6908762-0",
+      "label": "MIN -1.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.35,
-      "bid": 0.34,
-      "volume": 62349,
-      "team": "NYI",
+      "ask": 0.31,
+      "bid": 0.3,
+      "volume": 0,
+      "team": "MIN",
       "line": -1.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872837-1",
-      "label": "SJ +1.5",
+      "marketId": "POLY-6908762-1",
+      "label": "MON +1.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.66,
-      "bid": 0.65,
-      "volume": 62349,
-      "team": "SJS",
+      "ask": 0.7,
+      "bid": 0.69,
+      "volume": 0,
+      "team": "MTL",
       "line": 1.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872838-0",
-      "label": "SJ -3.5",
+      "marketId": "POLY-6908763-0",
+      "label": "MON -3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.07,
+      "ask": 0.14,
       "bid": 0.04,
       "volume": 0,
-      "team": "SJS",
+      "team": "MTL",
       "line": -3.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872838-1",
-      "label": "NYI +3.5",
+      "marketId": "POLY-6908763-1",
+      "label": "MIN +3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.93,
+      "bid": 0.86,
       "volume": 0,
-      "team": "NYI",
+      "team": "MIN",
       "line": 3.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872839-0",
-      "label": "SJ -2.5",
+      "marketId": "POLY-6908764-0",
+      "label": "MON -2.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.15,
-      "bid": 0.14,
+      "ask": 0.16,
+      "bid": 0.15,
       "volume": 0,
-      "team": "SJS",
+      "team": "MTL",
       "line": -2.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872839-1",
-      "label": "NYI +2.5",
+      "marketId": "POLY-6908764-1",
+      "label": "MIN +2.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.86,
-      "bid": 0.85,
+      "ask": 0.85,
+      "bid": 0.84,
       "volume": 0,
-      "team": "NYI",
+      "team": "MIN",
       "line": 2.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872840-0",
-      "label": "SJ -1.5",
+      "marketId": "POLY-6908765-0",
+      "label": "MON -1.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.24,
-      "bid": 0.23,
-      "volume": 1133,
-      "team": "SJS",
+      "ask": 0.26,
+      "bid": 0.25,
+      "volume": 0,
+      "team": "MTL",
       "line": -1.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872840-1",
-      "label": "NYI +1.5",
+      "marketId": "POLY-6908765-1",
+      "label": "MIN +1.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.76,
-      "volume": 1133,
-      "team": "NYI",
+      "ask": 0.75,
+      "bid": 0.74,
+      "volume": 0,
+      "team": "MIN",
       "line": 1.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872841-0",
-      "label": "NYI -3.5",
+      "marketId": "POLY-6908766-0",
+      "label": "MIN -3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.13,
-      "bid": 0.08,
+      "ask": 0.18,
+      "bid": 0.05,
       "volume": 0,
-      "team": "NYI",
+      "team": "MIN",
       "line": -3.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872841-1",
-      "label": "SJ +3.5",
+      "marketId": "POLY-6908766-1",
+      "label": "MON +3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.92,
-      "bid": 0.87,
+      "ask": 0.95,
+      "bid": 0.82,
       "volume": 0,
-      "team": "SJS",
+      "team": "MTL",
       "line": 3.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872842-0",
-      "label": "NYI -2.5",
+      "marketId": "POLY-6908767-0",
+      "label": "MIN -2.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.23,
-      "bid": 0.22,
-      "volume": 2213,
-      "team": "NYI",
+      "ask": 0.2,
+      "bid": 0.19,
+      "volume": 0,
+      "team": "MIN",
       "line": -2.5
      },
      {
       "type": "spreads",
-      "marketId": "POLY-6872842-1",
-      "label": "SJ +2.5",
+      "marketId": "POLY-6908767-1",
+      "label": "MON +2.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.78,
-      "bid": 0.77,
-      "volume": 2213,
-      "team": "SJS",
+      "ask": 0.81,
+      "bid": 0.8,
+      "volume": 0,
+      "team": "MTL",
       "line": 2.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872843-0",
+      "marketId": "POLY-6908768-0",
       "label": "O 2.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.988,
-      "bid": 0.963,
-      "volume": 71,
+      "ask": 0.98,
+      "bid": 0.962,
+      "volume": 0,
       "ou": "O",
       "line": 2.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872843-1",
+      "marketId": "POLY-6908768-1",
       "label": "U 2.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.037,
-      "bid": 0.012,
-      "volume": 71,
+      "ask": 0.038,
+      "bid": 0.02,
+      "volume": 0,
       "ou": "U",
       "line": 2.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872844-0",
+      "marketId": "POLY-6908769-0",
       "label": "O 3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.89,
-      "bid": 0.87,
-      "volume": 319,
+      "ask": 0.88,
+      "bid": 0.86,
+      "volume": 0,
       "ou": "O",
       "line": 3.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872844-1",
+      "marketId": "POLY-6908769-1",
       "label": "U 3.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.13,
-      "bid": 0.11,
-      "volume": 319,
+      "ask": 0.14,
+      "bid": 0.12,
+      "volume": 0,
       "ou": "U",
       "line": 3.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872845-0",
+      "marketId": "POLY-6908770-0",
       "label": "O 8.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.21,
-      "bid": 0.18,
+      "ask": 0.19,
+      "bid": 0.17,
       "volume": 0,
       "ou": "O",
       "line": 8.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872845-1",
+      "marketId": "POLY-6908770-1",
       "label": "U 8.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.82,
-      "bid": 0.79,
+      "ask": 0.83,
+      "bid": 0.81,
       "volume": 0,
       "ou": "U",
       "line": 8.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872846-0",
+      "marketId": "POLY-6908771-0",
       "label": "O 9.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.09,
-      "bid": 0.08,
-      "volume": 258,
+      "ask": 0.1,
+      "bid": 0.07,
+      "volume": 0,
       "ou": "O",
       "line": 9.5
      },
      {
       "type": "totals",
-      "marketId": "POLY-6872846-1",
+      "marketId": "POLY-6908771-1",
       "label": "U 9.5",
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.92,
-      "bid": 0.91,
-      "volume": 258,
+      "ask": 0.93,
+      "bid": 0.9,
+      "volume": 0,
       "ou": "U",
       "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-09T23:20:23Z",
+    "fetchedAt": "2026-11-10T05:30:20Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
-   "v4": {
-    "version": "v4-independent-skater-v1",
-    "la": 3.4823,
-    "lh": 3.1404,
-    "ra": 3.0888,
-    "rh": 2.7856,
-    "betaGq": 0.40627,
-    "calib": 1.0236,
-    "goalies": {
+   "availability": {
+    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
+    "source": "ESPN live injuries + NHL current rosters",
+    "sides": {
      "away": {
-      "name": "Ilya Sorokin",
-      "id": 8478009,
-      "gq": -0.171,
-      "mode": "named",
-      "table": [
+      "injuries": [
        {
-        "id": 8478009,
-        "name": "I. Sorokin",
-        "gq": -0.171,
-        "share": 0.664,
-        "shots": 3563
+        "name": "Michael McCarron",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-09T16:36Z"
        },
        {
-        "id": 8473575,
-        "name": "S. Varlamov",
-        "gq": -0.0907,
-        "share": 0.327,
-        "shots": 875
+        "name": "Filip Gustavsson",
+        "position": "G",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-05T18:51Z"
+       },
+       {
+        "name": "Jared Spurgeon",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-05T18:12Z"
+       },
+       {
+        "name": "Brock Faber",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-05T18:09Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8481557,
+        "position": "L",
+        "name": "Matt Boldy"
+       },
+       {
+        "id": 8481553,
+        "position": "R",
+        "name": "Bobby Brink"
+       },
+       {
+        "id": 8476399,
+        "position": "L",
+        "name": "Blake Coleman"
+       },
+       {
+        "id": 8478493,
+        "position": "C",
+        "name": "Joel Eriksson Ek"
+       },
+       {
+        "id": 8475220,
+        "position": "L",
+        "name": "Marcus Foligno"
+       },
+       {
+        "id": 8473422,
+        "position": "L",
+        "name": "Nick Foligno"
+       },
+       {
+        "id": 8477451,
+        "position": "R",
+        "name": "Ryan Hartman"
+       },
+       {
+        "id": 8478864,
+        "position": "L",
+        "name": "Kirill Kaprizov"
+       },
+       {
+        "id": 8477446,
+        "position": "C",
+        "name": "Michael McCarron"
+       },
+       {
+        "id": 8475752,
+        "position": "C",
+        "name": "Tyler Pitlick"
+       },
+       {
+        "id": 8485702,
+        "position": "R",
+        "name": "Maxim Shabanov"
+       },
+       {
+        "id": 8481477,
+        "position": "C",
+        "name": "Nico Sturm"
+       },
+       {
+        "id": 8478508,
+        "position": "C",
+        "name": "Yakov Trenin"
+       },
+       {
+        "id": 8483525,
+        "position": "R",
+        "name": "Danila Yurov"
+       },
+       {
+        "id": 8474567,
+        "position": "D",
+        "name": "Zach Bogosian"
+       },
+       {
+        "id": 8476463,
+        "position": "D",
+        "name": "Jonas Brodin"
+       },
+       {
+        "id": 8480075,
+        "position": "D",
+        "name": "Cameron Crotty"
+       },
+       {
+        "id": 8482122,
+        "position": "D",
+        "name": "Brock Faber"
+       },
+       {
+        "id": 8480800,
+        "position": "D",
+        "name": "Quinn Hughes"
+       },
+       {
+        "id": 8482641,
+        "position": "D",
+        "name": "Matt Kiersted"
+       },
+       {
+        "id": 8476874,
+        "position": "D",
+        "name": "Olli Maatta"
+       },
+       {
+        "id": 8483766,
+        "position": "D",
+        "name": "David Spacek"
+       },
+       {
+        "id": 8474716,
+        "position": "D",
+        "name": "Jared Spurgeon"
+       },
+       {
+        "id": 8479406,
+        "position": "G",
+        "name": "Filip Gustavsson"
+       },
+       {
+        "id": 8475717,
+        "position": "G",
+        "name": "Calvin Pickard"
+       },
+       {
+        "id": 8482661,
+        "position": "G",
+        "name": "Jesper Wallstedt"
        }
       ]
      },
      "home": {
-      "name": "Yaroslav Askarov",
-      "id": 8482137,
-      "gq": -0.0174,
-      "mode": "named",
-      "table": [
+      "injuries": [
        {
-        "id": 8482137,
-        "name": "Y. Askarov",
-        "gq": -0.0174,
-        "share": 0.608,
-        "shots": 1482
+        "name": "Jake Evans",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-09T20:03Z"
        },
        {
-        "id": 8477968,
-        "name": "A. Nedeljkovic",
-        "gq": -0.0413,
-        "share": 0.392,
-        "shots": 2240
+        "name": "Josh Anderson",
+        "position": "RW",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-08T13:39Z"
+       },
+       {
+        "name": "Ivan Demidov",
+        "position": "RW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-04T21:04Z"
+       },
+       {
+        "name": "Mike Matheson",
+        "position": "D",
+        "status": "Out",
+        "updatedAt": "2026-10-31T15:31Z"
+       },
+       {
+        "name": "Sam Montembeault",
+        "position": "G",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-31T15:25Z"
+       },
+       {
+        "name": "Bryce Pickford",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-29T16:39Z"
+       },
+       {
+        "name": "Lucas Condotta",
+        "position": "LW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-29T16:38Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8476981,
+        "position": "R",
+        "name": "Josh Anderson"
+       },
+       {
+        "id": 8483424,
+        "position": "C",
+        "name": "Owen Beck"
+       },
+       {
+        "id": 8482737,
+        "position": "R",
+        "name": "Zachary Bolduc"
+       },
+       {
+        "id": 8481540,
+        "position": "R",
+        "name": "Cole Caufield"
+       },
+       {
+        "id": 8481523,
+        "position": "C",
+        "name": "Kirby Dach"
+       },
+       {
+        "id": 8476479,
+        "position": "C",
+        "name": "Phillip Danault"
+       },
+       {
+        "id": 8484984,
+        "position": "R",
+        "name": "Ivan Demidov"
+       },
+       {
+        "id": 8478133,
+        "position": "C",
+        "name": "Jake Evans"
+       },
+       {
+        "id": 8482775,
+        "position": "C",
+        "name": "Oliver Kapanen"
+       },
+       {
+        "id": 8475184,
+        "position": "L",
+        "name": "Chris Kreider"
+       },
+       {
+        "id": 8481618,
+        "position": "C",
+        "name": "Alex Newhook"
+       },
+       {
+        "id": 8483515,
+        "position": "L",
+        "name": "Juraj Slafkovsk\u00fd"
+       },
+       {
+        "id": 8480018,
+        "position": "C",
+        "name": "Nick Suzuki"
+       },
+       {
+        "id": 8480074,
+        "position": "L",
+        "name": "Alexandre Texier"
+       },
+       {
+        "id": 8484403,
+        "position": "L",
+        "name": "Florian Xhekaj"
+       },
+       {
+        "id": 8478851,
+        "position": "D",
+        "name": "Alexandre Carrier"
+       },
+       {
+        "id": 8480865,
+        "position": "D",
+        "name": "Noah Dobson"
+       },
+       {
+        "id": 8483686,
+        "position": "D",
+        "name": "Adam Engstrom"
+       },
+       {
+        "id": 8482087,
+        "position": "D",
+        "name": "Kaiden Guhle"
+       },
+       {
+        "id": 8483457,
+        "position": "D",
+        "name": "Lane Hutson"
+       },
+       {
+        "id": 8476875,
+        "position": "D",
+        "name": "Mike Matheson"
+       },
+       {
+        "id": 8482964,
+        "position": "D",
+        "name": "Arber Xhekaj"
+       },
+       {
+        "id": 8482487,
+        "position": "G",
+        "name": "Jakub Dobes"
+       },
+       {
+        "id": 8484170,
+        "position": "G",
+        "name": "Jacob Fowler"
+       },
+       {
+        "id": 8478470,
+        "position": "G",
+        "name": "Samuel Montembeault"
        }
       ]
      }
     },
-    "trainedThrough": "2026-11-08",
+    "problems": [],
+    "skaterModelStatus": "unavailable",
+    "skaterModelReason": "skater game logs missing completed team games",
+    "blockReason": "Skater adjustment unavailable: skater game logs missing completed team games"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.427,
+    "lh": 3.1229,
+    "ra": 3.0398,
+    "rh": 2.77,
+    "betaGq": 0.4069,
+    "calib": 1.023,
+    "goalies": {
+     "away": {
+      "name": "Jesper Wallstedt",
+      "id": 8482661,
+      "gq": -0.0915,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8482661,
+        "name": "J. Wallstedt",
+        "gq": -0.0915,
+        "share": 0.755,
+        "shots": 1180
+       },
+       {
+        "id": 8475717,
+        "name": "C. Pickard",
+        "gq": 0.014,
+        "share": 0.233,
+        "shots": 990
+       }
+      ]
+     },
+     "home": {
+      "name": "Jacob Fowler",
+      "id": 8484170,
+      "gq": -0.1482,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8484170,
+        "name": "J. Fowler",
+        "gq": -0.1482,
+        "share": 0.651,
+        "shots": 609
+       },
+       {
+        "id": 8482487,
+        "name": "J. Dobes",
+        "gq": -0.0887,
+        "share": 0.348,
+        "shots": 1230
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-09",
+    "rest": {
+     "away": 3,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1527,
+     "home": 504
+    },
+    "form": {
+     "away": {
+      "gf": 1.041,
+      "ga": 0.895,
+      "xf": 1.09,
+      "xa": 0.947
+     },
+     "home": {
+      "gf": 1.059,
+      "ga": 0.984,
+      "xf": 1.039,
+      "xa": 1.046
+     }
+    },
+    "at": "2026-11-10T05:30:38Z"
+   }
+  },
+  {
+   "id": 2026020291,
+   "startUTC": "2026-11-11T00:00:00Z",
+   "away": "NJD",
+   "home": "WPG",
+   "awayName": "New Jersey Devils",
+   "homeName": "Winnipeg Jets",
+   "venue": "Canada Life Centre",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892688",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "NJ -148",
+    "mlAway": -148.0,
+    "mlHome": 124.0,
+    "total": 6.5,
+    "over": 110.0,
+    "under": -130.0,
+    "mlAwayOpen": -142.0,
+    "mlHomeOpen": 120.0
+   },
+   "goalies": {
+    "away": {
+     "name": "Jake Allen",
+     "status": "Expected"
+    },
+    "home": {
+     "name": "Nico Daws",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1188859",
+    "slug": "nhl-nj-wpg-2026-11-10",
+    "date": "2026-11-10",
+    "away": "NJD",
+    "home": "WPG",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1188859",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5689466-0",
+      "title": "Devils",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.59,
+      "bid": 0.58,
+      "volume": 2182
+     },
+     "home": {
+      "marketId": "POLY-5689466-1",
+      "title": "Jets",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.42,
+      "bid": 0.41,
+      "volume": 2182
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5689467-0",
+      "label": "O 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.78,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689467-1",
+      "label": "U 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.22,
+      "bid": 0.21,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689469-0",
+      "label": "O 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.58,
+      "bid": 0.56,
+      "volume": 446,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689469-1",
+      "label": "U 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.44,
+      "bid": 0.42,
+      "volume": 446,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689470-0",
+      "label": "O 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.47,
+      "bid": 0.45,
+      "volume": 0,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689470-1",
+      "label": "U 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.55,
+      "bid": 0.53,
+      "volume": 0,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689471-0",
+      "label": "O 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.24,
+      "volume": 0,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689471-1",
+      "label": "U 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.76,
+      "bid": 0.73,
+      "volume": 0,
+      "ou": "U",
+      "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908752-0",
+      "label": "NJ -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.35,
+      "bid": 0.34,
+      "volume": 5,
+      "team": "NJD",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908752-1",
+      "label": "WPG +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.66,
+      "bid": 0.65,
+      "volume": 5,
+      "team": "WPG",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908753-0",
+      "label": "WPG -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.12,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "WPG",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908753-1",
+      "label": "NJ +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.88,
+      "volume": 0,
+      "team": "NJD",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908754-0",
+      "label": "WPG -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.14,
+      "bid": 0.13,
+      "volume": 0,
+      "team": "WPG",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908754-1",
+      "label": "NJ +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.87,
+      "bid": 0.86,
+      "volume": 0,
+      "team": "NJD",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908755-0",
+      "label": "WPG -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.22,
+      "volume": 20,
+      "team": "WPG",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908755-1",
+      "label": "NJ +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.78,
+      "bid": 0.77,
+      "volume": 20,
+      "team": "NJD",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908756-0",
+      "label": "NJ -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.16,
+      "bid": 0.07,
+      "volume": 0,
+      "team": "NJD",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908756-1",
+      "label": "WPG +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.84,
+      "volume": 0,
+      "team": "WPG",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908757-0",
+      "label": "NJ -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.22,
+      "volume": 17,
+      "team": "NJD",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908757-1",
+      "label": "WPG +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.78,
+      "bid": 0.77,
+      "volume": 17,
+      "team": "WPG",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908758-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.98,
+      "bid": 0.953,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908758-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.047,
+      "bid": 0.02,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908759-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.87,
+      "bid": 0.85,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908759-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.13,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908760-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.19,
+      "bid": 0.17,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908760-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.83,
+      "bid": 0.81,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908761-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908761-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-11-10T05:30:20Z",
+    "host": "https://api.jup.ag/prediction/v1"
+   },
+   "availability": {
+    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
+    "source": "ESPN live injuries + NHL current rosters",
+    "sides": {
+     "away": {
+      "injuries": [
+       {
+        "name": "Anthony Mantha",
+        "position": "RW",
+        "status": "Out",
+        "updatedAt": "2026-11-08T21:56Z"
+       },
+       {
+        "name": "Seamus Casey",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-02T17:31Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8480003,
+        "position": "C",
+        "name": "Jesper Boqvist"
+       },
+       {
+        "id": 8479407,
+        "position": "L",
+        "name": "Jesper Bratt"
+       },
+       {
+        "id": 8477015,
+        "position": "R",
+        "name": "Connor Brown"
+       },
+       {
+        "id": 8482146,
+        "position": "R",
+        "name": "Luke Evangelista"
+       },
+       {
+        "id": 8479996,
+        "position": "C",
+        "name": "Cody Glass"
+       },
+       {
+        "id": 8481721,
+        "position": "R",
+        "name": "Arseny Gritsyuk"
+       },
+       {
+        "id": 8480002,
+        "position": "C",
+        "name": "Nico Hischier"
+       },
+       {
+        "id": 8481559,
+        "position": "C",
+        "name": "Jack Hughes"
+       },
+       {
+        "id": 8483695,
+        "position": "C",
+        "name": "Amadeus Lombardi"
+       },
+       {
+        "id": 8477511,
+        "position": "R",
+        "name": "Anthony Mantha"
+       },
+       {
+        "id": 8478414,
+        "position": "R",
+        "name": "Timo Meier"
+       },
+       {
+        "id": 8476474,
+        "position": "R",
+        "name": "Stefan Noesen"
+       },
+       {
+        "id": 8478542,
+        "position": "C",
+        "name": "Evan Rodrigues"
+       },
+       {
+        "id": 8480990,
+        "position": "D",
+        "name": "Declan Chisholm"
+       },
+       {
+        "id": 8475455,
+        "position": "D",
+        "name": "Brenden Dillon"
+       },
+       {
+        "id": 8476462,
+        "position": "D",
+        "name": "Dougie Hamilton"
+       },
+       {
+        "id": 8482684,
+        "position": "D",
+        "name": "Luke Hughes"
+       },
+       {
+        "id": 8480192,
+        "position": "D",
+        "name": "Johnathan Kovacevic"
+       },
+       {
+        "id": 8477488,
+        "position": "D",
+        "name": "Brett Pesce"
+       },
+       {
+        "id": 8478399,
+        "position": "D",
+        "name": "Jonas Siegenthaler"
+       },
+       {
+        "id": 8474596,
+        "position": "G",
+        "name": "Jake Allen"
+       },
+       {
+        "id": 8476945,
+        "position": "G",
+        "name": "Connor Hellebuyck"
+       }
+      ]
+     },
+     "home": {
+      "injuries": [
+       {
+        "name": "Josh Morrissey",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-08T15:51Z"
+       },
+       {
+        "name": "Elias Salomonsson",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-08T00:05Z"
+       },
+       {
+        "name": "Vladislav Namestnikov",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-23T18:11Z"
+       },
+       {
+        "name": "Nick Bjugstad",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-23T16:48Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8480289,
+        "position": "C",
+        "name": "Morgan Barron"
+       },
+       {
+        "id": 8486025,
+        "position": "C",
+        "name": "Viggo Bj\u00f6rck"
+       },
+       {
+        "id": 8478398,
+        "position": "L",
+        "name": "Kyle Connor"
+       },
+       {
+        "id": 8480113,
+        "position": "L",
+        "name": "Alex Iafallo"
+       },
+       {
+        "id": 8481043,
+        "position": "L",
+        "name": "Cole Koepke"
+       },
+       {
+        "id": 8476392,
+        "position": "C",
+        "name": "Adam Lowry"
+       },
+       {
+        "id": 8482110,
+        "position": "C",
+        "name": "Dawson Mercer"
+       },
+       {
+        "id": 8476480,
+        "position": "C",
+        "name": "Vladislav Namestnikov"
+       },
+       {
+        "id": 8475799,
+        "position": "R",
+        "name": "Nino Niederreiter"
+       },
+       {
+        "id": 8482149,
+        "position": "C",
+        "name": "Cole Perfetti"
+       },
+       {
+        "id": 8482765,
+        "position": "R",
+        "name": "Isak Rosen"
+       },
+       {
+        "id": 8476460,
+        "position": "C",
+        "name": "Mark Scheifele"
+       },
+       {
+        "id": 8480014,
+        "position": "C",
+        "name": "Gabriel Vilardi"
+       },
+       {
+        "id": 8484242,
+        "position": "C",
+        "name": "Brayden Yager"
+       },
+       {
+        "id": 8482459,
+        "position": "D",
+        "name": "Tyrel Bauer"
+       },
+       {
+        "id": 8476331,
+        "position": "D",
+        "name": "Dylan DeMelo"
+       },
+       {
+        "id": 8479983,
+        "position": "D",
+        "name": "Mario Ferraro"
+       },
+       {
+        "id": 8477938,
+        "position": "D",
+        "name": "Haydn Fleury"
+       },
+       {
+        "id": 8477504,
+        "position": "D",
+        "name": "Josh Morrissey"
+       },
+       {
+        "id": 8480145,
+        "position": "D",
+        "name": "Neal Pionk"
+       },
+       {
+        "id": 8480049,
+        "position": "D",
+        "name": "Dylan Samberg"
+       },
+       {
+        "id": 8481567,
+        "position": "D",
+        "name": "Henry Thrun"
+       },
+       {
+        "id": 8482076,
+        "position": "G",
+        "name": "Nico Daws"
+       },
+       {
+        "id": 8479973,
+        "position": "G",
+        "name": "Stuart Skinner"
+       },
+       {
+        "id": 8483532,
+        "position": "G",
+        "name": "Clay Stevenson"
+       }
+      ]
+     }
+    },
+    "problems": [],
+    "skaterModelStatus": "unavailable",
+    "skaterModelReason": "skater game logs missing completed team games",
+    "blockReason": "Skater adjustment unavailable: skater game logs missing completed team games"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.6021,
+    "lh": 2.8314,
+    "ra": 3.1951,
+    "rh": 2.5115,
+    "betaGq": 0.4069,
+    "calib": 1.023,
+    "goalies": {
+     "away": {
+      "name": "Jake Allen",
+      "id": 8474596,
+      "gq": -0.0806,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8476945,
+        "name": "C. Hellebuyck",
+        "gq": -0.1614,
+        "share": 0.499,
+        "shots": 3464
+       },
+       {
+        "id": 8474596,
+        "name": "J. Allen",
+        "gq": -0.0806,
+        "share": 0.387,
+        "shots": 2248
+       },
+       {
+        "id": 8482076,
+        "name": "N. Daws",
+        "gq": -0.0346,
+        "share": 0.106,
+        "shots": 547
+       }
+      ]
+     },
+     "home": {
+      "name": "Nico Daws",
+      "id": 8482076,
+      "gq": -0.0346,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8479973,
+        "name": "S. Skinner",
+        "gq": -0.0678,
+        "share": 0.771,
+        "shots": 2842
+       },
+       {
+        "id": 8483532,
+        "name": "C. Stevenson",
+        "gq": -0.0177,
+        "share": 0.121,
+        "shots": 212
+       },
+       {
+        "id": 8482076,
+        "name": "N. Daws",
+        "gq": -0.0346,
+        "share": 0.08,
+        "shots": 547
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-09",
     "rest": {
      "away": 2,
      "home": 2
@@ -2808,603 +2542,3308 @@
      "home": 0
     },
     "km": {
-     "away": 4137,
-     "home": 2332
+     "away": 1516,
+     "home": 0
     },
     "form": {
      "away": {
-      "gf": 0.952,
-      "ga": 0.997,
-      "xf": 0.98,
-      "xa": 1.052
+      "gf": 1.056,
+      "ga": 0.964,
+      "xf": 1.056,
+      "xa": 0.918
      },
      "home": {
-      "gf": 0.915,
-      "ga": 1.083,
-      "xf": 0.961,
-      "xa": 1.096
+      "gf": 0.941,
+      "ga": 1.059,
+      "xf": 0.991,
+      "xa": 1.021
      }
     },
-    "at": "2026-11-09T23:20:25Z",
-    "skaterAdjustment": {
-     "policy": "skater-context-sensitivity-v1",
-     "dataThrough": "2026-11-08",
-     "baseGoals": [
-      3.4988,
-      3.1173
-     ],
-     "adjustedGoals": [
-      3.4822977174362517,
-      3.140444098544766
-     ],
-     "featureDelta": [
-      -0.11016535496277108,
-      0.19767065705069753
-     ],
-     "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
-     "sides": {
-      "away": {
-       "players": [
-        {
-         "id": 8477500,
-         "position": "C",
-         "name": "Bo Horvat"
-        },
-        {
-         "id": 8475151,
-         "position": "C",
-         "name": "Kyle Palmieri"
-        },
-        {
-         "id": 8481601,
-         "position": "R",
-         "name": "Simon Holmstrom"
-        },
-        {
-         "id": 8475170,
-         "position": "C",
-         "name": "Brayden Schenn"
-        },
-        {
-         "id": 8476419,
-         "position": "C",
-         "name": "Jean-Gabriel Pageau"
-        },
-        {
-         "id": 8482476,
-         "position": "L",
-         "name": "Emil Heineman"
-        },
-        {
-         "id": 8485388,
-         "position": "R",
-         "name": "Victor Eklund"
-        },
-        {
-         "id": 8477407,
-         "position": "L",
-         "name": "Anthony Duclair"
-        },
-        {
-         "id": 8476292,
-         "position": "L",
-         "name": "Ondrej Palat"
-        },
-        {
-         "id": 8475231,
-         "position": "C",
-         "name": "Casey Cizikas"
-        },
-        {
-         "id": 8482070,
-         "position": "R",
-         "name": "Mitchell Chaffee"
-        },
-        {
-         "id": 8481237,
-         "position": "C",
-         "name": "Kyle MacLean"
-        },
-        {
-         "id": 8485366,
-         "position": "D",
-         "name": "Matthew Schaefer"
-        },
-        {
-         "id": 8476917,
-         "position": "D",
-         "name": "Adam Pelech"
-        },
-        {
-         "id": 8477950,
-         "position": "D",
-         "name": "Tony DeAngelo"
-        },
-        {
-         "id": 8479378,
-         "position": "D",
-         "name": "Logan Stanley"
-        },
-        {
-         "id": 8476429,
-         "position": "D",
-         "name": "Scott Mayfield"
-        },
-        {
-         "id": 8477018,
-         "position": "D",
-         "name": "Ben Hutton"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Matias Maccelli",
-         "id": 8481711,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.2971,
-         "productionAbovePositionMean": -0.0202
-        },
-        {
-         "name": "Mathew Barzal",
-         "id": 8478445,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.323,
-         "productionAbovePositionMean": 0.1318
-        },
-        {
-         "name": "Ryan Pulock",
-         "id": 8477506,
-         "status": "Out",
-         "baselineParticipation": 0.8114,
-         "productionAbovePositionMean": -0.0279
-        },
-        {
-         "name": "Calum Ritchie",
-         "id": 8484221,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.5768,
-         "productionAbovePositionMean": -0.0498
-        },
-        {
-         "name": "Alexander Romanov",
-         "id": 8481014,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.1332,
-         "productionAbovePositionMean": -0.0476
-        }
-       ]
-      },
-      "home": {
-       "players": [
-        {
-         "id": 8484801,
-         "position": "C",
-         "name": "Macklin Celebrini"
-        },
-        {
-         "id": 8477505,
-         "position": "C",
-         "name": "Alexander Wennberg"
-        },
-        {
-         "id": 8484227,
-         "position": "C",
-         "name": "Will Smith"
-        },
-        {
-         "id": 8478975,
-         "position": "L",
-         "name": "Mason Marchment"
-        },
-        {
-         "id": 8480748,
-         "position": "L",
-         "name": "Kiefer Sherwood"
-        },
-        {
-         "id": 8484911,
-         "position": "R",
-         "name": "Collin Graf"
-        },
-        {
-         "id": 8486103,
-         "position": "L",
-         "name": "Ivar Stenberg"
-        },
-        {
-         "id": 8475726,
-         "position": "C",
-         "name": "Tyler Toffoli"
-        },
-        {
-         "id": 8485402,
-         "position": "C",
-         "name": "Michael Misa"
-        },
-        {
-         "id": 8480848,
-         "position": "C",
-         "name": "Ty Dellandrea"
-        },
-        {
-         "id": 8476624,
-         "position": "C",
-         "name": "Barclay Goodrow"
-        },
-        {
-         "id": 8478874,
-         "position": "R",
-         "name": "Adam Gaudette"
-        },
-        {
-         "id": 8476885,
-         "position": "D",
-         "name": "Jacob Trouba"
-        },
-        {
-         "id": 8477498,
-         "position": "D",
-         "name": "Darnell Nurse"
-        },
-        {
-         "id": 8475200,
-         "position": "D",
-         "name": "Dmitry Orlov"
-        },
-        {
-         "id": 8484806,
-         "position": "D",
-         "name": "Sam Dickinson"
-        },
-        {
-         "id": 8480891,
-         "position": "D",
-         "name": "Michael Kesselring"
-        },
-        {
-         "id": 8484421,
-         "position": "D",
-         "name": "Eric Pohlkamp"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Igor Chernyshov",
-         "id": 8484994,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.4986,
-         "productionAbovePositionMean": 0.0313
-        },
-        {
-         "name": "Quentin Musty",
-         "id": null,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0,
-         "productionAbovePositionMean": null,
-         "note": "not on current official roster and no recorded participation; no baseline contribution to remove"
-        }
-       ]
-      }
-     },
-     "scenarios": [
-      {
-       "label": "unadjusted team baseline",
-       "rates": [
-        3.1034,
-        2.765
-       ]
-      }
-     ]
+    "at": "2026-11-10T05:30:38Z"
+   }
+  },
+  {
+   "id": 2026020288,
+   "startUTC": "2026-11-11T00:00:00Z",
+   "away": "WSH",
+   "home": "OTT",
+   "awayName": "Washington Capitals",
+   "homeName": "Ottawa Senators",
+   "venue": "Canadian Tire Centre",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892685",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "OTT -130",
+    "mlAway": 110.0,
+    "mlHome": -130.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": 110.0,
+    "mlHomeOpen": -130.0
+   },
+   "goalies": {
+    "away": {
+     "name": "Logan Thompson",
+     "status": "Expected"
     },
-    "frozen": true
+    "home": {
+     "name": "Linus Ullmark",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1188857",
+    "slug": "nhl-wsh-ott-2026-11-10",
+    "date": "2026-11-10",
+    "away": "WSH",
+    "home": "OTT",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1188857",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5689452-0",
+      "title": "Capitals",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.46,
+      "bid": 0.45,
+      "volume": 2104
+     },
+     "home": {
+      "marketId": "POLY-5689452-1",
+      "title": "Senators",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.55,
+      "bid": 0.54,
+      "volume": 2104
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5689453-0",
+      "label": "O 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.79,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689453-1",
+      "label": "U 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.21,
+      "bid": 0.2,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689454-0",
+      "label": "O 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.57,
+      "bid": 0.56,
+      "volume": 3,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689454-1",
+      "label": "U 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.44,
+      "bid": 0.43,
+      "volume": 3,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689455-0",
+      "label": "O 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.48,
+      "bid": 0.47,
+      "volume": 841,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689455-1",
+      "label": "U 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.53,
+      "bid": 0.52,
+      "volume": 841,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689457-0",
+      "label": "O 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.25,
+      "volume": 128,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689457-1",
+      "label": "U 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.75,
+      "bid": 0.73,
+      "volume": 128,
+      "ou": "U",
+      "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908772-0",
+      "label": "OTT -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.33,
+      "bid": 0.31,
+      "volume": 0,
+      "team": "OTT",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908772-1",
+      "label": "WSH +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.69,
+      "bid": 0.67,
+      "volume": 0,
+      "team": "WSH",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908773-0",
+      "label": "OTT -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.19,
+      "bid": 0.07,
+      "volume": 0,
+      "team": "OTT",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908773-1",
+      "label": "WSH +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.81,
+      "volume": 0,
+      "team": "WSH",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908774-0",
+      "label": "OTT -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.21,
+      "bid": 0.2,
+      "volume": 0,
+      "team": "OTT",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908774-1",
+      "label": "WSH +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.79,
+      "volume": 0,
+      "team": "WSH",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908775-0",
+      "label": "WSH -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.25,
+      "bid": 0.24,
+      "volume": 0,
+      "team": "WSH",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908775-1",
+      "label": "OTT +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.76,
+      "bid": 0.75,
+      "volume": 0,
+      "team": "OTT",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908776-0",
+      "label": "WSH -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.12,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "WSH",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908776-1",
+      "label": "OTT +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.88,
+      "volume": 0,
+      "team": "OTT",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908777-0",
+      "label": "WSH -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.16,
+      "bid": 0.15,
+      "volume": 0,
+      "team": "WSH",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908777-1",
+      "label": "OTT +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.85,
+      "bid": 0.84,
+      "volume": 0,
+      "team": "OTT",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908778-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.98,
+      "bid": 0.96,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908778-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.04,
+      "bid": 0.02,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908779-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.88,
+      "bid": 0.85,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908779-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.12,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908780-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.19,
+      "bid": 0.17,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908780-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.83,
+      "bid": 0.81,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908781-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908781-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-11-10T05:30:20Z",
+    "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-10T03:44:45.708368+00:00",
+    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
-        "name": "Matias Maccelli",
-        "position": "LW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-09T18:55Z"
-       },
-       {
-        "name": "Mathew Barzal",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-09T18:52Z"
-       },
-       {
-        "name": "Ryan Pulock",
-        "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-01T17:56Z"
-       },
-       {
-        "name": "Calum Ritchie",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-26T17:28Z"
-       },
-       {
-        "name": "Alexander Romanov",
+        "name": "Rasmus Sandin",
         "position": "D",
         "status": "Injured Reserve",
-        "updatedAt": "2026-10-19T13:56Z"
+        "updatedAt": "2026-11-09T17:28Z"
+       },
+       {
+        "name": "Vincent Desharnais",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-23T20:39Z"
+       },
+       {
+        "name": "Patrick Thomas",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-29T17:07Z"
        }
       ],
       "roster": [
        {
-        "id": 8482070,
+        "id": 8478463,
         "position": "R",
-        "name": "Mitchell Chaffee"
+        "name": "Anthony Beauvillier"
        },
        {
-        "id": 8475231,
+        "id": 8479400,
         "position": "C",
-        "name": "Casey Cizikas"
+        "name": "Pierre-Luc Dubois"
        },
        {
-        "id": 8477407,
-        "position": "L",
-        "name": "Anthony Duclair"
-       },
-       {
-        "id": 8485388,
+        "id": 8483573,
         "position": "R",
-        "name": "Victor Eklund"
+        "name": "Ethen Frank"
        },
        {
-        "id": 8482476,
-        "position": "L",
-        "name": "Emil Heineman"
+        "id": 8476432,
+        "position": "C",
+        "name": "Boone Jenner"
        },
        {
-        "id": 8481601,
+        "id": 8479385,
         "position": "R",
-        "name": "Simon Holmstrom"
+        "name": "Jordan Kyrou"
        },
        {
-        "id": 8477500,
-        "position": "C",
-        "name": "Bo Horvat"
+        "id": 8484186,
+        "position": "R",
+        "name": "Ryan Leonard"
        },
        {
-        "id": 8481711,
+        "id": 8483491,
         "position": "L",
-        "name": "Matias Maccelli"
+        "name": "Ivan Miroshnichenko"
        },
        {
-        "id": 8481237,
-        "position": "C",
-        "name": "Kyle MacLean"
-       },
-       {
-        "id": 8476419,
-        "position": "C",
-        "name": "Jean-Gabriel Pageau"
-       },
-       {
-        "id": 8476292,
+        "id": 8471214,
         "position": "L",
-        "name": "Ondrej Palat"
+        "name": "Alex Ovechkin"
        },
        {
-        "id": 8475151,
+        "id": 8481656,
+        "position": "L",
+        "name": "Aliaksei Protas"
+       },
+       {
+        "id": 8484999,
+        "position": "L",
+        "name": "Ilya Protas"
+       },
+       {
+        "id": 8482088,
         "position": "C",
-        "name": "Kyle Palmieri"
+        "name": "Justin Sourdif"
        },
        {
-        "id": 8484221,
+        "id": 8478440,
         "position": "C",
-        "name": "Calum Ritchie"
+        "name": "Dylan Strome"
        },
        {
-        "id": 8475170,
-        "position": "C",
-        "name": "Brayden Schenn"
+        "id": 8477949,
+        "position": "R",
+        "name": "Alex Tuch"
        },
        {
-        "id": 8477950,
+        "id": 8476880,
+        "position": "R",
+        "name": "Tom Wilson"
+       },
+       {
+        "id": 8479345,
         "position": "D",
-        "name": "Tony DeAngelo"
+        "name": "Jakob Chychrun"
        },
        {
-        "id": 8477018,
+        "id": 8479576,
         "position": "D",
-        "name": "Ben Hutton"
+        "name": "Vincent Desharnais"
        },
        {
-        "id": 8482516,
+        "id": 8480796,
         "position": "D",
-        "name": "Matthew Kessel"
+        "name": "Martin Feh\u00e9rv\u00e1ry"
        },
        {
-        "id": 8476429,
+        "id": 8475718,
         "position": "D",
-        "name": "Scott Mayfield"
+        "name": "Justin Holl"
        },
        {
-        "id": 8476917,
+        "id": 8484873,
         "position": "D",
-        "name": "Adam Pelech"
+        "name": "Cole Hutson"
        },
        {
-        "id": 8477506,
+        "id": 8480043,
         "position": "D",
-        "name": "Ryan Pulock"
+        "name": "Timothy Liljegren"
        },
        {
-        "id": 8481014,
+        "id": 8478911,
         "position": "D",
-        "name": "Alexander Romanov"
+        "name": "Matt Roy"
        },
        {
-        "id": 8485366,
+        "id": 8480873,
         "position": "D",
-        "name": "Matthew Schaefer"
+        "name": "Rasmus Sandin"
        },
        {
-        "id": 8479378,
+        "id": 8481030,
         "position": "D",
-        "name": "Logan Stanley"
+        "name": "Jack St. Ivany"
        },
        {
-        "id": 8478009,
+        "id": 8479292,
         "position": "G",
-        "name": "Ilya Sorokin"
+        "name": "Charlie Lindgren"
        },
        {
-        "id": 8473575,
+        "id": 8480313,
         "position": "G",
-        "name": "Semyon Varlamov"
+        "name": "Logan Thompson"
        }
       ]
      },
      "home": {
       "injuries": [
        {
-        "name": "Igor Chernyshov",
+        "name": "Andre Burakovsky",
         "position": "LW",
         "status": "Injured Reserve",
-        "updatedAt": "2026-10-28T16:49Z"
+        "updatedAt": "2026-10-31T21:35Z"
        },
        {
-        "name": "Quentin Musty",
+        "name": "Warren Foegele",
         "position": "LW",
         "status": "Injured Reserve",
-        "updatedAt": "2026-09-28T22:20Z"
+        "updatedAt": "2026-10-31T18:30Z"
        },
        {
-        "name": "Kyle Keyser",
-        "position": "G",
+        "name": "William Eklund",
+        "position": "LW",
         "status": "Injured Reserve",
-        "updatedAt": "2026-09-28T22:10Z"
+        "updatedAt": "2026-10-15T15:24Z"
        }
       ],
       "roster": [
        {
-        "id": 8484801,
-        "position": "C",
-        "name": "Macklin Celebrini"
-       },
-       {
-        "id": 8484994,
-        "position": "L",
-        "name": "Igor Chernyshov"
-       },
-       {
-        "id": 8480848,
-        "position": "C",
-        "name": "Ty Dellandrea"
-       },
-       {
-        "id": 8478874,
+        "id": 8478020,
         "position": "R",
-        "name": "Adam Gaudette"
+        "name": "Michael Amadio"
        },
        {
-        "id": 8476624,
-        "position": "C",
-        "name": "Barclay Goodrow"
-       },
-       {
-        "id": 8484911,
+        "id": 8480208,
         "position": "R",
-        "name": "Collin Graf"
+        "name": "Drake Batherson"
        },
        {
-        "id": 8478975,
+        "id": 8477444,
         "position": "L",
-        "name": "Mason Marchment"
+        "name": "Andre Burakovsky"
        },
        {
-        "id": 8485402,
+        "id": 8476393,
         "position": "C",
-        "name": "Michael Misa"
+        "name": "Nick Cousins"
        },
        {
-        "id": 8482859,
+        "id": 8481528,
         "position": "C",
-        "name": "Zack Ostapchuk"
+        "name": "Dylan Cozens"
        },
        {
-        "id": 8480748,
+        "id": 8482667,
         "position": "L",
-        "name": "Kiefer Sherwood"
+        "name": "William Eklund"
        },
        {
-        "id": 8484227,
-        "position": "C",
-        "name": "Will Smith"
-       },
-       {
-        "id": 8486103,
+        "id": 8477998,
         "position": "L",
-        "name": "Ivar Stenberg"
+        "name": "Warren Foegele"
        },
        {
-        "id": 8475726,
+        "id": 8473512,
+        "position": "R",
+        "name": "Claude Giroux"
+       },
+       {
+        "id": 8482092,
         "position": "C",
-        "name": "Tyler Toffoli"
+        "name": "Ridly Greig"
        },
        {
-        "id": 8477505,
+        "id": 8483676,
         "position": "C",
-        "name": "Alexander Wennberg"
+        "name": "Stephen Halliday"
        },
        {
-        "id": 8482700,
+        "id": 8478173,
+        "position": "R",
+        "name": "Hayden Hodgson"
+       },
+       {
+        "id": 8481596,
+        "position": "C",
+        "name": "Shane Pinto"
+       },
+       {
+        "id": 8482116,
+        "position": "C",
+        "name": "Tim St\u00fctzle"
+       },
+       {
+        "id": 8480188,
+        "position": "L",
+        "name": "Fabian Zetterlund"
+       },
+       {
+        "id": 8478469,
         "position": "D",
-        "name": "Nolan Allan"
+        "name": "Thomas Chabot"
        },
        {
-        "id": 8484806,
+        "id": 8482095,
         "position": "D",
-        "name": "Sam Dickinson"
+        "name": "Tyler Kleven"
        },
        {
-        "id": 8480891,
+        "id": 8484321,
         "position": "D",
-        "name": "Michael Kesselring"
+        "name": "Nikolas Matinpalo"
        },
        {
-        "id": 8477498,
+        "id": 8482105,
         "position": "D",
-        "name": "Darnell Nurse"
+        "name": "Jake Sanderson"
        },
        {
-        "id": 8475200,
+        "id": 8481606,
         "position": "D",
-        "name": "Dmitry Orlov"
+        "name": "Jordan Spence"
        },
        {
-        "id": 8484421,
+        "id": 8484759,
         "position": "D",
-        "name": "Eric Pohlkamp"
+        "name": "Carter Yakemchuk"
        },
        {
-        "id": 8476885,
+        "id": 8482245,
         "position": "D",
-        "name": "Jacob Trouba"
+        "name": "Artem Zub"
        },
        {
-        "id": 8482137,
+        "id": 8481035,
         "position": "G",
-        "name": "Yaroslav Askarov"
+        "name": "Samuel Ersson"
        },
        {
-        "id": 8477968,
+        "id": 8476999,
         "position": "G",
-        "name": "Alex Nedeljkovic"
+        "name": "Linus Ullmark"
        }
       ]
      }
     },
     "problems": [],
-    "blockReason": "NYI recent skater absences not individually modeled: Matias Maccelli, Mathew Barzal"
+    "skaterModelStatus": "unavailable",
+    "skaterModelReason": "skater game logs missing completed team games",
+    "blockReason": "Skater adjustment unavailable: skater game logs missing completed team games"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.0366,
+    "lh": 3.4062,
+    "ra": 2.6934,
+    "rh": 3.0213,
+    "betaGq": 0.4069,
+    "calib": 1.023,
+    "goalies": {
+     "away": {
+      "name": "Logan Thompson",
+      "id": 8480313,
+      "gq": -0.1545,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8480313,
+        "name": "L. Thompson",
+        "gq": -0.1545,
+        "share": 0.76,
+        "shots": 2794
+       },
+       {
+        "id": 8479292,
+        "name": "C. Lindgren",
+        "gq": -0.0378,
+        "share": 0.232,
+        "shots": 1737
+       }
+      ]
+     },
+     "home": {
+      "name": "Linus Ullmark",
+      "id": 8476999,
+      "gq": -0.1081,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8481035,
+        "name": "S. Ersson",
+        "gq": 0.0422,
+        "share": 0.468,
+        "shots": 1780
+       },
+       {
+        "id": 8477992,
+        "name": "J. Johansson",
+        "gq": 0.0342,
+        "share": 0.318,
+        "shots": 1165
+       },
+       {
+        "id": 8476999,
+        "name": "L. Ullmark",
+        "gq": -0.1081,
+        "share": 0.203,
+        "shots": 2578
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-09",
+    "rest": {
+     "away": 3,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 717,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.052,
+      "ga": 1.029,
+      "xf": 1.04,
+      "xa": 1.037
+     },
+     "home": {
+      "gf": 1.022,
+      "ga": 0.976,
+      "xf": 1.038,
+      "xa": 0.96
+     }
+    },
+    "at": "2026-11-10T05:30:38Z"
+   }
+  },
+  {
+   "id": 2026020289,
+   "startUTC": "2026-11-11T00:30:00Z",
+   "away": "FLA",
+   "home": "CBJ",
+   "awayName": "Florida Panthers",
+   "homeName": "Columbus Blue Jackets",
+   "venue": "Nationwide Arena",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892686",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "FLA -115",
+    "mlAway": -115.0,
+    "mlHome": -105.0,
+    "total": 5.5,
+    "over": -130.0,
+    "under": 110.0,
+    "mlAwayOpen": -105.0,
+    "mlHomeOpen": -115.0
+   },
+   "goalies": {
+    "away": {
+     "name": "Jacob Markstrom",
+     "status": "Expected"
+    },
+    "home": {
+     "name": "Cam Talbot",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1188854",
+    "slug": "nhl-fla-cbj-2026-11-10",
+    "date": "2026-11-10",
+    "away": "FLA",
+    "home": "CBJ",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1188854",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5689442-0",
+      "title": "Panthers",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.52,
+      "bid": 0.51,
+      "volume": 2721
+     },
+     "home": {
+      "marketId": "POLY-5689442-1",
+      "title": "Blue Jackets",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.49,
+      "bid": 0.48,
+      "volume": 2721
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5689443-0",
+      "label": "O 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.78,
+      "bid": 0.77,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689443-1",
+      "label": "U 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.22,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689444-0",
+      "label": "O 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.56,
+      "bid": 0.55,
+      "volume": 3316,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689444-1",
+      "label": "U 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.45,
+      "bid": 0.44,
+      "volume": 3316,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689445-0",
+      "label": "O 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.44,
+      "bid": 0.43,
+      "volume": 0,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689445-1",
+      "label": "U 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.57,
+      "bid": 0.56,
+      "volume": 0,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689446-0",
+      "label": "O 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.25,
+      "bid": 0.23,
+      "volume": 0,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689446-1",
+      "label": "U 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.75,
+      "volume": 0,
+      "ou": "U",
+      "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908792-0",
+      "label": "CBJ -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.28,
+      "bid": 0.27,
+      "volume": 5,
+      "team": "CBJ",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908792-1",
+      "label": "FLA +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.73,
+      "bid": 0.72,
+      "volume": 5,
+      "team": "FLA",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908793-0",
+      "label": "CBJ -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.18,
+      "bid": 0.04,
+      "volume": 0,
+      "team": "CBJ",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908793-1",
+      "label": "FLA +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.82,
+      "volume": 0,
+      "team": "FLA",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908794-0",
+      "label": "CBJ -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.18,
+      "bid": 0.17,
+      "volume": 0,
+      "team": "CBJ",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908794-1",
+      "label": "FLA +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.83,
+      "bid": 0.82,
+      "volume": 0,
+      "team": "FLA",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908795-0",
+      "label": "FLA -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.29,
+      "bid": 0.28,
+      "volume": 0,
+      "team": "FLA",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908795-1",
+      "label": "CBJ +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.72,
+      "bid": 0.71,
+      "volume": 0,
+      "team": "CBJ",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908796-0",
+      "label": "FLA -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.19,
+      "bid": 0.04,
+      "volume": 0,
+      "team": "FLA",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908796-1",
+      "label": "CBJ +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.81,
+      "volume": 0,
+      "team": "CBJ",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908797-0",
+      "label": "FLA -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.19,
+      "bid": 0.18,
+      "volume": 0,
+      "team": "FLA",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908797-1",
+      "label": "CBJ +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.82,
+      "bid": 0.81,
+      "volume": 0,
+      "team": "CBJ",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908798-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.94,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908798-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.06,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908799-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.84,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908799-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.16,
+      "bid": 0.14,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908800-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.16,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908800-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.84,
+      "bid": 0.83,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908801-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.09,
+      "bid": 0.06,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908801-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.94,
+      "bid": 0.91,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-11-10T05:30:20Z",
+    "host": "https://api.jup.ag/prediction/v1"
+   },
+   "availability": {
+    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
+    "source": "ESPN live injuries + NHL current rosters",
+    "sides": {
+     "away": {
+      "injuries": [
+       {
+        "name": "Sandis Vilmanis",
+        "position": "LW",
+        "status": "Out",
+        "updatedAt": "2026-11-07T21:02Z"
+       },
+       {
+        "name": "Brad Marchand",
+        "position": "LW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-06T16:34Z"
+       },
+       {
+        "name": "Aleksander Barkov",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-06T16:30Z"
+       },
+       {
+        "name": "Jonah Gadjovich",
+        "position": "LW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-17T20:53Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8477493,
+        "position": "C",
+        "name": "Aleksander Barkov"
+       },
+       {
+        "id": 8477935,
+        "position": "C",
+        "name": "Sam Bennett"
+       },
+       {
+        "id": 8483433,
+        "position": "R",
+        "name": "Jack Devine"
+       },
+       {
+        "id": 8474189,
+        "position": "C",
+        "name": "Lars Eller"
+       },
+       {
+        "id": 8479981,
+        "position": "L",
+        "name": "Jonah Gadjovich"
+       },
+       {
+        "id": 8477903,
+        "position": "R",
+        "name": "Garnet Hathaway"
+       },
+       {
+        "id": 8478147,
+        "position": "L",
+        "name": "Bokondji Imama"
+       },
+       {
+        "id": 8482113,
+        "position": "C",
+        "name": "Anton Lundell"
+       },
+       {
+        "id": 8480185,
+        "position": "C",
+        "name": "Eetu Luostarinen"
+       },
+       {
+        "id": 8473419,
+        "position": "L",
+        "name": "Brad Marchand"
+       },
+       {
+        "id": 8481133,
+        "position": "L",
+        "name": "Cole Reinhardt"
+       },
+       {
+        "id": 8477933,
+        "position": "C",
+        "name": "Sam Reinhart"
+       },
+       {
+        "id": 8481655,
+        "position": "R",
+        "name": "Cole Schwindt"
+       },
+       {
+        "id": 8480801,
+        "position": "L",
+        "name": "Brady Tkachuk"
+       },
+       {
+        "id": 8479314,
+        "position": "L",
+        "name": "Matthew Tkachuk"
+       },
+       {
+        "id": 8477409,
+        "position": "C",
+        "name": "Carter Verhaeghe"
+       },
+       {
+        "id": 8483771,
+        "position": "L",
+        "name": "Sandis Vilmanis"
+       },
+       {
+        "id": 8484304,
+        "position": "D",
+        "name": "Uvis Balinskis"
+       },
+       {
+        "id": 8477932,
+        "position": "D",
+        "name": "Aaron Ekblad"
+       },
+       {
+        "id": 8478055,
+        "position": "D",
+        "name": "Gustav Forsling"
+       },
+       {
+        "id": 8475462,
+        "position": "D",
+        "name": "Radko Gudas"
+       },
+       {
+        "id": 8477495,
+        "position": "D",
+        "name": "Seth Jones"
+       },
+       {
+        "id": 8475179,
+        "position": "D",
+        "name": "Dmitry Kulikov"
+       },
+       {
+        "id": 8478859,
+        "position": "D",
+        "name": "Niko Mikkola"
+       },
+       {
+        "id": 8474593,
+        "position": "G",
+        "name": "Jacob Markstrom"
+       },
+       {
+        "id": 8481033,
+        "position": "G",
+        "name": "Akira Schmid"
+       }
+      ]
+     },
+     "home": {
+      "injuries": [],
+      "roster": [
+       {
+        "id": 8475745,
+        "position": "C",
+        "name": "Charlie Coyle"
+       },
+       {
+        "id": 8483432,
+        "position": "C",
+        "name": "Luca Del Bel Belluz"
+       },
+       {
+        "id": 8484166,
+        "position": "C",
+        "name": "Adam Fantilli"
+       },
+       {
+        "id": 8478856,
+        "position": "R",
+        "name": "Conor Garland"
+       },
+       {
+        "id": 8482660,
+        "position": "C",
+        "name": "Kent Johnson"
+       },
+       {
+        "id": 8482720,
+        "position": "L",
+        "name": "Matthew Knies"
+       },
+       {
+        "id": 8479066,
+        "position": "L",
+        "name": "Ryan Lomberg"
+       },
+       {
+        "id": 8478904,
+        "position": "C",
+        "name": "Steven Lorentz"
+       },
+       {
+        "id": 8477497,
+        "position": "C",
+        "name": "Sean Monahan"
+       },
+       {
+        "id": 8477501,
+        "position": "R",
+        "name": "Valeri Nichushkin"
+       },
+       {
+        "id": 8479671,
+        "position": "R",
+        "name": "Mathieu Olivier"
+       },
+       {
+        "id": 8482705,
+        "position": "C",
+        "name": "Cole Sillinger"
+       },
+       {
+        "id": 8481716,
+        "position": "L",
+        "name": "Dmitri Voronkov"
+       },
+       {
+        "id": 8485469,
+        "position": "C",
+        "name": "Jack Williams"
+       },
+       {
+        "id": 8481161,
+        "position": "D",
+        "name": "Jake Christiansen"
+       },
+       {
+        "id": 8479371,
+        "position": "D",
+        "name": "Dante Fabbro"
+       },
+       {
+        "id": 8475790,
+        "position": "D",
+        "name": "Erik Gudbranson"
+       },
+       {
+        "id": 8483485,
+        "position": "D",
+        "name": "Denton Mateychuk"
+       },
+       {
+        "id": 8478500,
+        "position": "D",
+        "name": "Ivan Provorov"
+       },
+       {
+        "id": 8476923,
+        "position": "D",
+        "name": "Damon Severson"
+       },
+       {
+        "id": 8478460,
+        "position": "D",
+        "name": "Zach Werenski"
+       },
+       {
+        "id": 8482982,
+        "position": "G",
+        "name": "Jet Greaves"
+       },
+       {
+        "id": 8475660,
+        "position": "G",
+        "name": "Cam Talbot"
+       }
+      ]
+     }
+    },
+    "problems": [],
+    "skaterModelStatus": "unavailable",
+    "skaterModelReason": "skater game logs missing completed team games",
+    "blockReason": "Skater adjustment unavailable: skater game logs missing completed team games"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.2287,
+    "lh": 3.0919,
+    "ra": 2.8638,
+    "rh": 2.7425,
+    "betaGq": 0.4069,
+    "calib": 1.023,
+    "goalies": {
+     "away": {
+      "name": "Jacob Markstrom",
+      "id": 8474593,
+      "gq": -0.0406,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8474593,
+        "name": "J. Markstrom",
+        "gq": -0.0406,
+        "share": 0.475,
+        "shots": 2713
+       },
+       {
+        "id": 8481033,
+        "name": "A. Schmid",
+        "gq": -0.0566,
+        "share": 0.448,
+        "shots": 1101
+       },
+       {
+        "id": 8484900,
+        "name": "C. Black",
+        "gq": -0.0027,
+        "share": 0.049,
+        "shots": 21
+       }
+      ]
+     },
+     "home": {
+      "name": "Cam Talbot",
+      "id": 8475660,
+      "gq": -0.0729,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8482982,
+        "name": "J. Greaves",
+        "gq": -0.1178,
+        "share": 0.522,
+        "shots": 1584
+       },
+       {
+        "id": 8475660,
+        "name": "C. Talbot",
+        "gq": -0.0729,
+        "share": 0.471,
+        "shots": 2376
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-09",
+    "rest": {
+     "away": 2,
+     "home": 4
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1034,
+     "home": 472
+    },
+    "form": {
+     "away": {
+      "gf": 1.003,
+      "ga": 1.014,
+      "xf": 1.039,
+      "xa": 0.996
+     },
+     "home": {
+      "gf": 0.93,
+      "ga": 0.99,
+      "xf": 0.964,
+      "xa": 1.02
+     }
+    },
+    "at": "2026-11-10T05:30:38Z"
+   }
+  },
+  {
+   "id": 2026020290,
+   "startUTC": "2026-11-11T01:00:00Z",
+   "away": "DET",
+   "home": "STL",
+   "awayName": "Detroit Red Wings",
+   "homeName": "St. Louis Blues",
+   "venue": "Enterprise Center",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892687",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "STL -148",
+    "mlAway": 124.0,
+    "mlHome": -148.0,
+    "total": 5.5,
+    "over": -125.0,
+    "under": 105.0,
+    "mlAwayOpen": 120.0,
+    "mlHomeOpen": -142.0
+   },
+   "goalies": {
+    "away": {
+     "name": "John Gibson",
+     "status": "Expected"
+    },
+    "home": {
+     "name": "Joel Hofer",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1188860",
+    "slug": "nhl-det-stl-2026-11-10",
+    "date": "2026-11-10",
+    "away": "DET",
+    "home": "STL",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1188860",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5689473-0",
+      "title": "Red Wings",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.44,
+      "bid": 0.43,
+      "volume": 115
+     },
+     "home": {
+      "marketId": "POLY-5689473-1",
+      "title": "Blues",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.57,
+      "bid": 0.56,
+      "volume": 115
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5689475-0",
+      "label": "O 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.76,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689475-1",
+      "label": "U 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.24,
+      "bid": 0.23,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689476-0",
+      "label": "O 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.54,
+      "bid": 0.53,
+      "volume": 0,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689476-1",
+      "label": "U 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.47,
+      "bid": 0.46,
+      "volume": 0,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689477-0",
+      "label": "O 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.43,
+      "bid": 0.42,
+      "volume": 4,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689477-1",
+      "label": "U 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.58,
+      "bid": 0.57,
+      "volume": 4,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689479-0",
+      "label": "O 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.24,
+      "bid": 0.23,
+      "volume": 0,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689479-1",
+      "label": "U 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.76,
+      "volume": 0,
+      "ou": "U",
+      "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908742-0",
+      "label": "STL -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.35,
+      "bid": 0.34,
+      "volume": 0,
+      "team": "STL",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908742-1",
+      "label": "DET +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.66,
+      "bid": 0.65,
+      "volume": 0,
+      "team": "DET",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908743-0",
+      "label": "STL -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.14,
+      "bid": 0.06,
+      "volume": 0,
+      "team": "STL",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908743-1",
+      "label": "DET +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.94,
+      "bid": 0.86,
+      "volume": 0,
+      "team": "DET",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908744-0",
+      "label": "STL -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.22,
+      "volume": 0,
+      "team": "STL",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908744-1",
+      "label": "DET +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.78,
+      "bid": 0.77,
+      "volume": 0,
+      "team": "DET",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908745-0",
+      "label": "DET -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.22,
+      "bid": 0.21,
+      "volume": 0,
+      "team": "DET",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908745-1",
+      "label": "STL +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.78,
+      "volume": 0,
+      "team": "STL",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908746-0",
+      "label": "DET -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.12,
+      "bid": 0.02,
+      "volume": 0,
+      "team": "DET",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908746-1",
+      "label": "STL +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.98,
+      "bid": 0.88,
+      "volume": 0,
+      "team": "STL",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908747-0",
+      "label": "DET -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.14,
+      "bid": 0.13,
+      "volume": 0,
+      "team": "DET",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908747-1",
+      "label": "STL +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.87,
+      "bid": 0.86,
+      "volume": 0,
+      "team": "STL",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908748-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.979,
+      "bid": 0.954,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908748-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.046,
+      "bid": 0.021,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908749-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.87,
+      "bid": 0.84,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908749-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.16,
+      "bid": 0.13,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908750-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.15,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908750-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.85,
+      "bid": 0.83,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908751-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.09,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908751-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.91,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-11-10T05:30:20Z",
+    "host": "https://api.jup.ag/prediction/v1"
+   },
+   "availability": {
+    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
+    "source": "ESPN live injuries + NHL current rosters",
+    "sides": {
+     "away": {
+      "injuries": [
+       {
+        "name": "John Gibson",
+        "position": "G",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-08T13:39Z"
+       },
+       {
+        "name": "Albert Johansson",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-06T17:30Z"
+       },
+       {
+        "name": "Marco Kasper",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-05T16:57Z"
+       },
+       {
+        "name": "Mason Appleton",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-05T16:56Z"
+       },
+       {
+        "name": "Dylan Larkin",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-31T17:03Z"
+       },
+       {
+        "name": "Simon Edvinsson",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-14T15:15Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8478891,
+        "position": "C",
+        "name": "Mason Appleton"
+       },
+       {
+        "id": 8478042,
+        "position": "L",
+        "name": "Viktor Arvidsson"
+       },
+       {
+        "id": 8484794,
+        "position": "R",
+        "name": "Michael Brandsegg-Nyg\u00e5rd"
+       },
+       {
+        "id": 8477456,
+        "position": "L",
+        "name": "J.T. Compher"
+       },
+       {
+        "id": 8477429,
+        "position": "C",
+        "name": "Andrew Copp"
+       },
+       {
+        "id": 8479337,
+        "position": "R",
+        "name": "Alex DeBrincat"
+       },
+       {
+        "id": 8480326,
+        "position": "C",
+        "name": "Sheldon Dries"
+       },
+       {
+        "id": 8484471,
+        "position": "C",
+        "name": "Emmitt Finnie"
+       },
+       {
+        "id": 8483464,
+        "position": "C",
+        "name": "Marco Kasper"
+       },
+       {
+        "id": 8478434,
+        "position": "R",
+        "name": "Keegan Kolesar"
+       },
+       {
+        "id": 8482802,
+        "position": "L",
+        "name": "Carter Mazur"
+       },
+       {
+        "id": 8479992,
+        "position": "C",
+        "name": "Michael Rasmussen"
+       },
+       {
+        "id": 8482078,
+        "position": "L",
+        "name": "Lucas Raymond"
+       },
+       {
+        "id": 8480879,
+        "position": "D",
+        "name": "Jacob Bernard-Docker"
+       },
+       {
+        "id": 8475279,
+        "position": "D",
+        "name": "Ben Chiarot"
+       },
+       {
+        "id": 8477971,
+        "position": "D",
+        "name": "Andreas Englund"
+       },
+       {
+        "id": 8475753,
+        "position": "D",
+        "name": "Justin Faulk"
+       },
+       {
+        "id": 8481607,
+        "position": "D",
+        "name": "Albert Johansson"
+       },
+       {
+        "id": 8483679,
+        "position": "D",
+        "name": "Anton Johansson"
+       },
+       {
+        "id": 8481542,
+        "position": "D",
+        "name": "Moritz Seider"
+       },
+       {
+        "id": 8482171,
+        "position": "D",
+        "name": "William Wallinder"
+       },
+       {
+        "id": 8476434,
+        "position": "G",
+        "name": "John Gibson"
+       },
+       {
+        "id": 8480193,
+        "position": "G",
+        "name": "Daniil Tarasov"
+       }
+      ]
+     },
+     "home": {
+      "injuries": [
+       {
+        "name": "Torey Krug",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-13T01:42Z"
+       },
+       {
+        "name": "Dillon Dube",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-10T21:13Z"
+       },
+       {
+        "name": "Tyler Tucker",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-30T19:39Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8481013,
+        "position": "R",
+        "name": "Jonatan Berggren"
+       },
+       {
+        "id": 8477402,
+        "position": "L",
+        "name": "Pavel Buchnevich"
+       },
+       {
+        "id": 8479346,
+        "position": "C",
+        "name": "Dillon Dube"
+       },
+       {
+        "id": 8484164,
+        "position": "R",
+        "name": "Dalibor Dvorsky"
+       },
+       {
+        "id": 8482077,
+        "position": "L",
+        "name": "Dylan Holloway"
+       },
+       {
+        "id": 8477527,
+        "position": "L",
+        "name": "Ross Johnston"
+       },
+       {
+        "id": 8483463,
+        "position": "C",
+        "name": "Aleksanteri Kaskimaki"
+       },
+       {
+        "id": 8481580,
+        "position": "L",
+        "name": "Connor McMichael"
+       },
+       {
+        "id": 8482745,
+        "position": "C",
+        "name": "Mason McTavish"
+       },
+       {
+        "id": 8482089,
+        "position": "L",
+        "name": "Jake Neighbours"
+       },
+       {
+        "id": 8483516,
+        "position": "R",
+        "name": "Jimmy Snuggerud"
+       },
+       {
+        "id": 8480459,
+        "position": "C",
+        "name": "Pius Suter"
+       },
+       {
+        "id": 8480023,
+        "position": "C",
+        "name": "Robert Thomas"
+       },
+       {
+        "id": 8480281,
+        "position": "R",
+        "name": "Alexey Toropchenko"
+       },
+       {
+        "id": 8482111,
+        "position": "D",
+        "name": "Justin Barron"
+       },
+       {
+        "id": 8481598,
+        "position": "D",
+        "name": "Philip Broberg"
+       },
+       {
+        "id": 8478443,
+        "position": "D",
+        "name": "Brandon Carlo"
+       },
+       {
+        "id": 8475764,
+        "position": "D",
+        "name": "Cam Fowler"
+       },
+       {
+        "id": 8482733,
+        "position": "D",
+        "name": "Logan Mailloux"
+       },
+       {
+        "id": 8476892,
+        "position": "D",
+        "name": "Colton Parayko"
+       },
+       {
+        "id": 8480157,
+        "position": "D",
+        "name": "Calle Rosen"
+       },
+       {
+        "id": 8481006,
+        "position": "D",
+        "name": "Tyler Tucker"
+       },
+       {
+        "id": 8476412,
+        "position": "G",
+        "name": "Jordan Binnington"
+       },
+       {
+        "id": 8480981,
+        "position": "G",
+        "name": "Joel Hofer"
+       }
+      ]
+     }
+    },
+    "problems": [],
+    "skaterModelStatus": "unavailable",
+    "skaterModelReason": "skater game logs missing completed team games",
+    "blockReason": "Skater adjustment unavailable: skater game logs missing completed team games"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.0068,
+    "lh": 3.0977,
+    "ra": 2.6671,
+    "rh": 2.7477,
+    "betaGq": 0.4069,
+    "calib": 1.023,
+    "goalies": {
+     "away": {
+      "name": "John Gibson",
+      "id": 8476434,
+      "gq": -0.0642,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8476434,
+        "name": "J. Gibson",
+        "gq": -0.0642,
+        "share": 0.476,
+        "shots": 2893
+       },
+       {
+        "id": 8480193,
+        "name": "D. Tarasov",
+        "gq": -0.0644,
+        "share": 0.46,
+        "shots": 1519
+       },
+       {
+        "id": 8485545,
+        "name": "M. Postava",
+        "gq": 0.0027,
+        "share": 0.058,
+        "shots": 35
+       }
+      ]
+     },
+     "home": {
+      "name": "Joel Hofer",
+      "id": 8480981,
+      "gq": -0.1195,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8480981,
+        "name": "J. Hofer",
+        "gq": -0.1195,
+        "share": 0.717,
+        "shots": 1933
+       },
+       {
+        "id": 8476412,
+        "name": "J. Binnington",
+        "gq": -0.0058,
+        "share": 0.283,
+        "shots": 2802
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-09",
+    "rest": {
+     "away": 3,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1281,
+     "home": 408
+    },
+    "form": {
+     "away": {
+      "gf": 0.931,
+      "ga": 0.997,
+      "xf": 0.996,
+      "xa": 0.996
+     },
+     "home": {
+      "gf": 0.978,
+      "ga": 0.989,
+      "xf": 0.962,
+      "xa": 1.0
+     }
+    },
+    "at": "2026-11-10T05:30:38Z"
+   }
+  },
+  {
+   "id": 2026020292,
+   "startUTC": "2026-11-11T03:00:00Z",
+   "away": "NSH",
+   "home": "LAK",
+   "awayName": "Nashville Predators",
+   "homeName": "Los Angeles Kings",
+   "venue": "Crypto.com Arena",
+   "state": "FUT",
+   "final": null,
+   "espnId": "401892689",
+   "odds": {
+    "provider": "DraftKings",
+    "details": "LA -142",
+    "mlAway": 120.0,
+    "mlHome": -142.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": 124.0,
+    "mlHomeOpen": -148.0
+   },
+   "goalies": {
+    "away": {
+     "name": "Juuse Saros",
+     "status": "Expected"
+    },
+    "home": {
+     "name": "Darcy Kuemper",
+     "status": "Expected"
+    }
+   },
+   "jupiter": {
+    "eventId": "POLY-1188861",
+    "slug": "nhl-nsh-lak-2026-11-10",
+    "date": "2026-11-10",
+    "away": "NSH",
+    "home": "LAK",
+    "live": false,
+    "link": "https://jup.ag/prediction/POLY-1188861",
+    "provider": "polymarket",
+    "includesOTSO": true,
+    "sides": {
+     "away": {
+      "marketId": "POLY-5689482-0",
+      "title": "Predators",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.45,
+      "bid": 0.44,
+      "volume": 267
+     },
+     "home": {
+      "marketId": "POLY-5689482-1",
+      "title": "Kings",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.56,
+      "bid": 0.55,
+      "volume": 267
+     }
+    },
+    "extra": [
+     {
+      "type": "totals",
+      "marketId": "POLY-5689483-0",
+      "label": "O 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.78,
+      "volume": 0,
+      "ou": "O",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689483-1",
+      "label": "U 4.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.22,
+      "bid": 0.21,
+      "volume": 0,
+      "ou": "U",
+      "line": 4.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689485-0",
+      "label": "O 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.58,
+      "bid": 0.57,
+      "volume": 820,
+      "ou": "O",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689485-1",
+      "label": "U 5.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.43,
+      "bid": 0.42,
+      "volume": 820,
+      "ou": "U",
+      "line": 5.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689486-0",
+      "label": "O 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.47,
+      "bid": 0.46,
+      "volume": 0,
+      "ou": "O",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689486-1",
+      "label": "U 6.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.54,
+      "bid": 0.53,
+      "volume": 0,
+      "ou": "U",
+      "line": 6.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689488-0",
+      "label": "O 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.24,
+      "volume": 0,
+      "ou": "O",
+      "line": 7.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-5689488-1",
+      "label": "U 7.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.76,
+      "bid": 0.73,
+      "volume": 0,
+      "ou": "U",
+      "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908732-0",
+      "label": "LAK -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.33,
+      "bid": 0.32,
+      "volume": 0,
+      "team": "LAK",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908732-1",
+      "label": "NSH +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.68,
+      "bid": 0.67,
+      "volume": 0,
+      "team": "NSH",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908733-0",
+      "label": "LAK -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.2,
+      "bid": 0.08,
+      "volume": 0,
+      "team": "LAK",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908733-1",
+      "label": "NSH +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.92,
+      "bid": 0.8,
+      "volume": 0,
+      "team": "NSH",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908734-0",
+      "label": "LAK -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.22,
+      "bid": 0.21,
+      "volume": 0,
+      "team": "LAK",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908734-1",
+      "label": "NSH +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.78,
+      "volume": 0,
+      "team": "NSH",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908735-0",
+      "label": "NSH -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.24,
+      "bid": 0.23,
+      "volume": 0,
+      "team": "NSH",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908735-1",
+      "label": "LAK +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.76,
+      "volume": 0,
+      "team": "LAK",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908736-0",
+      "label": "NSH -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.14,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "NSH",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908736-1",
+      "label": "LAK +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.86,
+      "volume": 0,
+      "team": "LAK",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908737-0",
+      "label": "NSH -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.14,
+      "volume": 0,
+      "team": "NSH",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6908737-1",
+      "label": "LAK +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.85,
+      "volume": 0,
+      "team": "LAK",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908738-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.94,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908738-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.06,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908739-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.87,
+      "bid": 0.85,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908739-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.13,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908740-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.18,
+      "bid": 0.17,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908740-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.83,
+      "bid": 0.82,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908741-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.09,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6908741-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.91,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
+     }
+    ],
+    "extraIncludesOTSO": true,
+    "fetchedAt": "2026-11-10T05:30:20Z",
+    "host": "https://api.jup.ag/prediction/v1"
+   },
+   "availability": {
+    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
+    "source": "ESPN live injuries + NHL current rosters",
+    "sides": {
+     "away": {
+      "injuries": [
+       {
+        "name": "Jonathan Marchessault",
+        "position": "RW",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-08T13:39Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8482145,
+        "position": "C",
+        "name": "Mavrik Bourque"
+       },
+       {
+        "id": 8479525,
+        "position": "C",
+        "name": "Ross Colton"
+       },
+       {
+        "id": 8480835,
+        "position": "C",
+        "name": "Jack Drury"
+       },
+       {
+        "id": 8481726,
+        "position": "C",
+        "name": "Adam Edstrom"
+       },
+       {
+        "id": 8476887,
+        "position": "L",
+        "name": "Filip Forsberg"
+       },
+       {
+        "id": 8481535,
+        "position": "L",
+        "name": "Nils Hoglander"
+       },
+       {
+        "id": 8477021,
+        "position": "C",
+        "name": "Alexander Kerfoot"
+       },
+       {
+        "id": 8476539,
+        "position": "C",
+        "name": "Jonathan Marchessault"
+       },
+       {
+        "id": 8475158,
+        "position": "C",
+        "name": "Ryan O'Reilly"
+       },
+       {
+        "id": 8486189,
+        "position": "C",
+        "name": "Vitali Pinchuk"
+       },
+       {
+        "id": 8483513,
+        "position": "L",
+        "name": "Reid Schaefer"
+       },
+       {
+        "id": 8474564,
+        "position": "C",
+        "name": "Steven Stamkos"
+       },
+       {
+        "id": 8483524,
+        "position": "C",
+        "name": "Shane Wright"
+       },
+       {
+        "id": 8479980,
+        "position": "D",
+        "name": "Nicolas Hague"
+       },
+       {
+        "id": 8482094,
+        "position": "D",
+        "name": "Daemon Hunt"
+       },
+       {
+        "id": 8474600,
+        "position": "D",
+        "name": "Roman Josi"
+       },
+       {
+        "id": 8480950,
+        "position": "D",
+        "name": "Ilya Lyubushkin"
+       },
+       {
+        "id": 8480246,
+        "position": "D",
+        "name": "Nick Perbix"
+       },
+       {
+        "id": 8476869,
+        "position": "D",
+        "name": "Brady Skjei"
+       },
+       {
+        "id": 8481593,
+        "position": "D",
+        "name": "Jayden Struble"
+       },
+       {
+        "id": 8482806,
+        "position": "D",
+        "name": "William Trudeau"
+       },
+       {
+        "id": 8482482,
+        "position": "D",
+        "name": "Adam Wilsby"
+       },
+       {
+        "id": 8481020,
+        "position": "G",
+        "name": "Justus Annunen"
+       },
+       {
+        "id": 8477424,
+        "position": "G",
+        "name": "Juuse Saros"
+       }
+      ]
+     },
+     "home": {
+      "injuries": [
+       {
+        "name": "Mats Zuccarello",
+        "position": "RW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-29T18:43Z"
+       },
+       {
+        "name": "Kevin Fiala",
+        "position": "LW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-29T18:42Z"
+       },
+       {
+        "name": "Jakub Dvorak",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-24T19:49Z"
+       },
+       {
+        "name": "Jan Jenik",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-24T19:45Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8476469,
+        "position": "R",
+        "name": "Joel Armia"
+       },
+       {
+        "id": 8482124,
+        "position": "R",
+        "name": "Quinton Byfield"
+       },
+       {
+        "id": 8483675,
+        "position": "C",
+        "name": "Kenny Connors"
+       },
+       {
+        "id": 8477942,
+        "position": "L",
+        "name": "Kevin Fiala"
+       },
+       {
+        "id": 8475287,
+        "position": "L",
+        "name": "Erik Haula"
+       },
+       {
+        "id": 8482726,
+        "position": "C",
+        "name": "Samuel Helenius"
+       },
+       {
+        "id": 8477960,
+        "position": "R",
+        "name": "Adrian Kempe"
+       },
+       {
+        "id": 8482155,
+        "position": "R",
+        "name": "Alex Laferriere"
+       },
+       {
+        "id": 8476872,
+        "position": "C",
+        "name": "Scott Laughton"
+       },
+       {
+        "id": 8481732,
+        "position": "L",
+        "name": "Andre Lee"
+       },
+       {
+        "id": 8479675,
+        "position": "L",
+        "name": "Trevor Moore"
+       },
+       {
+        "id": 8478550,
+        "position": "L",
+        "name": "Artemi Panarin"
+       },
+       {
+        "id": 8470621,
+        "position": "R",
+        "name": "Corey Perry"
+       },
+       {
+        "id": 8481532,
+        "position": "C",
+        "name": "Alex Turcotte"
+       },
+       {
+        "id": 8475692,
+        "position": "R",
+        "name": "Mats Zuccarello"
+       },
+       {
+        "id": 8479998,
+        "position": "D",
+        "name": "Mikey Anderson"
+       },
+       {
+        "id": 8476879,
+        "position": "D",
+        "name": "Cody Ceci"
+       },
+       {
+        "id": 8482730,
+        "position": "D",
+        "name": "Brandt Clarke"
+       },
+       {
+        "id": 8474563,
+        "position": "D",
+        "name": "Drew Doughty"
+       },
+       {
+        "id": 8475208,
+        "position": "D",
+        "name": "Brian Dumoulin"
+       },
+       {
+        "id": 8476441,
+        "position": "D",
+        "name": "Joel Edmundson"
+       },
+       {
+        "id": 8476979,
+        "position": "D",
+        "name": "Erik Gustafsson"
+       },
+       {
+        "id": 8476341,
+        "position": "G",
+        "name": "Anton Forsberg"
+       },
+       {
+        "id": 8475311,
+        "position": "G",
+        "name": "Darcy Kuemper"
+       }
+      ]
+     }
+    },
+    "problems": [],
+    "skaterModelStatus": "unavailable",
+    "skaterModelReason": "skater game logs missing completed team games",
+    "blockReason": "Skater adjustment unavailable: skater game logs missing completed team games"
+   },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.0625,
+    "lh": 3.3536,
+    "ra": 2.7165,
+    "rh": 2.9747,
+    "betaGq": 0.4069,
+    "calib": 1.023,
+    "goalies": {
+     "away": {
+      "name": "Juuse Saros",
+      "id": 8477424,
+      "gq": -0.0881,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8477424,
+        "name": "J. Saros",
+        "gq": -0.0881,
+        "share": 0.636,
+        "shots": 3824
+       },
+       {
+        "id": 8481020,
+        "name": "J. Annunen",
+        "gq": -0.077,
+        "share": 0.342,
+        "shots": 1169
+       }
+      ]
+     },
+     "home": {
+      "name": "Darcy Kuemper",
+      "id": 8475311,
+      "gq": -0.0617,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8475311,
+        "name": "D. Kuemper",
+        "gq": -0.0617,
+        "share": 0.663,
+        "shots": 2775
+       },
+       {
+        "id": 8476341,
+        "name": "A. Forsberg",
+        "gq": -0.0824,
+        "share": 0.337,
+        "shots": 1889
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-09",
+    "rest": {
+     "away": 3,
+     "home": 3
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 2862,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.99,
+      "ga": 0.966,
+      "xf": 1.007,
+      "xa": 1.019
+     },
+     "home": {
+      "gf": 0.979,
+      "ga": 1.025,
+      "xf": 1.002,
+      "xa": 0.967
+     }
+    },
+    "at": "2026-11-10T05:30:38Z"
    }
   }
  ]
