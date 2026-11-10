@@ -1,7 +1,7 @@
 {
  "date": "2026-11-09",
- "generatedAt": "2026-11-10T05:30:20Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-11-10T07:35:34Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020283,
@@ -839,7 +839,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
+    "checkedAt": "2026-11-10T07:35:35.474826+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1214,7 +1214,7 @@
    "awayName": "Philadelphia Flyers",
    "homeName": "Vancouver Canucks",
    "venue": "Rogers Arena",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     3,
     1,
@@ -2005,7 +2005,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
+    "checkedAt": "2026-11-10T07:35:35.474826+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2326,8 +2326,12 @@
    "awayName": "New York Islanders",
    "homeName": "San Jose Sharks",
    "venue": "SAP Center at San Jose",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    3,
+    "SO"
+   ],
    "espnId": "401892682",
    "odds": {
     "provider": "DraftKings",
@@ -3107,7 +3111,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-10T05:30:22.070477+00:00",
+    "checkedAt": "2026-11-10T07:35:35.474826+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
