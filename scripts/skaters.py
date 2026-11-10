@@ -82,14 +82,15 @@ def fetch_recent(state,rows,cutoff,get):
 
 def expected_lineup(state,team,roster,injuries,extra_out=()):
     blocked={norm(x['name']) for x in injuries if str(x['status']).casefold() in OUT}|set(extra_out)
-    selected=[]
-    for position,count in [('F',12),('D',6)]:
+    groups={}
+    for position in ['F','D']:
         players=[p for p in roster if p.get('position') in ('C','L','R','F','D') and ('D' if p.get('position')=='D' else 'F')==position and norm(p['name']) not in blocked]
         def rank(p):
             s=state['players'].get(str(p['id']),{});return s.get('toi',0)/max(1,s.get('w',0))
-        players.sort(key=lambda p:(-rank(p),str(p['id'])))
-        if len(players)<count:raise ValueError(f'{team} insufficient verified roster depth for expected lineup')
-        selected.extend(players[:count])
+        groups[position]=sorted(players,key=lambda p:(-rank(p),str(p['id'])))
+    formation=next(((f,d) for f,d in [(12,6),(11,7)] if len(groups['F'])>=f and len(groups['D'])>=d),None)
+    if formation is None:raise ValueError(f'{team} insufficient verified roster depth for expected 12F/6D or 11F/7D lineup')
+    selected=groups['F'][:formation[0]]+groups['D'][:formation[1]]
     if any(str(p['id']) not in state['players'] for p in selected):raise ValueError(f'{team} expected skater lacks NHL performance history')
     return selected
 

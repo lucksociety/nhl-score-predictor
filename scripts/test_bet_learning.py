@@ -30,4 +30,20 @@ class BetLearningTests(unittest.TestCase):
         group=next(iter(r['settled_by_model_and_market'].values()))
         self.assertEqual(group['wins'],0);self.assertEqual(group['flat_cost_roi'],-1)
         self.assertAlmostEqual(group['brier'],.36)
+    def test_nhl_unverified_execution_is_not_captured_as_a_delivered_bet(self):
+        import json,os
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);folder=root/'data/predictions';folder.mkdir(parents=True)
+            pick={'type':'PUCKLINE','label':'A +1.5','q':.7,'cost':.6,'executionVerified':False}
+            game={'id':'G','away':'A','home':'H','start':'2099-01-01T14:00:00Z','quoteFetchedAt':'2099-01-01T12:00:00Z','best':pick}
+            doc={'model':'test','selectionPolicy':'scoring-quote-fee-depth-v2','games':[game]}
+            with patch.dict(os.environ,{'SLATE_DATE':'2099-01-01'}):
+                path=folder/'2099-01-01.json';path.write_text(json.dumps(doc))
+                rows=b.capture(root,'nhl-score-predictor','2099-01-01T12:01:00Z','test')
+                self.assertIsNone(rows[0]['bet']);self.assertEqual(rows[0]['selection_policy'],'scoring-quote-fee-depth-v2')
+                pick['executionVerified']=True;path.write_text(json.dumps(doc))
+                rows=b.capture(root,'nhl-score-predictor','2099-01-01T12:01:00Z','test')
+                self.assertEqual(rows[0]['bet']['label'],'A +1.5')
+
 if __name__=='__main__':unittest.main()

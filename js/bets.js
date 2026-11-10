@@ -1,10 +1,12 @@
 /* Best-bet engine (shared by the dashboard and the Discord poster).
  * Candidates: every side of every Jupiter market on the game: moneyline, all O/U lines, all alt puck lines. Price = ask; fee = 0.07*p*(1-p).
- * EV per $1 = q/(p+fee) - 1. A side qualifies only if model prob q > 50% AND EV after fee > 0. Best bet = highest-EV qualifier,
+ * EV uses a rounded-fee upper bound. Qualifiers must survive scoring and one-cent quote stresses; rank by conservative probability,
  * else NO BET. Jupiter NHL resolution is the final result incl. OT/SO, so q uses the full simulated final score. */
 (function (root) {
   const M = root.NHLModel || (typeof require !== 'undefined' ? require('./model.js') : null);
-  const fee = p => 0.07 * p * (1 - p);
+  // Per-contract upper bound: published order fees round UP to cents. For every
+  // integer quantity, ceil(quantity * fee)/quantity <= ceil(fee).
+  const fee = p => Math.ceil(100 * 0.07 * p * (1 - p) - 1e-10) / 100;
   const MIN_PROB = 0.5;
   const MAX_SPREAD = 0.10;
   const MAX_QUOTE_AGE_MS = 5 * 60 * 1000;
@@ -66,10 +68,13 @@
       c.sensitivityLower = Math.min(...variants.map(s => Number.isFinite(s.n) && s.n > 0
         ? s.q - 1.96 * Math.sqrt(s.q * (1 - s.q) / s.n) : -Infinity));
       c.sensitivityEV = c.sensitivityLower / c.cost - 1;
+      c.quoteStressAsk=Math.min(1,c.ask+.01);
+      c.quoteStressCost=c.quoteStressAsk+Math.max(c.fee,fee(c.quoteStressAsk));
+      c.quoteStressEV=c.sensitivityLower/c.quoteStressCost-1;
     }
     // This only bounds numerical sampling noise; it does not claim the model itself is calibrated.
     const availabilityOK = !g.availability?.blockReason;
-    const ok = pregame && quoteFresh && availabilityOK ? cands.filter(c => c.scoreConsistent && c.executable && c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0) : [];
+    const ok = pregame && quoteFresh && availabilityOK ? cands.filter(c => c.scoreConsistent && c.executable && c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0 && c.quoteStressEV > 0) : [];
     ok.sort((a, b) => b.sensitivityLower - a.sensitivityLower || b.ev - a.ev);
     let reason = null;
     if (!ok.length) {
@@ -79,7 +84,7 @@
       else if (!cands.length) reason = 'no Jupiter market';
       else if (!cands.some(c => c.executable)) reason = 'no verified full-game OT/SO two-sided quote within 10¢ with traded volume';
       else if (!cands.some(c => c.q > MIN_PROB)) reason = 'no side above 50%';
-      else reason = 'no >50% side keeps positive EV across scoring-calibration sensitivity scenarios';
+      else reason = 'no >50% side keeps positive EV after scoring sensitivity, rounded-fee bound and one-cent quote stress';
     }
     // model leans on standard lines (no Jupiter price -> informational only, never a bet)
     const leans = {

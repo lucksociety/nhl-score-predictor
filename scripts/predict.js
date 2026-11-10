@@ -29,8 +29,8 @@ function predictSlate(date, opts = {}) {
       pAway: +o.pAway.toFixed(4), pHome: +o.pHome.toFixed(4), pOT: +o.pOT.toFixed(4),
       top: o.top.slice(0, 3).map(c => ({ a: c.x, h: c.y, p: +c.p.toFixed(4) })),
       v4goalies: { away: g.v4.goalies.away.name || 'team blend', home: g.v4.goalies.home.name || 'team blend' },
-      best: e.best && { type: e.best.type, label: e.best.label, q: +e.best.q.toFixed(4), ask: e.best.ask, bid: e.best.bid, volume: e.best.volume, marketId: e.best.marketId, fee: e.best.fee, cost: e.best.cost, ev: +e.best.ev.toFixed(4), edge: +e.best.edge.toFixed(4), sensitivityMin: e.best.sensitivityMin, sensitivityLower: e.best.sensitivityLower, sensitivityEV: e.best.sensitivityEV },
-      others: (e.others || []).map(c => ({ type: c.type, label: c.label, q: +c.q.toFixed(4), ask: c.ask, ev: +c.ev.toFixed(4) })),
+      best: e.best && {...e.best,executionVerified:false},
+      others: (e.others || []).map(c=>({...c,executionVerified:false})),
       qualifying: e.qualifying || 0, sidesChecked: e.cands.length,
       markets: { ml: e.cands.filter(c => c.type === 'ML').length, totals: e.cands.filter(c => c.type === 'TOTAL').length, puckline: e.cands.filter(c => c.type === 'PUCKLINE').length },
       noBetReason: e.best ? null : e.reason,
@@ -45,16 +45,17 @@ function predictSlate(date, opts = {}) {
     }
     games.push(row);
   }
-  return { date, model: slate.games.some(g=>g.v4?.skaterAdjustment) ? 'v4-independent-skater-v1' : 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
-           priceSource: 'Jupiter Predict API (api.jup.ag/prediction/v1, includeAllMarkets): YES ask per outcome + Jupiter fee 0.07*p*(1-p)',
+  return { date, selectionPolicy:'scoring-quote-fee-depth-v2', model: slate.games.some(g=>g.v4?.skaterAdjustment) ? 'v4-independent-skater-v1' : 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
+           priceSource: 'Jupiter YES ask with conservative rounded-fee upper bound; one-cent quote stress and live depth verification',
            jupiterFetchedAt: slate.games.map(g => g.jupiter && g.jupiter.fetchedAt).filter(Boolean).sort().pop() || null, games };
 }
 module.exports = { predictSlate, etDate };
-if (require.main === module) {
+if (require.main === module) (async () => {
   const date = process.argv[2] && /^\d{4}-\d{2}-\d{2}$/.test(process.argv[2]) ? process.argv[2] : etDate();
   const out = predictSlate(date, { n: arg('--n'), seed: arg('--seed'), check: process.argv.includes('--check') });
+  await require('../js/execution.js').verifyExecution(out);
   fs.mkdirSync(path.join(ROOT, 'data', 'predictions'), { recursive: true });
   fs.writeFileSync(path.join(ROOT, 'data', 'predictions', date + '.json'), JSON.stringify(out));
   for (const g of out.games) console.log(`${g.away}@${g.home} ${g.pick ? `${g.pick.away}-${g.pick.home}${g.pick.ot ? ' OT' : ''} pH=${g.pHome} sims=${g.sims} ${g.simMs}ms ${g.best ? 'BET ' + g.best.label + ' EV ' + g.best.ev : 'NO BET: ' + g.noBetReason}${g.seedCheck ? ' seedSD pH ' + g.seedCheck.pHomeSD + ' picks ' + g.seedCheck.picks : ''}` : g.error}`);
   console.log(`${out.games.length} games, ${out.totalMs} ms total`);
-}
+})().catch(e=>{console.error(e);process.exitCode=1;});
