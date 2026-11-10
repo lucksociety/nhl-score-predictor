@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generatedAt": "2026-11-10T07:35:34Z",
+ "generatedAt": "2026-11-10T19:41:07Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
@@ -839,7 +839,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-10T07:35:35.474826+00:00",
+    "checkedAt": "2026-11-10T19:41:08.169190+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1022,12 +1022,6 @@
      "home": {
       "injuries": [
        {
-        "name": "Colton Dach",
-        "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-09T17:48Z"
-       },
-       {
         "name": "Isaac Howard",
         "position": "LW",
         "status": "Injured Reserve",
@@ -1203,7 +1197,7 @@
      }
     },
     "problems": [],
-    "blockReason": "NYR recent skater absences not individually modeled: Alberts Smits; EDM recent skater absences not individually modeled: Colton Dach"
+    "blockReason": "NYR recent skater absences not individually modeled: Alberts Smits"
    }
   },
   {
@@ -2005,7 +1999,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-10T07:35:35.474826+00:00",
+    "checkedAt": "2026-11-10T19:41:08.169190+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2155,22 +2149,16 @@
      "home": {
       "injuries": [
        {
+        "name": "Tom Willander",
+        "position": "D",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-10T14:24Z"
+       },
+       {
         "name": "Filip Chytil",
         "position": "C",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-09T18:22Z"
-       },
-       {
-        "name": "Tom Willander",
-        "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-09T18:22Z"
-       },
-       {
-        "name": "Akil Thomas",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-09-29T17:05Z"
        },
        {
         "name": "Mackenzie MacEachern",
@@ -2267,14 +2255,14 @@
         "name": "Zeev Buium"
        },
        {
+        "id": 8480075,
+        "position": "D",
+        "name": "Cameron Crotty"
+       },
+       {
         "id": 8479425,
         "position": "D",
         "name": "Filip Hronek"
-       },
-       {
-        "id": 8483768,
-        "position": "D",
-        "name": "Victor Mancini"
        },
        {
         "id": 8476467,
@@ -2315,7 +2303,7 @@
      }
     },
     "problems": [],
-    "blockReason": "VAN recent skater absences not individually modeled: Filip Chytil, Tom Willander"
+    "blockReason": "VAN recent skater absences not individually modeled: Filip Chytil"
    }
   },
   {
@@ -3111,7 +3099,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-10T07:35:35.474826+00:00",
+    "checkedAt": "2026-11-10T19:41:08.169190+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
