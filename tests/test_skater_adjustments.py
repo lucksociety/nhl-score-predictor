@@ -63,3 +63,18 @@ def test_questionable_players_get_out_scenario_and_research_policy_is_fixed():
     assert scenarios[1]['rates'][0]<g['v4']['ra']
     policy=json.loads((Path(__file__).parents[1]/'research/skater-policy.json').read_text())
     assert policy['trainedThrough']<'2026-09-01'
+
+
+def test_eleven_forwards_seven_defensemen_is_a_supported_expected_lineup():
+    state,g=fixture();side=g['availability']['sides']['away']
+    # Three forwards are unavailable; add a seventh rated defenseman.
+    side['injuries']=[{'name':'AAA Player '+str(i),'position':'C','status':'Out'} for i in [11,12,13]]
+    state['players']['90']={'w':10.,'gc':2.,'toi':10000.,'pos':'D','name':'Seventh Defender','team':'AAA','last':'2026-11-08'}
+    side['roster'].append({'id':90,'name':'Seventh Defender','position':'D'})
+    S.apply_game(g,state,'2026-11-09')
+    chosen=g['v4']['skaterAdjustment']['sides']['away']['players']
+    assert len(chosen)==18 and sum(p['position']=='D' for p in chosen)==7
+    assert sum(p['position']!='D' for p in chosen)==11
+    side['roster']=[p for p in side['roster'] if p['id']!=90]
+    with pytest.raises(ValueError,match='insufficient'):
+        S.expected_lineup(state,'AAA',side['roster'],side['injuries'])

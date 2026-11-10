@@ -14,10 +14,10 @@ def read(path,default):
     try:return json.loads(path.read_text())
     except FileNotFoundError:return default
 
-def make_record(event,start,model,bet,source,at):
+def make_record(event,start,model,bet,source,at,selection_policy='sensitivity-confidence-v1'):
     st=ml.timestamp(start); posted=ml.timestamp(at)
     if not st or not posted or posted>=st:return None
-    r={'event_id':str(event),'start':st.isoformat(),'posted_at':posted.isoformat(),'model':model,'selection_policy':'sensitivity-confidence-v1','bet':bet,'source':source}
+    r={'event_id':str(event),'start':st.isoformat(),'posted_at':posted.isoformat(),'model':model,'selection_policy':selection_policy,'bet':bet,'source':source}
     if bet:
         if (not math.isfinite(bet['probability']) or not .5<bet['probability']<=1
             or not math.isfinite(bet['cost']) or not 0<bet['cost']<bet['probability']):raise ValueError('Invalid posted recommendation')
@@ -25,8 +25,8 @@ def make_record(event,start,model,bet,source,at):
 
 def capture(root,project,at,source):
     out=[]
-    def add(event,start,model,bet):
-        r=make_record(event,start,model,bet,source,at)
+    def add(event,start,model,bet,policy='sensitivity-confidence-v1'):
+        r=make_record(event,start,model,bet,source,at,policy)
         if r:out.append(r)
     if project=='nba-oracle':
         p=read(root/'out/predictions.json',{});b=read(root/'out/bets.json',{})
@@ -42,10 +42,11 @@ def capture(root,project,at,source):
         for g in p.get('games',[]):
             fetched=ml.timestamp(g.get('quoteFetchedAt'));fresh=fetched and 0<=(ml.timestamp(at)-fetched).total_seconds()<=300
             x=g.get('best') if fresh else None;bet=None
+            if x and x.get('executionVerified') is False:x=None
             if x:
                 label=x['label'];typ={'ML':'moneyline','TOTAL':'totals','PUCKLINE':'spreads'}[x['type']]
                 bet={'type':typ,'index':0 if label.startswith(g['home']+' ') else 1,'side':'under' if label.startswith('Under') else 'over','line':None if typ=='moneyline' else float(label.split()[-1]),'label':label,'probability':x['q'],'selection_probability':x.get('sensitivityLower'),'cost':x['cost']}
-            add(g['id'],g['start'],p['model'],bet)
+            add(g['id'],g['start'],p['model'],bet,p.get('selectionPolicy','sensitivity-confidence-v1'))
     elif project=='lol-scanner':
         import sys
         sys.path.insert(0,str(root))
