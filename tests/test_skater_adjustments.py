@@ -78,3 +78,25 @@ def test_eleven_forwards_seven_defensemen_is_a_supported_expected_lineup():
     side['roster']=[p for p in side['roster'] if p['id']!=90]
     with pytest.raises(ValueError,match='insufficient'):
         S.expected_lineup(state,'AAA',side['roster'],side['injuries'])
+
+
+def test_verified_rookie_uses_zero_centered_prior_and_empirical_scenarios():
+    state,g=fixture()
+    # A new defender is required for the legal formation, while the other five have NHL history.
+    side=g['availability']['sides']['away'];side['roster']=[p for p in side['roster']if p['id']!=20]
+    side['roster'].append({'id':999,'name':'Verified Rookie','position':'D'})
+    for i in range(30):
+        state['players'][str(1000+i)]={'w':20.,'gc':3.0+.08*i,'toi':20000.,'pos':'D','name':'Historical D '+str(i),'team':'OTHER','last':'2026-11-08'}
+    S.apply_game(g,state,'2026-11-09')
+    a=g['v4']['skaterAdjustment'];rookies=a['priorOnlyPlayers']['away']
+    assert rookies==[{'id':999,'name':'Verified Rookie','position':'D','productionAbovePositionMean':0.}]
+    assert len(a['scenarios'])==3
+    assert a['scenarios'][0]['label']=='unadjusted team baseline'
+    assert any('rookie-prior'in x['label']for x in a['scenarios'])
+    assert S.quality(state,999)==0.
+
+
+def test_rookie_without_positional_uncertainty_evidence_still_blocks():
+    state,g=fixture();side=g['availability']['sides']['away']
+    side['roster']=[p for p in side['roster']if p['id']!=20]+[{'id':999,'name':'Rookie','position':'D'}]
+    with pytest.raises(ValueError,match='position-history'):S.apply_game(g,state,'2026-11-09')

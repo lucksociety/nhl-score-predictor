@@ -9,10 +9,12 @@ async function post(url, method, body) {
   if (!r.ok) throw new Error(`Discord ${r.status}: ${(await r.text()).slice(0, 200)}`);
 }
 /** Reply to the /nhl interaction (edit "thinking…" + follow-ups). */
-async function send(appId, token, msgs) {
-  const base = `https://discord.com/api/v10/webhooks/${appId}/${token}`;
-  for (let i = 0; i < msgs.length; i++) await post(i === 0 ? `${base}/messages/@original` : base, i === 0 ? 'PATCH' : 'POST', msgs[i]);
+async function send(appId, token, msgs,render) {
+  const {sendPart}=await import('./discord-delivery.mjs');
+  const base=`https://discord.com/api/v10/webhooks/${appId}/${token}`;
+  for(let i=0;i<msgs.length;i++)await sendPart({base,index:i,body:()=>render?render()[i]:msgs[i]});
 }
+
 /** Post to the channel webhook (secret DISCORD_WEBHOOK_URL): fallback, or manual workflow_dispatch posts. */
 async function sendWebhook(url, msgs) {
   for (const m of msgs) await post(url + (url.includes('?') ? '&' : '?') + 'wait=true', 'POST', Object.assign({ username: 'Luck Society NHL' }, m));
@@ -30,7 +32,7 @@ if (require.main === module) (async () => {
   try {
     if (process.argv.includes('--webhook')) { if (!wh) throw new Error('DISCORD_WEBHOOK_URL not set'); await sendWebhook(wh, msgs); console.log(`posted ${msgs.length} message(s) to the channel webhook`); return; }
     if (!E.DISCORD_APP_ID || !E.DISCORD_INTERACTION_TOKEN) throw new Error('no interaction token');
-    await send(E.DISCORD_APP_ID, E.DISCORD_INTERACTION_TOKEN, msgs); console.log(`replied to /nhl with ${msgs.length} message(s)`);
+    await send(E.DISCORD_APP_ID, E.DISCORD_INTERACTION_TOKEN, msgs,()=>payloads(P)); console.log(`replied to /nhl with ${msgs.length} message(s)`);
   } catch (e) {
     console.error('interaction reply failed:', e.message);
     if (process.argv.includes('--webhook') || !wh) process.exit(1);

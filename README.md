@@ -84,3 +84,7 @@ Secrets are **never** stored in this repo:
 - `GITHUB_TOKEN`: a Worker secret (`wrangler secret put GITHUB_TOKEN`). Use a fine-grained PAT limited to this repo with Contents: read & write, which repository_dispatch requires.
 - The Discord bot token is only needed once, to register the command: `DISCORD_BOT_TOKEN=… node scripts/register_command.js`.
 - The application ID and public key are public and live in `cloudflare/wrangler.toml`.
+
+## November 11: verified-roster rookie coverage
+
+An official-roster skater with no NHL performance history uses the model's existing position-centered zero prior, rather than causing the entire game to fail. Unknown identities and insufficient roster depth still block. Recommendations must survive the unadjusted team baseline and both adverse rookie-quality scenarios, using observed positional 2.5/97.5-percentile quality ranges from at least 20 previously rated players. These are empirical sensitivity scenarios, not calibrated rookie confidence intervals; individual rookie impact remains unmeasured. Scenarios outside the fitted feature range still block.

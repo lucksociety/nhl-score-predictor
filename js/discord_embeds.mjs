@@ -20,6 +20,9 @@ export function gameEmbed(g) {
   if (g.availability) lines.push(`Availability checked ${g.availability.checkedAt} · ${g.availability.blockReason || "current injury/roster feeds checked; goalie status above"}`);
   if(g.availability?.skaterAdjustment){const a=g.availability.skaterAdjustment;const names=Object.values(a.sides).flatMap(s=>s.absences.map(p=>p.name));lines.push(`Skaters: expected lineup adjusted${names.length?' for '+names.join(', '):''} · xG ${a.baseGoals.map(x=>x.toFixed(2)).join('–')} → ${a.adjustedGoals.map(x=>x.toFixed(2)).join('–')}`);}
 
+  const rookies=Object.values(g.availability?.skaterAdjustment?.priorOnlyPlayers||{}).flat();
+  if(rookies.length)lines.push('New skater position-average priors: '+rookies.map(p=>p.name).join(', ')+'; individual impact unmeasured, rookie sensitivity checked.');
+
   if (g.best) {
     e.color = GOLD;
     lines.push(`✅ **BEST BET: ${g.best.label}** · model ${pct(g.best.q)} · Jupiter ${cents(g.best.ask)} (${cents(g.best.fee)} fee allowance) · EV **+${pct(g.best.ev)}**`);
