@@ -91,7 +91,7 @@ def expected_lineup(state,team,roster,injuries,extra_out=()):
     formation=next(((f,d) for f,d in [(12,6),(11,7)] if len(groups['F'])>=f and len(groups['D'])>=d),None)
     if formation is None:raise ValueError(f'{team} insufficient verified roster depth for expected 12F/6D or 11F/7D lineup')
     selected=groups['F'][:formation[0]]+groups['D'][:formation[1]]
-    if any(str(p['id']) not in state['players'] for p in selected):raise ValueError(f'{team} expected skater lacks NHL performance history')
+    if any(not str(p.get('id','')).isdigit() for p in selected):raise ValueError(f'{team} expected skater identity unavailable')
     return selected
 
 def apply_game(g,state,date,policy=POLICY):
@@ -110,6 +110,11 @@ def apply_game(g,state,date,policy=POLICY):
             if not candidates and not any(norm(p['name'])==norm(x['name']) for p in roster):
                 matched[side].append({'name':x['name'],'id':None,'status':x['status'],'baselineParticipation':0.,'productionAbovePositionMean':None,'note':'not on current official roster and no recorded participation; no baseline contribution to remove'})
                 continue
+            if not candidates:
+                newcomers=[p for p in roster if norm(p['name'])==norm(x['name'])]
+                if len(newcomers)==1 and str(newcomers[0]['id'])not in state['players']:
+                    matched[side].append({'name':x['name'],'id':newcomers[0]['id'],'status':x['status'],'baselineParticipation':0.,'productionAbovePositionMean':0.,'note':'no recorded contribution in team baseline; position-average prior, not an estimated individual impact'})
+                    continue
             if len(candidates)!=1:raise ValueError(f"{team} cannot uniquely model skater {x['name']}")
             pid=candidates[0];t=state['teams'][team]
             matched[side].append({'name':x['name'],'id':int(pid),'status':x['status'],'baselineParticipation':round(t['players'].get(pid,0)/t['w'],4),'productionAbovePositionMean':round(quality(state,pid),4)})
@@ -127,7 +132,23 @@ def apply_game(g,state,date,policy=POLICY):
         s=a['sides'][side];chosen=expected_lineup(state,g[side],s['roster'],s['injuries'],[norm(n) for n in uncertain[side]])
         alternate=list(d);alternate[0 if side=='away' else 1]=feature(state,g[side],[p['id'] for p in chosen])
         variants.append({'label':g[side]+' questionable skaters OUT','rates':[r*SCALE for r in rates(alternate)]})
-    v['skaterAdjustment']={'policy':policy['id'],'dataThrough':state['through'],'baseGoals':base,'adjustedGoals':adjusted,'featureDelta':d,'lineupStatus':'EXPECTED — ranked by prior ice time; not confirmed game-day actives','sides':{s:{'players':contexts[s]['selected'],'absences':matched[s]} for s in ('away','home')},'scenarios':variants}
+    prior_only={side:[p for p in contexts[side]['selected']if str(p['id'])not in state['players']]for side in ('away','home')}
+    if any(prior_only.values()):
+        import numpy as np
+        ranges={}
+        for position in {('D'if p['position']=='D'else'F')for ps in prior_only.values()for p in ps}:
+            q=[quality(state,pid)for pid,p in state['players'].items()if p['pos']==position and p['w']>=10]
+            if len(q)<20:raise ValueError('Insufficient position-history sample for rookie sensitivity')
+            lo,hi=np.quantile(q,[.025,.975]);ranges[position]=(min(0.,float(lo)),max(0.,float(hi)))
+        # Observed positional ranges are sensitivity tests, not calibrated rookie confidence intervals.
+        for adverse_side in (0,1):
+            delta=list(d)
+            for i,side in enumerate(('away','home')):
+                for p in prior_only[side]:
+                    bounds=ranges['D'if p['position']=='D'else'F']
+                    delta[i]+=bounds[0 if i==adverse_side else 1]
+            variants.append({'label':('away'if adverse_side==0 else'home')+' rookie-prior sensitivity','rates':[r*SCALE for r in rates(delta)]})
+    v['skaterAdjustment']={'policy':policy['id'],'dataThrough':state['through'],'baseGoals':base,'adjustedGoals':adjusted,'featureDelta':d,'priorOnlyPlayers':{side:[{'id':p['id'],'name':p['name'],'position':p['position'],'productionAbovePositionMean':0.}for p in ps]for side,ps in prior_only.items()},'lineupStatus':'EXPECTED — ranked by prior ice time; not confirmed game-day actives','sides':{s:{'players':contexts[s]['selected'],'absences':matched[s]} for s in ('away','home')},'scenarios':variants}
     v.update(la=round(adjusted[0],4),lh=round(adjusted[1],4),ra=round(adjusted[0]*SCALE,4),rh=round(adjusted[1]*SCALE,4),version='v4-independent-skater-v1')
     a['skaterAdjustment']=v['skaterAdjustment']
 
