@@ -1,7 +1,7 @@
 {
  "date": "2026-11-10",
- "generatedAt": "2026-11-11T06:53:11Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-11-11T19:57:12Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020286,
@@ -824,7 +824,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -963,10 +963,16 @@
      "home": {
       "injuries": [
        {
+        "name": "Zack MacEwen",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-11T16:47Z"
+       },
+       {
         "name": "Morgan Rielly",
         "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-10T15:41Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-11T14:56Z"
        },
        {
         "name": "Colton Sissons",
@@ -1173,7 +1179,7 @@
      }
     },
     "problems": [],
-    "blockReason": "TOR recent skater absences not individually modeled: Morgan Rielly, Colton Sissons"
+    "blockReason": "TOR recent skater absences not individually modeled: Colton Sissons"
    }
   },
   {
@@ -1983,22 +1989,22 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
+        "name": "Brock Faber",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-11T15:34Z"
+       },
+       {
         "name": "Filip Gustavsson",
         "position": "G",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-05T18:51Z"
-       },
-       {
-        "name": "Brock Faber",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-05T18:09Z"
        }
       ],
       "roster": [
@@ -2127,16 +2133,16 @@
      "home": {
       "injuries": [
        {
+        "name": "Mike Matheson",
+        "position": "D",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-11T17:55Z"
+       },
+       {
         "name": "Ivan Demidov",
         "position": "RW",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-04T21:04Z"
-       },
-       {
-        "name": "Mike Matheson",
-        "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-10-31T15:31Z"
        },
        {
         "name": "Sam Montembeault",
@@ -2287,7 +2293,7 @@
      }
     },
     "problems": [],
-    "blockReason": null
+    "blockReason": "MIN recent skater absences not individually modeled: Brock Faber"
    }
   },
   {
@@ -3082,7 +3088,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4161,7 +4167,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4318,14 +4324,14 @@
        {
         "name": "Nick Cousins",
         "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-11T03:15Z"
+        "status": "Out",
+        "updatedAt": "2026-11-11T17:15Z"
        },
        {
         "name": "Linus Ullmark",
         "position": "G",
-        "status": "Out",
-        "updatedAt": "2026-11-10T16:41Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-11T14:56Z"
        },
        {
         "name": "Andre Burakovsky",
@@ -4466,7 +4472,7 @@
      }
     },
     "problems": [],
-    "blockReason": null
+    "blockReason": "OTT recent skater absences not individually modeled: Nick Cousins"
    }
   },
   {
@@ -5246,7 +5252,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5973,7 +5979,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7036,7 +7042,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7044,8 +7050,8 @@
        {
         "name": "Jonathan Marchessault",
         "position": "RW",
-        "status": "Out",
-        "updatedAt": "2026-11-11T02:39Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-11T14:56Z"
        }
       ],
       "roster": [
@@ -7311,7 +7317,7 @@
      }
     },
     "problems": [],
-    "blockReason": "NSH recent skater absences not individually modeled: Jonathan Marchessault; LAK recent skater absences not individually modeled: Kevin Fiala"
+    "blockReason": "LAK recent skater absences not individually modeled: Kevin Fiala"
    }
   }
  ]

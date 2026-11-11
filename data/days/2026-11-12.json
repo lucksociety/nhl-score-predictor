@@ -1,7 +1,7 @@
 {
  "date": "2026-11-12",
- "generatedAt": "2026-11-11T06:53:11Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
+ "generatedAt": "2026-11-11T19:57:12Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020309,
@@ -14,7 +14,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401891808",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "CAR -270",
+    "mlAway": -270.0,
+    "mlHome": 220.0,
+    "total": 6.5,
+    "over": -112.0,
+    "under": -108.0,
+    "mlAwayOpen": -230.0,
+    "mlHomeOpen": 190.0
+   },
    "goalies": {
     "away": {
      "name": "Pyotr Kochetkov",
@@ -44,7 +54,7 @@
       "periodType": null,
       "ask": 0.72,
       "bid": 0.71,
-      "volume": 3185
+      "volume": 5542
      },
      "home": {
       "marketId": "POLY-5776259-1",
@@ -54,7 +64,7 @@
       "periodType": null,
       "ask": 0.29,
       "bid": 0.28,
-      "volume": 3185
+      "volume": 5542
      }
     },
     "extra": [
@@ -91,9 +101,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.62,
-      "bid": 0.6,
-      "volume": 0,
+      "ask": 0.63,
+      "bid": 0.62,
+      "volume": 3,
       "ou": "O",
       "line": 5.5
      },
@@ -104,9 +114,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.4,
-      "bid": 0.38,
-      "volume": 0,
+      "ask": 0.38,
+      "bid": 0.37,
+      "volume": 3,
       "ou": "U",
       "line": 5.5
      },
@@ -118,8 +128,8 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.51,
-      "bid": 0.49,
-      "volume": 30,
+      "bid": 0.5,
+      "volume": 33,
       "ou": "O",
       "line": 6.5
      },
@@ -130,9 +140,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.51,
+      "ask": 0.5,
       "bid": 0.49,
-      "volume": 30,
+      "volume": 33,
       "ou": "U",
       "line": 6.5
      },
@@ -144,7 +154,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.31,
-      "bid": 0.28,
+      "bid": 0.3,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -156,7 +166,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.72,
+      "ask": 0.7,
       "bid": 0.69,
       "volume": 0,
       "ou": "U",
@@ -170,8 +180,8 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.51,
-      "bid": 0.49,
-      "volume": 2110,
+      "bid": 0.5,
+      "volume": 5127,
       "team": "CAR",
       "line": -1.5
      },
@@ -182,9 +192,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.51,
+      "ask": 0.5,
       "bid": 0.49,
-      "volume": 2110,
+      "volume": 5127,
       "team": "SEA",
       "line": 1.5
      },
@@ -195,8 +205,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.17,
-      "bid": 0.14,
+      "ask": 0.14,
+      "bid": 0.13,
       "volume": 0,
       "team": "SEA",
       "line": -1.5
@@ -208,8 +218,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.86,
-      "bid": 0.83,
+      "ask": 0.87,
+      "bid": 0.86,
       "volume": 0,
       "team": "CAR",
       "line": 1.5
@@ -221,7 +231,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.11,
+      "ask": 0.09,
       "bid": 0.06,
       "volume": 0,
       "team": "SEA",
@@ -235,7 +245,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.94,
-      "bid": 0.89,
+      "bid": 0.91,
       "volume": 0,
       "team": "CAR",
       "line": 2.5
@@ -247,7 +257,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.67,
+      "ask": 0.09,
       "bid": 0.03,
       "volume": 0,
       "team": "SEA",
@@ -261,7 +271,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.33,
+      "bid": 0.91,
       "volume": 0,
       "team": "CAR",
       "line": 3.5
@@ -273,8 +283,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.37,
-      "bid": 0.34,
+      "ask": 0.38,
+      "bid": 0.35,
       "volume": 1027,
       "team": "CAR",
       "line": -2.5
@@ -286,8 +296,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.66,
-      "bid": 0.63,
+      "ask": 0.65,
+      "bid": 0.62,
       "volume": 1027,
       "team": "SEA",
       "line": 2.5
@@ -299,8 +309,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.46,
-      "bid": 0.05,
+      "ask": 0.2,
+      "bid": 0.18,
       "volume": 0,
       "team": "CAR",
       "line": -3.5
@@ -312,8 +322,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.95,
-      "bid": 0.54,
+      "ask": 0.82,
+      "bid": 0.8,
       "volume": 0,
       "team": "SEA",
       "line": 3.5
@@ -325,8 +335,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.21,
-      "bid": 0.19,
+      "ask": 0.23,
+      "bid": 0.2,
       "volume": 0,
       "ou": "O",
       "line": 8.5
@@ -338,8 +348,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.81,
-      "bid": 0.79,
+      "ask": 0.8,
+      "bid": 0.77,
       "volume": 0,
       "ou": "U",
       "line": 8.5
@@ -351,8 +361,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.11,
-      "bid": 0.05,
+      "ask": 0.12,
+      "bid": 0.09,
       "volume": 0,
       "ou": "O",
       "line": 9.5
@@ -364,8 +374,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.95,
-      "bid": 0.89,
+      "ask": 0.91,
+      "bid": 0.88,
       "volume": 0,
       "ou": "U",
       "line": 9.5
@@ -377,8 +387,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.979,
-      "bid": 0.944,
+      "ask": 0.98,
+      "bid": 0.962,
       "volume": 0,
       "ou": "O",
       "line": 2.5
@@ -390,8 +400,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.056,
-      "bid": 0.021,
+      "ask": 0.038,
+      "bid": 0.02,
       "volume": 0,
       "ou": "U",
       "line": 2.5
@@ -403,8 +413,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.92,
-      "bid": 0.83,
+      "ask": 0.91,
+      "bid": 0.88,
       "volume": 0,
       "ou": "O",
       "line": 3.5
@@ -416,19 +426,19 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.17,
-      "bid": 0.08,
+      "ask": 0.12,
+      "bid": 0.09,
       "volume": 0,
       "ou": "U",
       "line": 3.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -753,16 +763,297 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "SEA cannot uniquely model skater Jake O'Brien",
-    "blockReason": "Skater adjustment unavailable: SEA cannot uniquely model skater Jake O'Brien"
+    "skaterAdjustment": {
+     "policy": "skater-context-sensitivity-v1",
+     "dataThrough": "2026-11-10",
+     "baseGoals": [
+      4.0837,
+      2.5841
+     ],
+     "adjustedGoals": [
+      4.134097774185928,
+      2.567373599717656
+     ],
+     "featureDelta": [
+      0.33275186155523584,
+      -0.14353712036322383
+     ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
+     "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
+     "sides": {
+      "away": {
+       "players": [
+        {
+         "id": 8478427,
+         "position": "C",
+         "name": "Sebastian Aho"
+        },
+        {
+         "id": 8482093,
+         "position": "R",
+         "name": "Seth Jarvis"
+        },
+        {
+         "id": 8480830,
+         "position": "R",
+         "name": "Andrei Svechnikov"
+        },
+        {
+         "id": 8477940,
+         "position": "L",
+         "name": "Nikolaj Ehlers"
+        },
+        {
+         "id": 8482809,
+         "position": "R",
+         "name": "Jackson Blake"
+        },
+        {
+         "id": 8482702,
+         "position": "C",
+         "name": "Logan Stankoven"
+        },
+        {
+         "id": 8476921,
+         "position": "L",
+         "name": "Jordan Martinook"
+        },
+        {
+         "id": 8475791,
+         "position": "L",
+         "name": "Taylor Hall"
+        },
+        {
+         "id": 8480829,
+         "position": "C",
+         "name": "Jesperi Kotkaniemi"
+        },
+        {
+         "id": 8476873,
+         "position": "L",
+         "name": "Mark Jankowski"
+        },
+        {
+         "id": 8480762,
+         "position": "L",
+         "name": "Eric Robinson"
+        },
+        {
+         "id": 8477478,
+         "position": "L",
+         "name": "William Carrier"
+        },
+        {
+         "id": 8480817,
+         "position": "D",
+         "name": "K'Andre Miller"
+        },
+        {
+         "id": 8476958,
+         "position": "D",
+         "name": "Jaccob Slavin"
+        },
+        {
+         "id": 8480336,
+         "position": "D",
+         "name": "Sean Walker"
+        },
+        {
+         "id": 8478970,
+         "position": "D",
+         "name": "Jalen Chatfield"
+        },
+        {
+         "id": 8476906,
+         "position": "D",
+         "name": "Shayne Gostisbehere"
+        },
+        {
+         "id": 8482100,
+         "position": "D",
+         "name": "Alexander Nikishin"
+        }
+       ],
+       "absences": [
+        {
+         "name": "William Carrier",
+         "id": 8477478,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.964,
+         "productionAbovePositionMean": -0.1256
+        },
+        {
+         "name": "Jordan Staal",
+         "id": 8473533,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.4339,
+         "productionAbovePositionMean": -0.0285
+        }
+       ]
+      },
+      "home": {
+       "players": [
+        {
+         "id": 8476905,
+         "position": "C",
+         "name": "Chandler Stephenson"
+        },
+        {
+         "id": 8482665,
+         "position": "C",
+         "name": "Matty Beniers"
+        },
+        {
+         "id": 8474586,
+         "position": "R",
+         "name": "Jordan Eberle"
+        },
+        {
+         "id": 8477919,
+         "position": "C",
+         "name": "Frederick Gaudreau"
+        },
+        {
+         "id": 8482259,
+         "position": "C",
+         "name": "Bobby McMann"
+        },
+        {
+         "id": 8481554,
+         "position": "R",
+         "name": "Kaapo Kakko"
+        },
+        {
+         "id": 8482713,
+         "position": "R",
+         "name": "Mackie Samoskevich"
+        },
+        {
+         "id": 8484800,
+         "position": "C",
+         "name": "Berkly Catton"
+        },
+        {
+         "id": 8484241,
+         "position": "R",
+         "name": "Matthew Wood"
+        },
+        {
+         "id": 8482751,
+         "position": "C",
+         "name": "Ryan Winterton"
+        },
+        {
+         "id": 8483570,
+         "position": "C",
+         "name": "Ben Meyers"
+        },
+        {
+         "id": 8483497,
+         "position": "R",
+         "name": "Jani Nyman"
+        },
+        {
+         "id": 8477986,
+         "position": "D",
+         "name": "Brandon Montour"
+        },
+        {
+         "id": 8478407,
+         "position": "D",
+         "name": "Vince Dunn"
+        },
+        {
+         "id": 8476457,
+         "position": "D",
+         "name": "Adam Larsson"
+        },
+        {
+         "id": 8482858,
+         "position": "D",
+         "name": "Ryker Evans"
+        },
+        {
+         "id": 8479985,
+         "position": "D",
+         "name": "Cale Fleury"
+        },
+        {
+         "id": 8479372,
+         "position": "D",
+         "name": "Josh Mahura"
+        }
+       ],
+       "absences": [
+        {
+         "name": "Curtis Douglas",
+         "id": 8480876,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.1631,
+         "productionAbovePositionMean": -0.1985
+        },
+        {
+         "name": "Jared McCann",
+         "id": 8477955,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.6661,
+         "productionAbovePositionMean": 0.1372
+        },
+        {
+         "name": "Jacob Melanson",
+         "id": 8482874,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.1985,
+         "productionAbovePositionMean": -0.1569
+        },
+        {
+         "name": "Ryan Lindgren",
+         "id": 8479324,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.4228,
+         "productionAbovePositionMean": -0.0798
+        },
+        {
+         "name": "Jake O'Brien",
+         "id": 8485383,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.0,
+         "productionAbovePositionMean": 0.0,
+         "note": "no recorded contribution in team baseline; position-average prior, not an estimated individual impact"
+        }
+       ]
+      }
+     },
+     "scenarios": [
+      {
+       "label": "unadjusted team baseline",
+       "rates": [
+        3.6222,
+        2.2921
+       ]
+      },
+      {
+       "label": "CAR questionable skaters OUT",
+       "rates": [
+        3.6579722745126664,
+        2.277969548952733
+       ]
+      }
+     ]
+    },
+    "skaterModelStatus": "adjusted",
+    "skaterCheckedAt": "2026-11-11T19:57:28.054553+00:00",
+    "blockReason": null
    },
    "v4": {
-    "version": "v4-independent",
-    "la": 4.0829,
-    "lh": 2.5836,
-    "ra": 3.6215,
-    "rh": 2.2917,
+    "version": "v4-independent-skater-v1",
+    "la": 4.1341,
+    "lh": 2.5674,
+    "ra": 3.6669,
+    "rh": 2.2773,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
@@ -838,7 +1129,288 @@
       "xa": 1.032
      }
     },
-    "at": "2026-11-11T06:53:13Z"
+    "at": "2026-11-11T19:57:28Z",
+    "skaterAdjustment": {
+     "policy": "skater-context-sensitivity-v1",
+     "dataThrough": "2026-11-10",
+     "baseGoals": [
+      4.0837,
+      2.5841
+     ],
+     "adjustedGoals": [
+      4.134097774185928,
+      2.567373599717656
+     ],
+     "featureDelta": [
+      0.33275186155523584,
+      -0.14353712036322383
+     ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
+     "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
+     "sides": {
+      "away": {
+       "players": [
+        {
+         "id": 8478427,
+         "position": "C",
+         "name": "Sebastian Aho"
+        },
+        {
+         "id": 8482093,
+         "position": "R",
+         "name": "Seth Jarvis"
+        },
+        {
+         "id": 8480830,
+         "position": "R",
+         "name": "Andrei Svechnikov"
+        },
+        {
+         "id": 8477940,
+         "position": "L",
+         "name": "Nikolaj Ehlers"
+        },
+        {
+         "id": 8482809,
+         "position": "R",
+         "name": "Jackson Blake"
+        },
+        {
+         "id": 8482702,
+         "position": "C",
+         "name": "Logan Stankoven"
+        },
+        {
+         "id": 8476921,
+         "position": "L",
+         "name": "Jordan Martinook"
+        },
+        {
+         "id": 8475791,
+         "position": "L",
+         "name": "Taylor Hall"
+        },
+        {
+         "id": 8480829,
+         "position": "C",
+         "name": "Jesperi Kotkaniemi"
+        },
+        {
+         "id": 8476873,
+         "position": "L",
+         "name": "Mark Jankowski"
+        },
+        {
+         "id": 8480762,
+         "position": "L",
+         "name": "Eric Robinson"
+        },
+        {
+         "id": 8477478,
+         "position": "L",
+         "name": "William Carrier"
+        },
+        {
+         "id": 8480817,
+         "position": "D",
+         "name": "K'Andre Miller"
+        },
+        {
+         "id": 8476958,
+         "position": "D",
+         "name": "Jaccob Slavin"
+        },
+        {
+         "id": 8480336,
+         "position": "D",
+         "name": "Sean Walker"
+        },
+        {
+         "id": 8478970,
+         "position": "D",
+         "name": "Jalen Chatfield"
+        },
+        {
+         "id": 8476906,
+         "position": "D",
+         "name": "Shayne Gostisbehere"
+        },
+        {
+         "id": 8482100,
+         "position": "D",
+         "name": "Alexander Nikishin"
+        }
+       ],
+       "absences": [
+        {
+         "name": "William Carrier",
+         "id": 8477478,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.964,
+         "productionAbovePositionMean": -0.1256
+        },
+        {
+         "name": "Jordan Staal",
+         "id": 8473533,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.4339,
+         "productionAbovePositionMean": -0.0285
+        }
+       ]
+      },
+      "home": {
+       "players": [
+        {
+         "id": 8476905,
+         "position": "C",
+         "name": "Chandler Stephenson"
+        },
+        {
+         "id": 8482665,
+         "position": "C",
+         "name": "Matty Beniers"
+        },
+        {
+         "id": 8474586,
+         "position": "R",
+         "name": "Jordan Eberle"
+        },
+        {
+         "id": 8477919,
+         "position": "C",
+         "name": "Frederick Gaudreau"
+        },
+        {
+         "id": 8482259,
+         "position": "C",
+         "name": "Bobby McMann"
+        },
+        {
+         "id": 8481554,
+         "position": "R",
+         "name": "Kaapo Kakko"
+        },
+        {
+         "id": 8482713,
+         "position": "R",
+         "name": "Mackie Samoskevich"
+        },
+        {
+         "id": 8484800,
+         "position": "C",
+         "name": "Berkly Catton"
+        },
+        {
+         "id": 8484241,
+         "position": "R",
+         "name": "Matthew Wood"
+        },
+        {
+         "id": 8482751,
+         "position": "C",
+         "name": "Ryan Winterton"
+        },
+        {
+         "id": 8483570,
+         "position": "C",
+         "name": "Ben Meyers"
+        },
+        {
+         "id": 8483497,
+         "position": "R",
+         "name": "Jani Nyman"
+        },
+        {
+         "id": 8477986,
+         "position": "D",
+         "name": "Brandon Montour"
+        },
+        {
+         "id": 8478407,
+         "position": "D",
+         "name": "Vince Dunn"
+        },
+        {
+         "id": 8476457,
+         "position": "D",
+         "name": "Adam Larsson"
+        },
+        {
+         "id": 8482858,
+         "position": "D",
+         "name": "Ryker Evans"
+        },
+        {
+         "id": 8479985,
+         "position": "D",
+         "name": "Cale Fleury"
+        },
+        {
+         "id": 8479372,
+         "position": "D",
+         "name": "Josh Mahura"
+        }
+       ],
+       "absences": [
+        {
+         "name": "Curtis Douglas",
+         "id": 8480876,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.1631,
+         "productionAbovePositionMean": -0.1985
+        },
+        {
+         "name": "Jared McCann",
+         "id": 8477955,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.6661,
+         "productionAbovePositionMean": 0.1372
+        },
+        {
+         "name": "Jacob Melanson",
+         "id": 8482874,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.1985,
+         "productionAbovePositionMean": -0.1569
+        },
+        {
+         "name": "Ryan Lindgren",
+         "id": 8479324,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.4228,
+         "productionAbovePositionMean": -0.0798
+        },
+        {
+         "name": "Jake O'Brien",
+         "id": 8485383,
+         "status": "Injured Reserve",
+         "baselineParticipation": 0.0,
+         "productionAbovePositionMean": 0.0,
+         "note": "no recorded contribution in team baseline; position-average prior, not an estimated individual impact"
+        }
+       ]
+      }
+     },
+     "scenarios": [
+      {
+       "label": "unadjusted team baseline",
+       "rates": [
+        3.6222,
+        2.2921
+       ]
+      },
+      {
+       "label": "CAR questionable skaters OUT",
+       "rates": [
+        3.6579722745126664,
+        2.277969548952733
+       ]
+      }
+     ]
+    }
    }
   },
   {
@@ -852,13 +1424,26 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892698",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "COL -120",
+    "mlAway": -120.0,
+    "mlHome": 100.0,
+    "total": 6.5,
+    "over": -102.0,
+    "under": -118.0,
+    "mlAwayOpen": -125.0,
+    "mlHomeOpen": 105.0
+   },
    "goalies": {
     "away": {
      "name": "Mackenzie Blackwood",
      "status": "Expected"
     },
-    "home": null
+    "home": {
+     "name": "Linus Ullmark",
+     "status": "Expected"
+    }
    },
    "jupiter": {
     "eventId": "POLY-1200178",
@@ -877,9 +1462,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.54,
-      "bid": 0.53,
-      "volume": 1886
+      "ask": 0.53,
+      "bid": 0.52,
+      "volume": 2130
      },
      "home": {
       "marketId": "POLY-5776279-1",
@@ -887,9 +1472,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.47,
-      "bid": 0.46,
-      "volume": 1886
+      "ask": 0.48,
+      "bid": 0.47,
+      "volume": 2130
      }
     },
     "extra": [
@@ -900,8 +1485,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.83,
-      "bid": 0.8,
+      "ask": 0.81,
+      "bid": 0.79,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -913,8 +1498,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.2,
-      "bid": 0.17,
+      "ask": 0.21,
+      "bid": 0.19,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -926,8 +1511,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.63,
-      "bid": 0.6,
+      "ask": 0.6,
+      "bid": 0.59,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -939,8 +1524,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.4,
-      "bid": 0.37,
+      "ask": 0.41,
+      "bid": 0.4,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -952,8 +1537,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.51,
-      "bid": 0.49,
+      "ask": 0.49,
+      "bid": 0.48,
       "volume": 53,
       "ou": "O",
       "line": 6.5
@@ -965,8 +1550,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.51,
-      "bid": 0.49,
+      "ask": 0.52,
+      "bid": 0.51,
       "volume": 53,
       "ou": "U",
       "line": 6.5
@@ -978,8 +1563,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.3,
-      "bid": 0.27,
+      "ask": 0.29,
+      "bid": 0.26,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -991,19 +1576,279 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.73,
-      "bid": 0.7,
+      "ask": 0.74,
+      "bid": 0.71,
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965738-0",
+      "label": "COL -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.32,
+      "bid": 0.3,
+      "volume": 5,
+      "team": "COL",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965738-1",
+      "label": "OTT +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.7,
+      "bid": 0.68,
+      "volume": 5,
+      "team": "OTT",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965739-0",
+      "label": "OTT -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "OTT",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965739-1",
+      "label": "COL +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.77,
+      "volume": 0,
+      "team": "COL",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965740-0",
+      "label": "OTT -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.19,
+      "bid": 0.16,
+      "volume": 0,
+      "team": "OTT",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965740-1",
+      "label": "COL +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.84,
+      "bid": 0.81,
+      "volume": 0,
+      "team": "COL",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965741-0",
+      "label": "OTT -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.28,
+      "bid": 0.26,
+      "volume": 0,
+      "team": "OTT",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965741-1",
+      "label": "COL +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.74,
+      "bid": 0.72,
+      "volume": 0,
+      "team": "COL",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965742-0",
+      "label": "COL -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.25,
+      "bid": 0.05,
+      "volume": 0,
+      "team": "COL",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965742-1",
+      "label": "OTT +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.75,
+      "volume": 0,
+      "team": "OTT",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965743-0",
+      "label": "COL -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.21,
+      "bid": 0.18,
+      "volume": 0,
+      "team": "COL",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965743-1",
+      "label": "OTT +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.82,
+      "bid": 0.79,
+      "volume": 0,
+      "team": "OTT",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965744-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.89,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965744-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.11,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965745-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.89,
+      "bid": 0.87,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965745-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.13,
+      "bid": 0.11,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965746-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.21,
+      "bid": 0.19,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965746-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.81,
+      "bid": 0.79,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965747-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965747-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1144,14 +1989,14 @@
        {
         "name": "Nick Cousins",
         "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-11T03:15Z"
+        "status": "Out",
+        "updatedAt": "2026-11-11T17:15Z"
        },
        {
         "name": "Linus Ullmark",
         "position": "G",
-        "status": "Out",
-        "updatedAt": "2026-11-10T16:41Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-11T14:56Z"
        },
        {
         "name": "Andre Burakovsky",
@@ -1291,32 +2136,30 @@
       ]
      }
     },
-    "problems": [
-     "OTT listed goalie is unavailable; starter needs confirmation"
-    ],
+    "problems": [],
     "skaterModelStatus": "unavailable",
     "skaterModelReason": "OTT insufficient verified roster depth for expected 12F/6D or 11F/7D lineup",
-    "blockReason": "OTT listed goalie is unavailable; starter needs confirmation; Skater adjustment unavailable: OTT insufficient verified roster depth for expected 12F/6D or 11F/7D lineup"
+    "blockReason": "Skater adjustment unavailable: OTT insufficient verified roster depth for expected 12F/6D or 11F/7D lineup"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.3395,
-    "lh": 3.1067,
-    "ra": 2.9622,
-    "rh": 2.7556,
+    "la": 3.1902,
+    "lh": 3.0848,
+    "ra": 2.8297,
+    "rh": 2.7362,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
      "away": {
       "name": "Mackenzie Blackwood",
       "id": 8478406,
-      "gq": -0.1011,
+      "gq": -0.0977,
       "mode": "named",
       "table": [
        {
         "id": 8478406,
         "name": "M. Blackwood",
-        "gq": -0.1011,
+        "gq": -0.0977,
         "share": 0.775,
         "shots": 2529
        },
@@ -1330,15 +2173,15 @@
       ]
      },
      "home": {
-      "name": null,
-      "id": null,
-      "gq": 0.0154,
-      "mode": "blend",
+      "name": "Linus Ullmark",
+      "id": 8476999,
+      "gq": -0.1081,
+      "mode": "named",
       "table": [
        {
         "id": 8481035,
         "name": "S. Ersson",
-        "gq": 0.0455,
+        "gq": 0.0444,
         "share": 0.55,
         "shots": 1797
        },
@@ -1376,17 +2219,17 @@
      "away": {
       "gf": 1.127,
       "ga": 0.96,
-      "xf": 1.05,
-      "xa": 0.947
+      "xf": 1.055,
+      "xa": 0.938
      },
      "home": {
       "gf": 1.013,
       "ga": 0.976,
-      "xf": 1.035,
-      "xa": 0.952
+      "xf": 1.033,
+      "xa": 0.954
      }
     },
-    "at": "2026-11-11T06:53:13Z"
+    "at": "2026-11-11T19:57:28Z"
    }
   },
   {
@@ -1400,7 +2243,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892697",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "MIN -162",
+    "mlAway": -162.0,
+    "mlHome": 136.0,
+    "total": 6.5,
+    "over": -105.0,
+    "under": -115.0,
+    "mlAwayOpen": -148.0,
+    "mlHomeOpen": 124.0
+   },
    "goalies": {
     "away": {
      "name": "Jesper Wallstedt",
@@ -1428,9 +2281,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.58,
-      "volume": 55
+      "ask": 0.6,
+      "bid": 0.59,
+      "volume": 873
      },
      "home": {
       "marketId": "POLY-5776274-1",
@@ -1438,9 +2291,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.42,
-      "bid": 0.41,
-      "volume": 55
+      "ask": 0.41,
+      "bid": 0.4,
+      "volume": 873
      }
     },
     "extra": [
@@ -1451,8 +2304,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.82,
-      "bid": 0.79,
+      "ask": 0.81,
+      "bid": 0.78,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -1464,8 +2317,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.21,
-      "bid": 0.18,
+      "ask": 0.22,
+      "bid": 0.19,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -1477,9 +2330,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.61,
-      "bid": 0.58,
-      "volume": 0,
+      "ask": 0.6,
+      "bid": 0.59,
+      "volume": 6,
       "ou": "O",
       "line": 5.5
      },
@@ -1490,9 +2343,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.42,
-      "bid": 0.39,
-      "volume": 0,
+      "ask": 0.41,
+      "bid": 0.4,
+      "volume": 6,
       "ou": "U",
       "line": 5.5
      },
@@ -1503,8 +2356,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.5,
-      "bid": 0.47,
+      "ask": 0.49,
+      "bid": 0.48,
       "volume": 9,
       "ou": "O",
       "line": 6.5
@@ -1516,8 +2369,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.53,
-      "bid": 0.5,
+      "ask": 0.52,
+      "bid": 0.51,
       "volume": 9,
       "ou": "U",
       "line": 6.5
@@ -1547,29 +2400,289 @@
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965748-0",
+      "label": "MIN -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.39,
+      "bid": 0.36,
+      "volume": 5,
+      "team": "MIN",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965748-1",
+      "label": "TOR +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.64,
+      "bid": 0.61,
+      "volume": 5,
+      "team": "TOR",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965749-0",
+      "label": "TOR -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.76,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "TOR",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965749-1",
+      "label": "MIN +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.24,
+      "volume": 0,
+      "team": "MIN",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965750-0",
+      "label": "TOR -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.14,
+      "bid": 0.11,
+      "volume": 0,
+      "team": "TOR",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965750-1",
+      "label": "MIN +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.89,
+      "bid": 0.86,
+      "volume": 0,
+      "team": "MIN",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965751-0",
+      "label": "TOR -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.22,
+      "bid": 0.2,
+      "volume": 0,
+      "team": "TOR",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965751-1",
+      "label": "MIN +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.78,
+      "volume": 0,
+      "team": "MIN",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965752-0",
+      "label": "MIN -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.22,
+      "bid": 0.05,
+      "volume": 0,
+      "team": "MIN",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965752-1",
+      "label": "TOR +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.78,
+      "volume": 0,
+      "team": "TOR",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965753-0",
+      "label": "MIN -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.22,
+      "volume": 5,
+      "team": "MIN",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965753-1",
+      "label": "TOR +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.78,
+      "bid": 0.77,
+      "volume": 5,
+      "team": "TOR",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965754-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.89,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965754-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.11,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965755-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.86,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965755-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.14,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965756-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.21,
+      "bid": 0.19,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965756-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.81,
+      "bid": 0.79,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965757-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965757-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
+        "name": "Brock Faber",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-11T15:34Z"
+       },
+       {
         "name": "Filip Gustavsson",
         "position": "G",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-05T18:51Z"
-       },
-       {
-        "name": "Brock Faber",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-05T18:09Z"
        }
       ],
       "roster": [
@@ -1698,10 +2811,16 @@
      "home": {
       "injuries": [
        {
+        "name": "Zack MacEwen",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-11T16:47Z"
+       },
+       {
         "name": "Morgan Rielly",
         "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-10T15:41Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-11T14:56Z"
        },
        {
         "name": "Colton Sissons",
@@ -1912,17 +3031,21 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.6874,
-      2.9194
+      3.7033,
+      2.9081
      ],
      "adjustedGoals": [
-      3.7017404117581063,
-      2.931721201975467
+      3.7159000749868083,
+      2.9315361040131798
      ],
      "featureDelta": [
       0.12846518695676612,
-      0.13684584618263557
+      0.2460168402149549
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -2101,6 +3224,11 @@
          "name": "Darren Raddysh"
         },
         {
+         "id": 8476853,
+         "position": "D",
+         "name": "Morgan Rielly"
+        },
+        {
          "id": 8475171,
          "position": "D",
          "name": "Oliver Ekman-Larsson"
@@ -2114,18 +3242,20 @@
          "id": 8479442,
          "position": "D",
          "name": "Troy Stecher"
-        },
-        {
-         "id": 8484287,
-         "position": "D",
-         "name": "Cole McWard"
         }
        ],
        "absences": [
         {
+         "name": "Zack MacEwen",
+         "id": 8479772,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.5449,
+         "productionAbovePositionMean": -0.1173
+        },
+        {
          "name": "Morgan Rielly",
          "id": 8476853,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.8929,
          "productionAbovePositionMean": 0.0813
         },
@@ -2193,35 +3323,42 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.2708,
-        2.5895
+        3.2848,
+        2.5795
+       ]
+      },
+      {
+       "label": "TOR questionable skaters OUT",
+       "rates": [
+        3.2976018933959397,
+        2.5903713040903362
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-11T06:53:13.355244+00:00",
+    "skaterCheckedAt": "2026-11-11T19:57:28.054553+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.7017,
-    "lh": 2.9317,
-    "ra": 3.2834,
-    "rh": 2.6004,
+    "la": 3.7159,
+    "lh": 2.9315,
+    "ra": 3.296,
+    "rh": 2.6003,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
      "away": {
       "name": "Jesper Wallstedt",
       "id": 8482661,
-      "gq": -0.1022,
+      "gq": -0.1039,
       "mode": "named",
       "table": [
        {
         "id": 8482661,
         "name": "J. Wallstedt",
-        "gq": -0.1022,
+        "gq": -0.1039,
         "share": 0.792,
         "shots": 1208
        },
@@ -2237,13 +3374,13 @@
      "home": {
       "name": "Sergei Bobrovsky",
       "id": 8475683,
-      "gq": -0.0741,
+      "gq": -0.0755,
       "mode": "named",
       "table": [
        {
         "id": 8475683,
         "name": "S. Bobrovsky",
-        "gq": -0.0741,
+        "gq": -0.0755,
         "share": 0.648,
         "shots": 3087
        },
@@ -2274,32 +3411,36 @@
      "away": {
       "gf": 1.031,
       "ga": 0.882,
-      "xf": 1.083,
-      "xa": 0.949
+      "xf": 1.085,
+      "xa": 0.951
      },
      "home": {
       "gf": 1.017,
       "ga": 1.083,
-      "xf": 0.967,
-      "xa": 1.051
+      "xf": 0.957,
+      "xa": 1.056
      }
     },
-    "at": "2026-11-11T06:53:13Z",
+    "at": "2026-11-11T19:57:28Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.6874,
-      2.9194
+      3.7033,
+      2.9081
      ],
      "adjustedGoals": [
-      3.7017404117581063,
-      2.931721201975467
+      3.7159000749868083,
+      2.9315361040131798
      ],
      "featureDelta": [
       0.12846518695676612,
-      0.13684584618263557
+      0.2460168402149549
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -2478,6 +3619,11 @@
          "name": "Darren Raddysh"
         },
         {
+         "id": 8476853,
+         "position": "D",
+         "name": "Morgan Rielly"
+        },
+        {
          "id": 8475171,
          "position": "D",
          "name": "Oliver Ekman-Larsson"
@@ -2491,18 +3637,20 @@
          "id": 8479442,
          "position": "D",
          "name": "Troy Stecher"
-        },
-        {
-         "id": 8484287,
-         "position": "D",
-         "name": "Cole McWard"
         }
        ],
        "absences": [
         {
+         "name": "Zack MacEwen",
+         "id": 8479772,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.5449,
+         "productionAbovePositionMean": -0.1173
+        },
+        {
          "name": "Morgan Rielly",
          "id": 8476853,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.8929,
          "productionAbovePositionMean": 0.0813
         },
@@ -2570,8 +3718,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.2708,
-        2.5895
+        3.2848,
+        2.5795
+       ]
+      },
+      {
+       "label": "TOR questionable skaters OUT",
+       "rates": [
+        3.2976018933959397,
+        2.5903713040903362
        ]
       }
      ]
@@ -2589,11 +3744,21 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892696",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "BOS -120",
+    "mlAway": 100.0,
+    "mlHome": -120.0,
+    "total": 6.5,
+    "over": 100.0,
+    "under": -120.0,
+    "mlAwayOpen": -105.0,
+    "mlHomeOpen": -115.0
+   },
    "goalies": {
     "away": {
      "name": "Jacob Fowler",
-     "status": "Expected"
+     "status": "Confirmed"
     },
     "home": {
      "name": "Jeremy Swayman",
@@ -2619,7 +3784,7 @@
       "periodType": null,
       "ask": 0.47,
       "bid": 0.46,
-      "volume": 80
+      "volume": 534
      },
      "home": {
       "marketId": "POLY-5776289-1",
@@ -2629,7 +3794,7 @@
       "periodType": null,
       "ask": 0.54,
       "bid": 0.53,
-      "volume": 80
+      "volume": 534
      }
     },
     "extra": [
@@ -2641,7 +3806,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.8,
-      "bid": 0.78,
+      "bid": 0.77,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -2653,7 +3818,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.22,
+      "ask": 0.23,
       "bid": 0.2,
       "volume": 0,
       "ou": "U",
@@ -2667,7 +3832,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.59,
-      "bid": 0.57,
+      "bid": 0.58,
       "volume": 5,
       "ou": "O",
       "line": 5.5
@@ -2679,7 +3844,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.43,
+      "ask": 0.42,
       "bid": 0.41,
       "volume": 5,
       "ou": "U",
@@ -2718,8 +3883,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.27,
-      "bid": 0.24,
+      "ask": 0.28,
+      "bid": 0.25,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -2731,34 +3896,294 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.76,
-      "bid": 0.73,
+      "ask": 0.75,
+      "bid": 0.72,
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965718-0",
+      "label": "BOS -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.32,
+      "bid": 0.3,
+      "volume": 0,
+      "team": "BOS",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965718-1",
+      "label": "MON +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.7,
+      "bid": 0.68,
+      "volume": 0,
+      "team": "MTL",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965719-0",
+      "label": "BOS -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.24,
+      "bid": 0.05,
+      "volume": 0,
+      "team": "BOS",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965719-1",
+      "label": "MON +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.76,
+      "volume": 0,
+      "team": "MTL",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965720-0",
+      "label": "BOS -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.21,
+      "bid": 0.19,
+      "volume": 0,
+      "team": "BOS",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965720-1",
+      "label": "MON +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.81,
+      "bid": 0.79,
+      "volume": 0,
+      "team": "MTL",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965721-0",
+      "label": "MON -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.26,
+      "bid": 0.24,
+      "volume": 0,
+      "team": "MTL",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965721-1",
+      "label": "BOS +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.76,
+      "bid": 0.74,
+      "volume": 0,
+      "team": "BOS",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965722-0",
+      "label": "MON -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.24,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "MTL",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965722-1",
+      "label": "BOS +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.76,
+      "volume": 0,
+      "team": "BOS",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965723-0",
+      "label": "MON -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.15,
+      "volume": 0,
+      "team": "MTL",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965723-1",
+      "label": "BOS +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.85,
+      "bid": 0.83,
+      "volume": 0,
+      "team": "BOS",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965724-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.94,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965724-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.06,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965725-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.88,
+      "bid": 0.86,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965725-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.14,
+      "bid": 0.12,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965726-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.2,
+      "bid": 0.17,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965726-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.83,
+      "bid": 0.8,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965727-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.06,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965727-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.94,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
+        "name": "Mike Matheson",
+        "position": "D",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-11T17:55Z"
+       },
+       {
         "name": "Ivan Demidov",
         "position": "RW",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-04T21:04Z"
-       },
-       {
-        "name": "Mike Matheson",
-        "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-10-31T15:31Z"
        },
        {
         "name": "Sam Montembeault",
@@ -3045,17 +4470,21 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.0526,
-      3.4321
+      3.0575,
+      3.436
      ],
      "adjustedGoals": [
-      3.0626909351774962,
-      3.4214222701988555
+      3.079879253576702,
+      3.423572450699635
      ],
      "featureDelta": [
-      0.08447132858608253,
+      0.19872281612223464,
       -0.07843121519298252
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -3121,6 +4550,11 @@
          "name": "Alexandre Texier"
         },
         {
+         "id": 8476875,
+         "position": "D",
+         "name": "Mike Matheson"
+        },
+        {
          "id": 8483457,
          "position": "D",
          "name": "Lane Hutson"
@@ -3144,27 +4578,22 @@
          "id": 8482964,
          "position": "D",
          "name": "Arber Xhekaj"
-        },
-        {
-         "id": 8483686,
-         "position": "D",
-         "name": "Adam Engstrom"
         }
        ],
        "absences": [
+        {
+         "name": "Mike Matheson",
+         "id": 8476875,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.5649,
+         "productionAbovePositionMean": 0.0479
+        },
         {
          "name": "Ivan Demidov",
          "id": 8484984,
          "status": "Injured Reserve",
          "baselineParticipation": 0.3533,
          "productionAbovePositionMean": 0.1054
-        },
-        {
-         "name": "Mike Matheson",
-         "id": 8476875,
-         "status": "Out",
-         "baselineParticipation": 0.5649,
-         "productionAbovePositionMean": 0.0479
         },
         {
          "name": "Bryce Pickford",
@@ -3291,35 +4720,42 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7077,
-        3.0443
+        2.712,
+        3.0478
+       ]
+      },
+      {
+       "label": "MTL questionable skaters OUT",
+       "rates": [
+        2.7209675270027867,
+        3.0382500913136847
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-11T06:53:13.355244+00:00",
+    "skaterCheckedAt": "2026-11-11T19:57:28.054553+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.0627,
-    "lh": 3.4214,
-    "ra": 2.7166,
-    "rh": 3.0348,
+    "la": 3.0799,
+    "lh": 3.4236,
+    "ra": 2.7319,
+    "rh": 3.0367,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
      "away": {
       "name": "Jacob Fowler",
       "id": 8484170,
-      "gq": -0.151,
+      "gq": -0.153,
       "mode": "named",
       "table": [
        {
         "id": 8484170,
         "name": "J. Fowler",
-        "gq": -0.151,
+        "gq": -0.153,
         "share": 0.705,
         "shots": 633
        },
@@ -3372,8 +4808,8 @@
      "away": {
       "gf": 1.04,
       "ga": 0.976,
-      "xf": 1.037,
-      "xa": 1.041
+      "xf": 1.04,
+      "xa": 1.044
      },
      "home": {
       "gf": 1.08,
@@ -3382,22 +4818,26 @@
       "xa": 1.001
      }
     },
-    "at": "2026-11-11T06:53:13Z",
+    "at": "2026-11-11T19:57:28Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.0526,
-      3.4321
+      3.0575,
+      3.436
      ],
      "adjustedGoals": [
-      3.0626909351774962,
-      3.4214222701988555
+      3.079879253576702,
+      3.423572450699635
      ],
      "featureDelta": [
-      0.08447132858608253,
+      0.19872281612223464,
       -0.07843121519298252
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -3463,6 +4903,11 @@
          "name": "Alexandre Texier"
         },
         {
+         "id": 8476875,
+         "position": "D",
+         "name": "Mike Matheson"
+        },
+        {
          "id": 8483457,
          "position": "D",
          "name": "Lane Hutson"
@@ -3486,27 +4931,22 @@
          "id": 8482964,
          "position": "D",
          "name": "Arber Xhekaj"
-        },
-        {
-         "id": 8483686,
-         "position": "D",
-         "name": "Adam Engstrom"
         }
        ],
        "absences": [
+        {
+         "name": "Mike Matheson",
+         "id": 8476875,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.5649,
+         "productionAbovePositionMean": 0.0479
+        },
         {
          "name": "Ivan Demidov",
          "id": 8484984,
          "status": "Injured Reserve",
          "baselineParticipation": 0.3533,
          "productionAbovePositionMean": 0.1054
-        },
-        {
-         "name": "Mike Matheson",
-         "id": 8476875,
-         "status": "Out",
-         "baselineParticipation": 0.5649,
-         "productionAbovePositionMean": 0.0479
         },
         {
          "name": "Bryce Pickford",
@@ -3633,8 +5073,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7077,
-        3.0443
+        2.712,
+        3.0478
+       ]
+      },
+      {
+       "label": "MTL questionable skaters OUT",
+       "rates": [
+        2.7209675270027867,
+        3.0382500913136847
        ]
       }
      ]
@@ -3652,7 +5099,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892701",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "TB -118",
+    "mlAway": -118.0,
+    "mlHome": -102.0,
+    "total": 6.5,
+    "over": 110.0,
+    "under": -130.0,
+    "mlAwayOpen": -118.0,
+    "mlHomeOpen": -102.0
+   },
    "goalies": {
     "away": {
      "name": "Dennis Hildeby",
@@ -3680,9 +5137,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.56,
-      "bid": 0.55,
-      "volume": 139
+      "ask": 0.54,
+      "bid": 0.53,
+      "volume": 362
      },
      "home": {
       "marketId": "POLY-5776264-1",
@@ -3690,9 +5147,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.45,
-      "bid": 0.44,
-      "volume": 139
+      "ask": 0.47,
+      "bid": 0.46,
+      "volume": 362
      }
     },
     "extra": [
@@ -3729,8 +5186,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.58,
-      "bid": 0.56,
+      "ask": 0.59,
+      "bid": 0.57,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -3742,8 +5199,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.44,
-      "bid": 0.42,
+      "ask": 0.43,
+      "bid": 0.41,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -3755,8 +5212,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.48,
-      "bid": 0.45,
+      "ask": 0.47,
+      "bid": 0.44,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -3768,8 +5225,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.55,
-      "bid": 0.52,
+      "ask": 0.56,
+      "bid": 0.53,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -3781,9 +5238,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.26,
-      "bid": 0.23,
-      "volume": 0,
+      "ask": 0.27,
+      "bid": 0.24,
+      "volume": 60,
       "ou": "O",
       "line": 7.5
      },
@@ -3794,19 +5251,279 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.74,
-      "volume": 0,
+      "ask": 0.76,
+      "bid": 0.73,
+      "volume": 60,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965768-0",
+      "label": "TB -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.33,
+      "bid": 0.3,
+      "volume": 0,
+      "team": "TBL",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965768-1",
+      "label": "CBJ +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.7,
+      "bid": 0.67,
+      "volume": 0,
+      "team": "CBJ",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965769-0",
+      "label": "CBJ -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.22,
+      "bid": 0.01,
+      "volume": 0,
+      "team": "CBJ",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965769-1",
+      "label": "TB +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.99,
+      "bid": 0.78,
+      "volume": 0,
+      "team": "TBL",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965770-0",
+      "label": "CBJ -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.18,
+      "bid": 0.15,
+      "volume": 0,
+      "team": "CBJ",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965770-1",
+      "label": "TB +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.85,
+      "bid": 0.82,
+      "volume": 0,
+      "team": "TBL",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965771-0",
+      "label": "CBJ -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.26,
+      "volume": 0,
+      "team": "CBJ",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965771-1",
+      "label": "TB +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.74,
+      "bid": 0.73,
+      "volume": 0,
+      "team": "TBL",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965772-0",
+      "label": "TB -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.02,
+      "volume": 0,
+      "team": "TBL",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965772-1",
+      "label": "CBJ +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.98,
+      "bid": 0.83,
+      "volume": 0,
+      "team": "CBJ",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965773-0",
+      "label": "TB -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.2,
+      "bid": 0.19,
+      "volume": 0,
+      "team": "TBL",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965773-1",
+      "label": "CBJ +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.81,
+      "bid": 0.8,
+      "volume": 0,
+      "team": "CBJ",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965774-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.98,
+      "bid": 0.941,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965774-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.059,
+      "bid": 0.02,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965775-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.89,
+      "bid": 0.85,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965775-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.11,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965776-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.2,
+      "bid": 0.17,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965776-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.83,
+      "bid": 0.8,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965777-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.09,
+      "bid": 0.05,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965777-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.91,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4067,17 +5784,21 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.1213,
-      3.0235
+      3.1281,
+      3.0024
      ],
      "adjustedGoals": [
-      3.086526374493145,
-      3.0466272209716703
+      3.093250617387629,
+      3.025365823795384
      ],
      "featureDelta": [
       -0.29768793485716305,
       0.18022078693130666
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -4283,22 +6004,22 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7686,
-        2.6818
+        2.7747,
+        2.6631
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-11T06:53:13.355244+00:00",
+    "skaterCheckedAt": "2026-11-11T19:57:28.054553+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.0865,
-    "lh": 3.0466,
-    "ra": 2.7377,
-    "rh": 2.7024,
+    "la": 3.0933,
+    "lh": 3.0254,
+    "ra": 2.7437,
+    "rh": 2.6835,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
@@ -4333,7 +6054,7 @@
        {
         "id": 8475660,
         "name": "C. Talbot",
-        "gq": -0.0729,
+        "gq": -0.0739,
         "share": 0.554,
         "shots": 2403
        },
@@ -4370,26 +6091,30 @@
      "home": {
       "gf": 0.916,
       "ga": 0.998,
-      "xf": 0.975,
-      "xa": 1.019
+      "xf": 0.962,
+      "xa": 1.022
      }
     },
-    "at": "2026-11-11T06:53:13Z",
+    "at": "2026-11-11T19:57:28Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.1213,
-      3.0235
+      3.1281,
+      3.0024
      ],
      "adjustedGoals": [
-      3.086526374493145,
-      3.0466272209716703
+      3.093250617387629,
+      3.025365823795384
      ],
      "featureDelta": [
       -0.29768793485716305,
       0.18022078693130666
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -4595,8 +6320,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7686,
-        2.6818
+        2.7747,
+        2.6631
        ]
       }
      ]
@@ -4614,7 +6339,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892700",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "NJ -155",
+    "mlAway": 130.0,
+    "mlHome": -155.0,
+    "total": 6.5,
+    "over": 114.0,
+    "under": -135.0,
+    "mlAwayOpen": 130.0,
+    "mlHomeOpen": -155.0
+   },
    "goalies": {
     "away": {
      "name": "Logan Thompson",
@@ -4642,9 +6377,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.43,
-      "bid": 0.42,
-      "volume": 5
+      "ask": 0.42,
+      "bid": 0.41,
+      "volume": 3090
      },
      "home": {
       "marketId": "POLY-5776284-1",
@@ -4652,9 +6387,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.58,
-      "bid": 0.57,
-      "volume": 5
+      "ask": 0.59,
+      "bid": 0.58,
+      "volume": 3090
      }
     },
     "extra": [
@@ -4691,9 +6426,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.57,
-      "volume": 0,
+      "ask": 0.56,
+      "bid": 0.55,
+      "volume": 12,
       "ou": "O",
       "line": 5.5
      },
@@ -4704,9 +6439,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.43,
-      "bid": 0.41,
-      "volume": 0,
+      "ask": 0.45,
+      "bid": 0.44,
+      "volume": 12,
       "ou": "U",
       "line": 5.5
      },
@@ -4717,9 +6452,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.49,
+      "ask": 0.47,
       "bid": 0.46,
-      "volume": 38,
+      "volume": 42,
       "ou": "O",
       "line": 6.5
      },
@@ -4731,8 +6466,8 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.54,
-      "bid": 0.51,
-      "volume": 38,
+      "bid": 0.53,
+      "volume": 42,
       "ou": "U",
       "line": 6.5
      },
@@ -4744,8 +6479,8 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.27,
-      "bid": 0.25,
-      "volume": 15,
+      "bid": 0.24,
+      "volume": 310,
       "ou": "O",
       "line": 7.5
      },
@@ -4756,19 +6491,279 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.75,
+      "ask": 0.76,
       "bid": 0.73,
-      "volume": 15,
+      "volume": 310,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965728-0",
+      "label": "NJ -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.35,
+      "bid": 0.34,
+      "volume": 0,
+      "team": "NJD",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965728-1",
+      "label": "WSH +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.66,
+      "bid": 0.65,
+      "volume": 0,
+      "team": "WSH",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965729-0",
+      "label": "NJ -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.18,
+      "bid": 0.04,
+      "volume": 0,
+      "team": "NJD",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965729-1",
+      "label": "WSH +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.82,
+      "volume": 0,
+      "team": "WSH",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965730-0",
+      "label": "NJ -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.24,
+      "bid": 0.22,
+      "volume": 0,
+      "team": "NJD",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965730-1",
+      "label": "WSH +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.78,
+      "bid": 0.76,
+      "volume": 0,
+      "team": "WSH",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965731-0",
+      "label": "WSH -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.24,
+      "bid": 0.21,
+      "volume": 0,
+      "team": "WSH",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965731-1",
+      "label": "NJ +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.76,
+      "volume": 0,
+      "team": "NJD",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965732-0",
+      "label": "WSH -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.67,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "WSH",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965732-1",
+      "label": "NJ +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.33,
+      "volume": 0,
+      "team": "NJD",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965733-0",
+      "label": "WSH -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.12,
+      "volume": 0,
+      "team": "WSH",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965733-1",
+      "label": "NJ +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.88,
+      "bid": 0.85,
+      "volume": 0,
+      "team": "NJD",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965734-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.91,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965734-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.09,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965735-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.88,
+      "bid": 0.85,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965735-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.12,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965736-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.18,
+      "bid": 0.16,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965736-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.84,
+      "bid": 0.82,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965737-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.05,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965737-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5060,17 +7055,21 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      2.7723,
-      3.5288
+      2.7897,
+      3.5271
      ],
      "adjustedGoals": [
-      2.812781479830939,
-      3.515663950725542
+      2.830435556860502,
+      3.5139702790195133
      ],
      "featureDelta": [
       0.4078576724638313,
       -0.05488590872050775
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -5313,42 +7312,42 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.459,
-        3.13
+        2.4745,
+        3.1285
        ]
       },
       {
        "label": "NJD questionable skaters OUT",
        "rates": [
-        2.4945996444568705,
-        3.1217152611584504
+        2.510256692328151,
+        3.120211374300604
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-11T06:53:13.355244+00:00",
+    "skaterCheckedAt": "2026-11-11T19:57:28.054553+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.8128,
-    "lh": 3.5157,
-    "ra": 2.4949,
-    "rh": 3.1184,
+    "la": 2.8304,
+    "lh": 3.514,
+    "ra": 2.5106,
+    "rh": 3.1169,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
      "away": {
       "name": "Logan Thompson",
       "id": 8480313,
-      "gq": -0.1561,
+      "gq": -0.1556,
       "mode": "named",
       "table": [
        {
         "id": 8480313,
         "name": "L. Thompson",
-        "gq": -0.1561,
+        "gq": -0.1556,
         "share": 0.798,
         "shots": 2820
        },
@@ -5370,7 +7369,7 @@
        {
         "id": 8474596,
         "name": "J. Allen",
-        "gq": -0.0795,
+        "gq": -0.0817,
         "share": 0.481,
         "shots": 2272
        },
@@ -5384,7 +7383,7 @@
        {
         "id": 8482076,
         "name": "N. Daws",
-        "gq": -0.037,
+        "gq": -0.0376,
         "share": 0.089,
         "shots": 568
        }
@@ -5408,32 +7407,36 @@
      "away": {
       "gf": 1.05,
       "ga": 1.019,
-      "xf": 1.029,
-      "xa": 1.033
+      "xf": 1.031,
+      "xa": 1.032
      },
      "home": {
       "gf": 1.045,
       "ga": 0.973,
-      "xf": 1.047,
-      "xa": 0.918
+      "xf": 1.048,
+      "xa": 0.924
      }
     },
-    "at": "2026-11-11T06:53:13Z",
+    "at": "2026-11-11T19:57:28Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      2.7723,
-      3.5288
+      2.7897,
+      3.5271
      ],
      "adjustedGoals": [
-      2.812781479830939,
-      3.515663950725542
+      2.830435556860502,
+      3.5139702790195133
      ],
      "featureDelta": [
       0.4078576724638313,
       -0.05488590872050775
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -5676,15 +7679,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.459,
-        3.13
+        2.4745,
+        3.1285
        ]
       },
       {
        "label": "NJD questionable skaters OUT",
        "rates": [
-        2.4945996444568705,
-        3.1217152611584504
+        2.510256692328151,
+        3.120211374300604
        ]
       }
      ]
@@ -5702,7 +7705,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892699",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "FLA -170",
+    "mlAway": 142.0,
+    "mlHome": -170.0,
+    "total": 5.5,
+    "over": -135.0,
+    "under": 114.0,
+    "mlAwayOpen": 142.0,
+    "mlHomeOpen": -170.0
+   },
    "goalies": {
     "away": {
      "name": "John Gibson",
@@ -5732,7 +7745,7 @@
       "periodType": null,
       "ask": 0.4,
       "bid": 0.39,
-      "volume": 10
+      "volume": 541
      },
      "home": {
       "marketId": "POLY-5776269-1",
@@ -5742,7 +7755,7 @@
       "periodType": null,
       "ask": 0.61,
       "bid": 0.6,
-      "volume": 10
+      "volume": 541
      }
     },
     "extra": [
@@ -5753,7 +7766,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.78,
+      "ask": 0.77,
       "bid": 0.75,
       "volume": 0,
       "ou": "O",
@@ -5767,7 +7780,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.25,
-      "bid": 0.22,
+      "bid": 0.23,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -5780,7 +7793,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.56,
-      "bid": 0.53,
+      "bid": 0.54,
       "volume": 38,
       "ou": "O",
       "line": 5.5
@@ -5792,7 +7805,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.47,
+      "ask": 0.46,
       "bid": 0.44,
       "volume": 38,
       "ou": "U",
@@ -5806,7 +7819,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.45,
-      "bid": 0.42,
+      "bid": 0.43,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -5818,7 +7831,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.58,
+      "ask": 0.57,
       "bid": 0.55,
       "volume": 0,
       "ou": "U",
@@ -5831,7 +7844,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.24,
+      "ask": 0.25,
       "bid": 0.22,
       "volume": 0,
       "ou": "O",
@@ -5845,18 +7858,278 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.78,
-      "bid": 0.76,
+      "bid": 0.75,
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965758-0",
+      "label": "FLA -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.39,
+      "bid": 0.37,
+      "volume": 0,
+      "team": "FLA",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965758-1",
+      "label": "DET +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.63,
+      "bid": 0.61,
+      "volume": 0,
+      "team": "DET",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965759-0",
+      "label": "FLA -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.24,
+      "bid": 0.04,
+      "volume": 0,
+      "team": "FLA",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965759-1",
+      "label": "DET +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.76,
+      "volume": 0,
+      "team": "DET",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965760-0",
+      "label": "FLA -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.25,
+      "volume": 0,
+      "team": "FLA",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965760-1",
+      "label": "DET +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.75,
+      "bid": 0.73,
+      "volume": 0,
+      "team": "DET",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965761-0",
+      "label": "DET -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.2,
+      "bid": 0.18,
+      "volume": 0,
+      "team": "DET",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965761-1",
+      "label": "FLA +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.82,
+      "bid": 0.8,
+      "volume": 0,
+      "team": "FLA",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965762-0",
+      "label": "DET -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "DET",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965762-1",
+      "label": "FLA +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.23,
+      "volume": 0,
+      "team": "FLA",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965763-0",
+      "label": "DET -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.12,
+      "bid": 0.1,
+      "volume": 0,
+      "team": "DET",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965763-1",
+      "label": "FLA +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.9,
+      "bid": 0.88,
+      "volume": 0,
+      "team": "FLA",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965764-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.94,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965764-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.06,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965765-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.87,
+      "bid": 0.85,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965765-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.13,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965766-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.15,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965766-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.85,
+      "bid": 0.83,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965767-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.04,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965767-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6164,17 +8437,21 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.003,
-      3.3281
+      2.97,
+      3.3341
      ],
      "adjustedGoals": [
-      2.9777094282785184,
-      3.3519429394525075
+      2.9449873466490843,
+      3.357985924229622
      ],
      "featureDelta": [
       -0.2196025976777655,
       0.17636759195916157
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -6423,35 +8700,35 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.6636,
-        2.9521
+        2.6344,
+        2.9574
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-11T06:53:13.355244+00:00",
+    "skaterCheckedAt": "2026-11-11T19:57:28.054553+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.9777,
-    "lh": 3.3519,
-    "ra": 2.6412,
-    "rh": 2.9732,
+    "la": 2.945,
+    "lh": 3.358,
+    "ra": 2.6122,
+    "rh": 2.9785,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
      "away": {
       "name": "John Gibson",
       "id": 8476434,
-      "gq": -0.0657,
+      "gq": -0.0658,
       "mode": "named",
       "table": [
        {
         "id": 8476434,
         "name": "J. Gibson",
-        "gq": -0.0657,
+        "gq": -0.0658,
         "share": 0.557,
         "shots": 2926
        },
@@ -6474,13 +8751,13 @@
      "home": {
       "name": "Jacob Markstrom",
       "id": 8474593,
-      "gq": -0.0494,
+      "gq": -0.0453,
       "mode": "named",
       "table": [
        {
         "id": 8474593,
         "name": "J. Markstrom",
-        "gq": -0.0494,
+        "gq": -0.0453,
         "share": 0.556,
         "shots": 2751
        },
@@ -6518,32 +8795,36 @@
      "away": {
       "gf": 0.925,
       "ga": 0.997,
-      "xf": 1.0,
+      "xf": 0.993,
       "xa": 1.001
      },
      "home": {
       "gf": 1.01,
       "ga": 0.997,
-      "xf": 1.038,
-      "xa": 1.004
+      "xf": 1.041,
+      "xa": 0.993
      }
     },
-    "at": "2026-11-11T06:53:13Z",
+    "at": "2026-11-11T19:57:28Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.003,
-      3.3281
+      2.97,
+      3.3341
      ],
      "adjustedGoals": [
-      2.9777094282785184,
-      3.3519429394525075
+      2.9449873466490843,
+      3.357985924229622
      ],
      "featureDelta": [
       -0.2196025976777655,
       0.17636759195916157
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -6792,8 +9073,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.6636,
-        2.9521
+        2.6344,
+        2.9574
        ]
       }
      ]
@@ -6811,7 +9092,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892702",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "BUF -148",
+    "mlAway": -148.0,
+    "mlHome": 124.0,
+    "total": 6.5,
+    "over": -102.0,
+    "under": -118.0,
+    "mlAwayOpen": -135.0,
+    "mlHomeOpen": 114.0
+   },
    "goalies": {
     "away": {
      "name": "Colten Ellis",
@@ -6839,9 +9130,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.58,
-      "volume": 110
+      "ask": 0.6,
+      "bid": 0.59,
+      "volume": 163
      },
      "home": {
       "marketId": "POLY-5776299-1",
@@ -6849,9 +9140,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.42,
-      "bid": 0.41,
-      "volume": 110
+      "ask": 0.41,
+      "bid": 0.4,
+      "volume": 163
      }
     },
     "extra": [
@@ -6889,7 +9180,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.63,
-      "bid": 0.6,
+      "bid": 0.61,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -6901,7 +9192,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.4,
+      "ask": 0.39,
       "bid": 0.37,
       "volume": 0,
       "ou": "U",
@@ -6958,14 +9249,274 @@
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965698-0",
+      "label": "BUF -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.38,
+      "bid": 0.34,
+      "volume": 5,
+      "team": "BUF",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965698-1",
+      "label": "CHI +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.66,
+      "bid": 0.62,
+      "volume": 5,
+      "team": "CHI",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965699-0",
+      "label": "CHI -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.57,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "CHI",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965699-1",
+      "label": "BUF +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.43,
+      "volume": 0,
+      "team": "BUF",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965700-0",
+      "label": "CHI -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.12,
+      "volume": 0,
+      "team": "CHI",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965700-1",
+      "label": "BUF +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.88,
+      "bid": 0.85,
+      "volume": 0,
+      "team": "BUF",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965701-0",
+      "label": "CHI -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.2,
+      "volume": 0,
+      "team": "CHI",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965701-1",
+      "label": "BUF +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.77,
+      "volume": 0,
+      "team": "BUF",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965702-0",
+      "label": "BUF -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.25,
+      "bid": 0.05,
+      "volume": 0,
+      "team": "BUF",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965702-1",
+      "label": "CHI +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.75,
+      "volume": 0,
+      "team": "CHI",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965703-0",
+      "label": "BUF -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.25,
+      "bid": 0.22,
+      "volume": 0,
+      "team": "BUF",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965703-1",
+      "label": "CHI +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.78,
+      "bid": 0.75,
+      "volume": 0,
+      "team": "CHI",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965704-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.83,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965704-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965705-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.86,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965705-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.14,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965706-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.19,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965706-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.81,
+      "bid": 0.77,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965707-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965707-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7272,17 +9823,21 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.3133,
-      3.0674
+      3.3139,
+      3.0679
      ],
      "adjustedGoals": [
-      3.3274935426883383,
-      3.0592483254243805
+      3.328096112973436,
+      3.059746996664751
      ],
      "featureDelta": [
       0.1144950452374866,
       -0.06159709125966206
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -7517,22 +10072,22 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9389,
-        2.7208
+        2.9394,
+        2.7212
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-11T06:53:13.355244+00:00",
+    "skaterCheckedAt": "2026-11-11T19:57:28.054553+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.3275,
-    "lh": 3.0592,
-    "ra": 2.9515,
-    "rh": 2.7136,
+    "la": 3.3281,
+    "lh": 3.0597,
+    "ra": 2.952,
+    "rh": 2.714,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
@@ -7608,22 +10163,26 @@
       "xa": 1.077
      }
     },
-    "at": "2026-11-11T06:53:13Z",
+    "at": "2026-11-11T19:57:28Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      3.3133,
-      3.0674
+      3.3139,
+      3.0679
      ],
      "adjustedGoals": [
-      3.3274935426883383,
-      3.0592483254243805
+      3.328096112973436,
+      3.059746996664751
      ],
      "featureDelta": [
       0.1144950452374866,
       -0.06159709125966206
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -7858,8 +10417,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9389,
-        2.7208
+        2.9394,
+        2.7212
        ]
       }
      ]
@@ -7877,7 +10436,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892703",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "DAL -192",
+    "mlAway": 160.0,
+    "mlHome": -192.0,
+    "total": 5.5,
+    "over": -125.0,
+    "under": 105.0,
+    "mlAwayOpen": 170.0,
+    "mlHomeOpen": -205.0
+   },
    "goalies": {
     "away": {
      "name": "Stuart Skinner",
@@ -7907,7 +10476,7 @@
       "periodType": null,
       "ask": 0.38,
       "bid": 0.37,
-      "volume": 2659
+      "volume": 3583
      },
      "home": {
       "marketId": "POLY-5776294-1",
@@ -7917,7 +10486,7 @@
       "periodType": null,
       "ask": 0.63,
       "bid": 0.62,
-      "volume": 2659
+      "volume": 3583
      }
     },
     "extra": [
@@ -7928,8 +10497,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.74,
+      "ask": 0.76,
+      "bid": 0.73,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -7941,8 +10510,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.26,
-      "bid": 0.23,
+      "ask": 0.27,
+      "bid": 0.24,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -7954,8 +10523,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.53,
-      "bid": 0.5,
+      "ask": 0.54,
+      "bid": 0.53,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -7967,8 +10536,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.5,
-      "bid": 0.47,
+      "ask": 0.47,
+      "bid": 0.46,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -7980,7 +10549,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.43,
+      "ask": 0.42,
       "bid": 0.41,
       "volume": 0,
       "ou": "O",
@@ -7994,7 +10563,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.59,
-      "bid": 0.57,
+      "bid": 0.58,
       "volume": 0,
       "ou": "U",
       "line": 6.5
@@ -8007,7 +10576,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.23,
-      "bid": 0.2,
+      "bid": 0.21,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -8019,19 +10588,279 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.8,
+      "ask": 0.79,
       "bid": 0.77,
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965708-0",
+      "label": "DAL -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.4,
+      "bid": 0.38,
+      "volume": 0,
+      "team": "DAL",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965708-1",
+      "label": "WPG +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.62,
+      "bid": 0.6,
+      "volume": 0,
+      "team": "WPG",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965709-0",
+      "label": "DAL -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.19,
+      "bid": 0.04,
+      "volume": 0,
+      "team": "DAL",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965709-1",
+      "label": "WPG +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.81,
+      "volume": 0,
+      "team": "WPG",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965710-0",
+      "label": "DAL -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.28,
+      "bid": 0.26,
+      "volume": 0,
+      "team": "DAL",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965710-1",
+      "label": "WPG +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.74,
+      "bid": 0.72,
+      "volume": 0,
+      "team": "WPG",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965711-0",
+      "label": "WPG -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.19,
+      "bid": 0.16,
+      "volume": 0,
+      "team": "WPG",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965711-1",
+      "label": "DAL +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.84,
+      "bid": 0.81,
+      "volume": 0,
+      "team": "DAL",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965712-0",
+      "label": "WPG -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.54,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "WPG",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965712-1",
+      "label": "DAL +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.46,
+      "volume": 0,
+      "team": "DAL",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965713-0",
+      "label": "WPG -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.12,
+      "bid": 0.08,
+      "volume": 0,
+      "team": "WPG",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6965713-1",
+      "label": "DAL +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.92,
+      "bid": 0.88,
+      "volume": 0,
+      "team": "DAL",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965714-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.94,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965714-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.06,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965715-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.85,
+      "bid": 0.83,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965715-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.15,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965716-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.16,
+      "bid": 0.14,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965716-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.84,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965717-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.04,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6965717-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8183,8 +11012,8 @@
        {
         "name": "Miro Heiskanen",
         "position": "D",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-08T13:39Z"
+        "status": "Out",
+        "updatedAt": "2026-11-11T18:26Z"
        },
        {
         "name": "Kyle Capobianco",
@@ -8197,12 +11026,6 @@
         "position": "C",
         "status": "Injured Reserve",
         "updatedAt": "2026-10-24T18:32Z"
-       },
-       {
-        "name": "Matt Duchene",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-12T16:46Z"
        },
        {
         "name": "Luke Krys",
@@ -8347,10 +11170,10 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.5595,
-    "lh": 3.3228,
-    "ra": 2.2703,
-    "rh": 2.9474,
+    "la": 2.5681,
+    "lh": 3.3252,
+    "ra": 2.2779,
+    "rh": 2.9494,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
@@ -8370,7 +11193,7 @@
        {
         "id": 8482076,
         "name": "N. Daws",
-        "gq": -0.037,
+        "gq": -0.0376,
         "share": 0.222,
         "shots": 568
        },
@@ -8423,8 +11246,8 @@
      "away": {
       "gf": 0.951,
       "ga": 1.048,
-      "xf": 0.989,
-      "xa": 1.014
+      "xf": 0.995,
+      "xa": 1.015
      },
      "home": {
       "gf": 0.987,
@@ -8433,7 +11256,7 @@
       "xa": 0.945
      }
     },
-    "at": "2026-11-11T06:53:13Z"
+    "at": "2026-11-11T19:57:28Z"
    }
   },
   {
@@ -8447,7 +11270,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892704",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "UTAH -135",
+    "mlAway": 114.0,
+    "mlHome": -135.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": 114.0,
+    "mlHomeOpen": -135.0
+   },
    "goalies": {
     "away": {
      "name": "Joel Hofer",
@@ -8477,7 +11310,7 @@
       "periodType": null,
       "ask": 0.45,
       "bid": 0.44,
-      "volume": 16
+      "volume": 104
      },
      "home": {
       "marketId": "POLY-5776304-1",
@@ -8487,7 +11320,7 @@
       "periodType": null,
       "ask": 0.56,
       "bid": 0.55,
-      "volume": 16
+      "volume": 104
      }
     },
     "extra": [
@@ -8525,7 +11358,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.6,
-      "bid": 0.57,
+      "bid": 0.58,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -8537,7 +11370,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.43,
+      "ask": 0.42,
       "bid": 0.4,
       "volume": 0,
       "ou": "U",
@@ -8551,7 +11384,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.49,
-      "bid": 0.46,
+      "bid": 0.47,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -8563,7 +11396,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.54,
+      "ask": 0.53,
       "bid": 0.51,
       "volume": 0,
       "ou": "U",
@@ -8577,7 +11410,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.28,
-      "bid": 0.25,
+      "bid": 0.26,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -8589,19 +11422,279 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.75,
+      "ask": 0.74,
       "bid": 0.72,
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967105-0",
+      "label": "Utah -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.33,
+      "bid": 0.32,
+      "volume": 109,
+      "team": "UTA",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967105-1",
+      "label": "STL +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.68,
+      "bid": 0.67,
+      "volume": 109,
+      "team": "STL",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967106-0",
+      "label": "Utah -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.05,
+      "volume": 0,
+      "team": "UTA",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967106-1",
+      "label": "STL +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.73,
+      "volume": 0,
+      "team": "STL",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967107-0",
+      "label": "Utah -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.22,
+      "bid": 0.21,
+      "volume": 0,
+      "team": "UTA",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967107-1",
+      "label": "STL +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.78,
+      "volume": 0,
+      "team": "STL",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967108-0",
+      "label": "STL -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.21,
+      "volume": 0,
+      "team": "STL",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967108-1",
+      "label": "Utah +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.77,
+      "volume": 0,
+      "team": "UTA",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967109-0",
+      "label": "STL -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "STL",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967109-1",
+      "label": "Utah +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.73,
+      "volume": 0,
+      "team": "UTA",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967110-0",
+      "label": "STL -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.16,
+      "bid": 0.13,
+      "volume": 0,
+      "team": "STL",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967110-1",
+      "label": "Utah +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.87,
+      "bid": 0.84,
+      "volume": 0,
+      "team": "UTA",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967111-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.94,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967111-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.06,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967112-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.85,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967112-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.15,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967113-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.21,
+      "bid": 0.18,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967113-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.82,
+      "bid": 0.79,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967114-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.1,
+      "bid": 0.07,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967114-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.9,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8907,28 +12000,28 @@
     },
     "problems": [],
     "skaterModelStatus": "unavailable",
-    "skaterModelReason": "UTA expected skater lacks NHL performance history",
-    "blockReason": "Skater adjustment unavailable: UTA expected skater lacks NHL performance history"
+    "skaterModelReason": "UTA insufficient verified roster depth for expected 12F/6D or 11F/7D lineup",
+    "blockReason": "Skater adjustment unavailable: UTA insufficient verified roster depth for expected 12F/6D or 11F/7D lineup"
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.1402,
-    "lh": 3.2278,
-    "ra": 2.7853,
-    "rh": 2.8631,
+    "la": 3.1414,
+    "lh": 3.2161,
+    "ra": 2.7864,
+    "rh": 2.8527,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
      "away": {
       "name": "Joel Hofer",
       "id": 8480981,
-      "gq": -0.1244,
+      "gq": -0.1215,
       "mode": "named",
       "table": [
        {
         "id": 8480981,
         "name": "J. Hofer",
-        "gq": -0.1244,
+        "gq": -0.1215,
         "share": 0.761,
         "shots": 1965
        },
@@ -8981,17 +12074,17 @@
      "away": {
       "gf": 0.978,
       "ga": 0.981,
-      "xf": 0.968,
-      "xa": 1.003
+      "xf": 0.969,
+      "xa": 0.997
      },
      "home": {
       "gf": 1.054,
       "ga": 1.055,
-      "xf": 1.051,
-      "xa": 0.958
+      "xf": 1.052,
+      "xa": 0.959
      }
     },
-    "at": "2026-11-11T06:53:13Z"
+    "at": "2026-11-11T19:57:28Z"
    }
   },
   {
@@ -9005,7 +12098,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892705",
-   "odds": null,
+   "odds": {
+    "provider": "Draft Kings",
+    "details": "LA -125",
+    "mlAway": 105.0,
+    "mlHome": -125.0,
+    "total": 5.5,
+    "over": -125.0,
+    "under": 105.0,
+    "mlAwayOpen": 114.0,
+    "mlHomeOpen": -135.0
+   },
    "goalies": {
     "away": {
      "name": "Ilya Sorokin",
@@ -9083,7 +12186,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.54,
-      "bid": 0.51,
+      "bid": 0.53,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -9095,7 +12198,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.49,
+      "ask": 0.47,
       "bid": 0.46,
       "volume": 0,
       "ou": "U",
@@ -9109,7 +12212,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.43,
-      "bid": 0.4,
+      "bid": 0.42,
       "volume": 0,
       "ou": "O",
       "line": 6.5
@@ -9121,7 +12224,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.6,
+      "ask": 0.58,
       "bid": 0.57,
       "volume": 0,
       "ou": "U",
@@ -9152,14 +12255,274 @@
       "volume": 0,
       "ou": "U",
       "line": 7.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967095-0",
+      "label": "LAK -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.33,
+      "bid": 0.3,
+      "volume": 0,
+      "team": "LAK",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967095-1",
+      "label": "NYI +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.7,
+      "bid": 0.67,
+      "volume": 0,
+      "team": "NYI",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967096-0",
+      "label": "LAK -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.24,
+      "bid": 0.05,
+      "volume": 0,
+      "team": "LAK",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967096-1",
+      "label": "NYI +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.76,
+      "volume": 0,
+      "team": "NYI",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967097-0",
+      "label": "LAK -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.2,
+      "bid": 0.18,
+      "volume": 0,
+      "team": "LAK",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967097-1",
+      "label": "NYI +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.82,
+      "bid": 0.8,
+      "volume": 0,
+      "team": "NYI",
+      "line": 2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967098-0",
+      "label": "NYI -1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.26,
+      "bid": 0.23,
+      "volume": 0,
+      "team": "NYI",
+      "line": -1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967098-1",
+      "label": "LAK +1.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.74,
+      "volume": 0,
+      "team": "LAK",
+      "line": 1.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967099-0",
+      "label": "NYI -3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.21,
+      "bid": 0.03,
+      "volume": 0,
+      "team": "NYI",
+      "line": -3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967099-1",
+      "label": "LAK +3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.79,
+      "volume": 0,
+      "team": "LAK",
+      "line": 3.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967100-0",
+      "label": "NYI -2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.14,
+      "volume": 0,
+      "team": "NYI",
+      "line": -2.5
+     },
+     {
+      "type": "spreads",
+      "marketId": "POLY-6967100-1",
+      "label": "LAK +2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.83,
+      "volume": 0,
+      "team": "LAK",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967101-0",
+      "label": "O 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.83,
+      "volume": 0,
+      "ou": "O",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967101-1",
+      "label": "U 2.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.03,
+      "volume": 0,
+      "ou": "U",
+      "line": 2.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967102-0",
+      "label": "O 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.84,
+      "volume": 0,
+      "ou": "O",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967102-1",
+      "label": "U 3.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.16,
+      "bid": 0.14,
+      "volume": 0,
+      "ou": "U",
+      "line": 3.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967103-0",
+      "label": "O 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.17,
+      "bid": 0.14,
+      "volume": 0,
+      "ou": "O",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967103-1",
+      "label": "U 8.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.83,
+      "volume": 0,
+      "ou": "U",
+      "line": 8.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967104-0",
+      "label": "O 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.07,
+      "bid": 0.04,
+      "volume": 0,
+      "ou": "O",
+      "line": 9.5
+     },
+     {
+      "type": "totals",
+      "marketId": "POLY-6967104-1",
+      "label": "U 9.5",
+      "status": "open",
+      "includesOTSO": true,
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.93,
+      "volume": 0,
+      "ou": "U",
+      "line": 9.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-11T06:53:11Z",
+    "fetchedAt": "2026-11-11T19:57:12Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-11T06:53:11.955413+00:00",
+    "checkedAt": "2026-11-11T19:57:12.549579+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9467,17 +12830,21 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      2.9656,
-      3.2456
+      2.9593,
+      3.2356
      ],
      "adjustedGoals": [
-      2.952164034131282,
-      3.280932285654574
+      2.9458925769506012,
+      3.270823423546937
      ],
      "featureDelta": [
       -0.0920506867715698,
       0.2981374153535101
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -9727,22 +13094,22 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.6305,
-        2.8788
+        2.6249,
+        2.87
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-11T06:53:13.355244+00:00",
+    "skaterCheckedAt": "2026-11-11T19:57:28.054553+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.9522,
-    "lh": 3.2809,
-    "ra": 2.6186,
-    "rh": 2.9102,
+    "la": 2.9459,
+    "lh": 3.2708,
+    "ra": 2.613,
+    "rh": 2.9012,
     "betaGq": 0.40805,
     "calib": 1.0197,
     "goalies": {
@@ -9784,7 +13151,7 @@
        {
         "id": 8476341,
         "name": "A. Forsberg",
-        "gq": -0.0869,
+        "gq": -0.0856,
         "share": 0.44,
         "shots": 1918
        }
@@ -9814,26 +13181,30 @@
      "home": {
       "gf": 0.955,
       "ga": 1.023,
-      "xf": 1.003,
-      "xa": 0.97
+      "xf": 0.998,
+      "xa": 0.968
      }
     },
-    "at": "2026-11-11T06:53:13Z",
+    "at": "2026-11-11T19:57:28Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-10",
      "baseGoals": [
-      2.9656,
-      3.2456
+      2.9593,
+      3.2356
      ],
      "adjustedGoals": [
-      2.952164034131282,
-      3.280932285654574
+      2.9458925769506012,
+      3.270823423546937
      ],
      "featureDelta": [
       -0.0920506867715698,
       0.2981374153535101
      ],
+     "priorOnlyPlayers": {
+      "away": [],
+      "home": []
+     },
      "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
      "sides": {
       "away": {
@@ -10083,8 +13454,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.6305,
-        2.8788
+        2.6249,
+        2.87
        ]
       }
      ]
