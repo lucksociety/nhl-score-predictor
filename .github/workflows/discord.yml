@@ -40,6 +40,7 @@ jobs:
             echo "DISCORD_APP_ID=$(jq -r '.client_payload.application_id // empty' "$GITHUB_EVENT_PATH" | tr -cd '0-9')" >> "$GITHUB_ENV"
             D=$(jq -r '.client_payload.date // empty' "$GITHUB_EVENT_PATH" | tr -cd '0-9-')
             echo "DRY_RUN=$(jq -r '.client_payload.dry_run // false' "$GITHUB_EVENT_PATH" | tr -cd 'a-z')" >> "$GITHUB_ENV"
+            echo "INTERACTION_STARTED_AT=$(jq -r '.client_payload.requested_at // empty' "$GITHUB_EVENT_PATH" | tr -cd '0-9')" >> "$GITHUB_ENV"
             echo "MODE=interaction" >> "$GITHUB_ENV"
           else
             if [ "$IN_DAY" = "tomorrow" ]; then D=$(TZ=America/New_York date -d tomorrow +%F); fi
