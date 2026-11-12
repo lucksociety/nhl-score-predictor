@@ -12,7 +12,7 @@ async function post(url, method, body) {
 async function send(appId, token, msgs,render) {
   const {sendPart}=await import('./discord-delivery.mjs');
   const base=`https://discord.com/api/v10/webhooks/${appId}/${token}`;
-  for(let i=0;i<msgs.length;i++)await sendPart({base,index:i,body:()=>render?render()[i]:msgs[i]});
+  for(let i=0;i<msgs.length;i++)await sendPart({base,index:i,body:()=>{const m=render?render()[i]:msgs[i];return m&&i===0?{...m,content:m.content??''}:m;}});
 }
 
 /** Post to the channel webhook (secret DISCORD_WEBHOOK_URL): fallback, or manual workflow_dispatch posts. */

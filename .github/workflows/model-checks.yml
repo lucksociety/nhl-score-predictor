@@ -22,6 +22,7 @@ jobs:
         run: |
           python -m pytest -q tests
           node cloudflare/test.mjs
+          node tests/queue-delivery.test.mjs
           node tests/bet-execution.test.js
           node tests/orderbook-depth.test.js
           node tests/calibration-stress.test.js

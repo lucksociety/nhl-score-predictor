@@ -53,7 +53,7 @@ export default {
         try { await dispatch(env, i.token, date); }
         catch (e) { await fallback(env, i.token, date, e.message); }
       })());
-      return json({type:4,data:{content:`🍀 **Fresh NHL scan requested — ${date}**\nWaiting for GitHub to assign a runner; the simulation starts after that. This message will update with the fresh card.\n[Check scan status](https://github.com/${env.GITHUB_REPO}/actions/workflows/discord.yml) · Queues longer than 15 minutes can expire this reply; check status before submitting another scan.`,allowed_mentions:{parse:[]}}});                                                     // "Bot is thinking…" (public)
+      return json({type:4,data:{content:`🍀 **Fresh NHL scan requested — ${date}**\nWaiting for GitHub to assign a runner; the simulation starts after that. This message will update with the fresh card.\n[Check scan status](https://github.com/${env.GITHUB_REPO}/actions/workflows/discord.yml) · Queues longer than 15 minutes can expire this reply; check status before submitting another scan.`,allowed_mentions:{parse:[]}}});                                                     // Visible acknowledgement; result delivery clears this text.
     }
     return json({ type: 4, data: { content: 'Unknown command', flags: 64 } });
   },
