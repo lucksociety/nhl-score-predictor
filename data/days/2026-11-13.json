@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generatedAt": "2026-11-12T06:41:20Z",
+ "generatedAt": "2026-11-12T07:29:33Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
  "games": [
   {
@@ -143,8 +143,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.3,
-      "bid": 0.27,
+      "ask": 0.29,
+      "bid": 0.26,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -156,19 +156,19 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.73,
-      "bid": 0.7,
+      "ask": 0.74,
+      "bid": 0.71,
       "volume": 0,
       "ou": "U",
       "line": 7.5
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-12T06:41:20Z",
+    "fetchedAt": "2026-11-12T07:29:33Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-12T06:41:20.616022+00:00",
+    "checkedAt": "2026-11-12T07:29:33.444641+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -800,7 +800,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-12T06:41:22.966601+00:00",
+    "skaterCheckedAt": "2026-11-12T07:29:34.844311+00:00",
     "blockReason": null
    },
    "v4": {
@@ -898,7 +898,7 @@
       "xa": 1.09
      }
     },
-    "at": "2026-11-12T06:41:22Z",
+    "at": "2026-11-12T07:29:34Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-11",
@@ -1208,7 +1208,7 @@
      "status": "Expected"
     },
     "home": {
-     "name": "Carter Hart",
+     "name": "Adin Hill",
      "status": "Expected"
     }
    },
@@ -1231,7 +1231,7 @@
       "periodType": null,
       "ask": 0.38,
       "bid": 0.37,
-      "volume": 18
+      "volume": 209
      },
      "home": {
       "marketId": "POLY-5821329-1",
@@ -1241,7 +1241,7 @@
       "periodType": null,
       "ask": 0.63,
       "bid": 0.62,
-      "volume": 18
+      "volume": 209
      }
     },
     "extra": [
@@ -1351,11 +1351,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-12T06:41:20Z",
+    "fetchedAt": "2026-11-12T07:29:33Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-12T06:41:20.616022+00:00",
+    "checkedAt": "2026-11-12T07:29:33.444641+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1618,11 +1618,11 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-11",
      "baseGoals": [
-      2.7942,
+      2.7829,
       3.4311
      ],
      "adjustedGoals": [
-      2.7810664952832838,
+      2.769819608375868,
       3.452197652772134
      ],
      "featureDelta": [
@@ -1846,21 +1846,21 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4784,
+        2.4685,
         3.0434
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-12T06:41:22.966601+00:00",
+    "skaterCheckedAt": "2026-11-12T07:29:34.844311+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.7811,
+    "la": 2.7698,
     "lh": 3.4522,
-    "ra": 2.4668,
+    "ra": 2.4568,
     "rh": 3.0621,
     "betaGq": 0.40516,
     "calib": 1.0202,
@@ -1888,9 +1888,9 @@
       ]
      },
      "home": {
-      "name": "Carter Hart",
-      "id": 8479394,
-      "gq": -0.0317,
+      "name": "Adin Hill",
+      "id": 8478499,
+      "gq": -0.0417,
       "mode": "named",
       "table": [
        {
@@ -1937,16 +1937,16 @@
       "xa": 0.935
      }
     },
-    "at": "2026-11-12T06:41:22Z",
+    "at": "2026-11-12T07:29:34Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-11",
      "baseGoals": [
-      2.7942,
+      2.7829,
       3.4311
      ],
      "adjustedGoals": [
-      2.7810664952832838,
+      2.769819608375868,
       3.452197652772134
      ],
      "featureDelta": [
@@ -2170,7 +2170,7 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4784,
+        2.4685,
         3.0434
        ]
       }
