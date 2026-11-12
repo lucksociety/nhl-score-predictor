@@ -20,9 +20,11 @@ let r = await req({ type: 1 }); ok(r[0] === 200 && r[1] === '{"type":1}', 'PING 
 r = await req({ type: 1 }, true); ok(r[0] === 401, 'bad signature -> 401');
 const nr = await W.fetch(new Request('https://w.test/', { method: 'POST', body: '{}' }), env, { waitUntil() {} }); ok(nr.status === 401, 'missing signature -> 401');
 calls.length = 0; r = await req({ type: 2, token: 'TOK', data: { name: 'nhl' } });
-ok(r[1] === '{"type":5}' && calls.length === 1 && calls[0][1].includes('/repos/o/r/dispatches') && JSON.parse(calls[0][2]).client_payload.token === 'TOK', '/nhl -> deferred + GitHub dispatch');
+ok(JSON.parse(r[1]).type===4 && calls.length === 1 && calls[0][1].includes('/repos/o/r/dispatches') && JSON.parse(calls[0][2]).client_payload.token === 'TOK', '/nhl -> visible queue acknowledgement + GitHub dispatch');
+ok(JSON.parse(r[1]).data.content.includes('Waiting for GitHub') && JSON.parse(r[1]).data.content.includes('Check scan status'),'acknowledgement exposes runner queue and status link');
+ok(Number.isFinite(JSON.parse(calls[0][2]).client_payload.requested_at),'dispatch preserves original request time for expiry');
 calls.length = 0; ghStatus = 401; r = await req({ type: 2, token: 'TOK', data: { name: 'nhl', options: [{ name: 'day', value: 'tomorrow' }] } });
-ok(r[1] === '{"type":5}' && calls.some(c => c[0] === 'PATCH' && c[1].endsWith('@original')), 'dispatch failure -> no cached recommendations');
+ok(JSON.parse(r[1]).type===4 && calls.some(c => c[0] === 'PATCH' && c[1].endsWith('@original')), 'dispatch failure -> no cached recommendations');
 console.log(calls.map(c => c[0] + ' ' + c[1]).join('\n'));
 
 ok(!calls.some(c=>c[0]==='GET'), 'failed refresh never fetches a cached forecast');

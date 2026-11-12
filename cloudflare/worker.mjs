@@ -1,6 +1,6 @@
 /* Luck Society /nhl — Discord HTTP interactions endpoint (Cloudflare Workers, free plan).
  * 1. verifies the Ed25519 signature (DISCORD_PUBLIC_KEY), answers PING
- * 2. /nhl -> responds "deferred" (type 5) within 3 s, then dispatches the GitHub Actions workflow (discord.yml), which runs the
+ * 2. /nhl -> responds with a visible queue acknowledgement (type 4) within 3 s, then dispatches the GitHub Actions workflow (discord.yml), which runs the
  *    full v4 Monte Carlo with fresh Jupiter prices and edits this reply (interaction token valid 15 min)
  * 3. if dispatch fails, reports the failure without publishing cached bets.
  * vars: DISCORD_APP_ID, DISCORD_PUBLIC_KEY, GITHUB_REPO, SITE   secret: GITHUB_TOKEN (fine-grained PAT, this repo, Contents: write)
@@ -27,7 +27,7 @@ async function dispatch(env, token, date) {
     method: 'POST',
     headers: { authorization: `Bearer ${env.GITHUB_TOKEN}`, accept: 'application/vnd.github+json', 'user-agent': 'luck-society-nhl-worker',
                'x-github-api-version': '2022-11-28', 'content-type': 'application/json' },
-    body: JSON.stringify({ event_type: 'nhl-command', client_payload: { token, application_id: env.DISCORD_APP_ID, date } }),
+    body: JSON.stringify({ event_type: 'nhl-command', client_payload: { token, application_id: env.DISCORD_APP_ID, date, requested_at: Date.now() } }),
   });
   if (r.status !== 204) throw new Error(`GitHub dispatch ${r.status}`);
 }
@@ -53,7 +53,7 @@ export default {
         try { await dispatch(env, i.token, date); }
         catch (e) { await fallback(env, i.token, date, e.message); }
       })());
-      return json({ type: 5 });                                                     // "Bot is thinking…" (public)
+      return json({type:4,data:{content:`🍀 **Fresh NHL scan requested — ${date}**\nWaiting for GitHub to assign a runner; the simulation starts after that. This message will update with the fresh card.\n[Check scan status](https://github.com/${env.GITHUB_REPO}/actions/workflows/discord.yml) · Queues longer than 15 minutes can expire this reply; check status before submitting another scan.`,allowed_mentions:{parse:[]}}});                                                     // Visible acknowledgement; result delivery clears this text.
     }
     return json({ type: 4, data: { content: 'Unknown command', flags: 64 } });
   },

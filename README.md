@@ -88,3 +88,13 @@ Secrets are **never** stored in this repo:
 ## November 11: verified-roster rookie coverage
 
 An official-roster skater with no NHL performance history uses the model's existing position-centered zero prior, rather than causing the entire game to fail. Unknown identities and insufficient roster depth still block. Recommendations must survive the unadjusted team baseline and both adverse rookie-quality scenarios, using observed positional 2.5/97.5-percentile quality ranges from at least 20 previously rated players. These are empirical sensitivity scenarios, not calibrated rookie confidence intervals; individual rookie impact remains unmeasured. Scenarios outside the fitted feature range still block.
+
+
+### Runner queue status
+
+`/nhl` acknowledges requests with visible queue information and a workflow status
+link rather than leaving an indefinite Discord thinking indicator. GitHub queue
+time is outside the model runtime and can exceed Discord's 15-minute interaction
+window. The original request timestamp is propagated so delayed runs skip expired
+interaction delivery and use the existing channel webhook fallback when configured.
+This changes neither forecasts nor bet-selection requirements.
