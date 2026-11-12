@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generatedAt": "2026-11-12T05:13:25Z",
+ "generatedAt": "2026-11-12T06:41:20Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
  "games": [
   {
@@ -164,11 +164,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-12T05:13:24Z",
+    "fetchedAt": "2026-11-12T06:41:20Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-12T05:13:25.339765+00:00",
+    "checkedAt": "2026-11-12T06:41:20.616022+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -514,16 +514,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-11",
      "baseGoals": [
-      3.647,
-      2.8126
+      3.6486,
+      2.8115
      ],
      "adjustedGoals": [
-      3.633373628644978,
-      2.8227834364593156
+      3.635148258278001,
+      2.8214729838499353
      ],
      "featureDelta": [
-      -0.09551749695050096,
-      0.09128163576644444
+      -0.09434287256195885,
+      0.08933693674818521
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -637,7 +637,7 @@
          "id": 8480434,
          "status": "Injured Reserve",
          "baselineParticipation": 0.4656,
-         "productionAbovePositionMean": 0.0408
+         "productionAbovePositionMean": 0.0407
         },
         {
          "name": "Joe Veleno",
@@ -786,31 +786,31 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.2349,
-        2.4948
+        3.2363,
+        2.4938
        ]
       },
       {
        "label": "VAN questionable skaters OUT",
        "rates": [
-        3.223925739814816,
-        2.4969528361521567
+        3.225500403004502,
+        2.4957935377150307
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-12T05:13:40.460903+00:00",
+    "skaterCheckedAt": "2026-11-12T06:41:22.966601+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.6334,
-    "lh": 2.8228,
-    "ra": 3.2228,
-    "rh": 2.5038,
-    "betaGq": 0.40669,
-    "calib": 1.0199,
+    "la": 3.6351,
+    "lh": 2.8215,
+    "ra": 3.2244,
+    "rh": 2.5026,
+    "betaGq": 0.40516,
+    "calib": 1.0202,
     "goalies": {
      "away": {
       "name": "Dylan Garand",
@@ -898,21 +898,21 @@
       "xa": 1.09
      }
     },
-    "at": "2026-11-12T05:13:40Z",
+    "at": "2026-11-12T06:41:22Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-11",
      "baseGoals": [
-      3.647,
-      2.8126
+      3.6486,
+      2.8115
      ],
      "adjustedGoals": [
-      3.633373628644978,
-      2.8227834364593156
+      3.635148258278001,
+      2.8214729838499353
      ],
      "featureDelta": [
-      -0.09551749695050096,
-      0.09128163576644444
+      -0.09434287256195885,
+      0.08933693674818521
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -1026,7 +1026,7 @@
          "id": 8480434,
          "status": "Injured Reserve",
          "baselineParticipation": 0.4656,
-         "productionAbovePositionMean": 0.0408
+         "productionAbovePositionMean": 0.0407
         },
         {
          "name": "Joe Veleno",
@@ -1175,15 +1175,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.2349,
-        2.4948
+        3.2363,
+        2.4938
        ]
       },
       {
        "label": "VAN questionable skaters OUT",
        "rates": [
-        3.223925739814816,
-        2.4969528361521567
+        3.225500403004502,
+        2.4957935377150307
        ]
       }
      ]
@@ -1252,8 +1252,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.78,
-      "bid": 0.75,
+      "ask": 0.79,
+      "bid": 0.76,
       "volume": 0,
       "ou": "O",
       "line": 4.5
@@ -1265,8 +1265,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.25,
-      "bid": 0.22,
+      "ask": 0.24,
+      "bid": 0.21,
       "volume": 0,
       "ou": "U",
       "line": 4.5
@@ -1278,8 +1278,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.56,
-      "bid": 0.55,
+      "ask": 0.57,
+      "bid": 0.54,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -1291,8 +1291,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.45,
-      "bid": 0.44,
+      "ask": 0.46,
+      "bid": 0.43,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -1351,11 +1351,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-12T05:13:24Z",
+    "fetchedAt": "2026-11-12T06:41:20Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-12T05:13:25.339765+00:00",
+    "checkedAt": "2026-11-12T06:41:20.616022+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1618,16 +1618,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-11",
      "baseGoals": [
-      2.8256,
-      3.4547
+      2.7942,
+      3.4311
      ],
      "adjustedGoals": [
-      2.8120366881182486,
-      3.4755026808910725
+      2.7810664952832838,
+      3.452197652772134
      ],
      "featureDelta": [
-      -0.11775972410552585,
-      0.15682965664336423
+      -0.11437272515418849,
+      0.16088341454854238
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -1733,7 +1733,7 @@
          "name": "Jonathan Marchessault",
          "id": 8476539,
          "status": "Out",
-         "baselineParticipation": 0.7567,
+         "baselineParticipation": 0.7206,
          "productionAbovePositionMean": 0.0206
         }
        ]
@@ -1776,14 +1776,14 @@
          "name": "Brett Howden"
         },
         {
-         "id": 8475343,
-         "position": "C",
-         "name": "Nic Dowd"
-        },
-        {
          "id": 8484803,
          "position": "L",
          "name": "Trevor Connelly"
+        },
+        {
+         "id": 8475343,
+         "position": "C",
+         "name": "Nic Dowd"
         },
         {
          "id": 8478109,
@@ -1836,7 +1836,7 @@
          "name": "Noah Hanifin",
          "id": 8478396,
          "status": "Out",
-         "baselineParticipation": 0.9847,
+         "baselineParticipation": 0.9387,
          "productionAbovePositionMean": 0.0348
         }
        ]
@@ -1846,24 +1846,24 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.5063,
-        3.0643
+        2.4784,
+        3.0434
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-12T05:13:40.460903+00:00",
+    "skaterCheckedAt": "2026-11-12T06:41:22.966601+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.812,
-    "lh": 3.4755,
-    "ra": 2.4943,
-    "rh": 3.0828,
-    "betaGq": 0.40669,
-    "calib": 1.0199,
+    "la": 2.7811,
+    "lh": 3.4522,
+    "ra": 2.4668,
+    "rh": 3.0621,
+    "betaGq": 0.40516,
+    "calib": 1.0202,
     "goalies": {
      "away": {
       "name": "Juuse Saros",
@@ -1875,83 +1875,83 @@
         "id": 8477424,
         "name": "J. Saros",
         "gq": -0.0936,
-        "share": 0.692,
+        "share": 0.586,
         "shots": 3854
        },
        {
         "id": 8481020,
         "name": "J. Annunen",
-        "gq": -0.077,
-        "share": 0.289,
-        "shots": 1169
+        "gq": -0.0823,
+        "share": 0.398,
+        "shots": 1198
        }
       ]
      },
      "home": {
       "name": "Carter Hart",
       "id": 8479394,
-      "gq": -0.0368,
+      "gq": -0.0317,
       "mode": "named",
       "table": [
+       {
+        "id": 8479394,
+        "name": "C. Hart",
+        "gq": -0.0317,
+        "share": 0.526,
+        "shots": 1455
+       },
        {
         "id": 8478499,
         "name": "A. Hill",
         "gq": -0.0417,
-        "share": 0.559,
+        "share": 0.473,
         "shots": 1900
-       },
-       {
-        "id": 8479394,
-        "name": "C. Hart",
-        "gq": -0.0368,
-        "share": 0.44,
-        "shots": 1438
        }
       ]
      }
     },
     "trainedThrough": "2026-11-11",
     "rest": {
-     "away": 3,
-     "home": 5
+     "away": 2,
+     "home": 2
     },
     "b2b": {
      "away": 0,
      "home": 0
     },
     "km": {
-     "away": 363,
-     "home": 3179
+     "away": 354,
+     "home": 0
     },
     "form": {
      "away": {
-      "gf": 0.99,
-      "ga": 0.943,
-      "xf": 1.006,
+      "gf": 0.997,
+      "ga": 0.936,
+      "xf": 1.0,
       "xa": 1.014
      },
      "home": {
-      "gf": 1.023,
-      "ga": 0.928,
+      "gf": 1.037,
+      "ga": 0.93,
       "xf": 1.02,
-      "xa": 0.943
+      "xa": 0.935
      }
     },
-    "at": "2026-11-12T05:13:40Z",
+    "at": "2026-11-12T06:41:22Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-11",
      "baseGoals": [
-      2.8256,
-      3.4547
+      2.7942,
+      3.4311
      ],
      "adjustedGoals": [
-      2.8120366881182486,
-      3.4755026808910725
+      2.7810664952832838,
+      3.452197652772134
      ],
      "featureDelta": [
-      -0.11775972410552585,
-      0.15682965664336423
+      -0.11437272515418849,
+      0.16088341454854238
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -2057,7 +2057,7 @@
          "name": "Jonathan Marchessault",
          "id": 8476539,
          "status": "Out",
-         "baselineParticipation": 0.7567,
+         "baselineParticipation": 0.7206,
          "productionAbovePositionMean": 0.0206
         }
        ]
@@ -2100,14 +2100,14 @@
          "name": "Brett Howden"
         },
         {
-         "id": 8475343,
-         "position": "C",
-         "name": "Nic Dowd"
-        },
-        {
          "id": 8484803,
          "position": "L",
          "name": "Trevor Connelly"
+        },
+        {
+         "id": 8475343,
+         "position": "C",
+         "name": "Nic Dowd"
         },
         {
          "id": 8478109,
@@ -2160,7 +2160,7 @@
          "name": "Noah Hanifin",
          "id": 8478396,
          "status": "Out",
-         "baselineParticipation": 0.9847,
+         "baselineParticipation": 0.9387,
          "productionAbovePositionMean": 0.0348
         }
        ]
@@ -2170,8 +2170,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.5063,
-        3.0643
+        2.4784,
+        3.0434
        ]
       }
      ]
