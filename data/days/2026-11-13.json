@@ -1,7 +1,7 @@
 {
  "date": "2026-11-13",
- "generatedAt": "2026-11-13T04:29:08Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-13T07:00:45Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020310,
@@ -15,7 +15,7 @@
    "final": null,
    "espnId": "401892706",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "NYR -225",
     "mlAway": -225.0,
     "mlHome": 185.0,
@@ -52,9 +52,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.68,
-      "bid": 0.67,
-      "volume": 5029
+      "ask": 0.69,
+      "bid": 0.68,
+      "volume": 18311
      },
      "home": {
       "marketId": "POLY-5821324-1",
@@ -62,9 +62,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.33,
-      "bid": 0.32,
-      "volume": 5029
+      "ask": 0.32,
+      "bid": 0.31,
+      "volume": 18311
      }
     },
     "extra": [
@@ -179,9 +179,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.45,
-      "bid": 0.44,
-      "volume": 0,
+      "ask": 0.46,
+      "bid": 0.45,
+      "volume": 221,
       "team": "NYR",
       "line": -1.5
      },
@@ -192,9 +192,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.56,
-      "bid": 0.55,
-      "volume": 0,
+      "ask": 0.55,
+      "bid": 0.54,
+      "volume": 221,
       "team": "VAN",
       "line": 1.5
      },
@@ -283,8 +283,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.32,
-      "bid": 0.3,
+      "ask": 0.33,
+      "bid": 0.31,
       "volume": 0,
       "team": "NYR",
       "line": -2.5
@@ -296,8 +296,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.7,
-      "bid": 0.68,
+      "ask": 0.69,
+      "bid": 0.67,
       "volume": 0,
       "team": "VAN",
       "line": 2.5
@@ -310,7 +310,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.18,
-      "bid": 0.05,
+      "bid": 0.12,
       "volume": 0,
       "team": "NYR",
       "line": -3.5
@@ -322,7 +322,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.95,
+      "ask": 0.88,
       "bid": 0.82,
       "volume": 0,
       "team": "VAN",
@@ -336,7 +336,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.964,
+      "bid": 0.963,
       "volume": 0,
       "ou": "O",
       "line": 2.5
@@ -348,7 +348,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.036,
+      "ask": 0.037,
       "bid": 0.02,
       "volume": 0,
       "ou": "U",
@@ -362,8 +362,8 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.9,
-      "bid": 0.87,
-      "volume": 0,
+      "bid": 0.88,
+      "volume": 11,
       "ou": "O",
       "line": 3.5
      },
@@ -374,9 +374,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.13,
+      "ask": 0.12,
       "bid": 0.1,
-      "volume": 0,
+      "volume": 11,
       "ou": "U",
       "line": 3.5
      },
@@ -387,7 +387,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.21,
+      "ask": 0.22,
       "bid": 0.19,
       "volume": 0,
       "ou": "O",
@@ -401,7 +401,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.81,
-      "bid": 0.79,
+      "bid": 0.78,
       "volume": 0,
       "ou": "U",
       "line": 8.5
@@ -434,11 +434,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-13T04:29:07Z",
+    "fetchedAt": "2026-11-13T07:00:44Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-13T04:29:08.917608+00:00",
+    "checkedAt": "2026-11-13T07:00:47.816826+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -784,16 +784,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-12",
      "baseGoals": [
-      3.6576,
-      2.7869
+      3.6519,
+      2.7839
      ],
      "adjustedGoals": [
-      3.6440197777730203,
-      2.796773412401108
+      3.638487571460093,
+      2.793747821433028
      ],
      "featureDelta": [
-      -0.09511979225774,
-      0.08911224027429687
+      -0.09396741334207395,
+      0.08910544249690167
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -907,7 +907,7 @@
          "id": 8480434,
          "status": "Injured Reserve",
          "baselineParticipation": 0.4656,
-         "productionAbovePositionMean": 0.0407
+         "productionAbovePositionMean": 0.0408
         },
         {
          "name": "Joe Veleno",
@@ -1033,14 +1033,14 @@
          "id": 8484240,
          "status": "Day-To-Day",
          "baselineParticipation": 0.7962,
-         "productionAbovePositionMean": -0.0341
+         "productionAbovePositionMean": -0.034
         },
         {
          "name": "Filip Chytil",
          "id": 8480078,
          "status": "Injured Reserve",
          "baselineParticipation": 0.2919,
-         "productionAbovePositionMean": -0.0485
+         "productionAbovePositionMean": -0.0484
         },
         {
          "name": "Mackenzie MacEachern",
@@ -1056,31 +1056,31 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.2443,
-        2.472
+        3.2393,
+        2.4693
        ]
       },
       {
        "label": "VAN questionable skaters OUT",
        "rates": [
-        3.2333721813023972,
-        2.4739450240954697
+        3.228463356684226,
+        2.4712689579461147
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-13T04:29:25.930983+00:00",
+    "skaterCheckedAt": "2026-11-13T07:00:50.076708+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.644,
-    "lh": 2.7968,
-    "ra": 3.2322,
-    "rh": 2.4807,
-    "betaGq": 0.4059,
-    "calib": 1.0214,
+    "la": 3.6385,
+    "lh": 2.7937,
+    "ra": 3.2273,
+    "rh": 2.4781,
+    "betaGq": 0.40938,
+    "calib": 1.0205,
     "goalies": {
      "away": {
       "name": "Dylan Garand",
@@ -1159,30 +1159,30 @@
       "gf": 0.978,
       "ga": 0.967,
       "xf": 1.016,
-      "xa": 0.977
+      "xa": 0.978
      },
      "home": {
-      "gf": 0.926,
-      "ga": 1.205,
-      "xf": 0.888,
+      "gf": 0.927,
+      "ga": 1.206,
+      "xf": 0.889,
       "xa": 1.089
      }
     },
-    "at": "2026-11-13T04:29:25Z",
+    "at": "2026-11-13T07:00:50Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-12",
      "baseGoals": [
-      3.6576,
-      2.7869
+      3.6519,
+      2.7839
      ],
      "adjustedGoals": [
-      3.6440197777730203,
-      2.796773412401108
+      3.638487571460093,
+      2.793747821433028
      ],
      "featureDelta": [
-      -0.09511979225774,
-      0.08911224027429687
+      -0.09396741334207395,
+      0.08910544249690167
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -1296,7 +1296,7 @@
          "id": 8480434,
          "status": "Injured Reserve",
          "baselineParticipation": 0.4656,
-         "productionAbovePositionMean": 0.0407
+         "productionAbovePositionMean": 0.0408
         },
         {
          "name": "Joe Veleno",
@@ -1422,14 +1422,14 @@
          "id": 8484240,
          "status": "Day-To-Day",
          "baselineParticipation": 0.7962,
-         "productionAbovePositionMean": -0.0341
+         "productionAbovePositionMean": -0.034
         },
         {
          "name": "Filip Chytil",
          "id": 8480078,
          "status": "Injured Reserve",
          "baselineParticipation": 0.2919,
-         "productionAbovePositionMean": -0.0485
+         "productionAbovePositionMean": -0.0484
         },
         {
          "name": "Mackenzie MacEachern",
@@ -1445,15 +1445,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.2443,
-        2.472
+        3.2393,
+        2.4693
        ]
       },
       {
        "label": "VAN questionable skaters OUT",
        "rates": [
-        3.2333721813023972,
-        2.4739450240954697
+        3.228463356684226,
+        2.4712689579461147
        ]
       }
      ]
@@ -1472,7 +1472,7 @@
    "final": null,
    "espnId": "401892707",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "VGK -185",
     "mlAway": 154.0,
     "mlHome": -185.0,
@@ -1511,7 +1511,7 @@
       "periodType": null,
       "ask": 0.39,
       "bid": 0.38,
-      "volume": 682
+      "volume": 9783
      },
      "home": {
       "marketId": "POLY-5821329-1",
@@ -1521,7 +1521,7 @@
       "periodType": null,
       "ask": 0.62,
       "bid": 0.61,
-      "volume": 682
+      "volume": 9783
      }
     },
     "extra": [
@@ -1558,8 +1558,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.56,
-      "bid": 0.55,
+      "ask": 0.57,
+      "bid": 0.56,
       "volume": 0,
       "ou": "O",
       "line": 5.5
@@ -1571,8 +1571,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.45,
-      "bid": 0.44,
+      "ask": 0.44,
+      "bid": 0.43,
       "volume": 0,
       "ou": "U",
       "line": 5.5
@@ -1611,7 +1611,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.26,
-      "bid": 0.24,
+      "bid": 0.23,
       "volume": 0,
       "ou": "O",
       "line": 7.5
@@ -1623,7 +1623,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.76,
+      "ask": 0.77,
       "bid": 0.74,
       "volume": 0,
       "ou": "U",
@@ -1662,8 +1662,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.21,
-      "bid": 0.04,
+      "ask": 0.17,
+      "bid": 0.06,
       "volume": 0,
       "team": "VGK",
       "line": -3.5
@@ -1675,8 +1675,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.96,
-      "bid": 0.79,
+      "ask": 0.94,
+      "bid": 0.83,
       "volume": 0,
       "team": "NSH",
       "line": 3.5
@@ -1716,7 +1716,7 @@
       "periodType": null,
       "ask": 0.18,
       "bid": 0.17,
-      "volume": 0,
+      "volume": 500,
       "team": "NSH",
       "line": -1.5
      },
@@ -1729,7 +1729,7 @@
       "periodType": null,
       "ask": 0.83,
       "bid": 0.82,
-      "volume": 0,
+      "volume": 500,
       "team": "VGK",
       "line": 1.5
      },
@@ -1740,7 +1740,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.11,
+      "ask": 0.09,
       "bid": 0.03,
       "volume": 0,
       "team": "NSH",
@@ -1754,7 +1754,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.89,
+      "bid": 0.91,
       "volume": 0,
       "team": "VGK",
       "line": 3.5
@@ -1891,11 +1891,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-13T04:29:07Z",
+    "fetchedAt": "2026-11-13T07:00:44Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-13T04:29:08.917608+00:00",
+    "checkedAt": "2026-11-13T07:00:47.816826+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2158,16 +2158,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-12",
      "baseGoals": [
-      2.8009,
-      3.4713
+      2.7984,
+      3.4666
      ],
      "adjustedGoals": [
-      2.7970492450842372,
-      3.491240743330978
+      2.794650066722675,
+      3.486543982678482
      ],
      "featureDelta": [
-      -0.018840930807271408,
-      0.1615186474846093
+      -0.017795303931689183,
+      0.16189972542503472
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -2274,7 +2274,7 @@
          "id": 8476539,
          "status": "Day-To-Day",
          "baselineParticipation": 0.7206,
-         "productionAbovePositionMean": 0.0205
+         "productionAbovePositionMean": 0.0206
         }
        ]
       },
@@ -2377,7 +2377,7 @@
          "id": 8478396,
          "status": "Out",
          "baselineParticipation": 0.9387,
-         "productionAbovePositionMean": 0.0348
+         "productionAbovePositionMean": 0.0349
         }
        ]
       }
@@ -2386,31 +2386,31 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4844,
-        3.079
+        2.4822,
+        3.0748
        ]
       },
       {
        "label": "NSH questionable skaters OUT",
        "rates": [
-        2.4729618022723328,
-        3.0980052832260636
+        2.470836215359006,
+        3.0938382411433687
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-13T04:29:25.930983+00:00",
+    "skaterCheckedAt": "2026-11-13T07:00:50.076708+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.797,
-    "lh": 3.4912,
-    "ra": 2.481,
-    "rh": 3.0967,
-    "betaGq": 0.4059,
-    "calib": 1.0214,
+    "la": 2.7947,
+    "lh": 3.4865,
+    "ra": 2.4789,
+    "rh": 3.0926,
+    "betaGq": 0.40938,
+    "calib": 1.0205,
     "goalies": {
      "away": {
       "name": "Juuse Saros",
@@ -2472,33 +2472,33 @@
     },
     "form": {
      "away": {
-      "gf": 0.997,
-      "ga": 0.936,
+      "gf": 0.998,
+      "ga": 0.937,
       "xf": 1.006,
-      "xa": 1.02
+      "xa": 1.021
      },
      "home": {
       "gf": 1.037,
-      "ga": 0.93,
+      "ga": 0.931,
       "xf": 1.03,
       "xa": 0.937
      }
     },
-    "at": "2026-11-13T04:29:25Z",
+    "at": "2026-11-13T07:00:50Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-12",
      "baseGoals": [
-      2.8009,
-      3.4713
+      2.7984,
+      3.4666
      ],
      "adjustedGoals": [
-      2.7970492450842372,
-      3.491240743330978
+      2.794650066722675,
+      3.486543982678482
      ],
      "featureDelta": [
-      -0.018840930807271408,
-      0.1615186474846093
+      -0.017795303931689183,
+      0.16189972542503472
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -2605,7 +2605,7 @@
          "id": 8476539,
          "status": "Day-To-Day",
          "baselineParticipation": 0.7206,
-         "productionAbovePositionMean": 0.0205
+         "productionAbovePositionMean": 0.0206
         }
        ]
       },
@@ -2708,7 +2708,7 @@
          "id": 8478396,
          "status": "Out",
          "baselineParticipation": 0.9387,
-         "productionAbovePositionMean": 0.0348
+         "productionAbovePositionMean": 0.0349
         }
        ]
       }
@@ -2717,15 +2717,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4844,
-        3.079
+        2.4822,
+        3.0748
        ]
       },
       {
        "label": "NSH questionable skaters OUT",
        "rates": [
-        2.4729618022723328,
-        3.0980052832260636
+        2.470836215359006,
+        3.0938382411433687
        ]
       }
      ]
