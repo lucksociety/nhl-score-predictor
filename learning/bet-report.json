@@ -85,10 +85,34 @@
         "minimum_games": 500,
         "minimum_days": 30
       }
+    },
+    "v4-independent-skater-v1 / scoring-quote-fee-depth-v2 / spreads": {
+      "n": 1,
+      "wins": 1,
+      "win_rate": 1,
+      "mean_probability": 0.6814174999999999,
+      "brier": 0.10149480930625006,
+      "log_loss": 0.38358009166650864,
+      "flat_cost_roi": 0.5151515151515151,
+      "reliability": [
+        {
+          "lower_exclusive": 0.6,
+          "upper_inclusive": 0.7,
+          "n": 1,
+          "mean_probability": 0.6814174999999999,
+          "win_rate": 1
+        }
+      ],
+      "calibration_status": "monitor_only_no_automatic_probability_changes",
+      "calibration_proposal": {
+        "status": "insufficient_forward_sample",
+        "minimum_games": 500,
+        "minimum_days": 30
+      }
     }
   },
   "pending_or_ungradable": 0,
   "policy": "Delivered primary recommendation only; last pregame publication per event, including NO BET. Not actual trades. No automatic calibration promotion.",
-  "generated_at": "2026-11-12T19:09:09.435620+00:00",
-  "records": 47
+  "generated_at": "2026-11-13T18:47:19.095667+00:00",
+  "records": 57
 }
