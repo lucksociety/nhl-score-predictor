@@ -1,7 +1,7 @@
 {
  "date": "2026-11-11",
- "generatedAt": "2026-11-12T21:22:46Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-11-13T02:04:09Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020293,
@@ -778,11 +778,17 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-12T21:22:46.961727+00:00",
+    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Anthony Cirelli",
+        "position": "C",
+        "status": "Out",
+        "updatedAt": "2026-11-12T23:04Z"
+       },
        {
         "name": "Erik Cernak",
         "position": "D",
@@ -1075,7 +1081,7 @@
      }
     },
     "problems": [],
-    "blockReason": "TBL recent skater absences not individually modeled: Erik Cernak; BUF recent skater absences not individually modeled: Konsta Helenius"
+    "blockReason": "TBL recent skater absences not individually modeled: Anthony Cirelli, Erik Cernak; BUF recent skater absences not individually modeled: Konsta Helenius"
    }
   },
   {
@@ -1904,7 +1910,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-12T21:22:46.961727+00:00",
+    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3056,7 +3062,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-12T21:22:46.961727+00:00",
+    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4194,11 +4200,17 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-12T21:22:46.961727+00:00",
+    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Nick Schmaltz",
+        "position": "C",
+        "status": "Out",
+        "updatedAt": "2026-11-13T01:30Z"
+       },
        {
         "name": "Nate Schmidt",
         "position": "D",
@@ -4210,12 +4222,6 @@
         "position": "C",
         "status": "Out",
         "updatedAt": "2026-11-12T19:25Z"
-       },
-       {
-        "name": "Nick Schmaltz",
-        "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-12T19:24Z"
        },
        {
         "name": "Dylan Guenther",
@@ -4488,7 +4494,7 @@
      }
     },
     "problems": [],
-    "blockReason": "UTA recent skater absences not individually modeled: Nate Schmidt, Logan Cooley, Dylan Guenther"
+    "blockReason": "UTA recent skater absences not individually modeled: Nick Schmaltz, Nate Schmidt, Logan Cooley"
    }
   },
   {
@@ -5273,7 +5279,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-12T21:22:46.961727+00:00",
+    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6371,7 +6377,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-12T21:22:46.961727+00:00",
+    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
