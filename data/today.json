@@ -1,7 +1,7 @@
 {
  "date": "2026-11-12",
- "generatedAt": "2026-11-13T02:04:10Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-13T02:29:34Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020309,
@@ -807,7 +807,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1655,11 +1655,23 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Cale Makar",
+        "position": "D",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-13T02:10Z"
+       },
+       {
+        "name": "Nathan MacKinnon",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-13T02:06Z"
+       },
        {
         "name": "Josh Manson",
         "position": "D",
@@ -2769,7 +2781,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3139,7 +3151,7 @@
    "awayName": "Montr\u00e9al Canadiens",
    "homeName": "Boston Bruins",
    "venue": "TD Garden",
-   "state": "LIVE",
+   "state": "CRIT",
    "final": null,
    "espnId": "401892696",
    "odds": {
@@ -3903,7 +3915,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4954,7 +4966,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5752,7 +5764,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6853,7 +6865,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7920,7 +7932,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8740,11 +8752,17 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Dylan DeMelo",
+        "position": "D",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-13T02:11Z"
+       },
        {
         "name": "Elias Salomonsson",
         "position": "D",
@@ -8914,6 +8932,12 @@
         "updatedAt": "2026-10-24T18:32Z"
        },
        {
+        "name": "Matt Duchene",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-12T16:46Z"
+       },
+       {
         "name": "Luke Krys",
         "position": "D",
         "status": "Injured Reserve",
@@ -9061,7 +9085,7 @@
    "awayName": "St. Louis Blues",
    "homeName": "Utah Mammoth",
    "venue": "Delta Center",
-   "state": "PRE",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892704",
    "odds": {
@@ -9488,7 +9512,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9815,11 +9839,11 @@
    "awayName": "New York Islanders",
    "homeName": "Los Angeles Kings",
    "venue": "Crypto.com Arena",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892705",
    "odds": {
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "details": "LA -125",
     "mlAway": 105.0,
     "mlHome": -125.0,
@@ -9856,8 +9880,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.47,
-      "bid": 0.46,
+      "ask": 0.48,
+      "bid": 0.47,
       "volume": 25112
      },
      "home": {
@@ -9866,8 +9890,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.54,
-      "bid": 0.53,
+      "ask": 0.53,
+      "bid": 0.52,
       "volume": 25112
      }
     },
@@ -9984,7 +10008,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.32,
-      "bid": 0.31,
+      "bid": 0.3,
       "volume": 3310,
       "team": "LAK",
       "line": -1.5
@@ -9996,7 +10020,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.69,
+      "ask": 0.7,
       "bid": 0.68,
       "volume": 3310,
       "team": "NYI",
@@ -10139,8 +10163,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.976,
-      "bid": 0.954,
+      "ask": 0.979,
+      "bid": 0.956,
       "volume": 0,
       "ou": "O",
       "line": 2.5
@@ -10152,8 +10176,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.046,
-      "bid": 0.024,
+      "ask": 0.044,
+      "bid": 0.021,
       "volume": 0,
       "ou": "U",
       "line": 2.5
@@ -10218,7 +10242,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.07,
-      "bid": 0.06,
+      "bid": 0.05,
       "volume": 570,
       "ou": "O",
       "line": 9.5
@@ -10230,7 +10254,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.94,
+      "ask": 0.95,
       "bid": 0.93,
       "volume": 570,
       "ou": "U",
@@ -10238,11 +10262,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-13T02:04:09Z",
+    "fetchedAt": "2026-11-13T02:29:32Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-13T02:04:10.858869+00:00",
+    "checkedAt": "2026-11-13T02:29:34.411074+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -10790,7 +10814,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-13T02:04:13.247428+00:00",
+    "skaterCheckedAt": "2026-11-13T02:29:36.250906+00:00",
     "blockReason": null
    },
    "v4": {
@@ -10874,7 +10898,7 @@
       "xa": 0.967
      }
     },
-    "at": "2026-11-13T02:04:13Z",
+    "at": "2026-11-13T02:29:36Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-11",
