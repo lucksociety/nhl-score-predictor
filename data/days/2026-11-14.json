@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "generatedAt": "2026-11-15T01:14:17Z",
+ "generatedAt": "2026-11-15T02:30:02Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -793,7 +793,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1888,7 +1888,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3030,7 +3030,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3363,7 +3363,7 @@
    "awayName": "Detroit Red Wings",
    "homeName": "Tampa Bay Lightning",
    "venue": "Benchmark International Arena",
-   "state": "LIVE",
+   "state": "CRIT",
    "final": null,
    "espnId": "401892712",
    "odds": {
@@ -4147,7 +4147,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5287,7 +5287,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5695,7 +5695,7 @@
    "awayName": "Florida Panthers",
    "homeName": "St. Louis Blues",
    "venue": "Enterprise Center",
-   "state": "LIVE",
+   "state": "CRIT",
    "final": null,
    "espnId": "401892716",
    "odds": {
@@ -6480,7 +6480,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7530,7 +7530,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8622,7 +8622,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9455,11 +9455,17 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Hayden Hodgson",
+        "position": "RW",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-15T02:16Z"
+       },
        {
         "name": "Nick Cousins",
         "position": "C",
@@ -9765,7 +9771,7 @@
    "awayName": "Philadelphia Flyers",
    "homeName": "Columbus Blue Jackets",
    "venue": "Nationwide Arena",
-   "state": "LIVE",
+   "state": "CRIT",
    "final": null,
    "espnId": "401892715",
    "odds": {
@@ -10513,7 +10519,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -11305,7 +11311,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -11641,7 +11647,7 @@
    "awayName": "San Jose Sharks",
    "homeName": "Utah Mammoth",
    "venue": "Delta Center",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892718",
    "odds": {
@@ -12067,8 +12073,92 @@
     "fetchedAt": "2026-11-15T01:14:16Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.8243,
+    "lh": 3.8999,
+    "ra": 2.5052,
+    "rh": 3.4592,
+    "betaGq": 0.41136,
+    "calib": 1.0199,
+    "goalies": {
+     "away": {
+      "name": "Yaroslav Askarov",
+      "id": 8482137,
+      "gq": -0.0287,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8482137,
+        "name": "Y. Askarov",
+        "gq": -0.0287,
+        "share": 0.719,
+        "shots": 1549
+       },
+       {
+        "id": 8477968,
+        "name": "A. Nedeljkovic",
+        "gq": -0.0413,
+        "share": 0.281,
+        "shots": 2240
+       }
+      ]
+     },
+     "home": {
+      "name": "Karel Vejmelka",
+      "id": 8478872,
+      "gq": -0.0738,
+      "mode": "named",
+      "table": [
+       {
+        "id": 8478872,
+        "name": "K. Vejmelka",
+        "gq": -0.0738,
+        "share": 0.583,
+        "shots": 3255
+       },
+       {
+        "id": 8482657,
+        "name": "S. Cossa",
+        "gq": 0.0451,
+        "share": 0.413,
+        "shots": 183
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-13",
+    "rest": {
+     "away": 3,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 943,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.904,
+      "ga": 1.06,
+      "xf": 0.969,
+      "xa": 1.092
+     },
+     "home": {
+      "gf": 1.025,
+      "ga": 1.041,
+      "xf": 1.038,
+      "xa": 0.97
+     }
+    },
+    "at": "2026-11-15T01:14:33Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -12385,92 +12475,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "UTA insufficient verified roster depth for expected 12F/6D or 11F/7D lineup",
-    "blockReason": "Skater adjustment unavailable: UTA insufficient verified roster depth for expected 12F/6D or 11F/7D lineup"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 2.8243,
-    "lh": 3.8999,
-    "ra": 2.5052,
-    "rh": 3.4592,
-    "betaGq": 0.41136,
-    "calib": 1.0199,
-    "goalies": {
-     "away": {
-      "name": "Yaroslav Askarov",
-      "id": 8482137,
-      "gq": -0.0287,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8482137,
-        "name": "Y. Askarov",
-        "gq": -0.0287,
-        "share": 0.719,
-        "shots": 1549
-       },
-       {
-        "id": 8477968,
-        "name": "A. Nedeljkovic",
-        "gq": -0.0413,
-        "share": 0.281,
-        "shots": 2240
-       }
-      ]
-     },
-     "home": {
-      "name": "Karel Vejmelka",
-      "id": 8478872,
-      "gq": -0.0738,
-      "mode": "named",
-      "table": [
-       {
-        "id": 8478872,
-        "name": "K. Vejmelka",
-        "gq": -0.0738,
-        "share": 0.583,
-        "shots": 3255
-       },
-       {
-        "id": 8482657,
-        "name": "S. Cossa",
-        "gq": 0.0451,
-        "share": 0.413,
-        "shots": 183
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-13",
-    "rest": {
-     "away": 3,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 943,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 0.904,
-      "ga": 1.06,
-      "xf": 0.969,
-      "xa": 1.092
-     },
-     "home": {
-      "gf": 1.025,
-      "ga": 1.041,
-      "xf": 1.038,
-      "xa": 0.97
-     }
-    },
-    "at": "2026-11-15T01:14:33Z"
+    "blockReason": "SJS recent skater absences not individually modeled: Alexander Wennberg; UTA recent skater absences not individually modeled: Nick Schmaltz"
    }
   },
   {
@@ -12481,7 +12486,7 @@
    "awayName": "Calgary Flames",
    "homeName": "Los Angeles Kings",
    "venue": "Crypto.com Arena",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892720",
    "odds": {
@@ -12524,7 +12529,7 @@
       "periodType": null,
       "ask": 0.4,
       "bid": 0.39,
-      "volume": 88150
+      "volume": 88311
      },
      "home": {
       "marketId": "POLY-5887362-1",
@@ -12534,7 +12539,7 @@
       "periodType": null,
       "ask": 0.61,
       "bid": 0.6,
-      "volume": 88150
+      "volume": 88311
      }
     },
     "extra": [
@@ -12546,7 +12551,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.76,
-      "bid": 0.75,
+      "bid": 0.74,
       "volume": 15,
       "ou": "O",
       "line": 4.5
@@ -12558,7 +12563,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.25,
+      "ask": 0.26,
       "bid": 0.24,
       "volume": 15,
       "ou": "U",
@@ -12571,9 +12576,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.52,
-      "bid": 0.51,
-      "volume": 26,
+      "ask": 0.51,
+      "bid": 0.5,
+      "volume": 28,
       "ou": "O",
       "line": 5.5
      },
@@ -12584,9 +12589,9 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.49,
-      "bid": 0.48,
-      "volume": 26,
+      "ask": 0.5,
+      "bid": 0.49,
+      "volume": 28,
       "ou": "U",
       "line": 5.5
      },
@@ -12651,7 +12656,7 @@
       "periodType": null,
       "ask": 0.38,
       "bid": 0.37,
-      "volume": 239,
+      "volume": 500,
       "team": "LAK",
       "line": -1.5
      },
@@ -12664,7 +12669,7 @@
       "periodType": null,
       "ask": 0.63,
       "bid": 0.62,
-      "volume": 239,
+      "volume": 500,
       "team": "CGY",
       "line": 1.5
      },
@@ -12753,7 +12758,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.07,
+      "ask": 0.06,
       "bid": 0.03,
       "volume": 0,
       "team": "CGY",
@@ -12767,7 +12772,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.93,
+      "bid": 0.94,
       "volume": 0,
       "team": "LAK",
       "line": 3.5
@@ -12805,8 +12810,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.97,
-      "bid": 0.952,
+      "ask": 0.968,
+      "bid": 0.951,
       "volume": 64,
       "ou": "O",
       "line": 2.5
@@ -12818,8 +12823,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.048,
-      "bid": 0.03,
+      "ask": 0.049,
+      "bid": 0.032,
       "volume": 64,
       "ou": "U",
       "line": 2.5
@@ -12904,11 +12909,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-15T01:14:16Z",
+    "fetchedAt": "2026-11-15T02:29:59Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -13456,7 +13461,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-15T01:14:33.716096+00:00",
+    "skaterCheckedAt": "2026-11-15T02:30:04.265585+00:00",
     "blockReason": null
    },
    "v4": {
@@ -13547,7 +13552,7 @@
       "xa": 0.96
      }
     },
-    "at": "2026-11-15T01:14:33Z",
+    "at": "2026-11-15T02:30:04Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-13",
@@ -13818,7 +13823,7 @@
    "awayName": "New York Islanders",
    "homeName": "Anaheim Ducks",
    "venue": "Honda Center",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892719",
    "odds": {
@@ -13827,8 +13832,8 @@
     "mlAway": -112.0,
     "mlHome": -108.0,
     "total": 6.5,
-    "over": -135.0,
-    "under": 114.0,
+    "over": -142.0,
+    "under": 120.0,
     "mlAwayOpen": 102.0,
     "mlHomeOpen": -122.0
    },
@@ -13861,7 +13866,7 @@
       "periodType": null,
       "ask": 0.5,
       "bid": 0.49,
-      "volume": 91031
+      "volume": 93334
      },
      "home": {
       "marketId": "POLY-5887357-1",
@@ -13871,7 +13876,7 @@
       "periodType": null,
       "ask": 0.51,
       "bid": 0.5,
-      "volume": 91031
+      "volume": 93334
      }
     },
     "extra": [
@@ -13882,8 +13887,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.83,
-      "bid": 0.82,
+      "ask": 0.86,
+      "bid": 0.83,
       "volume": 51,
       "ou": "O",
       "line": 4.5
@@ -13895,8 +13900,8 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.18,
-      "bid": 0.17,
+      "ask": 0.17,
+      "bid": 0.14,
       "volume": 51,
       "ou": "U",
       "line": 4.5
@@ -14012,7 +14017,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.13,
+      "ask": 0.12,
       "bid": 0.07,
       "volume": 0,
       "team": "ANA",
@@ -14026,7 +14031,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.93,
-      "bid": 0.87,
+      "bid": 0.88,
       "volume": 0,
       "team": "NYI",
       "line": 3.5
@@ -14091,7 +14096,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.11,
-      "bid": 0.06,
+      "bid": 0.05,
       "volume": 0,
       "team": "NYI",
       "line": -3.5
@@ -14103,7 +14108,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.94,
+      "ask": 0.95,
       "bid": 0.89,
       "volume": 0,
       "team": "ANA",
@@ -14143,7 +14148,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.971,
+      "bid": 0.973,
       "volume": 8,
       "ou": "O",
       "line": 2.5
@@ -14155,7 +14160,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.029,
+      "ask": 0.027,
       "bid": 0.02,
       "volume": 8,
       "ou": "U",
@@ -14194,7 +14199,7 @@
       "status": "open",
       "includesOTSO": true,
       "periodType": null,
-      "ask": 0.27,
+      "ask": 0.28,
       "bid": 0.24,
       "volume": 0,
       "ou": "O",
@@ -14208,7 +14213,7 @@
       "includesOTSO": true,
       "periodType": null,
       "ask": 0.76,
-      "bid": 0.73,
+      "bid": 0.72,
       "volume": 0,
       "ou": "U",
       "line": 8.5
@@ -14241,11 +14246,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-15T01:14:16Z",
+    "fetchedAt": "2026-11-15T02:29:59Z",
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-15T01:14:17.984788+00:00",
+    "checkedAt": "2026-11-15T02:30:02.459094+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -14827,7 +14832,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-15T01:14:33.716096+00:00",
+    "skaterCheckedAt": "2026-11-15T02:30:04.265585+00:00",
     "blockReason": null
    },
    "v4": {
@@ -14918,7 +14923,7 @@
       "xa": 1.048
      }
     },
-    "at": "2026-11-15T01:14:33Z",
+    "at": "2026-11-15T02:30:04Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-13",
