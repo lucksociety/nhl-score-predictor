@@ -87,19 +87,19 @@
       }
     },
     "v4-independent-skater-v1 / scoring-quote-fee-depth-v2 / spreads": {
-      "n": 2,
-      "wins": 2,
+      "n": 3,
+      "wins": 3,
       "win_rate": 1,
-      "mean_probability": 0.7167637499999999,
-      "brier": 0.08147213070312502,
-      "log_loss": 0.3342263904002196,
-      "flat_cost_roi": 0.4618011096884337,
+      "mean_probability": 0.6811016666666666,
+      "brier": 0.10507262030416668,
+      "log_loss": 0.38770464108417896,
+      "flat_cost_roi": 0.5593293947630493,
       "reliability": [
         {
           "lower_exclusive": 0.6,
           "upper_inclusive": 0.7,
-          "n": 1,
-          "mean_probability": 0.6814174999999999,
+          "n": 2,
+          "mean_probability": 0.6455974999999999,
           "win_rate": 1
         },
         {
@@ -140,10 +140,37 @@
         "minimum_games": 500,
         "minimum_days": 30
       }
+    },
+    "v4-independent-skater-v1 / scoring-quote-fee-depth-v2 / totals": {
+      "n": 1,
+      "wins": 1,
+      "win_rate": 1,
+      "mean_probability": 0.8717975000000001,
+      "brier": 0.016435881006249972,
+      "log_loss": 0.13719810681214678,
+      "flat_cost_roi": 0.19047619047619047,
+      "reliability": [
+        {
+          "lower_exclusive": 0.8,
+          "upper_inclusive": 0.9,
+          "n": 1,
+          "mean_probability": 0.8717975000000001,
+          "win_rate": 1
+        }
+      ],
+      "calibration_status": "monitor_only_no_automatic_probability_changes",
+      "calibration_proposal": {
+        "status": "insufficient_forward_sample",
+        "minimum_games": 500,
+        "minimum_days": 30
+      }
     }
   },
-  "pending_or_ungradable": 0,
+  "model_vs_market": {
+    "n": 0
+  },
+  "pending_or_ungradable": 1,
   "policy": "Delivered primary recommendation only; last pregame publication per event, including NO BET. Not actual trades. No automatic calibration promotion.",
-  "generated_at": "2026-11-15T17:59:35.474437+00:00",
-  "records": 73
+  "generated_at": "2026-11-16T21:15:21.532657+00:00",
+  "records": 80
 }
