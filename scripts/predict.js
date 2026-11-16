@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Runs the v4-independent Monte Carlo for every game on a slate and scores the Jupiter best bet.
+/* Runs the v4-independent Monte Carlo for every game on a slate and scores the Polymarket best bet.
  * usage: node scripts/predict.js [YYYY-MM-DD] [--n 400000] [--seed 11] [--check]
  * writes data/predictions/DATE.json. --check adds a seed-stability check (5 extra seeds on each game). */
 const fs = require('fs'), path = require('path');
@@ -9,6 +9,14 @@ const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? proces
 function etDate(d = new Date()) { return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(d); }
 function etTime(iso) { return new Date(iso).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }) + ' ET'; }
 
+// No-vig moneyline from the two-sided pre-game quote: the benchmark the model is graded against (never a model input).
+function marketWin(m) {
+  const a = m?.sides?.away, h = m?.sides?.home;
+  const mid = x => x && x.status === 'open' && x.bid > 0 && x.bid <= x.ask && x.ask < 1 && x.ask - x.bid <= 0.06 + 1e-9 ? (x.ask + x.bid) / 2 : null;
+  const ma = mid(a), mh = mid(h);
+  return ma == null || mh == null || m.live ? null : { away: +(ma / (ma + mh)).toFixed(4), home: +(mh / (ma + mh)).toFixed(4) };
+}
+
 function predictSlate(date, opts = {}) {
   const n = +(opts.n || 400000), seed = +(opts.seed || 11);
   const f = path.join(ROOT, 'data', 'days', date + '.json');
@@ -17,7 +25,8 @@ function predictSlate(date, opts = {}) {
   const t0 = Date.now(), games = [];
   for (const g of slate.games) {
     const row = { id: g.id, away: g.away, home: g.home, awayName: g.awayName, homeName: g.homeName, start: g.startUTC, time: etTime(g.startUTC),
-                  availability: g.availability, state: g.state, final: g.final, goalies: g.goalies, quoteFetchedAt: g.jupiter?.fetchedAt || null, jupiterLink: g.jupiter && g.jupiter.link };
+                  availability: g.availability, state: g.state, final: g.final, goalies: g.goalies, quoteFetchedAt: (g.market || g.jupiter)?.fetchedAt || null, marketLink: (g.market || g.jupiter)?.link || null,
+                  marketWin: marketWin(g.market || g.jupiter) };
     if (!g.v4) { row.error = 'no v4 rates (game already in the model history or data missing)'; games.push(row); continue; }
     const o = M.runGameV4(g, { n, seed });
     if (o.n !== n) throw new Error(`sim count mismatch ${o.n} != ${n}`);
@@ -35,7 +44,7 @@ function predictSlate(date, opts = {}) {
       markets: { ml: e.cands.filter(c => c.type === 'ML').length, totals: e.cands.filter(c => c.type === 'TOTAL').length, puckline: e.cands.filter(c => c.type === 'PUCKLINE').length },
       noBetReason: e.best ? null : e.reason,
       cands: e.cands.map(c => ({ type: c.type, label: c.label, q: +c.q.toFixed(4), ask: c.ask, ev: +c.ev.toFixed(4) })),
-      leans: Object.fromEntries(Object.entries(e.leans).map(([k, v]) => [k, +v.toFixed(4)])), jupiterTotals: e.hasTotals, jupiterPuckLine: e.hasPL,
+      leans: Object.fromEntries(Object.entries(e.leans).map(([k, v]) => [k, +v.toFixed(4)])), marketTotals: e.hasTotals, marketPuckLine: e.hasPL,
     });
     if (opts.check) {
       const ph = [], ot = [], pk = [];
@@ -46,10 +55,10 @@ function predictSlate(date, opts = {}) {
     games.push(row);
   }
   return { date, selectionPolicy:'scoring-quote-fee-depth-v2', model: slate.games.some(g=>g.v4?.skaterAdjustment) ? 'v4-independent-skater-v1' : 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
-           priceSource: 'Jupiter YES ask with conservative rounded-fee upper bound; one-cent quote stress and live depth verification',
-           jupiterFetchedAt: slate.games.map(g => g.jupiter && g.jupiter.fetchedAt).filter(Boolean).sort().pop() || null, games };
+           priceSource: 'Polymarket ask (Gamma best bid/ask) with conservative rounded-fee upper bound; one-cent quote stress and live depth verification',
+           marketFetchedAt: slate.games.map(g => (g.market || g.jupiter)?.fetchedAt).filter(Boolean).sort().pop() || null, games };
 }
-module.exports = { predictSlate, etDate };
+module.exports = { predictSlate, etDate, marketWin };
 if (require.main === module) (async () => {
   const date = process.argv[2] && /^\d{4}-\d{2}-\d{2}$/.test(process.argv[2]) ? process.argv[2] : etDate();
   const out = predictSlate(date, { n: arg('--n'), seed: arg('--seed'), check: process.argv.includes('--check') });

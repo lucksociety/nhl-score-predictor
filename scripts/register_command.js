@@ -5,7 +5,7 @@ const app = process.env.DISCORD_APP_ID || '1564789482514030672', tok = process.e
 if (!tok) { console.error('DISCORD_BOT_TOKEN not set'); process.exit(1); }
 const gi = process.argv.indexOf('--guild'), guild = gi > 0 ? process.argv[gi + 1] : null;
 const cmd = {
-  name: 'nhl', type: 1, description: "Luck Society: simulate today's NHL slate, predicted scores + best Jupiter bet per game",
+  name: 'nhl', type: 1, description: "Luck Society: simulate today's NHL slate, predicted scores + best Polymarket bet per game",
   options: [{ name: 'day', description: 'Which slate (default today, ET)', type: 3, required: false,
               choices: [{ name: 'today', value: 'today' }, { name: 'tomorrow', value: 'tomorrow' }] }],
   contexts: [0], integration_types: [0],

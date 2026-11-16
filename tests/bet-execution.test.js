@@ -2,31 +2,31 @@ const assert = require('node:assert/strict');
 const B = require('../js/bets');
 const now = Date.parse('2026-11-01T17:00:00Z');
 const base = () => ({ away: 'SEA', home: 'CGY', startUTC: '2026-11-01T18:00:00Z', state: 'FUT',
-  jupiter: { fetchedAt: new Date(now).toISOString(), active: true, live: false, sides: { away: { ask: .5, bid: .49, status: 'open', includesOTSO: true, volume: 1000 } } } });
+  market: { fetchedAt: new Date(now).toISOString(), active: true, live: false, sides: { away: { ask: .5, bid: .49, status: 'open', includesOTSO: true, volume: 1000 } } } });
 const o = { pick: {away:4,home:2}, n: 400000, pAway: .6, pHome: .4, dist: { tot: [1], mar: [1] } };
 const evaluate = g => B.evaluate(g, o, { now });
 assert(evaluate(base()).best);
 for (const mod of [
-  g => { g.jupiter.sides.away.bid = null; },
-  g => { delete g.jupiter.fetchedAt; },
-  g => { g.jupiter.fetchedAt = new Date(now - 300001).toISOString(); },
-  g => { g.jupiter.fetchedAt = new Date(now + 1).toISOString(); },
-  g => { delete g.jupiter.sides.away.includesOTSO; },
-  g => { g.jupiter.sides.away.includesOTSO = false; },
-  g => { g.jupiter.sides.away.periodType = '1st'; }, g => { g.jupiter.sides.away.bid = .6; },
-  g => { g.jupiter.sides.away.bid = .2; }, g => { g.jupiter.sides.away.status = 'closed'; },
-  g => { g.jupiter.sides.away.volume = 0; }, g => { g.jupiter.live = true; },
-  g => { g.jupiter.active = false; }, g => { g.startUTC = '2026-11-01T17:00:00Z'; },
+  g => { g.market.sides.away.bid = null; },
+  g => { delete g.market.fetchedAt; },
+  g => { g.market.fetchedAt = new Date(now - 300001).toISOString(); },
+  g => { g.market.fetchedAt = new Date(now + 1).toISOString(); },
+  g => { delete g.market.sides.away.includesOTSO; },
+  g => { g.market.sides.away.includesOTSO = false; },
+  g => { g.market.sides.away.periodType = '1st'; }, g => { g.market.sides.away.bid = .6; },
+  g => { g.market.sides.away.bid = .2; }, g => { g.market.sides.away.status = 'closed'; },
+  g => { g.market.sides.away.volume = 0; }, g => { g.market.live = true; },
+  g => { g.market.active = false; }, g => { g.startUTC = '2026-11-01T17:00:00Z'; },
   g => { g.startUTC = null; }, g => { g.state = 'LIVE'; }
 ]) { const g = base(); mod(g); assert.equal(evaluate(g).best, null); }
-const cheap = base(); cheap.jupiter.sides.away.ask = .4; cheap.jupiter.sides.away.bid = .39;
+const cheap = base(); cheap.market.sides.away.ask = .4; cheap.market.sides.away.bid = .39;
 assert.equal(B.evaluate(cheap, { ...o, pAway: .5001 }, { now }).best, null, 'probability must clear numerical error above 50%');
 assert.equal(B.evaluate(base(), { ...o, pAway: .5 }, { now }).best, null);
 assert.equal(B.evaluate(base(), { ...o, pAway: .5176 }, { now }).best, null, '0.01pp edge is below 400k-sim sampling uncertainty');
 assert.equal(B.evaluate(base(), { ...o, n: undefined }, { now }).best, null, 'unverified simulation count must fail closed');
 const totalGame = base();
-totalGame.jupiter.sides = {};
-totalGame.jupiter.extra = [{ type: 'totals', label: 'O 5.5', ou: 'O', line: 5.5,
+totalGame.market.sides = {};
+totalGame.market.extra = [{ type: 'totals', label: 'O 5.5', ou: 'O', line: 5.5,
   ask: .5, bid: .49, status: 'open', includesOTSO: true, volume: 100 }];
 const totalOutput = { ...o, dist: { ...o.dist, tot: [0, 0, 0, 0, .4, 0, .6] } };
 assert(B.evaluate(totalGame, totalOutput, { now }).best);
@@ -37,7 +37,7 @@ for (const mod of [
   x => { x.periodType = '1st'; },
 ]) {
   const g = structuredClone(totalGame);
-  mod(g.jupiter.extra[0]);
+  mod(g.market.extra[0]);
   assert.equal(B.evaluate(g, totalOutput, { now }).best, null);
 }
 (async () => {

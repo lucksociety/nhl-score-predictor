@@ -19,8 +19,8 @@
   const pp = x => x == null || isNaN(x) ? '—' : Math.abs(x) < 0.0005 ? '0.0' : (x > 0 ? '+' : '−') + Math.abs(100 * x).toFixed(1);
   const cents = x => x == null ? '—' : (100 * x).toFixed(0) + '¢';
   const evp = x => x == null || isNaN(x) ? '—' : (x >= 0 ? '+' : '−') + Math.abs(100 * x).toFixed(1) + '%';
-  const TIP_V3 = 'Edge vs DraftKings-derived model: v3 fits the DraftKings moneyline at full weight, so model win % ≈ DraftKings no-vig. Edge = model win % (incl. OT/SO) − Jupiter YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.07·p·(1−p).';
-  const TIP_V4 = 'Independent edge: v4 uses no betting-market input. Edge = model win % (incl. OT/SO) − Jupiter YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.07·p·(1−p). Bet only if model > 50% and EV > 0.';
+  const TIP_V3 = 'Edge vs DraftKings-derived model: v3 fits the DraftKings moneyline at full weight, so model win % ≈ DraftKings no-vig. Edge = model win % (incl. OT/SO) − Polymarket YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.05·p·(1−p).';
+  const TIP_V4 = 'Independent edge: v4 uses no betting-market input. Edge = model win % (incl. OT/SO) − Polymarket YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.05·p·(1−p). Bet only if model > 50% and EV > 0.';
   let EDGE_TIP = TIP_V4;
   const lastName = n => String(n || '').normalize('NFKD').replace(/[\u0300-\u036f.]/g, '').trim().toLowerCase().split(/\s+/).pop();
   // if the live/confirmed starter differs from the one the Action used, re-weight with that goalie's rating (gq)
@@ -39,13 +39,13 @@
     const e = NHLBets.evaluate(g, o), L = e.leans;
     const nT = e.cands.filter(c => c.type === 'TOTAL').length, nP = e.cands.filter(c => c.type === 'PUCKLINE').length;
     const row = c => `<tr class="${c.q > 0.5 && c.ev > 0 ? 'posbg' : ''}"><td>${esc(c.label)}</td><td>${pct(c.q, 1)}</td><td>${cents(c.ask)}</td><td class="${c.q > 0.5 && c.ev > 0 ? 'pos' : 'neg'}">${evp(c.ev)}</td></tr>`;
-    const all = e.cands.length ? `<details><summary>All ${e.cands.length} Jupiter sides (ML ${e.cands.length - nT - nP} · totals ${nT} · puck lines ${nP}), by EV</summary>
+    const all = e.cands.length ? `<details><summary>All ${e.cands.length} Polymarket sides (ML ${e.cands.length - nT - nP} · totals ${nT} · puck lines ${nP}), by EV</summary>
       <table class="edge"><thead><tr><th>Side</th><th>Model</th><th>Ask</th><th>EV/$1</th></tr></thead><tbody>${e.cands.map(row).join('')}</tbody></table></details>` : '';
-    const leans = `<div class="muted" style="font-size:11.5px;margin-top:4px">Model: Over 5.5 ${pct(L.o55, 1)} · Over 6.5 ${pct(L.o65, 1)} · ${g.home} −1.5 ${pct(L.homeM15, 1)} · ${g.away} −1.5 ${pct(L.awayM15, 1)}${g.jupiter && g.jupiter.extraIncludesOTSO === false ? ' · <span class="warn">check totals/spread rules (OT/SO)</span>' : ''}</div>${all}`;
+    const leans = `<div class="muted" style="font-size:11.5px;margin-top:4px">Model: Over 5.5 ${pct(L.o55, 1)} · Over 6.5 ${pct(L.o65, 1)} · ${g.home} −1.5 ${pct(L.homeM15, 1)} · ${g.away} −1.5 ${pct(L.awayM15, 1)}${g.market && g.market.extraIncludesOTSO === false ? ' · <span class="warn">check totals/spread rules (OT/SO)</span>' : ''}</div>${all}`;
     if (g.jupInGame) return `<div class="betbox nobet"><b>Best bet:</b> game started — in-game prices not compared with the pre-game model.${leans}</div>`;
     if (e.best) {
       const b = e.best, more = e.others.length ? `<div style="font-size:12px;margin-top:3px">Also qualifies: ${e.others.map(c => `${esc(c.label)} ${pct(c.q, 1)} @ ${cents(c.ask)} (${evp(c.ev)})`).join(' · ')}</div>` : '';
-      return `<div class="betbox bet">✅ <b>BEST BET: ${esc(b.label)}</b> · model ${pct(b.q, 1)} · Jupiter ${cents(b.ask)} (+${(100 * b.fee).toFixed(1)}¢ fee) · EV <b>${evp(b.ev)}</b>${more}${leans}</div>`;
+      return `<div class="betbox bet">✅ <b>BEST BET: ${esc(b.label)}</b> · model ${pct(b.q, 1)} · Polymarket ${cents(b.ask)} (+${(100 * b.fee).toFixed(1)}¢ fee) · EV <b>${evp(b.ev)}</b>${more}${leans}</div>`;
     }
     return `<div class="betbox nobet">⛔ <b>NO BET</b> — ${esc(e.reason)}${leans}</div>`;
   }
@@ -104,32 +104,32 @@
     return out;
   }
 
-  // Jupiter: live browser fetch (CORS ok); falls back to the Action snapshot copy stored on each game.
+  // Polymarket: live browser fetch (CORS ok); falls back to the Action snapshot copy stored on each game.
   function attachJup(g, snap) {
     const started = g.espnState === 'in' || g.espnState === 'post' || g.state === 'LIVE' || g.state === 'CRIT' || g.state === 'FINAL' || g.state === 'OFF' || !!g.final;
-    const snapJ = g.jupiter || null;
+    const snapJ = g.market || g.jupiter || null;   // g.jupiter: day files written before 2026-11-16
     const liveJ = state.jup ? state.jup.get(state.date + '|' + g.away + '|' + g.home) : null;
     const preGame = j => j && j.fetchedAt && g.startUTC && j.fetchedAt < g.startUTC;
     let j = null, src = null;
     if (started && preGame(snapJ)) { j = snapJ; src = 'snapshot'; }       // keep the last pre-game price once the game starts
     else if (liveJ) { j = liveJ; src = 'live'; }
     else if (snapJ) { j = snapJ; src = 'snapshot'; }
-    g.jupiter = j; g.jupSrc = src;
+    g.market = j; g.jupSrc = src;
     g.jupInGame = !!(j && started && !preGame(j));
-    g.jupSource = j ? (src === 'live' ? `Jupiter live (${etStamp(j.fetchedAt)})` : `Jupiter via Action snapshot (${etStamp(j.fetchedAt)})`) : null;
+    g.jupSource = j ? (src === 'live' ? `Polymarket live (${etStamp(j.fetchedAt)})` : `Polymarket via Action snapshot (${etStamp(j.fetchedAt)})`) : null;
   }
-  async function fetchJupiter() {
+  async function fetchPolymarket() {
     if (state.jup && state.jupAt && Date.now() - Date.parse(state.jupAt) < 60000) return;   // keyless API: be gentle
     try {
-      const r = await Jupiter.fetchEvents();
+      const r = await Polymarket.fetchEvents();
       const m = new Map();
-      for (const e of r.events) { const p = Jupiter.parseEvent(e); if (p) { p.fetchedAt = r.fetchedAt; p.host = r.host; m.set(p.date + '|' + p.away + '|' + p.home, p); } }
+      for (const e of r.events) { const p = Polymarket.parseEvent(e); if (p) { p.fetchedAt = r.fetchedAt; p.host = r.host; m.set(p.date + '|' + p.away + '|' + p.home, p); } }
       state.jup = m; state.jupAt = r.fetchedAt; state.jupOk = true; state.jupHost = r.host; state.jupErr = null;
     } catch (e) { state.jupOk = false; state.jupErr = e.message; }
   }
   async function fetchSlate(date) {
     let snap = null, live = null;
-    const [s, l] = await Promise.allSettled([getJSON(`data/days/${date}.json`), ESPNLive.scoreboard(date), fetchJupiter()]);
+    const [s, l] = await Promise.allSettled([getJSON(`data/days/${date}.json`), ESPNLive.scoreboard(date), fetchPolymarket()]);
     if (s.status === 'fulfilled') { snap = s.value; state.snapshotAt = snap.generatedAt; } else state.snapshotAt = null;
     if (l.status === 'fulfilled') { live = l.value; state.liveOk = true; state.liveAt = new Date().toISOString(); } else state.liveOk = false;
     return mergeGames(snap, live);
@@ -143,9 +143,9 @@
     renderSlate();
     if (!state.games.length) { setStatus(`No NHL games found for ${esc(date)}.`); return; }
     const noOdds = state.games.filter(g => !(hasML(g.odds) && hasTot(g.odds))).length;
-    const nj = state.games.filter(g => g.jupiter).length;
+    const nj = state.games.filter(g => g.market).length;
     setStatus(`${state.games.length} game${state.games.length > 1 ? 's' : ''} on ${esc(date)} · odds ${state.liveOk ? 'live from ESPN' : '<span class="warn">from Action snapshot (live ESPN fetch failed)</span>'}` +
-      ` · Jupiter markets ${nj}/${state.games.length}${state.jupOk ? ' (live)' : ' <span class="warn">(live Jupiter fetch failed — snapshot only)</span>'}` +
+      ` · Polymarket markets ${nj}/${state.games.length}${state.jupOk ? ' (live)' : ' <span class="warn">(live Polymarket fetch failed — snapshot only)</span>'}` +
       (state.snapshotAt ? ` · snapshot ${etStamp(state.snapshotAt)}` : '') + (noOdds ? ` · <span class="warn">${noOdds} without full odds → ratings fallback</span>` : '') + ' · press <b>Simulate</b>.');
     $('simulate').disabled = false;
   }
@@ -198,7 +198,7 @@
       setStatus(`Simulated ${n}/${jobs.length}…`);
     });
     const secs = ((performance.now() - t0) / 1000).toFixed(1);
-    setStatus(`Done: ${jobs.length} games simulated in ${secs}s with model ${useV4 ? 'v4-independent' : 'v3'}${useV4 && jobs.some(j => !j.v4) ? ' (v3 fallback where v4 rates were missing)' : ''} (${opts.n / 1000}k sims/game, seed 11 — same inputs give the same picks). Odds ${state.liveOk ? 'live from ESPN at ' + etStamp(state.liveAt) : 'from Action snapshot'}; Jupiter prices ${state.jupOk ? 'live at ' + etStamp(state.jupAt) : 'from Action snapshot'}.`);
+    setStatus(`Done: ${jobs.length} games simulated in ${secs}s with model ${useV4 ? 'v4-independent' : 'v3'}${useV4 && jobs.some(j => !j.v4) ? ' (v3 fallback where v4 rates were missing)' : ''} (${opts.n / 1000}k sims/game, seed 11 — same inputs give the same picks). Odds ${state.liveOk ? 'live from ESPN at ' + etStamp(state.liveAt) : 'from Action snapshot'}; Polymarket prices ${state.jupOk ? 'live at ' + etStamp(state.jupAt) : 'from Action snapshot'}.`);
     setTimeout(() => $('progress').classList.add('hidden'), 800);
     btn.disabled = false;
   }
@@ -218,9 +218,9 @@
     return `<div class="odds">ML <b>${g.away} ${odd(o.mlAway)}</b> / <b>${g.home} ${odd(o.mlHome)}</b> · Total <b>${o.total}</b> (o ${odd(o.over)} / u ${odd(o.under)})<br>No-vig: ${g.home} ${pct(ph, 1)} · Over ${pct(po, 1)} · <span class="muted">${esc(g.oddsSource || '')}</span></div>`;
   }
   function jupHTML(g, o) {
-    const j = g.jupiter;
-    if (!j) return `<div class="sect"><span>Jupiter edge</span></div><div class="odds"><span class="chip none">No Jupiter market</span> <span class="muted">No NHL game market on Jupiter Predict matched this game${state.jupOk ? '' : ' (live Jupiter fetch failed)'}.</span></div>`;
-    const ed = Jupiter.edges(j, o ? { away: o.pAway, home: o.pHome } : null);
+    const j = g.market;
+    if (!j) return `<div class="sect"><span>Polymarket edge</span></div><div class="odds"><span class="chip none">No Polymarket market</span> <span class="muted">No NHL game market on Polymarket matched this game${state.jupOk ? '' : ' (live Polymarket fetch failed)'}.</span></div>`;
+    const ed = Polymarket.edges(j, o ? { away: o.pAway, home: o.pHome } : null);
     const row = (s, ab) => {
       const e = ed[s];
       if (!e) return `<tr><td><b>${ab}</b></td><td colspan="6" class="muted">no price</td></tr>`;
@@ -228,16 +228,16 @@
       return `<tr class="${good ? 'posbg' : ''}"><td><b>${ab}</b></td><td>${cents(e.ask)}${e.bid ? `<span class="muted"> / ${cents(e.bid)}</span>` : ''}</td><td>${pct(e.noVig, 1)}</td><td>${o ? pct(e.model, 1) : '—'}</td>` +
         `<td class="${good ? 'pos' : soft ? 'soft' : 'neg'}">${o ? pp(e.edge) : '—'}</td><td class="${good ? 'pos' : 'neg'}">${o ? evp(e.ev) : '—'}</td></tr>`;
     };
-    const warn = g.jupInGame ? `<div class="warnbox">⚠ Game already started: this is an in-game Jupiter price, so the edge vs the pre-game model is not meaningful.</div>` : '';
+    const warn = g.jupInGame ? `<div class="warnbox">⚠ Game already started: this is an in-game Polymarket price, so the edge vs the pre-game model is not meaningful.</div>` : '';
     const otso = j.includesOTSO === false ? `<div class="warnbox">⚠ Market rules do not mention OT/shootout — check resolution before comparing.</div>` : '';
-    return `<div class="sect"><span title="${esc(EDGE_TIP)}">Jupiter edge ⓘ</span><a href="${esc(j.link)}" target="_blank" rel="noopener">Open market ↗</a></div>${warn}${otso}
-      <table class="edge"><thead><tr><th>Side</th><th title="YES ask / bid per $1 contract">Ask / bid</th><th title="Ask divided by the sum of both asks">No-vig</th><th title="Model win % incl. OT/SO">Model</th><th title="${esc(EDGE_TIP)}">Edge pp</th><th title="EV per $1 staked at the ask, after Jupiter fee 0.07·p·(1−p)">EV/$1</th></tr></thead>
+    return `<div class="sect"><span title="${esc(EDGE_TIP)}">Polymarket edge ⓘ</span><a href="${esc(j.link)}" target="_blank" rel="noopener">Open market ↗</a></div>${warn}${otso}
+      <table class="edge"><thead><tr><th>Side</th><th title="YES ask / bid per $1 contract">Ask / bid</th><th title="Ask divided by the sum of both asks">No-vig</th><th title="Model win % incl. OT/SO">Model</th><th title="${esc(EDGE_TIP)}">Edge pp</th><th title="EV per $1 staked at the ask, after Polymarket fee 0.05·p·(1−p)">EV/$1</th></tr></thead>
       <tbody>${row('away', g.away)}${row('home', g.home)}</tbody></table>
       <div class="muted" style="font-size:11.5px;margin-top:3px">${esc(g.jupSource || '')} · overround ${ed.overround == null ? '—' : pp(ed.overround) + ' pp'} · ${EDGE_TIP === TIP_V4 ? 'independent edge (v4, no Vegas input)' : 'edge vs DraftKings-derived model (v3)'}</div>`;
   }
   function bestEdge(g, o) {
-    if (!g.jupiter || !o || o.error) return null;
-    const ed = Jupiter.edges(g.jupiter, { away: o.pAway, home: o.pHome });
+    if (!g.market || !o || o.error) return null;
+    const ed = Polymarket.edges(g.market, { away: o.pAway, home: o.pHome });
     const c = ['away', 'home'].filter(s => ed[s]).map(s => Object.assign({ side: s, ab: g[s] }, ed[s]));
     if (!c.length) return null;
     c.sort((a, b) => b.ev - a.ev);
@@ -302,9 +302,9 @@
       if (g.final) { const err = Math.abs(g.final[0] - p.x) + Math.abs(g.final[1] - p.y); tot += err; nf++; if ((g.final[0] > g.final[1]) === (p.x > p.y)) wins++; r = `${g.final[0]}–${g.final[1]}${g.final[2] && g.final[2] !== 'REG' ? ' ' + g.final[2] : ''}`; e = err; }
       const fav = o.pHome >= 0.5 ? `${g.home} ${pct(o.pHome)}` : `${g.away} ${pct(o.pAway)}`;
       const be = bestEdge(g, o);
-      let jp = '<span class="chip none">No Jupiter market</span>', jb = '—';
+      let jp = '<span class="chip none">No Polymarket market</span>', jb = '—';
       if (be) {
-        const j = g.jupiter;
+        const j = g.market;
         jp = `<a href="${esc(j.link)}" target="_blank" rel="noopener">${g.away} ${cents(be.ed.away && be.ed.away.ask)} / ${g.home} ${cents(be.ed.home && be.ed.home.ask)}</a>`;
       }
       if (g.jupInGame) jb = `<span class="chip live" title="Game started: in-game price">in-game</span>`;
@@ -312,8 +312,8 @@
       return `<tr><td>${etTime(g.startUTC)}</td><td>${g.away} @ ${g.home}</td><td class="pick">${pickText(g, o)}</td><td>${p.otLabel ? 'OT' : '—'}</td><td>${pct(o.pOT)}</td><td>${fav}</td><td>${jp}</td><td>${jb}</td><td>${o.ea.toFixed(2)}–${o.eh.toFixed(2)}</td><td>${o.mode === 'v4-independent' ? 'v4 (indep.)' : o.mode === 'market' ? 'v3 Market' : '<span style="color:var(--warn)">v3 ratings fallback</span>'}</td><td>${r}</td><td>${e}</td></tr>`;
     }).join('');
     const foot = nf ? `<tr><td colspan="10" class="muted">Graded games: ${nf} · winners right ${wins}/${nf}</td><td><b>Total err</b></td><td><b>${tot}</b></td></tr>` : '';
-    $('sumnote').innerHTML = EDGE_TIP === TIP_V4 ? 'Edge is <b>independent</b>: v4 uses no betting-market input, so a positive EV is a genuine disagreement with Jupiter. Best bet = highest-EV Jupiter side with model &gt; 50% and EV &gt; 0 after fee; otherwise NO BET. Every Jupiter side is checked: moneyline, all O/U lines (2.5–9.5) and all alt puck lines (±1.5 to ±3.5); all settle on the final score incl. OT/SO (shootout winner +1), exactly what the simulator produces.' : 'Edge is <b>vs a DraftKings-derived model</b> (v3 uses the DraftKings line at full weight), so it mostly measures Jupiter vs DraftKings, not an independent read.';
-    $('sumtable').innerHTML = `<thead><tr><th>Puck drop</th><th>Game</th><th>Pick</th><th>OT?</th><th>P(OT)</th><th>Win prob</th><th title="Jupiter Predict YES ask per $1 contract (away / home)">Jupiter</th><th title="Bet only if model > 50% and EV after Jupiter fee > 0; highest EV qualifying side">Best bet</th><th>xG</th><th>Inputs</th><th>Result</th><th>Err</th></tr></thead><tbody>${rows}${foot}</tbody>`;
+    $('sumnote').innerHTML = EDGE_TIP === TIP_V4 ? 'Edge is <b>independent</b>: v4 uses no betting-market input, so a positive EV is a genuine disagreement with Polymarket. Best bet = highest-EV Polymarket side with model &gt; 50% and EV &gt; 0 after fee; otherwise NO BET. Every Polymarket side is checked: moneyline, all O/U lines (2.5–9.5) and all alt puck lines (±1.5 to ±3.5); all settle on the final score incl. OT/SO (shootout winner +1), exactly what the simulator produces.' : 'Edge is <b>vs a DraftKings-derived model</b> (v3 uses the DraftKings line at full weight), so it mostly measures Polymarket vs DraftKings, not an independent read.';
+    $('sumtable').innerHTML = `<thead><tr><th>Puck drop</th><th>Game</th><th>Pick</th><th>OT?</th><th>P(OT)</th><th>Win prob</th><th title="Polymarket YES ask per $1 contract (away / home)">Polymarket</th><th title="Bet only if model > 50% and EV after Polymarket fee > 0; highest EV qualifying side">Best bet</th><th>xG</th><th>Inputs</th><th>Result</th><th>Err</th></tr></thead><tbody>${rows}${foot}</tbody>`;
   }
   function copyPicks() {
     const lines = state.games.map((g, i) => { const o = state.out[i]; if (!o || o.error) return null; const be = bestEdge(g, o); return `${etTime(g.startUTC)}  ${g.away} @ ${g.home}: ${pickText(g, o)}  · P(OT) ${pct(o.pOT)}` + (o.dist && window.NHLBets && !g.jupInGame ? (ev => ev.best ? `  · BEST BET ${ev.best.label} (model ${pct(ev.best.q, 1)}, EV ${evp(ev.best.ev)})` : '  · NO BET')(NHLBets.evaluate(g, o)) : ''); }).filter(Boolean);
