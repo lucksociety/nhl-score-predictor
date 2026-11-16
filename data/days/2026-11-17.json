@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generatedAt": "2026-11-16T18:17:21Z",
+ "generatedAt": "2026-11-16T18:21:01Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -42,143 +42,554 @@
     "away": "BUF",
     "home": "PHI",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230070",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-buf-phi-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013323-0",
       "title": "Sabres",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013323-0",
+      "tokenId": "102795854414993509995546206823015067124377042530391191437403426328730812911522",
+      "status": "open",
       "periodType": null,
       "ask": 0.55,
       "bid": 0.54,
-      "volume": 50
+      "volume": 284.429268,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013323-1",
       "title": "Flyers",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013323-1",
+      "tokenId": "83332157420417446678930463572154350555877935116229771958722276616157234656076",
+      "status": "open",
       "periodType": null,
       "ask": 0.46,
       "bid": 0.45,
-      "volume": 50
+      "volume": 284.429268,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013325-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 4.5,
+      "marketId": "POLY-6013325-0",
+      "tokenId": "100233416285116958434063870448615495849642927064587775423402217016406168175096",
+      "status": "open",
       "periodType": null,
       "ask": 0.8,
-      "bid": 0.78,
-      "volume": 0,
-      "ou": "O",
-      "line": 4.5
+      "bid": 0.77,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013325-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 4.5,
+      "marketId": "POLY-6013325-1",
+      "tokenId": "81751601558380996987832595979009804830064589430181099420102305254651404687561",
+      "status": "open",
       "periodType": null,
-      "ask": 0.22,
+      "ask": 0.23,
       "bid": 0.2,
-      "volume": 0,
-      "ou": "U",
-      "line": 4.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013327-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.59,
-      "bid": 0.56,
-      "volume": 0,
       "ou": "O",
-      "line": 5.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013327-1",
-      "label": "U 5.5",
+      "line": 5.5,
+      "marketId": "POLY-6013327-0",
+      "tokenId": "85480342617338921974793124530490982801485502112068470349871410711718761993419",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
-      "ask": 0.44,
-      "bid": 0.41,
-      "volume": 0,
-      "ou": "U",
-      "line": 5.5
+      "ask": 0.58,
+      "bid": 0.55,
+      "volume": 203.206202,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013329-0",
-      "label": "O 6.5",
-      "status": "open",
+      "label": "U 5.5",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 5.5,
+      "marketId": "POLY-6013327-1",
+      "tokenId": "60838192779416737821862583821580269278329855923105372036528618737608983675088",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.45,
+      "bid": 0.42,
+      "volume": 203.206202,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 6.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 6.5,
+      "marketId": "POLY-6013329-0",
+      "tokenId": "45297281370216316107943801327222554842984331009518492274538617938271510955306",
+      "status": "open",
       "periodType": null,
       "ask": 0.48,
       "bid": 0.45,
-      "volume": 0,
-      "ou": "O",
-      "line": 6.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013329-1",
       "label": "U 6.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 6.5,
+      "marketId": "POLY-6013329-1",
+      "tokenId": "27921821842319107684916946336902842006644708375455213833830022641852526775878",
+      "status": "open",
       "periodType": null,
       "ask": 0.55,
       "bid": 0.52,
-      "volume": 0,
-      "ou": "U",
-      "line": 6.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013332-0",
       "label": "O 7.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.27,
-      "bid": 0.24,
-      "volume": 0,
       "ou": "O",
-      "line": 7.5
+      "line": 7.5,
+      "marketId": "POLY-6013332-0",
+      "tokenId": "66490385504622004795113107255812976680738194066149171305965123236920463875034",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.26,
+      "bid": 0.23,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013332-1",
       "label": "U 7.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.76,
-      "bid": 0.73,
-      "volume": 0,
       "ou": "U",
-      "line": 7.5
+      "line": 7.5,
+      "marketId": "POLY-6013332-1",
+      "tokenId": "98319280461340621551690222202281087856402128747910774615279582570013232029036",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.74,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BUF -1.5",
+      "includesOTSO": true,
+      "team": "BUF",
+      "line": -1.5,
+      "marketId": "POLY-7097641-0",
+      "tokenId": "66085904754827703397729775008515311047949352785034481778248013389001215135129",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.37,
+      "bid": 0.28,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "PHI +1.5",
+      "includesOTSO": true,
+      "team": "PHI",
+      "line": 1.5,
+      "marketId": "POLY-7097641-1",
+      "tokenId": "1529692231763426640480748764460467749523047308555345878345166365727865617268",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.72,
+      "bid": 0.63,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "PHI -3.5",
+      "includesOTSO": true,
+      "team": "PHI",
+      "line": -3.5,
+      "marketId": "POLY-7097642-0",
+      "tokenId": "61176481040503522211222806318371045314838800689397170145630795371843793148899",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BUF +3.5",
+      "includesOTSO": true,
+      "team": "BUF",
+      "line": 3.5,
+      "marketId": "POLY-7097642-1",
+      "tokenId": "31945643683190496407294570642708389301996259582306135389187934936587509936509",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "PHI -2.5",
+      "includesOTSO": true,
+      "team": "PHI",
+      "line": -2.5,
+      "marketId": "POLY-7097643-0",
+      "tokenId": "95143871014611816900284532088962050776547674966299352896999684830142108086460",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BUF +2.5",
+      "includesOTSO": true,
+      "team": "BUF",
+      "line": 2.5,
+      "marketId": "POLY-7097643-1",
+      "tokenId": "70074359881599660028041134082498989011994627197313329817652566166412799685923",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "PHI -1.5",
+      "includesOTSO": true,
+      "team": "PHI",
+      "line": -1.5,
+      "marketId": "POLY-7097644-0",
+      "tokenId": "8773573544594737369732095185736058815731431024896869674634248491393359617750",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.21,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BUF +1.5",
+      "includesOTSO": true,
+      "team": "BUF",
+      "line": 1.5,
+      "marketId": "POLY-7097644-1",
+      "tokenId": "57731944407524614309852376355373059056455620687970810047064087274726159754001",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.07,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BUF -3.5",
+      "includesOTSO": true,
+      "team": "BUF",
+      "line": -3.5,
+      "marketId": "POLY-7097645-0",
+      "tokenId": "72747485361393659402956144090526049092689949041278493397630140002256860889856",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.57,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "PHI +3.5",
+      "includesOTSO": true,
+      "team": "PHI",
+      "line": 3.5,
+      "marketId": "POLY-7097645-1",
+      "tokenId": "69172482719253997026910620104248799258198673043743848145849157775316285065871",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.43,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BUF -2.5",
+      "includesOTSO": true,
+      "team": "BUF",
+      "line": -2.5,
+      "marketId": "POLY-7097646-0",
+      "tokenId": "60355007630628281633159728138609108485914687981233658220477360054637252860852",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.58,
+      "bid": 0.06,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "PHI +2.5",
+      "includesOTSO": true,
+      "team": "PHI",
+      "line": 2.5,
+      "marketId": "POLY-7097646-1",
+      "tokenId": "115575021514124567172432091020657110644555293744453405366651275351068927647743",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.94,
+      "bid": 0.42,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097647-0",
+      "tokenId": "91506374837535356452097918098906982024464965812338572062342676601983744639051",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.998,
+      "bid": 0.96,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 2.5,
+      "marketId": "POLY-7097647-1",
+      "tokenId": "22515008663136603967841150489557222437981480136213261684031931895118865880333",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.04,
+      "bid": 0.002,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097648-0",
+      "tokenId": "42110423624889224266628631914461962262498598798267124123832497181294182810231",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.74,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097648-1",
+      "tokenId": "106183665462311395095844834278006838344379382199347249041318676667485032041465",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.26,
+      "bid": 0.04,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097649-0",
+      "tokenId": "61165723131019901537985439135662171356288149560343801787044267764224306114942",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.31,
+      "bid": 0.08,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097649-1",
+      "tokenId": "101608204776622040952515778291561830867308302680716461656143807794310597175817",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.92,
+      "bid": 0.69,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097650-0",
+      "tokenId": "40613108869079953341248419398774845777412079375726053863193149595364592631321",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.3,
+      "bid": 0.05,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097650-1",
+      "tokenId": "36215444386584737344687457531369632250460965328629262066501971560075423938966",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.7,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -755,7 +1166,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T18:17:23.787578+00:00",
+    "skaterCheckedAt": "2026-11-16T18:21:03.412846+00:00",
     "blockReason": null
    },
    "v4": {
@@ -846,7 +1257,7 @@
       "xa": 0.999
      }
     },
-    "at": "2026-11-16T18:17:23Z",
+    "at": "2026-11-16T18:21:03Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
@@ -1161,143 +1572,554 @@
     "away": "CBJ",
     "home": "NYI",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230071",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-cbj-nyi-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013337-0",
       "title": "Blue Jackets",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013337-0",
+      "tokenId": "73020470201495765058856393016743869149093006579763160370855001271608171088494",
+      "status": "open",
       "periodType": null,
-      "ask": 0.48,
-      "bid": 0.47,
-      "volume": 48
+      "ask": 0.46,
+      "bid": 0.45,
+      "volume": 1838.01093,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013337-1",
       "title": "Islanders",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013337-1",
+      "tokenId": "86137081798549453027719032798417377526581108280551192680522845986005581820530",
+      "status": "open",
       "periodType": null,
-      "ask": 0.53,
-      "bid": 0.52,
-      "volume": 48
+      "ask": 0.55,
+      "bid": 0.54,
+      "volume": 1838.01093,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013339-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.77,
-      "bid": 0.74,
-      "volume": 0,
       "ou": "O",
-      "line": 4.5
+      "line": 4.5,
+      "marketId": "POLY-6013339-0",
+      "tokenId": "4487979870948059618214041595373508087182881165635453198964915163370970200398",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.78,
+      "bid": 0.74,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013339-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 4.5,
+      "marketId": "POLY-6013339-1",
+      "tokenId": "47040158725235835861605410042613615989155395548151532704616008237891348406518",
+      "status": "open",
       "periodType": null,
       "ask": 0.26,
-      "bid": 0.23,
-      "volume": 0,
-      "ou": "U",
-      "line": 4.5
+      "bid": 0.22,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013341-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 5.5,
+      "marketId": "POLY-6013341-0",
+      "tokenId": "68914390793352669778839772996236387537266789849731413597187432571105671797531",
+      "status": "open",
       "periodType": null,
       "ask": 0.54,
       "bid": 0.52,
-      "volume": 0,
-      "ou": "O",
-      "line": 5.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013341-1",
       "label": "U 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 5.5,
+      "marketId": "POLY-6013341-1",
+      "tokenId": "47712590161702161547577216316829708782128486984855394481458746494264125259222",
+      "status": "open",
       "periodType": null,
       "ask": 0.48,
       "bid": 0.46,
-      "volume": 0,
-      "ou": "U",
-      "line": 5.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013343-0",
       "label": "O 6.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.47,
-      "bid": 0.42,
-      "volume": 5,
       "ou": "O",
-      "line": 6.5
+      "line": 6.5,
+      "marketId": "POLY-6013343-0",
+      "tokenId": "104993529915617576159454065552799820732251718602028739950914742319625359410076",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.45,
+      "bid": 0.44,
+      "volume": 34.263455,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013343-1",
       "label": "U 6.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.58,
-      "bid": 0.53,
-      "volume": 5,
       "ou": "U",
-      "line": 6.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013345-0",
-      "label": "O 7.5",
+      "line": 6.5,
+      "marketId": "POLY-6013343-1",
+      "tokenId": "70477671092948019537063672278400782420691305359413099842179377282621195848941",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
-      "ask": 0.22,
-      "bid": 0.2,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
+      "ask": 0.56,
+      "bid": 0.55,
+      "volume": 34.263455,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013345-1",
-      "label": "U 7.5",
-      "status": "open",
+      "label": "O 7.5",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 7.5,
+      "marketId": "POLY-6013345-0",
+      "tokenId": "40129626035133578193093203993679327683318865824719817130001698825068630001902",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.2,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 7.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 7.5,
+      "marketId": "POLY-6013345-1",
+      "tokenId": "48327191782440405305513952486943723471175231779473909727125405358045394015603",
+      "status": "open",
       "periodType": null,
       "ask": 0.8,
-      "bid": 0.78,
-      "volume": 0,
+      "bid": 0.77,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NYI -1.5",
+      "includesOTSO": true,
+      "team": "NYI",
+      "line": -1.5,
+      "marketId": "POLY-7097631-0",
+      "tokenId": "106021867920290560718854388720414664020774376143198169494769294489916711307376",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.39,
+      "bid": 0.29,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CBJ +1.5",
+      "includesOTSO": true,
+      "team": "CBJ",
+      "line": 1.5,
+      "marketId": "POLY-7097631-1",
+      "tokenId": "22932271551410794073589342552383816882082339834968376866925185667470433540544",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.71,
+      "bid": 0.61,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NYI -3.5",
+      "includesOTSO": true,
+      "team": "NYI",
+      "line": -3.5,
+      "marketId": "POLY-7097632-0",
+      "tokenId": "257705770289644660513307906129874250971856548514384349041918743228625064764",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.91,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CBJ +3.5",
+      "includesOTSO": true,
+      "team": "CBJ",
+      "line": 3.5,
+      "marketId": "POLY-7097632-1",
+      "tokenId": "57973423128083580475099349344922707380264536771363449242336564992116654237032",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.09,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NYI -2.5",
+      "includesOTSO": true,
+      "team": "NYI",
+      "line": -2.5,
+      "marketId": "POLY-7097633-0",
+      "tokenId": "100656198582845498425605844775296674359078832091059178359405225625638551271068",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.52,
+      "bid": 0.07,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CBJ +2.5",
+      "includesOTSO": true,
+      "team": "CBJ",
+      "line": 2.5,
+      "marketId": "POLY-7097633-1",
+      "tokenId": "68225074653469950554621552163102323836165886904390117831129956729964340099591",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.48,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CBJ -1.5",
+      "includesOTSO": true,
+      "team": "CBJ",
+      "line": -1.5,
+      "marketId": "POLY-7097634-0",
+      "tokenId": "89049668856674527890293930510520147034437615893273955288911285296292465459288",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.31,
+      "bid": 0.06,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NYI +1.5",
+      "includesOTSO": true,
+      "team": "NYI",
+      "line": 1.5,
+      "marketId": "POLY-7097634-1",
+      "tokenId": "61371661949993292248011303523329325682766740032244014670475148978939301095459",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.94,
+      "bid": 0.69,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CBJ -3.5",
+      "includesOTSO": true,
+      "team": "CBJ",
+      "line": -3.5,
+      "marketId": "POLY-7097635-0",
+      "tokenId": "16910009332371374590154832028000119855868706856052504589550015927735406876704",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.49,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NYI +3.5",
+      "includesOTSO": true,
+      "team": "NYI",
+      "line": 3.5,
+      "marketId": "POLY-7097635-1",
+      "tokenId": "94318815898668491351424157680259932435667039103497237320846173599593519767798",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.51,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CBJ -2.5",
+      "includesOTSO": true,
+      "team": "CBJ",
+      "line": -2.5,
+      "marketId": "POLY-7097636-0",
+      "tokenId": "9402304826058513935278706989432979656561916462192054759558152538739961897682",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.36,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NYI +2.5",
+      "includesOTSO": true,
+      "team": "NYI",
+      "line": 2.5,
+      "marketId": "POLY-7097636-1",
+      "tokenId": "83647672310587579694340331238414012172825622490908491793009829806343315162253",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.64,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097637-0",
+      "tokenId": "84815556234085182956354566254468131020868747827737882930819495887204822669891",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.7,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
       "ou": "U",
-      "line": 7.5
+      "line": 2.5,
+      "marketId": "POLY-7097637-1",
+      "tokenId": "108380371996980722878612384536907000005544100368807674637208927122237705328797",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.3,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097638-0",
+      "tokenId": "79605461735179832791827185749643835008769785166778516565899119578840420086731",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.7,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097638-1",
+      "tokenId": "38387329736007380346945122003869706185279436608443551527923838582018121089013",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.3,
+      "bid": 0.05,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097639-0",
+      "tokenId": "90772754091856071004037413422302108462887623588801920647913447896203472360397",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.29,
+      "bid": 0.1,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097639-1",
+      "tokenId": "96546938756497847727883203727055865686192786331565022170898186672952059135362",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.9,
+      "bid": 0.71,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097640-0",
+      "tokenId": "72653127087314502644418822848165748571685094436232841853500156070143302110711",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.28,
+      "bid": 0.05,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097640-1",
+      "tokenId": "65960621560907052640231607220092099031139008210841951651879717103673633224321",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.72,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1440,12 +2262,6 @@
         "position": "C",
         "status": "Day-To-Day",
         "updatedAt": "2026-11-15T14:13Z"
-       },
-       {
-        "name": "Bo Horvat",
-        "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-15T06:01Z"
        },
        {
         "name": "Calum Ritchie",
@@ -1823,13 +2639,6 @@
          "productionAbovePositionMean": -0.0233
         },
         {
-         "name": "Bo Horvat",
-         "id": 8477500,
-         "status": "Day-To-Day",
-         "baselineParticipation": 0.9603,
-         "productionAbovePositionMean": 0.2152
-        },
-        {
          "name": "Calum Ritchie",
          "id": 8484221,
          "status": "Injured Reserve",
@@ -1857,14 +2666,14 @@
       {
        "label": "NYI questionable skaters OUT",
        "rates": [
-        2.554570847633032,
-        2.806921968121346
+        2.551081379159601,
+        2.8372732447530233
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T18:17:23.787578+00:00",
+    "skaterCheckedAt": "2026-11-16T18:21:03.412846+00:00",
     "blockReason": null
    },
    "v4": {
@@ -1948,7 +2757,7 @@
       "xa": 1.041
      }
     },
-    "at": "2026-11-16T18:17:23Z",
+    "at": "2026-11-16T18:21:03Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
@@ -2182,13 +2991,6 @@
          "productionAbovePositionMean": -0.0233
         },
         {
-         "name": "Bo Horvat",
-         "id": 8477500,
-         "status": "Day-To-Day",
-         "baselineParticipation": 0.9603,
-         "productionAbovePositionMean": 0.2152
-        },
-        {
          "name": "Calum Ritchie",
          "id": 8484221,
          "status": "Injured Reserve",
@@ -2216,8 +3018,8 @@
       {
        "label": "NYI questionable skaters OUT",
        "rates": [
-        2.554570847633032,
-        2.806921968121346
+        2.551081379159601,
+        2.8372732447530233
        ]
       }
      ]
@@ -2263,143 +3065,554 @@
     "away": "EDM",
     "home": "FLA",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230068",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-edm-fla-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013297-0",
       "title": "Oilers",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013297-0",
+      "tokenId": "54595319531231293596819456837965644826173872065157101966346670493966903910550",
+      "status": "open",
       "periodType": null,
-      "ask": 0.48,
-      "bid": 0.47,
-      "volume": 333
+      "ask": 0.49,
+      "bid": 0.48,
+      "volume": 8952.071653,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013297-1",
       "title": "Panthers",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013297-1",
+      "tokenId": "53527226764560707746593510005220693651806333070953258420560858688700821577778",
+      "status": "open",
       "periodType": null,
-      "ask": 0.53,
-      "bid": 0.52,
-      "volume": 333
+      "ask": 0.52,
+      "bid": 0.51,
+      "volume": 8952.071653,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013299-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.79,
-      "bid": 0.77,
-      "volume": 0,
       "ou": "O",
-      "line": 4.5
+      "line": 4.5,
+      "marketId": "POLY-6013299-0",
+      "tokenId": "8324989601581239410895361849933222558144973222193433135037247299175367854855",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.79,
+      "volume": 406.075947,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013299-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.23,
-      "bid": 0.21,
-      "volume": 0,
       "ou": "U",
-      "line": 4.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013301-0",
-      "label": "O 5.5",
+      "line": 4.5,
+      "marketId": "POLY-6013299-1",
+      "tokenId": "36569695986057491980044955711225169765867868723072511170037386195570104672686",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
-      "ask": 0.6,
-      "bid": 0.58,
-      "volume": 0,
-      "ou": "O",
-      "line": 5.5
+      "ask": 0.21,
+      "bid": 0.2,
+      "volume": 406.075947,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013301-1",
-      "label": "U 5.5",
-      "status": "open",
+      "label": "O 5.5",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 5.5,
+      "marketId": "POLY-6013301-0",
+      "tokenId": "56493486020697383836590506457631552842717868381210294297836866132739501198478",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.59,
+      "bid": 0.58,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 5.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 5.5,
+      "marketId": "POLY-6013301-1",
+      "tokenId": "48833678658836174038067281551176825771851364975279066582068575134073007445108",
+      "status": "open",
       "periodType": null,
       "ask": 0.42,
-      "bid": 0.4,
-      "volume": 0,
-      "ou": "U",
-      "line": 5.5
+      "bid": 0.41,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013303-0",
       "label": "O 6.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.46,
-      "bid": 0.43,
-      "volume": 0,
       "ou": "O",
-      "line": 6.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013303-1",
-      "label": "U 6.5",
+      "line": 6.5,
+      "marketId": "POLY-6013303-0",
+      "tokenId": "23552357567080685287959442781215203516790344098833954683206134217336587149744",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
-      "ask": 0.57,
-      "bid": 0.54,
-      "volume": 0,
-      "ou": "U",
-      "line": 6.5
+      "ask": 0.48,
+      "bid": 0.45,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013305-0",
-      "label": "O 7.5",
-      "status": "open",
+      "label": "U 6.5",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 6.5,
+      "marketId": "POLY-6013303-1",
+      "tokenId": "38813331045659100477260546957863294770449286445361036530992802671081359555661",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.55,
+      "bid": 0.52,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 7.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 7.5,
+      "marketId": "POLY-6013305-0",
+      "tokenId": "91432925687269263300075368532760482024856312853037079833042304295910707347791",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.25,
+      "bid": 0.24,
+      "volume": 431.0,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 7.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 7.5,
+      "marketId": "POLY-6013305-1",
+      "tokenId": "22419084652197072533928580657914273078613235048843815542872813051370022266557",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.76,
+      "bid": 0.75,
+      "volume": 431.0,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "FLA -1.5",
+      "includesOTSO": true,
+      "team": "FLA",
+      "line": -1.5,
+      "marketId": "POLY-7097651-0",
+      "tokenId": "71732562127577026525592257921204123720704073009788488080121664181065124538222",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.34,
+      "bid": 0.26,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "EDM +1.5",
+      "includesOTSO": true,
+      "team": "EDM",
+      "line": 1.5,
+      "marketId": "POLY-7097651-1",
+      "tokenId": "10239238865817461418432928333296887609934644306931680297311677134544206537648",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.74,
+      "bid": 0.66,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "FLA -3.5",
+      "includesOTSO": true,
+      "team": "FLA",
+      "line": -3.5,
+      "marketId": "POLY-7097652-0",
+      "tokenId": "69134765427923094001836490703555625807754821370419115637437109752649245861374",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.92,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "EDM +3.5",
+      "includesOTSO": true,
+      "team": "EDM",
+      "line": 3.5,
+      "marketId": "POLY-7097652-1",
+      "tokenId": "26580473063266296644904186379924056671520820940337860532541010520231381107730",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.08,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "FLA -2.5",
+      "includesOTSO": true,
+      "team": "FLA",
+      "line": -2.5,
+      "marketId": "POLY-7097653-0",
+      "tokenId": "112014893847925735873054363135776949584356763075045848019801577140492441087175",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.76,
+      "bid": 0.06,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "EDM +2.5",
+      "includesOTSO": true,
+      "team": "EDM",
+      "line": 2.5,
+      "marketId": "POLY-7097653-1",
+      "tokenId": "89285759580129171305988687273829344350071509146761838791276419865764790108153",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.94,
+      "bid": 0.24,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "EDM -1.5",
+      "includesOTSO": true,
+      "team": "EDM",
+      "line": -1.5,
+      "marketId": "POLY-7097654-0",
+      "tokenId": "4564041950235871982247789591808624175175797149105676233660051687028072395556",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.32,
+      "bid": 0.24,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "FLA +1.5",
+      "includesOTSO": true,
+      "team": "FLA",
+      "line": 1.5,
+      "marketId": "POLY-7097654-1",
+      "tokenId": "81664169876078442503203585970767088655911853688944665322030824682518845819805",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.76,
+      "bid": 0.68,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "EDM -3.5",
+      "includesOTSO": true,
+      "team": "EDM",
+      "line": -3.5,
+      "marketId": "POLY-7097655-0",
+      "tokenId": "45993625298301163109529046981099068501092433521747949102859172465720694768060",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "FLA +3.5",
+      "includesOTSO": true,
+      "team": "FLA",
+      "line": 3.5,
+      "marketId": "POLY-7097655-1",
+      "tokenId": "100252690944537981972227296567625023374361607588520282410885047066994770932660",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.14,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "EDM -2.5",
+      "includesOTSO": true,
+      "team": "EDM",
+      "line": -2.5,
+      "marketId": "POLY-7097656-0",
+      "tokenId": "90316672517586065174210643151212085147714804914731617374112978891813396600966",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.51,
+      "bid": 0.13,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "FLA +2.5",
+      "includesOTSO": true,
+      "team": "FLA",
+      "line": 2.5,
+      "marketId": "POLY-7097656-1",
+      "tokenId": "3131199490984034532642143154007309772198046634243161225852476188088936006299",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.87,
+      "bid": 0.49,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097657-0",
+      "tokenId": "61090453833325694481144886016003137754672143456621059452192944453795612826656",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.74,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 2.5,
+      "marketId": "POLY-7097657-1",
+      "tokenId": "3127854345608080109860115353538388333781755718029841974154814046705766844896",
+      "status": "open",
       "periodType": null,
       "ask": 0.26,
-      "bid": 0.23,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013305-1",
-      "label": "U 7.5",
-      "status": "open",
+      "label": "O 3.5",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097658-0",
+      "tokenId": "17270668232121969386311858858453349175297202370054036666647020133125461740126",
+      "status": "open",
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.74,
-      "volume": 0,
+      "ask": 0.96,
+      "bid": 0.73,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
       "ou": "U",
-      "line": 7.5
+      "line": 3.5,
+      "marketId": "POLY-7097658-1",
+      "tokenId": "54403712196637846305380305523577786098412040397970763318225285496943486965001",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.04,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097659-0",
+      "tokenId": "58561445081289321679529732036674787489116470205038293455927220604883437647043",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.32,
+      "bid": 0.11,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097659-1",
+      "tokenId": "91514596245564289098753879902400484910439647934303106740625536039265446974492",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.89,
+      "bid": 0.68,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097660-0",
+      "tokenId": "24113647572957419268240192905396199454578383168053197789372292680376241433973",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.32,
+      "bid": 0.05,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097660-1",
+      "tokenId": "34343980814410847804674632829816537138467921881623709704757501107588074406280",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.68,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3018,7 +4231,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T18:17:23.787578+00:00",
+    "skaterCheckedAt": "2026-11-16T18:21:03.412846+00:00",
     "blockReason": null
    },
    "v4": {
@@ -3109,7 +4322,7 @@
       "xa": 0.984
      }
     },
-    "at": "2026-11-16T18:17:23Z",
+    "at": "2026-11-16T18:21:03Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
@@ -3438,143 +4651,554 @@
     "away": "LAK",
     "home": "BOS",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230072",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-lak-bos-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013350-0",
       "title": "Kings",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013350-0",
+      "tokenId": "8146352000130320855891445127588162324738826468444620920698831087846401525777",
+      "status": "open",
       "periodType": null,
-      "ask": 0.41,
-      "bid": 0.4,
-      "volume": 328
+      "ask": 0.42,
+      "bid": 0.41,
+      "volume": 2746.14526,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013350-1",
       "title": "Bruins",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013350-1",
+      "tokenId": "35123192264211389693435896268584035417465531685052791972152375592813483391115",
+      "status": "open",
       "periodType": null,
-      "ask": 0.6,
-      "bid": 0.59,
-      "volume": 328
+      "ask": 0.59,
+      "bid": 0.58,
+      "volume": 2746.14526,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013352-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 4.5,
+      "marketId": "POLY-6013352-0",
+      "tokenId": "85044768432894677750159368907699333478034893075723984795661545171499589233767",
+      "status": "open",
       "periodType": null,
       "ask": 0.8,
       "bid": 0.77,
-      "volume": 0,
-      "ou": "O",
-      "line": 4.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013352-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 4.5,
+      "marketId": "POLY-6013352-1",
+      "tokenId": "30690782791087891937865388767396040517309573276202633072876463150162522250298",
+      "status": "open",
       "periodType": null,
       "ask": 0.23,
       "bid": 0.2,
-      "volume": 0,
-      "ou": "U",
-      "line": 4.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013354-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.56,
-      "bid": 0.54,
-      "volume": 0,
       "ou": "O",
-      "line": 5.5
+      "line": 5.5,
+      "marketId": "POLY-6013354-0",
+      "tokenId": "23253364402900062445496631345636957730266299306014720052530346359826038350151",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.58,
+      "bid": 0.55,
+      "volume": 40.035653,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013354-1",
       "label": "U 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 5.5,
+      "marketId": "POLY-6013354-1",
+      "tokenId": "108469182845488217774691158284366371882184421383627426683889017265546101704531",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.45,
+      "bid": 0.42,
+      "volume": 40.035653,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 6.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 6.5,
+      "marketId": "POLY-6013356-0",
+      "tokenId": "93238947880501775949352317228768789478608244775371206199982801641760213584328",
+      "status": "open",
       "periodType": null,
       "ask": 0.46,
       "bid": 0.44,
-      "volume": 0,
-      "ou": "U",
-      "line": 5.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013356-0",
-      "label": "O 6.5",
-      "status": "open",
-      "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.46,
-      "bid": 0.43,
-      "volume": 0,
-      "ou": "O",
-      "line": 6.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013356-1",
       "label": "U 6.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.57,
-      "bid": 0.54,
-      "volume": 0,
       "ou": "U",
-      "line": 6.5
+      "line": 6.5,
+      "marketId": "POLY-6013356-1",
+      "tokenId": "27049396678387214848716402421606088641101052863156381489070561338186778852484",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.56,
+      "bid": 0.54,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013358-0",
       "label": "O 7.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 7.5,
+      "marketId": "POLY-6013358-0",
+      "tokenId": "33828989702280599956775627933879150365330904621663419616109215830989730544094",
+      "status": "open",
       "periodType": null,
       "ask": 0.25,
       "bid": 0.22,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013358-1",
       "label": "U 7.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 7.5,
+      "marketId": "POLY-6013358-1",
+      "tokenId": "99693170378738370485614742817157842179898564953141636297383034742619507567936",
+      "status": "open",
       "periodType": null,
       "ask": 0.78,
       "bid": 0.75,
-      "volume": 0,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BOS -1.5",
+      "includesOTSO": true,
+      "team": "BOS",
+      "line": -1.5,
+      "marketId": "POLY-7097458-0",
+      "tokenId": "65856294467395064539644618662738354246320348960373651586070092123497162110995",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.94,
+      "bid": 0.35,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "LAK +1.5",
+      "includesOTSO": true,
+      "team": "LAK",
+      "line": 1.5,
+      "marketId": "POLY-7097458-1",
+      "tokenId": "31927162794650358416277451026746748281716504530917592612271664113550180454508",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.65,
+      "bid": 0.06,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BOS -3.5",
+      "includesOTSO": true,
+      "team": "BOS",
+      "line": -3.5,
+      "marketId": "POLY-7097459-0",
+      "tokenId": "3140899124320979117271530052678613113141768195773735641541795606573613599867",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "LAK +3.5",
+      "includesOTSO": true,
+      "team": "LAK",
+      "line": 3.5,
+      "marketId": "POLY-7097459-1",
+      "tokenId": "74253416811855973268164250304701406825439417490719168070371642711333982790528",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.23,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BOS -2.5",
+      "includesOTSO": true,
+      "team": "BOS",
+      "line": -2.5,
+      "marketId": "POLY-7097460-0",
+      "tokenId": "74200986234401062607770000424203448164907089694032030919575302544982790072087",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.2,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "LAK +2.5",
+      "includesOTSO": true,
+      "team": "LAK",
+      "line": 2.5,
+      "marketId": "POLY-7097460-1",
+      "tokenId": "51269761086281278137828835966506995025855511004512190692633697577524355085966",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.21,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "LAK -1.5",
+      "includesOTSO": true,
+      "team": "LAK",
+      "line": -1.5,
+      "marketId": "POLY-7097461-0",
+      "tokenId": "6615729879657615924638153277070432354022353116817963761106551596612111199146",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.46,
+      "bid": 0.19,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BOS +1.5",
+      "includesOTSO": true,
+      "team": "BOS",
+      "line": 1.5,
+      "marketId": "POLY-7097461-1",
+      "tokenId": "3792270294986121803095623647127810815126299571545534672468636306303576600907",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.81,
+      "bid": 0.54,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "LAK -3.5",
+      "includesOTSO": true,
+      "team": "LAK",
+      "line": -3.5,
+      "marketId": "POLY-7097462-0",
+      "tokenId": "105441977162076673258823284731407430511072816780715724357361258731097876930135",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.89,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BOS +3.5",
+      "includesOTSO": true,
+      "team": "BOS",
+      "line": 3.5,
+      "marketId": "POLY-7097462-1",
+      "tokenId": "50595286776771754299993382849681503341043026950129701282537370906257840464947",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.11,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "LAK -2.5",
+      "includesOTSO": true,
+      "team": "LAK",
+      "line": -2.5,
+      "marketId": "POLY-7097463-0",
+      "tokenId": "96291367320283326823938443770376193446521315972351794049455683578326568213471",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.47,
+      "bid": 0.1,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "BOS +2.5",
+      "includesOTSO": true,
+      "team": "BOS",
+      "line": 2.5,
+      "marketId": "POLY-7097463-1",
+      "tokenId": "55459647967656279565452594856123071368279457243786345045531454901852974398359",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.9,
+      "bid": 0.53,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097464-0",
+      "tokenId": "23698927431284294184002383541937768186987499957728618314718403574144786655406",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.73,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
       "ou": "U",
-      "line": 7.5
+      "line": 2.5,
+      "marketId": "POLY-7097464-1",
+      "tokenId": "16933426664192424230565255316161731304889394356073687787454773791639646214843",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097465-0",
+      "tokenId": "91266604352649986655039513145223128750767538990921809039104309327050136126621",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.72,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097465-1",
+      "tokenId": "16028034601485205543038156530637388298409177291886547767195087408037587044440",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.28,
+      "bid": 0.05,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097466-0",
+      "tokenId": "46358526949224784133158866839435229505971903821849452420061102368405275050305",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.29,
+      "bid": 0.1,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097466-1",
+      "tokenId": "102514109907233555808045495667411851014289594443340071150375029694345075713274",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.9,
+      "bid": 0.71,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097467-0",
+      "tokenId": "97438423804743648924949288750737480253398980905052319273472194374227064905467",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.3,
+      "bid": 0.05,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097467-1",
+      "tokenId": "44599433307823525297146642189108883293473445911122529204230491189087677980678",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.7,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4098,7 +5722,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T18:17:23.787578+00:00",
+    "skaterCheckedAt": "2026-11-16T18:21:03.412846+00:00",
     "blockReason": null
    },
    "v4": {
@@ -4182,7 +5806,7 @@
       "xa": 1.002
      }
     },
-    "at": "2026-11-16T18:17:23Z",
+    "at": "2026-11-16T18:21:03Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
@@ -4477,143 +6101,554 @@
     "away": "OTT",
     "home": "WPG",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230076",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-ott-wpg-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013387-0",
       "title": "Senators",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013387-0",
+      "tokenId": "3756841640825957912238208681504405271787981114806807871759207062094627871204",
+      "status": "open",
       "periodType": null,
       "ask": 0.54,
       "bid": 0.53,
-      "volume": 125
+      "volume": 702.132219,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013387-1",
       "title": "Jets",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013387-1",
+      "tokenId": "2372420273019108113745160960649719377315951614245240222585873371950192701299",
+      "status": "open",
       "periodType": null,
       "ask": 0.47,
       "bid": 0.46,
-      "volume": 125
+      "volume": 702.132219,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013389-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.79,
-      "bid": 0.76,
-      "volume": 0,
       "ou": "O",
-      "line": 4.5
+      "line": 4.5,
+      "marketId": "POLY-6013389-0",
+      "tokenId": "29638924087292625165414046370094433756963553470464167763563440004739818451910",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.78,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013389-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.24,
-      "bid": 0.21,
-      "volume": 0,
       "ou": "U",
-      "line": 4.5
+      "line": 4.5,
+      "marketId": "POLY-6013389-1",
+      "tokenId": "104961205770751489003049594451230865955614956563887971982813858085703330603531",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.22,
+      "bid": 0.2,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013391-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.57,
-      "bid": 0.54,
-      "volume": 0,
       "ou": "O",
-      "line": 5.5
+      "line": 5.5,
+      "marketId": "POLY-6013391-0",
+      "tokenId": "30842768477149771752325079015672671134767436749314465143130904092990507150940",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.56,
+      "bid": 0.54,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013391-1",
       "label": "U 5.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.46,
-      "bid": 0.43,
-      "volume": 0,
       "ou": "U",
-      "line": 5.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013393-0",
-      "label": "O 6.5",
+      "line": 5.5,
+      "marketId": "POLY-6013391-1",
+      "tokenId": "67851995255978402192184425873885344461997032413062628298321669063879885720475",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
       "ask": 0.46,
-      "bid": 0.43,
-      "volume": 0,
-      "ou": "O",
-      "line": 6.5
+      "bid": 0.44,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013393-1",
-      "label": "U 6.5",
-      "status": "open",
+      "label": "O 6.5",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 6.5,
+      "marketId": "POLY-6013393-0",
+      "tokenId": "55138360597694110576177076945449466151746371415560057822947593102871443885118",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.47,
+      "bid": 0.43,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 6.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 6.5,
+      "marketId": "POLY-6013393-1",
+      "tokenId": "404162997586831640198406548872277204775700692554978306012817050784938519623",
+      "status": "open",
       "periodType": null,
       "ask": 0.57,
-      "bid": 0.54,
-      "volume": 0,
-      "ou": "U",
-      "line": 6.5
+      "bid": 0.53,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013395-0",
       "label": "O 7.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 7.5,
+      "marketId": "POLY-6013395-0",
+      "tokenId": "86804536606533556705495128398365978736949889757826053095807057754741034389147",
+      "status": "open",
       "periodType": null,
       "ask": 0.26,
       "bid": 0.23,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013395-1",
       "label": "U 7.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 7.5,
+      "marketId": "POLY-6013395-1",
+      "tokenId": "81498623274688042703457781441833942604073945772542520643421786214217373974791",
+      "status": "open",
       "periodType": null,
       "ask": 0.77,
       "bid": 0.74,
-      "volume": 0,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WPG -1.5",
+      "includesOTSO": true,
+      "team": "WPG",
+      "line": -1.5,
+      "marketId": "POLY-7097611-0",
+      "tokenId": "58240477220539449801741002199585075633926606209615342287010731521451926760540",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.31,
+      "bid": 0.22,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "OTT +1.5",
+      "includesOTSO": true,
+      "team": "OTT",
+      "line": 1.5,
+      "marketId": "POLY-7097611-1",
+      "tokenId": "38924633007774353964720692308557782501344115462238021342618556816457042069510",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.78,
+      "bid": 0.69,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WPG -3.5",
+      "includesOTSO": true,
+      "team": "WPG",
+      "line": -3.5,
+      "marketId": "POLY-7097612-0",
+      "tokenId": "72834455584536795185537915399623259448326478830344752139643478609214765376939",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.49,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "OTT +3.5",
+      "includesOTSO": true,
+      "team": "OTT",
+      "line": 3.5,
+      "marketId": "POLY-7097612-1",
+      "tokenId": "53234875050796487676188745508822196670171944704382722063496060954729615755217",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.51,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WPG -2.5",
+      "includesOTSO": true,
+      "team": "WPG",
+      "line": -2.5,
+      "marketId": "POLY-7097613-0",
+      "tokenId": "72017643296824093526355129699146157557465212645896872691351054526283332043228",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.36,
+      "bid": 0.05,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "OTT +2.5",
+      "includesOTSO": true,
+      "team": "OTT",
+      "line": 2.5,
+      "marketId": "POLY-7097613-1",
+      "tokenId": "35186304691419610832761960233881785972719402574037641439296135322588188472001",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.64,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "OTT -1.5",
+      "includesOTSO": true,
+      "team": "OTT",
+      "line": -1.5,
+      "marketId": "POLY-7097614-0",
+      "tokenId": "62512424725531808086304641862483887270931755380025413623559733190443286231182",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.38,
+      "bid": 0.29,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WPG +1.5",
+      "includesOTSO": true,
+      "team": "WPG",
+      "line": 1.5,
+      "marketId": "POLY-7097614-1",
+      "tokenId": "109180006254644385954747124241593749944306445297621834309016554947418270776119",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.71,
+      "bid": 0.62,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "OTT -3.5",
+      "includesOTSO": true,
+      "team": "OTT",
+      "line": -3.5,
+      "marketId": "POLY-7097615-0",
+      "tokenId": "14255521713552107361119921314327752886607039113813844218823687786858587646847",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.71,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WPG +3.5",
+      "includesOTSO": true,
+      "team": "WPG",
+      "line": 3.5,
+      "marketId": "POLY-7097615-1",
+      "tokenId": "114297204464023672937692961211803164385884640348861409157731001041121157965256",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.29,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "OTT -2.5",
+      "includesOTSO": true,
+      "team": "OTT",
+      "line": -2.5,
+      "marketId": "POLY-7097616-0",
+      "tokenId": "24122903574605510910694970202722769917172630093400923118101646064135347469497",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.42,
+      "bid": 0.06,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WPG +2.5",
+      "includesOTSO": true,
+      "team": "WPG",
+      "line": 2.5,
+      "marketId": "POLY-7097616-1",
+      "tokenId": "17173243866829036413820597255145346039387883137640181580917812137685315555546",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.94,
+      "bid": 0.58,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097617-0",
+      "tokenId": "88601369323263141242296819297744957596590269724065060902096035667597358291838",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.72,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
       "ou": "U",
-      "line": 7.5
+      "line": 2.5,
+      "marketId": "POLY-7097617-1",
+      "tokenId": "69673057017082559948161940150027139810182765017197923996400509213857883832546",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.28,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097618-0",
+      "tokenId": "4427032076504367113283657248219250600200275007839741923619688498441437400218",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.73,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097618-1",
+      "tokenId": "6966236378318774108276583833014953475783204876847323599611721383250187880165",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.04,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097619-0",
+      "tokenId": "85484949276062948954760540915116049215345579111545469681802987663735907673873",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.3,
+      "bid": 0.1,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097619-1",
+      "tokenId": "66861158070772906008011009829452885031185147463899682542529129043069238002402",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.9,
+      "bid": 0.7,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097620-0",
+      "tokenId": "54144247566813124156711762035197510628807239567707970750143644205603946816454",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.31,
+      "bid": 0.04,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097620-1",
+      "tokenId": "2123815655364002612611656856401102041377633658399904301599209985316428055858",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.69,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5029,7 +7064,7 @@
       "xa": 1.014
      }
     },
-    "at": "2026-11-16T18:17:23Z"
+    "at": "2026-11-16T18:21:03Z"
    }
   },
   {
@@ -5071,143 +7106,554 @@
     "away": "TOR",
     "home": "CHI",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230074",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-tor-chi-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013360-0",
       "title": "Maple Leafs",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013360-0",
+      "tokenId": "27125338377024789772200991622088909248027682636166305409675180855083196585562",
+      "status": "open",
       "periodType": null,
       "ask": 0.57,
       "bid": 0.56,
-      "volume": 39
+      "volume": 444.174226,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013360-1",
       "title": "Blackhawks",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013360-1",
+      "tokenId": "30756262568699097981007860870092986111288397566834312725458993138028364349477",
+      "status": "open",
       "periodType": null,
       "ask": 0.44,
       "bid": 0.43,
-      "volume": 39
+      "volume": 444.174226,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013362-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 4.5,
+      "marketId": "POLY-6013362-0",
+      "tokenId": "89507893401261071348490332816748026852875979094810967183805336983205005092593",
+      "status": "open",
       "periodType": null,
       "ask": 0.82,
       "bid": 0.79,
-      "volume": 0,
-      "ou": "O",
-      "line": 4.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013362-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 4.5,
+      "marketId": "POLY-6013362-1",
+      "tokenId": "113544529555387482183822277190550482967463764300043766200999861734480628626561",
+      "status": "open",
       "periodType": null,
       "ask": 0.21,
       "bid": 0.18,
-      "volume": 0,
-      "ou": "U",
-      "line": 4.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013364-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.6,
-      "bid": 0.57,
-      "volume": 0,
       "ou": "O",
-      "line": 5.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013364-1",
-      "label": "U 5.5",
+      "line": 5.5,
+      "marketId": "POLY-6013364-0",
+      "tokenId": "79269948841230559458754537990675589034656258145245072968099284097918256854520",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
-      "ask": 0.43,
-      "bid": 0.4,
-      "volume": 0,
-      "ou": "U",
-      "line": 5.5
+      "ask": 0.61,
+      "bid": 0.59,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013366-0",
-      "label": "O 6.5",
-      "status": "open",
+      "label": "U 5.5",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 5.5,
+      "marketId": "POLY-6013364-1",
+      "tokenId": "83052368301666516436322162062278900109846262758762945105226924658279734210410",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.41,
+      "bid": 0.39,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 6.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 6.5,
+      "marketId": "POLY-6013366-0",
+      "tokenId": "60474717973353938372979883997086674354754021907598660205828967323425714079323",
+      "status": "open",
       "periodType": null,
       "ask": 0.5,
       "bid": 0.47,
-      "volume": 0,
-      "ou": "O",
-      "line": 6.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013366-1",
       "label": "U 6.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 6.5,
+      "marketId": "POLY-6013366-1",
+      "tokenId": "1996179228621444060474537692789018620410452296634501043161603984819584710573",
+      "status": "open",
       "periodType": null,
       "ask": 0.53,
       "bid": 0.5,
-      "volume": 0,
-      "ou": "U",
-      "line": 6.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013368-0",
       "label": "O 7.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 7.5,
+      "marketId": "POLY-6013368-0",
+      "tokenId": "47158539664563401158903720047537037757187006221594012839273217011815980867518",
+      "status": "open",
       "periodType": null,
       "ask": 0.29,
-      "bid": 0.27,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
+      "bid": 0.26,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013368-1",
       "label": "U 7.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.73,
-      "bid": 0.71,
-      "volume": 0,
       "ou": "U",
-      "line": 7.5
+      "line": 7.5,
+      "marketId": "POLY-6013368-1",
+      "tokenId": "83809287353595224620947449494637896860360258670872789359402642724253249145249",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.74,
+      "bid": 0.71,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TOR -1.5",
+      "includesOTSO": true,
+      "team": "TOR",
+      "line": -1.5,
+      "marketId": "POLY-7097621-0",
+      "tokenId": "69908164054591899629025702156907594903021017299526228219553532195225778181232",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.58,
+      "bid": 0.14,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CHI +1.5",
+      "includesOTSO": true,
+      "team": "CHI",
+      "line": 1.5,
+      "marketId": "POLY-7097621-1",
+      "tokenId": "104499014490121384640859988521954384570815082587849450003650459912139775680206",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.42,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CHI -3.5",
+      "includesOTSO": true,
+      "team": "CHI",
+      "line": -3.5,
+      "marketId": "POLY-7097622-0",
+      "tokenId": "29173533334473258884786014099164504430079967609502827205870787106887968431585",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.68,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TOR +3.5",
+      "includesOTSO": true,
+      "team": "TOR",
+      "line": 3.5,
+      "marketId": "POLY-7097622-1",
+      "tokenId": "22568295829270597908632852209732876358204563476943409698454293533485160003122",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.32,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CHI -2.5",
+      "includesOTSO": true,
+      "team": "CHI",
+      "line": -2.5,
+      "marketId": "POLY-7097623-0",
+      "tokenId": "112043026238835959186293496484469602518567160756398074489436834191760046827161",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.36,
+      "bid": 0.09,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TOR +2.5",
+      "includesOTSO": true,
+      "team": "TOR",
+      "line": 2.5,
+      "marketId": "POLY-7097623-1",
+      "tokenId": "75080895848222573346908531918984779629157901817211552869099298257535723596056",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.91,
+      "bid": 0.64,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CHI -1.5",
+      "includesOTSO": true,
+      "team": "CHI",
+      "line": -1.5,
+      "marketId": "POLY-7097624-0",
+      "tokenId": "83196683814684658178694628936621098238189678221209683705330058000807247968344",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.29,
+      "bid": 0.04,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TOR +1.5",
+      "includesOTSO": true,
+      "team": "TOR",
+      "line": 1.5,
+      "marketId": "POLY-7097624-1",
+      "tokenId": "59299486027884270539924274512682761372445268026253861970476744696900516631416",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.71,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TOR -3.5",
+      "includesOTSO": true,
+      "team": "TOR",
+      "line": -3.5,
+      "marketId": "POLY-7097625-0",
+      "tokenId": "31577000947228946008778980737123357733647274246316076894049324241263279646610",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.66,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CHI +3.5",
+      "includesOTSO": true,
+      "team": "CHI",
+      "line": 3.5,
+      "marketId": "POLY-7097625-1",
+      "tokenId": "93793474939604901136349276294754920518707252103129836342345763452272087016497",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.34,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TOR -2.5",
+      "includesOTSO": true,
+      "team": "TOR",
+      "line": -2.5,
+      "marketId": "POLY-7097626-0",
+      "tokenId": "100819155865405705829039288987024445548975164738504736104429477482998646795487",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.6,
+      "bid": 0.19,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CHI +2.5",
+      "includesOTSO": true,
+      "team": "CHI",
+      "line": 2.5,
+      "marketId": "POLY-7097626-1",
+      "tokenId": "98810454291207704289097956579346968825722451890276200251899223491044717814558",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.81,
+      "bid": 0.4,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097627-0",
+      "tokenId": "87932734017866087900196214633864721703152458856807569784697088077807833127927",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.74,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 2.5,
+      "marketId": "POLY-7097627-1",
+      "tokenId": "7141131191491820076706942173973292652969886082288504850077915039784194924021",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.26,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097628-0",
+      "tokenId": "761589185813209859270888856760488708760507647522165971212238743151319410551",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.75,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097628-1",
+      "tokenId": "53671807922043750709672303302365917450527356701910013607597899384538744369787",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.25,
+      "bid": 0.04,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097629-0",
+      "tokenId": "91482492158790820220705142589075899021772295566689812587266553999536783911902",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.34,
+      "bid": 0.1,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097629-1",
+      "tokenId": "51201537534558800247839127357978731681687291019277922215671871512383905819976",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.9,
+      "bid": 0.66,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097630-0",
+      "tokenId": "109906507398896406364241462747473029668997989025584504360319550276129976316097",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.33,
+      "bid": 0.05,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097630-1",
+      "tokenId": "76182003938308870639015766178117711454768898179761943090115540906513117873769",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.95,
+      "bid": 0.67,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5883,7 +8329,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T18:17:23.787578+00:00",
+    "skaterCheckedAt": "2026-11-16T18:21:03.412846+00:00",
     "blockReason": null
    },
    "v4": {
@@ -5967,7 +8413,7 @@
       "xa": 1.067
      }
     },
-    "at": "2026-11-16T18:17:23Z",
+    "at": "2026-11-16T18:21:03Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
@@ -6325,143 +8771,554 @@
     "away": "WSH",
     "home": "TBL",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230069",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-wsh-tb-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013310-0",
       "title": "Capitals",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013310-0",
+      "tokenId": "7196889345120786700727812041564129797743465518787485741443219857644720224785",
+      "status": "open",
       "periodType": null,
-      "ask": 0.42,
+      "ask": 0.41,
       "bid": 0.4,
-      "volume": 271
+      "volume": 555.367571,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013310-1",
       "title": "Lightning",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013310-1",
+      "tokenId": "2782650744429654451040037968692948267501652736148100869856247625021236954995",
+      "status": "open",
       "periodType": null,
       "ask": 0.6,
-      "bid": 0.58,
-      "volume": 271
+      "bid": 0.59,
+      "volume": 555.367571,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013312-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 4.5,
+      "marketId": "POLY-6013312-0",
+      "tokenId": "104631483768108039155050939017060087084617840322501056442407208886200116721732",
+      "status": "open",
       "periodType": null,
       "ask": 0.83,
       "bid": 0.8,
-      "volume": 0,
-      "ou": "O",
-      "line": 4.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013312-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 4.5,
+      "marketId": "POLY-6013312-1",
+      "tokenId": "106430679783061670289568690921805715888676590975344306785014167628526961731896",
+      "status": "open",
       "periodType": null,
       "ask": 0.2,
       "bid": 0.17,
-      "volume": 0,
-      "ou": "U",
-      "line": 4.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013314-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 5.5,
+      "marketId": "POLY-6013314-0",
+      "tokenId": "5992090495606321622973959476465849639659847967821301669895951653298857639836",
+      "status": "open",
       "periodType": null,
       "ask": 0.61,
       "bid": 0.59,
-      "volume": 7,
-      "ou": "O",
-      "line": 5.5
+      "volume": 6.5,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013314-1",
       "label": "U 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 5.5,
+      "marketId": "POLY-6013314-1",
+      "tokenId": "102620681674356790428262203307497148814697472132502149476228915805262004014455",
+      "status": "open",
       "periodType": null,
       "ask": 0.41,
       "bid": 0.39,
-      "volume": 7,
-      "ou": "U",
-      "line": 5.5
+      "volume": 6.5,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013316-0",
       "label": "O 6.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.5,
-      "bid": 0.47,
-      "volume": 0,
       "ou": "O",
-      "line": 6.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013316-1",
-      "label": "U 6.5",
+      "line": 6.5,
+      "marketId": "POLY-6013316-0",
+      "tokenId": "96457300960789931246922105328256439749217492958680531278803277602008271443117",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
-      "ask": 0.53,
-      "bid": 0.5,
-      "volume": 0,
-      "ou": "U",
-      "line": 6.5
+      "ask": 0.51,
+      "bid": 0.48,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013318-0",
-      "label": "O 7.5",
-      "status": "open",
+      "label": "U 6.5",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 6.5,
+      "marketId": "POLY-6013316-1",
+      "tokenId": "90488126260210940995036481276164354313445340388327688438226815283168885325997",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.52,
+      "bid": 0.49,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 7.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 7.5,
+      "marketId": "POLY-6013318-0",
+      "tokenId": "55595498593058149705624595735686066721636412296517491219520675188416320292111",
+      "status": "open",
       "periodType": null,
       "ask": 0.3,
       "bid": 0.27,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013318-1",
       "label": "U 7.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 7.5,
+      "marketId": "POLY-6013318-1",
+      "tokenId": "101834755658770884999011924600529276698748725205328450501365522636614737506925",
+      "status": "open",
       "periodType": null,
       "ask": 0.73,
       "bid": 0.7,
-      "volume": 0,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TBL -1.5",
+      "includesOTSO": true,
+      "team": "TBL",
+      "line": -1.5,
+      "marketId": "POLY-7097922-0",
+      "tokenId": "112641180551837287661510779216181050678804929050676036493621706791927265438406",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.43,
+      "bid": 0.33,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WSH +1.5",
+      "includesOTSO": true,
+      "team": "WSH",
+      "line": 1.5,
+      "marketId": "POLY-7097922-1",
+      "tokenId": "47905097388335158204831125948339589434432050446518815159078512429958389741732",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.67,
+      "bid": 0.57,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TBL -3.5",
+      "includesOTSO": true,
+      "team": "TBL",
+      "line": -3.5,
+      "marketId": "POLY-7097923-0",
+      "tokenId": "19418100195690764733987161472104965770213386586121378090667539231809165268404",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WSH +3.5",
+      "includesOTSO": true,
+      "team": "WSH",
+      "line": 3.5,
+      "marketId": "POLY-7097923-1",
+      "tokenId": "23966743714406938754831011461316634531599145377958175652084464300227204004492",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TBL -2.5",
+      "includesOTSO": true,
+      "team": "TBL",
+      "line": -2.5,
+      "marketId": "POLY-7097924-0",
+      "tokenId": "77578826610959404473198947344898847912881694170355143233315669248422899275654",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.31,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WSH +2.5",
+      "includesOTSO": true,
+      "team": "WSH",
+      "line": 2.5,
+      "marketId": "POLY-7097924-1",
+      "tokenId": "31048244443722847570324071931257341774292946760880924475503369375225073760483",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.69,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WSH -3.5",
+      "includesOTSO": true,
+      "team": "WSH",
+      "line": -3.5,
+      "marketId": "POLY-7097925-0",
+      "tokenId": "26882672436492694818744894210699717657723879367243725290351179478132661004344",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.59,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TBL +3.5",
+      "includesOTSO": true,
+      "team": "TBL",
+      "line": 3.5,
+      "marketId": "POLY-7097925-1",
+      "tokenId": "45729889837488334516107159655693919177654163772265864493515030013512822080107",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.41,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WSH -1.5",
+      "includesOTSO": true,
+      "team": "WSH",
+      "line": -1.5,
+      "marketId": "POLY-7097926-0",
+      "tokenId": "95136505242306710906162356979744555109726527755151111004851652737288266012575",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TBL +1.5",
+      "includesOTSO": true,
+      "team": "TBL",
+      "line": 1.5,
+      "marketId": "POLY-7097926-1",
+      "tokenId": "83178024852461702600748015843111370339329643047607373855643326484714358323332",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.14,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "WSH -2.5",
+      "includesOTSO": true,
+      "team": "WSH",
+      "line": -2.5,
+      "marketId": "POLY-7097927-0",
+      "tokenId": "112372923413518648511325097921330577208217011362810572424919139837103920396124",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.71,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "TBL +2.5",
+      "includesOTSO": true,
+      "team": "TBL",
+      "line": 2.5,
+      "marketId": "POLY-7097927-1",
+      "tokenId": "103724043082006775020164886410991438075730771195952453303835097081070592111072",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.29,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097928-0",
+      "tokenId": "54022393279355747249580775292381989923536771198149743888059253894747530089369",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.41,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
       "ou": "U",
-      "line": 7.5
+      "line": 2.5,
+      "marketId": "POLY-7097928-1",
+      "tokenId": "70703357760313807841567421592906583162146532771013028126357055367920555331440",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.59,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097929-0",
+      "tokenId": "82293936323691281197220016590658957227971225641840235500204646695627564355063",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.45,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097929-1",
+      "tokenId": "61486758586065168365597893089107855063645997150357010762921122399134534999580",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.55,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097930-0",
+      "tokenId": "88386497725945057945683918395748118864491106779806322475897824447369887483822",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.59,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097930-1",
+      "tokenId": "58256082740425195102445360909099653601104868288853854553878818029560269458749",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.41,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097931-0",
+      "tokenId": "64293602692382320892312660696915599823928495608023432126060000620646690442243",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.6,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097931-1",
+      "tokenId": "4920330769566488694604294920356662741250375514691287013700701855914200291438",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.4,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7020,7 +9877,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T18:17:23.787578+00:00",
+    "skaterCheckedAt": "2026-11-16T18:21:03.412846+00:00",
     "blockReason": null
    },
    "v4": {
@@ -7104,7 +9961,7 @@
       "xa": 0.957
      }
     },
-    "at": "2026-11-16T18:17:23Z",
+    "at": "2026-11-16T18:21:03Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
@@ -7412,143 +10269,554 @@
     "away": "ANA",
     "home": "STL",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230077",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-ana-stl-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013400-0",
       "title": "Ducks",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013400-0",
+      "tokenId": "72369593300157014778205195140162452576991618913821129392990678191985644155760",
+      "status": "open",
       "periodType": null,
-      "ask": 0.43,
-      "bid": 0.42,
-      "volume": 65
+      "ask": 0.45,
+      "bid": 0.44,
+      "volume": 1524.690607,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013400-1",
       "title": "Blues",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013400-1",
+      "tokenId": "61483693442329719991125678458017371657674307527406649996277072470243358771287",
+      "status": "open",
       "periodType": null,
-      "ask": 0.58,
-      "bid": 0.57,
-      "volume": 65
+      "ask": 0.56,
+      "bid": 0.55,
+      "volume": 1524.690607,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013402-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.84,
-      "bid": 0.82,
-      "volume": 0,
       "ou": "O",
-      "line": 4.5
+      "line": 4.5,
+      "marketId": "POLY-6013402-0",
+      "tokenId": "19207497139810178562051412136525537020432613972137915926191995965427853292319",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.83,
+      "bid": 0.81,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013402-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.18,
-      "bid": 0.16,
-      "volume": 0,
       "ou": "U",
-      "line": 4.5
+      "line": 4.5,
+      "marketId": "POLY-6013402-1",
+      "tokenId": "68906293857942846254488230656281720043455721804889987916151552817586028573593",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.19,
+      "bid": 0.17,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013404-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.64,
-      "bid": 0.61,
-      "volume": 0,
       "ou": "O",
-      "line": 5.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013404-1",
-      "label": "U 5.5",
+      "line": 5.5,
+      "marketId": "POLY-6013404-0",
+      "tokenId": "71647313956525001527609396670532077920833221898931465328786936764955955731355",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
-      "ask": 0.39,
-      "bid": 0.36,
-      "volume": 0,
-      "ou": "U",
-      "line": 5.5
+      "ask": 0.62,
+      "bid": 0.6,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013406-0",
-      "label": "O 6.5",
-      "status": "open",
+      "label": "U 5.5",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 5.5,
+      "marketId": "POLY-6013404-1",
+      "tokenId": "46339727165895312959042252560736472970189386294891424588291625201898553244768",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.4,
+      "bid": 0.38,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 6.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 6.5,
+      "marketId": "POLY-6013406-0",
+      "tokenId": "88619392704484817402932858652078076673274021018961791375922630147536967199829",
+      "status": "open",
       "periodType": null,
       "ask": 0.51,
-      "bid": 0.44,
-      "volume": 0,
-      "ou": "O",
-      "line": 6.5
+      "bid": 0.5,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013406-1",
       "label": "U 6.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.56,
-      "bid": 0.49,
-      "volume": 0,
       "ou": "U",
-      "line": 6.5
+      "line": 6.5,
+      "marketId": "POLY-6013406-1",
+      "tokenId": "14033326432226785848046070081486104551424401429807536311174581353539787281478",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.5,
+      "bid": 0.49,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013408-0",
       "label": "O 7.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 7.5,
+      "marketId": "POLY-6013408-0",
+      "tokenId": "95176309157242556477730770678235031049212898266718760840341049220735972588990",
+      "status": "open",
       "periodType": null,
       "ask": 0.32,
-      "bid": 0.29,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
+      "bid": 0.3,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013408-1",
       "label": "U 7.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.71,
-      "bid": 0.68,
-      "volume": 0,
       "ou": "U",
-      "line": 7.5
+      "line": 7.5,
+      "marketId": "POLY-6013408-1",
+      "tokenId": "46009064101348607388072511146877400548443636686906588306728405924836914914404",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.7,
+      "bid": 0.68,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "STL -1.5",
+      "includesOTSO": true,
+      "team": "STL",
+      "line": -1.5,
+      "marketId": "POLY-7097900-0",
+      "tokenId": "20532405376630718012789993576254565669495223036828891607651296110914658493639",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.4,
+      "bid": 0.3,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "ANA +1.5",
+      "includesOTSO": true,
+      "team": "ANA",
+      "line": 1.5,
+      "marketId": "POLY-7097900-1",
+      "tokenId": "28429295967735323624039216351112813124745864780359165608547073542692611788223",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.7,
+      "bid": 0.6,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "STL -3.5",
+      "includesOTSO": true,
+      "team": "STL",
+      "line": -3.5,
+      "marketId": "POLY-7097901-0",
+      "tokenId": "34199066283707201648808342274814760979462472706366551985850441294162488274553",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.99,
+      "bid": 0.01,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "ANA +3.5",
+      "includesOTSO": true,
+      "team": "ANA",
+      "line": 3.5,
+      "marketId": "POLY-7097901-1",
+      "tokenId": "78467775588741480917242867331005996327715633431090941641876725433985292229361",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.99,
+      "bid": 0.01,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "STL -2.5",
+      "includesOTSO": true,
+      "team": "STL",
+      "line": -2.5,
+      "marketId": "POLY-7097902-0",
+      "tokenId": "88246064707930475098823601459437342587281598363857459371844799361895098882164",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.98,
+      "bid": 0.18,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "ANA +2.5",
+      "includesOTSO": true,
+      "team": "ANA",
+      "line": 2.5,
+      "marketId": "POLY-7097902-1",
+      "tokenId": "522327281429288901698139725458424527146622030218909956403712398155361729124",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.82,
+      "bid": 0.02,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "ANA -1.5",
+      "includesOTSO": true,
+      "team": "ANA",
+      "line": -1.5,
+      "marketId": "POLY-7097903-0",
+      "tokenId": "36886009381063935698273215491844740811767919918949444229755275486050293143427",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.01,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "STL +1.5",
+      "includesOTSO": true,
+      "team": "STL",
+      "line": 1.5,
+      "marketId": "POLY-7097903-1",
+      "tokenId": "42466623288474910210680823938141151264974117334388795096302190110057703120684",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.99,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "ANA -3.5",
+      "includesOTSO": true,
+      "team": "ANA",
+      "line": -3.5,
+      "marketId": "POLY-7097904-0",
+      "tokenId": "68593216399066972277091399105381467738126896224408224585136656139332186903079",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.98,
+      "bid": 0.01,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "STL +3.5",
+      "includesOTSO": true,
+      "team": "STL",
+      "line": 3.5,
+      "marketId": "POLY-7097904-1",
+      "tokenId": "63724448362658954772929139048976411081871117029638673462446698659317338281864",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.99,
+      "bid": 0.02,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "ANA -2.5",
+      "includesOTSO": true,
+      "team": "ANA",
+      "line": -2.5,
+      "marketId": "POLY-7097905-0",
+      "tokenId": "33538070209337441544710883411021229251385691844763844937172308530372718552774",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.79,
+      "bid": 0.01,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "STL +2.5",
+      "includesOTSO": true,
+      "team": "STL",
+      "line": 2.5,
+      "marketId": "POLY-7097905-1",
+      "tokenId": "30080413691370150035874045992807796638729559643103246426451433553102225200321",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.99,
+      "bid": 0.21,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097906-0",
+      "tokenId": "70888255365345670325584635227675487904558973578974288840091118942303986949603",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.99,
+      "bid": 0.04,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 2.5,
+      "marketId": "POLY-7097906-1",
+      "tokenId": "45732426788943035221051439232227586984246186871208366207120225003606156211475",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.96,
+      "bid": 0.01,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097907-0",
+      "tokenId": "16966206605329815587690159552593503889689009108189323713544790223428127329551",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.91,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097907-1",
+      "tokenId": "108231043424783653564254791661547802088789517703715993274049914705571789769435",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.09,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097908-0",
+      "tokenId": "65080746534652457406653290014993677330067816862394816158065029387303798963534",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.57,
+      "bid": 0.14,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097908-1",
+      "tokenId": "70697362440601327745112535878911995965131543634692106533818826675250676554116",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.43,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097909-0",
+      "tokenId": "4346342587876512302505086041418191760044416004127228185137298561267552219898",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.01,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097909-1",
+      "tokenId": "44494842872603945280012608517972938904159007495167128169095998630331855190800",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.99,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7955,7 +11223,7 @@
       "xa": 0.992
      }
     },
-    "at": "2026-11-16T18:17:23Z"
+    "at": "2026-11-16T18:21:03Z"
    }
   },
   {
@@ -7987,7 +11255,7 @@
     },
     "home": {
      "name": "Jesper Wallstedt",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "market": {
@@ -7997,143 +11265,554 @@
     "away": "NSH",
     "home": "MIN",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230075",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-nsh-min-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013373-0",
       "title": "Predators",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013373-0",
+      "tokenId": "26014511899975587353865899886135118751275483811143892792684884770233737480508",
+      "status": "open",
       "periodType": null,
-      "ask": 0.35,
-      "bid": 0.34,
-      "volume": 38
+      "ask": 0.37,
+      "bid": 0.36,
+      "volume": 554.841272,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013373-1",
       "title": "Wild",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013373-1",
+      "tokenId": "47825011815959059652027883945034371560656973428291652296159773377822365965368",
+      "status": "open",
       "periodType": null,
-      "ask": 0.66,
-      "bid": 0.65,
-      "volume": 38
+      "ask": 0.64,
+      "bid": 0.63,
+      "volume": 554.841272,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013375-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 4.5,
+      "marketId": "POLY-6013375-0",
+      "tokenId": "4931191636255851286588997043308603709252326262315630588148454089355404513233",
+      "status": "open",
       "periodType": null,
       "ask": 0.8,
-      "bid": 0.77,
-      "volume": 0,
-      "ou": "O",
-      "line": 4.5
+      "bid": 0.79,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013375-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.23,
-      "bid": 0.2,
-      "volume": 0,
       "ou": "U",
-      "line": 4.5
+      "line": 4.5,
+      "marketId": "POLY-6013375-1",
+      "tokenId": "77883931073667285572521798700681030807579068795024114643950779770462410202553",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.21,
+      "bid": 0.2,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013377-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 5.5,
+      "marketId": "POLY-6013377-0",
+      "tokenId": "85448430564877308075426945857310555456376219062547402610602092808140458110303",
+      "status": "open",
       "periodType": null,
       "ask": 0.59,
       "bid": 0.56,
-      "volume": 0,
-      "ou": "O",
-      "line": 5.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013377-1",
       "label": "U 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 5.5,
+      "marketId": "POLY-6013377-1",
+      "tokenId": "19713423257173904601701427543685825903501961544282140663460038259176023717488",
+      "status": "open",
       "periodType": null,
       "ask": 0.44,
       "bid": 0.41,
-      "volume": 0,
-      "ou": "U",
-      "line": 5.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013379-0",
       "label": "O 6.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.48,
-      "bid": 0.46,
-      "volume": 0,
       "ou": "O",
-      "line": 6.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013379-1",
-      "label": "U 6.5",
+      "line": 6.5,
+      "marketId": "POLY-6013379-0",
+      "tokenId": "84877094767991011079940013136176938282140759217050883204192310458804192581290",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
-      "ask": 0.54,
-      "bid": 0.52,
-      "volume": 0,
-      "ou": "U",
-      "line": 6.5
+      "ask": 0.47,
+      "bid": 0.45,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013382-0",
-      "label": "O 7.5",
-      "status": "open",
+      "label": "U 6.5",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 6.5,
+      "marketId": "POLY-6013379-1",
+      "tokenId": "63003818256292056354490837621192535749854556426518260897378811163497911659113",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.55,
+      "bid": 0.53,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 7.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 7.5,
+      "marketId": "POLY-6013382-0",
+      "tokenId": "74141202701261992597643231703438633042521984238834988106163135771316863722794",
+      "status": "open",
       "periodType": null,
       "ask": 0.28,
       "bid": 0.25,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013382-1",
       "label": "U 7.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 7.5,
+      "marketId": "POLY-6013382-1",
+      "tokenId": "74004098968247141805677315924363613735830238253456154025699481702062238183678",
+      "status": "open",
       "periodType": null,
       "ask": 0.75,
       "bid": 0.72,
-      "volume": 0,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "MIN -1.5",
+      "includesOTSO": true,
+      "team": "MIN",
+      "line": -1.5,
+      "marketId": "POLY-7097911-0",
+      "tokenId": "77604191890494918572708941655050938951205509704990551867204111463584702250234",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.49,
+      "bid": 0.39,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NSH +1.5",
+      "includesOTSO": true,
+      "team": "NSH",
+      "line": 1.5,
+      "marketId": "POLY-7097911-1",
+      "tokenId": "9930064935286741832745150396356952851527503281722726906176257169681241763775",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.61,
+      "bid": 0.51,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "MIN -3.5",
+      "includesOTSO": true,
+      "team": "MIN",
+      "line": -3.5,
+      "marketId": "POLY-7097912-0",
+      "tokenId": "31583393239078601747653893355001003455644301443525292117308489405518477615027",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NSH +3.5",
+      "includesOTSO": true,
+      "team": "NSH",
+      "line": 3.5,
+      "marketId": "POLY-7097912-1",
+      "tokenId": "81501050157890290915248646699877445164753450483037314210957568075357556158849",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "MIN -2.5",
+      "includesOTSO": true,
+      "team": "MIN",
+      "line": -2.5,
+      "marketId": "POLY-7097913-0",
+      "tokenId": "52678314146719464161269652806850898749482146003435475617481697824027684920591",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NSH +2.5",
+      "includesOTSO": true,
+      "team": "NSH",
+      "line": 2.5,
+      "marketId": "POLY-7097913-1",
+      "tokenId": "38601536024070564144063626541999093308316833993066808025884641272768195041131",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NSH -1.5",
+      "includesOTSO": true,
+      "team": "NSH",
+      "line": -1.5,
+      "marketId": "POLY-7097914-0",
+      "tokenId": "81514927517088731776937624281121425952288580649423370219598264309470224636723",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.63,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "MIN +1.5",
+      "includesOTSO": true,
+      "team": "MIN",
+      "line": 1.5,
+      "marketId": "POLY-7097914-1",
+      "tokenId": "66434058081655257048953783752649503189529288375086823497976681673879269987027",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.37,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NSH -3.5",
+      "includesOTSO": true,
+      "team": "NSH",
+      "line": -3.5,
+      "marketId": "POLY-7097915-0",
+      "tokenId": "107023596528365970285857901768018248573491759274904350864553255300282184385257",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.9,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "MIN +3.5",
+      "includesOTSO": true,
+      "team": "MIN",
+      "line": 3.5,
+      "marketId": "POLY-7097915-1",
+      "tokenId": "51429230931351157090401981129395089764307017245399142384080763065344080862213",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.1,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "NSH -2.5",
+      "includesOTSO": true,
+      "team": "NSH",
+      "line": -2.5,
+      "marketId": "POLY-7097916-0",
+      "tokenId": "20509928282034658160858258409926590220546125929107793364678320492567810350993",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.75,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "MIN +2.5",
+      "includesOTSO": true,
+      "team": "MIN",
+      "line": 2.5,
+      "marketId": "POLY-7097916-1",
+      "tokenId": "88486716090699269384012409329202833749652971145449746107338006656824607640441",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.25,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097917-0",
+      "tokenId": "20864738060852143060936340118021189372298503292122967554214148959677912976500",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.46,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
       "ou": "U",
-      "line": 7.5
+      "line": 2.5,
+      "marketId": "POLY-7097917-1",
+      "tokenId": "61963686932500412361213914796928063393629969146955404301380015183261200472074",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.54,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097918-0",
+      "tokenId": "30965776873870645999357924771106946851270204533423551037974994305262783782983",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.48,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097918-1",
+      "tokenId": "47320908956887328328957358975202248061379098637599781067893030604803038142001",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.52,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097919-0",
+      "tokenId": "78148228749485111074687588396646817681499904785843923308825737312724883975337",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.61,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097919-1",
+      "tokenId": "7028020285918997591838829365502097632910134278881323782011732495900146452598",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.39,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097920-0",
+      "tokenId": "65186115502404041743734619235813696512079457237713277305452206702512132164480",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.54,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097920-1",
+      "tokenId": "52319327061894278179745893813824918629844211311518488368331751902728625977154",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.46,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8654,7 +12333,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T18:17:23.787578+00:00",
+    "skaterCheckedAt": "2026-11-16T18:21:03.412846+00:00",
     "blockReason": null
    },
    "v4": {
@@ -8738,7 +12417,7 @@
       "xa": 0.949
      }
     },
-    "at": "2026-11-16T18:17:23Z",
+    "at": "2026-11-16T18:21:03Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
@@ -9025,143 +12704,554 @@
     "away": "CGY",
     "home": "SJS",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230079",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-cal-sj-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013427-0",
       "title": "Flames",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013427-0",
+      "tokenId": "56149912608579553270135373593745402342236711048047840617834741349924759396932",
+      "status": "open",
       "periodType": null,
-      "ask": 0.49,
+      "ask": 0.48,
       "bid": 0.47,
-      "volume": 10
+      "volume": 244.824277,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013427-1",
       "title": "Sharks",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013427-1",
+      "tokenId": "59567990474310324194902750394289993881823894042319415779041690148255785079822",
+      "status": "open",
       "periodType": null,
       "ask": 0.53,
-      "bid": 0.51,
-      "volume": 10
+      "bid": 0.52,
+      "volume": 244.824277,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013429-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 4.5,
+      "marketId": "POLY-6013429-0",
+      "tokenId": "31228033235553812460087768838878281468187540599558343161442960795900159833773",
+      "status": "open",
       "periodType": null,
       "ask": 0.81,
       "bid": 0.78,
-      "volume": 0,
-      "ou": "O",
-      "line": 4.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013429-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 4.5,
+      "marketId": "POLY-6013429-1",
+      "tokenId": "3640750036366990181342346155525778631688335529127953013844034134133128999376",
+      "status": "open",
       "periodType": null,
       "ask": 0.22,
       "bid": 0.19,
-      "volume": 0,
-      "ou": "U",
-      "line": 4.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013431-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 5.5,
+      "marketId": "POLY-6013431-0",
+      "tokenId": "100146602893522365319795293500813032280969440362210970951026730030617833750116",
+      "status": "open",
       "periodType": null,
       "ask": 0.59,
       "bid": 0.56,
-      "volume": 0,
-      "ou": "O",
-      "line": 5.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013431-1",
       "label": "U 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 5.5,
+      "marketId": "POLY-6013431-1",
+      "tokenId": "2898217139723828186915380392827962558873692667706084295765063720435115434757",
+      "status": "open",
       "periodType": null,
       "ask": 0.44,
       "bid": 0.41,
-      "volume": 0,
-      "ou": "U",
-      "line": 5.5
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013433-0",
       "label": "O 6.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.54,
-      "bid": 0.46,
-      "volume": 0,
       "ou": "O",
-      "line": 6.5
+      "line": 6.5,
+      "marketId": "POLY-6013433-0",
+      "tokenId": "22238657340646644622025027500003021352438248612376082819569300791675945113205",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.48,
+      "bid": 0.45,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013433-1",
       "label": "U 6.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.54,
-      "bid": 0.46,
-      "volume": 0,
       "ou": "U",
-      "line": 6.5
-     },
-     {
-      "type": "totals",
-      "marketId": "POLY-6013435-0",
-      "label": "O 7.5",
+      "line": 6.5,
+      "marketId": "POLY-6013433-1",
+      "tokenId": "32541149289336232925586125747347905308782066208739471686399738659028814581745",
       "status": "open",
-      "includesOTSO": true,
       "periodType": null,
-      "ask": 0.28,
-      "bid": 0.25,
-      "volume": 0,
-      "ou": "O",
-      "line": 7.5
+      "ask": 0.55,
+      "bid": 0.52,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013435-1",
-      "label": "U 7.5",
-      "status": "open",
+      "label": "O 7.5",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 7.5,
+      "marketId": "POLY-6013435-0",
+      "tokenId": "85586525903397454805474099875982858182865283623057193716993056374937508801323",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.27,
+      "bid": 0.25,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 7.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 7.5,
+      "marketId": "POLY-6013435-1",
+      "tokenId": "59766242710133006880787349980991604664311357067365149682344153925443112019411",
+      "status": "open",
       "periodType": null,
       "ask": 0.75,
-      "bid": 0.72,
-      "volume": 0,
+      "bid": 0.73,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "SJS -1.5",
+      "includesOTSO": true,
+      "team": "SJS",
+      "line": -1.5,
+      "marketId": "POLY-7097861-0",
+      "tokenId": "28991978005388574975169097238526119394150500664400162194858601587335019364447",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CGY +1.5",
+      "includesOTSO": true,
+      "team": "CGY",
+      "line": 1.5,
+      "marketId": "POLY-7097861-1",
+      "tokenId": "27396901434251456234227173663867138626733525251590000254522164395836344955942",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "SJS -3.5",
+      "includesOTSO": true,
+      "team": "SJS",
+      "line": -3.5,
+      "marketId": "POLY-7097862-0",
+      "tokenId": "89809652728518878036010517282722503633605500759273679886693169158224709725597",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CGY +3.5",
+      "includesOTSO": true,
+      "team": "CGY",
+      "line": 3.5,
+      "marketId": "POLY-7097862-1",
+      "tokenId": "73931399061173132440949086741442749748534479669491213446344926773404537899500",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "SJS -2.5",
+      "includesOTSO": true,
+      "team": "SJS",
+      "line": -2.5,
+      "marketId": "POLY-7097863-0",
+      "tokenId": "97654677980615745592517840378297488771938131005480896655091599101180709764927",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.17,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CGY +2.5",
+      "includesOTSO": true,
+      "team": "CGY",
+      "line": 2.5,
+      "marketId": "POLY-7097863-1",
+      "tokenId": "26517093402581225829713213699714575933226249885466666363012506864179375162485",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.83,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CGY -1.5",
+      "includesOTSO": true,
+      "team": "CGY",
+      "line": -1.5,
+      "marketId": "POLY-7097864-0",
+      "tokenId": "26171564046822826580868498913178369176772071429152885517658694987453237187107",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.32,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "SJS +1.5",
+      "includesOTSO": true,
+      "team": "SJS",
+      "line": 1.5,
+      "marketId": "POLY-7097864-1",
+      "tokenId": "72665528067778921976006517001633960050364982815853258926707006951115725922064",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.68,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CGY -3.5",
+      "includesOTSO": true,
+      "team": "CGY",
+      "line": -3.5,
+      "marketId": "POLY-7097865-0",
+      "tokenId": "110465141840584309256911526501043179333397872326886278155089364344851770182661",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "SJS +3.5",
+      "includesOTSO": true,
+      "team": "SJS",
+      "line": 3.5,
+      "marketId": "POLY-7097865-1",
+      "tokenId": "62748408870371613475227864842241823877647977342020451161957053718358893643101",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.23,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "CGY -2.5",
+      "includesOTSO": true,
+      "team": "CGY",
+      "line": -2.5,
+      "marketId": "POLY-7097866-0",
+      "tokenId": "90091837913601627559885911830298828931643938469411221538524756097842808274144",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.76,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "SJS +2.5",
+      "includesOTSO": true,
+      "team": "SJS",
+      "line": 2.5,
+      "marketId": "POLY-7097866-1",
+      "tokenId": "75822114693329183598511344296365633693137608969265401667429900236952010594854",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.24,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097867-0",
+      "tokenId": "78425878302872302848502114771774343025022120843224124320153811103274950758980",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.2,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
       "ou": "U",
-      "line": 7.5
+      "line": 2.5,
+      "marketId": "POLY-7097867-1",
+      "tokenId": "66544165821443051277166403268815575922959346046653042953938900633842858313843",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097868-0",
+      "tokenId": "73179813363802779531079209556314304028705833150746730881312426870787901952041",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.18,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097868-1",
+      "tokenId": "29369572813558793195736579442082312049466418180374563424719150789150795632887",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.82,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097869-0",
+      "tokenId": "99038145284704409359745988265522721035782553425180493335784462316168606089320",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.71,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097869-1",
+      "tokenId": "48133401568693781437861052029637765480175491203594457445041269396947217584544",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.29,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097870-0",
+      "tokenId": "56546152891766771611574042071463500246481384320801378776528186833538712545359",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.71,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097870-1",
+      "tokenId": "32993074304668595603710765629020282625213077198240645098869590835023853928566",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.29,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9748,7 +13838,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T18:17:23.787578+00:00",
+    "skaterCheckedAt": "2026-11-16T18:21:03.412846+00:00",
     "blockReason": null
    },
    "v4": {
@@ -9839,7 +13929,7 @@
       "xa": 1.089
      }
     },
-    "at": "2026-11-16T18:17:23Z",
+    "at": "2026-11-16T18:21:03Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
@@ -10162,143 +14252,554 @@
     "away": "DAL",
     "home": "VGK",
     "live": false,
-    "link": "https://jup.ag/prediction/POLY-1230078",
+    "active": true,
+    "link": "https://polymarket.com/event/nhl-dal-las-2026-11-17",
     "provider": "polymarket",
     "includesOTSO": true,
     "sides": {
      "away": {
-      "marketId": "POLY-6013413-0",
       "title": "Stars",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013413-0",
+      "tokenId": "65629953755383414313863415073715769445441205548119369445583668237582856930639",
+      "status": "open",
       "periodType": null,
       "ask": 0.46,
       "bid": 0.45,
-      "volume": 201
+      "volume": 696.515693,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      "home": {
-      "marketId": "POLY-6013413-1",
       "title": "Golden Knights",
-      "status": "open",
       "includesOTSO": true,
+      "marketId": "POLY-6013413-1",
+      "tokenId": "1887555878652809422137424850799635514873118606599202011337386369106149688211",
+      "status": "open",
       "periodType": null,
       "ask": 0.55,
       "bid": 0.54,
-      "volume": 201
+      "volume": 696.515693,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     },
     "extra": [
      {
       "type": "totals",
-      "marketId": "POLY-6013415-0",
       "label": "O 4.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.76,
-      "bid": 0.74,
-      "volume": 0,
       "ou": "O",
-      "line": 4.5
+      "line": 4.5,
+      "marketId": "POLY-6013415-0",
+      "tokenId": "42800004110096823052435529056109035149409737502206899843020199605631789264727",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.77,
+      "bid": 0.74,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013415-1",
       "label": "U 4.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 4.5,
+      "marketId": "POLY-6013415-1",
+      "tokenId": "15369830683608834973201697688629712784550504304967068711775231381220732144420",
+      "status": "open",
       "periodType": null,
       "ask": 0.26,
-      "bid": 0.24,
-      "volume": 0,
-      "ou": "U",
-      "line": 4.5
+      "bid": 0.23,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013417-0",
       "label": "O 5.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 5.5,
+      "marketId": "POLY-6013417-0",
+      "tokenId": "53211601433104478697840428765183397439203622269106866819408303206741749598416",
+      "status": "open",
       "periodType": null,
       "ask": 0.53,
-      "bid": 0.5,
-      "volume": 17,
-      "ou": "O",
-      "line": 5.5
+      "bid": 0.51,
+      "volume": 17.235657,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013417-1",
       "label": "U 5.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.5,
-      "bid": 0.47,
-      "volume": 17,
       "ou": "U",
-      "line": 5.5
+      "line": 5.5,
+      "marketId": "POLY-6013417-1",
+      "tokenId": "74685304088604826875280067087271782159476808180321375777335332850640879094770",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.49,
+      "bid": 0.47,
+      "volume": 17.235657,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013419-0",
       "label": "O 6.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "O",
+      "line": 6.5,
+      "marketId": "POLY-6013419-0",
+      "tokenId": "115103571107031255405920235725654010998562744827987379514615416667142926251822",
+      "status": "open",
       "periodType": null,
       "ask": 0.42,
       "bid": 0.4,
-      "volume": 0,
-      "ou": "O",
-      "line": 6.5
+      "volume": 19.208432,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013419-1",
       "label": "U 6.5",
-      "status": "open",
       "includesOTSO": true,
+      "ou": "U",
+      "line": 6.5,
+      "marketId": "POLY-6013419-1",
+      "tokenId": "24229391332623435922113905984868215636811663559970449655819613427352003894169",
+      "status": "open",
       "periodType": null,
       "ask": 0.6,
       "bid": 0.58,
-      "volume": 0,
-      "ou": "U",
-      "line": 6.5
+      "volume": 19.208432,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013421-0",
       "label": "O 7.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.22,
-      "bid": 0.19,
-      "volume": 0,
       "ou": "O",
-      "line": 7.5
+      "line": 7.5,
+      "marketId": "POLY-6013421-0",
+      "tokenId": "67419176866237027212728562584531671222073787461460285343495053889182960697664",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.23,
+      "bid": 0.2,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      },
      {
       "type": "totals",
-      "marketId": "POLY-6013421-1",
       "label": "U 7.5",
-      "status": "open",
       "includesOTSO": true,
-      "periodType": null,
-      "ask": 0.81,
-      "bid": 0.78,
-      "volume": 0,
       "ou": "U",
-      "line": 7.5
+      "line": 7.5,
+      "marketId": "POLY-6013421-1",
+      "tokenId": "78040339591145178517602013461920895274798618063295033165122476484219718347948",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.77,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "VGK -1.5",
+      "includesOTSO": true,
+      "team": "VGK",
+      "line": -1.5,
+      "marketId": "POLY-7097889-0",
+      "tokenId": "26994479029226131377648458988393042790268446084447161761937647493003658326207",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.34,
+      "bid": 0.33,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "DAL +1.5",
+      "includesOTSO": true,
+      "team": "DAL",
+      "line": 1.5,
+      "marketId": "POLY-7097889-1",
+      "tokenId": "43778922314111713125256406818301582315992086629248830250273113919134910710951",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.67,
+      "bid": 0.66,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "VGK -3.5",
+      "includesOTSO": true,
+      "team": "VGK",
+      "line": -3.5,
+      "marketId": "POLY-7097890-0",
+      "tokenId": "105647871417006614379602523718441236573971623246455759959872654656173923449947",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "DAL +3.5",
+      "includesOTSO": true,
+      "team": "DAL",
+      "line": 3.5,
+      "marketId": "POLY-7097890-1",
+      "tokenId": "31775055738608913243410961477454718776664754111995928399717804764013799523866",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "VGK -2.5",
+      "includesOTSO": true,
+      "team": "VGK",
+      "line": -2.5,
+      "marketId": "POLY-7097891-0",
+      "tokenId": "15597371768965034088980055348957482217057544221456071672474845450682652882568",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.17,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "DAL +2.5",
+      "includesOTSO": true,
+      "team": "DAL",
+      "line": 2.5,
+      "marketId": "POLY-7097891-1",
+      "tokenId": "20096041665984771701758873097959514401744123294253075413947088046640842695095",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.83,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "DAL -1.5",
+      "includesOTSO": true,
+      "team": "DAL",
+      "line": -1.5,
+      "marketId": "POLY-7097892-0",
+      "tokenId": "57851598693748631972590448843947678139901210461988335964712054969967046552727",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.2,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "VGK +1.5",
+      "includesOTSO": true,
+      "team": "VGK",
+      "line": 1.5,
+      "marketId": "POLY-7097892-1",
+      "tokenId": "80563349397332165850764762640969839143410231698207039507339344635293544044572",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.07,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "DAL -3.5",
+      "includesOTSO": true,
+      "team": "DAL",
+      "line": -3.5,
+      "marketId": "POLY-7097893-0",
+      "tokenId": "100788608333104710721420573569022012222221130476303620364923903877787017925822",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.92,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "VGK +3.5",
+      "includesOTSO": true,
+      "team": "VGK",
+      "line": 3.5,
+      "marketId": "POLY-7097893-1",
+      "tokenId": "109588722837861037723304445879578181385756416235942221247284943103553166838559",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.08,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "DAL -2.5",
+      "includesOTSO": true,
+      "team": "DAL",
+      "line": -2.5,
+      "marketId": "POLY-7097894-0",
+      "tokenId": "28741196662646362341746460514921345576017763056453135963826389740774170898411",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.93,
+      "bid": 0.1,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "spreads",
+      "label": "VGK +2.5",
+      "includesOTSO": true,
+      "team": "VGK",
+      "line": 2.5,
+      "marketId": "POLY-7097894-1",
+      "tokenId": "99289610942568764651769392571532150136367606414947711812094727293728584604852",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.9,
+      "bid": 0.07,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 2.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 2.5,
+      "marketId": "POLY-7097895-0",
+      "tokenId": "49961687966561041381071734986822817247405431941830407096269535048968205582322",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.1,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 2.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 2.5,
+      "marketId": "POLY-7097895-1",
+      "tokenId": "43796179169517207068004508297243772087828884053637405866755308093742497921812",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.9,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 3.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 3.5,
+      "marketId": "POLY-7097896-0",
+      "tokenId": "88042729228178538735632399545120044172360155612378805790415303198839797909733",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.14,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 3.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 3.5,
+      "marketId": "POLY-7097896-1",
+      "tokenId": "32411049539994659923520646535588506307664320460948618673556760481091880374403",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.86,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 8.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 8.5,
+      "marketId": "POLY-7097897-0",
+      "tokenId": "25301608652527158931020870854285332911839457525583051355150109113798034337228",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.8,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 8.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 8.5,
+      "marketId": "POLY-7097897-1",
+      "tokenId": "15039393319807199975898272398123308381999126805655662874556038284551453636078",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.2,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "O 9.5",
+      "includesOTSO": true,
+      "ou": "O",
+      "line": 9.5,
+      "marketId": "POLY-7097898-0",
+      "tokenId": "11105579211583421541640555614976711950763630608411555892470630904233040529589",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.92,
+      "bid": 0.03,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
+     },
+     {
+      "type": "totals",
+      "label": "U 9.5",
+      "includesOTSO": true,
+      "ou": "U",
+      "line": 9.5,
+      "marketId": "POLY-7097898-1",
+      "tokenId": "79406727189266546103959072107124271706591333586285358209391437670780133360538",
+      "status": "open",
+      "periodType": null,
+      "ask": 0.97,
+      "bid": 0.08,
+      "volume": null,
+      "fee": {
+       "rate": 0.05,
+       "exponent": 1.0
+      }
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-16T06:59:15Z",
-    "host": "https://api.jup.ag/prediction/v1"
+    "fetchedAt": "2026-11-16T18:21:01Z",
+    "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-16T18:17:21.850779+00:00",
+    "checkedAt": "2026-11-16T18:21:01.601255+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -10682,7 +15183,7 @@
       "xa": 0.947
      }
     },
-    "at": "2026-11-16T18:17:23Z"
+    "at": "2026-11-16T18:21:03Z"
    }
   }
  ]
