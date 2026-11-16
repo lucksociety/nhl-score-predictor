@@ -1,7 +1,7 @@
 {
  "date": "2026-11-17",
- "generatedAt": "2026-11-16T06:59:16Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
+ "generatedAt": "2026-11-16T18:10:00Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020337,
@@ -14,10 +14,20 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892732",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "BUF -118",
+    "mlAway": -118.0,
+    "mlHome": -102.0,
+    "total": 6.5,
+    "over": 114.0,
+    "under": -135.0,
+    "mlAwayOpen": -118.0,
+    "mlHomeOpen": -102.0
+   },
    "goalies": {
     "away": {
-     "name": "Ukko-Pekka Luukkonen",
+     "name": "Alex Lyon",
      "status": "Expected"
     },
     "home": {
@@ -25,7 +35,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230070",
     "slug": "nhl-buf-phi-2026-11-17",
     "date": "2026-11-17",
@@ -168,7 +178,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -336,8 +346,8 @@
        {
         "name": "Denver Barkey",
         "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-15T22:26Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-16T14:05Z"
        },
        {
         "name": "Nikita Grebenkin",
@@ -475,16 +485,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.0708,
-      3.0206
+      3.0733,
+      2.9884
      ],
      "adjustedGoals": [
-      3.075413811830497,
-      3.0614937599144243
+      3.0787219405592214,
+      3.022637015638358
      ],
      "featureDelta": [
       0.0933789311327165,
-      0.3966810017296084
+      0.3378476264453718
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -662,14 +672,14 @@
          "name": "Michael Bunting"
         },
         {
+         "id": 8484142,
+         "position": "C",
+         "name": "Denver Barkey"
+        },
+        {
          "id": 8478569,
          "position": "C",
          "name": "Noel Acciari"
-        },
-        {
-         "id": 8483787,
-         "position": "R",
-         "name": "Cole Knuble"
         },
         {
          "id": 8477948,
@@ -713,7 +723,7 @@
         {
          "name": "Denver Barkey",
          "id": 8484142,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.8071,
          "productionAbovePositionMean": -0.0476
         },
@@ -731,36 +741,36 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7238,
-        2.6793
+        2.7261,
+        2.6507
        ]
       },
       {
        "label": "PHI questionable skaters OUT",
        "rates": [
-        2.727892051093651,
-        2.7155449650440944
+        2.73011288284034,
+        2.686596892517305
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T06:59:18.947902+00:00",
+    "skaterCheckedAt": "2026-11-16T18:10:26.696080+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.0754,
-    "lh": 3.0615,
-    "ra": 2.7279,
-    "rh": 2.7155,
+    "la": 3.0787,
+    "lh": 3.0226,
+    "ra": 2.7308,
+    "rh": 2.6811,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
      "away": {
-      "name": "Ukko-Pekka Luukkonen",
-      "id": 8480045,
-      "gq": -0.0624,
+      "name": "Alex Lyon",
+      "id": 8479312,
+      "gq": -0.1072,
       "mode": "named",
       "table": [
        {
@@ -789,13 +799,13 @@
      "home": {
       "name": "Dan Vladar",
       "id": 8478435,
-      "gq": -0.0492,
+      "gq": -0.05,
       "mode": "named",
       "table": [
        {
         "id": 8478435,
         "name": "D. Vladar",
-        "gq": -0.0492,
+        "gq": -0.05,
         "share": 0.568,
         "shots": 2071
        },
@@ -832,25 +842,25 @@
      "home": {
       "gf": 0.909,
       "ga": 1.013,
-      "xf": 0.946,
-      "xa": 0.997
+      "xf": 0.959,
+      "xa": 0.999
      }
     },
-    "at": "2026-11-16T06:59:18Z",
+    "at": "2026-11-16T18:10:26Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.0708,
-      3.0206
+      3.0733,
+      2.9884
      ],
      "adjustedGoals": [
-      3.075413811830497,
-      3.0614937599144243
+      3.0787219405592214,
+      3.022637015638358
      ],
      "featureDelta": [
       0.0933789311327165,
-      0.3966810017296084
+      0.3378476264453718
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -1028,14 +1038,14 @@
          "name": "Michael Bunting"
         },
         {
+         "id": 8484142,
+         "position": "C",
+         "name": "Denver Barkey"
+        },
+        {
          "id": 8478569,
          "position": "C",
          "name": "Noel Acciari"
-        },
-        {
-         "id": 8483787,
-         "position": "R",
-         "name": "Cole Knuble"
         },
         {
          "id": 8477948,
@@ -1079,7 +1089,7 @@
         {
          "name": "Denver Barkey",
          "id": 8484142,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.8071,
          "productionAbovePositionMean": -0.0476
         },
@@ -1097,15 +1107,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7238,
-        2.6793
+        2.7261,
+        2.6507
        ]
       },
       {
        "label": "PHI questionable skaters OUT",
        "rates": [
-        2.727892051093651,
-        2.7155449650440944
+        2.73011288284034,
+        2.686596892517305
        ]
       }
      ]
@@ -1123,7 +1133,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892731",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "NYI -135",
+    "mlAway": 114.0,
+    "mlHome": -135.0,
+    "total": 5.5,
+    "over": -130.0,
+    "under": 110.0,
+    "mlAwayOpen": 105.0,
+    "mlHomeOpen": -125.0
+   },
    "goalies": {
     "away": {
      "name": "Jet Greaves",
@@ -1134,7 +1154,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230071",
     "slug": "nhl-cbj-nyi-2026-11-17",
     "date": "2026-11-17",
@@ -1277,7 +1297,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1285,8 +1305,8 @@
        {
         "name": "Sean Monahan",
         "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-15T14:13Z"
+        "status": "Out",
+        "updatedAt": "2026-11-16T17:42Z"
        }
       ],
       "roster": [
@@ -1410,6 +1430,12 @@
      "home": {
       "injuries": [
        {
+        "name": "Logan Stanley",
+        "position": "D",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-16T17:00Z"
+       },
+       {
         "name": "Jean-Gabriel Pageau",
         "position": "C",
         "status": "Day-To-Day",
@@ -1420,12 +1446,6 @@
         "position": "C",
         "status": "Day-To-Day",
         "updatedAt": "2026-11-15T06:01Z"
-       },
-       {
-        "name": "Logan Stanley",
-        "position": "D",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-15T05:17Z"
        },
        {
         "name": "Calum Ritchie",
@@ -1574,15 +1594,15 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      2.8715,
-      3.1688
+      2.871,
+      3.1682
      ],
      "adjustedGoals": [
-      2.885671301044252,
-      3.206170841654288
+      2.875136414327833,
+      3.2069832158161753
      ],
      "featureDelta": [
-      0.1865313201031662,
+      0.08685319541820863,
       0.35921215275795937
      ],
      "priorOnlyPlayers": {
@@ -1612,11 +1632,6 @@
          "id": 8475745,
          "position": "C",
          "name": "Charlie Coyle"
-        },
-        {
-         "id": 8477497,
-         "position": "C",
-         "name": "Sean Monahan"
         },
         {
          "id": 8478856,
@@ -1654,6 +1669,11 @@
          "name": "Luca Del Bel Belluz"
         },
         {
+         "id": 8485469,
+         "position": "C",
+         "name": "Jack Williams"
+        },
+        {
          "id": 8478460,
          "position": "D",
          "name": "Zach Werenski"
@@ -1688,7 +1708,7 @@
         {
          "name": "Sean Monahan",
          "id": 8477497,
-         "status": "Day-To-Day",
+         "status": "Out",
          "baselineParticipation": 0.9366,
          "productionAbovePositionMean": 0.0325
         }
@@ -1789,6 +1809,13 @@
        ],
        "absences": [
         {
+         "name": "Logan Stanley",
+         "id": 8479378,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.7143,
+         "productionAbovePositionMean": -0.0239
+        },
+        {
          "name": "Jean-Gabriel Pageau",
          "id": 8476419,
          "status": "Day-To-Day",
@@ -1801,13 +1828,6 @@
          "status": "Day-To-Day",
          "baselineParticipation": 0.9603,
          "productionAbovePositionMean": 0.2152
-        },
-        {
-         "name": "Logan Stanley",
-         "id": 8479378,
-         "status": "Day-To-Day",
-         "baselineParticipation": 0.7143,
-         "productionAbovePositionMean": -0.0239
         },
         {
          "name": "Calum Ritchie",
@@ -1830,36 +1850,29 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.547,
-        2.8108
-       ]
-      },
-      {
-       "label": "CBJ questionable skaters OUT",
-       "rates": [
-        2.550690138484669,
-        2.8451328273040994
+        2.5466,
+        2.8102
        ]
       },
       {
        "label": "NYI questionable skaters OUT",
        "rates": [
-        2.563931138975999,
-        2.8062109351261966
+        2.554570847633032,
+        2.806921968121346
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T06:59:18.947902+00:00",
+    "skaterCheckedAt": "2026-11-16T18:10:26.696080+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.8857,
-    "lh": 3.2062,
-    "ra": 2.5596,
-    "rh": 2.8439,
+    "la": 2.8751,
+    "lh": 3.207,
+    "ra": 2.5502,
+    "rh": 2.8446,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -1935,20 +1948,20 @@
       "xa": 1.041
      }
     },
-    "at": "2026-11-16T06:59:18Z",
+    "at": "2026-11-16T18:10:26Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      2.8715,
-      3.1688
+      2.871,
+      3.1682
      ],
      "adjustedGoals": [
-      2.885671301044252,
-      3.206170841654288
+      2.875136414327833,
+      3.2069832158161753
      ],
      "featureDelta": [
-      0.1865313201031662,
+      0.08685319541820863,
       0.35921215275795937
      ],
      "priorOnlyPlayers": {
@@ -1978,11 +1991,6 @@
          "id": 8475745,
          "position": "C",
          "name": "Charlie Coyle"
-        },
-        {
-         "id": 8477497,
-         "position": "C",
-         "name": "Sean Monahan"
         },
         {
          "id": 8478856,
@@ -2020,6 +2028,11 @@
          "name": "Luca Del Bel Belluz"
         },
         {
+         "id": 8485469,
+         "position": "C",
+         "name": "Jack Williams"
+        },
+        {
          "id": 8478460,
          "position": "D",
          "name": "Zach Werenski"
@@ -2054,7 +2067,7 @@
         {
          "name": "Sean Monahan",
          "id": 8477497,
-         "status": "Day-To-Day",
+         "status": "Out",
          "baselineParticipation": 0.9366,
          "productionAbovePositionMean": 0.0325
         }
@@ -2155,6 +2168,13 @@
        ],
        "absences": [
         {
+         "name": "Logan Stanley",
+         "id": 8479378,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.7143,
+         "productionAbovePositionMean": -0.0239
+        },
+        {
          "name": "Jean-Gabriel Pageau",
          "id": 8476419,
          "status": "Day-To-Day",
@@ -2167,13 +2187,6 @@
          "status": "Day-To-Day",
          "baselineParticipation": 0.9603,
          "productionAbovePositionMean": 0.2152
-        },
-        {
-         "name": "Logan Stanley",
-         "id": 8479378,
-         "status": "Day-To-Day",
-         "baselineParticipation": 0.7143,
-         "productionAbovePositionMean": -0.0239
         },
         {
          "name": "Calum Ritchie",
@@ -2196,22 +2209,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.547,
-        2.8108
-       ]
-      },
-      {
-       "label": "CBJ questionable skaters OUT",
-       "rates": [
-        2.550690138484669,
-        2.8451328273040994
+        2.5466,
+        2.8102
        ]
       },
       {
        "label": "NYI questionable skaters OUT",
        "rates": [
-        2.563931138975999,
-        2.8062109351261966
+        2.554570847633032,
+        2.806921968121346
        ]
       }
      ]
@@ -2229,7 +2235,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892730",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "FLA -112",
+    "mlAway": -108.0,
+    "mlHome": -112.0,
+    "total": 6.5,
+    "over": -108.0,
+    "under": -112.0,
+    "mlAwayOpen": -108.0,
+    "mlHomeOpen": -112.0
+   },
    "goalies": {
     "away": {
      "name": "Devon Levi",
@@ -2240,7 +2256,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230068",
     "slug": "nhl-edm-fla-2026-11-17",
     "date": "2026-11-17",
@@ -2383,7 +2399,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2391,8 +2407,8 @@
        {
         "name": "Ryan Nugent-Hopkins",
         "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-15T23:26Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-16T14:05Z"
        },
        {
         "name": "Isaac Howard",
@@ -2455,11 +2471,6 @@
         "id": 8480842,
         "position": "C",
         "name": "Filip Hallander"
-       },
-       {
-        "id": 8483455,
-        "position": "L",
-        "name": "Isaac Howard"
        },
        {
         "id": 8475786,
@@ -2723,15 +2734,15 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.0419,
-      3.1465
+      3.0439,
+      3.165
      ],
      "adjustedGoals": [
-      3.0506325399455627,
-      3.1640921526234704
+      3.0884979903616645,
+      3.1779750128558986
      ],
      "featureDelta": [
-      0.10398924109234386,
+      0.4381859826062994,
       0.17276375029794158
      ],
      "priorOnlyPlayers": {
@@ -2756,6 +2767,11 @@
          "id": 8475786,
          "position": "L",
          "name": "Zach Hyman"
+        },
+        {
+         "id": 8476454,
+         "position": "C",
+         "name": "Ryan Nugent-Hopkins"
         },
         {
          "id": 8477450,
@@ -2798,11 +2814,6 @@
          "name": "Filip Hallander"
         },
         {
-         "id": 8479365,
-         "position": "C",
-         "name": "Trent Frederic"
-        },
-        {
          "id": 8480803,
          "position": "D",
          "name": "Evan Bouchard"
@@ -2837,7 +2848,7 @@
         {
          "name": "Ryan Nugent-Hopkins",
          "id": 8476454,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.6837,
          "productionAbovePositionMean": 0.1172
         },
@@ -2993,22 +3004,29 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.6982,
-        2.7909
+        2.7,
+        2.8073
+       ]
+      },
+      {
+       "label": "EDM questionable skaters OUT",
+       "rates": [
+        2.707690155645434,
+        2.8230509852624386
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T06:59:18.947902+00:00",
+    "skaterCheckedAt": "2026-11-16T18:10:26.696080+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.0506,
-    "lh": 3.1641,
-    "ra": 2.7059,
-    "rh": 2.8065,
+    "la": 3.0885,
+    "lh": 3.178,
+    "ra": 2.7395,
+    "rh": 2.8189,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -3021,7 +3039,7 @@
        {
         "id": 8477465,
         "name": "T. Jarry",
-        "gq": -0.0423,
+        "gq": -0.0475,
         "share": 0.485,
         "shots": 2428
        },
@@ -3050,7 +3068,7 @@
        {
         "id": 8481033,
         "name": "A. Schmid",
-        "gq": -0.0521,
+        "gq": -0.052,
         "share": 0.493,
         "shots": 1151
        },
@@ -3081,30 +3099,30 @@
      "away": {
       "gf": 1.104,
       "ga": 0.924,
-      "xf": 0.965,
-      "xa": 0.947
+      "xf": 0.966,
+      "xa": 0.96
      },
      "home": {
       "gf": 1.014,
       "ga": 0.98,
-      "xf": 1.03,
+      "xf": 1.022,
       "xa": 0.984
      }
     },
-    "at": "2026-11-16T06:59:18Z",
+    "at": "2026-11-16T18:10:26Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.0419,
-      3.1465
+      3.0439,
+      3.165
      ],
      "adjustedGoals": [
-      3.0506325399455627,
-      3.1640921526234704
+      3.0884979903616645,
+      3.1779750128558986
      ],
      "featureDelta": [
-      0.10398924109234386,
+      0.4381859826062994,
       0.17276375029794158
      ],
      "priorOnlyPlayers": {
@@ -3129,6 +3147,11 @@
          "id": 8475786,
          "position": "L",
          "name": "Zach Hyman"
+        },
+        {
+         "id": 8476454,
+         "position": "C",
+         "name": "Ryan Nugent-Hopkins"
         },
         {
          "id": 8477450,
@@ -3171,11 +3194,6 @@
          "name": "Filip Hallander"
         },
         {
-         "id": 8479365,
-         "position": "C",
-         "name": "Trent Frederic"
-        },
-        {
          "id": 8480803,
          "position": "D",
          "name": "Evan Bouchard"
@@ -3210,7 +3228,7 @@
         {
          "name": "Ryan Nugent-Hopkins",
          "id": 8476454,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.6837,
          "productionAbovePositionMean": 0.1172
         },
@@ -3366,8 +3384,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.6982,
-        2.7909
+        2.7,
+        2.8073
+       ]
+      },
+      {
+       "label": "EDM questionable skaters OUT",
+       "rates": [
+        2.707690155645434,
+        2.8230509852624386
        ]
       }
      ]
@@ -3385,7 +3410,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892728",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "BOS -148",
+    "mlAway": 124.0,
+    "mlHome": -148.0,
+    "total": 6.5,
+    "over": 110.0,
+    "under": -130.0,
+    "mlAwayOpen": 124.0,
+    "mlHomeOpen": -148.0
+   },
    "goalies": {
     "away": {
      "name": "Darcy Kuemper",
@@ -3396,7 +3431,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230072",
     "slug": "nhl-lak-bos-2026-11-17",
     "date": "2026-11-17",
@@ -3539,7 +3574,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3813,12 +3848,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      2.9591,
-      3.2932
+      2.9585,
+      3.2925
      ],
      "adjustedGoals": [
-      3.0083806058879317,
-      3.277171291590569
+      3.0077706135377125,
+      3.2764746986402122
      ],
      "featureDelta": [
       0.462367632143991,
@@ -4049,29 +4084,29 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.6247,
-        2.921
+        2.6242,
+        2.9205
        ]
       },
       {
        "label": "LAK questionable skaters OUT",
        "rates": [
-        2.6250818826593654,
-        2.9129086066180703
+        2.6245496096271617,
+        2.9122894410573292
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T06:59:18.947902+00:00",
+    "skaterCheckedAt": "2026-11-16T18:10:26.696080+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.0084,
-    "lh": 3.2772,
-    "ra": 2.6684,
-    "rh": 2.9069,
+    "la": 3.0078,
+    "lh": 3.2765,
+    "ra": 2.6679,
+    "rh": 2.9062,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -4147,17 +4182,17 @@
       "xa": 1.002
      }
     },
-    "at": "2026-11-16T06:59:18Z",
+    "at": "2026-11-16T18:10:26Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      2.9591,
-      3.2932
+      2.9585,
+      3.2925
      ],
      "adjustedGoals": [
-      3.0083806058879317,
-      3.277171291590569
+      3.0077706135377125,
+      3.2764746986402122
      ],
      "featureDelta": [
       0.462367632143991,
@@ -4388,15 +4423,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.6247,
-        2.921
+        2.6242,
+        2.9205
        ]
       },
       {
        "label": "LAK questionable skaters OUT",
        "rates": [
-        2.6250818826593654,
-        2.9129086066180703
+        2.6245496096271617,
+        2.9122894410573292
        ]
       }
      ]
@@ -4414,7 +4449,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892736",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "OTT -120",
+    "mlAway": -120.0,
+    "mlHome": 100.0,
+    "total": 6.5,
+    "over": 114.0,
+    "under": -135.0,
+    "mlAwayOpen": -115.0,
+    "mlHomeOpen": -105.0
+   },
    "goalies": {
     "away": {
      "name": "Linus Ullmark",
@@ -4425,7 +4470,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230076",
     "slug": "nhl-ott-wpg-2026-11-17",
     "date": "2026-11-17",
@@ -4568,7 +4613,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4576,8 +4621,14 @@
        {
         "name": "Hayden Hodgson",
         "position": "RW",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-15T03:25Z"
+        "status": "Out",
+        "updatedAt": "2026-11-16T16:55Z"
+       },
+       {
+        "name": "Warren Foegele",
+        "position": "LW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-16T16:53Z"
        },
        {
         "name": "Nick Cousins",
@@ -4590,12 +4641,6 @@
         "position": "LW",
         "status": "Injured Reserve",
         "updatedAt": "2026-10-31T21:35Z"
-       },
-       {
-        "name": "Warren Foegele",
-        "position": "LW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-31T18:30Z"
        },
        {
         "name": "William Eklund",
@@ -4891,10 +4936,10 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.2681,
-    "lh": 2.9564,
-    "ra": 2.8988,
-    "rh": 2.6223,
+    "la": 3.2674,
+    "lh": 2.9558,
+    "ra": 2.8982,
+    "rh": 2.6218,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -4984,7 +5029,7 @@
       "xa": 1.014
      }
     },
-    "at": "2026-11-16T06:59:18Z"
+    "at": "2026-11-16T18:10:26Z"
    }
   },
   {
@@ -4998,7 +5043,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892733",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "TOR -142",
+    "mlAway": -142.0,
+    "mlHome": 120.0,
+    "total": 6.5,
+    "over": 100.0,
+    "under": -120.0,
+    "mlAwayOpen": -142.0,
+    "mlHomeOpen": 120.0
+   },
    "goalies": {
     "away": {
      "name": "Sergei Bobrovsky",
@@ -5009,7 +5064,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230074",
     "slug": "nhl-tor-chi-2026-11-17",
     "date": "2026-11-17",
@@ -5152,7 +5207,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5515,12 +5570,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.3524,
-      3.0867
+      3.3517,
+      3.0861
      ],
      "adjustedGoals": [
-      3.371836098428404,
-      3.1025555022850586
+      3.371132040061593,
+      3.101952420255263
      ],
      "featureDelta": [
       0.18708326745371123,
@@ -5807,36 +5862,36 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9735,
-        2.7379
+        2.973,
+        2.7373
        ]
       },
       {
        "label": "TOR questionable skaters OUT",
        "rates": [
-        2.978634091571445,
-        2.7533949324923452
+        2.9780121359980947,
+        2.7528597211146617
        ]
       },
       {
        "label": "CHI questionable skaters OUT",
        "rates": [
-        2.9935145236030194,
-        2.732526811367036
+        2.992889460911658,
+        2.7319956563837793
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T06:59:18.947902+00:00",
+    "skaterCheckedAt": "2026-11-16T18:10:26.696080+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.3718,
-    "lh": 3.1026,
-    "ra": 2.9908,
-    "rh": 2.752,
+    "la": 3.3711,
+    "lh": 3.102,
+    "ra": 2.9902,
+    "rh": 2.7514,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -5912,17 +5967,17 @@
       "xa": 1.067
      }
     },
-    "at": "2026-11-16T06:59:18Z",
+    "at": "2026-11-16T18:10:26Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.3524,
-      3.0867
+      3.3517,
+      3.0861
      ],
      "adjustedGoals": [
-      3.371836098428404,
-      3.1025555022850586
+      3.371132040061593,
+      3.101952420255263
      ],
      "featureDelta": [
       0.18708326745371123,
@@ -6209,22 +6264,22 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9735,
-        2.7379
+        2.973,
+        2.7373
        ]
       },
       {
        "label": "TOR questionable skaters OUT",
        "rates": [
-        2.978634091571445,
-        2.7533949324923452
+        2.9780121359980947,
+        2.7528597211146617
        ]
       },
       {
        "label": "CHI questionable skaters OUT",
        "rates": [
-        2.9935145236030194,
-        2.732526811367036
+        2.992889460911658,
+        2.7319956563837793
        ]
       }
      ]
@@ -6242,7 +6297,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892729",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "TB -162",
+    "mlAway": 136.0,
+    "mlHome": -162.0,
+    "total": 6.5,
+    "over": -115.0,
+    "under": -105.0,
+    "mlAwayOpen": 136.0,
+    "mlHomeOpen": -162.0
+   },
    "goalies": {
     "away": {
      "name": "Logan Thompson",
@@ -6253,7 +6318,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230069",
     "slug": "nhl-wsh-tb-2026-11-17",
     "date": "2026-11-17",
@@ -6396,7 +6461,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6692,12 +6757,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      2.874,
-      3.6411
+      2.8734,
+      3.6404
      ],
      "adjustedGoals": [
-      2.9096864379419665,
-      3.6176662413038674
+      2.909078987746154,
+      3.6169707464344842
      ],
      "featureDelta": [
       0.33506664360400606,
@@ -6941,29 +7006,29 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.5492,
-        3.2297
+        2.5487,
+        3.229
        ]
       },
       {
        "label": "TBL questionable skaters OUT",
        "rates": [
-        2.583844487782478,
-        3.180131718298407
+        2.583305063045989,
+        3.179520339263827
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T06:59:18.947902+00:00",
+    "skaterCheckedAt": "2026-11-16T18:10:26.696080+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.9097,
-    "lh": 3.6177,
-    "ra": 2.5809,
-    "rh": 3.2089,
+    "la": 2.9091,
+    "lh": 3.617,
+    "ra": 2.5804,
+    "rh": 3.2083,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -7039,17 +7104,17 @@
       "xa": 0.957
      }
     },
-    "at": "2026-11-16T06:59:18Z",
+    "at": "2026-11-16T18:10:26Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      2.874,
-      3.6411
+      2.8734,
+      3.6404
      ],
      "adjustedGoals": [
-      2.9096864379419665,
-      3.6176662413038674
+      2.909078987746154,
+      3.6169707464344842
      ],
      "featureDelta": [
       0.33506664360400606,
@@ -7293,15 +7358,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.5492,
-        3.2297
+        2.5487,
+        3.229
        ]
       },
       {
        "label": "TBL questionable skaters OUT",
        "rates": [
-        2.583844487782478,
-        3.180131718298407
+        2.583305063045989,
+        3.179520339263827
        ]
       }
      ]
@@ -7319,7 +7384,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892734",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "STL -135",
+    "mlAway": 114.0,
+    "mlHome": -135.0,
+    "total": 6.5,
+    "over": -102.0,
+    "under": -118.0,
+    "mlAwayOpen": 114.0,
+    "mlHomeOpen": -135.0
+   },
    "goalies": {
     "away": {
      "name": "Lukas Dostal",
@@ -7330,7 +7405,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230077",
     "slug": "nhl-ana-stl-2026-11-17",
     "date": "2026-11-17",
@@ -7473,7 +7548,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7794,10 +7869,10 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.2097,
-    "lh": 3.2791,
-    "ra": 2.847,
-    "rh": 2.9086,
+    "la": 3.2277,
+    "lh": 3.2837,
+    "ra": 2.8629,
+    "rh": 2.9126,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -7824,7 +7899,7 @@
        {
         "id": 8478024,
         "name": "V. Husso",
-        "gq": -0.0178,
+        "gq": -0.019,
         "share": 0.255,
         "shots": 1472
        }
@@ -7870,8 +7945,8 @@
      "away": {
       "gf": 1.097,
       "ga": 1.093,
-      "xf": 1.031,
-      "xa": 1.034
+      "xf": 1.042,
+      "xa": 1.036
      },
      "home": {
       "gf": 0.94,
@@ -7880,7 +7955,7 @@
       "xa": 0.992
      }
     },
-    "at": "2026-11-16T06:59:18Z"
+    "at": "2026-11-16T18:10:26Z"
    }
   },
   {
@@ -7894,7 +7969,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892735",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "MIN -192",
+    "mlAway": 160.0,
+    "mlHome": -192.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": 160.0,
+    "mlHomeOpen": -192.0
+   },
    "goalies": {
     "away": {
      "name": "Juuse Saros",
@@ -7905,7 +7990,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230075",
     "slug": "nhl-nsh-min-2026-11-17",
     "date": "2026-11-17",
@@ -8048,7 +8133,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8056,8 +8141,8 @@
        {
         "name": "Jonathan Marchessault",
         "position": "RW",
-        "status": "Out",
-        "updatedAt": "2026-11-16T01:40Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-16T14:05Z"
        }
       ],
       "roster": [
@@ -8185,6 +8270,12 @@
      },
      "home": {
       "injuries": [
+       {
+        "name": "Olli Maatta",
+        "position": "D",
+        "status": "Out",
+        "updatedAt": "2026-11-16T17:52Z"
+       },
        {
         "name": "Filip Gustavsson",
         "position": "G",
@@ -8321,16 +8412,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      2.7661,
-      3.6673
+      2.7601,
+      3.663
      ],
      "adjustedGoals": [
-      2.7514676358303527,
-      3.7072551312067965
+      2.7566370630343724,
+      3.696235907206612
      ],
      "featureDelta": [
-      -0.11421203197247495,
-      0.2955688295205875
+      -0.0031250750494485058,
+      0.2580769082031851
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -8354,6 +8445,11 @@
          "id": 8474564,
          "position": "C",
          "name": "Steven Stamkos"
+        },
+        {
+         "id": 8476539,
+         "position": "C",
+         "name": "Jonathan Marchessault"
         },
         {
          "id": 8477021,
@@ -8396,11 +8492,6 @@
          "name": "Reid Schaefer"
         },
         {
-         "id": 8486189,
-         "position": "C",
-         "name": "Vitali Pinchuk"
-        },
-        {
          "id": 8474600,
          "position": "D",
          "name": "Roman Josi"
@@ -8435,7 +8526,7 @@
         {
          "name": "Jonathan Marchessault",
          "id": 8476539,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.6554,
          "productionAbovePositionMean": 0.0205
         }
@@ -8524,52 +8615,67 @@
          "name": "Jared Spurgeon"
         },
         {
-         "id": 8476874,
-         "position": "D",
-         "name": "Olli Maatta"
-        },
-        {
          "id": 8474567,
          "position": "D",
          "name": "Zach Bogosian"
+        },
+        {
+         "id": 8482641,
+         "position": "D",
+         "name": "Matt Kiersted"
         }
        ],
-       "absences": []
+       "absences": [
+        {
+         "name": "Olli Maatta",
+         "id": 8476874,
+         "status": "Out",
+         "baselineParticipation": 0.6303,
+         "productionAbovePositionMean": -0.0325
+        }
+       ]
       }
      },
      "scenarios": [
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4535,
-        3.2529
+        2.4482,
+        3.2491
+       ]
+      },
+      {
+       "label": "NSH questionable skaters OUT",
+       "rates": [
+        2.4356634903210717,
+        3.2801792300778994
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T06:59:18.947902+00:00",
+    "skaterCheckedAt": "2026-11-16T18:10:26.696080+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.7515,
-    "lh": 3.7073,
-    "ra": 2.4406,
-    "rh": 3.2883,
+    "la": 2.7566,
+    "lh": 3.6962,
+    "ra": 2.4451,
+    "rh": 3.2786,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
      "away": {
       "name": "Juuse Saros",
       "id": 8477424,
-      "gq": -0.0932,
+      "gq": -0.0928,
       "mode": "named",
       "table": [
        {
         "id": 8477424,
         "name": "J. Saros",
-        "gq": -0.0932,
+        "gq": -0.0928,
         "share": 0.703,
         "shots": 3920
        },
@@ -8622,8 +8728,8 @@
      "away": {
       "gf": 0.981,
       "ga": 0.94,
-      "xf": 1.012,
-      "xa": 1.019
+      "xf": 1.008,
+      "xa": 1.017
      },
      "home": {
       "gf": 1.066,
@@ -8632,21 +8738,21 @@
       "xa": 0.949
      }
     },
-    "at": "2026-11-16T06:59:18Z",
+    "at": "2026-11-16T18:10:26Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      2.7661,
-      3.6673
+      2.7601,
+      3.663
      ],
      "adjustedGoals": [
-      2.7514676358303527,
-      3.7072551312067965
+      2.7566370630343724,
+      3.696235907206612
      ],
      "featureDelta": [
-      -0.11421203197247495,
-      0.2955688295205875
+      -0.0031250750494485058,
+      0.2580769082031851
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -8670,6 +8776,11 @@
          "id": 8474564,
          "position": "C",
          "name": "Steven Stamkos"
+        },
+        {
+         "id": 8476539,
+         "position": "C",
+         "name": "Jonathan Marchessault"
         },
         {
          "id": 8477021,
@@ -8712,11 +8823,6 @@
          "name": "Reid Schaefer"
         },
         {
-         "id": 8486189,
-         "position": "C",
-         "name": "Vitali Pinchuk"
-        },
-        {
          "id": 8474600,
          "position": "D",
          "name": "Roman Josi"
@@ -8751,7 +8857,7 @@
         {
          "name": "Jonathan Marchessault",
          "id": 8476539,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.6554,
          "productionAbovePositionMean": 0.0205
         }
@@ -8840,25 +8946,40 @@
          "name": "Jared Spurgeon"
         },
         {
-         "id": 8476874,
-         "position": "D",
-         "name": "Olli Maatta"
-        },
-        {
          "id": 8474567,
          "position": "D",
          "name": "Zach Bogosian"
+        },
+        {
+         "id": 8482641,
+         "position": "D",
+         "name": "Matt Kiersted"
         }
        ],
-       "absences": []
+       "absences": [
+        {
+         "name": "Olli Maatta",
+         "id": 8476874,
+         "status": "Out",
+         "baselineParticipation": 0.6303,
+         "productionAbovePositionMean": -0.0325
+        }
+       ]
       }
      },
      "scenarios": [
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4535,
-        3.2529
+        2.4482,
+        3.2491
+       ]
+      },
+      {
+       "label": "NSH questionable skaters OUT",
+       "rates": [
+        2.4356634903210717,
+        3.2801792300778994
        ]
       }
      ]
@@ -8876,7 +8997,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892738",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "SJ -125",
+    "mlAway": 105.0,
+    "mlHome": -125.0,
+    "total": 6.5,
+    "over": 110.0,
+    "under": -130.0,
+    "mlAwayOpen": 105.0,
+    "mlHomeOpen": -125.0
+   },
    "goalies": {
     "away": {
      "name": "Dustin Wolf",
@@ -8887,7 +9018,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230079",
     "slug": "nhl-cal-sj-2026-11-17",
     "date": "2026-11-17",
@@ -9030,7 +9161,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9185,6 +9316,12 @@
      "home": {
       "injuries": [
        {
+        "name": "Alexander Wennberg",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-16T14:05Z"
+       },
+       {
         "name": "Kiefer Sherwood",
         "position": "LW",
         "status": "Day-To-Day",
@@ -9201,12 +9338,6 @@
         "position": "LW",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-15T23:51Z"
-       },
-       {
-        "name": "Alexander Wennberg",
-        "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-15T23:38Z"
        },
        {
         "name": "Kyle Keyser",
@@ -9339,16 +9470,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.2488,
-      3.3596
+      3.2448,
+      3.3821
      ],
      "adjustedGoals": [
-      3.2350051059096163,
-      3.3596923061371884
+      3.227683612710513,
+      3.409815863448243
      ],
      "featureDelta": [
       -0.12366428628243886,
-      -0.014930907601958449
+      0.21783174138650938
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -9481,6 +9612,11 @@
          "name": "Macklin Celebrini"
         },
         {
+         "id": 8477505,
+         "position": "C",
+         "name": "Alexander Wennberg"
+        },
+        {
          "id": 8484227,
          "position": "C",
          "name": "Will Smith"
@@ -9531,11 +9667,6 @@
          "name": "Adam Gaudette"
         },
         {
-         "id": 8482859,
-         "position": "C",
-         "name": "Zack Ostapchuk"
-        },
-        {
          "id": 8476885,
          "position": "D",
          "name": "Jacob Trouba"
@@ -9568,6 +9699,13 @@
        ],
        "absences": [
         {
+         "name": "Alexander Wennberg",
+         "id": 8477505,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.5502,
+         "productionAbovePositionMean": -0.0024
+        },
+        {
          "name": "Kiefer Sherwood",
          "id": 8480748,
          "status": "Day-To-Day",
@@ -9588,13 +9726,6 @@
          "baselineParticipation": 0.0,
          "productionAbovePositionMean": null,
          "note": "not on current official roster and no recorded participation; no baseline contribution to remove"
-        },
-        {
-         "name": "Alexander Wennberg",
-         "id": 8477505,
-         "status": "Out",
-         "baselineParticipation": 0.5502,
-         "productionAbovePositionMean": -0.0024
         }
        ]
       }
@@ -9603,29 +9734,29 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.8817,
-        2.98
+        2.8781,
+        3.0
        ]
       },
       {
        "label": "SJS questionable skaters OUT",
        "rates": [
-        2.8698056550917443,
-        2.9771386333237095
+        2.8662722819630915,
+        2.9970772031682698
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T06:59:18.947902+00:00",
+    "skaterCheckedAt": "2026-11-16T18:10:26.696080+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.235,
-    "lh": 3.3597,
-    "ra": 2.8694,
-    "rh": 2.98,
+    "la": 3.2277,
+    "lh": 3.4098,
+    "ra": 2.863,
+    "rh": 3.0245,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -9645,7 +9776,7 @@
        {
         "id": 8482445,
         "name": "D. Cooley",
-        "gq": -0.092,
+        "gq": -0.0993,
         "share": 0.474,
         "shots": 947
        },
@@ -9674,7 +9805,7 @@
        {
         "id": 8477968,
         "name": "A. Nedeljkovic",
-        "gq": -0.0469,
+        "gq": -0.0455,
         "share": 0.354,
         "shots": 2274
        }
@@ -9698,31 +9829,31 @@
      "away": {
       "gf": 0.897,
       "ga": 1.048,
-      "xf": 0.924,
-      "xa": 1.028
+      "xf": 0.926,
+      "xa": 1.038
      },
      "home": {
       "gf": 0.932,
       "ga": 1.062,
-      "xf": 0.969,
-      "xa": 1.092
+      "xf": 0.967,
+      "xa": 1.089
      }
     },
-    "at": "2026-11-16T06:59:18Z",
+    "at": "2026-11-16T18:10:26Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.2488,
-      3.3596
+      3.2448,
+      3.3821
      ],
      "adjustedGoals": [
-      3.2350051059096163,
-      3.3596923061371884
+      3.227683612710513,
+      3.409815863448243
      ],
      "featureDelta": [
       -0.12366428628243886,
-      -0.014930907601958449
+      0.21783174138650938
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -9855,6 +9986,11 @@
          "name": "Macklin Celebrini"
         },
         {
+         "id": 8477505,
+         "position": "C",
+         "name": "Alexander Wennberg"
+        },
+        {
          "id": 8484227,
          "position": "C",
          "name": "Will Smith"
@@ -9905,11 +10041,6 @@
          "name": "Adam Gaudette"
         },
         {
-         "id": 8482859,
-         "position": "C",
-         "name": "Zack Ostapchuk"
-        },
-        {
          "id": 8476885,
          "position": "D",
          "name": "Jacob Trouba"
@@ -9942,6 +10073,13 @@
        ],
        "absences": [
         {
+         "name": "Alexander Wennberg",
+         "id": 8477505,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.5502,
+         "productionAbovePositionMean": -0.0024
+        },
+        {
          "name": "Kiefer Sherwood",
          "id": 8480748,
          "status": "Day-To-Day",
@@ -9962,13 +10100,6 @@
          "baselineParticipation": 0.0,
          "productionAbovePositionMean": null,
          "note": "not on current official roster and no recorded participation; no baseline contribution to remove"
-        },
-        {
-         "name": "Alexander Wennberg",
-         "id": 8477505,
-         "status": "Out",
-         "baselineParticipation": 0.5502,
-         "productionAbovePositionMean": -0.0024
         }
        ]
       }
@@ -9977,15 +10108,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.8817,
-        2.98
+        2.8781,
+        3.0
        ]
       },
       {
        "label": "SJS questionable skaters OUT",
        "rates": [
-        2.8698056550917443,
-        2.9771386333237095
+        2.8662722819630915,
+        2.9970772031682698
        ]
       }
      ]
@@ -10003,7 +10134,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892737",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "VGK -135",
+    "mlAway": 114.0,
+    "mlHome": -135.0,
+    "total": 5.5,
+    "over": -125.0,
+    "under": 105.0,
+    "mlAwayOpen": 114.0,
+    "mlHomeOpen": -135.0
+   },
    "goalies": {
     "away": {
      "name": "Jake Oettinger",
@@ -10014,7 +10155,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1230078",
     "slug": "nhl-dal-las-2026-11-17",
     "date": "2026-11-17",
@@ -10157,7 +10298,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -10165,14 +10306,14 @@
        {
         "name": "Tyler Myers",
         "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-16T04:19Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-16T14:05Z"
        },
        {
         "name": "Miro Heiskanen",
         "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-14T17:54Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-16T14:05Z"
        },
        {
         "name": "Kyle Capobianco",
@@ -10191,6 +10332,12 @@
         "position": "C",
         "status": "Injured Reserve",
         "updatedAt": "2026-10-24T18:32Z"
+       },
+       {
+        "name": "Matt Duchene",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-12T16:46Z"
        }
       ],
       "roster": [
@@ -10456,10 +10603,10 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.7774,
-    "lh": 3.0041,
-    "ra": 2.4636,
-    "rh": 2.6647,
+    "la": 2.7888,
+    "lh": 2.9797,
+    "ra": 2.4736,
+    "rh": 2.643,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -10479,7 +10626,7 @@
        {
         "id": 8479193,
         "name": "C. DeSmith",
-        "gq": -0.1021,
+        "gq": -0.0981,
         "share": 0.307,
         "shots": 1708
        }
@@ -10494,7 +10641,7 @@
        {
         "id": 8479394,
         "name": "C. Hart",
-        "gq": -0.0243,
+        "gq": -0.0273,
         "share": 0.53,
         "shots": 1481
        },
@@ -10526,16 +10673,16 @@
       "gf": 0.971,
       "ga": 0.908,
       "xf": 0.989,
-      "xa": 0.955
+      "xa": 0.947
      },
      "home": {
       "gf": 1.026,
       "ga": 0.95,
-      "xf": 1.039,
-      "xa": 0.942
+      "xf": 1.037,
+      "xa": 0.947
      }
     },
-    "at": "2026-11-16T06:59:18Z"
+    "at": "2026-11-16T18:10:26Z"
    }
   }
  ]

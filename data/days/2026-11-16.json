@@ -1,7 +1,7 @@
 {
  "date": "2026-11-16",
- "generatedAt": "2026-11-16T06:59:16Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-16T18:09:59Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020331,
@@ -15,10 +15,10 @@
    "final": null,
    "espnId": "401892726",
    "odds": {
-    "provider": "Draft Kings",
-    "details": "NYR -110",
-    "mlAway": -110.0,
-    "mlHome": -110.0,
+    "provider": "DraftKings",
+    "details": "MTL -115",
+    "mlAway": -115.0,
+    "mlHome": -105.0,
     "total": 6.5,
     "over": 114.0,
     "under": -135.0,
@@ -28,14 +28,14 @@
    "goalies": {
     "away": {
      "name": "Jacob Fowler",
-     "status": "Expected"
+     "status": "Confirmed"
     },
     "home": {
      "name": "Joonas Korpisalo",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1224252",
     "slug": "nhl-mon-nyr-2026-11-16",
     "date": "2026-11-16",
@@ -438,7 +438,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -812,12 +812,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.1091,
-      3.3659
+      3.1085,
+      3.3652
      ],
      "adjustedGoals": [
-      3.0924479918275374,
-      3.355159966728264
+      3.0918512053635774,
+      3.3544622003131273
      ],
      "featureDelta": [
       -0.16801370943805288,
@@ -1106,22 +1106,22 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7578,
-        2.9856
+        2.7573,
+        2.985
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-16T06:59:18.947902+00:00",
+    "skaterCheckedAt": "2026-11-16T18:10:26.696080+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.0924,
-    "lh": 3.3552,
-    "ra": 2.743,
-    "rh": 2.976,
+    "la": 3.0919,
+    "lh": 3.3545,
+    "ra": 2.7425,
+    "rh": 2.9754,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -1207,21 +1207,21 @@
      "home": {
       "gf": 0.994,
       "ga": 0.952,
-      "xf": 1.027,
+      "xf": 1.026,
       "xa": 0.975
      }
     },
-    "at": "2026-11-16T06:59:18Z",
+    "at": "2026-11-16T18:10:26Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-15",
      "baseGoals": [
-      3.1091,
-      3.3659
+      3.1085,
+      3.3652
      ],
      "adjustedGoals": [
-      3.0924479918275374,
-      3.355159966728264
+      3.0918512053635774,
+      3.3544622003131273
      ],
      "featureDelta": [
       -0.16801370943805288,
@@ -1510,8 +1510,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7578,
-        2.9856
+        2.7573,
+        2.985
        ]
       }
      ]
@@ -1530,13 +1530,13 @@
    "final": null,
    "espnId": "401892727",
    "odds": {
-    "provider": "Draft Kings",
-    "details": "UTAH -340",
-    "mlAway": 270.0,
-    "mlHome": -340.0,
+    "provider": "DraftKings",
+    "details": "UTAH -355",
+    "mlAway": 280.0,
+    "mlHome": -355.0,
     "total": 6.5,
-    "over": -105.0,
-    "under": -115.0,
+    "over": -112.0,
+    "under": -108.0,
     "mlAwayOpen": 285.0,
     "mlHomeOpen": -360.0
    },
@@ -1550,7 +1550,7 @@
      "status": "Expected"
     }
    },
-   "jupiter": {
+   "market": {
     "eventId": "POLY-1224253",
     "slug": "nhl-van-utah-2026-11-16",
     "date": "2026-11-16",
@@ -1953,7 +1953,7 @@
     "host": "https://api.jup.ag/prediction/v1"
    },
    "availability": {
-    "checkedAt": "2026-11-16T06:59:16.697400+00:00",
+    "checkedAt": "2026-11-16T18:10:00.280460+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2285,10 +2285,10 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.4345,
-    "lh": 4.3817,
-    "ra": 2.1594,
-    "rh": 3.8865,
+    "la": 2.4425,
+    "lh": 4.3737,
+    "ra": 2.1665,
+    "rh": 3.8795,
     "betaGq": 0.41058,
     "calib": 1.0165,
     "goalies": {
@@ -2301,7 +2301,7 @@
        {
         "id": 8482447,
         "name": "L. Meril\u00e4inen",
-        "gq": -0.0139,
+        "gq": -0.0123,
         "share": 0.825,
         "shots": 930
        },
@@ -2354,8 +2354,8 @@
      "away": {
       "gf": 0.939,
       "ga": 1.204,
-      "xf": 0.893,
-      "xa": 1.102
+      "xf": 0.898,
+      "xa": 1.099
      },
      "home": {
       "gf": 1.04,
@@ -2364,7 +2364,7 @@
       "xa": 0.972
      }
     },
-    "at": "2026-11-16T06:59:18Z"
+    "at": "2026-11-16T18:10:26Z"
    }
   }
  ]
