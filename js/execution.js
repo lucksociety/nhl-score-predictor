@@ -8,13 +8,19 @@ function depthAtAsk(book,ask){
   if(bid>ask+1e-7 || ask-bid>.10+1e-7)return 0;
   return book.no.filter(r=>Array.isArray(r)&&r.length>=2).map(r=>r.map(Number)).reduce((sum,[p,n])=>p>0&&p<100&&Number.isFinite(n)&&n>0&&100-p<=ask*100+1e-7?sum+n:sum,0);
 }
+// Polymarket CLOB book of one outcome token -> the {yes, no} cent ladders depthAtAsk reads:
+// yes = resting bids for the outcome; no = resting asks expressed as the opposite side's bid (100 - ask).
+function clobBook(book){
+ const rows=xs=>(Array.isArray(xs)?xs:[]).map(x=>[Number(x?.price),Number(x?.size)]).filter(([p,n])=>Number.isFinite(p)&&p>0&&p<1&&Number.isFinite(n)&&n>0);
+ return {yes:rows(book?.bids).map(([p,n])=>[p*100,n]),no:rows(book?.asks).map(([p,n])=>[100-p*100,n])};
+}
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 function liveBookFetcher(){
  let last=0;
- return async marketId=>{
-  const pause=last+2100-Date.now();if(pause>0)await wait(pause);last=Date.now();
-  const r=await fetch('https://api.jup.ag/prediction/v1/orderbook/'+encodeURIComponent(marketId),{cache:'no-store',headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(10000)});
-  if(!r.ok)throw Error('order book HTTP '+r.status);return r.json();
+ return async marketId=>{   // marketId here is the outcome's CLOB token id
+  const pause=last+250-Date.now();if(pause>0)await wait(pause);last=Date.now();
+  const r=await fetch('https://clob.polymarket.com/book?token_id='+encodeURIComponent(marketId),{cache:'no-store',headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(10000)});
+  if(!r.ok)throw Error('order book HTTP '+r.status);return clobBook(await r.json());
  };
 }
 async function verifyExecution(P,{fetchBook=liveBookFetcher(),now=()=>Date.now()}={}){
@@ -26,7 +32,8 @@ async function verifyExecution(P,{fetchBook=liveBookFetcher(),now=()=>Date.now()
    if(!fresh() || !B.scoreSupports(c,g,g.pick)){g.executionRejections.push({label:c.label,reason:'not verified pregame/fresh quote/displayed-score winner'});continue;}
    const required=Math.max(10,Math.ceil(5/c.ask));c.requiredDepth=required;
    try{
-    const book=await fetchBook(c.marketId);c.executionDepth=depthAtAsk(book,c.ask);c.executionCheckedAt=new Date(now()).toISOString();
+    if(!c.tokenId)throw Error('no CLOB token for this contract');
+    const book=await fetchBook(c.tokenId);c.executionDepth=depthAtAsk(book,c.ask);c.executionCheckedAt=new Date(now()).toISOString();
     if(!fresh() || c.executionDepth<required)throw Error('fresh executable depth below '+required+' contracts');
     if(!(c.sensitivityLower>.5 && c.sensitivityLower>c.cost && c.quoteStressEV>0))throw Error('probability/EV not robust to fee or quote stress');
     c.executionVerified=true;valid.push(c);
@@ -37,4 +44,4 @@ async function verifyExecution(P,{fetchBook=liveBookFetcher(),now=()=>Date.now()
  }
  return P;
 }
-module.exports={depthAtAsk,verifyExecution};
+module.exports={depthAtAsk,verifyExecution,clobBook};

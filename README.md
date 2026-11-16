@@ -12,7 +12,7 @@ exact-score protocol for every game on that date and shows:
 * **final pick** (no ties: the OT/SO winner gets +1), with an **OT** label when P(OT | that score) ≥ 55%
 * P(game goes to OT/SO), win probabilities, expected goals, top 5 exact scores
 * a summary table (with a "Copy picks" button) and, for finished games, the actual score and contest error
-* **Jupiter edge**: the Jupiter Predict price for each side, its no-vig value, the model win %, edge in percentage points and EV per $1 after fees, with a link to the market (see below)
+* **Polymarket edge**: the Polymarket price for each side, its no-vig value, the model win %, edge in percentage points and EV per $1 after fees, with a link to the market (see below)
 
 ## How it works
 
@@ -22,7 +22,7 @@ exact-score protocol for every game on that date and shows:
 | `scripts/update_data.py` | Stdlib-only. Pulls the NHL schedule and finals (`api-web.nhle.com/v1/schedule`), ESPN scoreboard odds + probable goalies, and ESPN core-API closing odds for finished games. Writes `data/today.json`, `data/days/YYYY-MM-DD.json`, `data/results_2026_27.json`. Keeps the last pre-game line once a game starts. |
 | `js/espn.js` | On Simulate, re-pulls live odds/goalies from ESPN directly in the browser (ESPN allows CORS). If that fails, the Action snapshot is used. The NHL API does not allow browser CORS, so schedule/results come from the snapshot. |
 | `js/model.js` | JavaScript port of `sim_v2.py` + `sim_v3.py` + `tonight.py`. |
-| `js/jupiter.js` | Pulls Jupiter Predict NHL game markets in the browser (keyless, CORS allowed) and computes the edge. The Action also stores a copy on each game (`jupiter` field) as a fallback. |
+| `js/polymarket.js` | Pulls Polymarket NHL game markets in the browser (keyless, CORS allowed) and computes the edge. The Action also stores a copy on each game (`jupiter` field) as a fallback. |
 | `js/worker.js` | Runs each game in a Web Worker (parallel, UI stays responsive). |
 
 ### The v3 protocol
@@ -36,15 +36,15 @@ exact-score protocol for every game on that date and shows:
 Simulation uses a fixed seed, so the same inputs give the same picks. **Standard** precision (200k sims, 40k-sim market fit) is fast;
 **Full** (800k / 120k) matches the Python settings.
 
-## Jupiter edge
+## Polymarket edge
 
-**Read this first: the edge is vs a DraftKings-derived model.** v3 fits the DraftKings moneyline at full weight (market weight 1.0), so the model's win % is essentially the DraftKings no-vig price. A positive edge means Jupiter (Polymarket liquidity) is cheaper than DraftKings implies. It is not an independent handicap.
+**Read this first: the edge is vs a DraftKings-derived model.** v3 fits the DraftKings moneyline at full weight (market weight 1.0), so the model's win % is essentially the DraftKings no-vig price. A positive edge means Polymarket (Polymarket liquidity) is cheaper than DraftKings implies. It is not an independent handicap.
 
-* **Source:** official Jupiter Prediction API, `GET https://api.jup.ag/prediction/v1/events?category=sports&subcategory=nhl&includeMarkets=true&start=0&end=100` (paginated; [docs](https://developers.jup.ag/docs/prediction)). It needs no key or wallet and is limited to 0.5 requests per second without a key. The fallback host is `https://prediction-market-api.jup.ag/api/v1`, the same API behind jup.ag. No keys are stored in this repo.
-* **Matching:** the event slug is `nhl-{away}-{home}-{YYYY-MM-DD}`, using Polymarket team codes mapped to NHL codes (`mon`→MTL, `nj`→NJD, `las`→VGK, `cal`→CGY, `sj`→SJS, `tb`→TBL, `utah`→UTA). Each game has one YES market per team. A game with no market shows **No Jupiter market**.
+* **Source:** Polymarket's public Gamma API, `GET https://gamma-api.polymarket.com/events?tag_id=899&closed=false&start_time_min=…&start_time_max=…` (no key, CORS enabled). Prices are each market's best bid/ask; a bet candidate's depth is then checked against the Polymarket CLOB order book (`clob.polymarket.com/book?token_id=…`).
+* **Matching:** the event slug is `nhl-{away}-{home}-{YYYY-MM-DD}`, using Polymarket team codes mapped to NHL codes (`mon`→MTL, `nj`→NJD, `las`→VGK, `cal`→CGY, `sj`→SJS, `tb`→TBL, `utah`→UTA). Each game has one YES market per team. A game with no market shows **No Polymarket market**.
 * **Resolution:** per the market rules, the result uses "the final score including any overtime periods and shootouts". It is compared with the model's win % **including OT/SO**.
 * **Price:** p = YES ask (`buyYesPriceUsd` / 1e6), which is the cost of a $1 contract. Bid = `sellYesPriceUsd`. No-vig = p_side / (p_away + p_home).
-* **Edge** = model % − p (in pp). **EV per $1** = model / (p + fee) − 1, where fee = 0.07 · p · (1 − p) per contract. This matches Jupiter's published fee table for Polymarket-sourced markets, which Jupiter rounds up to the cent per order. Rows with positive EV after fees are green. A positive edge before fees is shown in gold.
+* **Edge** = model % − p (in pp). **EV per $1** = model / (p + fee) − 1, where fee = the market's own Polymarket taker schedule, rate · (p · (1 − p))^exponent per contract (sports default 0.05), rounded up to the cent as a conservative bound. Rows with positive EV after fees are green. A positive edge before fees is shown in gold.
 * **Limitations:** prices move and the order book can be thin. The ask is only good for the size posted. Once a game starts, the dashboard keeps the last pre-game snapshot price if one exists. Otherwise it marks the price "in-game", and that edge is not meaningful. Markets for past dates usually disappear from the feed. Fee rounding makes small orders slightly worse.
 
 ## Verification
@@ -61,7 +61,7 @@ No API keys or secrets are used anywhere. For entertainment / contest use; not b
 
 ## v4-independent model (default) and the Discord `/nhl` command
 
-**v4-independent** uses no betting-market input, so its edge against Jupiter is a real disagreement with the market, not a DraftKings copy. Features are built only from games before each date: exponentially weighted (half-life 25 games) goals, MoneyPuck score/venue-adjusted xG and shots for and against; the starting goalie's goals vs expected (shrunk); home ice; back-to-backs, rest and travel. A Poisson regression is refit on 2022-23 onward every Action run (`scripts/v4_model.py`, `scripts/v4_update.py`, history in `data/v4/history.csv.gz`). Expected goals feed the same Monte Carlo as v3 (score effects, goalie pulls/empty nets, 3-on-3 OT, shootout).
+**v4-independent** uses no betting-market input, so its edge against Polymarket is a real disagreement with the market, not a DraftKings copy. Features are built only from games before each date: exponentially weighted (half-life 25 games) goals, MoneyPuck score/venue-adjusted xG and shots for and against; the starting goalie's goals vs expected (shrunk); home ice; back-to-backs, rest and travel. A Poisson regression is refit on 2022-23 onward every Action run (`scripts/v4_model.py`, `scripts/v4_update.py`, history in `data/v4/history.csv.gz`). Expected goals feed the same Monte Carlo as v3 (score effects, goalie pulls/empty nets, 3-on-3 OT, shootout).
 
 ### Honest backtest (rolling origin: each season predicted by a model fit only on earlier seasons, 4k sims/game)
 
@@ -72,13 +72,13 @@ No API keys or secrets are used anywhere. For entertainment / contest use; not b
 | v3 market-anchored (DraftKings) | 2.793 | 2.759 | 0.6704 | 0.6558 |
 | DraftKings no-vig line | – | – | 0.6700 | 0.6535 |
 
-\*2023-24 stored lines are 3-way regulation prices, so they are left out of moneyline comparisons. v4 clearly beats v3's ratings-only fallback, but **the betting market is still a bit sharper than v4** on win probability, and v4 underpredicts total goals by about 0.1 per game. A flat $1 rule (model > 50% and EV > 0 at DraftKings closing prices) lost 1.2% per bet over 2024-26 (1,628 bets), so treat any edge as thin. No historical Jupiter prices exist to backtest against.
+\*2023-24 stored lines are 3-way regulation prices, so they are left out of moneyline comparisons. v4 clearly beats v3's ratings-only fallback, but **the betting market is still a bit sharper than v4** on win probability, and v4 underpredicts total goals by about 0.1 per game. A flat $1 rule (model > 50% and EV > 0 at DraftKings closing prices) lost 1.2% per bet over 2024-26 (1,628 bets), so treat any edge as thin. No historical Polymarket prices exist to backtest against.
 
 ### Best bet rule (dashboard and Discord)
-For each Jupiter market on the game, q is the model probability (final result incl. OT/SO, matching Jupiter's rules) and p is the YES ask. The fee is 0.07·p·(1−p), and EV = q/(p+fee) − 1. A side qualifies only if **q > 50% and EV > 0**. The best bet is the qualifying side with the highest EV (up to 3 other qualifying sides are listed); otherwise the game is **NO BET**. Every side of every Jupiter market is checked: moneyline, every over/under line (2.5–9.5) and every alt puck line (±1.5/±2.5/±3.5), fetched from Jupiter's own API with `includeAllMarkets=true` (the default listing only returns the moneyline). Prices are Jupiter's YES ask for each outcome. All of these markets settle on the final score including OT and shootouts (shootout winner +1 goal), which is exactly the simulator's final score, and all lines are half-goals, so there are no pushes. Started games are never bet (pre-game prediction only). Totals are recalibrated by actual/predicted goals over the last 1,000 games (about +2% right now), because v4 otherwise runs about 0.1 goals per game low.
+For each Polymarket market on the game, q is the model probability (final result incl. OT/SO, matching Polymarket's rules) and p is the YES ask. The fee is 0.05·p·(1−p), and EV = q/(p+fee) − 1. A side qualifies only if **q > 50% and EV > 0**. The best bet is the qualifying side with the highest EV (up to 3 other qualifying sides are listed); otherwise the game is **NO BET**. Every side of every Polymarket market is checked: moneyline, every over/under line (2.5–9.5) and every alt puck line (±1.5/±2.5/±3.5), fetched from Polymarket's own API with `includeAllMarkets=true` (the default listing only returns the moneyline). Prices are Polymarket's YES ask for each outcome. All of these markets settle on the final score including OT and shootouts (shootout winner +1 goal), which is exactly the simulator's final score, and all lines are half-goals, so there are no pushes. Started games are never bet (pre-game prediction only). Totals are recalibrated by actual/predicted goals over the last 1,000 games (about +2% right now), because v4 otherwise runs about 0.1 goals per game low.
 
 ### Discord `/nhl` architecture
-`/nhl` → Cloudflare Worker (`cloudflare/worker.mjs`, free plan). The Worker checks Discord's Ed25519 signature, replies "thinking…", and triggers `.github/workflows/discord.yml` with the 15-minute interaction token. That workflow refreshes the slate and Jupiter prices, retrains v4, runs 400k sims per game (`scripts/predict.js`), and edits the reply with Luck Society embeds (`scripts/discord_post.js`). If GitHub can't be reached, the Worker posts the latest precomputed `data/predictions/DATE.json` instead.
+`/nhl` → Cloudflare Worker (`cloudflare/worker.mjs`, free plan). The Worker checks Discord's Ed25519 signature, replies "thinking…", and triggers `.github/workflows/discord.yml` with the 15-minute interaction token. That workflow refreshes the slate and Polymarket prices, retrains v4, runs 400k sims per game (`scripts/predict.js`), and edits the reply with Luck Society embeds (`scripts/discord_post.js`). If GitHub can't be reached, the Worker posts the latest precomputed `data/predictions/DATE.json` instead.
 
 Secrets are **never** stored in this repo:
 - `GITHUB_TOKEN`: a Worker secret (`wrangler secret put GITHUB_TOKEN`). Use a fine-grained PAT limited to this repo with Contents: read & write, which repository_dispatch requires.

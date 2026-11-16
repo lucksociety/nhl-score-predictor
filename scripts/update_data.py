@@ -122,70 +122,103 @@ def espn_day(d):
                                             espnScore=[side['away'].get('score'), side['home'].get('score')])
     return out
 
-JUP_HOSTS = ['https://api.jup.ag/prediction/v1', 'https://prediction-market-api.jup.ag/api/v1']
-JUP_AB = {'cal': 'CGY', 'las': 'VGK', 'mon': 'MTL', 'nj': 'NJD', 'sj': 'SJS', 'tb': 'TBL', 'utah': 'UTA', 'la': 'LAK'}
-_JUP = None
-def jupiter_markets():
-    """Jupiter Predict NHL markets (moneyline + all totals + all alt spreads, includeAllMarkets=true) keyed by (date, away, home)."""
-    global _JUP
-    if _JUP is not None: return _JUP
+GAMMA = 'https://gamma-api.polymarket.com'
+NHL_TAG = '899'
+PM_AB = {'cal': 'CGY', 'las': 'VGK', 'mon': 'MTL', 'nj': 'NJD', 'sj': 'SJS', 'tb': 'TBL', 'utah': 'UTA', 'la': 'LAK'}
+_PM = None
+
+def _pm_list(v):
+    if isinstance(v, str):
+        try: v = json.loads(v)
+        except ValueError: return []
+    return v if isinstance(v, list) else []
+
+def _pm_num(x):
+    try: x = float(x)
+    except (TypeError, ValueError): return None
+    return x if x == x and abs(x) != float('inf') else None
+
+def _pm_px(x):
+    return round(x, 6) if x is not None and 0 < x < 1 else None
+
+def parse_polymarket_event(e, fetched_at=None):
+    """One Gamma NHL game event -> the per-game market record (mirror of js/polymarket.js parseEvent)."""
     import re
-    _JUP = {}
-    for host in JUP_HOSTS:
-        evs, ok = [], True
-        for start in range(0, 600, 100):
-            j = get(f'{host}/events?category=sports&subcategory=nhl&includeMarkets=true&includeAllMarkets=true&start={start}&end={start + 100}')
-            if j is None: ok = False; break
-            evs += j.get('data', [])
-            if not (j.get('pagination') or {}).get('hasNext'): break
-            time.sleep(2.1)
-        if not ok: continue
-        for e in evs:
-            m = re.match(r'^nhl-([a-z]+)-([a-z]+)-(\d{4}-\d{2}-\d{2})$', (e.get('metadata') or {}).get('slug', ''))
-            if not m: continue
-            ab = lambda x: JUP_AB.get(x, x.upper())
-            A, H, date = ab(m.group(1)), ab(m.group(2)), m.group(3)
-            sides = {}; extra = []; xr = []
-            for mk in e.get('markets') or []:
-                if mk.get('periodType'): continue
-                smt = mk.get('sportsMarketType')
-                if smt in ('totals', 'spreads'):   # every O/U line and alt puck line; one Jupiter market per outcome
-                    pr = mk.get('pricing') or {}; lab = ((mk.get('marketOptions') or [{}])[0] or {}).get('label') or ''
-                    r = (mk.get('rulesPrimary') or '').lower(); xr.append('overtime' in r and 'shootout' in r and 'one goal will be added' in r)
-                    it = dict(type=smt, marketId=mk.get('marketId'), label=lab, status=mk.get('status'),
-                              includesOTSO=('overtime' in r and 'shootout' in r and 'one goal will be added' in r),
-                              periodType=mk.get('periodType'),
-                              ask=pr['buyYesPriceUsd'] / 1e6 if pr.get('buyYesPriceUsd') else None,
-                              bid=pr['sellYesPriceUsd'] / 1e6 if pr.get('sellYesPriceUsd') else None, volume=pr.get('volume'))
-                    mm = re.match(r'^\s*([OU])\s*([\d.]+)', lab) if smt == 'totals' else re.match(r'^\s*([A-Za-z]{2,4})\s*([+-][\d.]+)', lab)
-                    if not mm: continue
-                    if smt == 'totals': it.update(ou=mm.group(1), line=float(mm.group(2)))
-                    else: it.update(team=ab(mm.group(1).lower()), line=float(mm.group(2)))
-                    extra.append(it)
-                    continue
-                if smt not in (None, 'moneyline'): continue
-                t = ab(((mk.get('team') or {}).get('abbreviation') or '').lower())
-                side = 'away' if t == A else 'home' if t == H else None
-                if not side: continue
-                pr = mk.get('pricing') or {}
-                rules = (mk.get('rulesPrimary') or '').lower()
-                sides[side] = dict(marketId=mk.get('marketId'), title=mk.get('title'), status=mk.get('status'),
-                                   includesOTSO=('overtime' in rules and 'shootout' in rules),
-                                   periodType=mk.get('periodType'),
-                                   ask=pr['buyYesPriceUsd'] / 1e6 if pr.get('buyYesPriceUsd') else None,
-                                   bid=pr['sellYesPriceUsd'] / 1e6 if pr.get('sellYesPriceUsd') else None, volume=pr.get('volume'))
-                rules = mk.get('rulesPrimary') or ''
-            if not sides: continue
-            _JUP[(date, A, H)] = dict(eventId=e['eventId'], slug=e['metadata']['slug'], date=date, away=A, home=H, live=bool(e.get('isLive')),
-                                      link=f"https://jup.ag/prediction/{e['eventId']}", provider=(e.get('markets') or [{}])[0].get('provider'),
-                                      includesOTSO=('overtime' in rules.lower() and 'shootout' in rules.lower()),
-                                      sides=dict(away=sides.get('away'), home=sides.get('home')), extra=extra,
-                                      extraIncludesOTSO=all(xr) if xr else None,
-                                      fetchedAt=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), host=host)
-        print(f'jupiter: {len(_JUP)} NHL game markets via {host}')
-        return _JUP
-    print('jupiter: unavailable', file=sys.stderr)
-    return _JUP
+    slug = e.get('slug') or ''
+    m = re.match(r'^nhl-([a-z]+)-([a-z]+)-(\d{4}-\d{2}-\d{2})$', slug)
+    if not m: return None
+    ab = lambda x: PM_AB.get(str(x or '').lower(), str(x or '').upper())
+    A, H, date = ab(m.group(1)), ab(m.group(2)), m.group(3)
+    by_name = {str(t.get('name')): ab(t.get('abbreviation')) for t in e.get('teams') or [] if ab(t.get('abbreviation')) in (A, H)}
+    side_of = lambda name: {A: 'away', H: 'home'}.get(by_name.get(str(name)))
+    sides, extra, xr, ml_rules = {}, [], [], ''
+    for mk in e.get('markets') or []:
+        smt = mk.get('sportsMarketType')
+        if smt not in ('moneyline', 'totals', 'spreads'): continue   # periods and props have their own types
+        outs, toks = _pm_list(mk.get('outcomes')), [str(t) for t in _pm_list(mk.get('clobTokenIds'))]
+        if len(outs) != 2 or len(toks) != 2: continue
+        bid, ask, line = _pm_num(mk.get('bestBid')), _pm_num(mk.get('bestAsk')), _pm_num(mk.get('line'))
+        # Binary books mirror each other: buying outcome 1 at its ask is selling outcome 0 at its bid.
+        quotes = [(ask, bid), (None if bid is None else 1 - bid, None if ask is None else 1 - ask)]
+        rules = mk.get('description') or ''; r = rules.lower()
+        status = 'open' if not mk.get('closed') and mk.get('active') is not False and mk.get('acceptingOrders') is not False else 'closed'
+        sched = mk.get('feeSchedule') or {}
+        fee = dict(rate=0.0, exponent=1.0) if mk.get('feesEnabled') is False else \
+              dict(rate=float(sched['rate']), exponent=float(sched.get('exponent', 1))) if sched.get('rate') is not None else None
+        common = lambda i: dict(marketId=f"POLY-{mk.get('id')}-{i}", tokenId=toks[i], status=status, periodType=None,
+                                ask=_pm_px(quotes[i][0]), bid=_pm_px(quotes[i][1]), volume=_pm_num(mk.get('volumeNum')), fee=fee)
+        if smt == 'moneyline':
+            if mk.get('slug') != slug: continue
+            sd = [side_of(o) for o in outs]
+            if set(sd) != {'away', 'home'}: continue
+            ml_rules = rules
+            for i, sname in enumerate(sd):
+                sides[sname] = dict(title=str(outs[i]), includesOTSO=('overtime' in r and 'shootout' in r), **common(i))
+            continue
+        otso = 'overtime' in r and 'shootout' in r and 'one goal will be added' in r
+        if line is None: continue
+        fmt = lambda v: str(int(v)) if float(v).is_integer() else str(v)
+        if smt == 'totals':
+            if [str(o) for o in outs] != ['Over', 'Under']: continue
+            xr.append(otso)
+            for i, ou in enumerate(('O', 'U')):
+                extra.append(dict(type='totals', label=f'{ou} {fmt(line)}', includesOTSO=otso, ou=ou, line=line, **common(i)))
+        else:
+            teams = [by_name.get(str(o)) for o in outs]
+            if not teams[0] or not teams[1] or teams[0] == teams[1]: continue
+            xr.append(otso)
+            for i, team in enumerate(teams):
+                l = line if i == 0 else -line
+                extra.append(dict(type='spreads', label=f"{team} {'+' if l > 0 else ''}{fmt(l)}", includesOTSO=otso, team=team, line=l, **common(i)))
+    if not sides: return None
+    return dict(eventId=f"POLY-{e.get('id')}", slug=slug, date=date, away=A, home=H, live=bool(e.get('live') or e.get('ended')), active=not e.get('closed'),
+                link=f'https://polymarket.com/event/{slug}', provider='polymarket',
+                includesOTSO=('overtime' in ml_rules.lower() and 'shootout' in ml_rules.lower()),
+                sides=dict(away=sides.get('away'), home=sides.get('home')), extra=extra,
+                extraIncludesOTSO=all(xr) if xr else None,
+                fetchedAt=fetched_at or dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), host=GAMMA)
+
+def polymarket_markets():
+    """Polymarket NHL game markets (moneyline + all totals + all alt puck lines) keyed by (date, away, home)."""
+    global _PM
+    if _PM is not None: return _PM
+    import urllib.parse
+    _PM = {}
+    now = dt.datetime.now(dt.timezone.utc)
+    lo, hi = (now - dt.timedelta(hours=12)).strftime('%Y-%m-%dT%H:%M:%SZ'), (now + dt.timedelta(days=3)).strftime('%Y-%m-%dT%H:%M:%SZ')
+    evs = []
+    for off in range(0, 1000, 100):
+        q = urllib.parse.urlencode(dict(tag_id=NHL_TAG, closed='false', limit=100, offset=off, order='id', ascending='true', start_time_min=lo, start_time_max=hi))
+        page = get(f'{GAMMA}/events?{q}')
+        if not isinstance(page, list):
+            print('polymarket: unavailable', file=sys.stderr); return _PM
+        evs += page
+        if len(page) < 100: break
+    for e in evs:
+        rec = parse_polymarket_event(e)
+        if rec: _PM[(rec['date'], rec['away'], rec['home'])] = rec
+    print(f'polymarket: {len(_PM)} NHL game markets via {GAMMA}')
+    return _PM
 
 def day_slate(d):
     j = get(f'https://api-web.nhle.com/v1/schedule/{d.isoformat()}')
@@ -203,7 +236,7 @@ def day_slate(d):
                           venue=(g.get('venue') or {}).get('default'), state=g.get('gameState'),
                           final=[g['awayTeam'].get('score'), g['homeTeam'].get('score'), (g.get('gameOutcome') or {}).get('lastPeriodType')] if fin else None,
                           espnId=e.get('espnId'), odds=e.get('odds'), goalies=e.get('goalies') or dict(away=None, home=None),
-                          jupiter=jupiter_markets().get((d.isoformat(), A, H))))
+                          market=polymarket_markets().get((d.isoformat(), A, H))))
     if not games and esp:   # NHL API down: fall back to ESPN slate
         for (A, H), e in esp.items():
             games.append(dict(id=None, startUTC=None, away=A, home=H, awayName=A, homeName=H, venue=None, state=e['espnState'], final=None,
@@ -238,8 +271,9 @@ def main():
                 started = g.get('state') not in ('FUT', 'PRE', None)
                 if p.get('odds') and p['odds'].get('mlHome') is not None and (started or not g.get('odds') or g['odds'].get('mlHome') is None):
                     g['odds'] = p['odds']   # keep last pre-game line once the puck has dropped (or if the feed dropped it)
-                if p.get('jupiter') and (started or not g.get('jupiter')):
-                    g['jupiter'] = p['jupiter']   # keep the last pre-game Jupiter price once the game starts
+                prev_market = p.get('market') or p.get('jupiter')   # 'jupiter': day files written before 2026-11-16
+                if prev_market and (started or not g.get('market')):
+                    g['market'] = prev_market   # keep the last pre-game price once the game starts
                 if p.get('v4') and started:
                     g['v4'] = p['v4']             # freeze the pre-game v4 prediction
                 for side in ('away', 'home'):

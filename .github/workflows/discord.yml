@@ -56,7 +56,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Fresh schedule, goalies, Jupiter prices; retrain v4 (not committed)
+      - name: Fresh schedule, goalies, Polymarket prices; retrain v4 (not committed)
         run: python scripts/update_data.py --date "$SLATE_DATE"
       - name: Run the Monte Carlo (400k sims/game)
         run: node scripts/predict.js "$SLATE_DATE"

@@ -1,7 +1,7 @@
 /* Luck Society /nhl — Discord HTTP interactions endpoint (Cloudflare Workers, free plan).
  * 1. verifies the Ed25519 signature (DISCORD_PUBLIC_KEY), answers PING
  * 2. /nhl -> responds with a visible queue acknowledgement (type 4) within 3 s, then dispatches the GitHub Actions workflow (discord.yml), which runs the
- *    full v4 Monte Carlo with fresh Jupiter prices and edits this reply (interaction token valid 15 min)
+ *    full v4 Monte Carlo with fresh Polymarket prices and edits this reply (interaction token valid 15 min)
  * 3. if dispatch fails, reports the failure without publishing cached bets.
  * vars: DISCORD_APP_ID, DISCORD_PUBLIC_KEY, GITHUB_REPO, SITE   secret: GITHUB_TOKEN (fine-grained PAT, this repo, Contents: write)
  * The Worker never sees the bot token. */
