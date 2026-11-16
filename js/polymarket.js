@@ -39,7 +39,8 @@
     if (!m) return null;
     const away = toNHL(m[1]), home = toNHL(m[2]), date = m[3];
     const byName = {};
-    for (const t of e.teams || []) { const ab = toNHL(t.abbreviation); if (ab === away || ab === home) byName[String(t.name)] = ab; }
+    // outcomes are labelled with a team's name or its alias (Utah's markets say "Utah", its team name is "Mammoth")
+    for (const t of e.teams || []) { const ab = toNHL(t.abbreviation); if (ab === away || ab === home) for (const k of [t.name, t.alias]) if (k) byName[String(k)] = ab; }
     const sideOf = name => { const ab = byName[String(name)]; return ab === away ? 'away' : ab === home ? 'home' : null; };
     const sides = {}, extra = []; let xr = true, mlRules = '';
     for (const mk of e.markets || []) {

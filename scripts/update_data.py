@@ -149,7 +149,9 @@ def parse_polymarket_event(e, fetched_at=None):
     if not m: return None
     ab = lambda x: PM_AB.get(str(x or '').lower(), str(x or '').upper())
     A, H, date = ab(m.group(1)), ab(m.group(2)), m.group(3)
-    by_name = {str(t.get('name')): ab(t.get('abbreviation')) for t in e.get('teams') or [] if ab(t.get('abbreviation')) in (A, H)}
+    # outcomes are labelled with a team's name or its alias (Utah's markets say "Utah", its team name is "Mammoth")
+    by_name = {str(k): ab(t.get('abbreviation')) for t in e.get('teams') or [] if ab(t.get('abbreviation')) in (A, H)
+               for k in (t.get('name'), t.get('alias')) if k}
     side_of = lambda name: {A: 'away', H: 'home'}.get(by_name.get(str(name)))
     sides, extra, xr, ml_rules = {}, [], [], ''
     for mk in e.get('markets') or []:

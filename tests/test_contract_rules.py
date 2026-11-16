@@ -59,6 +59,20 @@ def test_non_game_or_unidentified_events_are_dropped(change):
     assert U.parse_polymarket_event(event(**change)) is None
 
 
+def test_outcomes_labelled_with_a_team_alias_are_matched():
+    # live shape, 2026-11-16: team name "Mammoth", alias "Utah", and every outcome says "Utah"
+    e = {"id": "77", "slug": "nhl-van-utah-2026-11-16", "title": "Canucks vs. Utah",
+         "teams": [{"name": "Canucks", "abbreviation": "van", "alias": "Canucks", "ordering": "away"}, {"name": "Mammoth", "abbreviation": "utah", "alias": "Utah", "ordering": "home"}],
+         "markets": [gm(1, "moneyline", "", ["Canucks", "Utah"], bid=.40, ask=.41, slug="nhl-van-utah-2026-11-16"),
+                     gm(2, "spreads", "", ["Utah", "Canucks"], -1.5, .30, .31, slug="nhl-van-utah-2026-11-16-spread-home-1pt5")]}
+    parsed = U.parse_polymarket_event(e)
+    assert (parsed["away"], parsed["home"]) == ("VAN", "UTA") and parsed["sides"]["home"]["title"] == "Utah" and parsed["sides"]["home"]["ask"] == .6
+    assert [x["label"] for x in parsed["extra"]] == ["UTA -1.5", "VAN +1.5"]
+    if shutil.which("node"):
+        js = "const P=require(process.argv[1]);const p=P.parseEvent(JSON.parse(process.argv[2]));console.log(JSON.stringify([p.away,p.home,p.sides.home.ask,p.extra.map(x=>x.label)]))"
+        assert json.loads(subprocess.check_output(["node", "-e", js, str(ROOT / "js" / "polymarket.js"), json.dumps(e)], text=True)) == ["VAN", "UTA", .6, ["UTA -1.5", "VAN +1.5"]]
+
+
 def test_live_and_closed_events_are_flagged():
     assert U.parse_polymarket_event(event(live=True))["live"] is True
     assert U.parse_polymarket_event(event(closed=True))["active"] is False
