@@ -85,12 +85,12 @@ def test_fetch_pages_gamma_and_never_calls_jupiter(monkeypatch):
         return [event()] + [{"slug": "x"}] * 99 if len(urls) == 1 else [event(id="56", slug="nhl-mon-nyr-2026-11-05", teams=[
             {"name": "Canadiens", "abbreviation": "mon"}, {"name": "Rangers", "abbreviation": "nyr"}],
             markets=[gm(1, "moneyline", "", ["Canadiens", "Rangers"], slug="nhl-mon-nyr-2026-11-05")])]
-    monkeypatch.setattr(U, "_PM", None); monkeypatch.setattr(U, "get", get)
+    monkeypatch.setattr(U, "_PM", None); monkeypatch.setattr(U, "pm_get", get)
     out = U.polymarket_markets()
     assert set(out) == {("2026-11-05", "BOS", "TOR"), ("2026-11-05", "MTL", "NYR")}
     assert len(urls) == 2 and all(u.startswith("https://gamma-api.polymarket.com/events?") and "tag_id=899" in u and "closed=false" in u for u in urls)
     assert "offset=100" in urls[1] and not any("jup" in u for u in urls)
-    monkeypatch.setattr(U, "_PM", None); monkeypatch.setattr(U, "get", lambda _: None)
+    monkeypatch.setattr(U, "_PM", None); monkeypatch.setattr(U, "pm_get", lambda _: None)
     assert U.polymarket_markets() == {}
 
 
@@ -102,3 +102,17 @@ def test_browser_parser_matches_python():
     py = json.loads(json.dumps(U.parse_polymarket_event(e, "2026-11-05T17:00:00Z")))
     out.pop("title")
     assert out == py
+
+
+def test_gamma_requests_send_an_accept_header(monkeypatch):
+    # live failure 2026-11-16: urllib's default request (no Accept header) got HTTP 406 from Gamma
+    seen = {}
+    class Resp:
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def read(self): return b"[]"
+    def urlopen(req, timeout=None):
+        seen.update({k.lower(): v for k, v in req.header_items()}); return Resp()
+    monkeypatch.setattr(U.urllib.request, "urlopen", urlopen)
+    assert U.pm_get("https://gamma-api.polymarket.com/events?x=1") == []
+    assert seen["accept"] == "application/json" and "mozilla" not in seen["user-agent"].lower()

@@ -200,6 +200,17 @@ def parse_polymarket_event(e, fetched_at=None):
                 extraIncludesOTSO=all(xr) if xr else None,
                 fetchedAt=fetched_at or dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), host=GAMMA)
 
+def pm_get(url, tries=3):
+    """Gamma answers 406 Not Acceptable to a request without an Accept header (urllib sends none by default)."""
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={'Accept': 'application/json', 'User-Agent': 'nhl-score-predictor/1.0 (post-forecast prices)'})
+            with urllib.request.urlopen(req, timeout=25) as r:
+                return json.loads(r.read().decode())
+        except Exception as e:
+            print(f'  fetch fail {url}: {e}', file=sys.stderr); time.sleep(2 * (i + 1))
+    return None
+
 def polymarket_markets():
     """Polymarket NHL game markets (moneyline + all totals + all alt puck lines) keyed by (date, away, home)."""
     global _PM
@@ -211,7 +222,7 @@ def polymarket_markets():
     evs = []
     for off in range(0, 1000, 100):
         q = urllib.parse.urlencode(dict(tag_id=NHL_TAG, closed='false', limit=100, offset=off, order='id', ascending='true', start_time_min=lo, start_time_max=hi))
-        page = get(f'{GAMMA}/events?{q}')
+        page = pm_get(f'{GAMMA}/events?{q}')
         if not isinstance(page, list):
             print('polymarket: unavailable', file=sys.stderr); return _PM
         evs += page
