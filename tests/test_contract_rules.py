@@ -104,15 +104,19 @@ def test_browser_parser_matches_python():
     assert out == py
 
 
-def test_gamma_requests_send_an_accept_header(monkeypatch):
-    # live failure 2026-11-16: urllib's default request (no Accept header) got HTTP 406 from Gamma
-    seen = {}
+def test_gamma_is_fetched_with_requests(monkeypatch):
+    # live failure 2026-11-16: urllib got HTTP 406 from Gamma; the requests client used by the other pipelines works
+    import requests
+    calls = []
     class Resp:
-        def __enter__(self): return self
-        def __exit__(self, *a): return False
-        def read(self): return b"[]"
-    def urlopen(req, timeout=None):
-        seen.update({k.lower(): v for k, v in req.header_items()}); return Resp()
-    monkeypatch.setattr(U.urllib.request, "urlopen", urlopen)
+        def raise_for_status(self): pass
+        def json(self): return []
+    def get(url, headers=None, timeout=None):
+        calls.append((url, headers)); return Resp()
+    monkeypatch.setattr(requests, "get", get)
+    monkeypatch.setattr(U.urllib.request, "urlopen", lambda *a, **k: (_ for _ in ()).throw(AssertionError("urllib must not be used for Gamma")))
     assert U.pm_get("https://gamma-api.polymarket.com/events?x=1") == []
-    assert seen["accept"] == "application/json" and "mozilla" not in seen["user-agent"].lower()
+    assert calls[0][1]["Accept"] == "application/json"
+    def boom(*a, **k): raise requests.HTTPError("406")
+    monkeypatch.setattr(requests, "get", boom); monkeypatch.setattr(U.time, "sleep", lambda _: None)
+    assert U.pm_get("https://gamma-api.polymarket.com/events?x=1") is None

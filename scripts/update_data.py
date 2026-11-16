@@ -201,12 +201,14 @@ def parse_polymarket_event(e, fetched_at=None):
                 fetchedAt=fetched_at or dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), host=GAMMA)
 
 def pm_get(url, tries=3):
-    """Gamma answers 406 Not Acceptable to a request without an Accept header (urllib sends none by default)."""
+    """Polymarket Gamma via `requests`, the client the soccer and tennis pipelines already use successfully.
+    Plain urllib got HTTP 406 Not Acceptable from Gamma on 2026-11-16, with and without an Accept header."""
+    import requests
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={'Accept': 'application/json', 'User-Agent': 'nhl-score-predictor/1.0 (post-forecast prices)'})
-            with urllib.request.urlopen(req, timeout=25) as r:
-                return json.loads(r.read().decode())
+            r = requests.get(url, headers={'Accept': 'application/json', 'User-Agent': 'nhl-score-predictor/1.0 (post-forecast prices)'}, timeout=25)
+            r.raise_for_status()
+            return r.json()
         except Exception as e:
             print(f'  fetch fail {url}: {e}', file=sys.stderr); time.sleep(2 * (i + 1))
     return None
