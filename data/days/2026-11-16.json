@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generatedAt": "2026-11-17T04:07:29Z",
+ "generatedAt": "2026-11-17T05:57:21Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -11,7 +11,7 @@
    "awayName": "Montr\u00e9al Canadiens",
    "homeName": "New York Rangers",
    "venue": "Madison Square Garden",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     1,
     3,
@@ -995,7 +995,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-17T04:07:29.670559+00:00",
+    "checkedAt": "2026-11-17T05:57:22.296429+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1184,6 +1184,12 @@
      "home": {
       "injuries": [
        {
+        "name": "Sean Durzi",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-17T04:32Z"
+       },
+       {
         "name": "Pavel Dorofeyev",
         "position": "RW",
         "status": "Out",
@@ -1194,12 +1200,6 @@
         "position": "D",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-10T22:13Z"
-       },
-       {
-        "name": "Sean Durzi",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-05T19:23Z"
        },
        {
         "name": "Igor Shesterkin",
@@ -1371,7 +1371,7 @@
      }
     },
     "problems": [],
-    "blockReason": "NYR recent skater absences not individually modeled: Pavel Dorofeyev"
+    "blockReason": "NYR recent skater absences not individually modeled: Sean Durzi, Pavel Dorofeyev"
    }
   },
   {
@@ -1382,8 +1382,12 @@
    "awayName": "Vancouver Canucks",
    "homeName": "Utah Mammoth",
    "venue": "Delta Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    2,
+    "REG"
+   ],
    "espnId": "401892727",
    "odds": {
     "provider": "Draft Kings",
@@ -2331,7 +2335,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-17T04:07:29.670559+00:00",
+    "checkedAt": "2026-11-17T05:57:22.296429+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
