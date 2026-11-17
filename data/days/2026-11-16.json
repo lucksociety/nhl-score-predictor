@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generatedAt": "2026-11-17T08:14:56Z",
+ "generatedAt": "2026-11-17T22:07:49Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -995,11 +995,17 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-17T08:14:56.196179+00:00",
+    "checkedAt": "2026-11-17T22:07:50.053513+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Alexandre Texier",
+        "position": "LW",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-17T18:35Z"
+       },
        {
         "name": "Mike Matheson",
         "position": "D",
@@ -1184,16 +1190,16 @@
      "home": {
       "injuries": [
        {
+        "name": "Pavel Dorofeyev",
+        "position": "RW",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-17T14:23Z"
+       },
+       {
         "name": "Sean Durzi",
         "position": "D",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-17T04:32Z"
-       },
-       {
-        "name": "Pavel Dorofeyev",
-        "position": "RW",
-        "status": "Out",
-        "updatedAt": "2026-11-17T00:12Z"
        },
        {
         "name": "Alberts Smits",
@@ -1308,11 +1314,6 @@
         "name": "Mika Zibanejad"
        },
        {
-        "id": 8481743,
-        "position": "D",
-        "name": "Marc Del Gaizo"
-       },
-       {
         "id": 8480434,
         "position": "D",
         "name": "Sean Durzi"
@@ -1371,7 +1372,7 @@
      }
     },
     "problems": [],
-    "blockReason": "NYR recent skater absences not individually modeled: Sean Durzi, Pavel Dorofeyev"
+    "blockReason": "NYR recent skater absences not individually modeled: Sean Durzi"
    }
   },
   {
@@ -2335,7 +2336,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-17T08:14:56.196179+00:00",
+    "checkedAt": "2026-11-17T22:07:50.053513+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2484,11 +2485,6 @@
         "id": 8482447,
         "position": "G",
         "name": "Leevi Meril\u00e4inen"
-       },
-       {
-        "id": 8484268,
-        "position": "G",
-        "name": "Nikita Tolopilo"
        }
       ]
      },
