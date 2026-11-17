@@ -118,20 +118,20 @@
       }
     },
     "v4-independent-skater-v1 / scoring-quote-fee-depth-v2 / moneyline": {
-      "n": 1,
-      "wins": 0,
-      "win_rate": 0,
-      "mean_probability": 0.5590125,
-      "brier": 0.31249497515625,
-      "log_loss": 0.8187387486082107,
-      "flat_cost_roi": -1.0,
+      "n": 2,
+      "wins": 1,
+      "win_rate": 0.5,
+      "mean_probability": 0.54944125,
+      "brier": 0.26210729602812505,
+      "log_loss": 0.7175828288777362,
+      "flat_cost_roi": -0.03846153846153855,
       "reliability": [
         {
           "lower_exclusive": 0.5,
           "upper_inclusive": 0.6,
-          "n": 1,
-          "mean_probability": 0.5590125,
-          "win_rate": 0
+          "n": 2,
+          "mean_probability": 0.54944125,
+          "win_rate": 0.5
         }
       ],
       "calibration_status": "monitor_only_no_automatic_probability_changes",
@@ -171,6 +171,6 @@
   },
   "pending_or_ungradable": 1,
   "policy": "Delivered primary recommendation only; last pregame publication per event, including NO BET. Not actual trades. No automatic calibration promotion.",
-  "generated_at": "2026-11-16T21:15:21.532657+00:00",
-  "records": 80
+  "generated_at": "2026-11-17T20:00:51.214659+00:00",
+  "records": 91
 }
