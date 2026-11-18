@@ -1,0 +1,12 @@
+import assert from 'node:assert';
+import { topPick, gameEmbed } from '../js/discord_embeds.mjs';
+assert.match(topPick('MIN', 0.64, 0.655), /Top pick: MIN to win\*\* · model 64% · price about 66¢ · in line with the price/);
+assert.match(topPick('MIN', 0.64, 0.58), /model rates it above the price/);
+assert.match(topPick('MIN', 0.60, 0.66), /price is above the model’s number/);
+assert.match(topPick('NYR', 0.54, 0.52), /none, too close to call \(NYR 54%\)/);
+assert.match(topPick('MIN', 0.64, null), /no price available/);
+const g = { away: 'NSH', home: 'MIN', time: '8:00 PM ET', pick: { away: 2, home: 4 }, pAway: 0.36, pHome: 0.64, pOT: 0.2, xg: [2.8, 3.6], noBetReason: 'no qualifying side', leans: { o55: .5, o65: .3, homeM15: .4, awayM15: .2 }, marketWin: { away: 0.345, home: 0.655 } };
+assert.match(gameEmbed(g).description, /NO BET[^]*Top pick: MIN to win/);
+assert.doesNotMatch(gameEmbed({ ...g, state: 'OFF' }).description, /Top pick/);
+assert.doesNotMatch(gameEmbed({ ...g, best: { label: 'MIN ML', q: .64, ask: .6, fee: .01, ev: .03 } }).description, /Top pick/);
+console.log('top-pick: ok');
