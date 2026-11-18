@@ -1,7 +1,7 @@
 {
  "date": "2026-11-17",
- "generatedAt": "2026-11-18T04:05:27Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings, Draft Kings - Live Odds)",
+ "generatedAt": "2026-11-18T05:26:48Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020337,
@@ -936,7 +936,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2170,7 +2170,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3414,7 +3414,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4662,7 +4662,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5623,7 +5623,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6916,7 +6916,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8212,7 +8212,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8515,7 +8515,7 @@
    "awayName": "Anaheim Ducks",
    "homeName": "St. Louis Blues",
    "venue": "Enterprise Center",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     6,
     8,
@@ -9455,7 +9455,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9780,7 +9780,7 @@
    "awayName": "Nashville Predators",
    "homeName": "Minnesota Wild",
    "venue": "Grand Casino Arena",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     3,
     7,
@@ -10676,7 +10676,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -10807,16 +10807,16 @@
      "home": {
       "injuries": [
        {
+        "name": "Filip Gustavsson",
+        "position": "G",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-18T04:51Z"
+       },
+       {
         "name": "Olli Maatta",
         "position": "D",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-16T21:33Z"
-       },
-       {
-        "name": "Filip Gustavsson",
-        "position": "G",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-05T18:51Z"
        }
       ],
       "roster": [
@@ -10955,7 +10955,7 @@
    "awayName": "Calgary Flames",
    "homeName": "San Jose Sharks",
    "venue": "SAP Center at San Jose",
-   "state": "LIVE",
+   "state": "CRIT",
    "final": null,
    "espnId": "401892738",
    "odds": {
@@ -11533,7 +11533,7 @@
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -12421,7 +12421,7 @@
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
+    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -12449,6 +12449,12 @@
         "position": "C",
         "status": "Injured Reserve",
         "updatedAt": "2026-10-24T18:32Z"
+       },
+       {
+        "name": "Matt Duchene",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-12T16:46Z"
        }
       ],
       "roster": [
