@@ -1,7 +1,7 @@
 {
  "date": "2026-11-17",
- "generatedAt": "2026-11-18T03:05:40Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-18T04:05:27Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings, Draft Kings - Live Odds)",
  "games": [
   {
    "id": 2026020337,
@@ -936,7 +936,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1238,7 +1238,7 @@
    "awayName": "Columbus Blue Jackets",
    "homeName": "New York Islanders",
    "venue": "UBS Arena",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     1,
     5,
@@ -2170,7 +2170,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2468,7 +2468,7 @@
    "awayName": "Edmonton Oilers",
    "homeName": "Florida Panthers",
    "venue": "Amerant Bank Arena",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     5,
     2,
@@ -3414,7 +3414,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3750,7 +3750,7 @@
    "awayName": "Los Angeles Kings",
    "homeName": "Boston Bruins",
    "venue": "TD Garden",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     3,
     0,
@@ -4662,7 +4662,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4943,7 +4943,7 @@
    "awayName": "Ottawa Senators",
    "homeName": "Winnipeg Jets",
    "venue": "Canada Life Centre",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     2,
     1,
@@ -5623,11 +5623,17 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Thomas Chabot",
+        "position": "D",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-18T03:35Z"
+       },
        {
         "name": "Hayden Hodgson",
         "position": "RW",
@@ -5956,8 +5962,12 @@
    "awayName": "Toronto Maple Leafs",
    "homeName": "Chicago Blackhawks",
    "venue": "United Center",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    6,
+    "REG"
+   ],
    "espnId": "401892733",
    "odds": {
     "provider": "DraftKings",
@@ -6906,7 +6916,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7122,6 +7132,12 @@
      "home": {
       "injuries": [
        {
+        "name": "Connor Bedard",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-18T03:41Z"
+       },
+       {
         "name": "Bowen Byram",
         "position": "D",
         "status": "Injured Reserve",
@@ -7264,8 +7280,12 @@
    "awayName": "Washington Capitals",
    "homeName": "Tampa Bay Lightning",
    "venue": "Benchmark International Arena",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    5,
+    "REG"
+   ],
    "espnId": "401892729",
    "odds": {
     "provider": "DraftKings",
@@ -8192,7 +8212,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8495,8 +8515,12 @@
    "awayName": "Anaheim Ducks",
    "homeName": "St. Louis Blues",
    "venue": "Enterprise Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    6,
+    8,
+    "REG"
+   ],
    "espnId": "401892734",
    "odds": {
     "provider": "DraftKings",
@@ -9431,7 +9455,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9756,8 +9780,12 @@
    "awayName": "Nashville Predators",
    "homeName": "Minnesota Wild",
    "venue": "Grand Casino Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    3,
+    7,
+    "REG"
+   ],
    "espnId": "401892735",
    "odds": {
     "provider": "DraftKings",
@@ -10648,7 +10676,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -10927,7 +10955,7 @@
    "awayName": "Calgary Flames",
    "homeName": "San Jose Sharks",
    "venue": "SAP Center at San Jose",
-   "state": "PRE",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892738",
    "odds": {
@@ -11505,7 +11533,7 @@
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -11815,7 +11843,7 @@
    "awayName": "Dallas Stars",
    "homeName": "Vegas Golden Knights",
    "venue": "T-Mobile Arena",
-   "state": "PRE",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892737",
    "odds": {
@@ -12393,7 +12421,7 @@
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-18T03:05:40.256795+00:00",
+    "checkedAt": "2026-11-18T04:05:28.294376+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
