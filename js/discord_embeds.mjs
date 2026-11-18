@@ -7,6 +7,15 @@ const pct = x => (100 * x).toFixed(1) + '%';
 const cents = x => (100 * x).toFixed(1).replace(/\.0$/, '') + '¢';
 const last = n => (n || '').split(' ').slice(-1)[0];
 
+// The model's most likely winner as a plain pick, shown when no value bet qualifies.
+// `market` is the no-vig price of that side. A pick is not a value bet.
+export function topPick(name, p, market) {
+  if (!(p >= 0.55)) return `🎯 Top pick: none, too close to call (${name} ${(p * 100).toFixed(0)}%)`;
+  const price = !Number.isFinite(market) ? 'no price available'
+    : `price about ${(market * 100).toFixed(0)}¢` + (p - market >= 0.02 ? ' · model rates it above the price' : p - market <= -0.02 ? ' · price is above the model’s number' : ' · in line with the price');
+  return `🎯 **Top pick: ${name} to win** · model ${(p * 100).toFixed(0)}% · ${price}\n_A pick is the model’s most likely winner, not a value bet._`;
+}
+
 export function gameEmbed(g) {
   const st = g.state === 'LIVE' || g.state === 'CRIT' ? ' · 🔴 LIVE (pre-game prediction)' : g.state === 'OFF' || g.state === 'FINAL' ? ' · Final' : '';
   const e = { title: `🍀 ${g.away} @ ${g.home} · ${g.time}${st}`, color: GREY };
@@ -32,6 +41,8 @@ export function gameEmbed(g) {
   } else {
     e.color = GREEN;
     lines.push(`⛔ **NO BET** — ${g.noBetReason}`);
+    const home = g.pHome >= g.pAway;
+    if (!['OFF', 'FINAL', 'LIVE', 'CRIT'].includes(g.state) && !(Date.parse(g.start) <= Date.now())) lines.push(topPick(home ? g.home : g.away, Math.max(g.pHome, g.pAway), g.marketWin?.[home ? 'home' : 'away']));
   }
   const L = g.leans, mk = g.markets || {};
   lines.push(`-# Checked ${g.sidesChecked || 0} Polymarket sides (ML ${mk.ml || 0} · totals ${mk.totals || 0} · puck lines ${mk.puckline || 0}) · model O5.5 ${pct(L.o55)} · O6.5 ${pct(L.o65)} · ${g.home} −1.5 ${pct(L.homeM15)} · ${g.away} −1.5 ${pct(L.awayM15)}`);
