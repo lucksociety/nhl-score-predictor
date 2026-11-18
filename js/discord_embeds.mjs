@@ -42,7 +42,7 @@ export function gameEmbed(g) {
     e.color = GREEN;
     lines.push(`⛔ **NO BET** — ${g.noBetReason}`);
     const home = g.pHome >= g.pAway;
-    if (g.state !== 'OFF' && g.state !== 'FINAL') lines.push(topPick(home ? g.home : g.away, Math.max(g.pHome, g.pAway), g.marketWin?.[home ? 'home' : 'away']));
+    if (!['OFF', 'FINAL', 'LIVE', 'CRIT'].includes(g.state) && !(Date.parse(g.start) <= Date.now())) lines.push(topPick(home ? g.home : g.away, Math.max(g.pHome, g.pAway), g.marketWin?.[home ? 'home' : 'away']));
   }
   const L = g.leans, mk = g.markets || {};
   lines.push(`-# Checked ${g.sidesChecked || 0} Polymarket sides (ML ${mk.ml || 0} · totals ${mk.totals || 0} · puck lines ${mk.puckline || 0}) · model O5.5 ${pct(L.o55)} · O6.5 ${pct(L.o65)} · ${g.home} −1.5 ${pct(L.homeM15)} · ${g.away} −1.5 ${pct(L.awayM15)}`);

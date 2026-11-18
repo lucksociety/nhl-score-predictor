@@ -8,5 +8,8 @@ assert.match(topPick('MIN', 0.64, null), /no price available/);
 const g = { away: 'NSH', home: 'MIN', time: '8:00 PM ET', pick: { away: 2, home: 4 }, pAway: 0.36, pHome: 0.64, pOT: 0.2, xg: [2.8, 3.6], noBetReason: 'no qualifying side', leans: { o55: .5, o65: .3, homeM15: .4, awayM15: .2 }, marketWin: { away: 0.345, home: 0.655 } };
 assert.match(gameEmbed(g).description, /NO BET[^]*Top pick: MIN to win/);
 assert.doesNotMatch(gameEmbed({ ...g, state: 'OFF' }).description, /Top pick/);
+assert.doesNotMatch(gameEmbed({ ...g, state: 'LIVE' }).description, /Top pick/);
+assert.doesNotMatch(gameEmbed({ ...g, start: new Date(Date.now() - 60000).toISOString() }).description, /Top pick/);
+assert.match(gameEmbed({ ...g, start: new Date(Date.now() + 3600000).toISOString() }).description, /Top pick/);
 assert.doesNotMatch(gameEmbed({ ...g, best: { label: 'MIN ML', q: .64, ask: .6, fee: .01, ev: .03 } }).description, /Top pick/);
 console.log('top-pick: ok');
