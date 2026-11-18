@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "generatedAt": "2026-11-18T05:26:48Z",
+ "generatedAt": "2026-11-18T07:48:16Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -56,7 +56,7 @@
       "periodType": null,
       "ask": 0.5,
       "bid": 0.49,
-      "volume": 929.14265,
+      "volume": 1039.14265,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -71,7 +71,7 @@
       "periodType": null,
       "ask": 0.51,
       "bid": 0.5,
-      "volume": 929.14265,
+      "volume": 1039.14265,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -197,7 +197,7 @@
       "tokenId": "102110330060539386918141186477689731117887482362584644318280836536594254845676",
       "status": "open",
       "periodType": null,
-      "ask": 0.26,
+      "ask": 0.25,
       "bid": 0.23,
       "volume": null,
       "fee": {
@@ -216,7 +216,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.77,
-      "bid": 0.74,
+      "bid": 0.75,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -234,8 +234,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.29,
-      "volume": 11.0,
+      "bid": 0.27,
+      "volume": 137.472221,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -251,9 +251,9 @@
       "tokenId": "10462024029914438354700641800210883345359137380734794461820163357874072104763",
       "status": "open",
       "periodType": null,
-      "ask": 0.71,
+      "ask": 0.73,
       "bid": 0.7,
-      "volume": 11.0,
+      "volume": 137.472221,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -269,7 +269,7 @@
       "tokenId": "80377676342634866696585352811261207381811772559450851297077858827640105157114",
       "status": "open",
       "periodType": null,
-      "ask": 0.18,
+      "ask": 0.1,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -288,7 +288,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.82,
+      "bid": 0.9,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -377,7 +377,7 @@
       "tokenId": "12586961053547946321212429546015119669322734986385754082166058672391484724757",
       "status": "open",
       "periodType": null,
-      "ask": 0.12,
+      "ask": 0.09,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -396,7 +396,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.88,
+      "bid": 0.91,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -449,8 +449,8 @@
       "tokenId": "76150860050751060824094212766216825445408119086966925133859214393039736491756",
       "status": "open",
       "periodType": null,
-      "ask": 0.97,
-      "bid": 0.94,
+      "ask": 0.98,
+      "bid": 0.951,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -467,8 +467,8 @@
       "tokenId": "3109336965441764186735644811908427825156823728184884873368631136043654971351",
       "status": "open",
       "periodType": null,
-      "ask": 0.06,
-      "bid": 0.03,
+      "ask": 0.049,
+      "bid": 0.02,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -585,11 +585,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-18T05:26:48Z",
+    "fetchedAt": "2026-11-18T07:48:15Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
+    "checkedAt": "2026-11-18T07:48:17.284186+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -875,16 +875,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-17",
      "baseGoals": [
-      2.8207,
-      3.1892
+      2.82,
+      3.1871
      ],
      "adjustedGoals": [
-      2.815083049850218,
-      3.172716933083764
+      2.814380380150522,
+      3.1706607399831275
      ],
      "featureDelta": [
-      -0.07713275317509188,
-      -0.15808581846687655
+      -0.07713632929709624,
+      -0.15778885989549055
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -991,7 +991,7 @@
          "id": 8485395,
          "status": "Injured Reserve",
          "baselineParticipation": 0.5792,
-         "productionAbovePositionMean": 0.0679
+         "productionAbovePositionMean": 0.0678
         }
        ]
       },
@@ -1124,31 +1124,31 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.5019,
-        2.8288
+        2.5014,
+        2.827
        ]
       },
       {
        "label": "DET questionable skaters OUT",
        "rates": [
-        2.498259301525284,
-        2.802869399735684
+        2.4976357149827906,
+        2.8010528895522864
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-18T05:27:04.245370+00:00",
+    "skaterCheckedAt": "2026-11-18T07:48:19.639680+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.8151,
-    "lh": 3.1727,
-    "ra": 2.497,
-    "rh": 2.8142,
-    "betaGq": 0.41411,
-    "calib": 1.0173,
+    "la": 2.8144,
+    "lh": 3.1707,
+    "ra": 2.4964,
+    "rh": 2.8124,
+    "betaGq": 0.41502,
+    "calib": 1.0168,
     "goalies": {
      "away": {
       "name": "Jeremy Swayman",
@@ -1224,26 +1224,26 @@
      },
      "home": {
       "gf": 0.927,
-      "ga": 0.986,
+      "ga": 0.985,
       "xf": 0.986,
       "xa": 0.995
      }
     },
-    "at": "2026-11-18T05:27:04Z",
+    "at": "2026-11-18T07:48:19Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-17",
      "baseGoals": [
-      2.8207,
-      3.1892
+      2.82,
+      3.1871
      ],
      "adjustedGoals": [
-      2.815083049850218,
-      3.172716933083764
+      2.814380380150522,
+      3.1706607399831275
      ],
      "featureDelta": [
-      -0.07713275317509188,
-      -0.15808581846687655
+      -0.07713632929709624,
+      -0.15778885989549055
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -1350,7 +1350,7 @@
          "id": 8485395,
          "status": "Injured Reserve",
          "baselineParticipation": 0.5792,
-         "productionAbovePositionMean": 0.0679
+         "productionAbovePositionMean": 0.0678
         }
        ]
       },
@@ -1483,15 +1483,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.5019,
-        2.8288
+        2.5014,
+        2.827
        ]
       },
       {
        "label": "DET questionable skaters OUT",
        "rates": [
-        2.498259301525284,
-        2.802869399735684
+        2.4976357149827906,
+        2.8010528895522864
        ]
       }
      ]
@@ -1551,7 +1551,7 @@
       "periodType": null,
       "ask": 0.4,
       "bid": 0.39,
-      "volume": 4056.034602,
+      "volume": 5515.932144,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1566,7 +1566,7 @@
       "periodType": null,
       "ask": 0.61,
       "bid": 0.6,
-      "volume": 4056.034602,
+      "volume": 5515.932144,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1584,7 +1584,7 @@
       "tokenId": "80411431452699772196070995195091482718700926010766373632091680080718737221943",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
+      "ask": 0.8,
       "bid": 0.79,
       "volume": 9.88,
       "fee": {
@@ -1603,7 +1603,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.21,
-      "bid": 0.19,
+      "bid": 0.2,
       "volume": 9.88,
       "fee": {
        "rate": 0.05,
@@ -1620,9 +1620,9 @@
       "tokenId": "86946179356145575302893626605656546261445773033972818530468716006539229767272",
       "status": "open",
       "periodType": null,
-      "ask": 0.56,
-      "bid": 0.55,
-      "volume": null,
+      "ask": 0.57,
+      "bid": 0.56,
+      "volume": 115.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1638,9 +1638,9 @@
       "tokenId": "76384514718522318794219329534573512117451773636262259506074095444393578613352",
       "status": "open",
       "periodType": null,
-      "ask": 0.45,
-      "bid": 0.44,
-      "volume": null,
+      "ask": 0.44,
+      "bid": 0.43,
+      "volume": 115.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1729,7 +1729,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.38,
-      "bid": 0.36,
+      "bid": 0.37,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1746,7 +1746,7 @@
       "tokenId": "48286672231403954329447291569369755929925320858155592935115210226140180872778",
       "status": "open",
       "periodType": null,
-      "ask": 0.64,
+      "ask": 0.63,
       "bid": 0.62,
       "volume": null,
       "fee": {
@@ -1764,8 +1764,8 @@
       "tokenId": "112163783652841627594394437048925974255537636790020017551276194175070024141878",
       "status": "open",
       "periodType": null,
-      "ask": 0.16,
-      "bid": 0.06,
+      "ask": 0.17,
+      "bid": 0.08,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1782,8 +1782,8 @@
       "tokenId": "100397846840708585989850057902472038031136677949312999209692373346491636040890",
       "status": "open",
       "periodType": null,
-      "ask": 0.94,
-      "bid": 0.84,
+      "ask": 0.92,
+      "bid": 0.83,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1872,7 +1872,7 @@
       "tokenId": "79537284271692773538771178807682262268070599246876985938254828210196109904899",
       "status": "open",
       "periodType": null,
-      "ask": 0.11,
+      "ask": 0.08,
       "bid": 0.04,
       "volume": null,
       "fee": {
@@ -1891,7 +1891,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.89,
+      "bid": 0.92,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1945,7 +1945,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.96,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1962,7 +1962,7 @@
       "tokenId": "111631155943220368661860212491440344006851274156439994337841871555388771018077",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.04,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -2053,7 +2053,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.1,
-      "bid": 0.08,
+      "bid": 0.07,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2070,7 +2070,7 @@
       "tokenId": "81720076894946060285143044866343508420306103906992701460522294755281788740290",
       "status": "open",
       "periodType": null,
-      "ask": 0.92,
+      "ask": 0.93,
       "bid": 0.9,
       "volume": null,
       "fee": {
@@ -2080,11 +2080,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-18T05:26:48Z",
+    "fetchedAt": "2026-11-18T07:48:15Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
+    "checkedAt": "2026-11-18T07:48:17.284186+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2426,16 +2426,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-17",
      "baseGoals": [
-      2.7951,
-      3.6789
+      2.7941,
+      3.6776
      ],
      "adjustedGoals": [
-      2.7783739678349937,
-      3.685593045357953
+      2.777406702836466,
+      3.68403043659108
      ],
      "featureDelta": [
-      -0.16785491721966203,
-      0.03068045663892849
+      -0.16783589916105807,
+      0.02866148017964598
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -2556,7 +2556,7 @@
          "id": 8476981,
          "status": "Injured Reserve",
          "baselineParticipation": 0.8728,
-         "productionAbovePositionMean": -0.0522
+         "productionAbovePositionMean": -0.0523
         },
         {
          "name": "Chris Kreider",
@@ -2570,7 +2570,7 @@
          "id": 8484984,
          "status": "Injured Reserve",
          "baselineParticipation": 0.306,
-         "productionAbovePositionMean": 0.1052
+         "productionAbovePositionMean": 0.1051
         },
         {
          "name": "Bryce Pickford",
@@ -2585,7 +2585,7 @@
          "id": 8483549,
          "status": "Injured Reserve",
          "baselineParticipation": 0.0003,
-         "productionAbovePositionMean": -0.0327
+         "productionAbovePositionMean": -0.0328
         }
        ]
       },
@@ -2688,7 +2688,7 @@
          "id": 8477511,
          "status": "Injured Reserve",
          "baselineParticipation": 0.5641,
-         "productionAbovePositionMean": 0.1479
+         "productionAbovePositionMean": 0.1478
         },
         {
          "name": "Johnathan Kovacevic",
@@ -2711,31 +2711,31 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4793,
-        3.2632
+        2.4784,
+        3.262
        ]
       },
       {
        "label": "MTL questionable skaters OUT",
        "rates": [
-        2.4665031395721693,
-        3.2687696049180586
+        2.4656468222289347,
+        3.2673833203185345
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-18T05:27:04.245370+00:00",
+    "skaterCheckedAt": "2026-11-18T07:48:19.639680+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 2.7784,
-    "lh": 3.6856,
-    "ra": 2.4644,
-    "rh": 3.2691,
-    "betaGq": 0.41411,
-    "calib": 1.0173,
+    "la": 2.7774,
+    "lh": 3.684,
+    "ra": 2.4636,
+    "rh": 3.2677,
+    "betaGq": 0.41502,
+    "calib": 1.0168,
     "goalies": {
      "away": {
       "name": "Jacob Fowler",
@@ -2805,7 +2805,7 @@
     "form": {
      "away": {
       "gf": 1.016,
-      "ga": 0.975,
+      "ga": 0.974,
       "xf": 1.028,
       "xa": 1.048
      },
@@ -2816,21 +2816,21 @@
       "xa": 0.931
      }
     },
-    "at": "2026-11-18T05:27:04Z",
+    "at": "2026-11-18T07:48:19Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-17",
      "baseGoals": [
-      2.7951,
-      3.6789
+      2.7941,
+      3.6776
      ],
      "adjustedGoals": [
-      2.7783739678349937,
-      3.685593045357953
+      2.777406702836466,
+      3.68403043659108
      ],
      "featureDelta": [
-      -0.16785491721966203,
-      0.03068045663892849
+      -0.16783589916105807,
+      0.02866148017964598
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -2951,7 +2951,7 @@
          "id": 8476981,
          "status": "Injured Reserve",
          "baselineParticipation": 0.8728,
-         "productionAbovePositionMean": -0.0522
+         "productionAbovePositionMean": -0.0523
         },
         {
          "name": "Chris Kreider",
@@ -2965,7 +2965,7 @@
          "id": 8484984,
          "status": "Injured Reserve",
          "baselineParticipation": 0.306,
-         "productionAbovePositionMean": 0.1052
+         "productionAbovePositionMean": 0.1051
         },
         {
          "name": "Bryce Pickford",
@@ -2980,7 +2980,7 @@
          "id": 8483549,
          "status": "Injured Reserve",
          "baselineParticipation": 0.0003,
-         "productionAbovePositionMean": -0.0327
+         "productionAbovePositionMean": -0.0328
         }
        ]
       },
@@ -3083,7 +3083,7 @@
          "id": 8477511,
          "status": "Injured Reserve",
          "baselineParticipation": 0.5641,
-         "productionAbovePositionMean": 0.1479
+         "productionAbovePositionMean": 0.1478
         },
         {
          "name": "Johnathan Kovacevic",
@@ -3106,15 +3106,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4793,
-        3.2632
+        2.4784,
+        3.262
        ]
       },
       {
        "label": "MTL questionable skaters OUT",
        "rates": [
-        2.4665031395721693,
-        3.2687696049180586
+        2.4656468222289347,
+        3.2673833203185345
        ]
       }
      ]
@@ -3174,7 +3174,7 @@
       "periodType": null,
       "ask": 0.5,
       "bid": 0.49,
-      "volume": 1399.500785,
+      "volume": 1671.5807849999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3189,7 +3189,7 @@
       "periodType": null,
       "ask": 0.51,
       "bid": 0.5,
-      "volume": 1399.500785,
+      "volume": 1671.5807849999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3243,7 +3243,7 @@
       "tokenId": "104718814562063677541176649485395484383859735189007738734066102122591688728962",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
+      "ask": 0.61,
       "bid": 0.6,
       "volume": null,
       "fee": {
@@ -3262,7 +3262,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.4,
-      "bid": 0.38,
+      "bid": 0.39,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3279,8 +3279,8 @@
       "tokenId": "7906484386263361660286621725572292196268813783493280849471126708349020243410",
       "status": "open",
       "periodType": null,
-      "ask": 0.51,
-      "bid": 0.49,
+      "ask": 0.5,
+      "bid": 0.48,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3297,8 +3297,8 @@
       "tokenId": "46203487343769561832117705370017043825919820335170393746879039883824845174246",
       "status": "open",
       "periodType": null,
-      "ask": 0.51,
-      "bid": 0.49,
+      "ask": 0.52,
+      "bid": 0.5,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3352,8 +3352,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.28,
-      "bid": 0.27,
-      "volume": 79.0,
+      "bid": 0.26,
+      "volume": 228.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3369,9 +3369,9 @@
       "tokenId": "89976669343500363140811362754280469114933043833456614859345842310937321028658",
       "status": "open",
       "periodType": null,
-      "ask": 0.73,
+      "ask": 0.74,
       "bid": 0.72,
-      "volume": 79.0,
+      "volume": 228.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3460,7 +3460,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.28,
+      "bid": 0.29,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3477,7 +3477,7 @@
       "tokenId": "83362312122402664020800671908353832564927506348814621906339318999789849248032",
       "status": "open",
       "periodType": null,
-      "ask": 0.72,
+      "ask": 0.71,
       "bid": 0.7,
       "volume": null,
       "fee": {
@@ -3568,7 +3568,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.952,
+      "bid": 0.963,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3585,7 +3585,7 @@
       "tokenId": "70027517981479596338138878844870424090103102253274475240879597946502666997427",
       "status": "open",
       "periodType": null,
-      "ask": 0.048,
+      "ask": 0.037,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -3603,8 +3603,8 @@
       "tokenId": "39344377778647445757944255229284402770043250338042563104966233688792936295964",
       "status": "open",
       "periodType": null,
-      "ask": 0.9,
-      "bid": 0.88,
+      "ask": 0.91,
+      "bid": 0.87,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3621,8 +3621,8 @@
       "tokenId": "17434665772289690630756228775668846713531950070614221371819324057744858358841",
       "status": "open",
       "periodType": null,
-      "ask": 0.12,
-      "bid": 0.1,
+      "ask": 0.13,
+      "bid": 0.09,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3640,7 +3640,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.22,
-      "bid": 0.2,
+      "bid": 0.19,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3657,7 +3657,7 @@
       "tokenId": "50367354804239464137455861976898474420888478758680588395644191528997682027594",
       "status": "open",
       "periodType": null,
-      "ask": 0.8,
+      "ask": 0.81,
       "bid": 0.78,
       "volume": null,
       "fee": {
@@ -3703,11 +3703,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-18T05:26:48Z",
+    "fetchedAt": "2026-11-18T07:48:15Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-18T05:26:49.137720+00:00",
+    "checkedAt": "2026-11-18T07:48:17.284186+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4048,16 +4048,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-17",
      "baseGoals": [
-      3.3826,
-      3.1154
+      3.3821,
+      3.1135
      ],
      "adjustedGoals": [
-      3.2638192036699887,
-      3.0784190034729884
+      3.263379943081211,
+      3.0765381798569207
      ],
      "featureDelta": [
-      -1.0838636868421174,
-      -0.4794691903107049
+      -1.0834828717490055,
+      -0.4794522044962851
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -4302,7 +4302,7 @@
          "id": 8482699,
          "status": "Injured Reserve",
          "baselineParticipation": 0.8121,
-         "productionAbovePositionMean": 0.2385
+         "productionAbovePositionMean": 0.2384
         },
         {
          "name": "John Marino",
@@ -4325,24 +4325,24 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.0003,
-        2.7634
+        2.9999,
+        2.7616
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-18T05:27:04.245370+00:00",
+    "skaterCheckedAt": "2026-11-18T07:48:19.639680+00:00",
     "blockReason": null
    },
    "v4": {
     "version": "v4-independent-skater-v1",
-    "la": 3.2638,
-    "lh": 3.0784,
-    "ra": 2.895,
-    "rh": 2.7306,
-    "betaGq": 0.41411,
-    "calib": 1.0173,
+    "la": 3.2634,
+    "lh": 3.0765,
+    "ra": 2.8946,
+    "rh": 2.7289,
+    "betaGq": 0.41502,
+    "calib": 1.0168,
     "goalies": {
      "away": {
       "name": "Mackenzie Blackwood",
@@ -4416,21 +4416,21 @@
       "xa": 0.972
      }
     },
-    "at": "2026-11-18T05:27:04Z",
+    "at": "2026-11-18T07:48:19Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-17",
      "baseGoals": [
-      3.3826,
-      3.1154
+      3.3821,
+      3.1135
      ],
      "adjustedGoals": [
-      3.2638192036699887,
-      3.0784190034729884
+      3.263379943081211,
+      3.0765381798569207
      ],
      "featureDelta": [
-      -1.0838636868421174,
-      -0.4794691903107049
+      -1.0834828717490055,
+      -0.4794522044962851
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -4675,7 +4675,7 @@
          "id": 8482699,
          "status": "Injured Reserve",
          "baselineParticipation": 0.8121,
-         "productionAbovePositionMean": 0.2385
+         "productionAbovePositionMean": 0.2384
         },
         {
          "name": "John Marino",
@@ -4698,8 +4698,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.0003,
-        2.7634
+        2.9999,
+        2.7616
        ]
       }
      ]
