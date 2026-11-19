@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
- "generatedAt": "2026-11-19T05:23:34Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-19T07:43:20Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020344,
@@ -943,7 +943,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-19T05:23:34.788120+00:00",
+    "checkedAt": "2026-11-19T07:43:21.150932+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2225,7 +2225,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-19T05:23:34.788120+00:00",
+    "checkedAt": "2026-11-19T07:43:21.150932+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2234,7 +2234,7 @@
         "name": "Zack Bolduc",
         "position": "RW",
         "status": "Day-To-Day",
-        "updatedAt": "2026-11-19T02:51Z"
+        "updatedAt": "2026-11-19T05:26Z"
        },
        {
         "name": "Mike Matheson",
@@ -2574,8 +2574,12 @@
    "awayName": "Colorado Avalanche",
    "homeName": "Utah Mammoth",
    "venue": "Delta Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    4,
+    "REG"
+   ],
    "espnId": "401892741",
    "odds": {
     "provider": "DraftKings",
@@ -3152,7 +3156,7 @@
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-19T05:23:34.788120+00:00",
+    "checkedAt": "2026-11-19T07:43:21.150932+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
