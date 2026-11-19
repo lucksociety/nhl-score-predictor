@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
- "generatedAt": "2026-11-19T03:01:51Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-11-19T05:23:34Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020344,
@@ -11,8 +11,12 @@
    "awayName": "Boston Bruins",
    "homeName": "Detroit Red Wings",
    "venue": "Little Caesars Arena",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    1,
+    "REG"
+   ],
    "espnId": "401892739",
    "odds": {
     "provider": "Draft Kings",
@@ -939,7 +943,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-19T03:01:51.335848+00:00",
+    "checkedAt": "2026-11-19T05:23:34.788120+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1232,8 +1236,12 @@
    "awayName": "Montr\u00e9al Canadiens",
    "homeName": "New Jersey Devils",
    "venue": "Prudential Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    2,
+    "REG"
+   ],
    "espnId": "401892740",
    "odds": {
     "provider": "Draft Kings",
@@ -2217,7 +2225,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-19T03:01:51.335848+00:00",
+    "checkedAt": "2026-11-19T05:23:34.788120+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2226,7 +2234,7 @@
         "name": "Zack Bolduc",
         "position": "RW",
         "status": "Day-To-Day",
-        "updatedAt": "2026-11-19T02:50Z"
+        "updatedAt": "2026-11-19T02:51Z"
        },
        {
         "name": "Mike Matheson",
@@ -2566,7 +2574,7 @@
    "awayName": "Colorado Avalanche",
    "homeName": "Utah Mammoth",
    "venue": "Delta Center",
-   "state": "PRE",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892741",
    "odds": {
@@ -3144,11 +3152,17 @@
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-19T03:01:51.335848+00:00",
+    "checkedAt": "2026-11-19T05:23:34.788120+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Gavin Brindley",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-19T04:38Z"
+       },
        {
         "name": "Cale Makar",
         "position": "D",
