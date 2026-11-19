@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
- "generatedAt": "2026-11-19T17:10:15Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-19T22:02:19Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020344,
@@ -943,7 +943,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-19T17:10:15.658028+00:00",
+    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1084,7 +1084,7 @@
         "name": "William Wallinder",
         "position": "D",
         "status": "Day-To-Day",
-        "updatedAt": "2026-11-19T14:06Z"
+        "updatedAt": "2026-11-19T17:54Z"
        },
        {
         "name": "Albert Johansson",
@@ -2225,7 +2225,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-19T17:10:15.658028+00:00",
+    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2233,8 +2233,8 @@
        {
         "name": "Zack Bolduc",
         "position": "RW",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-19T05:26Z"
+        "status": "Out",
+        "updatedAt": "2026-11-19T17:59Z"
        },
        {
         "name": "Mike Matheson",
@@ -2563,7 +2563,7 @@
      }
     },
     "problems": [],
-    "blockReason": null
+    "blockReason": "MTL recent skater absences not individually modeled: Zack Bolduc"
    }
   },
   {
@@ -3156,22 +3156,22 @@
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-19T17:10:15.658028+00:00",
+    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
-        "name": "Gavin Brindley",
-        "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-19T04:38Z"
-       },
-       {
         "name": "Cale Makar",
         "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-19T21:33Z"
+       },
+       {
+        "name": "Gavin Brindley",
+        "position": "C",
         "status": "Out",
-        "updatedAt": "2026-11-14T17:37Z"
+        "updatedAt": "2026-11-19T21:28Z"
        },
        {
         "name": "Nathan MacKinnon",
@@ -3193,6 +3193,11 @@
        }
       ],
       "roster": [
+       {
+        "id": 8481550,
+        "position": "L",
+        "name": "Adam Beckman"
+       },
        {
         "id": 8484149,
         "position": "C",
