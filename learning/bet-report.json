@@ -118,20 +118,20 @@
       }
     },
     "v4-independent-skater-v1 / scoring-quote-fee-depth-v2 / moneyline": {
-      "n": 2,
+      "n": 4,
       "wins": 1,
-      "win_rate": 0.5,
-      "mean_probability": 0.54944125,
-      "brier": 0.26210729602812505,
-      "log_loss": 0.7175828288777362,
-      "flat_cost_roi": -0.03846153846153855,
+      "win_rate": 0.25,
+      "mean_probability": 0.546465,
+      "brier": 0.278843081328125,
+      "log_loss": 0.7511010310030826,
+      "flat_cost_roi": -0.5192307692307693,
       "reliability": [
         {
           "lower_exclusive": 0.5,
           "upper_inclusive": 0.6,
-          "n": 2,
-          "mean_probability": 0.54944125,
-          "win_rate": 0.5
+          "n": 4,
+          "mean_probability": 0.546465,
+          "win_rate": 0.25
         }
       ],
       "calibration_status": "monitor_only_no_automatic_probability_changes",
@@ -174,23 +174,23 @@
     }
   },
   "model_vs_market": {
-    "n": 11,
-    "model_log_loss": 0.6643504938643185,
-    "market_log_loss": 0.685965655202486,
-    "log_loss_diff": -0.021615161338167377,
-    "log_loss_diff_se": 0.0178766480418882,
-    "model_accuracy": 0.45454545454545453,
-    "market_accuracy": 0.45454545454545453,
+    "n": 14,
+    "model_log_loss": 0.7061106489108823,
+    "market_log_loss": 0.7015197820952528,
+    "log_loss_diff": 0.004590866815629523,
+    "log_loss_diff_se": 0.019885251663166098,
+    "model_accuracy": 0.35714285714285715,
+    "market_accuracy": 0.5,
     "disagree_over_5pts": {
-      "n": 1,
+      "n": 2,
       "model_side_won": 0,
-      "model_said": 0.5158,
-      "market_said": 0.45499999999999996
+      "model_said": 0.5367,
+      "market_said": 0.475
     },
     "verdict": "too few games to say"
   },
-  "pending_or_ungradable": 2,
+  "pending_or_ungradable": 0,
   "policy": "Delivered primary recommendation only; last pregame publication per event, including NO BET. Not actual trades. No automatic calibration promotion.",
-  "generated_at": "2026-11-18T19:37:45.161545+00:00",
-  "records": 105
+  "generated_at": "2026-11-19T19:38:21.877437+00:00",
+  "records": 117
 }
