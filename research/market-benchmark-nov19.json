@@ -1,0 +1,47 @@
+{
+ "games": 144,
+ "vs_draftkings_close": {
+  "n": 144,
+  "from": "2026-10-29",
+  "to": "2026-11-18",
+  "model_log_loss": 0.6545,
+  "market_log_loss": 0.6521,
+  "model_accuracy": 0.597,
+  "market_accuracy": 0.604,
+  "model_minus_market_log_loss": 0.0024,
+  "ci95": [
+   -0.0082,
+   0.013
+  ],
+  "mean_abs_gap": 0.025,
+  "disagree_over_5pts": {
+   "n": 17,
+   "model_side_won": 0.412,
+   "model_said": 0.499,
+   "market_said": 0.433
+  },
+  "verdict": "too few games to say"
+ },
+ "vs_polymarket_pregame": {
+  "n": 133,
+  "from": "2026-10-29",
+  "to": "2026-11-18",
+  "model_log_loss": 0.652,
+  "market_log_loss": 0.6484,
+  "model_accuracy": 0.617,
+  "market_accuracy": 0.602,
+  "model_minus_market_log_loss": 0.0036,
+  "ci95": [
+   -0.0082,
+   0.015
+  ],
+  "mean_abs_gap": 0.027,
+  "disagree_over_5pts": {
+   "n": 17,
+   "model_side_won": 0.353,
+   "model_said": 0.492,
+   "market_said": 0.426
+  },
+  "verdict": "too few games to say"
+ }
+}

@@ -258,6 +258,37 @@
         o.calibrationStress.push({label:scenario.label,scale,n:sn,pHome:a.pHome,pAway:a.pAway,dist:distributions(r)});
       }
     }
+    // A probable starter is not a confirmed lineup. Bound the roster-goalie
+    // quality range on each side, including simultaneous starter changes.
+    // These are input sensitivity scenarios, not calibrated probability bounds.
+    if (opts.calibrationStress !== false) {
+      const ranges = ['away', 'home'].map(side => {
+        const goalie = v.goalies[side];
+        const confirmed = String(g.goalies?.[side]?.status || goalie.status || '').toLowerCase() === 'confirmed';
+        if (ov[side] != null || confirmed) return [1];
+        const values = [goalie.gq, ...(goalie.candidates || []).map(c => c.gq)].filter(Number.isFinite);
+        const factors = values.map(q => Math.exp(v.betaGq * (q - goalie.gq)));
+        return [...new Set([Math.min(1, ...factors), Math.max(1, ...factors)])];
+      });
+      const sn = Math.min(n, 50000), seen = new Set();
+      const bases = [[ra, rh], ...(v.skaterAdjustment?.scenarios || []).map(s => {
+        let [a,h] = s.rates;
+        if (ov.home != null) a *= Math.exp(v.betaGq * (ov.home-v.goalies.home.gq));
+        if (ov.away != null) h *= Math.exp(v.betaGq * (ov.away-v.goalies.away.gq));
+        return [a,h];
+      })];
+      for (const awayFactor of ranges[0]) for (const homeFactor of ranges[1]) {
+        if (awayFactor === 1 && homeFactor === 1) continue;
+        for (const [a,h] of bases) {
+          const sa=a*homeFactor, sh=h*awayFactor, key=`${sa}:${sh}`;
+          if (seen.has(key)) continue;
+          seen.add(key);
+          const r=simulate(sa,sh,sn,seed), result=analyze(r);
+          o.calibrationStress.push({label:'unconfirmed roster-goalie sensitivity', n:sn,
+            rates:[sa,sh], pHome:result.pHome, pAway:result.pAway, dist:distributions(r)});
+        }
+      }
+    }
     o.simMs = (typeof performance !== 'undefined' ? performance : Date).now() - t0;
     return o;
   }

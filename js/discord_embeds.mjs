@@ -27,6 +27,7 @@ export function gameEmbed(g) {
     `Goalies: ${gk('away')} vs ${gk('home')} · xG ${g.xg[0].toFixed(2)}–${g.xg[1].toFixed(2)}`,
   ];
   if (g.availability) lines.push(`Availability checked ${g.availability.checkedAt} · ${g.availability.blockReason || "current injury/roster feeds checked; goalie status above"}`);
+  if (g.goalieSensitivity?.length) lines.push('Unconfirmed goalies: available roster alternatives stress-tested; bets must retain positive EV across those scenarios.');
   if(g.availability?.skaterAdjustment){const a=g.availability.skaterAdjustment;const names=Object.values(a.sides).flatMap(s=>s.absences.map(p=>p.name));lines.push(`Skaters: expected lineup adjusted${names.length?' for '+names.join(', '):''} · xG ${a.baseGoals.map(x=>x.toFixed(2)).join('–')} → ${a.adjustedGoals.map(x=>x.toFixed(2)).join('–')}`);}
 
   const rookies=Object.values(g.availability?.skaterAdjustment?.priorOnlyPlayers||{}).flat();

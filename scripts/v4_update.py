@@ -83,6 +83,30 @@ def goalie_table(S, team):
     return [dict(id=g, name=S.gkname.get(g, ''), gq=round(S.gq(g), 4), share=round(w / tot, 3), shots=round(S.GK.get(g, [0, 0, 0])[2]))
             for g, w in sorted(m.items(), key=lambda x: -x[1]) if w / tot >= 0.03]
 
+def goalie_candidates(S, game, side):
+    """Current roster alternatives, not stale recent-start shares or future boxscores.
+
+    A named expected starter remains the point forecast. Other available roster
+    goalies are sensitivity scenarios only; no invented starter probabilities.
+    """
+    listed = (game.get('goalies') or {}).get(side) or {}
+    if str(listed.get('status', '')).casefold() == 'confirmed':
+        return []
+    context = ((game.get('availability') or {}).get('sides') or {}).get(side) or {}
+    unavailable = {'out', 'injured reserve', 'inactive', 'suspended', 'suspension'}
+    missing = {norm(p.get('name')) for p in context.get('injuries', [])
+               if str(p.get('status', '')).casefold() in unavailable}
+    candidates = {}
+    for p in context.get('roster') or []:
+        if p.get('position') != 'G' or norm(p.get('name')) in missing:
+            continue
+        pid = p.get('id')
+        if not isinstance(pid, int):
+            continue
+        candidates[pid] = dict(id=pid, name=p.get('name'), gq=round(S.gq(pid), 4),
+                               mode='named' if pid in S.GK else 'league-prior')
+    return list(candidates.values())
+
 def annotate(slates, rows, now=None):
     """slates: list of day-slate dicts (ascending dates). Adds g['v4'] for every game not yet started; started games keep
     their frozen pre-game v4 (copied by caller from the previous file)."""
@@ -135,6 +159,8 @@ def annotate(slates, rows, now=None):
             for sd, k in (('away', 'a'), ('home', 'h')):
                 mode = f[k + '_gkmode']
                 gk[sd] = dict(name=names[sd] if mode != 'blend' else None, id=ids[sd], gq=round(f[k + '_gq'], 4), mode=mode,
+                              status=((g.get('goalies') or {}).get(sd) or {}).get('status'),
+                              candidates=goalie_candidates(S, g, sd),
                               table=goalie_table(S, g[sd]))
             g['v4'] = dict(version='v4-independent', la=round(la, 4), lh=round(lh, 4), ra=round(la * M.SCALE, 4), rh=round(lh * M.SCALE, 4),
                            betaGq=round(bq, 5), calib=round(calib, 4), goalies=gk, trainedThrough=fit_through,
