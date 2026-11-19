@@ -38,6 +38,8 @@ function predictSlate(date, opts = {}) {
       pAway: +o.pAway.toFixed(4), pHome: +o.pHome.toFixed(4), pOT: +o.pOT.toFixed(4),
       top: o.top.slice(0, 3).map(c => ({ a: c.x, h: c.y, p: +c.p.toFixed(4) })),
       v4goalies: { away: g.v4.goalies.away.name || 'team blend', home: g.v4.goalies.home.name || 'team blend' },
+      goalieSensitivity: (o.calibrationStress || []).filter(s=>s.label==='unconfirmed roster-goalie sensitivity')
+        .map(s=>({label:s.label,n:s.n,rates:s.rates,pHome:s.pHome,pAway:s.pAway})),
       best: e.best && {...e.best,executionVerified:false},
       others: (e.others || []).map(c=>({...c,executionVerified:false})),
       qualifying: e.qualifying || 0, sidesChecked: e.cands.length,
@@ -54,7 +56,7 @@ function predictSlate(date, opts = {}) {
     }
     games.push(row);
   }
-  return { date, selectionPolicy:'scoring-quote-fee-depth-v2', model: slate.games.some(g=>g.v4?.skaterAdjustment) ? 'v4-independent-skater-v1' : 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
+  return { date, selectionPolicy:'scoring-quote-fee-goalie-depth-v3', model: slate.games.some(g=>g.v4?.skaterAdjustment) ? 'v4-independent-skater-v1' : 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
            priceSource: 'Polymarket ask (Gamma best bid/ask) with conservative rounded-fee upper bound; one-cent quote stress and live depth verification',
            marketFetchedAt: slate.games.map(g => (g.market || g.jupiter)?.fetchedAt).filter(Boolean).sort().pop() || null, games };
 }
