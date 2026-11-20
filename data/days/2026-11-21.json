@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
- "generatedAt": "2026-11-20T15:08:09Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
+ "generatedAt": "2026-11-20T21:43:57Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020359,
@@ -14,7 +14,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892754",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "CAR -180",
+    "mlAway": 150.0,
+    "mlHome": -180.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": 142.0,
+    "mlHomeOpen": -170.0
+   },
    "goalies": {
     "away": {
      "name": "Devon Levi",
@@ -46,7 +56,7 @@
       "periodType": null,
       "ask": 0.39,
       "bid": 0.38,
-      "volume": 7260.894125000001,
+      "volume": 15419.005552,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -61,7 +71,7 @@
       "periodType": null,
       "ask": 0.62,
       "bid": 0.61,
-      "volume": 7260.894125000001,
+      "volume": 15419.005552,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -115,9 +125,9 @@
       "tokenId": "72081011550529545302797627930032971589585872512611983846469889121290355121871",
       "status": "open",
       "periodType": null,
-      "ask": 0.6,
-      "bid": 0.56,
-      "volume": null,
+      "ask": 0.58,
+      "bid": 0.57,
+      "volume": 3.333332,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -133,9 +143,9 @@
       "tokenId": "21530291197664656592555922320059668664303883445181255530262486465108668605726",
       "status": "open",
       "periodType": null,
-      "ask": 0.44,
-      "bid": 0.4,
-      "volume": null,
+      "ask": 0.43,
+      "bid": 0.42,
+      "volume": 3.333332,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -151,9 +161,9 @@
       "tokenId": "30112704005642589718111383672827901813115417696341292305688244935223368067127",
       "status": "open",
       "periodType": null,
-      "ask": 0.49,
-      "bid": 0.46,
-      "volume": null,
+      "ask": 0.46,
+      "bid": 0.45,
+      "volume": 3.541667,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -169,9 +179,9 @@
       "tokenId": "98943522514338125643158180996473143934084967373346224975845433378855987672306",
       "status": "open",
       "periodType": null,
-      "ask": 0.54,
-      "bid": 0.51,
-      "volume": null,
+      "ask": 0.55,
+      "bid": 0.54,
+      "volume": 3.541667,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -188,8 +198,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.28,
-      "bid": 0.25,
-      "volume": null,
+      "bid": 0.26,
+      "volume": 698.267932,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -205,9 +215,9 @@
       "tokenId": "34818982313277652738983814205449054242375261713527396169614102832418002596872",
       "status": "open",
       "periodType": null,
-      "ask": 0.75,
+      "ask": 0.74,
       "bid": 0.72,
-      "volume": null,
+      "volume": 698.267932,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -223,9 +233,9 @@
       "tokenId": "60321880647936400621774760629408370027044370472047748383748520952795674209656",
       "status": "open",
       "periodType": null,
-      "ask": 0.42,
+      "ask": 0.41,
       "bid": 0.39,
-      "volume": 696.056066,
+      "volume": 702.695409,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -242,8 +252,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.61,
-      "bid": 0.58,
-      "volume": 696.056066,
+      "bid": 0.59,
+      "volume": 702.695409,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -259,8 +269,8 @@
       "tokenId": "3761385604098320317496598856855243501284378014405590528719644521648056539273",
       "status": "open",
       "periodType": null,
-      "ask": 0.61,
-      "bid": 0.03,
+      "ask": 0.21,
+      "bid": 0.09,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -277,8 +287,8 @@
       "tokenId": "47923744285620826836758960030954961707096644195517584366673061488718313829137",
       "status": "open",
       "periodType": null,
-      "ask": 0.97,
-      "bid": 0.39,
+      "ask": 0.91,
+      "bid": 0.79,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -295,8 +305,8 @@
       "tokenId": "22465596113197930132337919954741248170025478477463871632552425413178670467727",
       "status": "open",
       "periodType": null,
-      "ask": 0.3,
-      "bid": 0.26,
+      "ask": 0.29,
+      "bid": 0.27,
       "volume": 378.47222,
       "fee": {
        "rate": 0.05,
@@ -313,8 +323,8 @@
       "tokenId": "25619257433287786191745907819815530612237101464646505464684658300994062772067",
       "status": "open",
       "periodType": null,
-      "ask": 0.74,
-      "bid": 0.7,
+      "ask": 0.73,
+      "bid": 0.71,
       "volume": 378.47222,
       "fee": {
        "rate": 0.05,
@@ -332,7 +342,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.2,
-      "bid": 0.16,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -349,7 +359,7 @@
       "tokenId": "104770979503800835087315670523138773138879416676535598637940889428660881688408",
       "status": "open",
       "periodType": null,
-      "ask": 0.84,
+      "ask": 0.82,
       "bid": 0.8,
       "volume": null,
       "fee": {
@@ -367,7 +377,7 @@
       "tokenId": "44738488187410346098653784363832483500311924613720387628385163146981830086949",
       "status": "open",
       "periodType": null,
-      "ask": 0.41,
+      "ask": 0.14,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -386,7 +396,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.59,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -404,7 +414,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.12,
-      "bid": 0.08,
+      "bid": 0.1,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -421,7 +431,7 @@
       "tokenId": "108965624271315507952268725572060924774823629481509850433396285651387272175513",
       "status": "open",
       "periodType": null,
-      "ask": 0.92,
+      "ask": 0.9,
       "bid": 0.88,
       "volume": null,
       "fee": {
@@ -440,7 +450,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.963,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -457,7 +467,7 @@
       "tokenId": "1803597694089216597166451911606056229268280186724047817052414503165780790510",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.037,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -476,7 +486,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.88,
-      "bid": 0.86,
+      "bid": 0.85,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -493,7 +503,7 @@
       "tokenId": "99783324186683272861781385280923645729811923740349370365204573709352556566866",
       "status": "open",
       "periodType": null,
-      "ask": 0.14,
+      "ask": 0.15,
       "bid": 0.12,
       "volume": null,
       "fee": {
@@ -511,8 +521,8 @@
       "tokenId": "11017486213043227840723427527323630767570963400884167240488862022009984878349",
       "status": "open",
       "periodType": null,
-      "ask": 0.19,
-      "bid": 0.18,
+      "ask": 0.2,
+      "bid": 0.17,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -529,8 +539,8 @@
       "tokenId": "109897419506756860468301488264847030021286773668308928814049762631204637022885",
       "status": "open",
       "periodType": null,
-      "ask": 0.82,
-      "bid": 0.81,
+      "ask": 0.83,
+      "bid": 0.8,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -547,8 +557,8 @@
       "tokenId": "95793398899599428967225211003627971301632293728505759870889452089200908784966",
       "status": "open",
       "periodType": null,
-      "ask": 0.09,
-      "bid": 0.05,
+      "ask": 0.1,
+      "bid": 0.07,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -565,8 +575,8 @@
       "tokenId": "87471546591611816759118131108824059147194992977995444851124474048710797776589",
       "status": "open",
       "periodType": null,
-      "ask": 0.95,
-      "bid": 0.91,
+      "ask": 0.93,
+      "bid": 0.9,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -575,11 +585,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -883,9 +893,9 @@
     "version": "v4-independent",
     "la": 2.4731,
     "lh": 3.5634,
-    "ra": 2.1937,
+    "ra": 2.1936,
     "rh": 3.1607,
-    "betaGq": 0.4186,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -997,7 +1007,7 @@
       "xa": 0.896
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -1011,7 +1021,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892755",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "CGY -162",
+    "mlAway": 136.0,
+    "mlHome": -162.0,
+    "total": 5.5,
+    "over": -130.0,
+    "under": 110.0,
+    "mlAwayOpen": 136.0,
+    "mlHomeOpen": -162.0
+   },
    "goalies": {
     "away": {
      "name": "Spencer Knight",
@@ -1043,7 +1063,7 @@
       "periodType": null,
       "ask": 0.42,
       "bid": 0.41,
-      "volume": 75.980629,
+      "volume": 1431.900723,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1058,7 +1078,7 @@
       "periodType": null,
       "ask": 0.59,
       "bid": 0.58,
-      "volume": 75.980629,
+      "volume": 1431.900723,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1112,8 +1132,8 @@
       "tokenId": "2898199893653151715268375329161674997896859837712947192292308962223559224018",
       "status": "open",
       "periodType": null,
-      "ask": 0.57,
-      "bid": 0.56,
+      "ask": 0.55,
+      "bid": 0.53,
       "volume": 8.323839,
       "fee": {
        "rate": 0.05,
@@ -1130,8 +1150,8 @@
       "tokenId": "60191698172092477366558816568764035207871275057619199837165042998609137950730",
       "status": "open",
       "periodType": null,
-      "ask": 0.44,
-      "bid": 0.43,
+      "ask": 0.47,
+      "bid": 0.45,
       "volume": 8.323839,
       "fee": {
        "rate": 0.05,
@@ -1148,7 +1168,7 @@
       "tokenId": "3684621212577557242642218445715143461899335789909023163279261651628112925596",
       "status": "open",
       "periodType": null,
-      "ask": 0.47,
+      "ask": 0.45,
       "bid": 0.44,
       "volume": 50.0,
       "fee": {
@@ -1167,7 +1187,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.56,
-      "bid": 0.53,
+      "bid": 0.55,
       "volume": 50.0,
       "fee": {
        "rate": 0.05,
@@ -1184,8 +1204,8 @@
       "tokenId": "107434436160083047353673058497011241899790564652660860029005513931891615569432",
       "status": "open",
       "periodType": null,
-      "ask": 0.25,
-      "bid": 0.23,
+      "ask": 0.26,
+      "bid": 0.22,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1202,8 +1222,8 @@
       "tokenId": "76344291340801338500489958767371314242460122045238218347645439090087246660558",
       "status": "open",
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.75,
+      "ask": 0.78,
+      "bid": 0.74,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1221,7 +1241,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.36,
-      "bid": 0.33,
+      "bid": 0.35,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1238,7 +1258,7 @@
       "tokenId": "70139302982778767696945995602916550976176175039405452990858482610012912161321",
       "status": "open",
       "periodType": null,
-      "ask": 0.67,
+      "ask": 0.65,
       "bid": 0.64,
       "volume": null,
       "fee": {
@@ -1256,7 +1276,7 @@
       "tokenId": "11867322704912075342277718881467539367472745725503068580006825748321374555348",
       "status": "open",
       "periodType": null,
-      "ask": 0.58,
+      "ask": 0.27,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -1275,7 +1295,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.42,
+      "bid": 0.73,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1292,7 +1312,7 @@
       "tokenId": "70306431463837901700364185530546356755879913329978081869747271365447056262771",
       "status": "open",
       "periodType": null,
-      "ask": 0.25,
+      "ask": 0.24,
       "bid": 0.22,
       "volume": null,
       "fee": {
@@ -1311,7 +1331,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.78,
-      "bid": 0.75,
+      "bid": 0.76,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1328,7 +1348,7 @@
       "tokenId": "28589272851340241021164823854655847597133162454159053256127829754164208746826",
       "status": "open",
       "periodType": null,
-      "ask": 0.23,
+      "ask": 0.22,
       "bid": 0.2,
       "volume": null,
       "fee": {
@@ -1347,7 +1367,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.8,
-      "bid": 0.77,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1364,7 +1384,7 @@
       "tokenId": "22330882553839419076520185796368807654368027076816817972592794538986592365716",
       "status": "open",
       "periodType": null,
-      "ask": 0.6,
+      "ask": 0.17,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -1383,7 +1403,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.4,
+      "bid": 0.83,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1400,7 +1420,7 @@
       "tokenId": "85896246843762552668658069739472861406976391240015122373808197705562653763047",
       "status": "open",
       "periodType": null,
-      "ask": 0.16,
+      "ask": 0.14,
       "bid": 0.12,
       "volume": null,
       "fee": {
@@ -1419,7 +1439,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.88,
-      "bid": 0.84,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1437,7 +1457,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.96,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1454,7 +1474,7 @@
       "tokenId": "66456703325980227572186133019030580605813580648794603272680996083002001686051",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.04,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -1472,8 +1492,8 @@
       "tokenId": "15312559965193665624798774517103228354179186054678518907182081930011863689494",
       "status": "open",
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.85,
+      "ask": 0.87,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1490,8 +1510,8 @@
       "tokenId": "95500781935715126332485761043837156775157660905450025898268905792227279654749",
       "status": "open",
       "periodType": null,
-      "ask": 0.15,
-      "bid": 0.12,
+      "ask": 0.16,
+      "bid": 0.13,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1508,8 +1528,8 @@
       "tokenId": "113137071651863249176983203190561298773862562492574627826066582081316233239464",
       "status": "open",
       "periodType": null,
-      "ask": 0.19,
-      "bid": 0.16,
+      "ask": 0.17,
+      "bid": 0.15,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1526,8 +1546,8 @@
       "tokenId": "86812946142192159460529460168260717720391102183011181688365803507917732343525",
       "status": "open",
       "periodType": null,
-      "ask": 0.84,
-      "bid": 0.81,
+      "ask": 0.85,
+      "bid": 0.83,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1544,9 +1564,9 @@
       "tokenId": "51351358085727826535757599598375119743235279571949522566933550796244138130136",
       "status": "open",
       "periodType": null,
-      "ask": 0.08,
+      "ask": 0.09,
       "bid": 0.06,
-      "volume": null,
+      "volume": 21.05262,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1563,8 +1583,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.94,
-      "bid": 0.92,
-      "volume": null,
+      "bid": 0.91,
+      "volume": 21.05262,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1572,11 +1592,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1869,11 +1889,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.9187,
-    "lh": 3.3609,
-    "ra": 2.5889,
+    "la": 2.9188,
+    "lh": 3.3608,
+    "ra": 2.589,
     "rh": 2.9811,
-    "betaGq": 0.4186,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -1985,7 +2005,7 @@
       "xa": 1.032
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -1999,7 +2019,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892756",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "FLA -155",
+    "mlAway": 130.0,
+    "mlHome": -155.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": 130.0,
+    "mlHomeOpen": -155.0
+   },
    "goalies": {
     "away": {
      "name": "Alex Lyon",
@@ -2031,7 +2061,7 @@
       "periodType": null,
       "ask": 0.43,
       "bid": 0.42,
-      "volume": 120.32879,
+      "volume": 732.0328810000001,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -2046,7 +2076,7 @@
       "periodType": null,
       "ask": 0.58,
       "bid": 0.57,
-      "volume": 120.32879,
+      "volume": 732.0328810000001,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -2100,8 +2130,8 @@
       "tokenId": "95830255294903391560835367907959634037477275628520806686584164104293836058991",
       "status": "open",
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.56,
+      "ask": 0.58,
+      "bid": 0.57,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2118,8 +2148,8 @@
       "tokenId": "95589038255752630026096562036147513872461118339863625902071525936706741085127",
       "status": "open",
       "periodType": null,
-      "ask": 0.44,
-      "bid": 0.41,
+      "ask": 0.43,
+      "bid": 0.42,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2136,7 +2166,7 @@
       "tokenId": "83388231890955466656614723865713804535025211485595285548334156157517384937623",
       "status": "open",
       "periodType": null,
-      "ask": 0.48,
+      "ask": 0.47,
       "bid": 0.46,
       "volume": null,
       "fee": {
@@ -2155,7 +2185,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.54,
-      "bid": 0.52,
+      "bid": 0.53,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2172,7 +2202,7 @@
       "tokenId": "62061641311434896175767375183642425732673129508686236850920949984087889549754",
       "status": "open",
       "periodType": null,
-      "ask": 0.27,
+      "ask": 0.28,
       "bid": 0.24,
       "volume": null,
       "fee": {
@@ -2191,7 +2221,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.76,
-      "bid": 0.73,
+      "bid": 0.72,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2208,8 +2238,8 @@
       "tokenId": "108570160888434961687309790114502500161595764147042246642478372965779367401573",
       "status": "open",
       "periodType": null,
-      "ask": 0.38,
-      "bid": 0.35,
+      "ask": 0.36,
+      "bid": 0.33,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2226,8 +2256,8 @@
       "tokenId": "93452206454066273209139081932197407753440622568985765089911779565689262283148",
       "status": "open",
       "periodType": null,
-      "ask": 0.65,
-      "bid": 0.62,
+      "ask": 0.67,
+      "bid": 0.64,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2244,7 +2274,7 @@
       "tokenId": "45786494490260201100808887071311598877438905052761546956894963425003853101788",
       "status": "open",
       "periodType": null,
-      "ask": 0.3,
+      "ask": 0.27,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -2263,7 +2293,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.7,
+      "bid": 0.73,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2280,8 +2310,8 @@
       "tokenId": "56927414450245808658654663616390924340446962121151833668542361128601995944557",
       "status": "open",
       "periodType": null,
-      "ask": 0.27,
-      "bid": 0.23,
+      "ask": 0.23,
+      "bid": 0.22,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2298,8 +2328,8 @@
       "tokenId": "76211363847467864194090902994002797341604712603573706948354888428700626197475",
       "status": "open",
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.73,
+      "ask": 0.78,
+      "bid": 0.77,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2316,8 +2346,8 @@
       "tokenId": "66444264210725254238921931049451638381812021215087152817081756946942721165336",
       "status": "open",
       "periodType": null,
-      "ask": 0.22,
-      "bid": 0.19,
+      "ask": 0.24,
+      "bid": 0.21,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2334,8 +2364,8 @@
       "tokenId": "92619189992699511493714030613824696126252369896428411745336377358156649701023",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
-      "bid": 0.78,
+      "ask": 0.79,
+      "bid": 0.76,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2352,7 +2382,7 @@
       "tokenId": "7540122344680548160498242320432749971160717725347358820531733068386527916942",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
+      "ask": 0.45,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -2371,7 +2401,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.38,
+      "bid": 0.55,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2389,7 +2419,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.15,
-      "bid": 0.11,
+      "bid": 0.13,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2406,7 +2436,7 @@
       "tokenId": "8717358928573476379897262948205867528124902408729963352121918528325486205355",
       "status": "open",
       "periodType": null,
-      "ask": 0.89,
+      "ask": 0.87,
       "bid": 0.85,
       "volume": null,
       "fee": {
@@ -2425,7 +2455,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.963,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2442,7 +2472,7 @@
       "tokenId": "87841137429522700694601937473263155855710107779605660761272091223911160854987",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.037,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -2460,8 +2490,8 @@
       "tokenId": "103259672437037902828012865652940200366492109706599090315011134130266043219253",
       "status": "open",
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.86,
+      "ask": 0.89,
+      "bid": 0.85,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2478,8 +2508,8 @@
       "tokenId": "16952228713666752159455924302904908857985045600978126750660569997936201190330",
       "status": "open",
       "periodType": null,
-      "ask": 0.14,
-      "bid": 0.12,
+      "ask": 0.15,
+      "bid": 0.11,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2496,8 +2526,8 @@
       "tokenId": "95509750008512982023930686784777838620667675015407292831505308108480607895179",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
-      "bid": 0.16,
+      "ask": 0.19,
+      "bid": 0.17,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2514,8 +2544,8 @@
       "tokenId": "90532329445064735217282765660379672769487574488821004959746418215534715619818",
       "status": "open",
       "periodType": null,
-      "ask": 0.84,
-      "bid": 0.8,
+      "ask": 0.83,
+      "bid": 0.81,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2532,8 +2562,8 @@
       "tokenId": "61601156762134815772268822234768531034396034586860354154267495745812563514385",
       "status": "open",
       "periodType": null,
-      "ask": 0.09,
-      "bid": 0.05,
+      "ask": 0.1,
+      "bid": 0.06,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2550,8 +2580,8 @@
       "tokenId": "14017344552905417102800423516071806536286236255860479844992803617133553926159",
       "status": "open",
       "periodType": null,
-      "ask": 0.95,
-      "bid": 0.91,
+      "ask": 0.94,
+      "bid": 0.9,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2560,11 +2590,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2879,10 +2909,10 @@
    "v4": {
     "version": "v4-independent",
     "la": 2.9504,
-    "lh": 3.4265,
+    "lh": 3.4264,
     "ra": 2.617,
-    "rh": 3.0393,
-    "betaGq": 0.4186,
+    "rh": 3.0392,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -3000,7 +3030,7 @@
       "xa": 0.988
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -3014,7 +3044,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892757",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "NSH -135",
+    "mlAway": 114.0,
+    "mlHome": -135.0,
+    "total": 6.5,
+    "over": -102.0,
+    "under": -118.0,
+    "mlAwayOpen": 120.0,
+    "mlHomeOpen": -142.0
+   },
    "goalies": {
     "away": {
      "name": "Arturs Silovs",
@@ -3044,9 +3084,9 @@
       "tokenId": "13175885535817307826866755817220244629674429278563566687895639727283005162963",
       "status": "open",
       "periodType": null,
-      "ask": 0.46,
-      "bid": 0.45,
-      "volume": 1788.7082890000001,
+      "ask": 0.45,
+      "bid": 0.44,
+      "volume": 4223.995403000001,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3059,9 +3099,9 @@
       "tokenId": "50379122379576137928869002638188024269089411220843605326558415558818595014180",
       "status": "open",
       "periodType": null,
-      "ask": 0.55,
-      "bid": 0.54,
-      "volume": 1788.7082890000001,
+      "ask": 0.56,
+      "bid": 0.55,
+      "volume": 4223.995403000001,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3115,8 +3155,8 @@
       "tokenId": "30578541517323643873275917472905381456992537553085104561868198132576673980257",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
-      "bid": 0.59,
+      "ask": 0.61,
+      "bid": 0.6,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3133,8 +3173,8 @@
       "tokenId": "17482784778855701605752409057593548528657386519112889926762298816194929427901",
       "status": "open",
       "periodType": null,
-      "ask": 0.41,
-      "bid": 0.38,
+      "ask": 0.4,
+      "bid": 0.39,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3151,9 +3191,9 @@
       "tokenId": "40711964730517564670974875642410368471912914527887395217617833582966194034428",
       "status": "open",
       "periodType": null,
-      "ask": 0.51,
-      "bid": 0.48,
-      "volume": null,
+      "ask": 0.5,
+      "bid": 0.49,
+      "volume": 17.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3169,9 +3209,9 @@
       "tokenId": "7766952568126003600109150540992925921213889041112552116512473387302835832764",
       "status": "open",
       "periodType": null,
-      "ask": 0.52,
-      "bid": 0.49,
-      "volume": null,
+      "ask": 0.51,
+      "bid": 0.5,
+      "volume": 17.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3188,7 +3228,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.27,
+      "bid": 0.28,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3205,7 +3245,7 @@
       "tokenId": "88545031365129018664886704276386734744825576377308969499711922202399631550880",
       "status": "open",
       "periodType": null,
-      "ask": 0.73,
+      "ask": 0.72,
       "bid": 0.7,
       "volume": null,
       "fee": {
@@ -3225,7 +3265,7 @@
       "periodType": null,
       "ask": 0.34,
       "bid": 0.32,
-      "volume": null,
+      "volume": 103.41,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3243,7 +3283,7 @@
       "periodType": null,
       "ask": 0.68,
       "bid": 0.66,
-      "volume": null,
+      "volume": 103.41,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3259,8 +3299,8 @@
       "tokenId": "63261316113255399885408620503028164856957462601033844882719175866344054649656",
       "status": "open",
       "periodType": null,
-      "ask": 0.25,
-      "bid": 0.05,
+      "ask": 0.16,
+      "bid": 0.06,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3277,8 +3317,8 @@
       "tokenId": "75685794458895925440748543577511292557422805008117167547262875461398437973101",
       "status": "open",
       "periodType": null,
-      "ask": 0.95,
-      "bid": 0.75,
+      "ask": 0.94,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3296,7 +3336,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.23,
-      "bid": 0.21,
+      "bid": 0.22,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3313,7 +3353,7 @@
       "tokenId": "58177432140496423092290518414107891220369428489692096428411582182746033183979",
       "status": "open",
       "periodType": null,
-      "ask": 0.79,
+      "ask": 0.78,
       "bid": 0.77,
       "volume": null,
       "fee": {
@@ -3331,7 +3371,7 @@
       "tokenId": "28860724209424530659843375931837418389751055044968875236714495075174970967510",
       "status": "open",
       "periodType": null,
-      "ask": 0.26,
+      "ask": 0.25,
       "bid": 0.23,
       "volume": null,
       "fee": {
@@ -3350,7 +3390,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.77,
-      "bid": 0.74,
+      "bid": 0.75,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3367,7 +3407,7 @@
       "tokenId": "84817815597979953467689013779462965334088872655010735593489601309438519464258",
       "status": "open",
       "periodType": null,
-      "ask": 0.54,
+      "ask": 0.12,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -3386,7 +3426,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.46,
+      "bid": 0.88,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3403,7 +3443,7 @@
       "tokenId": "16446525153975058511259987479826377268221036204370391389361874834019936047763",
       "status": "open",
       "periodType": null,
-      "ask": 0.18,
+      "ask": 0.16,
       "bid": 0.14,
       "volume": null,
       "fee": {
@@ -3422,7 +3462,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.86,
-      "bid": 0.82,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3476,7 +3516,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.9,
-      "bid": 0.87,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3493,7 +3533,7 @@
       "tokenId": "20192330332094165481405688812076563765459309442643987980171583957992510244497",
       "status": "open",
       "periodType": null,
-      "ask": 0.13,
+      "ask": 0.14,
       "bid": 0.1,
       "volume": null,
       "fee": {
@@ -3512,7 +3552,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.22,
-      "bid": 0.19,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3529,7 +3569,7 @@
       "tokenId": "56612155137174100159803212011691436223665302903359430796011160374838882324502",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
+      "ask": 0.82,
       "bid": 0.78,
       "volume": null,
       "fee": {
@@ -3547,8 +3587,8 @@
       "tokenId": "80259540221519625058432154224704309553394565216276536890356645286244100388035",
       "status": "open",
       "periodType": null,
-      "ask": 0.1,
-      "bid": 0.06,
+      "ask": 0.11,
+      "bid": 0.07,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3565,8 +3605,8 @@
       "tokenId": "114923853905155594176722400162832228812127213707522924053441808631401542265495",
       "status": "open",
       "periodType": null,
-      "ask": 0.94,
-      "bid": 0.9,
+      "ask": 0.93,
+      "bid": 0.89,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3575,32 +3615,38 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
+        "name": "Bryan Rust",
+        "position": "RW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-20T16:56Z"
+       },
+       {
+        "name": "Evgeni Malkin",
+        "position": "C",
+        "status": "Out",
+        "updatedAt": "2026-11-20T16:16Z"
+       },
+       {
         "name": "Nick Robertson",
         "position": "LW",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-20T14:41Z"
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-20T16:08Z"
        },
        {
         "name": "Elmer Soderblom",
         "position": "LW",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-02T15:52Z"
-       },
-       {
-        "name": "Bryan Rust",
-        "position": "RW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-22T15:54Z"
        },
        {
         "name": "Ryan Graves",
@@ -3629,6 +3675,11 @@
         "id": 8480980,
         "position": "C",
         "name": "Connor Dewar"
+       },
+       {
+        "id": 8482993,
+        "position": "R",
+        "name": "Avery Hayes"
        },
        {
         "id": 8485414,
@@ -3870,11 +3921,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.2296,
-    "lh": 3.6246,
-    "ra": 2.8646,
-    "rh": 3.215,
-    "betaGq": 0.4186,
+    "la": 3.2299,
+    "lh": 3.6245,
+    "ra": 2.8649,
+    "rh": 3.2149,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -3979,7 +4030,7 @@
       "xa": 1.021
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -3993,7 +4044,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892759",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "TOR -122",
+    "mlAway": 102.0,
+    "mlHome": -122.0,
+    "total": 6.5,
+    "over": 105.0,
+    "under": -125.0,
+    "mlAwayOpen": -105.0,
+    "mlHomeOpen": -115.0
+   },
    "goalies": {
     "away": {
      "name": "Jet Greaves",
@@ -4025,7 +4086,7 @@
       "periodType": null,
       "ask": 0.48,
       "bid": 0.47,
-      "volume": 225.55346,
+      "volume": 228.949687,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -4040,7 +4101,7 @@
       "periodType": null,
       "ask": 0.53,
       "bid": 0.52,
-      "volume": 225.55346,
+      "volume": 228.949687,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -4094,7 +4155,7 @@
       "tokenId": "45658510276048862576185176968770449250441154519162992045956744795281825767128",
       "status": "open",
       "periodType": null,
-      "ask": 0.58,
+      "ask": 0.57,
       "bid": 0.56,
       "volume": null,
       "fee": {
@@ -4113,7 +4174,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.44,
-      "bid": 0.42,
+      "bid": 0.43,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4130,8 +4191,8 @@
       "tokenId": "15939072882389229436049989713445842373489565106046974472993852384314470836273",
       "status": "open",
       "periodType": null,
-      "ask": 0.48,
-      "bid": 0.45,
+      "ask": 0.47,
+      "bid": 0.46,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4148,8 +4209,8 @@
       "tokenId": "54989714498518161765826154667821287994473251025639159322331197500762566311118",
       "status": "open",
       "periodType": null,
-      "ask": 0.55,
-      "bid": 0.52,
+      "ask": 0.54,
+      "bid": 0.53,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4166,8 +4227,8 @@
       "tokenId": "66870065683317800353567762366902739774610094091484242548014555881197459110756",
       "status": "open",
       "periodType": null,
-      "ask": 0.27,
-      "bid": 0.24,
+      "ask": 0.28,
+      "bid": 0.25,
       "volume": 12.0,
       "fee": {
        "rate": 0.05,
@@ -4184,8 +4245,8 @@
       "tokenId": "40839443034107856731922495647519622879508022146668945100552241339759339522066",
       "status": "open",
       "periodType": null,
-      "ask": 0.76,
-      "bid": 0.73,
+      "ask": 0.75,
+      "bid": 0.72,
       "volume": 12.0,
       "fee": {
        "rate": 0.05,
@@ -4202,9 +4263,9 @@
       "tokenId": "47858417433786077851091403427228390162449606208009118754609718526294093523186",
       "status": "open",
       "periodType": null,
-      "ask": 0.3,
-      "bid": 0.28,
-      "volume": null,
+      "ask": 0.31,
+      "bid": 0.29,
+      "volume": 2.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -4220,9 +4281,9 @@
       "tokenId": "114110045048117675827577677759440052733061685936513912593954570012498739144984",
       "status": "open",
       "periodType": null,
-      "ask": 0.72,
-      "bid": 0.7,
-      "volume": null,
+      "ask": 0.71,
+      "bid": 0.69,
+      "volume": 2.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -4238,7 +4299,7 @@
       "tokenId": "61152103869407946481979068507440029025317523220466540452098210014759173563709",
       "status": "open",
       "periodType": null,
-      "ask": 0.71,
+      "ask": 0.24,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -4257,7 +4318,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.29,
+      "bid": 0.76,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4274,8 +4335,8 @@
       "tokenId": "109820304745645414011046339913523681588039945673283644833090488379040691831171",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
-      "bid": 0.17,
+      "ask": 0.21,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4292,8 +4353,8 @@
       "tokenId": "33023907787204704897240749385103620691590073153255868907546082718392203945681",
       "status": "open",
       "periodType": null,
-      "ask": 0.83,
-      "bid": 0.8,
+      "ask": 0.82,
+      "bid": 0.79,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4310,7 +4371,7 @@
       "tokenId": "81365109266264149968194285287942310545579475297621347720433804600657922069529",
       "status": "open",
       "periodType": null,
-      "ask": 0.29,
+      "ask": 0.27,
       "bid": 0.26,
       "volume": null,
       "fee": {
@@ -4329,7 +4390,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.74,
-      "bid": 0.71,
+      "bid": 0.73,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4346,7 +4407,7 @@
       "tokenId": "39277555925125127866503683704539813102331056804979807839637294086542984434776",
       "status": "open",
       "periodType": null,
-      "ask": 0.79,
+      "ask": 0.54,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -4365,7 +4426,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.21,
+      "bid": 0.46,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4382,7 +4443,7 @@
       "tokenId": "31290526306115847699643559931404967109451905752249962329924569152486524343416",
       "status": "open",
       "periodType": null,
-      "ask": 0.19,
+      "ask": 0.18,
       "bid": 0.16,
       "volume": null,
       "fee": {
@@ -4401,7 +4462,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.84,
-      "bid": 0.81,
+      "bid": 0.82,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4419,7 +4480,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.961,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4436,7 +4497,7 @@
       "tokenId": "95945385901113849850170777876604808623830426423054286797602363459964155344552",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.039,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -4454,8 +4515,8 @@
       "tokenId": "57750839101720637617433059233633827193870073185216458119318605213112481155540",
       "status": "open",
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.86,
+      "ask": 0.89,
+      "bid": 0.85,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4472,8 +4533,8 @@
       "tokenId": "105789122406468830575359582166619031037220501858903015754552723824354866330043",
       "status": "open",
       "periodType": null,
-      "ask": 0.14,
-      "bid": 0.12,
+      "ask": 0.15,
+      "bid": 0.11,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4490,8 +4551,8 @@
       "tokenId": "37543815508004012091315490166000989473102763014990521428127403485291473172375",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
-      "bid": 0.16,
+      "ask": 0.19,
+      "bid": 0.17,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4508,8 +4569,8 @@
       "tokenId": "7647651371174088001088586887960664972590054078282625175155033284426153313115",
       "status": "open",
       "periodType": null,
-      "ask": 0.84,
-      "bid": 0.8,
+      "ask": 0.83,
+      "bid": 0.81,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4526,8 +4587,8 @@
       "tokenId": "68559717304526931365626692411202805493594325856372482488718250173279237545722",
       "status": "open",
       "periodType": null,
-      "ask": 0.09,
-      "bid": 0.05,
+      "ask": 0.1,
+      "bid": 0.06,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4544,8 +4605,8 @@
       "tokenId": "101121227368486877412364843561451558468328655900849243209062987148364904065250",
       "status": "open",
       "periodType": null,
-      "ask": 0.95,
-      "bid": 0.91,
+      "ask": 0.94,
+      "bid": 0.9,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4554,11 +4615,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4702,16 +4763,22 @@
      "home": {
       "injuries": [
        {
-        "name": "Colton Sissons",
-        "position": "C",
+        "name": "Cole McWard",
+        "position": "D",
         "status": "Injured Reserve",
-        "updatedAt": "2026-11-12T15:24Z"
+        "updatedAt": "2026-11-20T19:42Z"
        },
        {
         "name": "Kirill Marchenko",
         "position": "RW",
         "status": "Injured Reserve",
-        "updatedAt": "2026-10-29T17:28Z"
+        "updatedAt": "2026-11-20T17:49Z"
+       },
+       {
+        "name": "Colton Sissons",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-12T15:24Z"
        },
        {
         "name": "Miles Wood",
@@ -4917,11 +4984,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.1939,
+    "la": 3.194,
     "lh": 3.1397,
-    "ra": 2.833,
+    "ra": 2.8331,
     "rh": 2.7849,
-    "betaGq": 0.4186,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -5032,7 +5099,7 @@
       "xa": 1.042
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -5046,7 +5113,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892761",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "OTT -175",
+    "mlAway": 145.0,
+    "mlHome": -175.0,
+    "total": 5.5,
+    "over": -122.0,
+    "under": 102.0,
+    "mlAwayOpen": 124.0,
+    "mlHomeOpen": -148.0
+   },
    "goalies": {
     "away": {
      "name": "Darcy Kuemper",
@@ -5076,9 +5153,9 @@
       "tokenId": "85439957997125932885835291644209128183435853073281135816377501843524806037732",
       "status": "open",
       "periodType": null,
-      "ask": 0.41,
+      "ask": 0.4,
       "bid": 0.39,
-      "volume": 143.36201799999998,
+      "volume": 152.02055499999997,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -5092,8 +5169,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.61,
-      "bid": 0.59,
-      "volume": 143.36201799999998,
+      "bid": 0.6,
+      "volume": 152.02055499999997,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -5111,8 +5188,8 @@
       "tokenId": "84472359210507645460356465360999123592155618018094626987044730891895669743862",
       "status": "open",
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.75,
+      "ask": 0.76,
+      "bid": 0.74,
       "volume": 16.658228,
       "fee": {
        "rate": 0.05,
@@ -5129,8 +5206,8 @@
       "tokenId": "1367979427696420507006662783594447549782821657654167865249262559262992578735",
       "status": "open",
       "periodType": null,
-      "ask": 0.25,
-      "bid": 0.23,
+      "ask": 0.26,
+      "bid": 0.24,
       "volume": 16.658228,
       "fee": {
        "rate": 0.05,
@@ -5148,7 +5225,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.53,
-      "bid": 0.5,
+      "bid": 0.52,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5165,7 +5242,7 @@
       "tokenId": "51167593268538015453148210155586880662741837527099298990696745645272460277732",
       "status": "open",
       "periodType": null,
-      "ask": 0.5,
+      "ask": 0.48,
       "bid": 0.47,
       "volume": null,
       "fee": {
@@ -5183,7 +5260,7 @@
       "tokenId": "41516872228633566602740876004737852217140547103087210809494532817293322489197",
       "status": "open",
       "periodType": null,
-      "ask": 0.43,
+      "ask": 0.42,
       "bid": 0.41,
       "volume": null,
       "fee": {
@@ -5202,7 +5279,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.59,
-      "bid": 0.57,
+      "bid": 0.58,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5221,7 +5298,7 @@
       "periodType": null,
       "ask": 0.2,
       "bid": 0.19,
-      "volume": 5.0,
+      "volume": 12.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -5239,7 +5316,7 @@
       "periodType": null,
       "ask": 0.81,
       "bid": 0.8,
-      "volume": 5.0,
+      "volume": 12.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -5255,9 +5332,9 @@
       "tokenId": "93434940194983863987952999404488605755477862372453350640204122342571623418845",
       "status": "open",
       "periodType": null,
-      "ask": 0.39,
+      "ask": 0.4,
       "bid": 0.38,
-      "volume": 11.0,
+      "volume": 155.32,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -5274,8 +5351,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.62,
-      "bid": 0.61,
-      "volume": 11.0,
+      "bid": 0.6,
+      "volume": 155.32,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -5291,7 +5368,7 @@
       "tokenId": "68883274635439208344202287773174042188981104744466255297498472634177196480491",
       "status": "open",
       "periodType": null,
-      "ask": 0.49,
+      "ask": 0.29,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -5310,7 +5387,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.51,
+      "bid": 0.71,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5327,8 +5404,8 @@
       "tokenId": "64609444965705973903686322590823372045709526218132490025907904386825394239246",
       "status": "open",
       "periodType": null,
-      "ask": 0.25,
-      "bid": 0.22,
+      "ask": 0.27,
+      "bid": 0.25,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5345,8 +5422,8 @@
       "tokenId": "36559773672846027793217076839422229841626373832582340969590001640325323168607",
       "status": "open",
       "periodType": null,
-      "ask": 0.78,
-      "bid": 0.75,
+      "ask": 0.75,
+      "bid": 0.73,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5363,8 +5440,8 @@
       "tokenId": "16648271429952439958606630162291640768137557776838297841301537188379896175842",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
-      "bid": 0.2,
+      "ask": 0.19,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5381,8 +5458,8 @@
       "tokenId": "62678375296190900120617476921226127979724679349355526716957637791982140160843",
       "status": "open",
       "periodType": null,
-      "ask": 0.8,
-      "bid": 0.76,
+      "ask": 0.82,
+      "bid": 0.81,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5399,7 +5476,7 @@
       "tokenId": "71753186170240444746089767837363408004730899625231924276796061381975026181680",
       "status": "open",
       "periodType": null,
-      "ask": 0.6,
+      "ask": 0.15,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -5418,7 +5495,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.4,
+      "bid": 0.85,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5435,8 +5512,8 @@
       "tokenId": "58232460344664533492559417535144933527322741084257109759108179342099888837988",
       "status": "open",
       "periodType": null,
-      "ask": 0.15,
-      "bid": 0.12,
+      "ask": 0.12,
+      "bid": 0.1,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5453,8 +5530,8 @@
       "tokenId": "106797919741730816914528519238515461145786832082971048071094627799958590608217",
       "status": "open",
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.85,
+      "ask": 0.9,
+      "bid": 0.88,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5471,8 +5548,8 @@
       "tokenId": "87743656926253221431574558693307361572040638934719517860019184505246720756247",
       "status": "open",
       "periodType": null,
-      "ask": 0.97,
-      "bid": 0.94,
+      "ask": 0.98,
+      "bid": 0.961,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5489,8 +5566,8 @@
       "tokenId": "27841519285627043107110129311830759584855667503744083900233588737861330331081",
       "status": "open",
       "periodType": null,
-      "ask": 0.06,
-      "bid": 0.03,
+      "ask": 0.039,
+      "bid": 0.02,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5507,7 +5584,7 @@
       "tokenId": "36229813724284317634096885020936920096761929118380418409059029542552667901916",
       "status": "open",
       "periodType": null,
-      "ask": 0.86,
+      "ask": 0.87,
       "bid": 0.83,
       "volume": null,
       "fee": {
@@ -5526,7 +5603,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.17,
-      "bid": 0.14,
+      "bid": 0.13,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5580,7 +5657,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.08,
-      "bid": 0.05,
+      "bid": 0.04,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5597,7 +5674,7 @@
       "tokenId": "86696539398004834347978820520074921215378693362456608899009232163736078261995",
       "status": "open",
       "periodType": null,
-      "ask": 0.95,
+      "ask": 0.96,
       "bid": 0.92,
       "volume": null,
       "fee": {
@@ -5607,11 +5684,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5756,6 +5833,12 @@
      "home": {
       "injuries": [
        {
+        "name": "Andre Burakovsky",
+        "position": "LW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-20T17:06Z"
+       },
+       {
         "name": "Nick Cousins",
         "position": "C",
         "status": "Day-To-Day",
@@ -5772,12 +5855,6 @@
         "position": "LW",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-16T16:53Z"
-       },
-       {
-        "name": "Andre Burakovsky",
-        "position": "LW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-31T21:35Z"
        },
        {
         "name": "William Eklund",
@@ -5928,10 +6005,10 @@
    "v4": {
     "version": "v4-independent",
     "la": 2.6703,
-    "lh": 3.2605,
-    "ra": 2.3686,
-    "rh": 2.892,
-    "betaGq": 0.4186,
+    "lh": 3.2604,
+    "ra": 2.3685,
+    "rh": 2.8919,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -6043,7 +6120,7 @@
       "xa": 0.93
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -6057,7 +6134,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892763",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "NJ -130",
+    "mlAway": -130.0,
+    "mlHome": 110.0,
+    "total": 6.5,
+    "over": 114.0,
+    "under": -135.0,
+    "mlAwayOpen": -130.0,
+    "mlHomeOpen": 110.0
+   },
    "goalies": {
     "away": {
      "name": "Connor Hellebuyck",
@@ -6087,9 +6174,9 @@
       "tokenId": "21068389397355194731761425707572356179466328925376229523855643853942601953179",
       "status": "open",
       "periodType": null,
-      "ask": 0.56,
-      "bid": 0.55,
-      "volume": 234.195655,
+      "ask": 0.55,
+      "bid": 0.54,
+      "volume": 245.75776899999997,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -6102,9 +6189,9 @@
       "tokenId": "44396819149454463898614079338759350976050959186663306703216529007720745455059",
       "status": "open",
       "periodType": null,
-      "ask": 0.45,
-      "bid": 0.44,
-      "volume": 234.195655,
+      "ask": 0.46,
+      "bid": 0.45,
+      "volume": 245.75776899999997,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -6122,7 +6209,7 @@
       "tokenId": "61970399036506931234829552524633147926789273385761410937938474928997619482392",
       "status": "open",
       "periodType": null,
-      "ask": 0.79,
+      "ask": 0.8,
       "bid": 0.77,
       "volume": null,
       "fee": {
@@ -6141,7 +6228,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.23,
-      "bid": 0.21,
+      "bid": 0.2,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6159,7 +6246,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.56,
-      "bid": 0.54,
+      "bid": 0.55,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6176,7 +6263,7 @@
       "tokenId": "67019401399346472918874145894703157003348691640833129702133402313321802088603",
       "status": "open",
       "periodType": null,
-      "ask": 0.46,
+      "ask": 0.45,
       "bid": 0.44,
       "volume": null,
       "fee": {
@@ -6194,8 +6281,8 @@
       "tokenId": "14259521062927676511747312491349247151708747529259162814993089589621811129859",
       "status": "open",
       "periodType": null,
-      "ask": 0.46,
-      "bid": 0.43,
+      "ask": 0.45,
+      "bid": 0.44,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6212,8 +6299,8 @@
       "tokenId": "51361738112675408612284853883347370266767449315508709140763083598403679193572",
       "status": "open",
       "periodType": null,
-      "ask": 0.57,
-      "bid": 0.54,
+      "ask": 0.56,
+      "bid": 0.55,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6231,7 +6318,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.25,
-      "bid": 0.22,
+      "bid": 0.23,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6248,7 +6335,7 @@
       "tokenId": "102246834285797136374767998055496078554250981800418186520755764592002275861100",
       "status": "open",
       "periodType": null,
-      "ask": 0.78,
+      "ask": 0.77,
       "bid": 0.75,
       "volume": null,
       "fee": {
@@ -6266,9 +6353,9 @@
       "tokenId": "104916415133372377076502881122289831218872904435543981833277375431578115073066",
       "status": "open",
       "periodType": null,
-      "ask": 0.35,
-      "bid": 0.32,
-      "volume": null,
+      "ask": 0.32,
+      "bid": 0.3,
+      "volume": 5.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -6284,9 +6371,9 @@
       "tokenId": "20210406529444145635532938311915681302157431570483414576735716822083109023143",
       "status": "open",
       "periodType": null,
-      "ask": 0.68,
-      "bid": 0.65,
-      "volume": null,
+      "ask": 0.7,
+      "bid": 0.68,
+      "volume": 5.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -6302,7 +6389,7 @@
       "tokenId": "638703705851353425966521701912614293463680555105532440669088583511664604381",
       "status": "open",
       "periodType": null,
-      "ask": 0.55,
+      "ask": 0.35,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -6321,7 +6408,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.45,
+      "bid": 0.65,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6338,8 +6425,8 @@
       "tokenId": "15949049304532560487252487907262497257262691522912547738467694233955334975807",
       "status": "open",
       "periodType": null,
-      "ask": 0.15,
-      "bid": 0.12,
+      "ask": 0.16,
+      "bid": 0.14,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6356,8 +6443,8 @@
       "tokenId": "43141863042285665394840489932503166362829579964023974399815305790357180397212",
       "status": "open",
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.85,
+      "ask": 0.86,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6374,8 +6461,8 @@
       "tokenId": "25847557008067541545183373357843052777690490759245107798959408757553776340903",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
-      "bid": 0.22,
+      "ask": 0.26,
+      "bid": 0.23,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6392,8 +6479,8 @@
       "tokenId": "86846988642985921347057045523749607870629620432942258035016973180672638615850",
       "status": "open",
       "periodType": null,
-      "ask": 0.78,
-      "bid": 0.76,
+      "ask": 0.77,
+      "bid": 0.74,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6410,8 +6497,8 @@
       "tokenId": "174920866494136355993151241255963430635889065917095822363791646743553567839",
       "status": "open",
       "periodType": null,
-      "ask": 0.6,
-      "bid": 0.06,
+      "ask": 0.24,
+      "bid": 0.04,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6428,8 +6515,8 @@
       "tokenId": "85140787013156597405813034793340502231763395622139957663054290860697317738861",
       "status": "open",
       "periodType": null,
-      "ask": 0.94,
-      "bid": 0.4,
+      "ask": 0.96,
+      "bid": 0.76,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6446,8 +6533,8 @@
       "tokenId": "17846354430135487435287818671362005421962956716189610774829315831197901427381",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
-      "bid": 0.21,
+      "ask": 0.21,
+      "bid": 0.2,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6464,8 +6551,8 @@
       "tokenId": "52334746103118214251511129079061282806240547261048358885050149601964983023856",
       "status": "open",
       "periodType": null,
-      "ask": 0.79,
-      "bid": 0.76,
+      "ask": 0.8,
+      "bid": 0.79,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6483,7 +6570,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.96,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6500,7 +6587,7 @@
       "tokenId": "60950401527853594072660939235636549387531456134657163999209149411656291068660",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.04,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -6518,8 +6605,8 @@
       "tokenId": "46723439766646813645290204034029430936866799676401800578013567948393554792825",
       "status": "open",
       "periodType": null,
-      "ask": 0.87,
-      "bid": 0.85,
+      "ask": 0.88,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6536,8 +6623,8 @@
       "tokenId": "20893778870604716310482844138820970366887003175026483731169783835495813434848",
       "status": "open",
       "periodType": null,
-      "ask": 0.15,
-      "bid": 0.13,
+      "ask": 0.16,
+      "bid": 0.12,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6555,7 +6642,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.18,
-      "bid": 0.16,
+      "bid": 0.15,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6572,7 +6659,7 @@
       "tokenId": "88983034395622720622101119707089191153394066596001495508649527664728187941316",
       "status": "open",
       "periodType": null,
-      "ask": 0.84,
+      "ask": 0.85,
       "bid": 0.82,
       "volume": null,
       "fee": {
@@ -6590,8 +6677,8 @@
       "tokenId": "101637412837958875360646023036766594497951578621568494301095099204754280379171",
       "status": "open",
       "periodType": null,
-      "ask": 0.08,
-      "bid": 0.06,
+      "ask": 0.09,
+      "bid": 0.05,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6608,8 +6695,8 @@
       "tokenId": "76182002798773561231900290470085882866929436869773526349855525945975738693285",
       "status": "open",
       "periodType": null,
-      "ask": 0.94,
-      "bid": 0.92,
+      "ask": 0.95,
+      "bid": 0.91,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6618,11 +6705,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6753,11 +6840,6 @@
         "name": "Jonas Siegenthaler"
        },
        {
-        "id": 8484987,
-        "position": "D",
-        "name": "Anton Silaev"
-       },
-       {
         "id": 8474596,
         "position": "G",
         "name": "Jake Allen"
@@ -6771,6 +6853,12 @@
      },
      "home": {
       "injuries": [
+       {
+        "name": "Connor McMichael",
+        "position": "LW",
+        "status": "Out",
+        "updatedAt": "2026-11-20T18:15Z"
+       },
        {
         "name": "Ross Johnston",
         "position": "LW",
@@ -6933,10 +7021,10 @@
    "v4": {
     "version": "v4-independent",
     "la": 3.3921,
-    "lh": 2.8945,
+    "lh": 2.8944,
     "ra": 3.0088,
-    "rh": 2.5674,
-    "betaGq": 0.4186,
+    "rh": 2.5673,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -7048,7 +7136,7 @@
       "xa": 0.993
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -7062,7 +7150,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892762",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "NYI -112",
+    "mlAway": -112.0,
+    "mlHome": -108.0,
+    "total": 5.5,
+    "over": -125.0,
+    "under": 105.0,
+    "mlAwayOpen": -108.0,
+    "mlHomeOpen": -112.0
+   },
    "goalies": {
     "away": {
      "name": "Ilya Sorokin",
@@ -7070,7 +7168,7 @@
     },
     "home": {
      "name": "John Gibson",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "market": {
@@ -7094,7 +7192,7 @@
       "periodType": null,
       "ask": 0.52,
       "bid": 0.51,
-      "volume": 95.615385,
+      "volume": 106.635794,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -7109,7 +7207,7 @@
       "periodType": null,
       "ask": 0.49,
       "bid": 0.48,
-      "volume": 95.615385,
+      "volume": 106.635794,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -7127,7 +7225,7 @@
       "tokenId": "6243802315749949467374361548003713980787535085499951819071805879737016212658",
       "status": "open",
       "periodType": null,
-      "ask": 0.77,
+      "ask": 0.78,
       "bid": 0.75,
       "volume": null,
       "fee": {
@@ -7146,7 +7244,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.25,
-      "bid": 0.23,
+      "bid": 0.22,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7163,8 +7261,8 @@
       "tokenId": "44736581253406096049316209731070715153696661831157631483911307874671905943965",
       "status": "open",
       "periodType": null,
-      "ask": 0.53,
-      "bid": 0.52,
+      "ask": 0.55,
+      "bid": 0.53,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7181,8 +7279,8 @@
       "tokenId": "57764900090624381200785320118705596198128183288698379582320817121014685339231",
       "status": "open",
       "periodType": null,
-      "ask": 0.48,
-      "bid": 0.47,
+      "ask": 0.47,
+      "bid": 0.45,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7199,8 +7297,8 @@
       "tokenId": "14688150080023123504754758032845236459754654718437992747694502969083208247380",
       "status": "open",
       "periodType": null,
-      "ask": 0.43,
-      "bid": 0.41,
+      "ask": 0.44,
+      "bid": 0.43,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7217,8 +7315,8 @@
       "tokenId": "16843469077706297851879263194847506017681470205568690144507086407871008016164",
       "status": "open",
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.57,
+      "ask": 0.57,
+      "bid": 0.56,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7235,7 +7333,7 @@
       "tokenId": "55937030023134169618098257987370808809742497782212853112162912046934977441990",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
+      "ask": 0.25,
       "bid": 0.21,
       "volume": null,
       "fee": {
@@ -7254,7 +7352,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.79,
-      "bid": 0.76,
+      "bid": 0.75,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7272,8 +7370,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.27,
-      "volume": null,
+      "bid": 0.28,
+      "volume": 87.36,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -7289,9 +7387,9 @@
       "tokenId": "61338272495682587782304805590031351741414218314128959612391429307449755719085",
       "status": "open",
       "periodType": null,
-      "ask": 0.73,
+      "ask": 0.72,
       "bid": 0.7,
-      "volume": null,
+      "volume": 87.36,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -7307,7 +7405,7 @@
       "tokenId": "61729542887020294172998033125564609839834977317023764091928144946878950060863",
       "status": "open",
       "periodType": null,
-      "ask": 0.72,
+      "ask": 0.42,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -7326,7 +7424,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.28,
+      "bid": 0.58,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7343,7 +7441,7 @@
       "tokenId": "31462526759977891343326101293040352870686720898409162470458980784272102188269",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
+      "ask": 0.18,
       "bid": 0.16,
       "volume": null,
       "fee": {
@@ -7362,7 +7460,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.84,
-      "bid": 0.8,
+      "bid": 0.82,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7379,8 +7477,8 @@
       "tokenId": "68299173356982395699198198060635190548145831865215155295799324716951717569575",
       "status": "open",
       "periodType": null,
-      "ask": 0.29,
-      "bid": 0.27,
+      "ask": 0.28,
+      "bid": 0.26,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7397,8 +7495,8 @@
       "tokenId": "88810723306708781953860894223098162358090459165684762767336366155524656353871",
       "status": "open",
       "periodType": null,
-      "ask": 0.73,
-      "bid": 0.71,
+      "ask": 0.74,
+      "bid": 0.72,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7415,7 +7513,7 @@
       "tokenId": "50939507803287448938481114206011898937596359313434760038221114923086929523305",
       "status": "open",
       "periodType": null,
-      "ask": 0.93,
+      "ask": 0.32,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -7434,7 +7532,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.07,
+      "bid": 0.68,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7451,8 +7549,8 @@
       "tokenId": "72176990971582467679611134665860016893215815478615731725758935961991967831331",
       "status": "open",
       "periodType": null,
-      "ask": 0.18,
-      "bid": 0.16,
+      "ask": 0.2,
+      "bid": 0.17,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7469,8 +7567,8 @@
       "tokenId": "103788056309965411023440447828933299186783600324623332733847506240606456611992",
       "status": "open",
       "periodType": null,
-      "ask": 0.84,
-      "bid": 0.82,
+      "ask": 0.83,
+      "bid": 0.8,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7488,7 +7586,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.96,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7505,7 +7603,7 @@
       "tokenId": "59706377403255944690629527145332572213098572097756593113421692957091985361841",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.04,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -7523,7 +7621,7 @@
       "tokenId": "76791365246888735168792961111852732077198929975329777370502132024189755524432",
       "status": "open",
       "periodType": null,
-      "ask": 0.86,
+      "ask": 0.87,
       "bid": 0.83,
       "volume": null,
       "fee": {
@@ -7542,7 +7640,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.17,
-      "bid": 0.14,
+      "bid": 0.13,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7595,7 +7693,7 @@
       "tokenId": "102211365850382066206455636864919861143692265046441540075222126426515171143223",
       "status": "open",
       "periodType": null,
-      "ask": 0.07,
+      "ask": 0.08,
       "bid": 0.04,
       "volume": null,
       "fee": {
@@ -7614,7 +7712,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.93,
+      "bid": 0.92,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7623,11 +7721,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7783,12 +7881,6 @@
         "updatedAt": "2026-11-19T17:54Z"
        },
        {
-        "name": "Albert Johansson",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-18T16:14Z"
-       },
-       {
         "name": "Dylan Larkin",
         "position": "C",
         "status": "Injured Reserve",
@@ -7927,11 +8019,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.0156,
-    "lh": 3.091,
-    "ra": 2.6748,
+    "la": 3.0157,
+    "lh": 3.0909,
+    "ra": 2.6749,
     "rh": 2.7417,
-    "betaGq": 0.4186,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -7976,21 +8068,8 @@
       "id": 8476434,
       "gq": -0.0599,
       "mode": "named",
-      "status": "Expected",
-      "candidates": [
-       {
-        "id": 8476434,
-        "name": "John Gibson",
-        "gq": -0.0599,
-        "mode": "named"
-       },
-       {
-        "id": 8480193,
-        "name": "Daniil Tarasov",
-        "gq": -0.0773,
-        "mode": "named"
-       }
-      ],
+      "status": "Confirmed",
+      "candidates": [],
       "table": [
        {
         "id": 8480193,
@@ -8036,7 +8115,7 @@
       "xa": 0.998
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -8050,7 +8129,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892760",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "MTL -166",
+    "mlAway": 140.0,
+    "mlHome": -166.0,
+    "total": 5.5,
+    "over": -125.0,
+    "under": 105.0,
+    "mlAwayOpen": 145.0,
+    "mlHomeOpen": -175.0
+   },
    "goalies": {
     "away": {
      "name": "Dan Vladar",
@@ -8080,9 +8169,9 @@
       "tokenId": "24769577252997810871852957579661170865933346218177876702359656619290637444326",
       "status": "open",
       "periodType": null,
-      "ask": 0.39,
-      "bid": 0.38,
-      "volume": 4083.96526,
+      "ask": 0.4,
+      "bid": 0.39,
+      "volume": 7131.343476,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -8095,9 +8184,9 @@
       "tokenId": "49949815863601144018666070508285133736387960278745065373172131047196617663931",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
-      "bid": 0.61,
-      "volume": 4083.96526,
+      "ask": 0.61,
+      "bid": 0.6,
+      "volume": 7131.343476,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -8116,7 +8205,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.78,
-      "bid": 0.77,
+      "bid": 0.75,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8133,7 +8222,7 @@
       "tokenId": "43731653633378290945749502010152106550297814603629080028050021622871988480021",
       "status": "open",
       "periodType": null,
-      "ask": 0.23,
+      "ask": 0.25,
       "bid": 0.22,
       "volume": null,
       "fee": {
@@ -8151,9 +8240,9 @@
       "tokenId": "75581751814025321941824127081560878839847582508670584080813716253703766161134",
       "status": "open",
       "periodType": null,
-      "ask": 0.56,
-      "bid": 0.53,
-      "volume": null,
+      "ask": 0.54,
+      "bid": 0.52,
+      "volume": 7.0625,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -8169,9 +8258,9 @@
       "tokenId": "114172180811322756950229233182855746407475352516387754912136978040682742536917",
       "status": "open",
       "periodType": null,
-      "ask": 0.47,
-      "bid": 0.44,
-      "volume": null,
+      "ask": 0.48,
+      "bid": 0.46,
+      "volume": 7.0625,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -8187,8 +8276,8 @@
       "tokenId": "57547038910154708694906367198459405962503518604420013002841058576275035313045",
       "status": "open",
       "periodType": null,
-      "ask": 0.45,
-      "bid": 0.43,
+      "ask": 0.43,
+      "bid": 0.42,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8205,8 +8294,8 @@
       "tokenId": "71096363443254580833291525728174112833375969497949709236486518745317669916532",
       "status": "open",
       "periodType": null,
-      "ask": 0.57,
-      "bid": 0.55,
+      "ask": 0.58,
+      "bid": 0.57,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8223,8 +8312,8 @@
       "tokenId": "74484565594615248050647389183432479642621719689287147849756171600049888288137",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
-      "bid": 0.22,
+      "ask": 0.25,
+      "bid": 0.23,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8241,8 +8330,8 @@
       "tokenId": "66681771979007189041396887235190718204785594694123927038818246219200511513921",
       "status": "open",
       "periodType": null,
-      "ask": 0.78,
-      "bid": 0.76,
+      "ask": 0.77,
+      "bid": 0.75,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8259,9 +8348,9 @@
       "tokenId": "33143598297103274569158739286528158957944379456553599562736260195765658111324",
       "status": "open",
       "periodType": null,
-      "ask": 0.42,
-      "bid": 0.41,
-      "volume": 54.99,
+      "ask": 0.38,
+      "bid": 0.37,
+      "volume": 438.861151,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -8277,9 +8366,9 @@
       "tokenId": "112405689737992061005582810257222500859993644791877285861047440598501521779849",
       "status": "open",
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.58,
-      "volume": 54.99,
+      "ask": 0.63,
+      "bid": 0.62,
+      "volume": 438.861151,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -8295,7 +8384,7 @@
       "tokenId": "59535139194113400032218761027003366766000024542657078889464322005161887683027",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
+      "ask": 0.28,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -8314,7 +8403,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.38,
+      "bid": 0.72,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8331,8 +8420,8 @@
       "tokenId": "86313004346532553301997200583140855401363068344008567882347478632985064002781",
       "status": "open",
       "periodType": null,
-      "ask": 0.27,
-      "bid": 0.25,
+      "ask": 0.25,
+      "bid": 0.24,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8349,8 +8438,8 @@
       "tokenId": "77921650707149169169401258668870537739820036852311465431283158140038651067870",
       "status": "open",
       "periodType": null,
-      "ask": 0.75,
-      "bid": 0.73,
+      "ask": 0.76,
+      "bid": 0.75,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8367,7 +8456,7 @@
       "tokenId": "82237755317899985519223653805478724508464593839880327394758004158416929061258",
       "status": "open",
       "periodType": null,
-      "ask": 0.22,
+      "ask": 0.21,
       "bid": 0.18,
       "volume": 110.0,
       "fee": {
@@ -8386,7 +8475,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.82,
-      "bid": 0.78,
+      "bid": 0.79,
       "volume": 110.0,
       "fee": {
        "rate": 0.05,
@@ -8403,7 +8492,7 @@
       "tokenId": "91308039083944152362605188239827568351993106611687220285692668208866729050540",
       "status": "open",
       "periodType": null,
-      "ask": 0.73,
+      "ask": 0.49,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -8422,7 +8511,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.27,
+      "bid": 0.51,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8439,8 +8528,8 @@
       "tokenId": "28782702643177148634042959839436722241114146201854297860150864388975821607810",
       "status": "open",
       "periodType": null,
-      "ask": 0.14,
-      "bid": 0.1,
+      "ask": 0.13,
+      "bid": 0.11,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8457,8 +8546,8 @@
       "tokenId": "77791189507850920745906151168960719347158413005858401672894326583936761577957",
       "status": "open",
       "periodType": null,
-      "ask": 0.9,
-      "bid": 0.86,
+      "ask": 0.89,
+      "bid": 0.87,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8476,7 +8565,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.96,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8493,7 +8582,7 @@
       "tokenId": "103245738860605154847429337237429192265416969735714634100368312955913390477321",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.04,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -8512,7 +8601,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.87,
-      "bid": 0.84,
+      "bid": 0.83,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8529,7 +8618,7 @@
       "tokenId": "28488228436402206791577811068835145006005197300683691975930565643483253092408",
       "status": "open",
       "periodType": null,
-      "ask": 0.16,
+      "ask": 0.17,
       "bid": 0.13,
       "volume": null,
       "fee": {
@@ -8547,8 +8636,8 @@
       "tokenId": "91577742653133807990116918058028719921215497115507662413753433444376904417859",
       "status": "open",
       "periodType": null,
-      "ask": 0.18,
-      "bid": 0.15,
+      "ask": 0.16,
+      "bid": 0.14,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8565,8 +8654,8 @@
       "tokenId": "46487237519890735852126123945996318544786720374518958292472490546972175554649",
       "status": "open",
       "periodType": null,
-      "ask": 0.85,
-      "bid": 0.82,
+      "ask": 0.86,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8584,7 +8673,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.08,
-      "bid": 0.05,
+      "bid": 0.04,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8601,7 +8690,7 @@
       "tokenId": "115316225412648981377996643376621295604182976995465239141801366627843710685364",
       "status": "open",
       "periodType": null,
-      "ask": 0.95,
+      "ask": 0.96,
       "bid": 0.92,
       "volume": null,
       "fee": {
@@ -8611,11 +8700,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8947,11 +9036,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 2.8844,
-    "lh": 3.304,
-    "ra": 2.5585,
-    "rh": 2.9306,
-    "betaGq": 0.4186,
+    "la": 2.8846,
+    "lh": 3.3038,
+    "ra": 2.5586,
+    "rh": 2.9305,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -9062,7 +9151,7 @@
       "xa": 1.046
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -9076,7 +9165,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892764",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "VGK -135",
+    "mlAway": -135.0,
+    "mlHome": 114.0,
+    "total": 6.5,
+    "over": -105.0,
+    "under": -115.0,
+    "mlAwayOpen": -135.0,
+    "mlHomeOpen": 114.0
+   },
    "goalies": {
     "away": {
      "name": "Adin Hill",
@@ -9106,9 +9205,9 @@
       "tokenId": "71877968490064908814791841416861850010150277771518032084588907374925482969639",
       "status": "open",
       "periodType": null,
-      "ask": 0.55,
-      "bid": 0.54,
-      "volume": 91.86782699999999,
+      "ask": 0.56,
+      "bid": 0.55,
+      "volume": 106.91208099999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -9121,9 +9220,9 @@
       "tokenId": "96360900466937401338047991171044277668056231829243962725259795674695513121007",
       "status": "open",
       "periodType": null,
-      "ask": 0.46,
-      "bid": 0.45,
-      "volume": 91.86782699999999,
+      "ask": 0.45,
+      "bid": 0.44,
+      "volume": 106.91208099999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -9141,7 +9240,7 @@
       "tokenId": "32419993880267936120654562195659271966151196312869742186374186484334063911074",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
+      "ask": 0.82,
       "bid": 0.8,
       "volume": 5.0,
       "fee": {
@@ -9160,7 +9259,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.2,
-      "bid": 0.19,
+      "bid": 0.18,
       "volume": 5.0,
       "fee": {
        "rate": 0.05,
@@ -9178,7 +9277,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.6,
-      "bid": 0.56,
+      "bid": 0.59,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9195,7 +9294,7 @@
       "tokenId": "9307309867257658814825400074884329166051619168589202311286873653320794093097",
       "status": "open",
       "periodType": null,
-      "ask": 0.44,
+      "ask": 0.41,
       "bid": 0.4,
       "volume": null,
       "fee": {
@@ -9214,7 +9313,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.49,
-      "bid": 0.46,
+      "bid": 0.48,
       "volume": 1066.666667,
       "fee": {
        "rate": 0.05,
@@ -9231,7 +9330,7 @@
       "tokenId": "61158554088228848760513125209400202725761348643931379679896423749853607593109",
       "status": "open",
       "periodType": null,
-      "ask": 0.54,
+      "ask": 0.52,
       "bid": 0.51,
       "volume": 1066.666667,
       "fee": {
@@ -9249,8 +9348,8 @@
       "tokenId": "19102275810734771968304638123841826369829261636682982919671723933111337607369",
       "status": "open",
       "periodType": null,
-      "ask": 0.28,
-      "bid": 0.24,
+      "ask": 0.29,
+      "bid": 0.26,
       "volume": 17.277375,
       "fee": {
        "rate": 0.05,
@@ -9267,8 +9366,8 @@
       "tokenId": "32997635318220247017535458895586766628051737250149254085574486999907955721072",
       "status": "open",
       "periodType": null,
-      "ask": 0.76,
-      "bid": 0.72,
+      "ask": 0.74,
+      "bid": 0.71,
       "volume": 17.277375,
       "fee": {
        "rate": 0.05,
@@ -9285,8 +9384,8 @@
       "tokenId": "22700486423097995698340454161565346567154498424102975493149833410740460119790",
       "status": "open",
       "periodType": null,
-      "ask": 0.36,
-      "bid": 0.34,
+      "ask": 0.34,
+      "bid": 0.31,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9303,8 +9402,8 @@
       "tokenId": "115241020166054102993631956035814976143289752362060931439377043374231711831862",
       "status": "open",
       "periodType": null,
-      "ask": 0.66,
-      "bid": 0.64,
+      "ask": 0.69,
+      "bid": 0.66,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9321,8 +9420,8 @@
       "tokenId": "111151041966595499758326975372479114864092727022517364239634099307490802404759",
       "status": "open",
       "periodType": null,
-      "ask": 0.54,
-      "bid": 0.03,
+      "ask": 0.21,
+      "bid": 0.05,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9339,8 +9438,8 @@
       "tokenId": "3802107104199228066775198735984229258767358059345066213457445019181521533457",
       "status": "open",
       "periodType": null,
-      "ask": 0.97,
-      "bid": 0.46,
+      "ask": 0.95,
+      "bid": 0.79,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9357,8 +9456,8 @@
       "tokenId": "90612392477477450424179866480193283249018634646566189045529756703280676788448",
       "status": "open",
       "periodType": null,
-      "ask": 0.17,
-      "bid": 0.13,
+      "ask": 0.16,
+      "bid": 0.14,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9375,8 +9474,8 @@
       "tokenId": "45592979105519522072612934365459376683665067520623557065023313631027271787845",
       "status": "open",
       "periodType": null,
-      "ask": 0.87,
-      "bid": 0.83,
+      "ask": 0.86,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9393,8 +9492,8 @@
       "tokenId": "19475488792131540495410121304251621990042609274766324308341863569374052847207",
       "status": "open",
       "periodType": null,
-      "ask": 0.26,
-      "bid": 0.22,
+      "ask": 0.25,
+      "bid": 0.23,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9411,8 +9510,8 @@
       "tokenId": "77077987273782243025404417739598724676516004397864138278937216897456965605013",
       "status": "open",
       "periodType": null,
-      "ask": 0.78,
-      "bid": 0.74,
+      "ask": 0.77,
+      "bid": 0.75,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9429,7 +9528,7 @@
       "tokenId": "102535493531302459223199113921021379438078953384702886116151437369381375705813",
       "status": "open",
       "periodType": null,
-      "ask": 0.26,
+      "ask": 0.33,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -9448,7 +9547,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.74,
+      "bid": 0.67,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9465,8 +9564,8 @@
       "tokenId": "105125121365786972021908427188969245186922646422039265335809931925830417546011",
       "status": "open",
       "periodType": null,
-      "ask": 0.23,
-      "bid": 0.21,
+      "ask": 0.22,
+      "bid": 0.2,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9483,8 +9582,8 @@
       "tokenId": "53899451136749587721735159599348368722355643378319917155918223530865336305143",
       "status": "open",
       "periodType": null,
-      "ask": 0.79,
-      "bid": 0.77,
+      "ask": 0.8,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9502,7 +9601,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.961,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9519,7 +9618,7 @@
       "tokenId": "61119106694217822391212089957387505286253371145086040125551801006649921316447",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.039,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -9537,8 +9636,8 @@
       "tokenId": "85599132013470256559508208139922228592516598852146996274978112813470905640819",
       "status": "open",
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.86,
+      "ask": 0.89,
+      "bid": 0.85,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9555,8 +9654,8 @@
       "tokenId": "109397257208070790737967366122553234477276976132225780896726989913214902568084",
       "status": "open",
       "periodType": null,
-      "ask": 0.14,
-      "bid": 0.12,
+      "ask": 0.15,
+      "bid": 0.11,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9573,7 +9672,7 @@
       "tokenId": "10880463477373118563617676753523809138834354782755515296805605696852417867983",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
+      "ask": 0.22,
       "bid": 0.18,
       "volume": null,
       "fee": {
@@ -9592,7 +9691,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.82,
-      "bid": 0.8,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9609,8 +9708,8 @@
       "tokenId": "107782449127345705084105037202443679698688834925033757803776314366833488049482",
       "status": "open",
       "periodType": null,
-      "ask": 0.09,
-      "bid": 0.06,
+      "ask": 0.1,
+      "bid": 0.07,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9627,8 +9726,8 @@
       "tokenId": "111174082736818049053207671846870308692848562038695822208720520929531796398082",
       "status": "open",
       "periodType": null,
-      "ask": 0.94,
-      "bid": 0.91,
+      "ask": 0.93,
+      "bid": 0.9,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9637,22 +9736,15 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
-      "injuries": [
-       {
-        "name": "Noah Hanifin",
-        "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-10T20:34Z"
-       }
-      ],
+      "injuries": [],
       "roster": [
        {
         "id": 8477964,
@@ -9728,6 +9820,11 @@
         "id": 8479639,
         "position": "D",
         "name": "Dylan Coghlan"
+       },
+       {
+        "id": 8482141,
+        "position": "D",
+        "name": "Lukas Cormier"
        },
        {
         "id": 8478396,
@@ -9943,8 +10040,8 @@
     "la": 3.3646,
     "lh": 2.9789,
     "ra": 2.9844,
-    "rh": 2.6423,
-    "betaGq": 0.4186,
+    "rh": 2.6422,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -10062,7 +10159,7 @@
       "xa": 1.021
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -10076,7 +10173,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892758",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "BOS -120",
+    "mlAway": 100.0,
+    "mlHome": -120.0,
+    "total": 6.5,
+    "over": -115.0,
+    "under": -105.0,
+    "mlAwayOpen": 100.0,
+    "mlHomeOpen": -120.0
+   },
    "goalies": {
     "away": {
      "name": "Logan Thompson",
@@ -10084,7 +10191,7 @@
     },
     "home": {
      "name": "Jeremy Swayman",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "market": {
@@ -10108,7 +10215,7 @@
       "periodType": null,
       "ask": 0.48,
       "bid": 0.47,
-      "volume": 172.204056,
+      "volume": 185.658854,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10123,7 +10230,7 @@
       "periodType": null,
       "ask": 0.53,
       "bid": 0.52,
-      "volume": 172.204056,
+      "volume": 185.658854,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10177,8 +10284,8 @@
       "tokenId": "55204930856901827128063324752172759337628839248852010590742372631110750303913",
       "status": "open",
       "periodType": null,
-      "ask": 0.6,
-      "bid": 0.58,
+      "ask": 0.63,
+      "bid": 0.61,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10195,8 +10302,8 @@
       "tokenId": "97464868787360726171707295205401698277581085130203037266527096170995508869565",
       "status": "open",
       "periodType": null,
-      "ask": 0.42,
-      "bid": 0.4,
+      "ask": 0.39,
+      "bid": 0.37,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10213,9 +10320,9 @@
       "tokenId": "62706303542428916471027913396016435976488673621888221950998913426594001349408",
       "status": "open",
       "periodType": null,
-      "ask": 0.49,
-      "bid": 0.48,
-      "volume": null,
+      "ask": 0.51,
+      "bid": 0.5,
+      "volume": 111.033334,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10231,9 +10338,9 @@
       "tokenId": "81737697203894228107251535694253939723333383801525109113052832837341136197542",
       "status": "open",
       "periodType": null,
-      "ask": 0.52,
-      "bid": 0.51,
-      "volume": null,
+      "ask": 0.5,
+      "bid": 0.49,
+      "volume": 111.033334,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10250,8 +10357,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.29,
-      "bid": 0.26,
-      "volume": null,
+      "bid": 0.28,
+      "volume": 6.896552,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10267,9 +10374,9 @@
       "tokenId": "36042120904608829579228809853813768179070199166658854665083486832337253104062",
       "status": "open",
       "periodType": null,
-      "ask": 0.74,
+      "ask": 0.72,
       "bid": 0.71,
-      "volume": null,
+      "volume": 6.896552,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10285,9 +10392,9 @@
       "tokenId": "73006647919519509571371132355028425112089912804811282305997399162612759220040",
       "status": "open",
       "periodType": null,
-      "ask": 0.34,
-      "bid": 0.31,
-      "volume": null,
+      "ask": 0.33,
+      "bid": 0.3,
+      "volume": 65.16,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10303,9 +10410,9 @@
       "tokenId": "28755254803121010418526391261621974159408556827989017343046938503620618939178",
       "status": "open",
       "periodType": null,
-      "ask": 0.69,
-      "bid": 0.66,
-      "volume": null,
+      "ask": 0.7,
+      "bid": 0.67,
+      "volume": 65.16,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10321,8 +10428,8 @@
       "tokenId": "21468762799225087851717681374292059962146960049958072715372809080888395196879",
       "status": "open",
       "periodType": null,
-      "ask": 0.9,
-      "bid": 0.05,
+      "ask": 0.56,
+      "bid": 0.06,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10339,8 +10446,8 @@
       "tokenId": "13938022702136460487307449973106553929089977912902592542159204173833391342886",
       "status": "open",
       "periodType": null,
-      "ask": 0.95,
-      "bid": 0.1,
+      "ask": 0.94,
+      "bid": 0.44,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10357,8 +10464,8 @@
       "tokenId": "64071941819212444208820111425112455931061825274734825921114181631041853081382",
       "status": "open",
       "periodType": null,
-      "ask": 0.21,
-      "bid": 0.18,
+      "ask": 0.22,
+      "bid": 0.19,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10375,8 +10482,8 @@
       "tokenId": "99659385839630180967557801491232226405235835994745189736896730268467108764933",
       "status": "open",
       "periodType": null,
-      "ask": 0.82,
-      "bid": 0.79,
+      "ask": 0.81,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10393,7 +10500,7 @@
       "tokenId": "11594661072598275790518783826203986234861130740432353898750226329172664701500",
       "status": "open",
       "periodType": null,
-      "ask": 0.28,
+      "ask": 0.27,
       "bid": 0.25,
       "volume": null,
       "fee": {
@@ -10412,7 +10519,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.75,
-      "bid": 0.72,
+      "bid": 0.73,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10429,7 +10536,7 @@
       "tokenId": "20578128708881382160944115532569301386932194169751170647984142925765408411947",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
+      "ask": 0.5,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -10448,7 +10555,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.19,
+      "bid": 0.5,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10465,8 +10572,8 @@
       "tokenId": "40922353640857537656888691245521021850843326128508348957297632873981720139665",
       "status": "open",
       "periodType": null,
-      "ask": 0.19,
-      "bid": 0.15,
+      "ask": 0.18,
+      "bid": 0.16,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10483,8 +10590,8 @@
       "tokenId": "73808438970936863075398100080569829633570021880802366660463047491249299486620",
       "status": "open",
       "periodType": null,
-      "ask": 0.85,
-      "bid": 0.81,
+      "ask": 0.84,
+      "bid": 0.82,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10502,7 +10609,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.951,
+      "bid": 0.963,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10519,7 +10626,7 @@
       "tokenId": "13060168241235517773680600225860427071012427246298458086083381669921371116293",
       "status": "open",
       "periodType": null,
-      "ask": 0.049,
+      "ask": 0.037,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -10537,7 +10644,7 @@
       "tokenId": "40332131494608008563199952483515692969424998444689291271201870326367066146752",
       "status": "open",
       "periodType": null,
-      "ask": 0.89,
+      "ask": 0.91,
       "bid": 0.87,
       "volume": null,
       "fee": {
@@ -10556,7 +10663,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.13,
-      "bid": 0.11,
+      "bid": 0.09,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10573,8 +10680,8 @@
       "tokenId": "101487723914601320250616839452926673877522937621233672030127097350436010531848",
       "status": "open",
       "periodType": null,
-      "ask": 0.21,
-      "bid": 0.19,
+      "ask": 0.23,
+      "bid": 0.2,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10591,8 +10698,8 @@
       "tokenId": "1572587216061368592532610246963554538125185711369605010055654547937316802020",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
-      "bid": 0.79,
+      "ask": 0.8,
+      "bid": 0.77,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10609,8 +10716,8 @@
       "tokenId": "68477160964427021117107763278066012949056080514933077179682248056859615895604",
       "status": "open",
       "periodType": null,
-      "ask": 0.1,
-      "bid": 0.07,
+      "ask": 0.11,
+      "bid": 0.09,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10627,8 +10734,8 @@
       "tokenId": "69137708731426531707422139523509877519460306880124204395203935143763457684690",
       "status": "open",
       "periodType": null,
-      "ask": 0.93,
-      "bid": 0.9,
+      "ask": 0.91,
+      "bid": 0.89,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10637,26 +10744,26 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
+        "name": "Vincent Desharnais",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-20T16:03Z"
+       },
+       {
         "name": "Rasmus Sandin",
         "position": "D",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-09T17:28Z"
-       },
-       {
-        "name": "Vincent Desharnais",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-23T20:39Z"
        }
       ],
       "roster": [
@@ -10927,11 +11034,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.0394,
-    "lh": 3.4396,
-    "ra": 2.696,
-    "rh": 3.051,
-    "betaGq": 0.4186,
+    "la": 3.0396,
+    "lh": 3.4392,
+    "ra": 2.6961,
+    "rh": 3.0506,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -10976,21 +11083,8 @@
       "id": 8480280,
       "gq": -0.1268,
       "mode": "named",
-      "status": "Expected",
-      "candidates": [
-       {
-        "id": 8480022,
-        "name": "Michael DiPietro",
-        "gq": -0.0803,
-        "mode": "named"
-       },
-       {
-        "id": 8480280,
-        "name": "Jeremy Swayman",
-        "gq": -0.1268,
-        "mode": "named"
-       }
-      ],
+      "status": "Confirmed",
+      "candidates": [],
       "table": [
        {
         "id": 8480280,
@@ -11036,7 +11130,7 @@
       "xa": 0.993
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -11050,7 +11144,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892765",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "UTAH -162",
+    "mlAway": 136.0,
+    "mlHome": -162.0,
+    "total": 6.5,
+    "over": -130.0,
+    "under": 110.0,
+    "mlAwayOpen": 136.0,
+    "mlHomeOpen": -162.0
+   },
    "goalies": {
     "away": {
      "name": "Lukas Dostal",
@@ -11080,9 +11184,9 @@
       "tokenId": "17431632124095347980690236190082265374425481645996447251119136214362351847043",
       "status": "open",
       "periodType": null,
-      "ask": 0.42,
-      "bid": 0.41,
-      "volume": 114.642858,
+      "ask": 0.41,
+      "bid": 0.4,
+      "volume": 155.04963800000002,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11095,9 +11199,9 @@
       "tokenId": "16812949081991004365634520685217525835434016343649241601788313936263565957567",
       "status": "open",
       "periodType": null,
-      "ask": 0.59,
-      "bid": 0.58,
-      "volume": 114.642858,
+      "ask": 0.6,
+      "bid": 0.59,
+      "volume": 155.04963800000002,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11187,9 +11291,9 @@
       "tokenId": "28149758845789195108359153382017144635336005817242235369190994722324568729529",
       "status": "open",
       "periodType": null,
-      "ask": 0.57,
-      "bid": 0.55,
-      "volume": null,
+      "ask": 0.55,
+      "bid": 0.54,
+      "volume": 8.591916000000001,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11205,9 +11309,9 @@
       "tokenId": "68648347057390536306512841354839510471668933355993187702959564323417181069838",
       "status": "open",
       "periodType": null,
-      "ask": 0.45,
-      "bid": 0.43,
-      "volume": null,
+      "ask": 0.46,
+      "bid": 0.45,
+      "volume": 8.591916000000001,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11223,8 +11327,8 @@
       "tokenId": "728027578788526881177956779165515860257799460226931678257021765953986769917",
       "status": "open",
       "periodType": null,
-      "ask": 0.35,
-      "bid": 0.33,
+      "ask": 0.34,
+      "bid": 0.32,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11241,8 +11345,8 @@
       "tokenId": "6551158765077075099682606646049768705383969616749196215848487176340222208288",
       "status": "open",
       "periodType": null,
-      "ask": 0.67,
-      "bid": 0.65,
+      "ask": 0.68,
+      "bid": 0.66,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11260,7 +11364,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.39,
-      "bid": 0.35,
+      "bid": 0.36,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11277,7 +11381,7 @@
       "tokenId": "91442822404823007613818463758163393860763918378402940465103883301052508783771",
       "status": "open",
       "periodType": null,
-      "ask": 0.65,
+      "ask": 0.64,
       "bid": 0.61,
       "volume": null,
       "fee": {
@@ -11295,7 +11399,7 @@
       "tokenId": "24149092146374000259543898062966347161680987605930253846331332742608320047447",
       "status": "open",
       "periodType": null,
-      "ask": 0.32,
+      "ask": 0.41,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -11314,7 +11418,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.68,
+      "bid": 0.59,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11367,8 +11471,8 @@
       "tokenId": "107444261347598167617580207175817866694261456528965762922438609238848337113285",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
-      "bid": 0.2,
+      "ask": 0.22,
+      "bid": 0.21,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11385,8 +11489,8 @@
       "tokenId": "104682349288580981366330485047358881880742526976278552889483721873073912732799",
       "status": "open",
       "periodType": null,
-      "ask": 0.8,
-      "bid": 0.76,
+      "ask": 0.79,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11403,7 +11507,7 @@
       "tokenId": "96631435485511328051376920562385354055441207237235942475567709360158617066926",
       "status": "open",
       "periodType": null,
-      "ask": 0.66,
+      "ask": 0.17,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -11422,7 +11526,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.34,
+      "bid": 0.83,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11439,8 +11543,8 @@
       "tokenId": "104044123497677541927351245772966938158497610290864382273585285511210399163522",
       "status": "open",
       "periodType": null,
-      "ask": 0.16,
-      "bid": 0.12,
+      "ask": 0.14,
+      "bid": 0.13,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11457,8 +11561,8 @@
       "tokenId": "31640035343517226517731647214525518256753974984296291539820544555706009881741",
       "status": "open",
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.84,
+      "ask": 0.87,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11476,7 +11580,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.973,
+      "bid": 0.963,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11493,7 +11597,7 @@
       "tokenId": "20423746426668735429399477065655901774342259803818865912575653567908065615548",
       "status": "open",
       "periodType": null,
-      "ask": 0.027,
+      "ask": 0.037,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -11611,11 +11715,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -11745,6 +11849,11 @@
         "name": "Ian Moore"
        },
        {
+        "id": 8484859,
+        "position": "D",
+        "name": "Stian Solberg"
+       },
+       {
         "id": 8483521,
         "position": "D",
         "name": "Noah Warren"
@@ -11769,16 +11878,16 @@
      "home": {
       "injuries": [
        {
-        "name": "Dylan Guenther",
-        "position": "RW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-18T18:29Z"
-       },
-       {
         "name": "John Marino",
         "position": "D",
         "status": "Injured Reserve",
-        "updatedAt": "2026-11-18T18:29Z"
+        "updatedAt": "2026-11-20T20:04Z"
+       },
+       {
+        "name": "Dylan Guenther",
+        "position": "RW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-20T19:59Z"
        },
        {
         "name": "Nick Schmaltz",
@@ -11945,11 +12054,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.1062,
-    "lh": 3.7328,
-    "ra": 2.7552,
-    "rh": 3.311,
-    "betaGq": 0.4186,
+    "la": 3.1061,
+    "lh": 3.7325,
+    "ra": 2.7551,
+    "rh": 3.3107,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -12067,7 +12176,7 @@
       "xa": 0.966
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -12081,7 +12190,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892766",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "MIN -285",
+    "mlAway": -285.0,
+    "mlHome": 230.0,
+    "total": 6.5,
+    "over": -112.0,
+    "under": -108.0,
+    "mlAwayOpen": -305.0,
+    "mlHomeOpen": 245.0
+   },
    "goalies": {
     "away": {
      "name": "Jesper Wallstedt",
@@ -12113,7 +12232,7 @@
       "periodType": null,
       "ask": 0.73,
       "bid": 0.72,
-      "volume": 2826.846936,
+      "volume": 4729.606798999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -12128,7 +12247,7 @@
       "periodType": null,
       "ask": 0.28,
       "bid": 0.27,
-      "volume": 2826.846936,
+      "volume": 4729.606798999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -12146,7 +12265,7 @@
       "tokenId": "111829533723905694241857968040525136277950324024341894928283029770202232716905",
       "status": "open",
       "periodType": null,
-      "ask": 0.83,
+      "ask": 0.82,
       "bid": 0.8,
       "volume": 16.273806,
       "fee": {
@@ -12165,7 +12284,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.2,
-      "bid": 0.17,
+      "bid": 0.18,
       "volume": 16.273806,
       "fee": {
        "rate": 0.05,
@@ -12218,7 +12337,7 @@
       "tokenId": "48750471445184781309626506967786118118308327213370041861842587393710182405572",
       "status": "open",
       "periodType": null,
-      "ask": 0.51,
+      "ask": 0.5,
       "bid": 0.49,
       "volume": null,
       "fee": {
@@ -12237,7 +12356,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.51,
-      "bid": 0.49,
+      "bid": 0.5,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12254,8 +12373,8 @@
       "tokenId": "88677248255056435237639338393199066193668343718846338164916159051596687915151",
       "status": "open",
       "periodType": null,
-      "ask": 0.31,
-      "bid": 0.28,
+      "ask": 0.3,
+      "bid": 0.27,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12272,8 +12391,8 @@
       "tokenId": "39210035245936171706654820393563189439963808075037695511440402135271734369783",
       "status": "open",
       "periodType": null,
-      "ask": 0.72,
-      "bid": 0.69,
+      "ask": 0.73,
+      "bid": 0.7,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12290,9 +12409,9 @@
       "tokenId": "91150726007871969763888733109677720219883842966529577165752477040472648035124",
       "status": "open",
       "periodType": null,
-      "ask": 0.54,
+      "ask": 0.52,
       "bid": 0.51,
-      "volume": 714.2099999999999,
+      "volume": 996.69804,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -12309,8 +12428,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.49,
-      "bid": 0.46,
-      "volume": 714.2099999999999,
+      "bid": 0.48,
+      "volume": 996.69804,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -12326,7 +12445,7 @@
       "tokenId": "52416706652505317732961035136676044765215956470933764516634916982290391614494",
       "status": "open",
       "periodType": null,
-      "ask": 0.44,
+      "ask": 0.3,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -12345,7 +12464,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.56,
+      "bid": 0.7,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12362,8 +12481,8 @@
       "tokenId": "54693932295002722385962202815551660510423532691903343170865280355536719122027",
       "status": "open",
       "periodType": null,
-      "ask": 0.07,
-      "bid": 0.04,
+      "ask": 0.09,
+      "bid": 0.06,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12380,8 +12499,8 @@
       "tokenId": "50345649166053982301015623041461114841052206540268498874819117214393776581064",
       "status": "open",
       "periodType": null,
-      "ask": 0.96,
-      "bid": 0.93,
+      "ask": 0.94,
+      "bid": 0.91,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12398,9 +12517,9 @@
       "tokenId": "34808400103893929024860517457626211291833628074802336527487349040751091509705",
       "status": "open",
       "periodType": null,
-      "ask": 0.12,
-      "bid": 0.1,
-      "volume": null,
+      "ask": 0.13,
+      "bid": 0.12,
+      "volume": 89.333334,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -12416,9 +12535,9 @@
       "tokenId": "39732808389682690648798767652242911537926916330154168434799411258763057120547",
       "status": "open",
       "periodType": null,
-      "ask": 0.9,
-      "bid": 0.88,
-      "volume": null,
+      "ask": 0.88,
+      "bid": 0.87,
+      "volume": 89.333334,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -12434,8 +12553,8 @@
       "tokenId": "18684926024859695126609557626856053720881043744100797850955482019450061742618",
       "status": "open",
       "periodType": null,
-      "ask": 0.47,
-      "bid": 0.07,
+      "ask": 0.21,
+      "bid": 0.12,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12452,8 +12571,8 @@
       "tokenId": "93375056896360220729367737732655137473460397864399833291803591608926992232287",
       "status": "open",
       "periodType": null,
-      "ask": 0.93,
-      "bid": 0.53,
+      "ask": 0.88,
+      "bid": 0.79,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12470,8 +12589,8 @@
       "tokenId": "84915359220378609850706757919188947032146690520947928065810007454664958562886",
       "status": "open",
       "periodType": null,
-      "ask": 0.41,
-      "bid": 0.38,
+      "ask": 0.38,
+      "bid": 0.36,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12488,8 +12607,8 @@
       "tokenId": "87344217519862323519308475124821144928517754158418249687428565774781730444564",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
-      "bid": 0.59,
+      "ask": 0.64,
+      "bid": 0.62,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12578,7 +12697,7 @@
       "tokenId": "76582728262462943963379472136771838969886057830005070165238256162067429522033",
       "status": "open",
       "periodType": null,
-      "ask": 0.23,
+      "ask": 0.22,
       "bid": 0.2,
       "volume": null,
       "fee": {
@@ -12597,7 +12716,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.8,
-      "bid": 0.77,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12615,7 +12734,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.11,
-      "bid": 0.07,
+      "bid": 0.08,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12632,7 +12751,7 @@
       "tokenId": "49630814145285090135976861068568452507163560730740181126135003930221693073575",
       "status": "open",
       "periodType": null,
-      "ask": 0.93,
+      "ask": 0.92,
       "bid": 0.89,
       "volume": null,
       "fee": {
@@ -12642,11 +12761,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -12655,7 +12774,7 @@
         "name": "Yakov Trenin",
         "position": "C",
         "status": "Day-To-Day",
-        "updatedAt": "2026-11-20T14:41Z"
+        "updatedAt": "2026-11-20T19:16Z"
        },
        {
         "name": "Quinn Hughes",
@@ -12721,11 +12840,6 @@
         "id": 8477446,
         "position": "C",
         "name": "Michael McCarron"
-       },
-       {
-        "id": 8475752,
-        "position": "C",
-        "name": "Tyler Pitlick"
        },
        {
         "id": 8485702,
@@ -12968,10 +13082,10 @@
    "v4": {
     "version": "v4-independent",
     "la": 4.2991,
-    "lh": 2.5586,
+    "lh": 2.5587,
     "ra": 3.8133,
-    "rh": 2.2695,
-    "betaGq": 0.4186,
+    "rh": 2.2696,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -13083,7 +13197,7 @@
       "xa": 1.129
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   },
   {
@@ -13097,7 +13211,17 @@
    "state": "FUT",
    "final": null,
    "espnId": "401892767",
-   "odds": null,
+   "odds": {
+    "provider": "DraftKings",
+    "details": "SJ -118",
+    "mlAway": -102.0,
+    "mlHome": -118.0,
+    "total": 6.5,
+    "over": -108.0,
+    "under": -112.0,
+    "mlAwayOpen": -102.0,
+    "mlHomeOpen": -118.0
+   },
    "goalies": {
     "away": {
      "name": "Philipp Grubauer",
@@ -13127,9 +13251,9 @@
       "tokenId": "70513799645307373560829119150141193324492585528435747351746927453206543415019",
       "status": "open",
       "periodType": null,
-      "ask": 0.48,
-      "bid": 0.47,
-      "volume": 21.3,
+      "ask": 0.49,
+      "bid": 0.48,
+      "volume": 40.54,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -13142,9 +13266,9 @@
       "tokenId": "100113915709129723857246574201734317830870079953871914317706626307318442133818",
       "status": "open",
       "periodType": null,
-      "ask": 0.53,
-      "bid": 0.52,
-      "volume": 21.3,
+      "ask": 0.52,
+      "bid": 0.51,
+      "volume": 40.54,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -13163,8 +13287,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.83,
-      "bid": 0.8,
-      "volume": null,
+      "bid": 0.82,
+      "volume": 5.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -13180,9 +13304,9 @@
       "tokenId": "38279213025311366633403198010075378772031771174272144913525352648231100604718",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
+      "ask": 0.18,
       "bid": 0.17,
-      "volume": null,
+      "volume": 5.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -13198,7 +13322,7 @@
       "tokenId": "115691727712496908819418573102908229145521026458093543334972949341422932011035",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
+      "ask": 0.61,
       "bid": 0.59,
       "volume": null,
       "fee": {
@@ -13217,7 +13341,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.41,
-      "bid": 0.38,
+      "bid": 0.39,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13234,8 +13358,8 @@
       "tokenId": "16312131819250919268464623566319156056775008678984124440123525821669465455018",
       "status": "open",
       "periodType": null,
-      "ask": 0.51,
-      "bid": 0.48,
+      "ask": 0.5,
+      "bid": 0.49,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13252,8 +13376,8 @@
       "tokenId": "46002762821543535120015313554659671458649240516323290496463791786955392511526",
       "status": "open",
       "periodType": null,
-      "ask": 0.52,
-      "bid": 0.49,
+      "ask": 0.51,
+      "bid": 0.5,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13270,8 +13394,8 @@
       "tokenId": "65568469739610539716366291772855100844637892993325094857544501847936775340868",
       "status": "open",
       "periodType": null,
-      "ask": 0.29,
-      "bid": 0.28,
+      "ask": 0.3,
+      "bid": 0.27,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13288,8 +13412,8 @@
       "tokenId": "28076726698510438995304009202496774313817836194045523162897143257729946182685",
       "status": "open",
       "periodType": null,
-      "ask": 0.72,
-      "bid": 0.71,
+      "ask": 0.73,
+      "bid": 0.7,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13342,7 +13466,7 @@
       "tokenId": "96644903074139364523908219888935268780934856279625641658192087685781688366728",
       "status": "open",
       "periodType": null,
-      "ask": 0.93,
+      "ask": 0.13,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -13361,7 +13485,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.07,
+      "bid": 0.87,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13378,8 +13502,8 @@
       "tokenId": "67542985957364656989583700553628776521401153090836815558425446207519988481955",
       "status": "open",
       "periodType": null,
-      "ask": 0.22,
-      "bid": 0.19,
+      "ask": 0.2,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13396,8 +13520,8 @@
       "tokenId": "102733739877837217210981391267858310761297610806035475884505545077128624712049",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
-      "bid": 0.78,
+      "ask": 0.82,
+      "bid": 0.8,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13415,7 +13539,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.28,
-      "bid": 0.25,
+      "bid": 0.27,
       "volume": 5.0,
       "fee": {
        "rate": 0.05,
@@ -13432,7 +13556,7 @@
       "tokenId": "32610312273001311806543324772671800622369571574270643292985487344276740481657",
       "status": "open",
       "periodType": null,
-      "ask": 0.75,
+      "ask": 0.73,
       "bid": 0.72,
       "volume": 5.0,
       "fee": {
@@ -13450,7 +13574,7 @@
       "tokenId": "85692947706964181931170730024032921208254568226711247327460538952593473438470",
       "status": "open",
       "periodType": null,
-      "ask": 0.64,
+      "ask": 0.37,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -13469,7 +13593,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.36,
+      "bid": 0.63,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13558,7 +13682,7 @@
       "tokenId": "85263382953564957658310342597756395049239348430044373300330574275870698582732",
       "status": "open",
       "periodType": null,
-      "ask": 0.89,
+      "ask": 0.9,
       "bid": 0.87,
       "volume": null,
       "fee": {
@@ -13577,7 +13701,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.13,
-      "bid": 0.11,
+      "bid": 0.1,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13658,11 +13782,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-20T15:08:07Z",
+    "fetchedAt": "2026-11-20T21:43:57Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-20T15:08:09.041847+00:00",
+    "checkedAt": "2026-11-20T21:43:57.992939+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -13983,11 +14107,11 @@
    },
    "v4": {
     "version": "v4-independent",
-    "la": 3.3483,
+    "la": 3.3485,
     "lh": 3.4317,
-    "ra": 2.97,
+    "ra": 2.9701,
     "rh": 3.0439,
-    "betaGq": 0.4186,
+    "betaGq": 0.41905,
     "calib": 1.0152,
     "goalies": {
      "away": {
@@ -14092,7 +14216,7 @@
       "xa": 1.081
      }
     },
-    "at": "2026-11-20T15:08:24Z"
+    "at": "2026-11-20T21:43:59Z"
    }
   }
  ]
