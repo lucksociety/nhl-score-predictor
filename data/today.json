@@ -1,7 +1,7 @@
 {
  "date": "2026-11-19",
- "generatedAt": "2026-11-19T22:02:19Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-11-20T02:31:29Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020351,
@@ -11,7 +11,7 @@
    "awayName": "Buffalo Sabres",
    "homeName": "Washington Capitals",
    "venue": "Capital One Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892746",
    "odds": {
@@ -588,18 +588,107 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.1198,
+    "lh": 3.4727,
+    "ra": 2.7673,
+    "rh": 3.0803,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Ukko-Pekka Luukkonen",
+      "id": 8480045,
+      "gq": -0.0624,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8479312,
+        "name": "A. Lyon",
+        "gq": -0.1051,
+        "share": 0.396,
+        "shots": 1701
+       },
+       {
+        "id": 8480045,
+        "name": "U. Luukkonen",
+        "gq": -0.0624,
+        "share": 0.353,
+        "shots": 2486
+       },
+       {
+        "id": 8481551,
+        "name": "C. Ellis",
+        "gq": -0.0254,
+        "share": 0.251,
+        "shots": 500
+       }
+      ]
+     },
+     "home": {
+      "name": "Logan Thompson",
+      "id": 8480313,
+      "gq": -0.1496,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8480313,
+        "name": "L. Thompson",
+        "gq": -0.1496,
+        "share": 0.747,
+        "shots": 2872
+       },
+       {
+        "id": 8479292,
+        "name": "C. Lindgren",
+        "gq": -0.0333,
+        "share": 0.249,
+        "shots": 1769
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 194,
+     "home": 1318
+    },
+    "form": {
+     "away": {
+      "gf": 0.972,
+      "ga": 1.032,
+      "xf": 0.984,
+      "xa": 1.023
+     },
+     "home": {
+      "gf": 1.033,
+      "ga": 1.075,
+      "xf": 1.022,
+      "xa": 1.044
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
-       {
-        "name": "Mattias Samuelsson",
-        "position": "D",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-19T16:37Z"
-       },
        {
         "name": "Konsta Helenius",
         "position": "C",
@@ -897,103 +986,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.1198,
-    "lh": 3.4727,
-    "ra": 2.7673,
-    "rh": 3.0803,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Ukko-Pekka Luukkonen",
-      "id": 8480045,
-      "gq": -0.0624,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8479312,
-        "name": "A. Lyon",
-        "gq": -0.1051,
-        "share": 0.396,
-        "shots": 1701
-       },
-       {
-        "id": 8480045,
-        "name": "U. Luukkonen",
-        "gq": -0.0624,
-        "share": 0.353,
-        "shots": 2486
-       },
-       {
-        "id": 8481551,
-        "name": "C. Ellis",
-        "gq": -0.0254,
-        "share": 0.251,
-        "shots": 500
-       }
-      ]
-     },
-     "home": {
-      "name": "Logan Thompson",
-      "id": 8480313,
-      "gq": -0.1496,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8480313,
-        "name": "L. Thompson",
-        "gq": -0.1496,
-        "share": 0.747,
-        "shots": 2872
-       },
-       {
-        "id": 8479292,
-        "name": "C. Lindgren",
-        "gq": -0.0333,
-        "share": 0.249,
-        "shots": 1769
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 2,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 194,
-     "home": 1318
-    },
-    "form": {
-     "away": {
-      "gf": 0.972,
-      "ga": 1.032,
-      "xf": 0.984,
-      "xa": 1.023
-     },
-     "home": {
-      "gf": 1.033,
-      "ga": 1.075,
-      "xf": 1.022,
-      "xa": 1.044
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": null
    }
   },
   {
@@ -1004,7 +997,7 @@
    "awayName": "Los Angeles Kings",
    "homeName": "Toronto Maple Leafs",
    "venue": "Scotiabank Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892742",
    "odds": {
@@ -1581,8 +1574,96 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.2449,
+    "lh": 3.0482,
+    "ra": 2.8783,
+    "rh": 2.7038,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Darcy Kuemper",
+      "id": 8475311,
+      "gq": -0.0627,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8475311,
+        "name": "D. Kuemper",
+        "gq": -0.0627,
+        "share": 0.603,
+        "shots": 2824
+       },
+       {
+        "id": 8476341,
+        "name": "A. Forsberg",
+        "gq": -0.0907,
+        "share": 0.397,
+        "shots": 1941
+       }
+      ]
+     },
+     "home": {
+      "name": "Anthony Stolarz",
+      "id": 8476932,
+      "gq": -0.1123,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8475683,
+        "name": "S. Bobrovsky",
+        "gq": -0.0679,
+        "share": 0.547,
+        "shots": 3112
+       },
+       {
+        "id": 8476932,
+        "name": "A. Stolarz",
+        "gq": -0.1123,
+        "share": 0.444,
+        "shots": 1707
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 691,
+     "home": 705
+    },
+    "form": {
+     "away": {
+      "gf": 0.941,
+      "ga": 1.008,
+      "xf": 0.993,
+      "xa": 0.96
+     },
+     "home": {
+      "gf": 0.982,
+      "ga": 1.092,
+      "xf": 0.941,
+      "xa": 1.045
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1936,96 +2017,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.2449,
-    "lh": 3.0482,
-    "ra": 2.8783,
-    "rh": 2.7038,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Darcy Kuemper",
-      "id": 8475311,
-      "gq": -0.0627,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8475311,
-        "name": "D. Kuemper",
-        "gq": -0.0627,
-        "share": 0.603,
-        "shots": 2824
-       },
-       {
-        "id": 8476341,
-        "name": "A. Forsberg",
-        "gq": -0.0907,
-        "share": 0.397,
-        "shots": 1941
-       }
-      ]
-     },
-     "home": {
-      "name": "Anthony Stolarz",
-      "id": 8476932,
-      "gq": -0.1123,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8475683,
-        "name": "S. Bobrovsky",
-        "gq": -0.0679,
-        "share": 0.547,
-        "shots": 3112
-       },
-       {
-        "id": 8476932,
-        "name": "A. Stolarz",
-        "gq": -0.1123,
-        "share": 0.444,
-        "shots": 1707
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 2,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 691,
-     "home": 705
-    },
-    "form": {
-     "away": {
-      "gf": 0.941,
-      "ga": 1.008,
-      "xf": 0.993,
-      "xa": 0.96
-     },
-     "home": {
-      "gf": 0.982,
-      "ga": 1.092,
-      "xf": 0.941,
-      "xa": 1.045
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": "LAK recent skater absences not individually modeled: Trevor Moore, Artemi Panarin"
    }
   },
   {
@@ -2036,7 +2028,7 @@
    "awayName": "Montr\u00e9al Canadiens",
    "homeName": "Carolina Hurricanes",
    "venue": "Lenovo Center",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892747",
    "odds": {
@@ -2613,8 +2605,96 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.3089,
+    "lh": 4.2157,
+    "ra": 2.048,
+    "rh": 3.7394,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Jakub Dobes",
+      "id": 8482487,
+      "gq": -0.0996,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8484170,
+        "name": "J. Fowler",
+        "gq": -0.157,
+        "share": 0.738,
+        "shots": 721
+       },
+       {
+        "id": 8482487,
+        "name": "J. Dobes",
+        "gq": -0.0996,
+        "share": 0.262,
+        "shots": 1256
+       }
+      ]
+     },
+     "home": {
+      "name": "Pyotr Kochetkov",
+      "id": 8481611,
+      "gq": -0.0944,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8481611,
+        "name": "P. Kochetkov",
+        "gq": -0.0944,
+        "share": 0.663,
+        "shots": 1483
+       },
+       {
+        "id": 8483548,
+        "name": "B. Bussi",
+        "gq": -0.001,
+        "share": 0.329,
+        "shots": 826
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 1,
+     "home": 5
+    },
+    "b2b": {
+     "away": 1,
+     "home": 0
+    },
+    "km": {
+     "away": 677,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.015,
+      "ga": 0.967,
+      "xf": 1.04,
+      "xa": 1.049
+     },
+     "home": {
+      "gf": 1.165,
+      "ga": 0.868,
+      "xf": 1.132,
+      "xa": 0.891
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2928,96 +3008,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 2.3089,
-    "lh": 4.2157,
-    "ra": 2.048,
-    "rh": 3.7394,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Jakub Dobes",
-      "id": 8482487,
-      "gq": -0.0996,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8484170,
-        "name": "J. Fowler",
-        "gq": -0.157,
-        "share": 0.738,
-        "shots": 721
-       },
-       {
-        "id": 8482487,
-        "name": "J. Dobes",
-        "gq": -0.0996,
-        "share": 0.262,
-        "shots": 1256
-       }
-      ]
-     },
-     "home": {
-      "name": "Pyotr Kochetkov",
-      "id": 8481611,
-      "gq": -0.0944,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8481611,
-        "name": "P. Kochetkov",
-        "gq": -0.0944,
-        "share": 0.663,
-        "shots": 1483
-       },
-       {
-        "id": 8483548,
-        "name": "B. Bussi",
-        "gq": -0.001,
-        "share": 0.329,
-        "shots": 826
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 1,
-     "home": 5
-    },
-    "b2b": {
-     "away": 1,
-     "home": 0
-    },
-    "km": {
-     "away": 677,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 1.015,
-      "ga": 0.967,
-      "xf": 1.04,
-      "xa": 1.049
-     },
-     "home": {
-      "gf": 1.165,
-      "ga": 0.868,
-      "xf": 1.132,
-      "xa": 0.891
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": "MTL recent skater absences not individually modeled: Zack Bolduc"
    }
   },
   {
@@ -3028,7 +3019,7 @@
    "awayName": "New York Islanders",
    "homeName": "Winnipeg Jets",
    "venue": "Canada Life Centre",
-   "state": "FUT",
+   "state": "CRIT",
    "final": null,
    "espnId": "401892749",
    "odds": {
@@ -3049,7 +3040,7 @@
     },
     "home": {
      "name": "Nico Daws",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "market": {
@@ -3605,23 +3596,131 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.1999,
+    "lh": 3.3143,
+    "ra": 2.8383,
+    "rh": 2.9398,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Semyon Varlamov",
+      "id": 8473575,
+      "gq": -0.0908,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8478009,
+        "name": "I. Sorokin",
+        "gq": -0.179,
+        "share": 0.698,
+        "shots": 3659
+       },
+       {
+        "id": 8473575,
+        "name": "S. Varlamov",
+        "gq": -0.0908,
+        "share": 0.298,
+        "shots": 903
+       }
+      ]
+     },
+     "home": {
+      "name": "Nico Daws",
+      "id": 8482076,
+      "gq": -0.0424,
+      "mode": "named",
+      "status": "Expected",
+      "candidates": [
+       {
+        "id": 8482076,
+        "name": "Nico Daws",
+        "gq": -0.0424,
+        "mode": "named"
+       },
+       {
+        "id": 8479973,
+        "name": "Stuart Skinner",
+        "gq": -0.0704,
+        "mode": "named"
+       },
+       {
+        "id": 8483532,
+        "name": "Clay Stevenson",
+        "gq": -0.0177,
+        "mode": "named"
+       }
+      ],
+      "table": [
+       {
+        "id": 8479973,
+        "name": "S. Skinner",
+        "gq": -0.0704,
+        "share": 0.789,
+        "shots": 2910
+       },
+       {
+        "id": 8482076,
+        "name": "N. Daws",
+        "gq": -0.0424,
+        "share": 0.135,
+        "shots": 581
+       },
+       {
+        "id": 8483532,
+        "name": "C. Stevenson",
+        "gq": -0.0177,
+        "share": 0.062,
+        "shots": 212
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 2093,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.001,
+      "ga": 0.956,
+      "xf": 0.981,
+      "xa": 1.036
+     },
+     "home": {
+      "gf": 0.981,
+      "ga": 1.039,
+      "xf": 0.997,
+      "xa": 1.025
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
-        "name": "Jean-Gabriel Pageau",
-        "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-19T17:04Z"
-       },
-       {
         "name": "Logan Stanley",
         "position": "D",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-18T14:37Z"
+        "status": "Out",
+        "updatedAt": "2026-11-19T23:39Z"
        },
        {
         "name": "Alexander Romanov",
@@ -3921,122 +4020,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.1999,
-    "lh": 3.3143,
-    "ra": 2.8383,
-    "rh": 2.9398,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Semyon Varlamov",
-      "id": 8473575,
-      "gq": -0.0908,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8478009,
-        "name": "I. Sorokin",
-        "gq": -0.179,
-        "share": 0.698,
-        "shots": 3659
-       },
-       {
-        "id": 8473575,
-        "name": "S. Varlamov",
-        "gq": -0.0908,
-        "share": 0.298,
-        "shots": 903
-       }
-      ]
-     },
-     "home": {
-      "name": "Nico Daws",
-      "id": 8482076,
-      "gq": -0.0424,
-      "mode": "named",
-      "status": "Expected",
-      "candidates": [
-       {
-        "id": 8482076,
-        "name": "Nico Daws",
-        "gq": -0.0424,
-        "mode": "named"
-       },
-       {
-        "id": 8479973,
-        "name": "Stuart Skinner",
-        "gq": -0.0704,
-        "mode": "named"
-       },
-       {
-        "id": 8483532,
-        "name": "Clay Stevenson",
-        "gq": -0.0177,
-        "mode": "named"
-       }
-      ],
-      "table": [
-       {
-        "id": 8479973,
-        "name": "S. Skinner",
-        "gq": -0.0704,
-        "share": 0.789,
-        "shots": 2910
-       },
-       {
-        "id": 8482076,
-        "name": "N. Daws",
-        "gq": -0.0424,
-        "share": 0.135,
-        "shots": 581
-       },
-       {
-        "id": 8483532,
-        "name": "C. Stevenson",
-        "gq": -0.0177,
-        "share": 0.062,
-        "shots": 212
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 2,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 2093,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 1.001,
-      "ga": 0.956,
-      "xf": 0.981,
-      "xa": 1.036
-     },
-     "home": {
-      "gf": 0.981,
-      "ga": 1.039,
-      "xf": 0.997,
-      "xa": 1.025
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": "NYI recent skater absences not individually modeled: Logan Stanley; WPG recent skater absences not individually modeled: Dylan DeMelo"
    }
   },
   {
@@ -4047,7 +4031,7 @@
    "awayName": "Philadelphia Flyers",
    "homeName": "Ottawa Senators",
    "venue": "Canadian Tire Centre",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892743",
    "odds": {
@@ -4624,8 +4608,103 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.7322,
+    "lh": 3.24,
+    "ra": 2.4235,
+    "rh": 2.8739,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Joseph Woll",
+      "id": 8479361,
+      "gq": -0.1072,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8479361,
+        "name": "J. Woll",
+        "gq": -0.1072,
+        "share": 0.515,
+        "shots": 2132
+       },
+       {
+        "id": 8478435,
+        "name": "D. Vladar",
+        "gq": -0.05,
+        "share": 0.482,
+        "shots": 2071
+       }
+      ]
+     },
+     "home": {
+      "name": "Samuel Ersson",
+      "id": 8481035,
+      "gq": 0.0444,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8476999,
+        "name": "L. Ullmark",
+        "gq": -0.112,
+        "share": 0.496,
+        "shots": 2645
+       },
+       {
+        "id": 8481035,
+        "name": "S. Ersson",
+        "gq": 0.0444,
+        "share": 0.335,
+        "shots": 1797
+       },
+       {
+        "id": 8477992,
+        "name": "J. Johansson",
+        "gq": 0.0342,
+        "share": 0.164,
+        "shots": 1165
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 603,
+     "home": 1664
+    },
+    "form": {
+     "away": {
+      "gf": 0.917,
+      "ga": 1.01,
+      "xf": 0.965,
+      "xa": 0.993
+     },
+     "home": {
+      "gf": 1.015,
+      "ga": 0.945,
+      "xf": 1.034,
+      "xa": 0.938
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4765,20 +4844,14 @@
        {
         "name": "Nick Cousins",
         "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-18T14:37Z"
+        "status": "Out",
+        "updatedAt": "2026-11-19T21:58Z"
        },
        {
         "name": "Hayden Hodgson",
         "position": "RW",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-18T14:37Z"
-       },
-       {
-        "name": "Thomas Chabot",
-        "position": "D",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-18T03:35Z"
+        "status": "Out",
+        "updatedAt": "2026-11-19T21:56Z"
        },
        {
         "name": "Warren Foegele",
@@ -4919,103 +4992,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 2.7322,
-    "lh": 3.24,
-    "ra": 2.4235,
-    "rh": 2.8739,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Joseph Woll",
-      "id": 8479361,
-      "gq": -0.1072,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8479361,
-        "name": "J. Woll",
-        "gq": -0.1072,
-        "share": 0.515,
-        "shots": 2132
-       },
-       {
-        "id": 8478435,
-        "name": "D. Vladar",
-        "gq": -0.05,
-        "share": 0.482,
-        "shots": 2071
-       }
-      ]
-     },
-     "home": {
-      "name": "Samuel Ersson",
-      "id": 8481035,
-      "gq": 0.0444,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8476999,
-        "name": "L. Ullmark",
-        "gq": -0.112,
-        "share": 0.496,
-        "shots": 2645
-       },
-       {
-        "id": 8481035,
-        "name": "S. Ersson",
-        "gq": 0.0444,
-        "share": 0.335,
-        "shots": 1797
-       },
-       {
-        "id": 8477992,
-        "name": "J. Johansson",
-        "gq": 0.0342,
-        "share": 0.164,
-        "shots": 1165
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 2,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 603,
-     "home": 1664
-    },
-    "form": {
-     "away": {
-      "gf": 0.917,
-      "ga": 1.01,
-      "xf": 0.965,
-      "xa": 0.993
-     },
-     "home": {
-      "gf": 1.015,
-      "ga": 0.945,
-      "xf": 1.034,
-      "xa": 0.938
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": "OTT recent skater absences not individually modeled: Nick Cousins, Hayden Hodgson"
    }
   },
   {
@@ -5026,7 +5003,7 @@
    "awayName": "St. Louis Blues",
    "homeName": "Pittsburgh Penguins",
    "venue": "PPG Paints Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892745",
    "odds": {
@@ -5603,8 +5580,96 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.3057,
+    "lh": 3.2858,
+    "ra": 2.9321,
+    "rh": 2.9145,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Joel Hofer",
+      "id": 8480981,
+      "gq": -0.126,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8480981,
+        "name": "J. Hofer",
+        "gq": -0.126,
+        "share": 0.702,
+        "shots": 2022
+       },
+       {
+        "id": 8476412,
+        "name": "J. Binnington",
+        "gq": 0.0015,
+        "share": 0.298,
+        "shots": 2833
+       }
+      ]
+     },
+     "home": {
+      "name": "Arturs Silovs",
+      "id": 8481668,
+      "gq": 0.021,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8483703,
+        "name": "S. Murashov",
+        "gq": -0.0077,
+        "share": 0.502,
+        "shots": 325
+       },
+       {
+        "id": 8481668,
+        "name": "A. Silovs",
+        "gq": 0.021,
+        "share": 0.486,
+        "shots": 1210
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 2,
+     "home": 5
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 898,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.979,
+      "ga": 0.988,
+      "xf": 0.978,
+      "xa": 0.992
+     },
+     "home": {
+      "gf": 1.004,
+      "ga": 1.065,
+      "xf": 1.014,
+      "xa": 1.043
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5612,8 +5677,8 @@
        {
         "name": "Ross Johnston",
         "position": "LW",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-18T14:37Z"
+        "status": "Out",
+        "updatedAt": "2026-11-19T23:56Z"
        },
        {
         "name": "Torey Krug",
@@ -5767,8 +5832,8 @@
        {
         "name": "Nick Robertson",
         "position": "LW",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-19T16:36Z"
+        "status": "Out",
+        "updatedAt": "2026-11-19T23:50Z"
        },
        {
         "name": "Elmer Soderblom",
@@ -5919,96 +5984,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.3057,
-    "lh": 3.2858,
-    "ra": 2.9321,
-    "rh": 2.9145,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Joel Hofer",
-      "id": 8480981,
-      "gq": -0.126,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8480981,
-        "name": "J. Hofer",
-        "gq": -0.126,
-        "share": 0.702,
-        "shots": 2022
-       },
-       {
-        "id": 8476412,
-        "name": "J. Binnington",
-        "gq": 0.0015,
-        "share": 0.298,
-        "shots": 2833
-       }
-      ]
-     },
-     "home": {
-      "name": "Arturs Silovs",
-      "id": 8481668,
-      "gq": 0.021,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8483703,
-        "name": "S. Murashov",
-        "gq": -0.0077,
-        "share": 0.502,
-        "shots": 325
-       },
-       {
-        "id": 8481668,
-        "name": "A. Silovs",
-        "gq": 0.021,
-        "share": 0.486,
-        "shots": 1210
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 2,
-     "home": 5
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 898,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 0.979,
-      "ga": 0.988,
-      "xf": 0.978,
-      "xa": 0.992
-     },
-     "home": {
-      "gf": 1.004,
-      "ga": 1.065,
-      "xf": 1.014,
-      "xa": 1.043
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": "STL recent skater absences not individually modeled: Ross Johnston; PIT recent skater absences not individually modeled: Nick Robertson"
    }
   },
   {
@@ -6019,7 +5995,7 @@
    "awayName": "Edmonton Oilers",
    "homeName": "Tampa Bay Lightning",
    "venue": "Benchmark International Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892744",
    "odds": {
@@ -6040,7 +6016,7 @@
     },
     "home": {
      "name": "Andrei Vasilevskiy",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "market": {
@@ -6596,8 +6572,116 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 2.8105,
+    "lh": 3.313,
+    "ra": 2.4929,
+    "rh": 2.9386,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Devon Levi",
+      "id": 8482221,
+      "gq": -0.0518,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8482221,
+        "name": "D. Levi",
+        "gq": -0.0518,
+        "share": 0.481,
+        "shots": 694
+       },
+       {
+        "id": 8477465,
+        "name": "T. Jarry",
+        "gq": -0.0475,
+        "share": 0.411,
+        "shots": 2428
+       },
+       {
+        "id": 8477035,
+        "name": "M. Tomkins",
+        "gq": -0.0053,
+        "share": 0.099,
+        "shots": 112
+       }
+      ]
+     },
+     "home": {
+      "name": "Andrei Vasilevskiy",
+      "id": 8476883,
+      "gq": -0.1593,
+      "mode": "named",
+      "status": "Expected",
+      "candidates": [
+       {
+        "id": 8483710,
+        "name": "Dennis Hildeby",
+        "gq": -0.0738,
+        "mode": "named"
+       },
+       {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "gq": -0.1593,
+        "mode": "named"
+       }
+      ],
+      "table": [
+       {
+        "id": 8476883,
+        "name": "A. Vasilevskiy",
+        "gq": -0.1593,
+        "share": 0.759,
+        "shots": 3544
+       },
+       {
+        "id": 8483710,
+        "name": "D. Hildeby",
+        "gq": -0.0738,
+        "share": 0.236,
+        "shots": 589
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 289,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 1.112,
+      "ga": 0.917,
+      "xf": 0.972,
+      "xa": 0.953
+     },
+     "home": {
+      "gf": 1.103,
+      "ga": 0.956,
+      "xf": 1.051,
+      "xa": 0.951
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6605,8 +6689,8 @@
        {
         "name": "Ryan Nugent-Hopkins",
         "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-18T14:37Z"
+        "status": "Out",
+        "updatedAt": "2026-11-20T00:24Z"
        },
        {
         "name": "Alec Regula",
@@ -6774,16 +6858,16 @@
      "home": {
       "injuries": [
        {
+        "name": "Zemgus Girgensons",
+        "position": "C",
+        "status": "Out",
+        "updatedAt": "2026-11-19T23:24Z"
+       },
+       {
         "name": "Brandon Hagel",
         "position": "LW",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-19T15:54Z"
-       },
-       {
-        "name": "Zemgus Girgensons",
-        "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-18T18:08Z"
        },
        {
         "name": "Conor Geekie",
@@ -6922,116 +7006,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 2.8105,
-    "lh": 3.313,
-    "ra": 2.4929,
-    "rh": 2.9386,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Devon Levi",
-      "id": 8482221,
-      "gq": -0.0518,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8482221,
-        "name": "D. Levi",
-        "gq": -0.0518,
-        "share": 0.481,
-        "shots": 694
-       },
-       {
-        "id": 8477465,
-        "name": "T. Jarry",
-        "gq": -0.0475,
-        "share": 0.411,
-        "shots": 2428
-       },
-       {
-        "id": 8477035,
-        "name": "M. Tomkins",
-        "gq": -0.0053,
-        "share": 0.099,
-        "shots": 112
-       }
-      ]
-     },
-     "home": {
-      "name": "Andrei Vasilevskiy",
-      "id": 8476883,
-      "gq": -0.1593,
-      "mode": "named",
-      "status": "Expected",
-      "candidates": [
-       {
-        "id": 8483710,
-        "name": "Dennis Hildeby",
-        "gq": -0.0738,
-        "mode": "named"
-       },
-       {
-        "id": 8476883,
-        "name": "Andrei Vasilevskiy",
-        "gq": -0.1593,
-        "mode": "named"
-       }
-      ],
-      "table": [
-       {
-        "id": 8476883,
-        "name": "A. Vasilevskiy",
-        "gq": -0.1593,
-        "share": 0.759,
-        "shots": 3544
-       },
-       {
-        "id": 8483710,
-        "name": "D. Hildeby",
-        "gq": -0.0738,
-        "share": 0.236,
-        "shots": 589
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 2,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 289,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 1.112,
-      "ga": 0.917,
-      "xf": 0.972,
-      "xa": 0.953
-     },
-     "home": {
-      "gf": 1.103,
-      "ga": 0.956,
-      "xf": 1.051,
-      "xa": 0.951
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": "EDM recent skater absences not individually modeled: Ryan Nugent-Hopkins; TBL recent skater absences not individually modeled: Zemgus Girgensons, Brandon Hagel"
    }
   },
   {
@@ -7042,7 +7017,7 @@
    "awayName": "Columbus Blue Jackets",
    "homeName": "Chicago Blackhawks",
    "venue": "United Center",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892748",
    "odds": {
@@ -7063,7 +7038,7 @@
     },
     "home": {
      "name": "Spencer Knight",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "market": {
@@ -7619,8 +7594,109 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.2514,
+    "lh": 2.9535,
+    "ra": 2.884,
+    "rh": 2.6198,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Cam Talbot",
+      "id": 8475660,
+      "gq": -0.0744,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8482982,
+        "name": "J. Greaves",
+        "gq": -0.1084,
+        "share": 0.508,
+        "shots": 1633
+       },
+       {
+        "id": 8475660,
+        "name": "C. Talbot",
+        "gq": -0.0744,
+        "share": 0.489,
+        "shots": 2443
+       }
+      ]
+     },
+     "home": {
+      "name": "Spencer Knight",
+      "id": 8481519,
+      "gq": -0.0859,
+      "mode": "named",
+      "status": "Expected",
+      "candidates": [
+       {
+        "id": 8482123,
+        "name": "Drew Commesso",
+        "gq": -0.0117,
+        "mode": "named"
+       },
+       {
+        "id": 8481519,
+        "name": "Spencer Knight",
+        "gq": -0.0859,
+        "mode": "named"
+       }
+      ],
+      "table": [
+       {
+        "id": 8481519,
+        "name": "S. Knight",
+        "gq": -0.0859,
+        "share": 0.848,
+        "shots": 2403
+       },
+       {
+        "id": 8482821,
+        "name": "A. Soderblom",
+        "gq": 0.0182,
+        "share": 0.151,
+        "shots": 1655
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1182,
+     "home": 0
+    },
+    "form": {
+     "away": {
+      "gf": 0.891,
+      "ga": 1.018,
+      "xf": 0.955,
+      "xa": 1.021
+     },
+     "home": {
+      "gf": 0.903,
+      "ga": 1.135,
+      "xf": 0.908,
+      "xa": 1.064
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7895,109 +7971,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.2514,
-    "lh": 2.9535,
-    "ra": 2.884,
-    "rh": 2.6198,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Cam Talbot",
-      "id": 8475660,
-      "gq": -0.0744,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8482982,
-        "name": "J. Greaves",
-        "gq": -0.1084,
-        "share": 0.508,
-        "shots": 1633
-       },
-       {
-        "id": 8475660,
-        "name": "C. Talbot",
-        "gq": -0.0744,
-        "share": 0.489,
-        "shots": 2443
-       }
-      ]
-     },
-     "home": {
-      "name": "Spencer Knight",
-      "id": 8481519,
-      "gq": -0.0859,
-      "mode": "named",
-      "status": "Expected",
-      "candidates": [
-       {
-        "id": 8482123,
-        "name": "Drew Commesso",
-        "gq": -0.0117,
-        "mode": "named"
-       },
-       {
-        "id": 8481519,
-        "name": "Spencer Knight",
-        "gq": -0.0859,
-        "mode": "named"
-       }
-      ],
-      "table": [
-       {
-        "id": 8481519,
-        "name": "S. Knight",
-        "gq": -0.0859,
-        "share": 0.848,
-        "shots": 2403
-       },
-       {
-        "id": 8482821,
-        "name": "A. Soderblom",
-        "gq": 0.0182,
-        "share": 0.151,
-        "shots": 1655
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 2,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 1182,
-     "home": 0
-    },
-    "form": {
-     "away": {
-      "gf": 0.891,
-      "ga": 1.018,
-      "xf": 0.955,
-      "xa": 1.021
-     },
-     "home": {
-      "gf": 0.903,
-      "ga": 1.135,
-      "xf": 0.908,
-      "xa": 1.064
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": "CHI recent skater absences not individually modeled: Connor Bedard"
    }
   },
   {
@@ -8008,7 +7982,7 @@
    "awayName": "Minnesota Wild",
    "homeName": "Calgary Flames",
    "venue": "Scotiabank Saddledome",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892750",
    "odds": {
@@ -8585,8 +8559,103 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.7211,
+    "lh": 2.693,
+    "ra": 3.3006,
+    "rh": 2.3887,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Jesper Wallstedt",
+      "id": 8482661,
+      "gq": -0.1059,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8482661,
+        "name": "J. Wallstedt",
+        "gq": -0.1059,
+        "share": 0.874,
+        "shots": 1296
+       },
+       {
+        "id": 8475717,
+        "name": "C. Pickard",
+        "gq": 0.014,
+        "share": 0.12,
+        "shots": 990
+       }
+      ]
+     },
+     "home": {
+      "name": "Dustin Wolf",
+      "id": 8481692,
+      "gq": -0.0562,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8481692,
+        "name": "D. Wolf",
+        "gq": -0.0562,
+        "share": 0.555,
+        "shots": 2344
+       },
+       {
+        "id": 8482445,
+        "name": "D. Cooley",
+        "gq": -0.0993,
+        "share": 0.402,
+        "shots": 947
+       },
+       {
+        "id": 8482949,
+        "name": "A. Sergeev",
+        "gq": -0.0135,
+        "share": 0.044,
+        "shots": 53
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 2,
+     "home": 2
+    },
+    "b2b": {
+     "away": 0,
+     "home": 0
+    },
+    "km": {
+     "away": 1692,
+     "home": 1645
+    },
+    "form": {
+     "away": {
+      "gf": 1.091,
+      "ga": 0.877,
+      "xf": 1.088,
+      "xa": 0.945
+     },
+     "home": {
+      "gf": 0.913,
+      "ga": 1.036,
+      "xf": 0.924,
+      "xa": 1.033
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8884,103 +8953,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.7211,
-    "lh": 2.693,
-    "ra": 3.3006,
-    "rh": 2.3887,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Jesper Wallstedt",
-      "id": 8482661,
-      "gq": -0.1059,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8482661,
-        "name": "J. Wallstedt",
-        "gq": -0.1059,
-        "share": 0.874,
-        "shots": 1296
-       },
-       {
-        "id": 8475717,
-        "name": "C. Pickard",
-        "gq": 0.014,
-        "share": 0.12,
-        "shots": 990
-       }
-      ]
-     },
-     "home": {
-      "name": "Dustin Wolf",
-      "id": 8481692,
-      "gq": -0.0562,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8481692,
-        "name": "D. Wolf",
-        "gq": -0.0562,
-        "share": 0.555,
-        "shots": 2344
-       },
-       {
-        "id": 8482445,
-        "name": "D. Cooley",
-        "gq": -0.0993,
-        "share": 0.402,
-        "shots": 947
-       },
-       {
-        "id": 8482949,
-        "name": "A. Sergeev",
-        "gq": -0.0135,
-        "share": 0.044,
-        "shots": 53
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 2,
-     "home": 2
-    },
-    "b2b": {
-     "away": 0,
-     "home": 0
-    },
-    "km": {
-     "away": 1692,
-     "home": 1645
-    },
-    "form": {
-     "away": {
-      "gf": 1.091,
-      "ga": 0.877,
-      "xf": 1.088,
-      "xa": 0.945
-     },
-     "home": {
-      "gf": 0.913,
-      "ga": 1.036,
-      "xf": 0.924,
-      "xa": 1.033
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": "MIN recent skater absences not individually modeled: Yakov Trenin; CGY recent skater absences not individually modeled: Jonathan Huberdeau"
    }
   },
   {
@@ -8991,7 +8964,7 @@
    "awayName": "Anaheim Ducks",
    "homeName": "Colorado Avalanche",
    "venue": "Ball Arena",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892751",
    "odds": {
@@ -9012,7 +8985,7 @@
     },
     "home": {
      "name": "Scott Wedgewood",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "market": {
@@ -9568,8 +9541,116 @@
     "fetchedAt": "2026-11-19T22:02:19Z",
     "host": "https://gamma-api.polymarket.com"
    },
+   "v4": {
+    "version": "v4-independent",
+    "la": 3.2559,
+    "lh": 3.5642,
+    "ra": 2.8879,
+    "rh": 3.1614,
+    "betaGq": 0.41353,
+    "calib": 1.0159,
+    "goalies": {
+     "away": {
+      "name": "Lukas Dostal",
+      "id": 8480843,
+      "gq": -0.046,
+      "mode": "named",
+      "status": "Confirmed",
+      "candidates": [],
+      "table": [
+       {
+        "id": 8478024,
+        "name": "V. Husso",
+        "gq": -0.0067,
+        "share": 0.368,
+        "shots": 1496
+       },
+       {
+        "id": 8476316,
+        "name": "L. Brossoit",
+        "gq": -0.0471,
+        "share": 0.32,
+        "shots": 533
+       },
+       {
+        "id": 8480843,
+        "name": "L. Dostal",
+        "gq": -0.046,
+        "share": 0.311,
+        "shots": 2767
+       }
+      ]
+     },
+     "home": {
+      "name": "Scott Wedgewood",
+      "id": 8475809,
+      "gq": -0.0545,
+      "mode": "named",
+      "status": "Expected",
+      "candidates": [
+       {
+        "id": 8478406,
+        "name": "Mackenzie Blackwood",
+        "gq": -0.1024,
+        "mode": "named"
+       },
+       {
+        "id": 8475809,
+        "name": "Scott Wedgewood",
+        "gq": -0.0545,
+        "mode": "named"
+       }
+      ],
+      "table": [
+       {
+        "id": 8478406,
+        "name": "M. Blackwood",
+        "gq": -0.1024,
+        "share": 0.753,
+        "shots": 2583
+       },
+       {
+        "id": 8475809,
+        "name": "S. Wedgewood",
+        "gq": -0.0545,
+        "share": 0.247,
+        "shots": 1848
+       }
+      ]
+     }
+    },
+    "trainedThrough": "2026-11-18",
+    "rest": {
+     "away": 2,
+     "home": 1
+    },
+    "b2b": {
+     "away": 0,
+     "home": 1
+    },
+    "km": {
+     "away": 1281,
+     "home": 596
+    },
+    "form": {
+     "away": {
+      "gf": 1.113,
+      "ga": 1.125,
+      "xf": 1.04,
+      "xa": 1.045
+     },
+     "home": {
+      "gf": 1.101,
+      "ga": 0.961,
+      "xf": 1.058,
+      "xa": 0.935
+     }
+    },
+    "at": "2026-11-19T22:02:21Z",
+    "frozen": true
+   },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9888,116 +9969,7 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
-    "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
-   },
-   "v4": {
-    "version": "v4-independent",
-    "la": 3.2559,
-    "lh": 3.5642,
-    "ra": 2.8879,
-    "rh": 3.1614,
-    "betaGq": 0.41353,
-    "calib": 1.0159,
-    "goalies": {
-     "away": {
-      "name": "Lukas Dostal",
-      "id": 8480843,
-      "gq": -0.046,
-      "mode": "named",
-      "status": "Confirmed",
-      "candidates": [],
-      "table": [
-       {
-        "id": 8478024,
-        "name": "V. Husso",
-        "gq": -0.0067,
-        "share": 0.368,
-        "shots": 1496
-       },
-       {
-        "id": 8476316,
-        "name": "L. Brossoit",
-        "gq": -0.0471,
-        "share": 0.32,
-        "shots": 533
-       },
-       {
-        "id": 8480843,
-        "name": "L. Dostal",
-        "gq": -0.046,
-        "share": 0.311,
-        "shots": 2767
-       }
-      ]
-     },
-     "home": {
-      "name": "Scott Wedgewood",
-      "id": 8475809,
-      "gq": -0.0545,
-      "mode": "named",
-      "status": "Expected",
-      "candidates": [
-       {
-        "id": 8478406,
-        "name": "Mackenzie Blackwood",
-        "gq": -0.1024,
-        "mode": "named"
-       },
-       {
-        "id": 8475809,
-        "name": "Scott Wedgewood",
-        "gq": -0.0545,
-        "mode": "named"
-       }
-      ],
-      "table": [
-       {
-        "id": 8478406,
-        "name": "M. Blackwood",
-        "gq": -0.1024,
-        "share": 0.753,
-        "shots": 2583
-       },
-       {
-        "id": 8475809,
-        "name": "S. Wedgewood",
-        "gq": -0.0545,
-        "share": 0.247,
-        "shots": 1848
-       }
-      ]
-     }
-    },
-    "trainedThrough": "2026-11-18",
-    "rest": {
-     "away": 2,
-     "home": 1
-    },
-    "b2b": {
-     "away": 0,
-     "home": 1
-    },
-    "km": {
-     "away": 1281,
-     "home": 596
-    },
-    "form": {
-     "away": {
-      "gf": 1.113,
-      "ga": 1.125,
-      "xf": 1.04,
-      "xa": 1.045
-     },
-     "home": {
-      "gf": 1.101,
-      "ga": 0.961,
-      "xf": 1.058,
-      "xa": 0.935
-     }
-    },
-    "at": "2026-11-19T22:02:21Z"
+    "blockReason": "COL recent skater absences not individually modeled: Cale Makar, Gavin Brindley"
    }
   },
   {
@@ -10008,11 +9980,11 @@
    "awayName": "Vancouver Canucks",
    "homeName": "Seattle Kraken",
    "venue": "Climate Pledge Arena",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892752",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "SEA -170",
     "mlAway": 142.0,
     "mlHome": -170.0,
@@ -10029,7 +10001,7 @@
     },
     "home": {
      "name": "Philipp Grubauer",
-     "status": "Expected"
+     "status": "Confirmed"
     }
    },
    "market": {
@@ -10053,7 +10025,7 @@
       "periodType": null,
       "ask": 0.41,
       "bid": 0.4,
-      "volume": 86852.70089299999,
+      "volume": 152453.45252700004,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10068,7 +10040,7 @@
       "periodType": null,
       "ask": 0.6,
       "bid": 0.59,
-      "volume": 86852.70089299999,
+      "volume": 152453.45252700004,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10086,9 +10058,9 @@
       "tokenId": "37342076547788993817270223576938034863104629442643904194061840125706405027523",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
-      "bid": 0.8,
-      "volume": 9.64,
+      "ask": 0.84,
+      "bid": 0.81,
+      "volume": 62.64,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10104,9 +10076,9 @@
       "tokenId": "87242467797725042145616385440576965281896430923994220238989145001507683203622",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
-      "bid": 0.19,
-      "volume": 9.64,
+      "ask": 0.19,
+      "bid": 0.16,
+      "volume": 62.64,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10122,7 +10094,7 @@
       "tokenId": "97149956530076538810363490805091730888861170097083083717138840010643953861065",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
+      "ask": 0.61,
       "bid": 0.6,
       "volume": 58.064515,
       "fee": {
@@ -10141,7 +10113,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.4,
-      "bid": 0.38,
+      "bid": 0.39,
       "volume": 58.064515,
       "fee": {
        "rate": 0.05,
@@ -10158,9 +10130,9 @@
       "tokenId": "98844266091211334589729797775629036677831728866259559735170724124311576585191",
       "status": "open",
       "periodType": null,
-      "ask": 0.51,
-      "bid": 0.5,
-      "volume": 104.00000100000001,
+      "ask": 0.5,
+      "bid": 0.49,
+      "volume": 229.000001,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10176,9 +10148,9 @@
       "tokenId": "91011017485778627778972490794126694647804166265690907514652159695130427001461",
       "status": "open",
       "periodType": null,
-      "ask": 0.5,
-      "bid": 0.49,
-      "volume": 104.00000100000001,
+      "ask": 0.51,
+      "bid": 0.5,
+      "volume": 229.000001,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10195,8 +10167,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.28,
-      "volume": null,
+      "bid": 0.29,
+      "volume": 2.366196,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10212,9 +10184,9 @@
       "tokenId": "67685099143299767020177016972208818148615204766357981152812922118838893981340",
       "status": "open",
       "periodType": null,
-      "ask": 0.72,
+      "ask": 0.71,
       "bid": 0.7,
-      "volume": null,
+      "volume": 2.366196,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10232,7 +10204,7 @@
       "periodType": null,
       "ask": 0.38,
       "bid": 0.37,
-      "volume": 1606.3196010000001,
+      "volume": 1830.9916959999998,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10250,7 +10222,7 @@
       "periodType": null,
       "ask": 0.63,
       "bid": 0.62,
-      "volume": 1606.3196010000001,
+      "volume": 1830.9916959999998,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10266,8 +10238,8 @@
       "tokenId": "26818570337313542132084559062838284029491905760229312994232048904619745093504",
       "status": "open",
       "periodType": null,
-      "ask": 0.14,
-      "bid": 0.11,
+      "ask": 0.13,
+      "bid": 0.1,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10284,8 +10256,8 @@
       "tokenId": "81233608507348790897150132650243436433873075204858483260502158524104232405778",
       "status": "open",
       "periodType": null,
-      "ask": 0.89,
-      "bid": 0.86,
+      "ask": 0.9,
+      "bid": 0.87,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10303,8 +10275,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.28,
-      "bid": 0.26,
-      "volume": null,
+      "bid": 0.27,
+      "volume": 2.270269,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10320,9 +10292,9 @@
       "tokenId": "29802105888500140930158037358916638549766690880816965426178823714875779007886",
       "status": "open",
       "periodType": null,
-      "ask": 0.74,
+      "ask": 0.73,
       "bid": 0.72,
-      "volume": null,
+      "volume": 2.270269,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10340,7 +10312,7 @@
       "periodType": null,
       "ask": 0.22,
       "bid": 0.21,
-      "volume": 5111.014933,
+      "volume": 5113.1415130000005,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10358,7 +10330,7 @@
       "periodType": null,
       "ask": 0.79,
       "bid": 0.78,
-      "volume": 5111.014933,
+      "volume": 5113.1415130000005,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10375,7 +10347,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.07,
-      "bid": 0.04,
+      "bid": 0.03,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10392,7 +10364,7 @@
       "tokenId": "44230034861066496253412725707773665260061086400201172134611526805430194862135",
       "status": "open",
       "periodType": null,
-      "ask": 0.96,
+      "ask": 0.97,
       "bid": 0.93,
       "volume": null,
       "fee": {
@@ -10447,7 +10419,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.964,
+      "bid": 0.963,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10464,7 +10436,7 @@
       "tokenId": "43927591154382113530369958560658972163001410725294199942498348963377639796887",
       "status": "open",
       "periodType": null,
-      "ask": 0.036,
+      "ask": 0.037,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -10484,7 +10456,7 @@
       "periodType": null,
       "ask": 0.9,
       "bid": 0.88,
-      "volume": 9.42222,
+      "volume": 42.75555,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10502,7 +10474,7 @@
       "periodType": null,
       "ask": 0.12,
       "bid": 0.1,
-      "volume": 9.42222,
+      "volume": 42.75555,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10518,9 +10490,9 @@
       "tokenId": "27991837802957012685761166051462620838704499881270850532012380505800575548860",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
+      "ask": 0.23,
       "bid": 0.21,
-      "volume": null,
+      "volume": 3.392403,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10537,8 +10509,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.79,
-      "bid": 0.76,
-      "volume": null,
+      "bid": 0.77,
+      "volume": 3.392403,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10554,7 +10526,7 @@
       "tokenId": "67130522939398925811839724552689833380865345958033827425720248308999705354104",
       "status": "open",
       "periodType": null,
-      "ask": 0.11,
+      "ask": 0.1,
       "bid": 0.09,
       "volume": 162.67,
       "fee": {
@@ -10573,7 +10545,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.91,
-      "bid": 0.89,
+      "bid": 0.9,
       "volume": 162.67,
       "fee": {
        "rate": 0.05,
@@ -10582,11 +10554,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-19T22:02:19Z",
+    "fetchedAt": "2026-11-20T02:31:27Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -10954,21 +10926,8 @@
       "id": 8475831,
       "gq": -0.0328,
       "mode": "named",
-      "status": "Expected",
-      "candidates": [
-       {
-        "id": 8478916,
-        "name": "Joey Daccord",
-        "gq": -0.0641,
-        "mode": "named"
-       },
-       {
-        "id": 8475831,
-        "name": "Philipp Grubauer",
-        "gq": -0.0328,
-        "mode": "named"
-       }
-      ],
+      "status": "Confirmed",
+      "candidates": [],
       "table": [
        {
         "id": 8475831,
@@ -11014,7 +10973,7 @@
       "xa": 1.048
      }
     },
-    "at": "2026-11-19T22:02:21Z"
+    "at": "2026-11-20T02:31:31Z"
    }
   },
   {
@@ -11025,17 +10984,17 @@
    "awayName": "Dallas Stars",
    "homeName": "Vegas Golden Knights",
    "venue": "T-Mobile Arena",
-   "state": "FUT",
+   "state": "PRE",
    "final": null,
    "espnId": "401892753",
    "odds": {
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "details": "VGK -125",
     "mlAway": 105.0,
     "mlHome": -125.0,
     "total": 5.5,
-    "over": -115.0,
-    "under": -105.0,
+    "over": -108.0,
+    "under": -112.0,
     "mlAwayOpen": 105.0,
     "mlHomeOpen": -125.0
    },
@@ -11070,7 +11029,7 @@
       "periodType": null,
       "ask": 0.48,
       "bid": 0.47,
-      "volume": 1407.8136570000001,
+      "volume": 3133.804496999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11085,7 +11044,7 @@
       "periodType": null,
       "ask": 0.53,
       "bid": 0.52,
-      "volume": 1407.8136570000001,
+      "volume": 3133.804496999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11103,9 +11062,9 @@
       "tokenId": "73432260197407021420940266102132324246712425928259959266823783854515024132810",
       "status": "open",
       "periodType": null,
-      "ask": 0.76,
-      "bid": 0.75,
-      "volume": null,
+      "ask": 0.75,
+      "bid": 0.74,
+      "volume": 2.181817,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11121,9 +11080,9 @@
       "tokenId": "86413690784066205523164917655978128164261259786471327361126548502337206137276",
       "status": "open",
       "periodType": null,
-      "ask": 0.25,
-      "bid": 0.24,
-      "volume": null,
+      "ask": 0.26,
+      "bid": 0.25,
+      "volume": 2.181817,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11139,9 +11098,9 @@
       "tokenId": "109050296629396251425676764958154694929621412847168351183409129136229529580857",
       "status": "open",
       "periodType": null,
-      "ask": 0.52,
-      "bid": 0.51,
-      "volume": 48.066668,
+      "ask": 0.5,
+      "bid": 0.49,
+      "volume": 62.352383999999994,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11157,9 +11116,9 @@
       "tokenId": "8660134169952911733403350800009112389133688997803658696430756662214498920278",
       "status": "open",
       "periodType": null,
-      "ask": 0.49,
-      "bid": 0.48,
-      "volume": 48.066668,
+      "ask": 0.51,
+      "bid": 0.5,
+      "volume": 62.352383999999994,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11211,7 +11170,7 @@
       "tokenId": "12414064769641064957291975834342818159438977486971051743471189180378104190349",
       "status": "open",
       "periodType": null,
-      "ask": 0.23,
+      "ask": 0.22,
       "bid": 0.21,
       "volume": 487.0,
       "fee": {
@@ -11230,7 +11189,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.79,
-      "bid": 0.77,
+      "bid": 0.78,
       "volume": 487.0,
       "fee": {
        "rate": 0.05,
@@ -11249,7 +11208,7 @@
       "periodType": null,
       "ask": 0.31,
       "bid": 0.3,
-      "volume": 357.380178,
+      "volume": 466.49445399999996,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11267,7 +11226,7 @@
       "periodType": null,
       "ask": 0.7,
       "bid": 0.69,
-      "volume": 357.380178,
+      "volume": 466.49445399999996,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11320,7 +11279,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.21,
-      "bid": 0.19,
+      "bid": 0.2,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11337,7 +11296,7 @@
       "tokenId": "35009510879075952212674194774535089021349280204951678014154152454899805787198",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
+      "ask": 0.8,
       "bid": 0.79,
       "volume": null,
       "fee": {
@@ -11356,8 +11315,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.26,
-      "bid": 0.24,
-      "volume": 991.16,
+      "bid": 0.25,
+      "volume": 993.3705249999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11373,9 +11332,9 @@
       "tokenId": "2475936085889365530235174090752214172826158758086758356941171072193282770210",
       "status": "open",
       "periodType": null,
-      "ask": 0.76,
+      "ask": 0.75,
       "bid": 0.74,
-      "volume": 991.16,
+      "volume": 993.3705249999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11463,7 +11422,7 @@
       "tokenId": "89860298105050139581378685470369615154243008797384496884886220078733529525417",
       "status": "open",
       "periodType": null,
-      "ask": 0.967,
+      "ask": 0.965,
       "bid": 0.952,
       "volume": 121.875,
       "fee": {
@@ -11482,7 +11441,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.048,
-      "bid": 0.033,
+      "bid": 0.035,
       "volume": 121.875,
       "fee": {
        "rate": 0.05,
@@ -11500,7 +11459,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.85,
-      "bid": 0.82,
+      "bid": 0.81,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11517,7 +11476,7 @@
       "tokenId": "41202630832269229304570363434124430772605925965200518596431025022328202145422",
       "status": "open",
       "periodType": null,
-      "ask": 0.18,
+      "ask": 0.19,
       "bid": 0.15,
       "volume": null,
       "fee": {
@@ -11537,7 +11496,7 @@
       "periodType": null,
       "ask": 0.15,
       "bid": 0.14,
-      "volume": null,
+      "volume": 1.162785,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11555,7 +11514,7 @@
       "periodType": null,
       "ask": 0.86,
       "bid": 0.85,
-      "volume": null,
+      "volume": 1.162785,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11571,9 +11530,9 @@
       "tokenId": "13991483725340371295261170329739163731588622592628413106692966309343680222598",
       "status": "open",
       "periodType": null,
-      "ask": 0.08,
+      "ask": 0.07,
       "bid": 0.05,
-      "volume": null,
+      "volume": 5.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11590,8 +11549,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.92,
-      "volume": null,
+      "bid": 0.93,
+      "volume": 5.0,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11599,11 +11558,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-19T22:02:19Z",
+    "fetchedAt": "2026-11-20T02:31:27Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-19T22:02:19.929433+00:00",
+    "checkedAt": "2026-11-20T02:31:29.288414+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -11631,12 +11590,6 @@
         "position": "D",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-14T15:10Z"
-       },
-       {
-        "name": "Matt Duchene",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-12T16:46Z"
        }
       ],
       "roster": [
@@ -11985,7 +11938,7 @@
       "xa": 0.946
      }
     },
-    "at": "2026-11-19T22:02:21Z"
+    "at": "2026-11-20T02:31:31Z"
    }
   }
  ]
