@@ -71,7 +71,39 @@
     $('copy').addEventListener('click', copyPicks);
     const last = state.results.length ? state.results[state.results.length - 1].date : '—';
     $('datainfo').textContent = `Ratings data: 2025-26 base + ${state.results.length} completed 2026-27 games (through ${last}). Data refreshed ${state.index ? etStamp(state.index.updatedAt) : '—'}. Default model v4-independent (no Vegas input; JS sim verified against Python).`;
+    document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => showTab(b.dataset.tab)));
+    document.addEventListener('click', e => { const b = e.target.closest('.sim-open'); if (b && window.NHLSim) { showTab('simulator'); NHLSim.open(+b.dataset.i); window.scrollTo({ top: 0 }); } });
+    loadRecord();
     await loadDate(today);
+    // No games today: open on the next day that has some, so the page is never empty on arrival.
+    if (!state.games.length && state.index && state.index.days) {
+      for (const d of state.index.days.filter(d => d > today).slice(0, 4)) {
+        $('date').value = d; await loadDate(d);
+        if (state.games.length) { setStatus(`No NHL games on ${esc(today)}. Showing ${esc(d)}. ` + $('status').innerHTML); break; }
+      }
+    }
+  }
+  function showTab(name) {
+    document.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('active', x.dataset.tab === name));
+    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.id === 'tab-' + name));
+  }
+  // ---------- results & record (written by the daily learning workflow)
+  async function loadRecord() {
+    const el = $('record');
+    try {
+      const [rep, bets] = await Promise.all([getJSON('learning/report.json'), getJSON('learning/bet-report.json').catch(() => null)]);
+      const f = v => v == null || isNaN(v) ? '—' : Number(v).toFixed(3);
+      const fr = Object.entries(rep.settled_by_version || {}).map(([k, v]) => `<tr><td>${esc(k)}</td><td>${v.n}</td><td>${pct(v.winner_accuracy, 1)}</td><td>${f(v.log_loss)}</td><td>${v.score_mae_per_team == null ? '—' : v.score_mae_per_team.toFixed(2)}</td><td>${v.total_mae == null ? '—' : v.total_mae.toFixed(2)}</td></tr>`).join('');
+      let html = `<div class="sim-panel"><h3>Forecast record</h3><p class="note">Every game is graded on the last forecast frozen before puck drop. Updated ${etStamp(rep.generated_at)}.</p>
+        <div class="table-wrap"><table><thead><tr><th>Model version</th><th>Games</th><th>Winner right</th><th title="Lower is better. A coin flip scores 0.693.">Log loss</th><th title="Average miss in goals per team">Score miss / team</th><th title="Average miss on total goals">Total miss</th></tr></thead><tbody>${fr || '<tr><td colspan="6" class="muted">No graded games yet.</td></tr>'}</tbody></table></div></div>`;
+      const mv = bets && bets.model_vs_market;
+      if (mv) html += `<div class="sim-panel"><h3>Model against the market</h3><p class="note">Same games, model win probability against the Polymarket price before puck drop. Lower log loss is better.</p>
+        <div class="kv sim-kv"><div><span>Games</span><b>${mv.n}</b></div><div><span>Model log loss</span><b>${f(mv.model_log_loss)}</b></div><div><span>Market log loss</span><b>${f(mv.market_log_loss)}</b></div><div><span>Model winners</span><b>${pct(mv.model_accuracy, 0)}</b></div><div><span>Market winners</span><b>${pct(mv.market_accuracy, 0)}</b></div><div><span>Verdict</span><b style="font-size:13px">${esc(mv.verdict || '—')}</b></div></div></div>`;
+      const br = bets ? Object.entries(bets.settled_by_model_and_market || {}).map(([k, v]) => `<tr><td>${esc(k)}</td><td>${v.n}</td><td>${v.wins}-${v.n - v.wins}</td><td>${pct(v.mean_probability, 1)}</td><td class="${v.flat_cost_roi > 0 ? 'pos' : 'neg'}">${evp(v.flat_cost_roi)}</td></tr>`).join('') : '';
+      if (bets) html += `<div class="sim-panel"><h3>Bet record</h3><p class="note">Posted best bets only, one unit each at the price shown when posted. Samples this small do not show whether the bets make money.</p>
+        <div class="table-wrap"><table><thead><tr><th>Model / rule / market</th><th>Bets</th><th>Won-lost</th><th>Average model chance</th><th>Return</th></tr></thead><tbody>${br || '<tr><td colspan="5" class="muted">No settled bets yet.</td></tr>'}</tbody></table></div></div>`;
+      el.innerHTML = html;
+    } catch (e) { el.innerHTML = `<p class="muted">The record could not be loaded (${esc(e.message)}).</p>`; }
   }
 
   function mergeGames(snap, live) {
@@ -141,12 +173,13 @@
     setStatus('Loading slate for ' + esc(date) + '…');
     state.games = await fetchSlate(date);
     renderSlate();
+    if (window.NHLSim) NHLSim.setGames();
     if (!state.games.length) { setStatus(`No NHL games found for ${esc(date)}.`); return; }
     const noOdds = state.games.filter(g => !(hasML(g.odds) && hasTot(g.odds))).length;
     const nj = state.games.filter(g => g.market).length;
     setStatus(`${state.games.length} game${state.games.length > 1 ? 's' : ''} on ${esc(date)} · odds ${state.liveOk ? 'live from ESPN' : '<span class="warn">from Action snapshot (live ESPN fetch failed)</span>'}` +
       ` · Polymarket markets ${nj}/${state.games.length}${state.jupOk ? ' (live)' : ' <span class="warn">(live Polymarket fetch failed — snapshot only)</span>'}` +
-      (state.snapshotAt ? ` · snapshot ${etStamp(state.snapshotAt)}` : '') + (noOdds ? ` · <span class="warn">${noOdds} without full odds → ratings fallback</span>` : '') + ' · press <b>Simulate</b>.');
+      (state.snapshotAt ? ` · snapshot ${etStamp(state.snapshotAt)}` : '') + (noOdds ? ` · <span class="warn">${noOdds} without full odds → ratings fallback</span>` : '') + ' · the Simulator tab runs one game; <b>Simulate all games</b> on the Forecasts tab runs the slate.');
     $('simulate').disabled = false;
   }
 
@@ -254,7 +287,8 @@
       <div class="goalies"><div>🥅 ${goalieHTML(g.goalies && g.goalies.away)}</div><div>${goalieHTML(g.goalies && g.goalies.home)} 🥅</div></div>
       ${oddsHTML(g)}
       <div id="jup${i}">${jupHTML(g, null)}</div>
-      <div class="res" id="res${i}"><p class="muted" style="text-align:center;margin:14px 0">Press Simulate to run the model.</p></div>
+      <div class="res" id="res${i}"><p class="muted" style="text-align:center;margin:14px 0">Press Simulate all games to run the model.</p></div>
+      <button class="btn-ghost sim-open" data-i="${i}">Open in simulator</button>
     </div>`;
   }
   function renderSlate() {
@@ -320,5 +354,6 @@
     const txt = `Luck Society NHL ${$('model').value === 'v4' ? 'v4-independent' : 'v3'} picks · ${state.date}\n` + lines.join('\n');
     (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => { $('copy').textContent = 'Copied ✓'; setTimeout(() => $('copy').textContent = 'Copy picks', 1500); }).catch(() => prompt('Copy picks:', txt));
   }
+  window.NHLDash = { state, $, etTime, etStamp, esc, pct, cents, pp, logo, lastName, gqOverride, ratingsAsOf, PREC };
   init();
 })();

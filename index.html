@@ -26,38 +26,83 @@
   </div>
 </header>
 <nav class="bar">
-  <div class="controls">
-    <label class="ctl"><span>Date (ET)</span><input type="date" id="date"></label>
-    <label class="ctl"><span>Model</span>
-      <select id="model">
-        <option value="v4" selected>v4-independent (no Vegas)</option>
-        <option value="v3">v3 market-anchored (DraftKings)</option>
-      </select>
-    </label>
-    <label class="ctl"><span>Precision</span>
-      <select id="precision">
-        <option value="std" selected>Standard · 400k sims</option>
-        <option value="full">Full · 800k sims</option>
-      </select>
-    </label>
-    <button id="simulate" class="btn-sim" disabled>Simulate</button>
+  <div class="bar-inner">
+    <div class="tabs" role="tablist">
+      <button data-tab="simulator" class="active">Simulator</button>
+      <button data-tab="forecasts">Forecasts</button>
+      <button data-tab="record">Results &amp; Record</button>
+      <button data-tab="model">How it works</button>
+    </div>
+    <div class="controls">
+      <label class="ctl"><span>Date (ET)</span><input type="date" id="date"></label>
+      <label class="ctl"><span>Model</span>
+        <select id="model">
+          <option value="v4" selected>v4-independent (no Vegas)</option>
+          <option value="v3">v3 market-anchored (DraftKings)</option>
+        </select>
+      </label>
+      <label class="ctl"><span>Precision</span>
+        <select id="precision">
+          <option value="std" selected>Standard · 400k sims</option>
+          <option value="full">Full · 800k sims</option>
+        </select>
+      </label>
+    </div>
   </div>
 </nav>
 <div id="status" class="status">Loading data…</div>
 <div id="progress" class="progress hidden"><div class="bar-fill" id="bar"></div></div>
 <main>
-  <section id="summary" class="summary hidden">
-    <div class="sum-head"><h2>Tonight's Board</h2><button id="copy" class="btn-ghost">Copy picks</button></div>
-    <div class="table-wrap"><table id="sumtable"></table></div>
-    <p class="note" id="sumnote"></p>
+  <section id="tab-simulator" class="tab active">
+    <div class="sim-controls">
+      <label class="ctl sim-grow"><span>Game</span><select id="sim-game"><option value="">Loading games…</option></select></label>
+      <label class="ctl"><span id="sim-ga-lbl">Away goalie</span><select id="sim-goalie-away"></select></label>
+      <label class="ctl"><span id="sim-gh-lbl">Home goalie</span><select id="sim-goalie-home"></select></label>
+      <button id="sim-run" class="btn-sim">Run simulation</button>
+    </div>
+    <div id="sim-note" class="sim-note"></div>
+    <div class="sim-grid">
+      <div class="sim-col">
+        <div class="sim-panel">
+          <div class="sim-row"><h3 id="sim-title">Simulation</h3><span class="muted" id="sim-info"></span></div>
+          <div class="wp" id="sim-bar"></div>
+          <div class="table-wrap"><table><thead><tr><th>Result (incl. OT/shootout)</th><th>Simulated</th><th title="DraftKings moneyline with the bookmaker margin removed">Sportsbook fair</th><th title="Polymarket ask in cents; edit it to the current price">Polymarket ¢</th><th title="Simulated chance minus the Polymarket price">Gap</th></tr></thead><tbody id="sim-odds"></tbody></table></div>
+          <p class="note">Simulated is the model's own number and uses the goalies chosen above. Polymarket is the last ask price captured, where a market exists; you can edit it. The bet rule and its verdict are on the Forecasts tab.</p>
+          <div class="kv sim-kv" id="sim-kv"></div>
+        </div>
+        <div class="sim-panel"><h3>Goalies and absences</h3><div class="sim-lineups" id="sim-xi"></div></div>
+      </div>
+      <div class="sim-col">
+        <div class="sim-panel">
+          <h3>Score probabilities</h3>
+          <div class="sim-heat" id="sim-heat"></div>
+          <p class="note" id="sim-heat-note"></p>
+          <div class="table-wrap"><table><thead><tr><th>Most likely final scores</th><th>Chance</th><th title="Share of games ending on this score that went to overtime or a shootout">Via OT/SO</th></tr></thead><tbody id="sim-top"></tbody></table></div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section id="slate" class="slate"></section>
-</main>
-<footer class="foot">
-  <div class="foot-brand"><img src="assets/logo.jpg" alt=""><span>Luck Society</span></div>
+
+  <section id="tab-forecasts" class="tab">
+    <div class="sum-head"><h2>All games</h2><button id="simulate" class="btn-sim" disabled>Simulate all games</button></div>
+    <section id="summary" class="summary hidden">
+      <div class="sum-head"><h2>Tonight's Board</h2><button id="copy" class="btn-ghost">Copy picks</button></div>
+      <div class="table-wrap"><table id="sumtable"></table></div>
+      <p class="note" id="sumnote"></p>
+    </section>
+    <section id="slate" class="slate"></section>
+  </section>
+
+  <section id="tab-record" class="tab"><div id="record"><p class="muted">Loading record…</p></div></section>
+
+  <section id="tab-model" class="tab"><div class="sim-panel howto">
   <p><b>How it works.</b> A GitHub Action refreshes the schedule (NHL API), ESPN/DraftKings moneylines and totals, probable goalies, Polymarket prediction-market prices and season results every hour from 10 AM to 11 PM ET. When you press <b>Simulate</b> the page also re-pulls live odds and goalies from ESPN and live prices from Polymarket, then runs the selected model for every game. <b>v4-independent</b> (default) uses no betting-market input: a Poisson regression on exponentially weighted goals, MoneyPuck expected goals and shots for/against, the starting goalie's goals-saved-vs-expected, home ice, rest/back-to-backs and travel (refit every update on 2022-23 onward); if the confirmed goalie differs from the one the Action used, the page re-weights with that goalie's rating. <b>v3</b> instead fits the de-vigged DraftKings moneyline and total exactly. Each game is simulated with score effects, goalie pulls/empty nets and 3-on-3 OT/shootout, and the pick is the non-tied score with the lowest expected |away error| + |home error| (OT/SO winner gets +1). The OT label is shown when P(OT | that score) ≥ 55%. Without odds the model falls back to team ratings.</p>
   <p><b>Best bet.</b> For every side of every Polymarket market on the game — moneyline, every over/under line (2.5–9.5) and every alt puck line (±1.5, ±2.5, ±3.5), all fetched with Polymarket's <code>includeAllMarkets=true</code> and all settled on the final score including OT/shootout (shootout winner +1 goal) the model probability q is compared with the ask p: EV per $1 = q / (p + fee) − 1. A bet is recommended only if <b>q &gt; 50% and EV after fee &gt; 0</b>; the best bet is the qualifying side with the highest EV, otherwise the game is <b>NO BET</b>. The same rules drive the Discord <code>/nhl</code> command.</p>
   <p><b>Polymarket edge.</b> Polymarket NHL game markets (Polymarket-sourced) resolve on the final score <i>including overtime and shootouts</i>, so they are compared with the model's win probability including OT/SO. Price = YES ask (cost of one $1 contract). Edge = model % − Polymarket ask; "no-vig" divides by the sum of both asks. EV per $1 = model / (ask + fee) − 1 with fee = 0.07 × p × (1 − p) per contract (Polymarket's published fee table; rounded up to the cent per order).</p>
+  </div></section>
+</main>
+<footer class="foot">
+  <div class="foot-brand"><img src="assets/logo.jpg" alt=""><span>Luck Society</span></div>
   <p id="datainfo" class="muted"></p>
   <p class="muted">For entertainment and contest use. Not betting advice.</p>
 </footer>
@@ -66,5 +111,6 @@
 <script src="js/polymarket.js"></script>
 <script src="js/bets.js"></script>
 <script src="js/app.js"></script>
+<script src="js/simulator.js"></script>
 </body>
 </html>

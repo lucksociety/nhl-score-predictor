@@ -4,8 +4,20 @@
 
 **Live dashboard:** https://lucksociety.github.io/nhl-score-predictor/
 
-Pick a date (defaults to today in Eastern Time) and press **Simulate**. Your browser runs the v3
-exact-score protocol for every game on that date and shows:
+The dashboard has four tabs (same layout as the soccer dashboard):
+
+* **Simulator** (front page, `js/simulator.js`): pick one game and its starting goalies and run the model. It shows win
+  chances including OT/shootout against the sportsbook fair price and the Polymarket ask, totals and two-goal margins,
+  the full final-score grid, the most likely scores, and each club's goalie and listed absences. Changing a goalie
+  re-runs the game with that goalie's rating, by the same rule the forecast uses. Each run uses a fresh random seed.
+* **Forecasts**: every game on the date, the board, the Polymarket edge and the best-bet verdict (fixed seed, as before).
+* **Results & Record**: graded forecasts, model against the market, and the bet record (`learning/*.json`).
+* **How it works**.
+
+If the chosen day has no games, the page opens on the next day that has some.
+
+On the Forecasts tab, press **Simulate all games**. Your browser runs the exact-score protocol for every game on
+that date and shows:
 
 * matchup, puck drop (ET), probable/confirmed goalies
 * the moneyline and total used (DraftKings via ESPN), no-vig win and over probabilities

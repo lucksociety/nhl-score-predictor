@@ -293,6 +293,21 @@
     return o;
   }
 
-  const api = { distributions, pOver, pUnder, pCover, runGameV4, VERSION, PARAMS, simulate, teamRatings, baseRates, fitMarket, analyze, runGame, devig2, mlProb, OT_LABEL };
+  /**
+   * One game for the Simulator tab: the usual summary plus the full final-score grid (0..6+ each side).
+   * job = {rates:[ra, rh], n, seed}, or {game, ratings, opts} to derive the rates with the v3 market fit first.
+   * Final scores include the OT/shootout winner's extra goal, so no cell on the diagonal can occur.
+   */
+  function runGrid(job) {
+    let rates = job.rates, mode = job.mode || 'v4-independent';
+    if (!rates) { const o0 = runGame(job.game, job.ratings, Object.assign({}, job.opts, { n: 20000 })); rates = o0.rates; mode = o0.mode; }
+    const r = simulate(rates[0], rates[1], job.n, job.seed), o = analyze(r), K = 7, g = new Float64Array(K * K);
+    for (let i = 0; i < r.n; i++) g[Math.min(K - 1, r.a[i]) * K + Math.min(K - 1, r.h[i])]++;
+    o.grid = Array.from({ length: K }, (_, x) => Array.from({ length: K }, (_, y) => g[x * K + y] / r.n));
+    o.dist = distributions(r); o.rates = rates; o.mode = mode;
+    return o;
+  }
+
+  const api = { runGrid, distributions, pOver, pUnder, pCover, runGameV4, VERSION, PARAMS, simulate, teamRatings, baseRates, fitMarket, analyze, runGame, devig2, mlProb, OT_LABEL };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.NHLModel = api;
 })(typeof self !== 'undefined' ? self : this);

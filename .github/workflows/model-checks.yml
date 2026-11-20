@@ -29,6 +29,7 @@ jobs:
           node tests/calibration-stress.test.js
           node tests/goalie-sensitivity.test.js
           node tests/score-consistency.test.js
+          node tests/simulator-grid.test.js
       - name: Prospective evaluation regressions
         run: |
           python3 -m unittest discover -s scripts -p test_model_learning.py
