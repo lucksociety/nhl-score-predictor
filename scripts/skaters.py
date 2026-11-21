@@ -9,6 +9,9 @@ POLICY=json.loads((Path(__file__).resolve().parents[1]/'research/skater-policy.j
 OUT={'out','injured reserve','suspension','suspended','inactive'}
 UNCERTAIN={'questionable','day-to-day','day to day','doubtful'}
 PAGE=100   # rows per request to the official stats feed
+# Pages must be requested in a fixed order. Without one the feed's pages overlap: on 21 Nov 2026 the 432 rows for
+# 19 Nov came back as 423 distinct skaters plus 9 repeats, which the completeness check rightly refused.
+SORT='[{"property":"gameId","direction":"ASC"},{"property":"playerId","direction":"ASC"}]'
 
 def norm(s):return ''.join(c for c in unicodedata.normalize('NFKD',s or '').casefold() if c.isalnum())
 def empty():return {'schema':1,'through':None,'season':None,'players':{},'teams':{},'league':{'D':[0.,0.],'F':[0.,0.]},'games':[]}
@@ -74,7 +77,7 @@ def fetch_recent(state,rows,cutoff,get):
         # returning everything at once; when it stops doing that the whole slate loses its skater check.
         nxt=day+dt.timedelta(days=1);got=[];total=None
         while total is None or len(got)<total:
-            query=urllib.parse.urlencode({'isAggregate':'false','isGame':'true','start':len(got),'limit':PAGE,'cayenneExp':f'gameDate>="{day}" and gameDate<"{nxt}" and gameTypeId=2'})
+            query=urllib.parse.urlencode({'isAggregate':'false','isGame':'true','start':len(got),'limit':PAGE,'sort':SORT,'cayenneExp':f'gameDate>="{day}" and gameDate<"{nxt}" and gameTypeId=2'})
             body=get('https://api.nhle.com/stats/rest/en/skater/summary?'+query)
             if not isinstance(body,dict) or not isinstance(body.get('data'),list) or not isinstance(body.get('total'),int):raise ValueError('official skater game-log feed incomplete')
             total=body['total']

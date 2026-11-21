@@ -116,6 +116,9 @@ def test_skater_feed_is_read_in_pages_when_the_server_caps_each_response():
     def get(url):
         q=dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query));lo,hi=re.findall(r'"(\d{4}-\d{2}-\d{2})"',q['cayenneExp'])
         day=[p for p in feed if lo<=p['gameDate']<hi];start=int(q['start']);calls.append((lo,start))
+        # like the real feed: pages only line up when a fixed order is requested; otherwise they overlap
+        if json.loads(q.get('sort','[]'))[:2]!=[{'property':'gameId','direction':'ASC'},{'property':'playerId','direction':'ASC'}]:start=max(0,start-3)
+        day=sorted(day,key=lambda p:(p['gameId'],p['playerId']))
         return {'data':day[start:start+25],'total':len(day)}   # the server never returns more than 25 rows
     state['through']='2026-11-06'
     out=S.fetch_recent(state,rows,'2026-11-09',get)
