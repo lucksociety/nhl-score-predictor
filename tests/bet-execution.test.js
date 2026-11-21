@@ -20,10 +20,12 @@ for (const mod of [
   g => { g.startUTC = null; }, g => { g.state = 'LIVE'; }
 ]) { const g = base(); mod(g); assert.equal(evaluate(g).best, null); }
 const cheap = base(); cheap.market.sides.away.ask = .4; cheap.market.sides.away.bid = .39;
-assert.equal(B.evaluate(cheap, { ...o, pAway: .5001 }, { now }).best, null, 'probability must clear numerical error above 50%');
-assert.equal(B.evaluate(base(), { ...o, pAway: .5 }, { now }).best, null);
-assert.equal(B.evaluate(base(), { ...o, pAway: .5176 }, { now }).best, null, '0.01pp edge is below 400k-sim sampling uncertainty');
-assert.equal(B.evaluate(base(), { ...o, n: undefined }, { now }).best, null, 'unverified simulation count must fail closed');
+// The value test is information only since score-fit-best-price-v1: the line is still the best bet, flagged value:false.
+assert.equal(B.evaluate(base(), o, { now }).best.value, true);
+assert.equal(B.evaluate(cheap, { ...o, pAway: .5001 }, { now }).best.value, false, 'probability must clear numerical error above 50%');
+assert.equal(B.evaluate(base(), { ...o, pAway: .5 }, { now }).best.value, false);
+assert.equal(B.evaluate(base(), { ...o, pAway: .5176 }, { now }).best.value, false, '0.01pp edge is below 400k-sim sampling uncertainty');
+assert.equal(B.evaluate(base(), { ...o, n: undefined }, { now }).best.value, false, 'unverified simulation count is never a value bet');
 const totalGame = base();
 totalGame.market.sides = {};
 totalGame.market.extra = [{ type: 'totals', label: 'O 5.5', ou: 'O', line: 5.5,

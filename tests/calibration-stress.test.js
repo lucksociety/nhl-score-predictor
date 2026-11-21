@@ -5,13 +5,13 @@ const quote=(line,ask)=>({type:'totals',ou:'U',line,ask,bid:ask-.01,volume:100,s
 const g={away:'A',home:'H',startUTC:'2026-11-08T00:00:00Z',state:'FUT',market:{fetchedAt:new Date(now).toISOString(),sides:{},extra:[quote(6.5,.60)]}};
 const d=q=>({tot:[0,0,0,0,0,0,q,1-q],mar:[0]});
 const o={pick:{away:3,home:2},n:400000,pHome:.5,pAway:.5,dist:d(.64)};
-assert(B.evaluate(g,o,{now}).best,'baseline-only edge is positive');
+assert(B.evaluate(g,o,{now}).best.value,'baseline-only edge is positive');
 const before=JSON.stringify(o);
-assert(!B.evaluate(g,{...o,calibrationStress:[{n:100000,pHome:.5,pAway:.5,dist:d(.60)}]},{now}).best,'fragile edge must fail sensitivity check');
+assert.equal(B.evaluate(g,{...o,calibrationStress:[{n:100000,pHome:.5,pAway:.5,dist:d(.60)}]},{now}).best.value,false,'fragile edge must fail the value check');
 assert.equal(JSON.stringify(o),before,'forecast remains immutable');
 const multi={...g,market:{...g.market,extra:[quote(6.5,.55),quote(8.5,.8)]}};
 const dd={tot:[0,0,0,0,0,0,.62,.1,.18,.1],mar:[0]};
-assert.equal(B.evaluate(multi,{...o,dist:dd},{now}).best.label,'Under 8.5','rank confidence among positive-EV qualifiers');
+assert.equal(B.evaluate(multi,{...o,dist:dd},{now}).best.label,'Under 6.5','of the lines that fit the predicted score, the one that pays the most');
 const game={away:'A',home:'H',v4:{ra:3,rh:3,la:3,lh:3,betaGq:0,goalies:{away:{gq:0},home:{gq:0}}}};
 const base=M.runGameV4(game,{n:1000,seed:11,calibrationStress:false});const stressed=M.runGameV4(game,{n:1000,seed:11});
 assert.deepEqual(stressed.pick,base.pick);assert.equal(stressed.pHome,base.pHome);assert.equal(stressed.calibrationStress.length,2);

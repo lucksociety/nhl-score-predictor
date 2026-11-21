@@ -64,7 +64,7 @@ function predictSlate(date, opts = {}) {
     }
     games.push(row);
   }
-  return { date, selectionPolicy:'scoring-quote-fee-goalie-depth-v3', model: modelVersion(slate), sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
+  return { date, selectionPolicy:B.POLICY, model: modelVersion(slate), sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
            priceSource: 'Polymarket ask (Gamma best bid/ask) with conservative rounded-fee upper bound; one-cent quote stress and live depth verification',
            marketFetchedAt: slate.games.map(g => (g.market || g.jupiter)?.fetchedAt).filter(Boolean).sort().pop() || null, games };
 }

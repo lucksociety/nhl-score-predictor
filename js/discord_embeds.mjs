@@ -6,6 +6,8 @@ const LOGO = 'https://lucksociety.github.io/nhl-score-predictor/assets/logo-96.j
 const pct = x => (100 * x).toFixed(1) + '%';
 const cents = x => (100 * x).toFixed(1).replace(/\.0$/, '') + '¢';
 const last = n => (n || '').split(' ').slice(-1)[0];
+// what $1 staked returns in profit if the bet wins, after the fee allowance
+const payout = b => { const cost = Number.isFinite(b.cost) ? b.cost : b.ask + (b.fee || 0); return '$' + ((1 - cost) / cost).toFixed(2); };
 
 // The model's most likely winner as a plain pick, shown when no value bet qualifies.
 // `market` is the no-vig price of that side. A pick is not a value bet.
@@ -35,10 +37,10 @@ export function gameEmbed(g) {
 
   if (g.best) {
     e.color = GOLD;
-    lines.push(`✅ **BEST BET: ${g.best.label}** · model ${pct(g.best.q)} · Polymarket ${cents(g.best.ask)} (${cents(g.best.fee)} fee allowance) · EV **+${pct(g.best.ev)}**`);
-    if (Number.isFinite(g.best.sensitivityMin)) lines.push(`Scoring sensitivity minimum: ${pct(g.best.sensitivityMin)} · EV remains positive after sensitivity and sampling checks (stress test, not a confidence interval).`);
-    if(g.best.executionVerified) lines.push(`Execution: ≥${g.best.requiredDepth} contracts available at quoted ask · positive EV after one-cent price stress`);
-    if (g.others && g.others.length) lines.push(`Also qualifies: ${g.others.map(c => `${c.label} ${pct(c.q)} @ ${cents(c.ask)} (+${pct(c.ev)})`).join(' · ')}`);
+    lines.push(`✅ **BEST BET: ${g.best.label}** · Polymarket ${cents(g.best.ask)} (${cents(g.best.fee)} fee allowance) · pays **${payout(g.best)}** per $1 if it wins · model ${pct(g.best.q)}`);
+    lines.push(`Fits the predicted score ${g.away} ${g.pick.away}–${g.pick.home} ${g.home} and pays the most of the lines that do.`);
+    if(g.best.executionVerified) lines.push(`Execution: ≥${g.best.requiredDepth} contracts available at quoted ask`);
+    if (g.others && g.others.length) lines.push(`Also fits the score: ${g.others.map(c => `${c.label} @ ${cents(c.ask)} (model ${pct(c.q)})`).join(' · ')}`);
   } else {
     e.color = GREEN;
     lines.push(`⛔ **NO BET** — ${g.noBetReason}`);
@@ -68,8 +70,8 @@ export function payloads(P) {
   const head = {
     title: `🍀 Luck Society NHL — ${P.date}`, url: SITE, color: GOLD, thumbnail: { url: LOGO },
     description: `${P.games.length} games · model **${String(P.model || 'v4-independent').replace(/-skater-v1$/, '')}** (no Vegas input) · ${(P.sims / 1000).toFixed(0)}k Monte Carlo sims/game\n` +
-      `Best bets: **${bets.length}** ${bets.length ? '— ' + bets.map(g => `${g.best.label} (+${pct(g.best.ev)})`).join(', ') : ''}\n` +
-      `-# Every Polymarket market checked (moneyline, all O/U lines, all alt puck lines; settle on final score incl. OT/SO). Rule: model >50%, +EV after rounded-fee bound, scoring/one-cent quote stress and verified depth. Prices as of ${P.jupiterFetchedAt ? new Date(P.jupiterFetchedAt).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }) + ' ET' : 'n/a'}. Not financial advice.`,
+      `Best bets: **${bets.length}** ${bets.length ? '— ' + bets.map(g => `${g.best.label} (${cents(g.best.ask)})`).join(', ') : ''}\n` +
+      `-# Every Polymarket market checked (moneyline, all O/U lines, all alt puck lines; settle on final score incl. OT/SO). Rule: the line that wins at the predicted score and pays the most, with verified depth. Not a value bet. Prices as of ${P.jupiterFetchedAt ? new Date(P.jupiterFetchedAt).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }) + ' ET' : 'n/a'}. Not financial advice.`,
     footer: { text: 'Luck Society · score = min-expected-error pick · OT/SO winner +1' },
   };
   const embeds = [head, ...P.games.map(gameEmbed)];
