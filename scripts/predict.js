@@ -4,6 +4,14 @@
  * writes data/predictions/DATE.json. --check adds a seed-stability check (5 extra seeds on each game). */
 const fs = require('fs'), path = require('path');
 const M = require('../js/model.js'), B = require('../js/bets.js');
+// The version label the grader files this slate under. It comes from the forecasts themselves (v4_model.VERSION),
+// newest first, so a slate that still holds a few forecasts frozen under an older version is filed as the current one.
+function modelVersion(slate) {
+  const all = slate.games.map(g => g.v4 && g.v4.version).filter(Boolean).sort().reverse();
+  const skater = slate.games.some(g => g.v4?.skaterAdjustment);
+  const base = (all[0] || 'v4-independent').replace(/-skater-v1$/, '');
+  return skater ? base + '-skater-v1' : base;
+}
 const ROOT = path.join(__dirname, '..');
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : d; };
 function etDate(d = new Date()) { return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(d); }
@@ -56,7 +64,7 @@ function predictSlate(date, opts = {}) {
     }
     games.push(row);
   }
-  return { date, selectionPolicy:'scoring-quote-fee-goalie-depth-v3', model: slate.games.some(g=>g.v4?.skaterAdjustment) ? 'v4-independent-skater-v1' : 'v4-independent', sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
+  return { date, selectionPolicy:'scoring-quote-fee-goalie-depth-v3', model: modelVersion(slate), sims: n, seed, generatedAt: new Date().toISOString(), totalMs: Date.now() - t0,
            priceSource: 'Polymarket ask (Gamma best bid/ask) with conservative rounded-fee upper bound; one-cent quote stress and live depth verification',
            marketFetchedAt: slate.games.map(g => (g.market || g.jupiter)?.fetchedAt).filter(Boolean).sort().pop() || null, games };
 }

@@ -116,8 +116,8 @@ def annotate(slates, rows, now=None):
     # this never hurt and improved holdout log-likelihood in 2025-26 and 2026-27)
     tail = recs[-1000:]; calib = sum(f['a'] + f['h'] for f in tail) / sum(sum(M.predict(f, b)) for f in tail)
     through = rows[-1]['date']; bq = float(b[1 + M.FEATS.index('ogq')])
-    model = dict(version='v4-independent', trainedThrough=through, trainedAt=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
-                 coef=dict(zip(['b0'] + M.FEATS, [round(float(x), 5) for x in b])), calib=round(calib, 5), hp=M.HP, scale=M.SCALE, games=len(rows),
+    model = dict(version=M.VERSION, trainedThrough=through, trainedAt=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+                 coef=dict(zip(['b0'] + M.FEATS, [round(float(x), 5) for x in b])), calib=round(calib, 5), hp=M.HP, scale=M.SCALE, sim=M.SIM, games=len(rows),
                  league=dict(gf=round(S.lg['gf'], 4), xf=round(S.lg['xf'], 4), sf=round(S.lg['sf'], 3)),
                  teams={t: dict(gf=round((s['gf'] + 20 * S.lg['gf']) / (s['w'] + 20), 3), ga=round((s['ga'] + 20 * S.lg['gf']) / (s['w'] + 20), 3),
                                 xf=round((s['xf'] + 20 * S.lg['xf']) / (s['w'] + 20), 3), xa=round((s['xa'] + 20 * S.lg['xf']) / (s['w'] + 20), 3),
@@ -162,10 +162,12 @@ def annotate(slates, rows, now=None):
                               status=((g.get('goalies') or {}).get(sd) or {}).get('status'),
                               candidates=goalie_candidates(S, g, sd),
                               table=goalie_table(S, g[sd]))
-            g['v4'] = dict(version='v4-independent', la=round(la, 4), lh=round(lh, 4), ra=round(la * M.SCALE, 4), rh=round(lh * M.SCALE, 4),
+            g['v4'] = dict(version=M.VERSION, la=round(la, 4), lh=round(lh, 4), ra=round(la * M.SCALE, 4), rh=round(lh * M.SCALE, 4), sim=dict(M.SIM),
                            betaGq=round(bq, 5), calib=round(calib, 4), goalies=gk, trainedThrough=fit_through,
                            rest=dict(away=f['a_rest'], home=f['h_rest']), b2b=dict(away=f['a_b2b'], home=f['h_b2b']), km=dict(away=round(f['a_km']), home=round(f['h_km'])),
                            form=dict(away=dict(gf=round(f['a_gf'], 3), ga=round(f['a_ga'], 3), xf=round(f['a_xf'], 3), xa=round(f['a_xa'], 3)),
                                      home=dict(gf=round(f['h_gf'], 3), ga=round(f['h_ga'], 3), xf=round(f['h_xf'], 3), xa=round(f['h_xa'], 3))),
+                           recent=dict(away=dict(gf=round(f['a_gf_f'], 3), ga=round(f['a_ga_f'], 3), xf=round(f['a_xf_f'], 3), xa=round(f['a_xa_f'], 3)),
+                                       home=dict(gf=round(f['h_gf_f'], 3), ga=round(f['h_ga_f'], 3), xf=round(f['h_xf_f'], 3), xa=round(f['h_xa_f'], 3))),
                            at=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'))
     return model

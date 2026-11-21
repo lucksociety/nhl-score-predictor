@@ -73,7 +73,23 @@ No API keys or secrets are used anywhere. For entertainment / contest use; not b
 
 ## v4-independent model (default) and the Discord `/nhl` command
 
-**v4-independent** uses no betting-market input, so its edge against Polymarket is a real disagreement with the market, not a DraftKings copy. Features are built only from games before each date: exponentially weighted (half-life 25 games) goals, MoneyPuck score/venue-adjusted xG and shots for and against; the starting goalie's goals vs expected (shrunk); home ice; back-to-backs, rest and travel. A Poisson regression is refit on 2022-23 onward every Action run (`scripts/v4_model.py`, `scripts/v4_update.py`, history in `data/v4/history.csv.gz`). Expected goals feed the same Monte Carlo as v3 (score effects, goalie pulls/empty nets, 3-on-3 OT, shootout).
+**v4-independent** uses no betting-market input, so its edge against Polymarket is a real disagreement with the market, not a DraftKings copy. Features are built only from games before each date: exponentially weighted goals, MoneyPuck score/venue-adjusted xG and shots for and against, each at two speeds (half-life 60 games for underlying quality, 10 games for current form); the starting goalie's goals vs expected (shrunk); home ice; back-to-backs, rest and travel. A Poisson regression is refit on 2021-22 onward every Action run (`scripts/v4_model.py`, `scripts/v4_update.py`, history in `data/v4/history.csv.gz`). Expected goals feed the same Monte Carlo as v3 (score effects, goalie pulls/empty nets, 3-on-3 OT, shootout).
+
+### Version 4.1 (21 Nov 2026)
+
+Two changes, both tested on 4,294 games forecast walk-forward from October 2023 (`research/REVIEW-2026-11-21.md`, reproduce with `python research/walkforward-nov21.py`):
+
+| | v4 | v4.1 | Change (paired SE) |
+|---|---|---|---|
+| Winner log loss | 0.6674 | 0.6658 | −0.0016 (0.0005) |
+| Winners picked | 58.6% | 59.1% | |
+| Exact-score log loss | 3.6675 | 3.6583 | −0.0092 (0.0021) |
+| Wins by 4+ goals, predicted vs actual 16.8% | 19.2% | 16.0% | |
+
+* **Two rating speeds.** v4 kept one 25-game rating. v4.1 keeps a slow one and a fast one and lets the regression weigh them. It learns that long-run goal scoring persists while a short hot streak of goals does not, and that recent shots and chances matter more than recent goals.
+* **Goalie pulls when trailing by three.** The simulator pulled the goalie for a team down three as readily as it does in close games, which turned too many 3-goal wins into 4-goal wins. `v4_model.SIM` (`pull3: 0.4`) is stored on every forecast (`v4.sim`) and used wherever that forecast is simulated; `SCALE` moved from 0.887 to 0.896 to keep the mean total unchanged. Forecasts frozen earlier keep the old settings.
+
+The grader files v4.1 forecasts under `v4.1-independent` (and `v4.1-independent-skater-v1`), separate from the v4 record. The table below is the original v4 backtest.
 
 ### Honest backtest (rolling origin: each season predicted by a model fit only on earlier seasons, 4k sims/game)
 

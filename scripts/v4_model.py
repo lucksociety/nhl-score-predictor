@@ -1,6 +1,7 @@
-"""Model v4-independent: NO betting-market inputs.
-Team strength = exponentially weighted (half-life 25 games, 30% carried over each new season, 20 pseudo-games of league
-average) goals, MoneyPuck score/venue-adjusted xG and shots for/against; starting-goalie quality = shrunk log(GA / xGA faced);
+"""Model v4.1-independent: NO betting-market inputs.
+Team strength = exponentially weighted goals, MoneyPuck score/venue-adjusted xG and shots for/against, kept at two speeds:
+a slow rating (half-life 60 games) for underlying quality and a fast one (half-life 10 games) for current form. Both carry
+30% over each new season and sit on 20 pseudo-games of league average. Starting-goalie quality = shrunk log(GA / xGA faced);
 rest / back-to-back / travel. A Poisson GLM (log link, ridge) maps these to expected goals per team; the Monte Carlo simulator
 (js/model.js, identical to sim_v2.py) turns expected goals into score / win / total / puck-line probabilities.
 Everything for a game uses only games completed before that game's date (no look-ahead)."""
@@ -8,9 +9,18 @@ import csv, gzip, io, json, math, os
 import numpy as np
 from scipy.optimize import minimize
 
-HP = dict(hl=25.0, carry=0.3, n0=20.0, Kx=80.0, lgwin=1300, gk_carry=0.7, ridge=1.0)
-SCALE = 0.887   # final-goal expectation -> simulator regulation rate (sim_v2.SCALE)
-FEATS = ['gf', 'xf', 'sf', 'oga', 'oxa', 'osa', 'ogq', 'home', 'b2b', 'ob2b', 'km', 'tz', 'rest1']
+VERSION = 'v4.1-independent'
+# hl / hl_fast: the two rating speeds. One speed (25 games) was the v4 setting; two speeds beat it on 4,294 walk-forward games
+# (research/REVIEW-2026-11-21.md), and every nearby pair of half-lives gave about the same gain.
+HP = dict(hl=60.0, hl_fast=10.0, carry=0.3, n0=20.0, Kx=80.0, lgwin=1300, gk_carry=0.7, ridge=1.0)
+FIRST_SEASON = 20212022   # seasons the regression is fitted on (all stored history)
+# Simulator settings for this model, stored on every forecast so the browser, Discord and the grader use the same ones.
+# pull3: how early a team trailing by three pulls its goalie, relative to the old assumption (1.0). Real teams rarely do,
+# and the old setting turned too many 3-goal wins into 4-goal wins.
+SIM = dict(pull3=0.4)
+SCALE = 0.896   # final-goal expectation -> simulator regulation rate, so the simulated mean total equals the expectation under SIM
+FEATS = ['gf', 'xf', 'sf', 'oga', 'oxa', 'osa', 'gf_f', 'xf_f', 'sf_f', 'oga_f', 'oxa_f', 'osa_f', 'ogq', 'home', 'b2b', 'ob2b', 'km', 'tz', 'rest1']
+RKEYS = ('gf', 'ga', 'xf', 'xa', 'sf', 'sa')
 ARENA = {
  'ANA':(33.808,-117.877,-8),'ARI':(33.532,-112.261,-7),'UTA':(40.768,-111.901,-7),'BOS':(42.366,-71.062,-5),'BUF':(42.875,-78.876,-5),
  'CGY':(51.037,-114.052,-7),'CAR':(35.803,-78.722,-5),'CHI':(41.881,-87.674,-6),'COL':(39.749,-105.008,-7),'CBJ':(39.969,-83.006,-5),
@@ -59,11 +69,12 @@ def save_history(rows, path=HIST):
 # ---------------- sequential state
 class State:
     def __init__(self, hp=HP):
-        self.hp = hp; self.lam = 0.5 ** (1 / hp['hl']); self.T = {}; self.GK = {}; self.last = {}; self.season = None
+        self.hp = hp; self.lam = 0.5 ** (1 / hp['hl']); self.lam_fast = 0.5 ** (1 / hp['hl_fast']); self.T = {}; self.F = {}; self.GK = {}; self.last = {}; self.season = None
         self.hist = []; self.lg = dict(gf=3.05, xf=2.95, sf=30.0); self.gkname = {}; self.teamgk = {}
     def new_season(self, se):
         if self.season is not None and se != self.season:
             for t in self.T: self.T[t] = {k: v * self.hp['carry'] for k, v in self.T[t].items()}
+            for t in self.F: self.F[t] = {k: v * self.hp['carry'] for k, v in self.F[t].items()}
             for g in self.GK: self.GK[g] = [v * self.hp['gk_carry'] for v in self.GK[g]]
             for t in self.teamgk: self.teamgk[t] = {g: v * 0.5 for g, v in self.teamgk[t].items()}
         self.season = se
@@ -95,6 +106,8 @@ class State:
             rec[side + '_xf'] = (s['xf'] + n0 * lg['xf']) / w / lg['xf']; rec[side + '_xa'] = (s['xa'] + n0 * lg['xf']) / w / lg['xf']
             rec[side + '_sf'] = (s['sf'] + n0 * lg['sf']) / w / lg['sf']; rec[side + '_sa'] = (s['sa'] + n0 * lg['sf']) / w / lg['sf']
             rec[side + '_n'] = s['w']
+            s = self.F.get(tk, dict(w=0, gf=0, ga=0, xf=0, xa=0, sf=0, sa=0)); w = s['w'] + n0   # fast (current form) rating
+            for k in RKEYS: rec[side + '_' + k + '_f'] = (s[k] + n0 * lg[k[0] + 'f']) / w / lg[k[0] + 'f']
             if tk in last:
                 d0, loc = last[tk]; rest = days(date, d0)
                 rec[side + '_rest'] = min(rest, 5); rec[side + '_b2b'] = int(rest == 1)
@@ -116,9 +129,11 @@ class State:
         if xa_ is None or xh_ is None:   # MoneyPuck not yet available: shots x league xG/shot proxy
             xps = self.lg['xf'] / self.lg['sf']; xa_, xh_ = r['sog_a'] * xps, r['sog_h'] * xps
         for t, gf, ga, xf, xa, sf, sa in ((r['away'], ga_, gh_, xa_, xh_, r['sog_a'], r['sog_h']), (r['home'], gh_, ga_, xh_, xa_, r['sog_h'], r['sog_a'])):
-            tk = SAME.get(t, t); s = self.T.setdefault(tk, dict(w=0, gf=0, ga=0, xf=0, xa=0, sf=0, sa=0))
-            for k in s: s[k] *= lam
-            s['w'] += 1; s['gf'] += gf; s['ga'] += ga; s['xf'] += xf; s['xa'] += xa; s['sf'] += sf; s['sa'] += sa
+            tk = SAME.get(t, t)
+            for store, decay in ((self.T, lam), (self.F, self.lam_fast)):
+                s = store.setdefault(tk, dict(w=0, gf=0, ga=0, xf=0, xa=0, sf=0, sa=0))
+                for k in s: s[k] *= decay
+                s['w'] += 1; s['gf'] += gf; s['ga'] += ga; s['xf'] += xf; s['xa'] += xa; s['sf'] += sf; s['sa'] += sa
             self.last[tk] = (r['date'], r['home'])
         for side, team, xg_against in (('a', r['away'], xh_), ('h', r['home'], xa_)):
             lst = r['gsa_' + side] or []; tot = sum(x[1] for x in lst) or 1
@@ -151,7 +166,9 @@ def run_history(rows, hp=HP, collect=True):
 def xrow(f, side):
     o = 'h' if side == 'a' else 'a'
     return [math.log(f[side + '_gf']), math.log(f[side + '_xf']), math.log(f[side + '_sf']), math.log(f[o + '_ga']), math.log(f[o + '_xa']),
-            math.log(f[o + '_sa']), f[o + '_gq'], 1.0 if side == 'h' else 0.0, f[side + '_b2b'], f[o + '_b2b'], f[side + '_km'] / 1000,
+            math.log(f[o + '_sa']),
+            math.log(f[side + '_gf_f']), math.log(f[side + '_xf_f']), math.log(f[side + '_sf_f']), math.log(f[o + '_ga_f']), math.log(f[o + '_xa_f']),
+            math.log(f[o + '_sa_f']), f[o + '_gq'], 1.0 if side == 'h' else 0.0, f[side + '_b2b'], f[o + '_b2b'], f[side + '_km'] / 1000,
             f[side + '_tz'], float(f[side + '_rest'] >= 3) - float(f[o + '_rest'] >= 3)]
 def fit(recs, ridge=HP['ridge']):
     X = np.array([xrow(f, 'a') for f in recs] + [xrow(f, 'h') for f in recs]); y = np.array([f['a'] for f in recs] + [f['h'] for f in recs], float)
@@ -164,7 +181,7 @@ def predict(f, b):
     la = f['lg_gf'] * math.exp(b[0] + float(np.dot(b[1:], xrow(f, 'a'))))
     lh = f['lg_gf'] * math.exp(b[0] + float(np.dot(b[1:], xrow(f, 'h'))))
     return la, lh
-def train(rows, first_season=20222023):
+def train(rows, first_season=FIRST_SEASON):
     S, recs = run_history(rows)
     b = fit([f for f in recs if f['season'] >= first_season])
     return S, b, recs

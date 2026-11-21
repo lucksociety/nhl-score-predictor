@@ -67,7 +67,7 @@ export function payloads(P) {
   const bets = P.games.filter(g => g.best);
   const head = {
     title: `🍀 Luck Society NHL — ${P.date}`, url: SITE, color: GOLD, thumbnail: { url: LOGO },
-    description: `${P.games.length} games · model **v4-independent** (no Vegas input) · ${(P.sims / 1000).toFixed(0)}k Monte Carlo sims/game\n` +
+    description: `${P.games.length} games · model **${String(P.model || 'v4-independent').replace(/-skater-v1$/, '')}** (no Vegas input) · ${(P.sims / 1000).toFixed(0)}k Monte Carlo sims/game\n` +
       `Best bets: **${bets.length}** ${bets.length ? '— ' + bets.map(g => `${g.best.label} (+${pct(g.best.ev)})`).join(', ') : ''}\n` +
       `-# Every Polymarket market checked (moneyline, all O/U lines, all alt puck lines; settle on final score incl. OT/SO). Rule: model >50%, +EV after rounded-fee bound, scoring/one-cent quote stress and verified depth. Prices as of ${P.jupiterFetchedAt ? new Date(P.jupiterFetchedAt).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }) + ' ET' : 'n/a'}. Not financial advice.`,
     footer: { text: 'Luck Society · score = min-expected-error pick · OT/SO winner +1' },

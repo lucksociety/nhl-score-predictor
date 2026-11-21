@@ -3,11 +3,12 @@ The fitted layer adjusts only the difference from the lineup mixture already in 
 """
 import copy,datetime as dt,json,math,unicodedata,urllib.parse
 from pathlib import Path
-from v4_model import SCALE
+from v4_model import SCALE,VERSION
 DATA=Path(__file__).resolve().parents[1]/'data/v4'
 POLICY=json.loads((Path(__file__).resolve().parents[1]/'research/skater-policy.json').read_text()) if (Path(__file__).resolve().parents[1]/'research/skater-policy.json').exists() else {}
 OUT={'out','injured reserve','suspension','suspended','inactive'}
 UNCERTAIN={'questionable','day-to-day','day to day','doubtful'}
+PAGE=100   # rows per request to the official stats feed
 
 def norm(s):return ''.join(c for c in unicodedata.normalize('NFKD',s or '').casefold() if c.isalnum())
 def empty():return {'schema':1,'through':None,'season':None,'players':{},'teams':{},'league':{'D':[0.,0.],'F':[0.,0.]},'games':[]}
@@ -69,11 +70,18 @@ def fetch_recent(state,rows,cutoff,get):
     expected={r['id'] for r in rows if lo<=r['date']<cutoff}
     records=[];day=dt.date.fromisoformat(lo);end=dt.date.fromisoformat(cutoff)
     while day<end:
-        nxt=min(day+dt.timedelta(days=10),end)
-        query=urllib.parse.urlencode({'isAggregate':'false','isGame':'true','start':0,'limit':-1,'cayenneExp':f'gameDate>="{day}" and gameDate<"{nxt}" and gameTypeId=2'})
-        body=get('https://api.nhle.com/stats/rest/en/skater/summary?'+query)
-        if not isinstance(body,dict) or not isinstance(body.get('data'),list) or len(body['data'])!=body.get('total'):raise ValueError('official skater game-log feed incomplete')
-        for p in body['data']:
+        # One day per request, read page by page. A single ten-day request with limit=-1 depends on the server
+        # returning everything at once; when it stops doing that the whole slate loses its skater check.
+        nxt=day+dt.timedelta(days=1);got=[];total=None
+        while total is None or len(got)<total:
+            query=urllib.parse.urlencode({'isAggregate':'false','isGame':'true','start':len(got),'limit':PAGE,'cayenneExp':f'gameDate>="{day}" and gameDate<"{nxt}" and gameTypeId=2'})
+            body=get('https://api.nhle.com/stats/rest/en/skater/summary?'+query)
+            if not isinstance(body,dict) or not isinstance(body.get('data'),list) or not isinstance(body.get('total'),int):raise ValueError('official skater game-log feed incomplete')
+            total=body['total']
+            if not body['data'] and len(got)<total:raise ValueError('official skater game-log feed incomplete')
+            got+=body['data']
+        if len(got)!=total or len({(p['gameId'],p['playerId']) for p in got})!=len(got):raise ValueError('official skater game-log feed incomplete')
+        for p in got:
             if not str(day)<=p['gameDate']<str(nxt):raise ValueError('skater feed returned dates outside request')
             if int(p['gameId']) in expected:records.append(p)
         day=nxt
@@ -149,7 +157,7 @@ def apply_game(g,state,date,policy=POLICY):
                     delta[i]+=bounds[0 if i==adverse_side else 1]
             variants.append({'label':('away'if adverse_side==0 else'home')+' rookie-prior sensitivity','rates':[r*SCALE for r in rates(delta)]})
     v['skaterAdjustment']={'policy':policy['id'],'dataThrough':state['through'],'baseGoals':base,'adjustedGoals':adjusted,'featureDelta':d,'priorOnlyPlayers':{side:[{'id':p['id'],'name':p['name'],'position':p['position'],'productionAbovePositionMean':0.}for p in ps]for side,ps in prior_only.items()},'lineupStatus':'EXPECTED — ranked by prior ice time; not confirmed game-day actives','sides':{s:{'players':contexts[s]['selected'],'absences':matched[s]} for s in ('away','home')},'scenarios':variants}
-    v.update(la=round(adjusted[0],4),lh=round(adjusted[1],4),ra=round(adjusted[0]*SCALE,4),rh=round(adjusted[1]*SCALE,4),version='v4-independent-skater-v1')
+    v.update(la=round(adjusted[0],4),lh=round(adjusted[1],4),ra=round(adjusted[0]*SCALE,4),rh=round(adjusted[1]*SCALE,4),version=VERSION+'-skater-v1')
     a['skaterAdjustment']=v['skaterAdjustment']
 
 def refresh_and_apply(slates,rows,get,now=None):
