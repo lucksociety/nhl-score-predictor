@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generatedAt": "2026-11-21T14:16:30Z",
+ "generatedAt": "2026-11-21T15:27:29Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
  "games": [
   {
@@ -44,9 +44,9 @@
       "tokenId": "26079760334030474583280474607862838049792917772006531097417863946787306091945",
       "status": "open",
       "periodType": null,
-      "ask": 0.58,
+      "ask": 0.57,
       "bid": 0.56,
-      "volume": 313.200424,
+      "volume": 321.972354,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -60,8 +60,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.44,
-      "bid": 0.42,
-      "volume": 313.200424,
+      "bid": 0.43,
+      "volume": 321.972354,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -152,7 +152,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.56,
-      "bid": 0.4,
+      "bid": 0.41,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -169,7 +169,7 @@
       "tokenId": "74199714365404402615100893687642922408693379239185532461465339940081481168583",
       "status": "open",
       "periodType": null,
-      "ask": 0.6,
+      "ask": 0.59,
       "bid": 0.44,
       "volume": null,
       "fee": {
@@ -188,7 +188,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.11,
+      "bid": 0.15,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -205,7 +205,7 @@
       "tokenId": "55682892432384072551713699762124887228423719681199959208515001795480744451544",
       "status": "open",
       "periodType": null,
-      "ask": 0.89,
+      "ask": 0.85,
       "bid": 0.7,
       "volume": null,
       "fee": {
@@ -215,11 +215,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T14:16:29Z",
+    "fetchedAt": "2026-11-21T15:27:29Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T14:16:30.160401+00:00",
+    "checkedAt": "2026-11-21T15:27:29.879905+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -460,6 +460,11 @@
         "name": "Matt Rempe"
        },
        {
+        "id": 8484136,
+        "position": "C",
+        "name": "Max Sasson"
+       },
+       {
         "id": 8483669,
         "position": "L",
         "name": "Adam Sykora"
@@ -546,12 +551,12 @@
       2.8471
      ],
      "adjustedGoals": [
-      3.236841200339622,
-      2.820067448220247
+      3.2348595115227874,
+      2.833688928423222
      ],
      "featureDelta": [
       0.3777783745657469,
-      -0.22498676165790404
+      -0.08709849799075277
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -712,9 +717,9 @@
          "name": "Taylor Raddysh"
         },
         {
-         "id": 8476822,
+         "id": 8484136,
          "position": "C",
-         "name": "Luke Glendening"
+         "name": "Max Sasson"
         },
         {
          "id": 8479323,
@@ -813,23 +818,23 @@
       {
        "label": "NYR questionable skaters OUT",
        "rates": [
-        2.9037934086457193,
-        2.502348177925777
+        2.903606394466617,
+        2.503616564373429
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-21T14:16:31.910596+00:00",
+    "skaterCheckedAt": "2026-11-21T15:27:32.269656+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent-skater-v1",
-    "la": 3.2368,
-    "lh": 2.8201,
-    "ra": 2.9002,
-    "rh": 2.5268,
+    "la": 3.2349,
+    "lh": 2.8337,
+    "ra": 2.8984,
+    "rh": 2.539,
     "sim": {
      "pull3": 0.4
     },
@@ -966,7 +971,7 @@
       "xa": 0.969
      }
     },
-    "at": "2026-11-21T14:16:31Z",
+    "at": "2026-11-21T15:27:32Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-19",
@@ -975,12 +980,12 @@
       2.8471
      ],
      "adjustedGoals": [
-      3.236841200339622,
-      2.820067448220247
+      3.2348595115227874,
+      2.833688928423222
      ],
      "featureDelta": [
       0.3777783745657469,
-      -0.22498676165790404
+      -0.08709849799075277
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -1141,9 +1146,9 @@
          "name": "Taylor Raddysh"
         },
         {
-         "id": 8476822,
+         "id": 8484136,
          "position": "C",
-         "name": "Luke Glendening"
+         "name": "Max Sasson"
         },
         {
          "id": 8479323,
@@ -1242,8 +1247,8 @@
       {
        "label": "NYR questionable skaters OUT",
        "rates": [
-        2.9037934086457193,
-        2.502348177925777
+        2.903606394466617,
+        2.503616564373429
        ]
       }
      ]
@@ -1327,7 +1332,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.64,
+      "bid": 0.66,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1344,7 +1349,7 @@
       "tokenId": "14854500202842374234388634652987051699175906215120239950081565893828052988930",
       "status": "open",
       "periodType": null,
-      "ask": 0.36,
+      "ask": 0.34,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -1362,7 +1367,7 @@
       "tokenId": "73967450385115485335332736297304064804976902972181781216653056550185857906457",
       "status": "open",
       "periodType": null,
-      "ask": 0.68,
+      "ask": 0.67,
       "bid": 0.57,
       "volume": null,
       "fee": {
@@ -1381,7 +1386,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.43,
-      "bid": 0.32,
+      "bid": 0.33,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1398,8 +1403,8 @@
       "tokenId": "41699330774790529906465596949363219706175780105903826061375088423127729153772",
       "status": "open",
       "periodType": null,
-      "ask": 0.56,
-      "bid": 0.33,
+      "ask": 0.53,
+      "bid": 0.38,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1416,8 +1421,8 @@
       "tokenId": "36325209105520296852884716913054272293524062041899330646324403772237082262633",
       "status": "open",
       "periodType": null,
-      "ask": 0.67,
-      "bid": 0.44,
+      "ask": 0.62,
+      "bid": 0.47,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1462,11 +1467,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T14:16:29Z",
+    "fetchedAt": "2026-11-21T15:27:29Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T14:16:30.160401+00:00",
+    "checkedAt": "2026-11-21T15:27:29.879905+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2048,7 +2053,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-21T14:16:31.910596+00:00",
+    "skaterCheckedAt": "2026-11-21T15:27:32.269656+00:00",
     "skaterNote": null,
     "blockReason": null
    },
@@ -2193,7 +2198,7 @@
       "xa": 0.957
      }
     },
-    "at": "2026-11-21T14:16:31Z",
+    "at": "2026-11-21T15:27:32Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-19",
@@ -2545,8 +2550,8 @@
       "tokenId": "24164765318586568189142092382377040351016067625697268572213173899562450261353",
       "status": "open",
       "periodType": null,
-      "ask": 0.96,
-      "bid": 0.64,
+      "ask": 0.95,
+      "bid": 0.66,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2563,8 +2568,8 @@
       "tokenId": "63684371569834452432240906275485570074125467054900166635099405337598020318982",
       "status": "open",
       "periodType": null,
-      "ask": 0.36,
-      "bid": 0.04,
+      "ask": 0.34,
+      "bid": 0.05,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2581,8 +2586,8 @@
       "tokenId": "102752139525112728048159490111331243011304150141741090503253310431981589156221",
       "status": "open",
       "periodType": null,
-      "ask": 0.68,
-      "bid": 0.5,
+      "ask": 0.67,
+      "bid": 0.51,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2599,8 +2604,8 @@
       "tokenId": "78522514987892389862526642905403705359631135124747912589956099784806586456163",
       "status": "open",
       "periodType": null,
-      "ask": 0.5,
-      "bid": 0.32,
+      "ask": 0.49,
+      "bid": 0.33,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2617,8 +2622,8 @@
       "tokenId": "106265389877075050297804243656627284095145365464910923930613844167541517061766",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
-      "bid": 0.32,
+      "ask": 0.61,
+      "bid": 0.34,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2635,8 +2640,8 @@
       "tokenId": "1665228265729730645119878742087780401323084798512490672440504715055808903036",
       "status": "open",
       "periodType": null,
-      "ask": 0.68,
-      "bid": 0.38,
+      "ask": 0.66,
+      "bid": 0.39,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2654,7 +2659,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.18,
+      "bid": 0.19,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2671,7 +2676,7 @@
       "tokenId": "97915760575257321112962597647097233344634079730102713435817666390519200721725",
       "status": "open",
       "periodType": null,
-      "ask": 0.82,
+      "ask": 0.81,
       "bid": 0.7,
       "volume": null,
       "fee": {
@@ -2681,11 +2686,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T14:16:29Z",
+    "fetchedAt": "2026-11-21T15:27:29Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T14:16:30.160401+00:00",
+    "checkedAt": "2026-11-21T15:27:29.879905+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3325,7 +3330,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-21T14:16:31.910596+00:00",
+    "skaterCheckedAt": "2026-11-21T15:27:32.269656+00:00",
     "skaterNote": null,
     "blockReason": null
    },
@@ -3464,7 +3469,7 @@
       "xa": 1.0
      }
     },
-    "at": "2026-11-21T14:16:31Z",
+    "at": "2026-11-21T15:27:32Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-19",
@@ -3846,7 +3851,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.64,
+      "bid": 0.66,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3863,7 +3868,7 @@
       "tokenId": "49519104261244848794286348613193955679815814973064338092447477949576950457081",
       "status": "open",
       "periodType": null,
-      "ask": 0.36,
+      "ask": 0.34,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -3882,7 +3887,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.69,
-      "bid": 0.48,
+      "bid": 0.53,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3899,7 +3904,7 @@
       "tokenId": "115325761459504948779364364397168275113461584220052959232044438402752427114647",
       "status": "open",
       "periodType": null,
-      "ask": 0.52,
+      "ask": 0.47,
       "bid": 0.31,
       "volume": null,
       "fee": {
@@ -3917,8 +3922,8 @@
       "tokenId": "20420352898700662418756741466764828967443704546450491816578552381482018254724",
       "status": "open",
       "periodType": null,
-      "ask": 0.63,
-      "bid": 0.33,
+      "ask": 0.62,
+      "bid": 0.35,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3935,8 +3940,8 @@
       "tokenId": "108913915861281378679503623314080305914930204297152273635920048671296241399415",
       "status": "open",
       "periodType": null,
-      "ask": 0.67,
-      "bid": 0.37,
+      "ask": 0.65,
+      "bid": 0.38,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3954,7 +3959,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.19,
+      "bid": 0.2,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3971,7 +3976,7 @@
       "tokenId": "99861377354092957134846765620951244099810357792818203458387088689397509627046",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
+      "ask": 0.8,
       "bid": 0.7,
       "volume": null,
       "fee": {
@@ -3981,11 +3986,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T14:16:29Z",
+    "fetchedAt": "2026-11-21T15:27:29Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T14:16:30.160401+00:00",
+    "checkedAt": "2026-11-21T15:27:29.879905+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4611,7 +4616,7 @@
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-21T14:16:31.910596+00:00",
+    "skaterCheckedAt": "2026-11-21T15:27:32.269656+00:00",
     "skaterNote": null,
     "blockReason": null
    },
@@ -4743,7 +4748,7 @@
       "xa": 0.979
      }
     },
-    "at": "2026-11-21T14:16:31Z",
+    "at": "2026-11-21T15:27:32Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-19",
@@ -5117,7 +5122,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.66,
+      "bid": 0.65,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5134,7 +5139,7 @@
       "tokenId": "106120097855852862771013568917559775066311768936002949821337126249763463653035",
       "status": "open",
       "periodType": null,
-      "ask": 0.34,
+      "ask": 0.35,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -5152,7 +5157,7 @@
       "tokenId": "12654103982147487126447474976303776502771924480006112798989167272638430950702",
       "status": "open",
       "periodType": null,
-      "ask": 0.72,
+      "ask": 0.68,
       "bid": 0.57,
       "volume": null,
       "fee": {
@@ -5171,7 +5176,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.43,
-      "bid": 0.28,
+      "bid": 0.32,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5188,8 +5193,8 @@
       "tokenId": "47241254903235296618994950300414285871099866956654429768044289607980912087813",
       "status": "open",
       "periodType": null,
-      "ask": 0.64,
-      "bid": 0.38,
+      "ask": 0.61,
+      "bid": 0.39,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5206,8 +5211,8 @@
       "tokenId": "104114422493434045144601340444642465527611170443450978393131072284287840561955",
       "status": "open",
       "periodType": null,
-      "ask": 0.62,
-      "bid": 0.36,
+      "ask": 0.61,
+      "bid": 0.39,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5224,8 +5229,8 @@
       "tokenId": "49237575020340188263847911943582979775017170361250042641423426359093527628151",
       "status": "open",
       "periodType": null,
-      "ask": 0.4,
-      "bid": 0.12,
+      "ask": 0.35,
+      "bid": 0.22,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5242,8 +5247,8 @@
       "tokenId": "25928051197988890498870533826873007036662054564933591540392152815949128482879",
       "status": "open",
       "periodType": null,
-      "ask": 0.88,
-      "bid": 0.6,
+      "ask": 0.78,
+      "bid": 0.65,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5252,11 +5257,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T14:16:29Z",
+    "fetchedAt": "2026-11-21T15:27:29Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T14:16:30.160401+00:00",
+    "checkedAt": "2026-11-21T15:27:29.879905+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5491,11 +5496,6 @@
         "name": "Marco Rossi"
        },
        {
-        "id": 8484136,
-        "position": "C",
-        "name": "Max Sasson"
-       },
-       {
         "id": 8478465,
         "position": "D",
         "name": "Guillaume Brisebois"
@@ -5562,12 +5562,12 @@
       3.3172
      ],
      "adjustedGoals": [
-      3.2924847438002174,
-      3.3303060198124785
+      3.292924303585352,
+      3.3268098519260496
      ],
      "featureDelta": [
       -0.23098766930888803,
-      0.08347968052369203
+      0.05342269289049317
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -5743,9 +5743,9 @@
          "name": "Paul Cotter"
         },
         {
-         "id": 8484136,
+         "id": 8484901,
          "position": "C",
-         "name": "Max Sasson"
+         "name": "Jacob Quillan"
         },
         {
          "id": 8479425,
@@ -5814,23 +5814,23 @@
       {
        "label": "VAN questionable skaters OUT",
        "rates": [
-        2.9502887568138396,
-        2.982184604509279
+        2.9509608705118886,
+        2.9768445564829182
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-21T14:16:31.910596+00:00",
+    "skaterCheckedAt": "2026-11-21T15:27:32.269656+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent-skater-v1",
-    "la": 3.2925,
-    "lh": 3.3303,
-    "ra": 2.9501,
-    "rh": 2.984,
+    "la": 3.2929,
+    "lh": 3.3268,
+    "ra": 2.9505,
+    "rh": 2.9808,
     "sim": {
      "pull3": 0.4
     },
@@ -5960,7 +5960,7 @@
       "xa": 1.116
      }
     },
-    "at": "2026-11-21T14:16:31Z",
+    "at": "2026-11-21T15:27:32Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-19",
@@ -5969,12 +5969,12 @@
       3.3172
      ],
      "adjustedGoals": [
-      3.2924847438002174,
-      3.3303060198124785
+      3.292924303585352,
+      3.3268098519260496
      ],
      "featureDelta": [
       -0.23098766930888803,
-      0.08347968052369203
+      0.05342269289049317
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -6150,9 +6150,9 @@
          "name": "Paul Cotter"
         },
         {
-         "id": 8484136,
+         "id": 8484901,
          "position": "C",
-         "name": "Max Sasson"
+         "name": "Jacob Quillan"
         },
         {
          "id": 8479425,
@@ -6221,8 +6221,8 @@
       {
        "label": "VAN questionable skaters OUT",
        "rates": [
-        2.9502887568138396,
-        2.982184604509279
+        2.9509608705118886,
+        2.9768445564829182
        ]
       }
      ]
