@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generatedAt": "2026-11-21T12:02:42Z",
+ "generatedAt": "2026-11-21T12:10:39Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -56,7 +56,7 @@
       "periodType": null,
       "ask": 0.36,
       "bid": 0.35,
-      "volume": 76589.409235,
+      "volume": 121864.45034699999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -71,7 +71,7 @@
       "periodType": null,
       "ask": 0.65,
       "bid": 0.64,
-      "volume": 76589.409235,
+      "volume": 121864.45034699999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -585,11 +585,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -885,20 +885,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 2.5097,
+    "la": 2.5109,
     "lh": 3.5931,
-    "ra": 2.2487,
+    "ra": 2.2498,
     "rh": 3.2194,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -1024,7 +1026,7 @@
       "xa": 0.913
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -1293,7 +1295,7 @@
       "tokenId": "11867322704912075342277718881467539367472745725503068580006825748321374555348",
       "status": "open",
       "periodType": null,
-      "ask": 0.13,
+      "ask": 0.12,
       "bid": 0.07,
       "volume": null,
       "fee": {
@@ -1312,7 +1314,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.93,
-      "bid": 0.87,
+      "bid": 0.88,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1401,8 +1403,8 @@
       "tokenId": "22330882553839419076520185796368807654368027076816817972592794538986592365716",
       "status": "open",
       "periodType": null,
-      "ask": 0.06,
-      "bid": 0.03,
+      "ask": 0.07,
+      "bid": 0.04,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1419,8 +1421,8 @@
       "tokenId": "71868701206058175371297357586915626545940773860100730461682646895847973003303",
       "status": "open",
       "periodType": null,
-      "ask": 0.97,
-      "bid": 0.94,
+      "ask": 0.96,
+      "bid": 0.93,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1609,11 +1611,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1900,20 +1902,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 2.851,
-    "lh": 3.2823,
-    "ra": 2.5545,
-    "rh": 2.941,
+    "la": 2.8511,
+    "lh": 3.2834,
+    "ra": 2.5546,
+    "rh": 2.9419,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -2039,7 +2043,7 @@
       "xa": 1.022
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -2308,7 +2312,7 @@
       "tokenId": "45786494490260201100808887071311598877438905052761546956894963425003853101788",
       "status": "open",
       "periodType": null,
-      "ask": 0.13,
+      "ask": 0.12,
       "bid": 0.07,
       "volume": null,
       "fee": {
@@ -2327,7 +2331,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.93,
-      "bid": 0.87,
+      "bid": 0.88,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2624,11 +2628,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2936,20 +2940,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 3.0093,
-    "lh": 3.3915,
-    "ra": 2.6963,
-    "rh": 3.0388,
+    "la": 3.0096,
+    "lh": 3.3921,
+    "ra": 2.6966,
+    "rh": 3.0393,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -3081,7 +3087,7 @@
       "xa": 0.989
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -3137,7 +3143,7 @@
       "periodType": null,
       "ask": 0.45,
       "bid": 0.44,
-      "volume": 4964.138580999999,
+      "volume": 4968.138580999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3152,7 +3158,7 @@
       "periodType": null,
       "ask": 0.56,
       "bid": 0.55,
-      "volume": 4964.138580999999,
+      "volume": 4968.138580999999,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -3350,7 +3356,7 @@
       "tokenId": "63261316113255399885408620503028164856957462601033844882719175866344054649656",
       "status": "open",
       "periodType": null,
-      "ask": 0.14,
+      "ask": 0.13,
       "bid": 0.07,
       "volume": null,
       "fee": {
@@ -3369,7 +3375,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.93,
-      "bid": 0.86,
+      "bid": 0.87,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3458,7 +3464,7 @@
       "tokenId": "84817815597979953467689013779462965334088872655010735593489601309438519464258",
       "status": "open",
       "periodType": null,
-      "ask": 0.08,
+      "ask": 0.07,
       "bid": 0.04,
       "volume": null,
       "fee": {
@@ -3477,7 +3483,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.92,
+      "bid": 0.93,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3602,8 +3608,8 @@
       "tokenId": "58459685411476781888917755740823694550412167361498539456575210412658469682875",
       "status": "open",
       "periodType": null,
-      "ask": 0.23,
-      "bid": 0.19,
+      "ask": 0.22,
+      "bid": 0.2,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3620,8 +3626,8 @@
       "tokenId": "56612155137174100159803212011691436223665302903359430796011160374838882324502",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
-      "bid": 0.77,
+      "ask": 0.8,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3666,11 +3672,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3966,20 +3972,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": "PIT recent skater absences not individually modeled: Bryan Rust, Evgeni Malkin, Nick Robertson"
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 3.3299,
-    "lh": 3.5943,
-    "ra": 2.9836,
-    "rh": 3.2205,
+    "la": 3.3288,
+    "lh": 3.5946,
+    "ra": 2.9826,
+    "rh": 3.2208,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -4098,7 +4106,7 @@
       "xa": 1.015
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -4367,7 +4375,7 @@
       "tokenId": "61152103869407946481979068507440029025317523220466540452098210014759173563709",
       "status": "open",
       "periodType": null,
-      "ask": 0.11,
+      "ask": 0.1,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -4386,7 +4394,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.89,
+      "bid": 0.9,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4475,7 +4483,7 @@
       "tokenId": "39277555925125127866503683704539813102331056804979807839637294086542984434776",
       "status": "open",
       "periodType": null,
-      "ask": 0.08,
+      "ask": 0.07,
       "bid": 0.04,
       "volume": null,
       "fee": {
@@ -4494,7 +4502,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.92,
+      "bid": 0.93,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4584,7 +4592,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.88,
-      "bid": 0.85,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4601,7 +4609,7 @@
       "tokenId": "105789122406468830575359582166619031037220501858903015754552723824354866330043",
       "status": "open",
       "periodType": null,
-      "ask": 0.15,
+      "ask": 0.14,
       "bid": 0.12,
       "volume": null,
       "fee": {
@@ -4683,11 +4691,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5046,20 +5054,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": "TOR recent skater absences not individually modeled: Cole McWard, Kirill Marchenko"
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 3.1764,
-    "lh": 3.2203,
-    "ra": 2.8461,
-    "rh": 2.8854,
+    "la": 3.1769,
+    "lh": 3.2206,
+    "ra": 2.8465,
+    "rh": 2.8856,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -5184,7 +5194,7 @@
       "xa": 1.018
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -5453,7 +5463,7 @@
       "tokenId": "68883274635439208344202287773174042188981104744466255297498472634177196480491",
       "status": "open",
       "periodType": null,
-      "ask": 0.14,
+      "ask": 0.13,
       "bid": 0.08,
       "volume": null,
       "fee": {
@@ -5472,7 +5482,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.92,
-      "bid": 0.86,
+      "bid": 0.87,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5669,8 +5679,8 @@
       "tokenId": "36229813724284317634096885020936920096761929118380418409059029542552667901916",
       "status": "open",
       "periodType": null,
-      "ask": 0.85,
-      "bid": 0.83,
+      "ask": 0.86,
+      "bid": 0.82,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5687,8 +5697,8 @@
       "tokenId": "30093890629145428997941376976514657442471100762512855335100931906764432582071",
       "status": "open",
       "periodType": null,
-      "ask": 0.17,
-      "bid": 0.15,
+      "ask": 0.18,
+      "bid": 0.14,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5742,7 +5752,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.08,
-      "bid": 0.05,
+      "bid": 0.04,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5759,7 +5769,7 @@
       "tokenId": "86696539398004834347978820520074921215378693362456608899009232163736078261995",
       "status": "open",
       "periodType": null,
-      "ask": 0.95,
+      "ask": 0.96,
       "bid": 0.92,
       "volume": null,
       "fee": {
@@ -5769,11 +5779,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6083,20 +6093,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": "OTT recent skater absences not individually modeled: Andre Burakovsky"
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 2.6329,
-    "lh": 3.2512,
-    "ra": 2.3591,
-    "rh": 2.9131,
+    "la": 2.6326,
+    "lh": 3.2506,
+    "ra": 2.3588,
+    "rh": 2.9125,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -6222,7 +6234,7 @@
       "xa": 0.942
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -6491,7 +6503,7 @@
       "tokenId": "638703705851353425966521701912614293463680555105532440669088583511664604381",
       "status": "open",
       "periodType": null,
-      "ask": 0.08,
+      "ask": 0.07,
       "bid": 0.04,
       "volume": null,
       "fee": {
@@ -6510,7 +6522,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.92,
+      "bid": 0.93,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6599,7 +6611,7 @@
       "tokenId": "174920866494136355993151241255963430635889065917095822363791646743553567839",
       "status": "open",
       "periodType": null,
-      "ask": 0.11,
+      "ask": 0.1,
       "bid": 0.04,
       "volume": null,
       "fee": {
@@ -6618,7 +6630,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.89,
+      "bid": 0.9,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6807,11 +6819,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7116,20 +7128,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": "STL recent skater absences not individually modeled: Connor McMichael"
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 3.3092,
-    "lh": 2.9621,
-    "ra": 2.9651,
-    "rh": 2.6541,
+    "la": 3.3091,
+    "lh": 2.9602,
+    "ra": 2.965,
+    "rh": 2.6523,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -7255,7 +7269,7 @@
       "xa": 1.0
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -7632,7 +7646,7 @@
       "tokenId": "50939507803287448938481114206011898937596359313434760038221114923086929523305",
       "status": "open",
       "periodType": null,
-      "ask": 0.1,
+      "ask": 0.09,
       "bid": 0.06,
       "volume": null,
       "fee": {
@@ -7651,7 +7665,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.94,
-      "bid": 0.9,
+      "bid": 0.91,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7668,7 +7682,7 @@
       "tokenId": "72176990971582467679611134665860016893215815478615731725758935961991967831331",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
+      "ask": 0.21,
       "bid": 0.18,
       "volume": null,
       "fee": {
@@ -7687,7 +7701,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.82,
-      "bid": 0.8,
+      "bid": 0.79,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7840,11 +7854,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8132,20 +8146,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 2.9657,
-    "lh": 3.0446,
-    "ra": 2.6573,
-    "rh": 2.728,
+    "la": 2.9665,
+    "lh": 3.0449,
+    "ra": 2.658,
+    "rh": 2.7282,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -8251,7 +8267,7 @@
       "xa": 1.003
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -8307,7 +8323,7 @@
       "periodType": null,
       "ask": 0.42,
       "bid": 0.41,
-      "volume": 19045.750806000004,
+      "volume": 19050.512711000003,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -8322,7 +8338,7 @@
       "periodType": null,
       "ask": 0.59,
       "bid": 0.58,
-      "volume": 19045.750806000004,
+      "volume": 19050.512711000003,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -8448,8 +8464,8 @@
       "tokenId": "74484565594615248050647389183432479642621719689287147849756171600049888288137",
       "status": "open",
       "periodType": null,
-      "ask": 0.25,
-      "bid": 0.21,
+      "ask": 0.24,
+      "bid": 0.22,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8466,8 +8482,8 @@
       "tokenId": "66681771979007189041396887235190718204785594694123927038818246219200511513921",
       "status": "open",
       "periodType": null,
-      "ask": 0.79,
-      "bid": 0.75,
+      "ask": 0.78,
+      "bid": 0.76,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8628,7 +8644,7 @@
       "tokenId": "91308039083944152362605188239827568351993106611687220285692668208866729050540",
       "status": "open",
       "periodType": null,
-      "ask": 0.07,
+      "ask": 0.06,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -8647,7 +8663,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.93,
+      "bid": 0.94,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -8836,11 +8852,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9166,20 +9182,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 2.8362,
-    "lh": 3.3282,
-    "ra": 2.5413,
-    "rh": 2.9821,
+    "la": 2.8358,
+    "lh": 3.3273,
+    "ra": 2.5409,
+    "rh": 2.9813,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -9304,7 +9322,7 @@
       "xa": 1.035
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -9681,7 +9699,7 @@
       "tokenId": "102535493531302459223199113921021379438078953384702886116151437369381375705813",
       "status": "open",
       "periodType": null,
-      "ask": 0.12,
+      "ask": 0.11,
       "bid": 0.06,
       "volume": null,
       "fee": {
@@ -9700,7 +9718,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.94,
-      "bid": 0.88,
+      "bid": 0.89,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9889,11 +9907,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -10184,20 +10202,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 3.3646,
-    "lh": 2.9213,
-    "ra": 3.0147,
-    "rh": 2.6175,
+    "la": 3.3645,
+    "lh": 2.9212,
+    "ra": 3.0146,
+    "rh": 2.6174,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -10329,7 +10349,7 @@
       "xa": 1.017
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -10385,7 +10405,7 @@
       "periodType": null,
       "ask": 0.46,
       "bid": 0.45,
-      "volume": 7333.475189,
+      "volume": 7701.7251909999995,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10400,7 +10420,7 @@
       "periodType": null,
       "ask": 0.55,
       "bid": 0.54,
-      "volume": 7333.475189,
+      "volume": 7701.7251909999995,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -10598,7 +10618,7 @@
       "tokenId": "21468762799225087851717681374292059962146960049958072715372809080888395196879",
       "status": "open",
       "periodType": null,
-      "ask": 0.11,
+      "ask": 0.1,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -10617,7 +10637,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.89,
+      "bid": 0.9,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10706,7 +10726,7 @@
       "tokenId": "20578128708881382160944115532569301386932194169751170647984142925765408411947",
       "status": "open",
       "periodType": null,
-      "ask": 0.09,
+      "ask": 0.08,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -10725,7 +10745,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.91,
+      "bid": 0.92,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10914,11 +10934,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -11198,20 +11218,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": "WSH recent skater absences not individually modeled: Vincent Desharnais"
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 3.0659,
-    "lh": 3.4478,
-    "ra": 2.747,
-    "rh": 3.0893,
+    "la": 3.0657,
+    "lh": 3.4477,
+    "ra": 2.7468,
+    "rh": 3.0891,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -11317,7 +11339,7 @@
       "xa": 0.988
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -11586,8 +11608,8 @@
       "tokenId": "24149092146374000259543898062966347161680987605930253846331332742608320047447",
       "status": "open",
       "periodType": null,
-      "ask": 0.15,
-      "bid": 0.1,
+      "ask": 0.14,
+      "bid": 0.11,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11604,8 +11626,8 @@
       "tokenId": "72123292724162072372226728903987194366587614342706868898413421266530410584878",
       "status": "open",
       "periodType": null,
-      "ask": 0.9,
-      "bid": 0.85,
+      "ask": 0.89,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11902,11 +11924,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -12235,20 +12257,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": "ANA recent skater absences not individually modeled: Ryan Poehling; UTA recent skater absences not individually modeled: John Marino, Dylan Guenther"
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 3.094,
-    "lh": 3.7461,
-    "ra": 2.7722,
-    "rh": 3.3565,
+    "la": 3.0942,
+    "lh": 3.746,
+    "ra": 2.7724,
+    "rh": 3.3564,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -12380,7 +12404,7 @@
       "xa": 0.978
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -12965,11 +12989,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -13279,20 +13303,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 4.1873,
-    "lh": 2.5676,
-    "ra": 3.7518,
-    "rh": 2.3006,
+    "la": 4.188,
+    "lh": 2.567,
+    "ra": 3.7525,
+    "rh": 2.3,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -13418,7 +13444,7 @@
       "xa": 1.116
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   },
   {
@@ -14003,11 +14029,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T12:02:42Z",
+    "fetchedAt": "2026-11-21T12:10:39Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
+    "checkedAt": "2026-11-21T12:10:39.701382+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -14316,20 +14342,22 @@
      }
     },
     "problems": [],
-    "skaterModelStatus": "unavailable",
+    "skaterModelStatus": "feed-down",
     "skaterModelReason": "official skater game-log feed incomplete",
-    "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
+    "skaterCheckedAt": "2026-11-21T12:10:41.133990+00:00",
+    "skaterNote": "Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead",
+    "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent",
-    "la": 3.3959,
-    "lh": 3.396,
-    "ra": 3.0427,
-    "rh": 3.0428,
+    "la": 3.3961,
+    "lh": 3.3957,
+    "ra": 3.0429,
+    "rh": 3.0426,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.38159,
+    "betaGq": 0.38322,
     "calib": 1.016,
     "goalies": {
      "away": {
@@ -14448,7 +14476,7 @@
       "xa": 1.063
      }
     },
-    "at": "2026-11-21T12:02:44Z"
+    "at": "2026-11-21T12:10:41Z"
    }
   }
  ]
