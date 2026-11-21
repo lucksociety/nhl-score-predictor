@@ -9,12 +9,22 @@
       "minimum_days": 30,
       "minimum_games": 500,
       "status": "insufficient_forward_sample"
+    },
+    "v4.1-independent": {
+      "minimum_days": 30,
+      "minimum_games": 500,
+      "status": "insufficient_forward_sample"
+    },
+    "v4.1-independent-skater-v1": {
+      "minimum_days": 30,
+      "minimum_games": 500,
+      "status": "insufficient_forward_sample"
     }
   },
   "forecast_policy": "Last pre-game freeze per event per model version. No retrospectively generated forecast is graded.",
-  "forecasts": 1727,
-  "generated_at": "2026-11-20T19:15:59.672409+00:00",
-  "last_successful_refresh": "2026-11-20T15:09:17+00:00",
+  "forecasts": 1921,
+  "generated_at": "2026-11-21T18:14:06.386792+00:00",
+  "last_successful_refresh": "2026-11-21T15:29:38+00:00",
   "project": "nhl-score-predictor",
   "settled_by_version": {
     "v4-independent": {
@@ -36,6 +46,12 @@
       "score_n": 76,
       "total_mae": 1.9833026315789475,
       "winner_accuracy": 0.5657894736842105
+    },
+    "v4.1-independent": {
+      "n": 0
+    },
+    "v4.1-independent-skater-v1": {
+      "n": 0
     }
   },
   "warnings": []
