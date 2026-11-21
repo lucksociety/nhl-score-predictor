@@ -20,7 +20,7 @@
   const cents = x => x == null ? '—' : (100 * x).toFixed(0) + '¢';
   const evp = x => x == null || isNaN(x) ? '—' : (x >= 0 ? '+' : '−') + Math.abs(100 * x).toFixed(1) + '%';
   const TIP_V3 = 'Edge vs DraftKings-derived model: v3 fits the DraftKings moneyline at full weight, so model win % ≈ DraftKings no-vig. Edge = model win % (incl. OT/SO) − Polymarket YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.05·p·(1−p).';
-  const TIP_V4 = 'Independent edge: v4 uses no betting-market input. Edge = model win % (incl. OT/SO) − Polymarket YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.05·p·(1−p). Bet only if model > 50% and EV > 0.';
+  const TIP_V4 = 'Independent edge: v4 uses no betting-market input. Edge = model win % (incl. OT/SO) − Polymarket YES ask. EV per $1 = model / (ask + fee) − 1, fee = 0.05·p·(1−p). Shown for information; the best bet is the line that wins at the predicted score and pays the most.';
   let EDGE_TIP = TIP_V4;
   const lastName = n => String(n || '').normalize('NFKD').replace(/[\u0300-\u036f.]/g, '').trim().toLowerCase().split(/\s+/).pop();
   // if the live/confirmed starter differs from the one the Action used, re-weight with that goalie's rating (gq)
@@ -45,7 +45,7 @@
     if (g.jupInGame) return `<div class="betbox nobet"><b>Best bet:</b> game started — in-game prices not compared with the pre-game model.${leans}</div>`;
     if (e.best) {
       const b = e.best, more = e.others.length ? `<div style="font-size:12px;margin-top:3px">Also fits the score: ${e.others.map(c => `${esc(c.label)} @ ${cents(c.ask)} (model ${pct(c.q, 1)})`).join(' · ')}</div>` : '';
-      return `<div class="betbox bet">✅ <b>BEST BET: ${esc(b.label)}</b> · Polymarket ${cents(b.ask)} (+${(100 * b.fee).toFixed(1)}¢ fee) · pays <b>$${((1 - b.cost) / b.cost).toFixed(2)}</b> per $1 · model ${pct(b.q, 1)}<div style="font-size:12px;margin-top:3px">Wins at the predicted score and pays the most of the lines that do.</div>${more}${leans}</div>`;
+      return `<div class="betbox bet">✅ <b>BEST BET: ${esc(b.label)}</b> · Polymarket ${cents(b.ask)} · <b>${NHLBets.payText(b)}</b> profit after the fee · model ${pct(b.q, 1)}<div style="font-size:12px;margin-top:3px">Wins at the predicted score and pays the most of the lines that do.</div>${more}${leans}</div>`;
     }
     return `<div class="betbox nobet">⛔ <b>NO BET</b> — ${esc(e.reason)}${leans}</div>`;
   }
@@ -350,7 +350,7 @@
     $('sumtable').innerHTML = `<thead><tr><th>Puck drop</th><th>Game</th><th>Pick</th><th>OT?</th><th>P(OT)</th><th>Win prob</th><th title="Polymarket YES ask per $1 contract (away / home)">Polymarket</th><th title="The line that wins at the predicted score and pays the most">Best bet</th><th>xG</th><th>Inputs</th><th>Result</th><th>Err</th></tr></thead><tbody>${rows}${foot}</tbody>`;
   }
   function copyPicks() {
-    const lines = state.games.map((g, i) => { const o = state.out[i]; if (!o || o.error) return null; const be = bestEdge(g, o); return `${etTime(g.startUTC)}  ${g.away} @ ${g.home}: ${pickText(g, o)}  · P(OT) ${pct(o.pOT)}` + (o.dist && window.NHLBets && !g.jupInGame ? (ev => ev.best ? `  · BEST BET ${ev.best.label} (model ${pct(ev.best.q, 1)}, EV ${evp(ev.best.ev)})` : '  · NO BET')(NHLBets.evaluate(g, o)) : ''); }).filter(Boolean);
+    const lines = state.games.map((g, i) => { const o = state.out[i]; if (!o || o.error) return null; const be = bestEdge(g, o); return `${etTime(g.startUTC)}  ${g.away} @ ${g.home}: ${pickText(g, o)}  · P(OT) ${pct(o.pOT)}` + (o.dist && window.NHLBets && !g.jupInGame ? (ev => ev.best ? `  · BEST BET ${ev.best.label} @ ${cents(ev.best.ask)} (${NHLBets.payText(ev.best)}, model ${pct(ev.best.q, 1)})` : '  · NO BET')(NHLBets.evaluate(g, o)) : ''); }).filter(Boolean);
     const txt = `Luck Society NHL ${$('model').value === 'v4' ? 'v4-independent' : 'v3'} picks · ${state.date}\n` + lines.join('\n');
     (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => { $('copy').textContent = 'Copied ✓'; setTimeout(() => $('copy').textContent = 'Copy picks', 1500); }).catch(() => prompt('Copy picks:', txt));
   }
