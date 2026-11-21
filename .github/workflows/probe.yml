@@ -1,0 +1,30 @@
+name: Research data probe
+on:
+  push:
+    branches: ['probe/model-data']
+    paths: ['research/probe/fetch.py', '.github/workflows/probe.yml']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install requests
+      - name: Skater feed check
+        run: python research/probe/fetch.py skaters > research/probe/skaters.log 2>&1 || true
+      - name: Commit the skater feed check first
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/probe && (git commit -m "probe: skater feed check" || true) && git push origin HEAD:probe/model-data
+      - run: python research/probe/fetch.py mp > research/probe/mp.log 2>&1 || true
+      - run: python research/probe/fetch.py odds > research/probe/odds.log 2>&1 || true
+      - name: Commit fetched data to this branch
+        if: always()
+        run: |
+          tail -c 20000 research/probe/odds.log > research/probe/odds.tail.log || true; rm -f research/probe/odds.log
+          git add research/probe && (git commit -m "probe: fetched research data" || true) && git push origin HEAD:probe/model-data
