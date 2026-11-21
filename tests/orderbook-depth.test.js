@@ -23,7 +23,7 @@ const game=()=>({away:'A',home:'H',state:'FUT',start:'2099-01-01T14:00:00Z',quot
  // A sub-cent paper edge fails a real one-cent quote stress, despite high win probability.
  const raw={away:'A',home:'H',state:'FUT',startUTC:'2099-01-01T14:00Z',market:{fetchedAt:new Date(now).toISOString(),sides:{away:{ask:.86,bid:.85,status:'open',includesOTSO:true,volume:1000}}}};
  const o={pick:{away:3,home:2},n:400000,pAway:.8745,pHome:.1255,dist:{tot:[1],mar:[1]}};
- assert.equal(B.evaluate(raw,o,{now}).best,null);
+ assert.equal(B.evaluate(raw,o,{now}).best.value,false);
  const noToken=game();delete noToken.best.tokenId;delete noToken.others[0].tokenId;
  await verifyExecution({games:[noToken]},{now:()=>now,fetchBook:async()=>({yes:[[64,100]],no:[[35,100]]})});assert.equal(noToken.best,null,'a contract without a CLOB token cannot be depth-verified');
  console.log('Rounded-fee bound, one-cent quote stress, exact-ask depth, fallback selection and expired-book failure passed');

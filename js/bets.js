@@ -1,8 +1,13 @@
 /* Best-bet engine (shared by the dashboard and the Discord poster).
  * Candidates: every side of every Polymarket market on the game: moneyline, all O/U lines, all alt puck lines. Price = ask;
  * fee = the market's own Polymarket taker schedule rate*(p*(1-p))^exponent (sports default 0.05).
- * EV uses a rounded-fee upper bound. Qualifiers must survive scoring and one-cent quote stresses; rank by conservative probability,
- * else NO BET. Polymarket NHL resolution is the final result incl. OT/SO, so q uses the full simulated final score. */
+ *
+ * Rule `score-fit-best-price-v1` (owner decision, 21 Nov 2026): the best bet is the line that WINS AT THE PREDICTED SCORE
+ * and PAYS THE MOST, i.e. the lowest cost (ask + fee) among every line the predicted score satisfies. It is not a value
+ * bet: the model's probability and expected value are shown for information and no longer decide anything.
+ * A line still needs a real, takeable quote (open, full game incl. OT/SO, two-sided within 10 cents, traded volume, fresh).
+ * Polymarket NHL resolution is the final result incl. OT/SO, so the predicted final score is compared directly. */
+  // POLICY names the rule in every published slate so the bet record keeps the two rules apart.
 (function (root) {
   const M = root.NHLModel || (typeof require !== 'undefined' ? require('./model.js') : null);
   // Per-contract upper bound: published order fees round UP to cents. For every
@@ -11,6 +16,7 @@
   const fee = (p, sched) => { const f = sched && sched.rate != null ? sched : DEFAULT_FEE;
     return Math.max(0, Math.ceil(100 * Number(f.rate) * Math.pow(p * (1 - p), Number(f.exponent == null ? 1 : f.exponent)) - 1e-10)) / 100; };
   const MIN_PROB = 0.5;
+  const POLICY = 'score-fit-best-price-v1';
   const MAX_SPREAD = 0.10;
   const MAX_QUOTE_AGE_MS = 5 * 60 * 1000;
   function scoreSupports(c, g, pick) {
@@ -77,8 +83,10 @@
     }
     // This only bounds numerical sampling noise; it does not claim the model itself is calibrated.
     const availabilityOK = !g.availability?.blockReason;
-    const ok = pregame && quoteFresh && availabilityOK ? cands.filter(c => c.scoreConsistent && c.executable && c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0 && c.quoteStressEV > 0) : [];
-    ok.sort((a, b) => b.sensitivityLower - a.sensitivityLower || b.ev - a.ev);
+    // value: what the old rule required. Kept on each candidate as information only.
+    for (const c of cands) c.value = c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0 && c.quoteStressEV > 0;
+    const ok = pregame && quoteFresh && availabilityOK ? cands.filter(c => c.scoreConsistent && c.executable) : [];
+    ok.sort((a, b) => a.cost - b.cost || b.q - a.q);   // pays the most first; the likelier line breaks a tie
     let reason = null;
     if (!ok.length) {
       if (!availabilityOK) reason = g.availability.blockReason;
@@ -86,8 +94,7 @@
       else if (!quoteFresh) reason = 'Polymarket quote is missing, from the future, or older than five minutes';
       else if (!cands.length) reason = 'no Polymarket market';
       else if (!cands.some(c => c.executable)) reason = 'no verified full-game OT/SO two-sided quote within 10¢ with traded volume';
-      else if (!cands.some(c => c.q > MIN_PROB)) reason = 'no side above 50%';
-      else reason = 'no >50% side keeps positive EV after scoring sensitivity, rounded-fee bound and one-cent quote stress';
+      else reason = 'no line that wins at the predicted score has a two-sided quote';
     }
     // model leans on standard lines (no Polymarket price -> informational only, never a bet)
     const leans = {
@@ -97,7 +104,7 @@
     };
     return { best: ok[0] || null, others: ok.slice(1, 4), qualifying: ok.length, cands, reason, leans, hasTotals: cands.some(c => c.type === 'TOTAL'), hasPL: cands.some(c => c.type === 'PUCKLINE') };
   }
-  const api = { evaluate, fee, MIN_PROB, scoreSupports };
+  const api = { evaluate, fee, MIN_PROB, POLICY, scoreSupports };
   root.NHLBets = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof self !== 'undefined' ? self : globalThis);

@@ -35,12 +35,11 @@ async function verifyExecution(P,{fetchBook=liveBookFetcher(),now=()=>Date.now()
     if(!c.tokenId)throw Error('no CLOB token for this contract');
     const book=await fetchBook(c.tokenId);c.executionDepth=depthAtAsk(book,c.ask);c.executionCheckedAt=new Date(now()).toISOString();
     if(!fresh() || c.executionDepth<required)throw Error('fresh executable depth below '+required+' contracts');
-    if(!(c.sensitivityLower>.5 && c.sensitivityLower>c.cost && c.quoteStressEV>0))throw Error('probability/EV not robust to fee or quote stress');
     c.executionVerified=true;valid.push(c);
    }catch(e){g.executionRejections.push({label:c.label,reason:e.message});}
   }
   g.best=valid[0]||null;g.others=valid.slice(1);g.qualifying=valid.length;
-  if(!g.best&&choices.length)g.noBetReason='No qualifying bet with fresh executable order-book depth: '+g.executionRejections.map(x=>x.label+' ('+x.reason+')').join('; ');
+  if(!g.best&&choices.length)g.noBetReason='No score-fitting line with fresh order-book depth: '+g.executionRejections.map(x=>x.label+' ('+x.reason+')').join('; ');
  }
  return P;
 }
