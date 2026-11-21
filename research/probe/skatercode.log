@@ -1,0 +1,39 @@
+state through 2026-11-18 history through 2026-11-19
+cutoff 2026-11-21 FAILED
+Traceback (most recent call last):
+  File "/home/runner/work/nhl-score-predictor/nhl-score-predictor/research/probe/fetch.py", line 107, in skater_code
+    out = S.fetch_recent(state, rows, cutoff, get); print('cutoff', cutoff, 'OK through', out['through'], 'games', len(out['games']))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/nhl-score-predictor/nhl-score-predictor/research/probe/../../scripts/skaters.py", line 83, in fetch_recent
+    if len(got)!=total or len({(p['gameId'],p['playerId']) for p in got})!=len(got):raise ValueError('official skater game-log feed incomplete')
+                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: official skater game-log feed incomplete
+cutoff 2026-11-20 FAILED
+Traceback (most recent call last):
+  File "/home/runner/work/nhl-score-predictor/nhl-score-predictor/research/probe/fetch.py", line 107, in skater_code
+    out = S.fetch_recent(state, rows, cutoff, get); print('cutoff', cutoff, 'OK through', out['through'], 'games', len(out['games']))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/nhl-score-predictor/nhl-score-predictor/research/probe/../../scripts/skaters.py", line 83, in fetch_recent
+    if len(got)!=total or len({(p['gameId'],p['playerId']) for p in got})!=len(got):raise ValueError('official skater game-log feed incomplete')
+                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: official skater game-log feed incomplete
+('me=true&start=300&limit=100&cayenneExp=gameDate%3E%3D%222026-11-14%22+and+gameDate%3C%222026-11-15%22+and+gameTypeId%3D2', (504, 100))
+('me=true&start=400&limit=100&cayenneExp=gameDate%3E%3D%222026-11-14%22+and+gameDate%3C%222026-11-15%22+and+gameTypeId%3D2', (504, 100))
+('me=true&start=500&limit=100&cayenneExp=gameDate%3E%3D%222026-11-14%22+and+gameDate%3C%222026-11-15%22+and+gameTypeId%3D2', (504, 4))
+('Game=true&start=0&limit=100&cayenneExp=gameDate%3E%3D%222026-11-15%22+and+gameDate%3C%222026-11-16%22+and+gameTypeId%3D2', (180, 100))
+('me=true&start=100&limit=100&cayenneExp=gameDate%3E%3D%222026-11-15%22+and+gameDate%3C%222026-11-16%22+and+gameTypeId%3D2', (180, 80))
+('Game=true&start=0&limit=100&cayenneExp=gameDate%3E%3D%222026-11-16%22+and+gameDate%3C%222026-11-17%22+and+gameTypeId%3D2', (72, 72))
+('Game=true&start=0&limit=100&cayenneExp=gameDate%3E%3D%222026-11-17%22+and+gameDate%3C%222026-11-18%22+and+gameTypeId%3D2', (396, 100))
+('me=true&start=100&limit=100&cayenneExp=gameDate%3E%3D%222026-11-17%22+and+gameDate%3C%222026-11-18%22+and+gameTypeId%3D2', (396, 100))
+('me=true&start=200&limit=100&cayenneExp=gameDate%3E%3D%222026-11-17%22+and+gameDate%3C%222026-11-18%22+and+gameTypeId%3D2', (396, 100))
+('me=true&start=300&limit=100&cayenneExp=gameDate%3E%3D%222026-11-17%22+and+gameDate%3C%222026-11-18%22+and+gameTypeId%3D2', (396, 96))
+('Game=true&start=0&limit=100&cayenneExp=gameDate%3E%3D%222026-11-18%22+and+gameDate%3C%222026-11-19%22+and+gameTypeId%3D2', (108, 100))
+('me=true&start=100&limit=100&cayenneExp=gameDate%3E%3D%222026-11-18%22+and+gameDate%3C%222026-11-19%22+and+gameTypeId%3D2', (108, 8))
+no sort 2026-11-14 rows 504 total 504 distinct 504 games in feed 14 games in history 14 feed-only [] history-only [] per-team counts [18, 18, 18] .. [18, 18, 18]
+  dates ['2026-11-14'] sample {'gameId': 2026020320, 'gameDate': '2026-11-14', 'teamAbbrev': 'STL', 'playerId': 8482745, 'timeOnIcePerGame': 1002.0, 'positionCode': 'C'}
+no sort 2026-11-19 rows 432 total 432 distinct 423 games in feed 12 games in history 12 feed-only [] history-only [] per-team counts [17, 17, 17] .. [19, 19, 20]
+  dates ['2026-11-19'] sample {'gameId': 2026020350, 'gameDate': '2026-11-19', 'teamAbbrev': 'STL', 'playerId': 8481598, 'timeOnIcePerGame': 1542.0, 'positionCode': 'D'}
+sort 2026-11-14 rows 504 total 504 distinct 504 games in feed 14 games in history 14 feed-only [] history-only [] per-team counts [18, 18, 18] .. [18, 18, 18]
+  dates ['2026-11-14'] sample {'gameId': 2026020312, 'gameDate': '2026-11-14', 'teamAbbrev': 'CHI', 'playerId': 8474013, 'timeOnIcePerGame': 1471.0, 'positionCode': 'D'}
+sort 2026-11-19 rows 432 total 432 distinct 432 games in feed 12 games in history 12 feed-only [] history-only [] per-team counts [18, 18, 18] .. [18, 18, 18]
+  dates ['2026-11-19'] sample {'gameId': 2026020347, 'gameDate': '2026-11-19', 'teamAbbrev': 'LAK', 'playerId': 8470621, 'timeOnIcePerGame': 570.0, 'positionCode': 'R'}
