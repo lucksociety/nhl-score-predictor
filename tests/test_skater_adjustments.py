@@ -100,3 +100,30 @@ def test_rookie_without_positional_uncertainty_evidence_still_blocks():
     state,g=fixture();side=g['availability']['sides']['away']
     side['roster']=[p for p in side['roster']if p['id']!=20]+[{'id':999,'name':'Rookie','position':'D'}]
     with pytest.raises(ValueError,match='position-history'):S.apply_game(g,state,'2026-11-09')
+
+def test_skater_feed_is_read_in_pages_when_the_server_caps_each_response():
+    """The official feed may return fewer rows than exist. Every page must be read, one day at a time."""
+    import urllib.parse,re
+    state=S.empty();state.update(through='2026-11-08',season=2026)
+    rows=[{'id':2026020001,'date':'2026-11-07'},{'id':2026020002,'date':'2026-11-08'}]
+    feed=[]
+    for gid,date in [(2026020001,'2026-11-07'),(2026020002,'2026-11-08')]:
+        for team,base in [('AAA',0),('BBB',100)]:
+            for i in range(18):
+                feed.append({'gameId':gid,'gameDate':date,'teamAbbrev':team,'playerId':base+i+1,'positionCode':'D' if i>=12 else 'C',
+                             'timeOnIcePerGame':900.,'goals':1 if i==0 else 0,'assists':0,'skaterFullName':f'{team} Player {i}'})
+    calls=[]
+    def get(url):
+        q=dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query));lo,hi=re.findall(r'"(\d{4}-\d{2}-\d{2})"',q['cayenneExp'])
+        day=[p for p in feed if lo<=p['gameDate']<hi];start=int(q['start']);calls.append((lo,start))
+        return {'data':day[start:start+25],'total':len(day)}   # the server never returns more than 25 rows
+    state['through']='2026-11-06'
+    out=S.fetch_recent(state,rows,'2026-11-09',get)
+    assert out['through']=='2026-11-08' and out['games']==[2026020001,2026020002] and len(out['players'])==36
+    assert ('2026-11-07',25) in calls and ('2026-11-08',25) in calls
+    assert all(str(d)[:10]<'2026-11-09' for d,_ in calls)
+
+def test_skater_feed_that_stops_short_is_still_rejected():
+    state=S.empty();state.update(through='2026-11-06',season=2026)
+    with pytest.raises(ValueError,match='incomplete'):S.fetch_recent(state,[],'2026-11-09',lambda u:{'data':[],'total':3})
+    with pytest.raises(ValueError,match='incomplete'):S.fetch_recent(state,[],'2026-11-09',lambda u:None)

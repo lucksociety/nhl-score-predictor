@@ -60,8 +60,8 @@
       let o, base = null, changed = [];
       if (useV4(g)) {
         const r = rates(g); changed = r.changed;
-        o = await post({ rates: r.rates, n, seed });
-        if (changed.length) base = await post({ rates: r.base, n, seed });   // same seed: the difference is the goalie, not chance
+        o = await post({ rates: r.rates, n, seed, sim: g.v4.sim });
+        if (changed.length) base = await post({ rates: r.base, n, seed, sim: g.v4.sim });   // same seed: the difference is the goalie, not chance
       } else {
         const od = g.odds || {};
         o = await post({ game: { away: g.away, home: g.home, mlAway: od.mlAway, mlHome: od.mlHome, total: od.total, over: od.over, under: od.under }, ratings: D.ratingsAsOf(state.date), opts: { nFit: 40000, seed: 11 }, n, seed });

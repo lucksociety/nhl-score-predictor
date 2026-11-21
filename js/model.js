@@ -50,10 +50,12 @@
     const LA10 = lamA10.map(x => Math.exp(-x)), LH10 = lamH10.map(x => Math.exp(-x));
     const pA = P.pull_mult * ra * dts, pH = P.pull_mult * rh * dts, ePA = Math.exp(-pA), ePH = Math.exp(-pH);
     const enl = P.en_rate * dts, eEN = Math.exp(-enl);
+    // pull1/2/3 scale how early a team trailing by 1/2/3 pulls its goalie (1 = the original v2 timing)
+    const k1 = P.pull1 == null ? 1 : P.pull1, k2 = P.pull2 == null ? 1 : P.pull2, k3 = P.pull3 == null ? 1 : P.pull3;
     const share = 0.5 + P.ot_tilt * (la / (la + lh) - 0.5);
     const soP = 0.5 + P.so_tilt * (share - 0.5);
     for (let i = 0; i < n; i++) {
-      const u1 = 1.0 + 1.5 * rnd(), u2 = 1.5 + 1.5 * rnd(), u3 = 0.75 + 0.75 * rnd();
+      const u1 = k1 * (1.0 + 1.5 * rnd()), u2 = k2 * (1.5 + 1.5 * rnd()), u3 = k3 * (0.75 + 0.75 * rnd());
       let a = 0, h = 0, en = 0, t = 0;
       for (let s = 0; s < 19; s++) {
         const rem = 60 - t, d = a - h, late = rem <= 20;
@@ -222,11 +224,15 @@
    * g.v4 = {ra, rh, betaGq, goalies:{away:{gq}, home:{gq}}}; opts.gq = {away, home} overrides the starter's quality
    * (e.g. a confirmed goalie change): a worse goalie (higher gq) raises the OPPONENT's scoring rate by exp(beta * dgq).
    */
+  const simulateBase = simulate;
   function runGameV4(g, opts) {
     opts = opts || {};
     const v = g.v4; if (!v) throw new Error('no v4 rates for ' + g.away + '@' + g.home);
     const n = opts.n || 400000, seed = opts.seed == null ? 11 : opts.seed;
     let ra = v.ra, rh = v.rh;
+    // Simulator settings fitted for this model version travel with the forecast (v.sim). Forecasts frozen before
+    // v4.1 carry none and keep the settings they were made with.
+    const SP = v.sim || undefined, simulate = (a, h, k, sd) => simulateBase(a, h, k, sd, SP);
     const ov = opts.gq || {};
     if (ov.home != null) ra *= Math.exp(v.betaGq * (ov.home - v.goalies.home.gq));
     if (ov.away != null) rh *= Math.exp(v.betaGq * (ov.away - v.goalies.away.gq));
@@ -235,7 +241,7 @@
     const o = analyze(r);
     o.dist = distributions(r);
     o.simMs = (typeof performance !== 'undefined' ? performance : Date).now() - t0;
-    o.mode = 'v4-independent'; o.rates = [ra, rh]; o.model = [v.la, v.lh]; o.version = 'v4-independent';
+    o.mode = 'v4-independent'; o.rates = [ra, rh]; o.model = [v.la, v.lh]; o.version = v.version || 'v4-independent'; o.sim = SP || null;
     // Parameter sensitivity, separate from Monte Carlo precision. These scale endpoints were
     // evaluated chronologically before Nov. 6 (research/REVIEW-2026-11-05.md). They are not a CI.
     if (opts.calibrationStress !== false) {
@@ -301,7 +307,7 @@
   function runGrid(job) {
     let rates = job.rates, mode = job.mode || 'v4-independent';
     if (!rates) { const o0 = runGame(job.game, job.ratings, Object.assign({}, job.opts, { n: 20000 })); rates = o0.rates; mode = o0.mode; }
-    const r = simulate(rates[0], rates[1], job.n, job.seed), o = analyze(r), K = 7, g = new Float64Array(K * K);
+    const r = simulate(rates[0], rates[1], job.n, job.seed, job.sim || undefined), o = analyze(r), K = 7, g = new Float64Array(K * K);
     for (let i = 0; i < r.n; i++) g[Math.min(K - 1, r.a[i]) * K + Math.min(K - 1, r.h[i])]++;
     o.grid = Array.from({ length: K }, (_, x) => Array.from({ length: K }, (_, y) => g[x * K + y] / r.n));
     o.dist = distributions(r); o.rates = rates; o.mode = mode;

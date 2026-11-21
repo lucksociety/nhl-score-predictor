@@ -48,7 +48,7 @@ def test_early_final_preserves_evening_coverage_without_same_day_leakage(monkeyp
         def features(self,*args,**kwargs):
             f={}
             for s in ('a','h'):
-                for k in ['rest','b2b','km','gf','ga','xf','xa']:f[s+'_'+k]=1.
+                for k in ['rest','b2b','km','gf','ga','xf','xa','gf_f','ga_f','xf_f','xa_f']:f[s+'_'+k]=1.
                 f[s+'_gkmode']='blend';f[s+'_gq']=0.
             return f
     seen=[]
