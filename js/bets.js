@@ -16,6 +16,11 @@
   const fee = (p, sched) => { const f = sched && sched.rate != null ? sched : DEFAULT_FEE;
     return Math.max(0, Math.ceil(100 * Number(f.rate) * Math.pow(p * (1 - p), Number(f.exponent == null ? 1 : f.exponent)) - 1e-10)) / 100; };
   const MIN_PROB = 0.5;
+  // What a stake wins, in plain money. Uses Polymarket's actual fee for the price (rate * (p*(1-p))^exponent per
+  // contract), not the rounded-up allowance used for the cautious cost. 47 cents with the sports fee: $10 wins $10.73.
+  const exactFee = (p, sched) => { const f = sched && sched.rate != null ? sched : DEFAULT_FEE; return Math.max(0, Number(f.rate) * Math.pow(p * (1 - p), Number(f.exponent == null ? 1 : f.exponent))); };
+  function winnings(c, stake) { stake = stake == null ? 10 : stake; const cost = c.ask + exactFee(c.ask, c.feeSchedule); return stake * (1 - cost) / cost; }
+  const payText = (c, stake) => { stake = stake == null ? 10 : stake; return `$${stake} wins $${winnings(c, stake).toFixed(2)}`; };
   const POLICY = 'score-fit-best-price-v1';
   const MAX_SPREAD = 0.10;
   const MAX_QUOTE_AGE_MS = 5 * 60 * 1000;
@@ -104,7 +109,7 @@
     };
     return { best: ok[0] || null, others: ok.slice(1, 4), qualifying: ok.length, cands, reason, leans, hasTotals: cands.some(c => c.type === 'TOTAL'), hasPL: cands.some(c => c.type === 'PUCKLINE') };
   }
-  const api = { evaluate, fee, MIN_PROB, POLICY, scoreSupports };
+  const api = { evaluate, fee, exactFee, winnings, payText, MIN_PROB, POLICY, scoreSupports };
   root.NHLBets = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof self !== 'undefined' ? self : globalThis);

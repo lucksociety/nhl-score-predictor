@@ -59,7 +59,11 @@ assert.equal(r0.best, null); assert.match(r0.reason, /no line that wins at the p
   assert.equal(thin.best, null); assert.match(thin.noBetReason, /No score-fitting line/);
   const { gameEmbed } = await import('../js/discord_embeds.mjs');
   const text = gameEmbed({ ...ok, time: '7:00 PM ET', pAway: 0.45, pHome: 0.55, pOT: 0.2, xg: [2.7, 3.1], leans: {}, markets: {}, best: { ...ok.best, fee: 0.02 } }).description;
-  assert.match(text, /BEST BET: Under 5\.5\*\* · Polymarket 49¢ \(2¢ fee allowance\) · pays \*\*\$0\.96\*\* per \$1 if it wins · model 40\.0%/);
+  assert.match(text, /BEST BET: Under 5\.5\*\* · Polymarket 49¢ · \*\*\$10 wins \$9\.90\*\* profit after the fee · model 40\.0%/);
+  // plain-money payout: price plus Polymarket's actual fee (0.05 * p * (1-p)), not the rounded-up allowance
+  assert.equal(B.payText({ ask: 0.47 }), '$10 wins $10.73'); assert.equal(B.payText({ ask: 0.5 }), '$10 wins $9.51');
+  assert.equal(B.payText({ ask: 0.25, feeSchedule: { rate: 0, exponent: 1 } }), '$10 wins $30.00'); assert.equal(B.payText({ ask: 0.8 }, 100), '$100 wins $23.76');
+  assert(B.winnings({ ask: 0.3 }) > B.winnings({ ask: 0.4 }) && B.winnings({ ask: 0.4 }) > B.winnings({ ask: 0.6 }), 'a lower price always pays more');
   assert.match(text, /Fits the predicted score AWY 2–3 HOM/); assert.doesNotMatch(text, /EV/);
   console.log('score-fit best bet ok');
 })().catch(e => { console.error(e); process.exitCode = 1; });

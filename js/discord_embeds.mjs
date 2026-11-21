@@ -6,8 +6,6 @@ const LOGO = 'https://lucksociety.github.io/nhl-score-predictor/assets/logo-96.j
 const pct = x => (100 * x).toFixed(1) + '%';
 const cents = x => (100 * x).toFixed(1).replace(/\.0$/, '') + '¢';
 const last = n => (n || '').split(' ').slice(-1)[0];
-// what $1 staked returns in profit if the bet wins, after the fee allowance
-const payout = b => { const cost = Number.isFinite(b.cost) ? b.cost : b.ask + (b.fee || 0); return '$' + ((1 - cost) / cost).toFixed(2); };
 
 // The model's most likely winner as a plain pick, shown when no value bet qualifies.
 // `market` is the no-vig price of that side. A pick is not a value bet.
@@ -29,7 +27,7 @@ export function gameEmbed(g) {
     `Goalies: ${gk('away')} vs ${gk('home')} · xG ${g.xg[0].toFixed(2)}–${g.xg[1].toFixed(2)}`,
   ];
   if (g.availability) lines.push(`Availability checked ${g.availability.checkedAt} · ${g.availability.blockReason || "current injury/roster feeds checked; goalie status above"}`);
-  if (g.goalieSensitivity?.length) lines.push('Unconfirmed goalies: available roster alternatives stress-tested; bets must retain positive EV across those scenarios.');
+  if (g.goalieSensitivity?.length) lines.push('Goalies not confirmed yet: the forecast can move if a different starter is named.');
   if(g.availability?.skaterAdjustment){const a=g.availability.skaterAdjustment;const names=Object.values(a.sides).flatMap(s=>s.absences.map(p=>p.name));lines.push(`Skaters: expected lineup adjusted${names.length?' for '+names.join(', '):''} · xG ${a.baseGoals.map(x=>x.toFixed(2)).join('–')} → ${a.adjustedGoals.map(x=>x.toFixed(2)).join('–')}`);}
 
   const rookies=Object.values(g.availability?.skaterAdjustment?.priorOnlyPlayers||{}).flat();
@@ -37,7 +35,7 @@ export function gameEmbed(g) {
 
   if (g.best) {
     e.color = GOLD;
-    lines.push(`✅ **BEST BET: ${g.best.label}** · Polymarket ${cents(g.best.ask)} (${cents(g.best.fee)} fee allowance) · pays **${payout(g.best)}** per $1 if it wins · model ${pct(g.best.q)}`);
+    lines.push(`✅ **BEST BET: ${g.best.label}** · Polymarket ${cents(g.best.ask)} · **${B.payText(g.best)}** profit after the fee · model ${pct(g.best.q)}`);
     lines.push(`Fits the predicted score ${g.away} ${g.pick.away}–${g.pick.home} ${g.home} and pays the most of the lines that do.`);
     if(g.best.executionVerified) lines.push(`Execution: ≥${g.best.requiredDepth} contracts available at quoted ask`);
     if (g.others && g.others.length) lines.push(`Also fits the score: ${g.others.map(c => `${c.label} @ ${cents(c.ask)} (model ${pct(c.q)})`).join(' · ')}`);
