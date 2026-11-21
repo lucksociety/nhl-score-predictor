@@ -127,3 +127,32 @@ def test_skater_feed_that_stops_short_is_still_rejected():
     state=S.empty();state.update(through='2026-11-06',season=2026)
     with pytest.raises(ValueError,match='incomplete'):S.fetch_recent(state,[],'2026-11-09',lambda u:{'data':[],'total':3})
     with pytest.raises(ValueError,match='incomplete'):S.fetch_recent(state,[],'2026-11-09',lambda u:None)
+
+def _feed_down_slate(injuries):
+    import datetime as dt
+    state,g=fixture();g.update(startUTC='2026-11-09T23:00:00Z')
+    g['availability']['sides']['away']['injuries']=injuries
+    return state,g,[{'date':'2026-11-09','games':[g]}],dt.datetime(2026,11,9,12,tzinfo=dt.timezone.utc)
+
+def test_unreadable_skater_feed_does_not_withhold_every_bet(monkeypatch,tmp_path):
+    state,g,slates,now=_feed_down_slate([{'name':'AAA Player 0','position':'C','status':'Out','updatedAt':'2026-10-10'}])
+    monkeypatch.setattr(S,'DATA',tmp_path);(tmp_path/'skaters.json').write_text(json.dumps(state))
+    before=dict(g['v4'])
+    S.refresh_and_apply(slates,[],lambda u:None,now=now);A.finalize(slates)
+    a=g['availability']
+    assert a['skaterModelStatus']=='feed-down' and 'incomplete' in a['skaterModelReason']
+    assert g['v4']==before, 'no skater adjustment when the feed is down'
+    assert a['blockReason'] is None and 'not applied' in a['skaterNote']
+    assert json.loads((tmp_path/'skaters.json').read_text())['through']=='2026-11-08', 'saved skater data untouched'
+
+def test_unreadable_skater_feed_still_withholds_a_bet_on_a_new_absence(monkeypatch,tmp_path):
+    state,g,slates,now=_feed_down_slate([{'name':'AAA Player 0','position':'C','status':'Out','updatedAt':'2026-11-09T10:00Z'}])
+    monkeypatch.setattr(S,'DATA',tmp_path);(tmp_path/'skaters.json').write_text(json.dumps(state))
+    S.refresh_and_apply(slates,[],lambda u:None,now=now);A.finalize(slates)
+    assert 'recent skater absences not individually modeled: AAA Player 0' in g['availability']['blockReason']
+
+def test_other_skater_failures_still_withhold(monkeypatch,tmp_path):
+    state,g,slates,now=_feed_down_slate([]);state['schema']=2
+    monkeypatch.setattr(S,'DATA',tmp_path);(tmp_path/'skaters.json').write_text(json.dumps(state))
+    S.refresh_and_apply(slates,[],lambda u:None,now=now);A.finalize(slates)
+    assert g['availability']['skaterModelStatus']=='unavailable' and 'Skater adjustment unavailable' in g['availability']['blockReason']

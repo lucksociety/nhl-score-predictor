@@ -45,6 +45,8 @@ def finalize(slates):
         for g in slate['games']:
             a=g.get('availability') or {};reasons=list(a.get('problems',[]));through=(g.get('v4') or {}).get('trainedThrough')
             if a.get('skaterModelStatus')=='unavailable':reasons.append('Skater adjustment unavailable: '+a.get('skaterModelReason','unknown'))
+            # 'feed-down' (skater game logs unreadable) is not a block by itself: the per-team absence rule below still applies.
+            a['skaterNote']='Skater adjustment not applied (official game-log feed unavailable); recent-absence rule used instead' if a.get('skaterModelStatus')=='feed-down' else None
             for side in (() if a.get('skaterModelStatus') in ('adjusted','unavailable') else ('away','home')):
                 rows=(a.get('sides',{}).get(side) or {}).get('injuries',[])
                 new=[x['name'] for x in rows if x['position']!='G' and x['status'] in UNAVAILABLE and through and str(x.get('updatedAt') or '')[:10]>through]
