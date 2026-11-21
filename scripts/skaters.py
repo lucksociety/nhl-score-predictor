@@ -160,6 +160,9 @@ def apply_game(g,state,date,policy=POLICY):
     v.update(la=round(adjusted[0],4),lh=round(adjusted[1],4),ra=round(adjusted[0]*SCALE,4),rh=round(adjusted[1]*SCALE,4),version=VERSION+'-skater-v1')
     a['skaterAdjustment']=v['skaterAdjustment']
 
+class FeedDown(ValueError):
+    """The official skater game-log feed could not be read in full."""
+
 def refresh_and_apply(slates,rows,get,now=None):
     now=now or dt.datetime.now(dt.timezone.utc)
     eligible=[(s,g) for s in slates for g in s['games'] if g.get('v4') and not g['v4'].get('frozen') and g.get('state') in ('FUT','PRE',None) and g.get('startUTC') and now<dt.datetime.fromisoformat(g['startUTC'].replace('Z','+00:00'))]
@@ -169,9 +172,18 @@ def refresh_and_apply(slates,rows,get,now=None):
         if state.get('schema')!=1:raise ValueError('unsupported skater context schema')
         cutoff=min(s['date'] for s,g in eligible)
         if state['through']>=cutoff:raise ValueError('saved skater context is newer than requested pregame date')
-        state=fetch_recent(state,rows,cutoff,get)
+        try:state=fetch_recent(state,rows,cutoff,get)
+        except (ValueError,KeyError,TypeError) as e:raise FeedDown(str(e))
         (DATA/'skaters.json').write_text(json.dumps(state,separators=(',',':'))+'\n')
         error=None
+    except FeedDown as e:
+        # Owner decision 21 Nov 2026: when the official skater game logs cannot be read, do not withhold every bet.
+        # No skater adjustment is made and availability.finalize applies the rule used before this layer existed:
+        # a bet is withheld only where a team has a skater absence reported after the model's last fitted game.
+        for slate,g in eligible:
+            a=g.setdefault('availability',{})
+            a['skaterModelStatus']='feed-down';a['skaterModelReason']=str(e);a['skaterCheckedAt']=now.isoformat()
+        return
     except (ValueError,KeyError,TypeError,OSError) as e:error=str(e)
     for slate,g in eligible:
         a=g.setdefault('availability',{})
