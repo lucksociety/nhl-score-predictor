@@ -14,17 +14,11 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - run: pip install requests
-      - name: Skater feed check
-        run: python research/probe/fetch.py skaters > research/probe/skaters.log 2>&1 || true
-      - name: Commit the skater feed check first
+      - run: pip install -r requirements.txt
+      - name: Run the production skater fetch against the live feed
+        run: python research/probe/fetch.py skatercode > research/probe/skatercode.log 2>&1 || true
+      - name: Commit the result to this branch
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add research/probe && (git commit -m "probe: skater feed check" || true) && git push origin HEAD:probe/model-data
-      - run: python research/probe/fetch.py mp > research/probe/mp.log 2>&1 || true
-      - run: python research/probe/fetch.py odds > research/probe/odds.log 2>&1 || true
-      - name: Commit fetched data to this branch
-        if: always()
-        run: |
-          tail -c 20000 research/probe/odds.log > research/probe/odds.tail.log || true; rm -f research/probe/odds.log
-          git add research/probe && (git commit -m "probe: fetched research data" || true) && git push origin HEAD:probe/model-data
+          git add research/probe && (git commit -m "probe: skater fetch diagnosis" || true) && git push origin HEAD:probe/model-data

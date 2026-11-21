@@ -91,7 +91,42 @@ def espn_odds(first, last, out):
     with gzip.open(out, 'wt') as f: json.dump(evs, f, separators=(',', ':'))
     print(out, len(evs), 'events,', sum(1 for e in evs if e['odds']), 'with odds')
 
+def skater_code():
+    """Run the production skater fetch against the live feed and report exactly where it stops."""
+    import os, traceback, collections
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'scripts'))
+    import skaters as S, v4_model as M, update_data as U
+    rows = M.load_history(); state = json.loads((S.DATA / 'skaters.json').read_text())
+    print('state through', state['through'], 'history through', rows[-1]['date'])
+    calls = []
+    def get(url):
+        r = U.get(url); calls.append((url[-120:], None if r is None else (r.get('total'), len(r.get('data') or []))))
+        return r
+    for cutoff in ('2026-11-21', '2026-11-20'):
+        try:
+            out = S.fetch_recent(state, rows, cutoff, get); print('cutoff', cutoff, 'OK through', out['through'], 'games', len(out['games']))
+        except Exception:
+            print('cutoff', cutoff, 'FAILED'); traceback.print_exc(file=sys.stdout)
+    for c in calls[-12:]: print(c)
+    base = 'https://api.nhle.com/stats/rest/en/skater/summary?'
+    for sort in (None, '[{"property":"gameId","direction":"ASC"},{"property":"playerId","direction":"ASC"}]'):
+        for day in ('2026-11-14', '2026-11-19'):
+            nxt = str(dt.date.fromisoformat(day) + dt.timedelta(days=1)); got = []; total = None
+            while total is None or len(got) < total:
+                q = {'isAggregate': 'false', 'isGame': 'true', 'start': len(got), 'limit': 100, 'cayenneExp': f'gameDate>="{day}" and gameDate<"{nxt}" and gameTypeId=2'}
+                if sort: q['sort'] = sort
+                b = U.get(base + urllib.parse.urlencode(q))
+                if not b or not b.get('data'): print('stopped', day, len(got), total); break
+                total = b['total']; got += b['data']
+            keys = [(p['gameId'], p['playerId']) for p in got]
+            exp = {r['id'] for r in rows if r['date'] == day}
+            print('sort' if sort else 'no sort', day, 'rows', len(got), 'total', total, 'distinct', len(set(keys)), 'games in feed', len({k[0] for k in keys}), 'games in history', len(exp),
+                  'feed-only', sorted({k[0] for k in keys} - exp)[:5], 'history-only', sorted(exp - {k[0] for k in keys})[:5],
+                  'per-team counts', sorted(collections.Counter((p['gameId'], p['teamAbbrev']) for p in got).values())[:3], '..', sorted(collections.Counter((p['gameId'], p['teamAbbrev']) for p in got).values())[-3:])
+            if got: print('  dates', sorted({p['gameDate'] for p in got}), 'sample', {k: got[0].get(k) for k in ('gameId', 'gameDate', 'teamAbbrev', 'playerId', 'timeOnIcePerGame', 'positionCode')})
+
 if __name__ == '__main__':
+    if sys.argv[1] == 'skatercode': skater_code(); sys.exit()
     what = sys.argv[1]
     if what == 'skaters': skater_feed()
     elif what == 'mp': moneypuck()
