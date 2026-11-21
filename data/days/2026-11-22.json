@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generatedAt": "2026-11-21T07:31:03Z",
+ "generatedAt": "2026-11-21T12:02:43Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
  "games": [
   {
@@ -44,9 +44,9 @@
       "tokenId": "26079760334030474583280474607862838049792917772006531097417863946787306091945",
       "status": "open",
       "periodType": null,
-      "ask": 0.57,
+      "ask": 0.58,
       "bid": 0.56,
-      "volume": 303.200424,
+      "volume": 313.200424,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -60,8 +60,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.44,
-      "bid": 0.43,
-      "volume": 303.200424,
+      "bid": 0.42,
+      "volume": 313.200424,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -187,8 +187,8 @@
       "tokenId": "42470028504776548073202287225222100883753170010519639104127469076545035555842",
       "status": "open",
       "periodType": null,
-      "ask": 0.37,
-      "bid": 0.06,
+      "ask": 0.3,
+      "bid": 0.07,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -205,8 +205,8 @@
       "tokenId": "55682892432384072551713699762124887228423719681199959208515001795480744451544",
       "status": "open",
       "periodType": null,
-      "ask": 0.94,
-      "bid": 0.63,
+      "ask": 0.93,
+      "bid": 0.7,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -215,11 +215,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T07:31:02Z",
+    "fetchedAt": "2026-11-21T12:02:42Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T07:31:03.101220+00:00",
+    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -543,13 +543,16 @@
     "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
    },
    "v4": {
-    "version": "v4-independent",
-    "la": 3.1687,
-    "lh": 2.8102,
-    "ra": 2.8107,
-    "rh": 2.4926,
-    "betaGq": 0.4186,
-    "calib": 1.0152,
+    "version": "v4.1-independent",
+    "la": 3.191,
+    "lh": 2.8477,
+    "ra": 2.8592,
+    "rh": 2.5515,
+    "sim": {
+     "pull3": 0.4
+    },
+    "betaGq": 0.38159,
+    "calib": 1.016,
     "goalies": {
      "away": {
       "name": "Brandon Bussi",
@@ -655,19 +658,33 @@
     },
     "form": {
      "away": {
-      "gf": 1.143,
-      "ga": 0.865,
-      "xf": 1.126,
-      "xa": 0.896
+      "gf": 1.145,
+      "ga": 0.868,
+      "xf": 1.137,
+      "xa": 0.889
      },
      "home": {
-      "gf": 0.992,
-      "ga": 0.936,
-      "xf": 1.018,
-      "xa": 0.973
+      "gf": 0.982,
+      "ga": 0.941,
+      "xf": 1.004,
+      "xa": 0.981
      }
     },
-    "at": "2026-11-21T07:31:04Z"
+    "recent": {
+     "away": {
+      "gf": 1.12,
+      "ga": 0.875,
+      "xf": 1.098,
+      "xa": 0.913
+     },
+     "home": {
+      "gf": 0.997,
+      "ga": 0.936,
+      "xf": 1.025,
+      "xa": 0.969
+     }
+    },
+    "at": "2026-11-21T12:02:44Z"
    }
   },
   {
@@ -747,7 +764,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.67,
+      "bid": 0.65,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -764,7 +781,7 @@
       "tokenId": "14854500202842374234388634652987051699175906215120239950081565893828052988930",
       "status": "open",
       "periodType": null,
-      "ask": 0.33,
+      "ask": 0.35,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -819,7 +836,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.56,
-      "bid": 0.4,
+      "bid": 0.34,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -836,7 +853,7 @@
       "tokenId": "36325209105520296852884716913054272293524062041899330646324403772237082262633",
       "status": "open",
       "periodType": null,
-      "ask": 0.6,
+      "ask": 0.66,
       "bid": 0.44,
       "volume": null,
       "fee": {
@@ -882,11 +899,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T07:31:02Z",
+    "fetchedAt": "2026-11-21T12:02:42Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T07:31:03.101220+00:00",
+    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1199,13 +1216,16 @@
     "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
    },
    "v4": {
-    "version": "v4-independent",
-    "la": 2.471,
-    "lh": 3.8489,
-    "ra": 2.1918,
-    "rh": 3.4139,
-    "betaGq": 0.4186,
-    "calib": 1.0152,
+    "version": "v4.1-independent",
+    "la": 2.5212,
+    "lh": 3.9217,
+    "ra": 2.259,
+    "rh": 3.5138,
+    "sim": {
+     "pull3": 0.4
+    },
+    "betaGq": 0.38159,
+    "calib": 1.016,
     "goalies": {
      "away": {
       "name": "Ukko-Pekka Luukkonen",
@@ -1310,19 +1330,33 @@
     },
     "form": {
      "away": {
-      "gf": 0.995,
-      "ga": 1.029,
-      "xf": 0.988,
+      "gf": 1.009,
+      "ga": 1.024,
+      "xf": 0.989,
       "xa": 1.026
      },
      "home": {
-      "gf": 1.098,
-      "ga": 0.942,
-      "xf": 1.05,
-      "xa": 0.949
+      "gf": 1.107,
+      "ga": 0.934,
+      "xf": 1.062,
+      "xa": 0.942
      }
     },
-    "at": "2026-11-21T07:31:04Z"
+    "recent": {
+     "away": {
+      "gf": 0.985,
+      "ga": 1.034,
+      "xf": 0.989,
+      "xa": 1.026
+     },
+     "home": {
+      "gf": 1.078,
+      "ga": 0.942,
+      "xf": 1.03,
+      "xa": 0.957
+     }
+    },
+    "at": "2026-11-21T12:02:44Z"
    }
   },
   {
@@ -1537,11 +1571,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T07:31:02Z",
+    "fetchedAt": "2026-11-21T12:02:42Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T07:31:03.101220+00:00",
+    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -1883,13 +1917,16 @@
     "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
    },
    "v4": {
-    "version": "v4-independent",
-    "la": 3.1448,
-    "lh": 2.8854,
-    "ra": 2.7894,
-    "rh": 2.5594,
-    "betaGq": 0.4186,
-    "calib": 1.0152,
+    "version": "v4.1-independent",
+    "la": 3.2628,
+    "lh": 2.9742,
+    "ra": 2.9234,
+    "rh": 2.6648,
+    "sim": {
+     "pull3": 0.4
+    },
+    "betaGq": 0.38159,
+    "calib": 1.016,
     "goalies": {
      "away": {
       "name": "Tristan Jarry",
@@ -1988,19 +2025,33 @@
     },
     "form": {
      "away": {
-      "gf": 1.092,
-      "ga": 0.919,
-      "xf": 0.969,
-      "xa": 0.955
+      "gf": 1.108,
+      "ga": 0.937,
+      "xf": 0.982,
+      "xa": 0.951
      },
      "home": {
-      "gf": 0.994,
-      "ga": 0.98,
-      "xf": 0.991,
-      "xa": 0.993
+      "gf": 0.979,
+      "ga": 0.979,
+      "xf": 0.967,
+      "xa": 0.984
      }
     },
-    "at": "2026-11-21T07:31:04Z"
+    "recent": {
+     "away": {
+      "gf": 1.054,
+      "ga": 0.909,
+      "xf": 0.961,
+      "xa": 0.969
+     },
+     "home": {
+      "gf": 1.004,
+      "ga": 0.988,
+      "xf": 1.012,
+      "xa": 1.0
+     }
+    },
+    "at": "2026-11-21T12:02:44Z"
    }
   },
   {
@@ -2215,11 +2266,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T07:31:02Z",
+    "fetchedAt": "2026-11-21T12:02:42Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T07:31:03.101220+00:00",
+    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2561,13 +2612,16 @@
     "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
    },
    "v4": {
-    "version": "v4-independent",
-    "la": 2.5311,
-    "lh": 3.6815,
-    "ra": 2.2451,
-    "rh": 3.2654,
-    "betaGq": 0.4186,
-    "calib": 1.0152,
+    "version": "v4.1-independent",
+    "la": 2.6,
+    "lh": 3.7642,
+    "ra": 2.3296,
+    "rh": 3.3727,
+    "sim": {
+     "pull3": 0.4
+    },
+    "betaGq": 0.38159,
+    "calib": 1.016,
     "goalies": {
      "away": {
       "name": "Sergei Murashov",
@@ -2659,19 +2713,33 @@
     },
     "form": {
      "away": {
-      "gf": 0.996,
-      "ga": 1.078,
-      "xf": 1.014,
-      "xa": 1.053
+      "gf": 1.016,
+      "ga": 1.069,
+      "xf": 1.021,
+      "xa": 1.047
      },
      "home": {
-      "gf": 0.977,
-      "ga": 0.911,
-      "xf": 0.982,
-      "xa": 0.958
+      "gf": 0.987,
+      "ga": 0.894,
+      "xf": 0.984,
+      "xa": 0.947
      }
     },
-    "at": "2026-11-21T07:31:04Z"
+    "recent": {
+     "away": {
+      "gf": 0.965,
+      "ga": 1.074,
+      "xf": 1.004,
+      "xa": 1.05
+     },
+     "home": {
+      "gf": 0.979,
+      "ga": 0.943,
+      "xf": 0.985,
+      "xa": 0.979
+     }
+    },
+    "at": "2026-11-21T12:02:44Z"
    }
   },
   {
@@ -2859,7 +2927,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.4,
-      "bid": 0.1,
+      "bid": 0.11,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2876,7 +2944,7 @@
       "tokenId": "25928051197988890498870533826873007036662054564933591540392152815949128482879",
       "status": "open",
       "periodType": null,
-      "ask": 0.9,
+      "ask": 0.89,
       "bid": 0.6,
       "volume": null,
       "fee": {
@@ -2886,11 +2954,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-21T07:31:02Z",
+    "fetchedAt": "2026-11-21T12:02:42Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-21T07:31:03.101220+00:00",
+    "checkedAt": "2026-11-21T12:02:43.499841+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3193,13 +3261,16 @@
     "blockReason": "Skater adjustment unavailable: official skater game-log feed incomplete"
    },
    "v4": {
-    "version": "v4-independent",
-    "la": 3.3214,
-    "lh": 3.2458,
-    "ra": 2.9461,
-    "rh": 2.879,
-    "betaGq": 0.4186,
-    "calib": 1.0152,
+    "version": "v4.1-independent",
+    "la": 3.32,
+    "lh": 3.3174,
+    "ra": 2.9747,
+    "rh": 2.9724,
+    "sim": {
+     "pull3": 0.4
+    },
+    "betaGq": 0.38159,
+    "calib": 1.016,
     "goalies": {
      "away": {
       "name": "Drew Commesso",
@@ -3298,19 +3369,33 @@
     },
     "form": {
      "away": {
-      "gf": 0.898,
-      "ga": 1.137,
-      "xf": 0.906,
-      "xa": 1.068
+      "gf": 0.877,
+      "ga": 1.135,
+      "xf": 0.889,
+      "xa": 1.072
      },
      "home": {
-      "gf": 0.925,
-      "ga": 1.194,
-      "xf": 0.902,
-      "xa": 1.129
+      "gf": 0.913,
+      "ga": 1.21,
+      "xf": 0.892,
+      "xa": 1.127
      }
     },
-    "at": "2026-11-21T07:31:04Z"
+    "recent": {
+     "away": {
+      "gf": 0.939,
+      "ga": 1.117,
+      "xf": 0.928,
+      "xa": 1.054
+     },
+     "home": {
+      "gf": 0.938,
+      "ga": 1.139,
+      "xf": 0.93,
+      "xa": 1.116
+     }
+    },
+    "at": "2026-11-21T12:02:44Z"
    }
   }
  ]
