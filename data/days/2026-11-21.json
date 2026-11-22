@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
- "generatedAt": "2026-11-22T16:34:45Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
+ "generatedAt": "2026-11-22T20:38:00Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
    "id": 2026020359,
@@ -989,7 +989,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2289,11 +2289,17 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Wyatt Kaiser",
+        "position": "D",
+        "status": "Suspension",
+        "updatedAt": "2026-11-22T18:51Z"
+       },
        {
         "name": "Connor Bedard",
         "position": "C",
@@ -2325,11 +2331,6 @@
         "name": "Tyler Bertuzzi"
        },
        {
-        "id": 8485554,
-        "position": "L",
-        "name": "Dillon Boucher"
-       },
-       {
         "id": 8477987,
         "position": "C",
         "name": "Ryan Donato"
@@ -2338,6 +2339,11 @@
         "id": 8485391,
         "position": "C",
         "name": "Anton Frondell"
+       },
+       {
+        "id": 8476822,
+        "position": "C",
+        "name": "Luke Glendening"
        },
        {
         "id": 8483450,
@@ -2583,7 +2589,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "CHI recent skater absences not individually modeled: Connor Bedard, Bowen Byram"
+    "blockReason": "CHI recent skater absences not individually modeled: Wyatt Kaiser, Connor Bedard, Bowen Byram"
    }
   },
   {
@@ -3573,7 +3579,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4864,7 +4870,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6154,7 +6160,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6201,11 +6207,6 @@
         "id": 8479066,
         "position": "L",
         "name": "Ryan Lomberg"
-       },
-       {
-        "id": 8478904,
-        "position": "C",
-        "name": "Steven Lorentz"
        },
        {
         "id": 8480806,
@@ -6292,6 +6293,18 @@
      "home": {
       "injuries": [
        {
+        "name": "Colton Sissons",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-22T17:19Z"
+       },
+       {
+        "name": "Jack Roslovic",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-22T17:15Z"
+       },
+       {
         "name": "Kirill Marchenko",
         "position": "RW",
         "status": "Injured Reserve",
@@ -6308,12 +6321,6 @@
         "position": "D",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-21T15:07Z"
-       },
-       {
-        "name": "Colton Sissons",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-12T15:24Z"
        },
        {
         "name": "Miles Wood",
@@ -6513,7 +6520,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "TOR recent skater absences not individually modeled: Kirill Marchenko, Cole McWard, Nick Blankenburg"
+    "blockReason": "TOR recent skater absences not individually modeled: Colton Sissons, Kirill Marchenko, Cole McWard"
    }
   },
   {
@@ -7499,7 +7506,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8796,7 +8803,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -10087,7 +10094,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -11342,7 +11349,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -12615,7 +12622,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -13844,7 +13851,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -15110,7 +15117,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -16173,7 +16180,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -17461,7 +17468,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-22T16:34:45.647588+00:00",
+    "checkedAt": "2026-11-22T20:38:01.455552+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
