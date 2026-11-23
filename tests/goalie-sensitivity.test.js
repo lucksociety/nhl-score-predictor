@@ -26,7 +26,7 @@ g.v4.goalies.away.candidates=[{gq:0}];
 g.market.sides.away.ask=.52;g.market.sides.away.bid=.51;
 const fragile=M.runGameV4(g,{n:20000,seed:11});
 assert(B.evaluate(g,base,{now}).best.value,'the baseline edge is a value bet');
-assert.equal(B.evaluate(g,fragile,{now}).best.value,false,'a starter-dependent edge is not a value bet');
+assert.equal(B.evaluate(g,fragile,{now}).best,null,'a starter-dependent edge is not a value bet');
 const explicit=M.runGameV4(g,{n:1000,seed:11,gq:{home:0}});
 assert(!explicit.calibrationStress.some(s=>s.label==='unconfirmed roster-goalie sensitivity'),'manual goalie override locks the scenario');
 console.log('Roster-goalie sensitivity, simultaneous switches and fragile-edge rejection passed');

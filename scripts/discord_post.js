@@ -9,15 +9,23 @@ async function post(url, method, body) {
   if (!r.ok) throw new Error(`Discord ${r.status}: ${(await r.text()).slice(0, 200)}`);
 }
 /** Reply to the /nhl interaction (edit "thinking…" + follow-ups). */
-async function send(appId, token, msgs,render) {
+async function send(appId, token, msgs,render,onSent) {
   const {sendPart}=await import('./discord-delivery.mjs');
   const base=`https://discord.com/api/v10/webhooks/${appId}/${token}`;
-  for(let i=0;i<msgs.length;i++)await sendPart({base,index:i,body:()=>{const m=render?render()[i]:msgs[i];return m&&i===0?{...m,content:m.content??''}:m;}});
+  for(let i=0;i<msgs.length;i++){
+    const sent=await sendPart({base,index:i,body:()=>{const m=render?render()[i]:msgs[i];return m&&i===0?{...m,content:m.content??''}:m;}});
+    if(sent && onSent)onSent(sent.body);
+  }
 }
 
 /** Post to the channel webhook (secret DISCORD_WEBHOOK_URL): fallback, or manual workflow_dispatch posts. */
-async function sendWebhook(url, msgs) {
-  for (const m of msgs) await post(url + (url.includes('?') ? '&' : '?') + 'wait=true', 'POST', Object.assign({ username: 'Luck Society NHL' }, m));
+async function sendWebhook(url, msgs,render,onSent) {
+  for(let i=0;i<msgs.length;i++){
+    const m=render?render()[i]:msgs[i];if(!m)continue;
+    const body=Object.assign({username:'Luck Society NHL'},m);
+    await post(url+(url.includes('?')?'&':'?')+'wait=true','POST',body);
+    if(onSent)onSent(body);
+  }
 }
 module.exports = { send, sendWebhook };
 if (require.main === module) (async () => {
@@ -26,17 +34,21 @@ if (require.main === module) (async () => {
   const msgs = payloads(P);
   fs.mkdirSync('out', { recursive: true });
   fs.writeFileSync('out/discord.json', JSON.stringify(msgs));
+  const receipt={schema:1,date:P.date,model:P.model,selectionPolicy:P.selectionPolicy,complete:false,messages:[]};
+  const save=()=>fs.writeFileSync('out/delivery.json',JSON.stringify(receipt));
+  const onSent=body=>{receipt.messages.push({sent_at:new Date().toISOString(),body});save();};
+  const complete=()=>{receipt.complete=true;save();};
   for (const m of msgs) { const n = JSON.stringify(m.embeds).length; if (n > 6000 * 1.3) console.error('warning: large message', n); }
   if (process.argv.includes('--dry-run')) { console.log(JSON.stringify(msgs, null, 1)); process.exit(0); }
   const E = process.env, wh = E.DISCORD_WEBHOOK_URL;
   try {
-    if (process.argv.includes('--webhook')) { if (!wh) throw new Error('DISCORD_WEBHOOK_URL not set'); await sendWebhook(wh, msgs); console.log(`posted ${msgs.length} message(s) to the channel webhook`); return; }
+    if (process.argv.includes('--webhook')) { if (!wh) throw new Error('DISCORD_WEBHOOK_URL not set'); await sendWebhook(wh,msgs,()=>payloads(P),onSent);complete();console.log(`posted ${msgs.length} message(s) to the channel webhook`);return; }
     if (!E.DISCORD_APP_ID || !E.DISCORD_INTERACTION_TOKEN) throw new Error('no interaction token');
-    await send(E.DISCORD_APP_ID, E.DISCORD_INTERACTION_TOKEN, msgs,()=>payloads(P)); console.log(`replied to /nhl with ${msgs.length} message(s)`);
+    await send(E.DISCORD_APP_ID,E.DISCORD_INTERACTION_TOKEN,msgs,()=>payloads(P),onSent);complete();console.log(`replied to /nhl with ${msgs.length} message(s)`);
   } catch (e) {
     console.error('interaction reply failed:', e.message);
     if (process.argv.includes('--webhook') || !wh) process.exit(1);
-    try { await sendWebhook(wh, msgs); console.log('posted via channel webhook fallback'); }
+    try { await sendWebhook(wh,msgs,()=>payloads(P),onSent);complete();console.log('posted via channel webhook fallback'); }
     catch (e2) { console.error('webhook fallback failed:', e2.message); process.exit(1); }
   }
 })();

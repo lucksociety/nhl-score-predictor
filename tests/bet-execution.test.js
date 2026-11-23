@@ -20,12 +20,12 @@ for (const mod of [
   g => { g.startUTC = null; }, g => { g.state = 'LIVE'; }
 ]) { const g = base(); mod(g); assert.equal(evaluate(g).best, null); }
 const cheap = base(); cheap.market.sides.away.ask = .4; cheap.market.sides.away.bid = .39;
-// The value test is information only since score-fit-best-price-v1: the line is still the best bet, flagged value:false.
+// Reject fragile edges; an informational value flag cannot authorize a bet.
 assert.equal(B.evaluate(base(), o, { now }).best.value, true);
-assert.equal(B.evaluate(cheap, { ...o, pAway: .5001 }, { now }).best.value, false, 'probability must clear numerical error above 50%');
-assert.equal(B.evaluate(base(), { ...o, pAway: .5 }, { now }).best.value, false);
-assert.equal(B.evaluate(base(), { ...o, pAway: .5176 }, { now }).best.value, false, '0.01pp edge is below 400k-sim sampling uncertainty');
-assert.equal(B.evaluate(base(), { ...o, n: undefined }, { now }).best.value, false, 'unverified simulation count is never a value bet');
+assert.equal(B.evaluate(cheap, { ...o, pAway: .5001 }, { now }).best, null, 'probability must clear numerical error above 50%');
+assert.equal(B.evaluate(base(), { ...o, pAway: .5 }, { now }).best, null);
+assert.equal(B.evaluate(base(), { ...o, pAway: .5176 }, { now }).best, null, '0.01pp edge is below 400k-sim sampling uncertainty');
+assert.equal(B.evaluate(base(), { ...o, n: undefined }, { now }).best, null, 'unverified simulation count is never a value bet');
 const totalGame = base();
 totalGame.market.sides = {};
 totalGame.market.extra = [{ type: 'totals', label: 'O 5.5', ou: 'O', line: 5.5,
@@ -44,7 +44,7 @@ for (const mod of [
 }
 (async () => {
   const { payloads } = await import('../js/discord_embeds.mjs');
-  const best = { type:'ML', label: 'SEA ML', q: .6, ask: .5, ev: .1 };
+  const best = { type:'ML', label: 'SEA ML', q: .6, ask: .5, cost:.52, sensitivityLower:.59, executionVerified:true, ev: .1 };
   const row = { id: 1, away: 'SEA', home: 'CGY', start: '2000-01-01T00:00:00Z',
     pick: { away: 3, home: 2 }, pAway: .6, pHome: .4, pOT: .2, xg: [3, 2],
     best, others: [best], leans: {}, markets: {} };

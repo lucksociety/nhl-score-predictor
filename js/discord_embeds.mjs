@@ -17,6 +17,7 @@ export function topPick(name, p, market) {
 }
 
 export function gameEmbed(g) {
+  if(g.best && !B.valuePass(g.best)) g={...g,best:null,others:[],noBetReason:B.valueFailure(g.best)};
   const st = g.state === 'LIVE' || g.state === 'CRIT' ? ' · 🔴 LIVE (pre-game prediction)' : g.state === 'OFF' || g.state === 'FINAL' ? ' · Final' : '';
   const e = { title: `🍀 ${g.away} @ ${g.home} · ${g.time}${st}`, color: GREY };
   if (!g.pick) { e.description = `⚠️ ${g.error}`; return e; }
@@ -36,9 +37,9 @@ export function gameEmbed(g) {
   if (g.best) {
     e.color = GOLD;
     lines.push(`✅ **BEST BET: ${g.best.label}** · Polymarket ${cents(g.best.ask)} · **${B.payText(g.best)}** profit after the fee · model ${pct(g.best.q)}`);
-    lines.push(`Fits the predicted score ${g.away} ${g.pick.away}–${g.pick.home} ${g.home} and pays the most of the lines that do.`);
+    lines.push(`Model probability stays above 50% and EV stays positive through goalie/skater and quote stress; fits the predicted score.`);
     if(g.best.executionVerified) lines.push(`Execution: ≥${g.best.requiredDepth} contracts available at quoted ask`);
-    if (g.others && g.others.length) lines.push(`Also fits the score: ${g.others.map(c => `${c.label} @ ${cents(c.ask)} (model ${pct(c.q)})`).join(' · ')}`);
+    if (g.others && g.others.length) lines.push(`Other qualifying value bets: ${g.others.map(c => `${c.label} @ ${cents(c.ask)} (model ${pct(c.q)})`).join(' · ')}`);
   } else {
     e.color = GREEN;
     lines.push(`⛔ **NO BET** — ${g.noBetReason}`);
@@ -57,19 +58,19 @@ export function payloads(P) {
   const now = Date.now();
   P = { ...P, games: P.games.map(g => {
     const fetched = Date.parse(g.quoteFetchedAt);
-    const reason = g.availability?.blockReason || (g.best?.executionVerified===false ? 'live execution depth not verified' : null) || (g.best && !B.scoreSupports(g.best, g, g.pick) ? 'bet does not win at displayed predicted score'
+    const reason = g.availability?.blockReason || (g.best && g.best.executionVerified!==true ? 'live execution depth not verified' : null) || (g.best && B.valueFailure(g.best)) || (g.best && !B.scoreSupports(g.best, g, g.pick) ? 'bet does not win at displayed predicted score'
       : !Number.isFinite(Date.parse(g.start)) || now >= Date.parse(g.start)
       ? 'scheduled start passed or unavailable — no pregame bet'
       : !Number.isFinite(fetched) || fetched > now || now - fetched > 5 * 60 * 1000
         ? 'quote unavailable or older than five minutes — refresh before betting' : null);
-    return reason ? { ...g, best: null, others: [], noBetReason: reason } : { ...g, others: (g.others || []).filter(c => B.scoreSupports(c, g, g.pick)) };
+    return reason ? { ...g, best: null, others: [], noBetReason: reason } : { ...g, others: (g.others || []).filter(c => c.executionVerified===true && B.valuePass(c) && B.scoreSupports(c, g, g.pick)) };
   }) };
   const bets = P.games.filter(g => g.best);
   const head = {
     title: `🍀 Luck Society NHL — ${P.date}`, url: SITE, color: GOLD, thumbnail: { url: LOGO },
     description: `${P.games.length} games · model **${String(P.model || 'v4-independent').replace(/-skater-v1$/, '')}** (no Vegas input) · ${(P.sims / 1000).toFixed(0)}k Monte Carlo sims/game\n` +
       `Best bets: **${bets.length}** ${bets.length ? '— ' + bets.map(g => `${g.best.label} (${cents(g.best.ask)})`).join(', ') : ''}\n` +
-      `-# Every Polymarket market checked (moneyline, all O/U lines, all alt puck lines; settle on final score incl. OT/SO). Rule: the line that wins at the predicted score and pays the most, with verified depth. Not a value bet. Prices as of ${P.jupiterFetchedAt ? new Date(P.jupiterFetchedAt).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }) + ' ET' : 'n/a'}. Not financial advice.`,
+      `-# Every Polymarket market checked (moneyline, all O/U lines, all alt puck lines; settle on final score incl. OT/SO). Rule: >50% probability, positive fee/quote-stressed EV, score agreement and verified depth. Ranked by conservative probability. Prices as of ${(P.marketFetchedAt || P.jupiterFetchedAt) ? new Date(P.marketFetchedAt || P.jupiterFetchedAt).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' }) + ' ET' : 'n/a'}. Not financial advice.`,
     footer: { text: 'Luck Society · score = min-expected-error pick · OT/SO winner +1' },
   };
   const embeds = [head, ...P.games.map(gameEmbed)];

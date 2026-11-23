@@ -2,9 +2,9 @@
  * Candidates: every side of every Polymarket market on the game: moneyline, all O/U lines, all alt puck lines. Price = ask;
  * fee = the market's own Polymarket taker schedule rate*(p*(1-p))^exponent (sports default 0.05).
  *
- * Rule `score-fit-best-price-v1` (owner decision, 21 Nov 2026): the best bet is the line that WINS AT THE PREDICTED SCORE
- * and PAYS THE MOST, i.e. the lowest cost (ask + fee) among every line the predicted score satisfies. It is not a value
- * bet: the model's probability and expected value are shown for information and no longer decide anything.
+ * Rule `probability-value-score-depth-v4`: only score-consistent lines above 50% model probability that
+ * retain >50% probability and positive fee-adjusted EV through scoring, skater and goalie sensitivity,
+ * Monte Carlo sampling error and a one-cent worse quote qualify. Rank by conservative probability, then EV.
  * A line still needs a real, takeable quote (open, full game incl. OT/SO, two-sided within 10 cents, traded volume, fresh).
  * Polymarket NHL resolution is the final result incl. OT/SO, so the predicted final score is compared directly. */
   // POLICY names the rule in every published slate so the bet record keeps the two rules apart.
@@ -21,7 +21,7 @@
   const exactFee = (p, sched) => { const f = sched && sched.rate != null ? sched : DEFAULT_FEE; return Math.max(0, Number(f.rate) * Math.pow(p * (1 - p), Number(f.exponent == null ? 1 : f.exponent))); };
   function winnings(c, stake) { stake = stake == null ? 10 : stake; const cost = c.ask + exactFee(c.ask, c.feeSchedule); return stake * (1 - cost) / cost; }
   const payText = (c, stake) => { stake = stake == null ? 10 : stake; return `$${stake} wins $${winnings(c, stake).toFixed(2)}`; };
-  const POLICY = 'score-fit-best-price-v1';
+  const POLICY = 'probability-value-score-depth-v4';
   const MAX_SPREAD = 0.10;
   const MAX_QUOTE_AGE_MS = 5 * 60 * 1000;
   function scoreSupports(c, g, pick) {
@@ -35,6 +35,20 @@
     if (c.type === 'PUCKLINE' && spread) return spread[1] === g.home ? h + +spread[2] > a : spread[1] === g.away ? a + +spread[2] > h : false;
     return false;
   }
+  // Recomputed at selection, order-book verification and publication. Never trust a cached value flag.
+  function valueFailure(c) {
+    if (!c || !Number.isFinite(c.q) || c.q <= MIN_PROB || c.q > 1) return 'model probability is not above 50%';
+    if (!Number.isFinite(c.ask) || c.ask <= 0 || c.ask >= 1) return 'executable price unavailable';
+    const cost = c.ask + fee(c.ask, c.feeSchedule);
+    if (!Number.isFinite(cost) || !Number.isFinite(c.cost) || Math.abs(c.cost-cost)>1e-8) return 'fee-inclusive cost is inconsistent';
+    if (!Number.isFinite(c.sensitivityLower) || c.sensitivityLower > c.q + 1e-8 || c.sensitivityLower <= MIN_PROB)
+      return 'probability does not remain above 50% through input sensitivity and sampling error';
+    if (c.q <= cost) return 'nonpositive fee-adjusted expected value';
+    const ask = Math.min(1,c.ask+.01), stressedCost = ask + Math.max(fee(c.ask,c.feeSchedule),fee(ask,c.feeSchedule));
+    if (c.sensitivityLower <= stressedCost) return 'positive EV does not survive input sensitivity and a one-cent worse quote';
+    return null;
+  }
+  const valuePass = c => !valueFailure(c);
   function cand(type, label, q, x, extra) {
     if (!x || !Number.isFinite(q) || q < 0 || q > 1) return null;
     const p = x.ask, f = fee(p, x.fee);
@@ -88,10 +102,9 @@
     }
     // This only bounds numerical sampling noise; it does not claim the model itself is calibrated.
     const availabilityOK = !g.availability?.blockReason;
-    // value: what the old rule required. Kept on each candidate as information only.
-    for (const c of cands) c.value = c.sensitivityLower > MIN_PROB && c.ev > 0 && c.sensitivityEV > 0 && c.quoteStressEV > 0;
-    const ok = pregame && quoteFresh && availabilityOK ? cands.filter(c => c.scoreConsistent && c.executable) : [];
-    ok.sort((a, b) => a.cost - b.cost || b.q - a.q);   // pays the most first; the likelier line breaks a tie
+    for (const c of cands) { c.valueFailure = valueFailure(c); c.value = !c.valueFailure; }
+    const ok = pregame && quoteFresh && availabilityOK ? cands.filter(c => c.scoreConsistent && c.executable && c.value) : [];
+    ok.sort((a, b) => b.sensitivityLower - a.sensitivityLower || b.quoteStressEV - a.quoteStressEV || b.ev - a.ev);
     let reason = null;
     if (!ok.length) {
       if (!availabilityOK) reason = g.availability.blockReason;
@@ -99,7 +112,8 @@
       else if (!quoteFresh) reason = 'Polymarket quote is missing, from the future, or older than five minutes';
       else if (!cands.length) reason = 'no Polymarket market';
       else if (!cands.some(c => c.executable)) reason = 'no verified full-game OT/SO two-sided quote within 10¢ with traded volume';
-      else reason = 'no line that wins at the predicted score has a two-sided quote';
+      else if (!cands.some(c => c.scoreConsistent && c.executable)) reason = 'no line that wins at the predicted score has a two-sided quote';
+      else reason = 'no score-consistent line remains above 50% with positive fee/quote-stressed EV';
     }
     // model leans on standard lines (no Polymarket price -> informational only, never a bet)
     const leans = {
@@ -109,7 +123,7 @@
     };
     return { best: ok[0] || null, others: ok.slice(1, 4), qualifying: ok.length, cands, reason, leans, hasTotals: cands.some(c => c.type === 'TOTAL'), hasPL: cands.some(c => c.type === 'PUCKLINE') };
   }
-  const api = { evaluate, fee, exactFee, winnings, payText, MIN_PROB, POLICY, scoreSupports };
+  const api = { evaluate, fee, exactFee, winnings, payText, MIN_PROB, POLICY, scoreSupports, valuePass, valueFailure };
   root.NHLBets = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof self !== 'undefined' ? self : globalThis);

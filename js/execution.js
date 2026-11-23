@@ -29,7 +29,7 @@ async function verifyExecution(P,{fetchBook=liveBookFetcher(),now=()=>Date.now()
   for(const c of choices){
    c.executionVerified=false;
    const fresh=()=>Number.isFinite(Date.parse(g.start)) && now()<Date.parse(g.start) && ['FUT','PRE'].includes(g.state) && Number.isFinite(Date.parse(g.quoteFetchedAt)) && now()>=Date.parse(g.quoteFetchedAt) && now()-Date.parse(g.quoteFetchedAt)<=300000 && !g.availability?.blockReason;
-   if(!fresh() || !B.scoreSupports(c,g,g.pick)){g.executionRejections.push({label:c.label,reason:'not verified pregame/fresh quote/displayed-score winner'});continue;}
+   if(!fresh() || !B.scoreSupports(c,g,g.pick) || !B.valuePass(c)){g.executionRejections.push({label:c.label,reason:'not verified pregame/fresh quote/displayed-score winner/value requirements'});continue;}
    const required=Math.max(10,Math.ceil(5/c.ask));c.requiredDepth=required;
    try{
     if(!c.tokenId)throw Error('no CLOB token for this contract');
@@ -39,7 +39,7 @@ async function verifyExecution(P,{fetchBook=liveBookFetcher(),now=()=>Date.now()
    }catch(e){g.executionRejections.push({label:c.label,reason:e.message});}
   }
   g.best=valid[0]||null;g.others=valid.slice(1);g.qualifying=valid.length;
-  if(!g.best&&choices.length)g.noBetReason='No score-fitting line with fresh order-book depth: '+g.executionRejections.map(x=>x.label+' ('+x.reason+')').join('; ');
+  if(!g.best&&choices.length)g.noBetReason='No qualifying value bet with fresh order-book depth: '+g.executionRejections.map(x=>x.label+' ('+x.reason+')').join('; ');
  }
  return P;
 }

@@ -82,4 +82,36 @@ class BetLearningTests(unittest.TestCase):
                 rows=b.capture(root,'nhl-score-predictor','2099-01-01T12:01:00Z','test')
                 self.assertEqual(rows[0]['bet']['label'],'A +1.5')
 
+class DeliveryLedgerTests(unittest.TestCase):
+    def test_historical_nonvalue_picks_are_graded_without_relaxing_current_rules(self):
+        pick={'type':'totals','index':1,'side':'over','line':6.5,'label':'Over 6.5','probability':.46,'cost':.48}
+        args=('G','2099-01-01T14:00:00Z','v4',pick,'verified-historical-run','2099-01-01T12:00:00Z')
+        with self.assertRaises(ValueError):b.make_record(*args,selection_policy='probability-value-score-depth-v4')
+        row=b.make_record(*args,selection_policy='score-fit-best-price-v1')
+        group=next(iter(b.evaluate([row],{'G':{'scores':[4,5]}})['settled_by_model_and_market'].values()))
+        self.assertEqual(group['n'],1);self.assertEqual(group['wins'],1)
+        self.assertEqual(group['probability_rule_failures'],1);self.assertEqual(group['nonpositive_ev_recommendations'],1)
+        self.assertEqual(group['reliability'][0]['n'],1)
+    def test_current_nhl_capture_matches_actual_successful_message_not_planned_bet(self):
+        import os
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);folder=root/'data/predictions';folder.mkdir(parents=True);(root/'out').mkdir()
+            pick={'type':'PUCKLINE','label':'A +1.5','q':.7,'cost':.6,'executionVerified':True}
+            game={'id':'G','away':'A','home':'H','start':'2099-01-01T14:00:00Z','quoteFetchedAt':'2099-01-01T12:00:00Z','best':pick}
+            doc={'model':'test','selectionPolicy':'probability-value-score-depth-v4','games':[game,{**game,'id':'UNSENT','away':'B'}]}
+            (folder/'2099-01-01.json').write_text(json.dumps(doc))
+            delivery={'messages':[{'sent_at':'2099-01-01T12:01:00Z','body':{'embeds':[{'title':'🍀 A @ H · 2:00 PM ET','description':'NO BET — quote expired'}]}}]}
+            ledger=root/'out/delivery.json'
+            with patch.dict(os.environ,{'SLATE_DATE':'2099-01-01'}):
+                with self.assertRaises(ValueError):b.capture(root,'nhl-score-predictor','2099-01-01T12:20:00Z','test')
+                ledger.write_text(json.dumps(delivery));rows=b.capture(root,'nhl-score-predictor','2099-01-01T12:20:00Z','test')
+                self.assertEqual(len(rows),1);self.assertIsNone(rows[0]['bet']);self.assertEqual(rows[0]['posted_at'],'2099-01-01T12:01:00+00:00')
+                delivery['messages'][0]['body']['embeds'][0]['description']='✅ **BEST BET: A +1.5**'
+                ledger.write_text(json.dumps(delivery));rows=b.capture(root,'nhl-score-predictor','2099-01-01T12:20:00Z','test')
+                self.assertEqual(rows[0]['bet']['label'],'A +1.5')
+                delivery['messages'][0]['body']['embeds'][0]['description']='✅ **BEST BET: A +2.5**'
+                ledger.write_text(json.dumps(delivery))
+                with self.assertRaises(ValueError):b.capture(root,'nhl-score-predictor','2099-01-01T12:20:00Z','test')
+
 if __name__=='__main__':unittest.main()
