@@ -1,6 +1,8 @@
 {
   "settled_by_model_and_market": {
     "v4-independent / sensitivity-confidence-v1 / moneyline": {
+      "probability_rule_failures": 0,
+      "nonpositive_ev_recommendations": 0,
       "n": 1,
       "wins": 1,
       "win_rate": 1,
@@ -25,6 +27,8 @@
       }
     },
     "v4-independent / sensitivity-confidence-v1 / spreads": {
+      "probability_rule_failures": 0,
+      "nonpositive_ev_recommendations": 0,
       "n": 5,
       "wins": 3,
       "win_rate": 0.6,
@@ -56,6 +60,8 @@
       }
     },
     "v4-independent-skater-v1 / sensitivity-confidence-v1 / spreads": {
+      "probability_rule_failures": 0,
+      "nonpositive_ev_recommendations": 0,
       "n": 3,
       "wins": 3,
       "win_rate": 1,
@@ -87,6 +93,8 @@
       }
     },
     "v4-independent-skater-v1 / scoring-quote-fee-depth-v2 / spreads": {
+      "probability_rule_failures": 0,
+      "nonpositive_ev_recommendations": 0,
       "n": 4,
       "wins": 3,
       "win_rate": 0.75,
@@ -118,6 +126,8 @@
       }
     },
     "v4-independent-skater-v1 / scoring-quote-fee-depth-v2 / moneyline": {
+      "probability_rule_failures": 0,
+      "nonpositive_ev_recommendations": 0,
       "n": 4,
       "wins": 1,
       "win_rate": 0.25,
@@ -142,6 +152,8 @@
       }
     },
     "v4-independent-skater-v1 / scoring-quote-fee-depth-v2 / totals": {
+      "probability_rule_failures": 0,
+      "nonpositive_ev_recommendations": 0,
       "n": 2,
       "wins": 2,
       "win_rate": 1,
@@ -171,6 +183,91 @@
         "minimum_games": 500,
         "minimum_days": 30
       }
+    },
+    "v4.1-independent-skater-v1 / score-fit-best-price-v1 / spreads": {
+      "probability_rule_failures": 3,
+      "nonpositive_ev_recommendations": 1,
+      "n": 3,
+      "wins": 1,
+      "win_rate": 0.3333333333333333,
+      "mean_probability": 0.46732333333333337,
+      "brier": 0.2565785634291667,
+      "log_loss": 0.7064677455565018,
+      "flat_cost_roi": -0.25925925925925924,
+      "reliability": [
+        {
+          "lower_exclusive": 0,
+          "upper_inclusive": 0.5,
+          "n": 3,
+          "mean_probability": 0.46732333333333337,
+          "win_rate": 0.3333333333333333
+        }
+      ],
+      "calibration_status": "monitor_only_no_automatic_probability_changes",
+      "calibration_proposal": {
+        "status": "insufficient_forward_sample",
+        "minimum_games": 500,
+        "minimum_days": 30
+      }
+    },
+    "v4.1-independent-skater-v1 / score-fit-best-price-v1 / totals": {
+      "probability_rule_failures": 10,
+      "nonpositive_ev_recommendations": 11,
+      "n": 14,
+      "wins": 8,
+      "win_rate": 0.5714285714285714,
+      "mean_probability": 0.4867117857142857,
+      "brier": 0.2455432352392857,
+      "log_loss": 0.6841888402606735,
+      "flat_cost_roi": 0.13637538405677288,
+      "reliability": [
+        {
+          "lower_exclusive": 0,
+          "upper_inclusive": 0.5,
+          "n": 10,
+          "mean_probability": 0.468474,
+          "win_rate": 0.5
+        },
+        {
+          "lower_exclusive": 0.5,
+          "upper_inclusive": 0.6,
+          "n": 4,
+          "mean_probability": 0.53230625,
+          "win_rate": 0.75
+        }
+      ],
+      "calibration_status": "monitor_only_no_automatic_probability_changes",
+      "calibration_proposal": {
+        "status": "insufficient_forward_sample",
+        "minimum_games": 500,
+        "minimum_days": 30
+      }
+    },
+    "v4.1-independent-skater-v1 / score-fit-best-price-v1 / moneyline": {
+      "probability_rule_failures": 0,
+      "nonpositive_ev_recommendations": 0,
+      "n": 1,
+      "wins": 0,
+      "win_rate": 0,
+      "mean_probability": 0.50212,
+      "brier": 0.2521244944,
+      "log_loss": 0.6973961948493602,
+      "flat_cost_roi": -1.0,
+      "reliability": [
+        {
+          "lower_exclusive": 0.5,
+          "upper_inclusive": 0.6,
+          "n": 1,
+          "mean_probability": 0.50212,
+          "win_rate": 0
+        }
+      ],
+      "calibration_status": "monitor_only_no_automatic_probability_changes",
+      "calibration_proposal": {
+        "status": "insufficient_forward_sample",
+        "minimum_games": 500,
+        "minimum_days": 30
+      }
     }
   },
   "model_vs_market": {
@@ -191,6 +288,6 @@
   },
   "pending_or_ungradable": 0,
   "policy": "Delivered primary recommendation only; last pregame publication per event, including NO BET. Not actual trades. No automatic calibration promotion.",
-  "generated_at": "2026-11-22T18:39:47.152645+00:00",
-  "records": 129
+  "generated_at": "2026-11-23T15:33:41.303760+00:00",
+  "records": 148
 }

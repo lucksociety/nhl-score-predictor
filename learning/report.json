@@ -22,20 +22,20 @@
     }
   },
   "forecast_policy": "Last pre-game freeze per event per model version. No retrospectively generated forecast is graded.",
-  "forecasts": 1989,
-  "generated_at": "2026-11-22T18:39:46.257960+00:00",
-  "last_successful_refresh": "2026-11-22T16:36:19+00:00",
+  "forecasts": 2041,
+  "generated_at": "2026-11-23T15:33:40.201189+00:00",
+  "last_successful_refresh": "2026-11-23T13:59:15+00:00",
   "project": "nhl-score-predictor",
   "settled_by_version": {
     "v4-independent": {
-      "brier_multiclass_sum": 0.465074887009929,
-      "log_loss": 0.6578038871035106,
-      "margin_mae": 1.962006993006993,
-      "n": 143,
-      "score_mae_per_team": 1.3028986013986015,
-      "score_n": 143,
-      "total_mae": 1.8347342657342658,
-      "winner_accuracy": 0.6153846153846154
+      "brier_multiclass_sum": 0.46732866474608004,
+      "log_loss": 0.6602144546803138,
+      "margin_mae": 1.9781824324324324,
+      "n": 148,
+      "score_mae_per_team": 1.3230168918918919,
+      "score_n": 148,
+      "total_mae": 1.8628581081081081,
+      "winner_accuracy": 0.6148648648648649
     },
     "v4-independent-skater-v1": {
       "brier_multiclass_sum": 0.5077216734210527,
@@ -48,24 +48,24 @@
       "winner_accuracy": 0.5657894736842105
     },
     "v4.1-independent": {
-      "brier_multiclass_sum": 0.49872941285714284,
-      "log_loss": 0.6945149527501886,
-      "margin_mae": 1.3745714285714286,
-      "n": 14,
-      "score_mae_per_team": 1.2477142857142858,
-      "score_n": 14,
-      "total_mae": 2.0342857142857143,
-      "winner_accuracy": 0.5
+      "brier_multiclass_sum": 0.5097015315789474,
+      "log_loss": 0.705991619656118,
+      "margin_mae": 1.6613684210526316,
+      "n": 19,
+      "score_mae_per_team": 1.4202105263157894,
+      "score_n": 19,
+      "total_mae": 2.1856842105263157,
+      "winner_accuracy": 0.5263157894736842
     },
     "v4.1-independent-skater-v1": {
-      "brier_multiclass_sum": 0.4973909057142857,
-      "log_loss": 0.6931789188772279,
-      "margin_mae": 1.3697142857142857,
-      "n": 14,
-      "score_mae_per_team": 1.2400714285714285,
-      "score_n": 14,
-      "total_mae": 2.03,
-      "winner_accuracy": 0.5714285714285714
+      "brier_multiclass_sum": 0.5004827378947369,
+      "log_loss": 0.6961342205001358,
+      "margin_mae": 1.643421052631579,
+      "n": 19,
+      "score_mae_per_team": 1.4104999999999999,
+      "score_n": 19,
+      "total_mae": 2.180473684210526,
+      "winner_accuracy": 0.5263157894736842
     }
   },
   "warnings": []
