@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generatedAt": "2026-11-23T05:02:40Z",
+ "generatedAt": "2026-11-23T13:58:00Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
  "games": [
   {
@@ -46,7 +46,7 @@
       "periodType": null,
       "ask": 0.52,
       "bid": 0.51,
-      "volume": 130.058384,
+      "volume": 246.37838399999998,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -61,7 +61,7 @@
       "periodType": null,
       "ask": 0.49,
       "bid": 0.48,
-      "volume": 130.058384,
+      "volume": 246.37838399999998,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -115,8 +115,8 @@
       "tokenId": "85016696301084936413927141309106172944795933536483465795980786855772831035237",
       "status": "open",
       "periodType": null,
-      "ask": 0.6,
-      "bid": 0.57,
+      "ask": 0.61,
+      "bid": 0.59,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -133,8 +133,8 @@
       "tokenId": "63832335363522442133488337292081527349619554409355808899312391333540814677451",
       "status": "open",
       "periodType": null,
-      "ask": 0.43,
-      "bid": 0.4,
+      "ask": 0.41,
+      "bid": 0.39,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -188,7 +188,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.27,
-      "bid": 0.25,
+      "bid": 0.24,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -205,7 +205,7 @@
       "tokenId": "57430262008361293580576570627796025303204919391777355009728628030629806842490",
       "status": "open",
       "periodType": null,
-      "ask": 0.75,
+      "ask": 0.76,
       "bid": 0.73,
       "volume": null,
       "fee": {
@@ -215,11 +215,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-23T05:02:39Z",
+    "fetchedAt": "2026-11-23T13:57:59Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-23T05:02:40.084431+00:00",
+    "checkedAt": "2026-11-23T13:58:00.762795+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -525,12 +525,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-22",
      "baseGoals": [
-      3.245,
-      3.1282
+      3.2267,
+      3.1318
      ],
      "adjustedGoals": [
-      3.269358491379542,
-      3.1009094101055696
+      3.2509211229998054,
+      3.104478003506369
      ],
      "featureDelta": [
       0.18512519847315467,
@@ -773,23 +773,23 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9076,
-        2.8029
+        2.8911,
+        2.8061
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-23T05:02:41.840867+00:00",
+    "skaterCheckedAt": "2026-11-23T13:58:07.575993+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent-skater-v1",
-    "la": 3.2694,
-    "lh": 3.1009,
-    "ra": 2.9293,
-    "rh": 2.7784,
+    "la": 3.2509,
+    "lh": 3.1045,
+    "ra": 2.9128,
+    "rh": 2.7816,
     "sim": {
      "pull3": 0.4
     },
@@ -843,7 +843,7 @@
        {
         "id": 8477465,
         "name": "Tristan Jarry",
-        "gq": -0.0443,
+        "gq": -0.0409,
         "mode": "named"
        },
        {
@@ -864,7 +864,7 @@
        {
         "id": 8477465,
         "name": "T. Jarry",
-        "gq": -0.0443,
+        "gq": -0.0409,
         "share": 0.402,
         "shots": 2455
        },
@@ -901,8 +901,8 @@
      "home": {
       "gf": 1.112,
       "ga": 0.965,
-      "xf": 0.975,
-      "xa": 0.957
+      "xf": 0.976,
+      "xa": 0.95
      }
     },
     "recent": {
@@ -915,21 +915,21 @@
      "home": {
       "gf": 1.062,
       "ga": 0.964,
-      "xf": 0.953,
-      "xa": 0.978
+      "xf": 0.956,
+      "xa": 0.967
      }
     },
-    "at": "2026-11-23T05:02:41Z",
+    "at": "2026-11-23T13:58:07Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-22",
      "baseGoals": [
-      3.245,
-      3.1282
+      3.2267,
+      3.1318
      ],
      "adjustedGoals": [
-      3.269358491379542,
-      3.1009094101055696
+      3.2509211229998054,
+      3.104478003506369
      ],
      "featureDelta": [
       0.18512519847315467,
@@ -1172,8 +1172,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9076,
-        2.8029
+        2.8911,
+        2.8061
        ]
       }
      ]
