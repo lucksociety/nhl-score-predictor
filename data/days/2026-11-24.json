@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generatedAt": "2026-11-23T13:58:00Z",
+ "generatedAt": "2026-11-23T15:33:53Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: none)",
  "games": [
   {
@@ -215,11 +215,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-23T13:57:59Z",
+    "fetchedAt": "2026-11-23T15:33:52Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-23T13:58:00.762795+00:00",
+    "checkedAt": "2026-11-23T15:33:53.226405+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -345,16 +345,16 @@
      "home": {
       "injuries": [
        {
-        "name": "Zach Hyman",
-        "position": "LW",
-        "status": "Out",
-        "updatedAt": "2026-11-22T22:39Z"
-       },
-       {
         "name": "Ryan Nugent-Hopkins",
         "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-21T21:28Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-23T14:10Z"
+       },
+       {
+        "name": "Zach Hyman",
+        "position": "LW",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-23T14:10Z"
        },
        {
         "name": "Alec Regula",
@@ -525,16 +525,16 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-22",
      "baseGoals": [
-      3.2267,
-      3.1318
+      3.2258,
+      3.1327
      ],
      "adjustedGoals": [
-      3.2509211229998054,
-      3.104478003506369
+      3.2415990480730987,
+      3.169368649779682
      ],
      "featureDelta": [
       0.18512519847315467,
-      -0.2272145851732561
+      0.3565374915766446
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -650,6 +650,16 @@
          "name": "Leon Draisaitl"
         },
         {
+         "id": 8475786,
+         "position": "L",
+         "name": "Zach Hyman"
+        },
+        {
+         "id": 8476454,
+         "position": "C",
+         "name": "Ryan Nugent-Hopkins"
+        },
+        {
          "id": 8481617,
          "position": "R",
          "name": "Vasily Podkolzin"
@@ -690,16 +700,6 @@
          "name": "Trent Frederic"
         },
         {
-         "id": 8486161,
-         "position": "R",
-         "name": "Owen Michaels"
-        },
-        {
-         "id": 8479368,
-         "position": "L",
-         "name": "Max Jones"
-        },
-        {
          "id": 8480803,
          "position": "D",
          "name": "Evan Bouchard"
@@ -732,18 +732,18 @@
        ],
        "absences": [
         {
-         "name": "Zach Hyman",
-         "id": 8475786,
-         "status": "Out",
-         "baselineParticipation": 0.6176,
-         "productionAbovePositionMean": 0.1657
-        },
-        {
          "name": "Ryan Nugent-Hopkins",
          "id": 8476454,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.573,
          "productionAbovePositionMean": 0.1168
+        },
+        {
+         "name": "Zach Hyman",
+         "id": 8475786,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.6176,
+         "productionAbovePositionMean": 0.1657
         },
         {
          "name": "Alec Regula",
@@ -773,27 +773,34 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.8911,
-        2.8061
+        2.8903,
+        2.8069
+       ]
+      },
+      {
+       "label": "EDM questionable skaters OUT",
+       "rates": [
+        2.9120128729913546,
+        2.782411656063485
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-23T13:58:07.575993+00:00",
+    "skaterCheckedAt": "2026-11-23T15:33:54.778661+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.1-independent-skater-v1",
-    "la": 3.2509,
-    "lh": 3.1045,
-    "ra": 2.9128,
-    "rh": 2.7816,
+    "la": 3.2416,
+    "lh": 3.1694,
+    "ra": 2.9045,
+    "rh": 2.8398,
     "sim": {
      "pull3": 0.4
     },
-    "betaGq": 0.37175,
+    "betaGq": 0.3728,
     "calib": 1.0187,
     "goalies": {
      "away": {
@@ -919,21 +926,21 @@
       "xa": 0.967
      }
     },
-    "at": "2026-11-23T13:58:07Z",
+    "at": "2026-11-23T15:33:54Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-22",
      "baseGoals": [
-      3.2267,
-      3.1318
+      3.2258,
+      3.1327
      ],
      "adjustedGoals": [
-      3.2509211229998054,
-      3.104478003506369
+      3.2415990480730987,
+      3.169368649779682
      ],
      "featureDelta": [
       0.18512519847315467,
-      -0.2272145851732561
+      0.3565374915766446
      ],
      "priorOnlyPlayers": {
       "away": [],
@@ -1049,6 +1056,16 @@
          "name": "Leon Draisaitl"
         },
         {
+         "id": 8475786,
+         "position": "L",
+         "name": "Zach Hyman"
+        },
+        {
+         "id": 8476454,
+         "position": "C",
+         "name": "Ryan Nugent-Hopkins"
+        },
+        {
          "id": 8481617,
          "position": "R",
          "name": "Vasily Podkolzin"
@@ -1089,16 +1106,6 @@
          "name": "Trent Frederic"
         },
         {
-         "id": 8486161,
-         "position": "R",
-         "name": "Owen Michaels"
-        },
-        {
-         "id": 8479368,
-         "position": "L",
-         "name": "Max Jones"
-        },
-        {
          "id": 8480803,
          "position": "D",
          "name": "Evan Bouchard"
@@ -1131,18 +1138,18 @@
        ],
        "absences": [
         {
-         "name": "Zach Hyman",
-         "id": 8475786,
-         "status": "Out",
-         "baselineParticipation": 0.6176,
-         "productionAbovePositionMean": 0.1657
-        },
-        {
          "name": "Ryan Nugent-Hopkins",
          "id": 8476454,
-         "status": "Out",
+         "status": "Day-To-Day",
          "baselineParticipation": 0.573,
          "productionAbovePositionMean": 0.1168
+        },
+        {
+         "name": "Zach Hyman",
+         "id": 8475786,
+         "status": "Day-To-Day",
+         "baselineParticipation": 0.6176,
+         "productionAbovePositionMean": 0.1657
         },
         {
          "name": "Alec Regula",
@@ -1172,8 +1179,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.8911,
-        2.8061
+        2.8903,
+        2.8069
+       ]
+      },
+      {
+       "label": "EDM questionable skaters OUT",
+       "rates": [
+        2.9120128729913546,
+        2.782411656063485
        ]
       }
      ]
