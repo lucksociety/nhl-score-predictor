@@ -1,10 +1,15 @@
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
-const {send}=createRequire(import.meta.url)('../scripts/discord_post.js');
+const {send,sendWebhook}=createRequire(import.meta.url)('../scripts/discord_post.js');
 const calls=[];globalThis.fetch=async(url,o)=>{calls.push({url,method:o.method,body:JSON.parse(o.body)});return new Response(null,{status:204});};
-let renders=0;
-await send('123','fake-token',[{embeds:[{}]},{embeds:[{}]}],()=>{renders++;return [{embeds:[{title:'Fresh '+renders}]},{embeds:[{title:'Next '+renders}]}];});
+let renders=0;const receipts=[];
+await send('123','fake-token',[{embeds:[{}]},{embeds:[{}]}],()=>{renders++;return [{embeds:[{title:'Fresh '+renders}]},{embeds:[{title:'Next '+renders}]}];},body=>receipts.push(body));
 assert.equal(calls[0].method,'PATCH');assert.equal(calls[0].body.content,'');
 assert.equal(calls[0].body.embeds[0].title,'Fresh 1');assert.equal(calls[1].method,'POST');
 assert(!('content'in calls[1].body));assert.equal(renders,2);
+assert.equal(receipts.length,2);assert.deepEqual(receipts,calls.map(x=>x.body));
+assert(!JSON.stringify(receipts).includes('fake-token'));
+let whRenders=0;const whReceipts=[];
+await sendWebhook('https://discord.invalid/webhooks/test',[{},{}],()=>[{content:'fresh '+(++whRenders)},{content:'next '+whRenders}],body=>whReceipts.push(body));
+assert.equal(whRenders,2);assert.equal(whReceipts.length,2);assert.equal(whReceipts[1].content,'next 2');
 console.log('NHL result clears queue acknowledgement and re-renders each published part: passed');

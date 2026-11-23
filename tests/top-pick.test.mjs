@@ -11,5 +11,5 @@ assert.doesNotMatch(gameEmbed({ ...g, state: 'OFF' }).description, /Top pick/);
 assert.doesNotMatch(gameEmbed({ ...g, state: 'LIVE' }).description, /Top pick/);
 assert.doesNotMatch(gameEmbed({ ...g, start: new Date(Date.now() - 60000).toISOString() }).description, /Top pick/);
 assert.match(gameEmbed({ ...g, start: new Date(Date.now() + 3600000).toISOString() }).description, /Top pick/);
-assert.doesNotMatch(gameEmbed({ ...g, best: { label: 'MIN ML', q: .64, ask: .6, fee: .01, ev: .03 } }).description, /Top pick/);
+assert.doesNotMatch(gameEmbed({ ...g, best: { label: 'MIN ML', q: .64, ask: .6, fee: .02, cost:.62, sensitivityLower:.635, ev: .03 } }).description, /Top pick/);
 console.log('top-pick: ok');

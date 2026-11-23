@@ -26,8 +26,11 @@ def make_record(event,start,model,bet,source,at,selection_policy='sensitivity-co
     if not st or not posted or posted>=st:return None
     r={'event_id':str(event),'start':st.isoformat(),'posted_at':posted.isoformat(),'model':model,'selection_policy':selection_policy,'bet':bet,'source':source}
     if bet:
-        if (not math.isfinite(bet['probability']) or not .5<bet['probability']<=1
-            or not math.isfinite(bet['cost']) or not 0<bet['cost']<bet['probability']):raise ValueError('Invalid posted recommendation')
+        historical_score_fit=selection_policy=='score-fit-best-price-v1'
+        lower=0 if historical_score_fit else .5
+        upper_cost=1 if historical_score_fit else bet['probability']
+        if (not math.isfinite(bet['probability']) or not lower<bet['probability']<=1
+            or not math.isfinite(bet['cost']) or not 0<bet['cost']<upper_cost):raise ValueError('Invalid posted recommendation')
     b=benchmark_pair(benchmark)
     if b:r['benchmark']=b
     r['key']=digest(r);return r
@@ -48,15 +51,29 @@ def capture(root,project,at,source):
     elif project=='nhl-score-predictor':
         date=os.environ.get('SLATE_DATE') or ml.timestamp(at).astimezone(__import__('zoneinfo').ZoneInfo('America/New_York')).date().isoformat()
         p=read(root/f'data/predictions/{date}.json',{})
+        delivery=read(root/'out/delivery.json',None)
+        if p.get('selectionPolicy')=='probability-value-score-depth-v4' and delivery is None:
+            raise ValueError('Delivered-message ledger required for current NHL policy')
         for g in p.get('games',[]):
-            fetched=ml.timestamp(g.get('quoteFetchedAt'));fresh=fetched and 0<=(ml.timestamp(at)-fetched).total_seconds()<=300
+            published=at;label=None
+            if delivery is not None:
+                messages=[m for m in delivery.get('messages',[])if any(e.get('title','').startswith('🍀 '+g['away']+' @ '+g['home']+' ·')for e in m.get('body',{}).get('embeds',[]))]
+                if not messages:continue
+                message=max(messages,key=lambda m:m['sent_at']);published=message['sent_at']
+                embed=next(e for e in message['body']['embeds']if e.get('title','').startswith('🍀 '+g['away']+' @ '+g['home']+' ·'))
+                import re
+                match=re.search(r'\*\*BEST BET: (.*?)\*\*',embed.get('description',''));label=match.group(1)if match else None
+            fetched=ml.timestamp(g.get('quoteFetchedAt'));fresh=fetched and 0<=(ml.timestamp(published)-fetched).total_seconds()<=300
             x=g.get('best') if fresh else None;bet=None
-            if x and x.get('executionVerified') is False:x=None
+            if delivery is not None and not label:x=None
+            if label and(not x or x['label']!=label):raise ValueError('Delivered NHL bet differs from frozen candidate')
+            if x and x.get('executionVerified') is not True:x=None
             if x:
                 label=x['label'];typ={'ML':'moneyline','TOTAL':'totals','PUCKLINE':'spreads'}[x['type']]
                 bet={'type':typ,'index':0 if label.startswith(g['home']+' ') else 1,'side':'under' if label.startswith('Under') else 'over','line':None if typ=='moneyline' else float(label.split()[-1]),'label':label,'probability':x['q'],'selection_probability':x.get('sensitivityLower'),'cost':x['cost']}
             mw=g.get('marketWin') if fresh else None
-            add(g['id'],g['start'],p['model'],bet,p.get('selectionPolicy','sensitivity-confidence-v1'),{'model':g.get('pHome'),'market':(mw or {}).get('home')})
+            r=make_record(g['id'],g['start'],p['model'],bet,source,published,p.get('selectionPolicy','sensitivity-confidence-v1'),{'model':g.get('pHome'),'market':(mw or {}).get('home')})
+            if r:out.append(r)
     elif project=='lol-scanner':
         import sys
         sys.path.insert(0,str(root))
@@ -109,10 +126,10 @@ def evaluate(rows,outcomes):
     report={}
     for (model,policy,kind),rs in groups.items():
         n=len(rs);bins=[]
-        for lo,hi in ((.5,.6),(.6,.7),(.7,.8),(.8,.9),(.9,1.000001)):
+        for lo,hi in ((0,.5),(.5,.6),(.6,.7),(.7,.8),(.8,.9),(.9,1.000001)):
             xs=[(b,y) for r,b,y in rs if lo<b['probability']<=hi]
             if xs:bins.append({'lower_exclusive':lo,'upper_inclusive':min(hi,1),'n':len(xs),'mean_probability':statistics.mean(b['probability'] for b,y in xs),'win_rate':statistics.mean(y for b,y in xs)})
-        report[model+' / '+policy+' / '+kind]={'n':n,'wins':sum(y for r,b,y in rs),'win_rate':statistics.mean(y for r,b,y in rs),'mean_probability':statistics.mean(b['probability'] for r,b,y in rs),'brier':statistics.mean((b['probability']-y)**2 for r,b,y in rs),'log_loss':statistics.mean(-math.log(max(1e-12,b['probability'] if y else 1-b['probability'])) for r,b,y in rs),'flat_cost_roi':statistics.mean(y/b['cost']-1 for r,b,y in rs),'reliability':bins,'calibration_status':'monitor_only_no_automatic_probability_changes','calibration_proposal':ml.calibration_proposal([{'start':r['start'],'probabilities':[b['probability'],1-b['probability']],'observed':0 if y else 1} for r,b,y in rs])}
+        report[model+' / '+policy+' / '+kind]={'probability_rule_failures':sum(b['probability']<=.5 for r,b,y in rs),'nonpositive_ev_recommendations':sum(b['probability']<=b['cost'] for r,b,y in rs),'n':n,'wins':sum(y for r,b,y in rs),'win_rate':statistics.mean(y for r,b,y in rs),'mean_probability':statistics.mean(b['probability'] for r,b,y in rs),'brier':statistics.mean((b['probability']-y)**2 for r,b,y in rs),'log_loss':statistics.mean(-math.log(max(1e-12,b['probability'] if y else 1-b['probability'])) for r,b,y in rs),'flat_cost_roi':statistics.mean(y/b['cost']-1 for r,b,y in rs),'reliability':bins,'calibration_status':'monitor_only_no_automatic_probability_changes','calibration_proposal':ml.calibration_proposal([{'start':r['start'],'probabilities':[b['probability'],1-b['probability']],'observed':0 if y else 1} for r,b,y in rs])}
     return {'settled_by_model_and_market':report,'model_vs_market':model_vs_market(chosen.values(),outcomes),'pending_or_ungradable':pending,'policy':'Delivered primary recommendation only; last pregame publication per event, including NO BET. Not actual trades. No automatic calibration promotion.'}
 
 def model_vs_market(chosen,outcomes):
@@ -159,6 +176,7 @@ def main():
         rows=capture(ROOT,project,utcnow().isoformat(),'github-run:'+os.environ['GITHUB_RUN_ID'])
         (folder/'bets-inbox.jsonl').write_text(''.join(json.dumps(x,sort_keys=True)+'\n' for x in rows));print('Captured',len(rows),'published pregame recommendations/NO BETs');return
     rows=ml.read_jsonl(folder/'bets.jsonl');state=read(folder/'bet-state.json',{})
+    for recovered in sorted((folder/'recovered').glob('*.jsonl')):rows+=ml.read_jsonl(recovered)
     if args.collect:
         incoming,state=collect(state);rows+=incoming
     rows=merge(rows);outcomes=read(folder/'results.json',{});_,fresh=ml.collect_local(ROOT,project);outcomes.update(fresh)

@@ -82,14 +82,15 @@ jobs:
           path: |
             data/predictions/${{ env.SLATE_DATE }}.json
             out/discord.json
+            out/delivery.json
           retention-days: 90
           if-no-files-found: warn
       - name: Preserve delivered recommendations for market-specific calibration
-        if: success() && env.DRY_RUN != 'true'
-        continue-on-error: true
-        run: python3 scripts/bet_learning.py --capture
+        if: always() && env.DRY_RUN != 'true'
+        run: |
+          if [ -s out/delivery.json ]; then python3 scripts/bet_learning.py --capture; fi
       - uses: actions/upload-artifact@v4
-        if: success() && env.DRY_RUN != 'true'
+        if: always() && env.DRY_RUN != 'true'
         with:
           name: bet-learning-${{ github.run_id }}
           path: learning/bets-inbox.jsonl
