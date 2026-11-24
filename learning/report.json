@@ -19,12 +19,17 @@
       "minimum_days": 30,
       "minimum_games": 500,
       "status": "insufficient_forward_sample"
+    },
+    "v4.2-independent-goalie-xga-skater-v1": {
+      "minimum_days": 30,
+      "minimum_games": 500,
+      "status": "insufficient_forward_sample"
     }
   },
   "forecast_policy": "Last pre-game freeze per event per model version. No retrospectively generated forecast is graded.",
-  "forecasts": 2071,
-  "generated_at": "2026-11-23T22:56:11.976920+00:00",
-  "last_successful_refresh": "2026-11-23T15:36:26+00:00",
+  "forecasts": 2136,
+  "generated_at": "2026-11-24T21:31:55.404654+00:00",
+  "last_successful_refresh": "2026-11-24T19:07:32+00:00",
   "project": "nhl-score-predictor",
   "settled_by_version": {
     "v4-independent": {
@@ -58,14 +63,17 @@
       "winner_accuracy": 0.5263157894736842
     },
     "v4.1-independent-skater-v1": {
-      "brier_multiclass_sum": 0.5004827378947369,
-      "log_loss": 0.6961342205001358,
-      "margin_mae": 1.643421052631579,
-      "n": 19,
-      "score_mae_per_team": 1.4104999999999999,
-      "score_n": 19,
-      "total_mae": 2.180473684210526,
-      "winner_accuracy": 0.5263157894736842
+      "brier_multiclass_sum": 0.48542656461538464,
+      "log_loss": 0.6795490225348042,
+      "margin_mae": 1.5606538461538462,
+      "n": 26,
+      "score_mae_per_team": 1.3379807692307693,
+      "score_n": 26,
+      "total_mae": 2.0065769230769233,
+      "winner_accuracy": 0.5
+    },
+    "v4.2-independent-goalie-xga-skater-v1": {
+      "n": 0
     }
   },
   "warnings": []
