@@ -126,3 +126,8 @@ time is outside the model runtime and can exceed Discord's 15-minute interaction
 window. The original request timestamp is propagated so delayed runs skip expired
 interaction delivery and use the existing channel webhook fallback when configured.
 This changes neither forecasts nor bet-selection requirements.
+
+
+### November 24 goalie-data correction (v4.2)
+
+Goalie ratings now use [MoneyPuck's listed goalie game logs](https://moneypuck.com/data.htm) for each goalie's expected goals faced, after matching player/game identity and goals/shots against to NHL box scores. This replaces a team-xGA-by-shot-share proxy where verified data exist; uncovered records retain that explicit fallback. Completed prior games only enter ratings. The previous proxy model remains an adverse-input betting sensitivity. Historical gains are small/mixed, not evidence of improved betting ROI. [Validation and limitations](research/REVIEW-2026-11-24.md).

@@ -30,3 +30,9 @@ assert.equal(B.evaluate(g,fragile,{now}).best,null,'a starter-dependent edge is 
 const explicit=M.runGameV4(g,{n:1000,seed:11,gq:{home:0}});
 assert(!explicit.calibrationStress.some(s=>s.label==='unconfirmed roster-goalie sensitivity'),'manual goalie override locks the scenario');
 console.log('Roster-goalie sensitivity, simultaneous switches and fragile-edge rejection passed');
+// A goalie-data correction cannot manufacture a bet that fails the previous proxy model.
+const proxyGame={away:'A',home:'H',v4:{ra:3,rh:3,la:3,lh:3,betaGq:0,goalies:{away:{gq:0},home:{gq:0}},rateScenarios:[{label:'legacy team-shot-share goalie proxy',rates:[2.5,3.5]}]}};
+const proxyResult=M.runGameV4(proxyGame,{n:1000,seed:11});
+const proxyCentral=M.runGameV4(proxyGame,{n:1000,seed:11,calibrationStress:false});
+assert.equal(proxyResult.pHome,proxyCentral.pHome);assert.equal(proxyResult.calibrationStress.length,5);
+assert(proxyResult.calibrationStress.some(s=>s.label==='legacy team-shot-share goalie proxy'));
