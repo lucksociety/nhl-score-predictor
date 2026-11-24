@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generatedAt": "2026-11-24T10:12:16Z",
+ "generatedAt": "2026-11-24T19:05:37Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
@@ -983,22 +983,22 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T10:12:17.336635+00:00",
+    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
-        "name": "Mathieu Olivier",
-        "position": "RW",
-        "status": "Out",
-        "updatedAt": "2026-11-24T02:25Z"
-       },
-       {
         "name": "Sean Monahan",
         "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-16T17:42Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-24T14:14Z"
+       },
+       {
+        "name": "Mathieu Olivier",
+        "position": "RW",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-24T14:14Z"
        }
       ],
       "roster": [
@@ -1266,7 +1266,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "CBJ recent skater absences not individually modeled: Mathieu Olivier"
+    "blockReason": null
    }
   },
   {
@@ -2291,7 +2291,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T10:12:17.336635+00:00",
+    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2586,11 +2586,6 @@
         "id": 8481606,
         "position": "D",
         "name": "Jordan Spence"
-       },
-       {
-        "id": 8484759,
-        "position": "D",
-        "name": "Carter Yakemchuk"
        },
        {
         "id": 8482245,
@@ -3632,7 +3627,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T10:12:17.336635+00:00",
+    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3765,16 +3760,16 @@
      "home": {
       "injuries": [
        {
+        "name": "Mike Matheson",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-24T14:59Z"
+       },
+       {
         "name": "Ivan Demidov",
         "position": "RW",
         "status": "Injured Reserve",
         "updatedAt": "2026-11-24T00:06Z"
-       },
-       {
-        "name": "Mike Matheson",
-        "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-15T22:23Z"
        },
        {
         "name": "Josh Anderson",
@@ -3811,6 +3806,11 @@
         "id": 8483424,
         "position": "C",
         "name": "Owen Beck"
+       },
+       {
+        "id": 8482132,
+        "position": "L",
+        "name": "Brett Berard"
        },
        {
         "id": 8482737,
@@ -3908,6 +3908,11 @@
         "name": "Mike Matheson"
        },
        {
+        "id": 8484220,
+        "position": "D",
+        "name": "David Reinbacher"
+       },
+       {
         "id": 8482964,
         "position": "D",
         "name": "Arber Xhekaj"
@@ -3927,7 +3932,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "MTL recent skater absences not individually modeled: Ivan Demidov"
+    "blockReason": "MTL recent skater absences not individually modeled: Mike Matheson, Ivan Demidov"
    }
   },
   {
@@ -4980,7 +4985,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T10:12:17.336635+00:00",
+    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4988,8 +4993,8 @@
        {
         "name": "Jack Roslovic",
         "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-24T00:08Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-24T14:14Z"
        },
        {
         "name": "Colton Sissons",
@@ -5129,11 +5134,6 @@
         "name": "John Tavares"
        },
        {
-        "id": 8482525,
-        "position": "C",
-        "name": "Ryan Tverberg"
-       },
-       {
         "id": 8477425,
         "position": "L",
         "name": "Miles Wood"
@@ -5208,16 +5208,16 @@
      "home": {
       "injuries": [
        {
-        "name": "Kyle Palmieri",
-        "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-24T02:37Z"
-       },
-       {
         "name": "Ryan Pulock",
         "position": "D",
         "status": "Out",
-        "updatedAt": "2026-11-23T16:34Z"
+        "updatedAt": "2026-11-24T17:11Z"
+       },
+       {
+        "name": "Kyle Palmieri",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-24T14:14Z"
        },
        {
         "name": "Alexander Romanov",
@@ -5352,7 +5352,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "TOR recent skater absences not individually modeled: Jack Roslovic; NYI recent skater absences not individually modeled: Kyle Palmieri, Ryan Pulock"
+    "blockReason": "NYI recent skater absences not individually modeled: Ryan Pulock"
    }
   },
   {
@@ -6371,7 +6371,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T10:12:17.336635+00:00",
+    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6647,11 +6647,6 @@
         "id": 8484242,
         "position": "C",
         "name": "Brayden Yager"
-       },
-       {
-        "id": 8483526,
-        "position": "C",
-        "name": "Danil Zhilkin"
        },
        {
         "id": 8482459,
@@ -7724,7 +7719,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T10:12:17.336635+00:00",
+    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7732,8 +7727,8 @@
        {
         "name": "Leo Carlsson",
         "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-24T02:32Z"
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-24T14:14Z"
        },
        {
         "name": "Beckett Sennecke",
@@ -8043,7 +8038,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "ANA recent skater absences not individually modeled: Leo Carlsson"
+    "blockReason": null
    }
   },
   {
@@ -9008,7 +9003,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T10:12:17.336635+00:00",
+    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
