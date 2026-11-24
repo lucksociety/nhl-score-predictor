@@ -9,7 +9,7 @@ import csv, gzip, io, json, math, os
 import numpy as np
 from scipy.optimize import minimize
 
-VERSION = 'v4.1-independent'
+VERSION = 'v4.2-independent-goalie-xga'
 # hl / hl_fast: the two rating speeds. One speed (25 games) was the v4 setting; two speeds beat it on 4,294 walk-forward games
 # (research/REVIEW-2026-11-21.md), and every nearby pair of half-lives gave about the same gain.
 HP = dict(hl=60.0, hl_fast=10.0, carry=0.3, n0=20.0, Kx=80.0, lgwin=1300, gk_carry=0.7, ridge=1.0)
@@ -54,7 +54,8 @@ def load_history(path=HIST):
             for k in ('g_a', 'g_h', 'xg_a', 'xg_h'): r[k] = float(r[k]) if r[k] not in ('', None) else None
             rows.append(r)
     rows.sort(key=lambda r: (r['date'], r['id']))
-    return rows
+    from goalie_xga import load,attach
+    return attach(rows,load(os.path.join(os.path.dirname(path),'goalie_xga.csv.gz')))
 def save_history(rows, path=HIST):
     rows = sorted(rows, key=lambda r: (r['date'], r['id']))
     buf = io.StringIO(); w = csv.DictWriter(buf, COLS, lineterminator='\n'); w.writeheader()
@@ -70,7 +71,7 @@ def save_history(rows, path=HIST):
 class State:
     def __init__(self, hp=HP):
         self.hp = hp; self.lam = 0.5 ** (1 / hp['hl']); self.lam_fast = 0.5 ** (1 / hp['hl_fast']); self.T = {}; self.F = {}; self.GK = {}; self.last = {}; self.season = None
-        self.hist = []; self.lg = dict(gf=3.05, xf=2.95, sf=30.0); self.gkname = {}; self.teamgk = {}
+        self.goalie_quality_counts={'specific_xga':0,'team_shot_proxy':0};self.hist = []; self.lg = dict(gf=3.05, xf=2.95, sf=30.0); self.gkname = {}; self.teamgk = {}
     def new_season(self, se):
         if self.season is not None and se != self.season:
             for t in self.T: self.T[t] = {k: v * self.hp['carry'] for k, v in self.T[t].items()}
@@ -137,8 +138,13 @@ class State:
             self.last[tk] = (r['date'], r['home'])
         for side, team, xg_against in (('a', r['away'], xh_), ('h', r['home'], xa_)):
             lst = r['gsa_' + side] or []; tot = sum(x[1] for x in lst) or 1
+            specific={v[0]:v[1:]for v in r.get('gxa_'+side,[])}
             for pid, sa, sv in lst:
-                g = self.GK.setdefault(pid, [0, 0, 0]); g[0] += sa - sv; g[1] += xg_against * sa / tot; g[2] += sa
+                v=specific.get(pid)
+                valid=v is not None and len(v)==3 and all(math.isfinite(x)for x in v)and 0<=v[0]<=v[2]<=100 and 0<=v[1]<=30 and abs(v[0]-(sa-sv))<.1 and abs(v[2]-sa)<.1
+                goals,expected,shots=v if valid else(sa-sv,xg_against*sa/tot,sa)
+                self.goalie_quality_counts['specific_xga'if valid else'team_shot_proxy']+=1
+                g=self.GK.setdefault(pid,[0,0,0]);g[0]+=goals;g[1]+=expected;g[2]+=shots
             st = r['gk_' + side]
             if st is not None:
                 tk = SAME.get(team, team); m = self.teamgk.setdefault(tk, {})

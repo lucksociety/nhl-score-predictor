@@ -254,9 +254,10 @@
     }
     // A new skater layer may never create an edge that fails the original team forecast.
     // Also test unresolved-skater OUT lineups. These are sensitivity scenarios, not probability bounds.
-    if (opts.calibrationStress !== false && v.skaterAdjustment?.scenarios) {
+    const inputScenarios=[...(v.rateScenarios||[]),...(v.skaterAdjustment?.scenarios||[])];
+    if (opts.calibrationStress !== false && inputScenarios.length) {
       const sn=Math.min(n,100000);
-      for(const scenario of v.skaterAdjustment.scenarios) for(const scale of [1,0.86/0.887,0.91/0.887]) {
+      for(const scenario of inputScenarios) for(const scale of [1,0.86/0.887,0.91/0.887]) {
         let [sa,sh]=scenario.rates;
         if(ov.home!=null)sa*=Math.exp(v.betaGq*(ov.home-v.goalies.home.gq));
         if(ov.away!=null)sh*=Math.exp(v.betaGq*(ov.away-v.goalies.away.gq));
@@ -277,7 +278,7 @@
         return [...new Set([Math.min(1, ...factors), Math.max(1, ...factors)])];
       });
       const sn = Math.min(n, 50000), seen = new Set();
-      const bases = [[ra, rh], ...(v.skaterAdjustment?.scenarios || []).map(s => {
+      const bases = [[ra, rh], ...inputScenarios.map(s => {
         let [a,h] = s.rates;
         if (ov.home != null) a *= Math.exp(v.betaGq * (ov.home-v.goalies.home.gq));
         if (ov.away != null) h *= Math.exp(v.betaGq * (ov.away-v.goalies.away.gq));

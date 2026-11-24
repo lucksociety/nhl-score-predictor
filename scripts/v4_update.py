@@ -64,6 +64,9 @@ def update_history(results):
     meta['games'] = len(rows); meta['through'] = max(r['date'] for r in rows); meta['missing_xg'] = sum(1 for r in rows if r['xg_a'] is None)
     json.dump(meta, open(META, 'w'), indent=1)
     print(f'v4 history: {len(rows)} games (+{new}), through {meta["through"]}, {meta["missing_xg"]} awaiting MoneyPuck xG (shots proxy)')
+    from goalie_xga import refresh
+    try:rows=refresh(rows,os.path.join(DATA,'v4'),get)
+    except(OSError,ValueError)as exc:print('goalie-specific xGA refresh unavailable:',type(exc).__name__,file=sys.stderr)
     return rows
 
 def norm(s): return ''.join(c for c in unicodedata.normalize('NFKD', s or '') if not unicodedata.combining(c)).lower().replace('.', '').strip()
@@ -117,6 +120,7 @@ def annotate(slates, rows, now=None):
     tail = recs[-1000:]; calib = sum(f['a'] + f['h'] for f in tail) / sum(sum(M.predict(f, b)) for f in tail)
     through = rows[-1]['date']; bq = float(b[1 + M.FEATS.index('ogq')])
     model = dict(version=M.VERSION, trainedThrough=through, trainedAt=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+                 goalieQuality=dict(policy='goalie-specific-xga-v1',counts=getattr(S,'goalie_quality_counts',{}),source='MoneyPuck goalie logs matched to NHL goalie GA/SA; unmatched games use team-shot proxy'),
                  coef=dict(zip(['b0'] + M.FEATS, [round(float(x), 5) for x in b])), calib=round(calib, 5), hp=M.HP, scale=M.SCALE, sim=M.SIM, games=len(rows),
                  league=dict(gf=round(S.lg['gf'], 4), xf=round(S.lg['xf'], 4), sf=round(S.lg['sf'], 3)),
                  teams={t: dict(gf=round((s['gf'] + 20 * S.lg['gf']) / (s['w'] + 20), 3), ga=round((s['ga'] + 20 * S.lg['gf']) / (s['w'] + 20), 3),
@@ -126,7 +130,8 @@ def annotate(slates, rows, now=None):
     sched = [(s['date'], g['away'], g['home']) for s in slates for g in s['games']]
     now = now or dt.datetime.now(dt.timezone.utc)
     base_fit = (S, b, calib, through, bq)
-    date_fits = {}
+    date_fits = {}; legacy_fits={}
+    has_specific=any(r.get('gxa_a')or r.get('gxa_h')for r in rows)
     for s in slates:
         for g in s['games']:
             if g.get('v4') and g.get('v4', {}).get('frozen'): continue
@@ -155,6 +160,17 @@ def annotate(slates, rows, now=None):
             ids = {sd: match_goalie(S, g[sd], names[sd]) for sd in ('away', 'home')}
             f = S.features(s['date'], g['away'], g['home'], ids['away'], ids['home'], prev_games=[x for x in sched if x[0] > fit_through])
             la, lh = (x * calib for x in M.predict(f, b))
+            rate_scenarios=[]
+            if has_specific:
+                if fit_through not in legacy_fits:
+                    past=[{k:v for k,v in r.items()if k not in ('gxa_a','gxa_h')}for r in rows if r['date']<=fit_through]
+                    ls,lb,lr=M.train(past);tail=lr[-1000:]
+                    lc=sum(x['a']+x['h']for x in tail)/sum(sum(M.predict(x,lb))for x in tail)
+                    legacy_fits[fit_through]=(ls,lb,lc)
+                ls,lb,lc=legacy_fits[fit_through]
+                lf=ls.features(s['date'],g['away'],g['home'],ids['away'],ids['home'],prev_games=[x for x in sched if x[0]>fit_through])
+                rate_scenarios=[{'label':'legacy team-shot-share goalie proxy','rates':[x*lc*M.SCALE for x in M.predict(lf,lb)]}]
+
             gk = {}
             for sd, k in (('away', 'a'), ('home', 'h')):
                 mode = f[k + '_gkmode']
@@ -163,6 +179,7 @@ def annotate(slates, rows, now=None):
                               candidates=goalie_candidates(S, g, sd),
                               table=goalie_table(S, g[sd]))
             g['v4'] = dict(version=M.VERSION, la=round(la, 4), lh=round(lh, 4), ra=round(la * M.SCALE, 4), rh=round(lh * M.SCALE, 4), sim=dict(M.SIM),
+                           rateScenarios=rate_scenarios,goalieQualityPolicy='goalie-specific-xga-v1',
                            betaGq=round(bq, 5), calib=round(calib, 4), goalies=gk, trainedThrough=fit_through,
                            rest=dict(away=f['a_rest'], home=f['h_rest']), b2b=dict(away=f['a_b2b'], home=f['h_b2b']), km=dict(away=round(f['a_km']), home=round(f['h_km'])),
                            form=dict(away=dict(gf=round(f['a_gf'], 3), ga=round(f['a_ga'], 3), xf=round(f['a_xf'], 3), xa=round(f['a_xa'], 3)),
