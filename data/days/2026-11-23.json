@@ -1,7 +1,7 @@
 {
  "date": "2026-11-23",
- "generatedAt": "2026-11-24T19:05:37Z",
- "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
+ "generatedAt": "2026-11-24T23:25:50Z",
+ "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
    "id": 2026020378,
@@ -983,20 +983,20 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
+    "checkedAt": "2026-11-24T23:25:50.365894+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
        {
-        "name": "Sean Monahan",
-        "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-24T14:14Z"
-       },
-       {
         "name": "Mathieu Olivier",
         "position": "RW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-24T22:08Z"
+       },
+       {
+        "name": "Sean Monahan",
+        "position": "C",
         "status": "Day-To-Day",
         "updatedAt": "2026-11-24T14:14Z"
        }
@@ -1266,7 +1266,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": null
+    "blockReason": "CBJ recent skater absences not individually modeled: Mathieu Olivier"
    }
   },
   {
@@ -2291,7 +2291,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
+    "checkedAt": "2026-11-24T23:25:50.365894+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2454,8 +2454,8 @@
        {
         "name": "Hayden Hodgson",
         "position": "RW",
-        "status": "Out",
-        "updatedAt": "2026-11-23T15:48Z"
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-24T20:28Z"
        },
        {
         "name": "Andre Burakovsky",
@@ -3627,7 +3627,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
+    "checkedAt": "2026-11-24T23:25:50.365894+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4985,7 +4985,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
+    "checkedAt": "2026-11-24T23:25:50.365894+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5208,16 +5208,16 @@
      "home": {
       "injuries": [
        {
+        "name": "Kyle Palmieri",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-24T20:00Z"
+       },
+       {
         "name": "Ryan Pulock",
         "position": "D",
         "status": "Out",
         "updatedAt": "2026-11-24T17:11Z"
-       },
-       {
-        "name": "Kyle Palmieri",
-        "position": "C",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-24T14:14Z"
        },
        {
         "name": "Alexander Romanov",
@@ -5352,7 +5352,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "NYI recent skater absences not individually modeled: Ryan Pulock"
+    "blockReason": "NYI recent skater absences not individually modeled: Kyle Palmieri, Ryan Pulock"
    }
   },
   {
@@ -6371,7 +6371,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
+    "checkedAt": "2026-11-24T23:25:50.365894+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7719,7 +7719,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
+    "checkedAt": "2026-11-24T23:25:50.365894+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -7869,11 +7869,6 @@
         "id": 8484859,
         "position": "D",
         "name": "Stian Solberg"
-       },
-       {
-        "id": 8483521,
-        "position": "D",
-        "name": "Noah Warren"
        },
        {
         "id": 8476316,
@@ -9003,7 +8998,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-24T19:05:38.172418+00:00",
+    "checkedAt": "2026-11-24T23:25:50.365894+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
