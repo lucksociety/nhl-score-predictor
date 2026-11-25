@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generatedAt": "2026-11-25T04:30:40Z",
+ "generatedAt": "2026-11-25T06:24:01Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -966,11 +966,18 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-25T04:30:40.676920+00:00",
+    "checkedAt": "2026-11-25T06:24:01.795140+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
-      "injuries": [],
+      "injuries": [
+       {
+        "name": "Marc Gatcomb",
+        "position": "C",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-25T05:18Z"
+       }
+      ],
       "roster": [
        {
         "id": 8477964,
