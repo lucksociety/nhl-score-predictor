@@ -91,11 +91,28 @@ def fetch_recent(state,rows,cutoff,get):
     if {int(p['gameId']) for p in records}!=expected:raise ValueError('skater game logs missing completed team games')
     return advance(copy.deepcopy(state),records)
 
+def position_family(position):
+    return 'D' if position=='D' else 'F' if position in ('C','L','R','LW','RW','F') else None
+
+def injury_roster_matches(roster,injury):
+    family=position_family(injury.get('position'))
+    return [p for p in roster if norm(p['name'])==norm(injury['name']) and(family is None or position_family(p.get('position'))==family)]
+
 def expected_lineup(state,team,roster,injuries,extra_out=()):
-    blocked={norm(x['name']) for x in injuries if str(x['status']).casefold() in OUT}|set(extra_out)
+    extras=set(extra_out);blocked=set();resolved=set()
+    for injury in injuries:
+        name=norm(injury['name'])
+        if str(injury['status']).casefold()not in OUT and name not in extras:continue
+        matched=injury_roster_matches(roster,injury)
+        if len(matched)>1:raise ValueError(f'{team} cannot uniquely resolve roster injury {injury["name"]}')
+        blocked.update(str(p['id'])for p in matched);resolved.add(name)
+    for name in extras-resolved:
+        matched=[p for p in roster if norm(p['name'])==name]
+        if len(matched)>1:raise ValueError(f'{team} cannot uniquely resolve roster absence')
+        blocked.update(str(p['id'])for p in matched)
     groups={}
     for position in ['F','D']:
-        players=[p for p in roster if p.get('position') in ('C','L','R','F','D') and ('D' if p.get('position')=='D' else 'F')==position and norm(p['name']) not in blocked]
+        players=[p for p in roster if p.get('position') in ('C','L','R','F','D') and ('D' if p.get('position')=='D' else 'F')==position and str(p['id']) not in blocked]
         def rank(p):
             s=state['players'].get(str(p['id']),{});return s.get('toi',0)/max(1,s.get('w',0))
         groups[position]=sorted(players,key=lambda p:(-rank(p),str(p['id'])))
@@ -117,12 +134,15 @@ def apply_game(g,state,date,policy=POLICY):
         injuries=s.get('injuries',[]);matched[side]=[]
         for x in injuries:
             if x['position']=='G' or str(x['status']).casefold() not in OUT|UNCERTAIN:continue
-            candidates=[pid for pid,p in state['players'].items() if norm(p.get('name'))==norm(x['name'])]
+            family=position_family(x.get('position'))
+            candidates=[pid for pid,p in state['players'].items() if norm(p.get('name'))==norm(x['name'])and(family is None or p.get('pos')==family)]
+            current={str(p['id'])for p in injury_roster_matches(roster,x)}
+            if current:candidates=[pid for pid in candidates if pid in current]
             if not candidates and not any(norm(p['name'])==norm(x['name']) for p in roster):
                 matched[side].append({'name':x['name'],'id':None,'status':x['status'],'baselineParticipation':0.,'productionAbovePositionMean':None,'note':'not on current official roster and no recorded participation; no baseline contribution to remove'})
                 continue
             if not candidates:
-                newcomers=[p for p in roster if norm(p['name'])==norm(x['name'])]
+                newcomers=injury_roster_matches(roster,x)
                 if len(newcomers)==1 and str(newcomers[0]['id'])not in state['players']:
                     matched[side].append({'name':x['name'],'id':newcomers[0]['id'],'status':x['status'],'baselineParticipation':0.,'productionAbovePositionMean':0.,'note':'no recorded contribution in team baseline; position-average prior, not an estimated individual impact'})
                     continue
