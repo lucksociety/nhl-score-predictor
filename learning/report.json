@@ -27,9 +27,9 @@
     }
   },
   "forecast_policy": "Last pre-game freeze per event per model version. No retrospectively generated forecast is graded.",
-  "forecasts": 2136,
-  "generated_at": "2026-11-24T21:31:55.404654+00:00",
-  "last_successful_refresh": "2026-11-24T19:07:32+00:00",
+  "forecasts": 2221,
+  "generated_at": "2026-11-25T20:40:41.943631+00:00",
+  "last_successful_refresh": "2026-11-25T15:33:34+00:00",
   "project": "nhl-score-predictor",
   "settled_by_version": {
     "v4-independent": {
@@ -53,27 +53,34 @@
       "winner_accuracy": 0.5657894736842105
     },
     "v4.1-independent": {
-      "brier_multiclass_sum": 0.5097015315789474,
-      "log_loss": 0.705991619656118,
-      "margin_mae": 1.6613684210526316,
-      "n": 19,
-      "score_mae_per_team": 1.4202105263157894,
-      "score_n": 19,
-      "total_mae": 2.1856842105263157,
-      "winner_accuracy": 0.5263157894736842
+      "brier_multiclass_sum": 0.507943096,
+      "log_loss": 0.7040757579026578,
+      "margin_mae": 1.67435,
+      "n": 20,
+      "score_mae_per_team": 1.397225,
+      "score_n": 20,
+      "total_mae": 2.15975,
+      "winner_accuracy": 0.55
     },
     "v4.1-independent-skater-v1": {
-      "brier_multiclass_sum": 0.48542656461538464,
-      "log_loss": 0.6795490225348042,
-      "margin_mae": 1.5606538461538462,
-      "n": 26,
-      "score_mae_per_team": 1.3379807692307693,
-      "score_n": 26,
-      "total_mae": 2.0065769230769233,
-      "winner_accuracy": 0.5
+      "brier_multiclass_sum": 0.4851459837037037,
+      "log_loss": 0.6792321837712489,
+      "margin_mae": 1.5743703703703704,
+      "n": 27,
+      "score_mae_per_team": 1.3241851851851851,
+      "score_n": 27,
+      "total_mae": 1.992,
+      "winner_accuracy": 0.5185185185185185
     },
     "v4.2-independent-goalie-xga-skater-v1": {
-      "n": 0
+      "brier_multiclass_sum": 0.47394848000000006,
+      "log_loss": 0.6670896462406557,
+      "margin_mae": 1.9209999999999998,
+      "n": 1,
+      "score_mae_per_team": 0.9604999999999999,
+      "score_n": 1,
+      "total_mae": 1.6549999999999994,
+      "winner_accuracy": 1
     }
   },
   "warnings": []

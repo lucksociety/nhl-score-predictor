@@ -297,13 +297,13 @@
     }
   },
   "model_vs_market": {
-    "n": 33,
-    "model_log_loss": 0.6942800798623707,
-    "market_log_loss": 0.687738136829523,
-    "log_loss_diff": 0.006541943032847823,
-    "log_loss_diff_se": 0.011471100293615456,
-    "model_accuracy": 0.48484848484848486,
-    "market_accuracy": 0.5757575757575758,
+    "n": 34,
+    "model_log_loss": 0.693480361226438,
+    "market_log_loss": 0.6864622215224933,
+    "log_loss_diff": 0.007018139703944724,
+    "log_loss_diff_se": 0.011138785567771575,
+    "model_accuracy": 0.5,
+    "market_accuracy": 0.5882352941176471,
     "disagree_over_5pts": {
       "n": 4,
       "model_side_won": 0.25,
@@ -312,8 +312,8 @@
     },
     "verdict": "too few games to say"
   },
-  "pending_or_ungradable": 0,
+  "pending_or_ungradable": 3,
   "policy": "Delivered primary recommendation only; last pregame publication per event, including NO BET. Not actual trades. No automatic calibration promotion.",
-  "generated_at": "2026-11-24T21:31:58.525658+00:00",
-  "records": 164
+  "generated_at": "2026-11-25T20:40:43.812134+00:00",
+  "records": 178
 }
