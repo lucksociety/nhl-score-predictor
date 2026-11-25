@@ -159,3 +159,25 @@ def test_other_skater_failures_still_withhold(monkeypatch,tmp_path):
     monkeypatch.setattr(S,'DATA',tmp_path);(tmp_path/'skaters.json').write_text(json.dumps(state))
     S.refresh_and_apply(slates,[],lambda u:None,now=now);A.finalize(slates)
     assert g['availability']['skaterModelStatus']=='unavailable' and 'Skater adjustment unavailable' in g['availability']['blockReason']
+
+
+def test_same_named_forward_and_defender_resolve_to_current_roster_ids():
+    state,g=fixture();side=g['availability']['sides']['away']
+    for pid in ['1','15']:
+        state['players'][pid]['name']='Elias Pettersson'
+        next(p for p in side['roster']if str(p['id'])==pid)['name']='Elias Pettersson'
+    side['injuries']=[{'name':'Elias Pettersson','position':'C','status':'Questionable'}]
+    S.apply_game(g,state,'2026-11-09')
+    absence=g['v4']['skaterAdjustment']['sides']['away']['absences'][0]
+    assert absence['id']==1
+    chosen=S.expected_lineup(state,'AAA',side['roster'],side['injuries'],[S.norm('Elias Pettersson')])
+    assert 1 not in {p['id']for p in chosen}and 15 in {p['id']for p in chosen}
+    assert len(chosen)==18
+
+def test_same_name_with_no_positional_disambiguation_still_fails_closed():
+    state,g=fixture();side=g['availability']['sides']['away']
+    for pid in ['1','2']:
+        state['players'][pid]['name']='Same Name'
+        next(p for p in side['roster']if str(p['id'])==pid)['name']='Same Name'
+    side['injuries']=[{'name':'Same Name','position':'C','status':'Out'}]
+    with pytest.raises(ValueError,match='uniquely'):S.apply_game(g,state,'2026-11-09')
