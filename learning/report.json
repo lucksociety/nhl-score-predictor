@@ -20,6 +20,11 @@
       "minimum_games": 500,
       "status": "insufficient_forward_sample"
     },
+    "v4.2-independent-goalie-xga": {
+      "minimum_days": 30,
+      "minimum_games": 500,
+      "status": "insufficient_forward_sample"
+    },
     "v4.2-independent-goalie-xga-skater-v1": {
       "minimum_days": 30,
       "minimum_games": 500,
@@ -27,9 +32,9 @@
     }
   },
   "forecast_policy": "Last pre-game freeze per event per model version. No retrospectively generated forecast is graded.",
-  "forecasts": 2221,
-  "generated_at": "2026-11-25T20:40:41.943631+00:00",
-  "last_successful_refresh": "2026-11-25T15:33:34+00:00",
+  "forecasts": 2265,
+  "generated_at": "2026-11-26T20:33:27.008750+00:00",
+  "last_successful_refresh": "2026-11-26T08:44:20+00:00",
   "project": "nhl-score-predictor",
   "settled_by_version": {
     "v4-independent": {
@@ -53,34 +58,37 @@
       "winner_accuracy": 0.5657894736842105
     },
     "v4.1-independent": {
-      "brier_multiclass_sum": 0.507943096,
-      "log_loss": 0.7040757579026578,
-      "margin_mae": 1.67435,
-      "n": 20,
-      "score_mae_per_team": 1.397225,
-      "score_n": 20,
-      "total_mae": 2.15975,
-      "winner_accuracy": 0.55
+      "brier_multiclass_sum": 0.49836549764705884,
+      "log_loss": 0.6930033635940834,
+      "margin_mae": 2.150529411764706,
+      "n": 34,
+      "score_mae_per_team": 1.4350294117647058,
+      "score_n": 34,
+      "total_mae": 1.8541764705882353,
+      "winner_accuracy": 0.5588235294117647
     },
     "v4.1-independent-skater-v1": {
-      "brier_multiclass_sum": 0.4851459837037037,
-      "log_loss": 0.6792321837712489,
-      "margin_mae": 1.5743703703703704,
-      "n": 27,
-      "score_mae_per_team": 1.3241851851851851,
-      "score_n": 27,
-      "total_mae": 1.992,
-      "winner_accuracy": 0.5185185185185185
+      "brier_multiclass_sum": 0.4847429195121951,
+      "log_loss": 0.6783011332224507,
+      "margin_mae": 2.0022682926829267,
+      "n": 41,
+      "score_mae_per_team": 1.380719512195122,
+      "score_n": 41,
+      "total_mae": 1.7974878048780487,
+      "winner_accuracy": 0.5365853658536586
+    },
+    "v4.2-independent-goalie-xga": {
+      "n": 0
     },
     "v4.2-independent-goalie-xga-skater-v1": {
-      "brier_multiclass_sum": 0.47394848000000006,
-      "log_loss": 0.6670896462406557,
-      "margin_mae": 1.9209999999999998,
-      "n": 1,
-      "score_mae_per_team": 0.9604999999999999,
-      "score_n": 1,
-      "total_mae": 1.6549999999999994,
-      "winner_accuracy": 1
+      "brier_multiclass_sum": 0.491718396,
+      "log_loss": 0.684527715407258,
+      "margin_mae": 2.7935333333333334,
+      "n": 15,
+      "score_mae_per_team": 1.4648333333333334,
+      "score_n": 15,
+      "total_mae": 1.457,
+      "winner_accuracy": 0.6
     }
   },
   "warnings": []
