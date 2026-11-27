@@ -31,6 +31,7 @@ jobs:
           node tests/score-consistency.test.js
           node tests/simulator-grid.test.js
           node tests/simulator-settings.test.js
+          node tests/score-intervals.test.js
           node tests/score-fit-best-bet.test.js
           node tests/browser-scripts-parse.test.js
       - name: Prospective evaluation regressions
