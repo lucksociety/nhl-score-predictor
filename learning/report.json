@@ -32,48 +32,200 @@
     }
   },
   "forecast_policy": "Last pre-game freeze per event per model version. No retrospectively generated forecast is graded.",
-  "forecasts": 2265,
-  "generated_at": "2026-11-26T20:33:27.008750+00:00",
-  "last_successful_refresh": "2026-11-26T08:44:20+00:00",
+  "forecasts": 2366,
+  "generated_at": "2026-11-27T12:48:48.854974+00:00",
+  "last_successful_refresh": "2026-11-27T08:56:11+00:00",
   "project": "nhl-score-predictor",
+  "recent_by_version": {
+    "v4-independent": {
+      "30d": {
+        "brier_multiclass_sum": 0.46732866474608004,
+        "log_loss": 0.6602144546803138,
+        "margin_bias_home_minus_away": 0.030952702702702665,
+        "margin_mae": 1.9781824324324324,
+        "n": 148,
+        "score_mae_per_team": 1.3230168918918919,
+        "score_n": 148,
+        "score_rmse_per_team": 1.6632964410097424,
+        "total_bias": -0.2725743243243243,
+        "total_mae": 1.8628581081081081,
+        "winner_accuracy": 0.6148648648648649
+      },
+      "7d": {
+        "brier_multiclass_sum": 0.5052225884210526,
+        "log_loss": 0.7019132996887619,
+        "margin_bias_home_minus_away": 0.08189473684210521,
+        "margin_mae": 1.6469473684210527,
+        "n": 19,
+        "score_mae_per_team": 1.4158421052631578,
+        "score_n": 19,
+        "score_rmse_per_team": 1.8917617380854839,
+        "total_bias": -1.3592631578947367,
+        "total_mae": 2.2058947368421054,
+        "winner_accuracy": 0.631578947368421
+      }
+    },
+    "v4-independent-skater-v1": {
+      "30d": {
+        "brier_multiclass_sum": 0.5077216734210527,
+        "log_loss": 0.7031797918623431,
+        "margin_bias_home_minus_away": 0.7999342105263157,
+        "margin_mae": 2.2565657894736844,
+        "n": 76,
+        "score_mae_per_team": 1.4319407894736842,
+        "score_n": 76,
+        "score_rmse_per_team": 1.7743880283072244,
+        "total_bias": 0.22524999999999995,
+        "total_mae": 1.9833026315789475,
+        "winner_accuracy": 0.5657894736842105
+      },
+      "7d": {
+        "n": 0
+      }
+    },
+    "v4.1-independent": {
+      "30d": {
+        "brier_multiclass_sum": 0.49836549764705884,
+        "log_loss": 0.6930033635940834,
+        "margin_bias_home_minus_away": -0.20176470588235298,
+        "margin_mae": 2.150529411764706,
+        "n": 34,
+        "score_mae_per_team": 1.4350294117647058,
+        "score_n": 34,
+        "score_rmse_per_team": 1.8512325147126742,
+        "total_bias": -0.7345294117647057,
+        "total_mae": 1.8541764705882353,
+        "winner_accuracy": 0.5588235294117647
+      },
+      "7d": {
+        "brier_multiclass_sum": 0.49836549764705884,
+        "log_loss": 0.6930033635940834,
+        "margin_bias_home_minus_away": -0.20176470588235298,
+        "margin_mae": 2.150529411764706,
+        "n": 34,
+        "score_mae_per_team": 1.4350294117647058,
+        "score_n": 34,
+        "score_rmse_per_team": 1.8512325147126742,
+        "total_bias": -0.7345294117647057,
+        "total_mae": 1.8541764705882353,
+        "winner_accuracy": 0.5588235294117647
+      }
+    },
+    "v4.1-independent-skater-v1": {
+      "30d": {
+        "brier_multiclass_sum": 0.4847429195121951,
+        "log_loss": 0.6783011332224507,
+        "margin_bias_home_minus_away": -0.1082682926829268,
+        "margin_mae": 2.0022682926829267,
+        "n": 41,
+        "score_mae_per_team": 1.380719512195122,
+        "score_n": 41,
+        "score_rmse_per_team": 1.7551107428057624,
+        "total_bias": -0.35768292682926833,
+        "total_mae": 1.7974878048780487,
+        "winner_accuracy": 0.5365853658536586
+      },
+      "7d": {
+        "brier_multiclass_sum": 0.4847429195121951,
+        "log_loss": 0.6783011332224507,
+        "margin_bias_home_minus_away": -0.1082682926829268,
+        "margin_mae": 2.0022682926829267,
+        "n": 41,
+        "score_mae_per_team": 1.380719512195122,
+        "score_n": 41,
+        "score_rmse_per_team": 1.7551107428057624,
+        "total_bias": -0.35768292682926833,
+        "total_mae": 1.7974878048780487,
+        "winner_accuracy": 0.5365853658536586
+      }
+    },
+    "v4.2-independent-goalie-xga": {
+      "30d": {
+        "n": 0
+      },
+      "7d": {
+        "n": 0
+      }
+    },
+    "v4.2-independent-goalie-xga-skater-v1": {
+      "30d": {
+        "brier_multiclass_sum": 0.491718396,
+        "log_loss": 0.684527715407258,
+        "margin_bias_home_minus_away": -0.551,
+        "margin_mae": 2.7935333333333334,
+        "n": 15,
+        "score_mae_per_team": 1.4648333333333334,
+        "score_n": 15,
+        "score_rmse_per_team": 1.8187590366327622,
+        "total_bias": 0.009666666666666697,
+        "total_mae": 1.457,
+        "winner_accuracy": 0.6
+      },
+      "7d": {
+        "brier_multiclass_sum": 0.491718396,
+        "log_loss": 0.684527715407258,
+        "margin_bias_home_minus_away": -0.551,
+        "margin_mae": 2.7935333333333334,
+        "n": 15,
+        "score_mae_per_team": 1.4648333333333334,
+        "score_n": 15,
+        "score_rmse_per_team": 1.8187590366327622,
+        "total_bias": 0.009666666666666697,
+        "total_mae": 1.457,
+        "winner_accuracy": 0.6
+      }
+    }
+  },
   "settled_by_version": {
     "v4-independent": {
       "brier_multiclass_sum": 0.46732866474608004,
       "log_loss": 0.6602144546803138,
+      "margin_bias_home_minus_away": 0.030952702702702665,
       "margin_mae": 1.9781824324324324,
       "n": 148,
       "score_mae_per_team": 1.3230168918918919,
       "score_n": 148,
+      "score_rmse_per_team": 1.6632964410097424,
+      "total_bias": -0.2725743243243243,
       "total_mae": 1.8628581081081081,
       "winner_accuracy": 0.6148648648648649
     },
     "v4-independent-skater-v1": {
       "brier_multiclass_sum": 0.5077216734210527,
       "log_loss": 0.7031797918623431,
+      "margin_bias_home_minus_away": 0.7999342105263157,
       "margin_mae": 2.2565657894736844,
       "n": 76,
       "score_mae_per_team": 1.4319407894736842,
       "score_n": 76,
+      "score_rmse_per_team": 1.7743880283072244,
+      "total_bias": 0.22524999999999995,
       "total_mae": 1.9833026315789475,
       "winner_accuracy": 0.5657894736842105
     },
     "v4.1-independent": {
       "brier_multiclass_sum": 0.49836549764705884,
       "log_loss": 0.6930033635940834,
+      "margin_bias_home_minus_away": -0.20176470588235298,
       "margin_mae": 2.150529411764706,
       "n": 34,
       "score_mae_per_team": 1.4350294117647058,
       "score_n": 34,
+      "score_rmse_per_team": 1.8512325147126742,
+      "total_bias": -0.7345294117647057,
       "total_mae": 1.8541764705882353,
       "winner_accuracy": 0.5588235294117647
     },
     "v4.1-independent-skater-v1": {
       "brier_multiclass_sum": 0.4847429195121951,
       "log_loss": 0.6783011332224507,
+      "margin_bias_home_minus_away": -0.1082682926829268,
       "margin_mae": 2.0022682926829267,
       "n": 41,
       "score_mae_per_team": 1.380719512195122,
       "score_n": 41,
+      "score_rmse_per_team": 1.7551107428057624,
+      "total_bias": -0.35768292682926833,
       "total_mae": 1.7974878048780487,
       "winner_accuracy": 0.5365853658536586
     },
@@ -83,10 +235,13 @@
     "v4.2-independent-goalie-xga-skater-v1": {
       "brier_multiclass_sum": 0.491718396,
       "log_loss": 0.684527715407258,
+      "margin_bias_home_minus_away": -0.551,
       "margin_mae": 2.7935333333333334,
       "n": 15,
       "score_mae_per_team": 1.4648333333333334,
       "score_n": 15,
+      "score_rmse_per_team": 1.8187590366327622,
+      "total_bias": 0.009666666666666697,
       "total_mae": 1.457,
       "winner_accuracy": 0.6
     }
