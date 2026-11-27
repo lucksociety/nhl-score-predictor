@@ -70,16 +70,44 @@ def update_history(results):
     return rows
 
 def norm(s): return ''.join(c for c in unicodedata.normalize('NFKD', s or '') if not unicodedata.combining(c)).lower().replace('.', '').strip()
-def match_goalie(S, team, name):
-    """ESPN full name ('Cam Talbot') -> NHL player id via history names ('C. Talbot'); prefer the team's own goalies."""
+def match_goalie(S, team, name, roster=None):
+    """Resolve against today's NHL roster before consulting abbreviated history.
+
+    A rookie still has a real player ID (and a league-prior quality), and a
+    traded/inactive goalie must not be selected from the old team's starts.
+    Never break an ambiguous name tie using career shots faced.
+    """
     if not name: return None
     p = norm(name).split(); last = p[-1] if p else ''; ini = p[0][0] if p else ''
-    def ok(pid):
-        q = norm(S.gkname.get(pid, '')).split()
+    def name_matches(candidate):
+        q = norm(candidate).split()
         return q and q[-1] == last and q[0][0] == ini
+    if roster is not None:
+        goalies = [g for g in roster if g.get('position') == 'G' and isinstance(g.get('id'), int)]
+        exact = {g['id'] for g in goalies if norm(g.get('name')) == norm(name)}
+        # A full first name must not silently match a different full first name.
+        abbreviated = len(p[0]) == 1 if p else False
+        candidates = exact or ({g['id'] for g in goalies if name_matches(g.get('name'))} if abbreviated else set())
+        return next(iter(candidates)) if len(candidates) == 1 else None
+    def ok(pid):
+        return name_matches(S.gkname.get(pid, ''))
     cand = [pid for pid in S.teamgk.get(M.SAME.get(team, team), {}) if ok(pid)]
     if not cand: cand = [pid for pid in S.gkname if ok(pid)]
-    return cand[0] if len(cand) == 1 else (max(cand, key=lambda p: S.GK.get(p, [0, 0, 0])[2]) if cand else None)
+    return cand[0] if len(cand) == 1 else None
+
+def resolve_goalies(S, game):
+    """Keep forecasts available but do not authorize bets on a conflicting identity."""
+    names = {side: ((game.get('goalies') or {}).get(side) or {}).get('name') for side in ('away','home')}
+    context = game.setdefault('availability', {})
+    ids = {}
+    for side in ('away','home'):
+        roster = ((context.get('sides') or {}).get(side) or {}).get('roster')
+        ids[side] = match_goalie(S, game[side], names[side], roster)
+        if names[side] and ids[side] is None:
+            reason = f"{game[side]} listed goalie {names[side]} cannot be uniquely matched to a current NHL player"
+            problems = context.setdefault('problems', [])
+            if reason not in problems: problems.append(reason)
+    return names, ids
 
 def goalie_table(S, team):
     m = S.teamgk.get(M.SAME.get(team, team), {}); tot = sum(m.values()) or 1
@@ -156,8 +184,7 @@ def annotate(slates, rows, now=None):
                 S, b, calib, fit_through, bq = date_fits[s['date']]
             else:
                 S, b, calib, fit_through, bq = base_fit
-            names = {sd: ((g.get('goalies') or {}).get(sd) or {}).get('name') for sd in ('away', 'home')}
-            ids = {sd: match_goalie(S, g[sd], names[sd]) for sd in ('away', 'home')}
+            names, ids = resolve_goalies(S, g)
             f = S.features(s['date'], g['away'], g['home'], ids['away'], ids['home'], prev_games=[x for x in sched if x[0] > fit_through])
             la, lh = (x * calib for x in M.predict(f, b))
             rate_scenarios=[]
@@ -179,7 +206,7 @@ def annotate(slates, rows, now=None):
                               candidates=goalie_candidates(S, g, sd),
                               table=goalie_table(S, g[sd]))
             g['v4'] = dict(version=M.VERSION, la=round(la, 4), lh=round(lh, 4), ra=round(la * M.SCALE, 4), rh=round(lh * M.SCALE, 4), sim=dict(M.SIM),
-                           rateScenarios=rate_scenarios,goalieQualityPolicy='goalie-specific-xga-v1',
+                           rateScenarios=rate_scenarios,goalieQualityPolicy='goalie-specific-xga-v1',goalieIdentityPolicy='current-roster-id-v1',
                            betaGq=round(bq, 5), calib=round(calib, 4), goalies=gk, trainedThrough=fit_through,
                            rest=dict(away=f['a_rest'], home=f['h_rest']), b2b=dict(away=f['a_b2b'], home=f['h_b2b']), km=dict(away=round(f['a_km']), home=round(f['h_km'])),
                            form=dict(away=dict(gf=round(f['a_gf'], 3), ga=round(f['a_ga'], 3), xf=round(f['a_xf'], 3), xa=round(f['a_xa'], 3)),

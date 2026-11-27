@@ -147,10 +147,13 @@
     const { a, h, tie, n } = r;
     const pa = new Float64Array(13), ph = new Float64Array(13);
     const cnt = new Map(), cntTie = new Map();
+    const totals = new Map(), margins = new Map();
     let sa = 0, sh = 0, hw = 0, ot = 0, en = 0, og = 0;
     const tot = new Float64Array(10);
     for (let i = 0; i < n; i++) {
       const x = a[i], y = h[i];
+      totals.set(x+y,(totals.get(x+y)||0)+1);
+      margins.set(y-x,(margins.get(y-x)||0)+1);
       pa[Math.min(12, x)]++; ph[Math.min(12, y)]++;
       sa += x; sh += y; if (y > x) hw++; if (tie[i]) { ot++; if (r.og[i]) og++; } en += r.en[i];
       tot[Math.min(9, x + y)]++;
@@ -172,7 +175,15 @@
     const pick = cell(best.x, best.y);
     pick.otLabel = pick.potGiven >= OT_LABEL;
     pick.winner = pick.x > pick.y ? 'away' : 'home';
+    // Exact integer quantiles, without the plotting histograms' capped tails.
+    const quantile80 = counts => {
+      const bins=[...counts].sort((a,b)=>a[0]-b[0]);
+      return [.1,.9].map(q=>{let c=0;for(const [v,k] of bins){c+=k;if(c>=Math.ceil(q*n))return v;}});
+    };
+    const total80=quantile80(totals);
+    const margin80=quantile80(margins);
     return {
+      scoreIntervals: {total80,margin80},
       n, ea: sa / n, eh: sh / n, pHome: hw / n, pAway: 1 - hw / n, pOT: ot / n, pOTgoal: ot ? og / ot : 0, enShare: en / (sa + sh),
       distA: Array.from(pa.slice(0, 7)).map((v, i) => i < 6 ? v : Array.from(pa.slice(6)).reduce((s, q) => s + q, 0)),
       distH: Array.from(ph.slice(0, 7)).map((v, i) => i < 6 ? v : Array.from(ph.slice(6)).reduce((s, q) => s + q, 0)),

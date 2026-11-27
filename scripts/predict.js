@@ -44,6 +44,7 @@ function predictSlate(date, opts = {}) {
       sims: o.n, simMs: Math.round(o.simMs), rates: o.rates.map(x => +x.toFixed(4)), xg: [+o.ea.toFixed(3), +o.eh.toFixed(3)],
       pick: { away: o.pick.x, home: o.pick.y, ot: !!o.pick.otLabel, winner: o.pick.winner, pScore: +o.pick.p.toFixed(4) },
       pAway: +o.pAway.toFixed(4), pHome: +o.pHome.toFixed(4), pOT: +o.pOT.toFixed(4),
+      scoreIntervals: o.scoreIntervals,
       top: o.top.slice(0, 3).map(c => ({ a: c.x, h: c.y, p: +c.p.toFixed(4) })),
       v4goalies: { away: g.v4.goalies.away.name || 'team blend', home: g.v4.goalies.home.name || 'team blend' },
       goalieSensitivity: (o.calibrationStress || []).filter(s=>s.label==='unconfirmed roster-goalie sensitivity')
