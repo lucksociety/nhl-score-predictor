@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "generatedAt": "2026-11-28T04:37:47Z",
+ "generatedAt": "2026-11-28T05:46:34Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: DraftKings)",
  "games": [
   {
@@ -197,9 +197,9 @@
       "tokenId": "95865563701982730632425941035046159880303151159403846707000336324192460099385",
       "status": "open",
       "periodType": null,
-      "ask": 0.28,
+      "ask": 0.29,
       "bid": 0.27,
-      "volume": null,
+      "volume": 3.571429,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -216,8 +216,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.73,
-      "bid": 0.72,
-      "volume": null,
+      "bid": 0.71,
+      "volume": 3.571429,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -269,7 +269,7 @@
       "tokenId": "109395927463222750152972107541345864420028617153139408382421117079475338327586",
       "status": "open",
       "periodType": null,
-      "ask": 0.46,
+      "ask": 0.3,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -288,7 +288,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.54,
+      "bid": 0.7,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -377,7 +377,7 @@
       "tokenId": "43586613441376065381696995879406809457510547350853113125776683117486073283133",
       "status": "open",
       "periodType": null,
-      "ask": 0.48,
+      "ask": 0.3,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -396,7 +396,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.52,
+      "bid": 0.7,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -450,7 +450,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.98,
-      "bid": 0.952,
+      "bid": 0.963,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -467,7 +467,7 @@
       "tokenId": "100482600420133730748161446881951054409626443623579155549499014151127847355438",
       "status": "open",
       "periodType": null,
-      "ask": 0.048,
+      "ask": 0.037,
       "bid": 0.02,
       "volume": null,
       "fee": {
@@ -521,7 +521,7 @@
       "tokenId": "108144325171560300825773937496828546098452993045616101700415405418035029963556",
       "status": "open",
       "periodType": null,
-      "ask": 0.21,
+      "ask": 0.22,
       "bid": 0.18,
       "volume": null,
       "fee": {
@@ -540,7 +540,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.82,
-      "bid": 0.79,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -585,11 +585,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -885,12 +885,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.1515,
-      3.2888
+      3.1504,
+      3.2884
      ],
      "adjustedGoals": [
-      3.160737362981471,
-      3.316555208461852
+      3.159634138771006,
+      3.316151832737155
      ],
      "featureDelta": [
       0.11619529885679969,
@@ -1140,23 +1140,23 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.8237,
-        2.9467
+        2.8227,
+        2.9464
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 3.1607,
-    "lh": 3.3166,
-    "ra": 2.832,
-    "rh": 2.9716,
+    "la": 3.1596,
+    "lh": 3.3162,
+    "ra": 2.831,
+    "rh": 2.9713,
     "sim": {
      "pull3": 0.4
     },
@@ -1164,15 +1164,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.8256093602709473,
-       2.941284056803207
+       2.8267397936048098,
+       2.940835451686766
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Jakub Dobes",
@@ -1277,17 +1277,17 @@
       "xa": 0.972
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.1515,
-      3.2888
+      3.1504,
+      3.2884
      ],
      "adjustedGoals": [
-      3.160737362981471,
-      3.316555208461852
+      3.159634138771006,
+      3.316151832737155
      ],
      "featureDelta": [
       0.11619529885679969,
@@ -1537,8 +1537,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.8237,
-        2.9467
+        2.8227,
+        2.9464
        ]
       }
      ]
@@ -1598,7 +1598,7 @@
       "periodType": null,
       "ask": 0.51,
       "bid": 0.5,
-      "volume": 1321.363488,
+      "volume": 1423.673488,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1613,7 +1613,7 @@
       "periodType": null,
       "ask": 0.5,
       "bid": 0.49,
-      "volume": 1321.363488,
+      "volume": 1423.673488,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -1632,7 +1632,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.79,
-      "bid": 0.77,
+      "bid": 0.78,
       "volume": 11.53,
       "fee": {
        "rate": 0.05,
@@ -1649,7 +1649,7 @@
       "tokenId": "87809813302933506017754203974121228379972957198322806179820552095068491295837",
       "status": "open",
       "periodType": null,
-      "ask": 0.23,
+      "ask": 0.22,
       "bid": 0.21,
       "volume": 11.53,
       "fee": {
@@ -1811,7 +1811,7 @@
       "tokenId": "35601337031660867809518055124795233872709678612557156149649114366316446282818",
       "status": "open",
       "periodType": null,
-      "ask": 0.48,
+      "ask": 0.46,
       "bid": 0.04,
       "volume": null,
       "fee": {
@@ -1830,7 +1830,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.52,
+      "bid": 0.54,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1847,7 +1847,7 @@
       "tokenId": "19789142907601737811442849475108142836037991425248240991908759407896350806550",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
+      "ask": 0.19,
       "bid": 0.18,
       "volume": null,
       "fee": {
@@ -1866,7 +1866,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.82,
-      "bid": 0.8,
+      "bid": 0.81,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -1919,7 +1919,7 @@
       "tokenId": "77168387134385214526030784400093688102256317617825966299100279311059927913168",
       "status": "open",
       "periodType": null,
-      "ask": 0.21,
+      "ask": 0.14,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -1938,7 +1938,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.79,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2127,11 +2127,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2431,10 +2431,10 @@
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga",
-    "la": 3.1718,
-    "lh": 2.9662,
-    "ra": 2.8419,
-    "rh": 2.6577,
+    "la": 3.1722,
+    "lh": 2.9649,
+    "ra": 2.8423,
+    "rh": 2.6566,
     "sim": {
      "pull3": 0.4
     },
@@ -2442,15 +2442,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.826887561257945,
-       2.649125349105857
+       2.8270808707048274,
+       2.6498703458172312
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Andrei Vasilevskiy",
@@ -2568,7 +2568,7 @@
       "xa": 0.992
      }
     },
-    "at": "2026-11-28T04:37:53Z"
+    "at": "2026-11-28T05:46:37Z"
    }
   },
   {
@@ -2624,7 +2624,7 @@
       "periodType": null,
       "ask": 0.37,
       "bid": 0.36,
-      "volume": 2.631579,
+      "volume": 13.731579,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -2639,7 +2639,7 @@
       "periodType": null,
       "ask": 0.64,
       "bid": 0.63,
-      "volume": 2.631579,
+      "volume": 13.731579,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -2658,7 +2658,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.77,
-      "bid": 0.75,
+      "bid": 0.74,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2675,7 +2675,7 @@
       "tokenId": "57944718003733252748218352161902166421918206607196474148412502533355823168926",
       "status": "open",
       "periodType": null,
-      "ask": 0.25,
+      "ask": 0.26,
       "bid": 0.23,
       "volume": null,
       "fee": {
@@ -2695,7 +2695,7 @@
       "periodType": null,
       "ask": 0.54,
       "bid": 0.53,
-      "volume": null,
+      "volume": 1.851852,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -2713,7 +2713,7 @@
       "periodType": null,
       "ask": 0.47,
       "bid": 0.46,
-      "volume": null,
+      "volume": 1.851852,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -2837,7 +2837,7 @@
       "tokenId": "112719294760006125305170912508014947577339674167118406343808107850049748363572",
       "status": "open",
       "periodType": null,
-      "ask": 0.19,
+      "ask": 0.15,
       "bid": 0.08,
       "volume": null,
       "fee": {
@@ -2856,7 +2856,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.92,
-      "bid": 0.81,
+      "bid": 0.85,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2910,7 +2910,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.19,
-      "bid": 0.17,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -2927,7 +2927,7 @@
       "tokenId": "5720879497082647263153784279072726191894248293081340598641410226992482482140",
       "status": "open",
       "periodType": null,
-      "ask": 0.83,
+      "ask": 0.82,
       "bid": 0.81,
       "volume": null,
       "fee": {
@@ -2945,7 +2945,7 @@
       "tokenId": "9359663897989584820284525245706837453024843222444898213059465752070639803909",
       "status": "open",
       "periodType": null,
-      "ask": 0.37,
+      "ask": 0.14,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -2964,7 +2964,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.63,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -3153,11 +3153,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -3509,12 +3509,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.6952,
-      3.5176
+      2.6957,
+      3.5168
      ],
      "adjustedGoals": [
-      2.691645889320009,
-      3.4709414684423683
+      2.6921452299792037,
+      3.4701520798891634
      ],
      "featureDelta": [
       -0.08774217170743048,
@@ -3795,23 +3795,23 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4149,
-        3.1518
+        2.4153,
+        3.1511
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 2.6916,
-    "lh": 3.4709,
-    "ra": 2.4117,
-    "rh": 3.11,
+    "la": 2.6921,
+    "lh": 3.4702,
+    "ra": 2.4122,
+    "rh": 3.1093,
     "sim": {
      "pull3": 0.4
     },
@@ -3819,15 +3819,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.412132020793074,
-       3.1307705317648558
+       2.411384697409956,
+       3.1306536393691853
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Dustin Wolf",
@@ -3945,17 +3945,17 @@
       "xa": 0.967
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.6952,
-      3.5176
+      2.6957,
+      3.5168
      ],
      "adjustedGoals": [
-      2.691645889320009,
-      3.4709414684423683
+      2.6921452299792037,
+      3.4701520798891634
      ],
      "featureDelta": [
       -0.08774217170743048,
@@ -4236,8 +4236,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.4149,
-        3.1518
+        2.4153,
+        3.1511
        ]
       }
      ]
@@ -4330,8 +4330,8 @@
       "tokenId": "54185527279873562646185929134817113658228327116028224083466241845710601009897",
       "status": "open",
       "periodType": null,
-      "ask": 0.77,
-      "bid": 0.76,
+      "ask": 0.78,
+      "bid": 0.75,
       "volume": 1804.59779,
       "fee": {
        "rate": 0.05,
@@ -4348,8 +4348,8 @@
       "tokenId": "80799389712013930609487735385586302468400083412670927836436962978098422494956",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
-      "bid": 0.23,
+      "ask": 0.25,
+      "bid": 0.22,
       "volume": 1804.59779,
       "fee": {
        "rate": 0.05,
@@ -4510,7 +4510,7 @@
       "tokenId": "11251106316837595007445448190079922164726636215527583921468079788311234783165",
       "status": "open",
       "periodType": null,
-      "ask": 0.48,
+      "ask": 0.4,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -4529,7 +4529,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.52,
+      "bid": 0.6,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4546,7 +4546,7 @@
       "tokenId": "101339383273169698890232744397545812346122080073092041579077102450151640831494",
       "status": "open",
       "periodType": null,
-      "ask": 0.18,
+      "ask": 0.19,
       "bid": 0.17,
       "volume": null,
       "fee": {
@@ -4565,7 +4565,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.83,
-      "bid": 0.82,
+      "bid": 0.81,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4618,7 +4618,7 @@
       "tokenId": "104090773439025271042431918880894325211618542112561130188881683193251649002730",
       "status": "open",
       "periodType": null,
-      "ask": 0.21,
+      "ask": 0.15,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -4637,7 +4637,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.79,
+      "bid": 0.85,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4762,8 +4762,8 @@
       "tokenId": "94797418783423912995406534371816359251194252087119523026322210851863645752168",
       "status": "open",
       "periodType": null,
-      "ask": 0.17,
-      "bid": 0.14,
+      "ask": 0.16,
+      "bid": 0.15,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4780,8 +4780,8 @@
       "tokenId": "187279583761051984564560763089696726659613619134526042455357884854194152293",
       "status": "open",
       "periodType": null,
-      "ask": 0.86,
-      "bid": 0.83,
+      "ask": 0.85,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4798,8 +4798,8 @@
       "tokenId": "32575048451286724388726832804494076181498208063801425672982921658786517789911",
       "status": "open",
       "periodType": null,
-      "ask": 0.07,
-      "bid": 0.04,
+      "ask": 0.08,
+      "bid": 0.05,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4816,8 +4816,8 @@
       "tokenId": "97512702440109487145908490119233804196976472960340108916151156601972541489570",
       "status": "open",
       "periodType": null,
-      "ask": 0.96,
-      "bid": 0.93,
+      "ask": 0.95,
+      "bid": 0.92,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -4826,11 +4826,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5109,11 +5109,11 @@
      "dataThrough": "2026-11-27",
      "baseGoals": [
       2.8985,
-      3.1081
+      3.1092
      ],
      "adjustedGoals": [
       2.9002658375589108,
-      3.0867520306012586
+      3.0878444752567273
      ],
      "featureDelta": [
       -0.007763742211356506,
@@ -5336,22 +5336,22 @@
        "label": "unadjusted team baseline",
        "rates": [
         2.597,
-        2.7849
+        2.7858
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
     "la": 2.9003,
-    "lh": 3.0868,
+    "lh": 3.0878,
     "ra": 2.5986,
-    "rh": 2.7657,
+    "rh": 2.7667,
     "sim": {
      "pull3": 0.4
     },
@@ -5359,15 +5359,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.587218995931782,
-       2.7716463796793303
+       2.586703862967542,
+       2.7707590146939993
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Justus Annunen",
@@ -5491,17 +5491,17 @@
       "xa": 0.995
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
       2.8985,
-      3.1081
+      3.1092
      ],
      "adjustedGoals": [
       2.9002658375589108,
-      3.0867520306012586
+      3.0878444752567273
      ],
      "featureDelta": [
       -0.007763742211356506,
@@ -5724,7 +5724,7 @@
        "label": "unadjusted team baseline",
        "rates": [
         2.597,
-        2.7849
+        2.7858
        ]
       }
      ]
@@ -5925,8 +5925,8 @@
       "tokenId": "70524174831653059633455427019828187898577388001073996349159672915645343730989",
       "status": "open",
       "periodType": null,
-      "ask": 0.29,
-      "bid": 0.26,
+      "ask": 0.28,
+      "bid": 0.27,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5943,8 +5943,8 @@
       "tokenId": "112413269936761343690246863147553062204024559411954077142018206920127324223624",
       "status": "open",
       "periodType": null,
-      "ask": 0.74,
-      "bid": 0.71,
+      "ask": 0.73,
+      "bid": 0.72,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -5997,7 +5997,7 @@
       "tokenId": "48738593019503532188865712453463478825721901992534915366918241609418221773815",
       "status": "open",
       "periodType": null,
-      "ask": 0.33,
+      "ask": 0.26,
       "bid": 0.14,
       "volume": null,
       "fee": {
@@ -6016,7 +6016,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.86,
-      "bid": 0.67,
+      "bid": 0.74,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6035,7 +6035,7 @@
       "periodType": null,
       "ask": 0.36,
       "bid": 0.33,
-      "volume": 1616.1060599999998,
+      "volume": 1616.10606,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -6053,7 +6053,7 @@
       "periodType": null,
       "ask": 0.67,
       "bid": 0.64,
-      "volume": 1616.1060599999998,
+      "volume": 1616.10606,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -6105,7 +6105,7 @@
       "tokenId": "82247183542732157231566344725489870332651553039255099983681953345599307880189",
       "status": "open",
       "periodType": null,
-      "ask": 0.32,
+      "ask": 0.25,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -6124,7 +6124,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.68,
+      "bid": 0.75,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6141,7 +6141,7 @@
       "tokenId": "70003522643163978884412861173036702925542343290509901710103482343723410653882",
       "status": "open",
       "periodType": null,
-      "ask": 0.09,
+      "ask": 0.1,
       "bid": 0.05,
       "volume": null,
       "fee": {
@@ -6160,7 +6160,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.95,
-      "bid": 0.91,
+      "bid": 0.9,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6249,7 +6249,7 @@
       "tokenId": "53614386672699998202751229449122519902202309383574462378980581597763170703702",
       "status": "open",
       "periodType": null,
-      "ask": 0.19,
+      "ask": 0.2,
       "bid": 0.17,
       "volume": null,
       "fee": {
@@ -6268,7 +6268,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.83,
-      "bid": 0.81,
+      "bid": 0.8,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -6313,11 +6313,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6586,12 +6586,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.3669,
-      4.0186
+      2.367,
+      4.0198
      ],
      "adjustedGoals": [
-      2.3666768128599225,
-      4.070557857951255
+      2.36677680343041,
+      4.071773373162906
      ],
      "featureDelta": [
       0.04474639516796808,
@@ -6821,30 +6821,30 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.1207,
-        3.6007
+        2.1209,
+        3.6018
        ]
       },
       {
        "label": "CAR questionable skaters OUT",
        "rates": [
-        2.1236889933992207,
-        3.604916919410224
+        2.1237787178908936,
+        3.6059933889029065
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 2.3667,
-    "lh": 4.0706,
-    "ra": 2.1205,
-    "rh": 3.6472,
+    "la": 2.3668,
+    "lh": 4.0718,
+    "ra": 2.1206,
+    "rh": 3.6483,
     "sim": {
      "pull3": 0.4
     },
@@ -6852,15 +6852,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.1294040773590903,
-       3.5790053659479035
+       2.1294489980772817,
+       3.5782155458731593
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Samuel Ersson",
@@ -6985,17 +6985,17 @@
       "xa": 0.913
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.3669,
-      4.0186
+      2.367,
+      4.0198
      ],
      "adjustedGoals": [
-      2.3666768128599225,
-      4.070557857951255
+      2.36677680343041,
+      4.071773373162906
      ],
      "featureDelta": [
       0.04474639516796808,
@@ -7225,15 +7225,15 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.1207,
-        3.6007
+        2.1209,
+        3.6018
        ]
       },
       {
        "label": "CAR questionable skaters OUT",
        "rates": [
-        2.1236889933992207,
-        3.604916919410224
+        2.1237787178908936,
+        3.6059933889029065
        ]
       }
      ]
@@ -7257,8 +7257,8 @@
     "mlAway": 102.0,
     "mlHome": -122.0,
     "total": 6.5,
-    "over": -130.0,
-    "under": 110.0,
+    "over": -135.0,
+    "under": 114.0,
     "mlAwayOpen": 105.0,
     "mlHomeOpen": -125.0
    },
@@ -7363,7 +7363,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.67,
-      "bid": 0.66,
+      "bid": 0.65,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7380,7 +7380,7 @@
       "tokenId": "43003999961276338713634776903164340132756071690484602585095570675667902898943",
       "status": "open",
       "periodType": null,
-      "ask": 0.34,
+      "ask": 0.35,
       "bid": 0.33,
       "volume": null,
       "fee": {
@@ -7435,7 +7435,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.35,
-      "bid": 0.34,
+      "bid": 0.33,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7452,7 +7452,7 @@
       "tokenId": "39147811309317661636001565722402294357011467412862086245045919113211445443867",
       "status": "open",
       "periodType": null,
-      "ask": 0.66,
+      "ask": 0.67,
       "bid": 0.65,
       "volume": null,
       "fee": {
@@ -7506,7 +7506,7 @@
       "tokenId": "40036599571043163503733297163500655324045432681988429690460631583564599083600",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
+      "ask": 0.19,
       "bid": 0.04,
       "volume": null,
       "fee": {
@@ -7525,7 +7525,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.76,
+      "bid": 0.81,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7615,7 +7615,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.19,
-      "bid": 0.17,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7632,7 +7632,7 @@
       "tokenId": "107470782604470340133469764196213600038323777775088129984539264353276796990376",
       "status": "open",
       "periodType": null,
-      "ask": 0.83,
+      "ask": 0.82,
       "bid": 0.81,
       "volume": null,
       "fee": {
@@ -7650,7 +7650,7 @@
       "tokenId": "24013964932419404261733821029269272340720647040743431675137709212801724812504",
       "status": "open",
       "periodType": null,
-      "ask": 0.5,
+      "ask": 0.37,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -7669,7 +7669,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.5,
+      "bid": 0.63,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7758,7 +7758,7 @@
       "tokenId": "17049622048838980573284499574466206561775314961352429474523618501968165600974",
       "status": "open",
       "periodType": null,
-      "ask": 0.26,
+      "ask": 0.28,
       "bid": 0.24,
       "volume": null,
       "fee": {
@@ -7777,7 +7777,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.76,
-      "bid": 0.74,
+      "bid": 0.72,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7795,7 +7795,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.13,
-      "bid": 0.11,
+      "bid": 0.12,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -7812,7 +7812,7 @@
       "tokenId": "44848753422541846172640026471419232439412118203712140736793972975256331798522",
       "status": "open",
       "periodType": null,
-      "ask": 0.89,
+      "ask": 0.88,
       "bid": 0.87,
       "volume": null,
       "fee": {
@@ -7822,11 +7822,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8223,12 +8223,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.2368,
-      3.557
+      3.2376,
+      3.5575
      ],
      "adjustedGoals": [
-      3.2639678569322492,
-      3.552027225139459
+      3.2647745716769188,
+      3.552526526126968
      ],
      "featureDelta": [
       0.23793957301200458,
@@ -8543,23 +8543,23 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9001,
-        3.1871
+        2.9009,
+        3.1875
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 3.264,
-    "lh": 3.552,
-    "ra": 2.9245,
-    "rh": 3.1826,
+    "la": 3.2648,
+    "lh": 3.5525,
+    "ra": 2.9252,
+    "rh": 3.1831,
     "sim": {
      "pull3": 0.4
     },
@@ -8567,15 +8567,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.88219029754386,
-       3.162375043018338
+       2.882425903018087,
+       3.162409569854468
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Sergei Bobrovsky",
@@ -8680,17 +8680,17 @@
       "xa": 1.033
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.2368,
-      3.557
+      3.2376,
+      3.5575
      ],
      "adjustedGoals": [
-      3.2639678569322492,
-      3.552027225139459
+      3.2647745716769188,
+      3.552526526126968
      ],
      "featureDelta": [
       0.23793957301200458,
@@ -9005,8 +9005,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9001,
-        3.1871
+        2.9009,
+        3.1875
        ]
       }
      ]
@@ -9280,7 +9280,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.17,
-      "bid": 0.14,
+      "bid": 0.13,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9297,7 +9297,7 @@
       "tokenId": "31245740953225734337756129355227967328837880781165023724299205154360439711692",
       "status": "open",
       "periodType": null,
-      "ask": 0.86,
+      "ask": 0.87,
       "bid": 0.83,
       "volume": null,
       "fee": {
@@ -9316,7 +9316,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.29,
+      "bid": 0.28,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9333,7 +9333,7 @@
       "tokenId": "94117821091545259260650118643871930023559682551463584549041524624224770700225",
       "status": "open",
       "periodType": null,
-      "ask": 0.71,
+      "ask": 0.72,
       "bid": 0.7,
       "volume": null,
       "fee": {
@@ -9352,7 +9352,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.17,
-      "bid": 0.15,
+      "bid": 0.16,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9369,7 +9369,7 @@
       "tokenId": "88642340104853080183952897905378595393371966082084408107823869342223856079604",
       "status": "open",
       "periodType": null,
-      "ask": 0.85,
+      "ask": 0.84,
       "bid": 0.83,
       "volume": null,
       "fee": {
@@ -9387,7 +9387,7 @@
       "tokenId": "101868279429050846331433530321482869727276691919310044654978722994032169858753",
       "status": "open",
       "periodType": null,
-      "ask": 0.36,
+      "ask": 0.26,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -9406,7 +9406,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.64,
+      "bid": 0.74,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9424,7 +9424,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.12,
-      "bid": 0.07,
+      "bid": 0.09,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9441,7 +9441,7 @@
       "tokenId": "55205571866338405825376446833015959716276535506673693509944166167782203734123",
       "status": "open",
       "periodType": null,
-      "ask": 0.93,
+      "ask": 0.91,
       "bid": 0.88,
       "volume": null,
       "fee": {
@@ -9495,8 +9495,8 @@
       "tokenId": "62389589996103821410807571347977631823124472955918746091203527020467456135661",
       "status": "open",
       "periodType": null,
-      "ask": 0.9,
-      "bid": 0.87,
+      "ask": 0.89,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9513,8 +9513,8 @@
       "tokenId": "30972213717068070729531712348423292685067469959967454528430433794367517514714",
       "status": "open",
       "periodType": null,
-      "ask": 0.13,
-      "bid": 0.1,
+      "ask": 0.14,
+      "bid": 0.11,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9532,7 +9532,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.22,
-      "bid": 0.19,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -9549,7 +9549,7 @@
       "tokenId": "2749253145220621203598512365628402905584467053662641994378292325075517705765",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
+      "ask": 0.82,
       "bid": 0.78,
       "volume": null,
       "fee": {
@@ -9595,11 +9595,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9917,9 +9917,9 @@
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga",
-    "la": 2.7406,
+    "la": 2.7392,
     "lh": 3.5846,
-    "ra": 2.4555,
+    "ra": 2.4543,
     "rh": 3.2118,
     "sim": {
      "pull3": 0.4
@@ -9928,15 +9928,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.4502700148610956,
-       3.211838519668247
+       2.450826871486829,
+       3.2104958628500433
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Nico Daws",
@@ -10041,7 +10041,7 @@
       "xa": 0.964
      }
     },
-    "at": "2026-11-28T04:37:53Z"
+    "at": "2026-11-28T05:46:37Z"
    }
   },
   {
@@ -10239,7 +10239,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.36,
-      "bid": 0.34,
+      "bid": 0.35,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10256,7 +10256,7 @@
       "tokenId": "66716273065543862548457744085979609485958476093410092048724993035083828784965",
       "status": "open",
       "periodType": null,
-      "ask": 0.66,
+      "ask": 0.65,
       "bid": 0.64,
       "volume": null,
       "fee": {
@@ -10310,7 +10310,7 @@
       "tokenId": "92222443276367579513131505098054258978618334531706604516112445770646003845857",
       "status": "open",
       "periodType": null,
-      "ask": 0.22,
+      "ask": 0.19,
       "bid": 0.04,
       "volume": null,
       "fee": {
@@ -10329,7 +10329,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.96,
-      "bid": 0.78,
+      "bid": 0.81,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10346,7 +10346,7 @@
       "tokenId": "46036814645247638085305350057721602515634312059101846857536880611269830507851",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
+      "ask": 0.19,
       "bid": 0.18,
       "volume": null,
       "fee": {
@@ -10365,7 +10365,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.82,
-      "bid": 0.8,
+      "bid": 0.81,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10383,7 +10383,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.3,
-      "bid": 0.29,
+      "bid": 0.28,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10400,7 +10400,7 @@
       "tokenId": "65308409659004864617679627930186077389605371765361598924446185037205322811394",
       "status": "open",
       "periodType": null,
-      "ask": 0.71,
+      "ask": 0.72,
       "bid": 0.7,
       "volume": null,
       "fee": {
@@ -10418,7 +10418,7 @@
       "tokenId": "18537993114692693369706666927217087393001312121397261799578597409480742252697",
       "status": "open",
       "periodType": null,
-      "ask": 0.48,
+      "ask": 0.47,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -10437,7 +10437,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.52,
+      "bid": 0.53,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10562,7 +10562,7 @@
       "tokenId": "53655723007572715754288138568779735967863659305924688795114960152279999592990",
       "status": "open",
       "periodType": null,
-      "ask": 0.28,
+      "ask": 0.29,
       "bid": 0.26,
       "volume": null,
       "fee": {
@@ -10581,7 +10581,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.74,
-      "bid": 0.72,
+      "bid": 0.71,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -10626,11 +10626,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -10948,12 +10948,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.5394,
-      3.3054
+      3.5398,
+      3.3061
      ],
      "adjustedGoals": [
-      3.543441515721497,
-      3.2993622987010074
+      3.5438419724673547,
+      3.3000610200687963
      ],
      "featureDelta": [
       0.02643457917844627,
@@ -11212,23 +11212,23 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.1713,
-        2.9616
+        3.1716,
+        2.9622
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 3.5434,
-    "lh": 3.2994,
-    "ra": 3.1749,
-    "rh": 2.9562,
+    "la": 3.5438,
+    "lh": 3.3001,
+    "ra": 3.1753,
+    "rh": 2.9569,
     "sim": {
      "pull3": 0.4
     },
@@ -11236,15 +11236,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       3.1562282045237753,
-       2.961604164235623
+       3.155478638554273,
+       2.9616487256332173
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Charlie Lindgren",
@@ -11362,17 +11362,17 @@
       "xa": 1.02
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.5394,
-      3.3054
+      3.5398,
+      3.3061
      ],
      "adjustedGoals": [
-      3.543441515721497,
-      3.2993622987010074
+      3.5438419724673547,
+      3.3000610200687963
      ],
      "featureDelta": [
       0.02643457917844627,
@@ -11631,8 +11631,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        3.1713,
-        2.9616
+        3.1716,
+        2.9622
        ]
       }
      ]
@@ -11692,7 +11692,7 @@
       "periodType": null,
       "ask": 0.53,
       "bid": 0.52,
-      "volume": 4408.176894,
+      "volume": 4414.230355,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11707,7 +11707,7 @@
       "periodType": null,
       "ask": 0.48,
       "bid": 0.47,
-      "volume": 4408.176894,
+      "volume": 4414.230355,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -11905,8 +11905,8 @@
       "tokenId": "46367622237255357997165135466506381531407907841815645708116598955538209250979",
       "status": "open",
       "periodType": null,
-      "ask": 0.2,
-      "bid": 0.05,
+      "ask": 0.42,
+      "bid": 0.04,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11923,8 +11923,8 @@
       "tokenId": "72614260170252424958592074553855361150536808938590024717777900238651066568935",
       "status": "open",
       "periodType": null,
-      "ask": 0.95,
-      "bid": 0.8,
+      "ask": 0.96,
+      "bid": 0.58,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11942,7 +11942,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.18,
-      "bid": 0.16,
+      "bid": 0.17,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -11959,7 +11959,7 @@
       "tokenId": "74537621136639140479463780571612402243265472444694155669908149060446357807538",
       "status": "open",
       "periodType": null,
-      "ask": 0.84,
+      "ask": 0.83,
       "bid": 0.82,
       "volume": null,
       "fee": {
@@ -12014,7 +12014,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.19,
-      "bid": 0.17,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12031,7 +12031,7 @@
       "tokenId": "9033032265657506506563609625357024113902491035679212421484759400071017771353",
       "status": "open",
       "periodType": null,
-      "ask": 0.83,
+      "ask": 0.82,
       "bid": 0.81,
       "volume": null,
       "fee": {
@@ -12049,7 +12049,7 @@
       "tokenId": "47703320653020072527756007440695294184486054793105369029229000494572757783761",
       "status": "open",
       "periodType": null,
-      "ask": 0.46,
+      "ask": 0.4,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -12068,7 +12068,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.54,
+      "bid": 0.6,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12122,7 +12122,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.87,
-      "bid": 0.85,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -12139,7 +12139,7 @@
       "tokenId": "6523682847263937573038314018644901375908057889888963374130072431360213531465",
       "status": "open",
       "periodType": null,
-      "ask": 0.15,
+      "ask": 0.16,
       "bid": 0.13,
       "volume": null,
       "fee": {
@@ -12221,11 +12221,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -12521,12 +12521,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.8101,
-      2.9065
+      2.8098,
+      2.9058
      ],
      "adjustedGoals": [
-      2.8266102038373004,
-      2.9286933863765805
+      2.8263084412448123,
+      2.927988041332554
      ],
      "featureDelta": [
       0.19850801691383,
@@ -12770,23 +12770,23 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.5179,
-        2.6042
+        2.5176,
+        2.6036
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 2.8266,
-    "lh": 2.9287,
-    "ra": 2.5326,
-    "rh": 2.6241,
+    "la": 2.8263,
+    "lh": 2.928,
+    "ra": 2.5324,
+    "rh": 2.6235,
     "sim": {
      "pull3": 0.4
     },
@@ -12794,15 +12794,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.5005368243817463,
-       2.5879346659021203
+       2.5011024856478796,
+       2.587449132873992
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Ilya Sorokin",
@@ -12907,17 +12907,17 @@
       "xa": 0.978
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.8101,
-      2.9065
+      2.8098,
+      2.9058
      ],
      "adjustedGoals": [
-      2.8266102038373004,
-      2.9286933863765805
+      2.8263084412448123,
+      2.927988041332554
      ],
      "featureDelta": [
       0.19850801691383,
@@ -13161,8 +13161,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.5179,
-        2.6042
+        2.5176,
+        2.6036
        ]
       }
      ]
@@ -13222,7 +13222,7 @@
       "periodType": null,
       "ask": 0.42,
       "bid": 0.41,
-      "volume": 2643.9813740000004,
+      "volume": 2643.981374,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -13237,7 +13237,7 @@
       "periodType": null,
       "ask": 0.59,
       "bid": 0.58,
-      "volume": 2643.9813740000004,
+      "volume": 2643.981374,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -13292,7 +13292,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.55,
-      "bid": 0.53,
+      "bid": 0.54,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13309,7 +13309,7 @@
       "tokenId": "7652293805169092478867132983120448584811350101346646940418988388197222961302",
       "status": "open",
       "periodType": null,
-      "ask": 0.47,
+      "ask": 0.46,
       "bid": 0.45,
       "volume": null,
       "fee": {
@@ -13328,7 +13328,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.44,
-      "bid": 0.42,
+      "bid": 0.43,
       "volume": 11.363637,
       "fee": {
        "rate": 0.05,
@@ -13345,7 +13345,7 @@
       "tokenId": "45999393309953143479360921799819145512639204736594275928962065046393504742753",
       "status": "open",
       "periodType": null,
-      "ask": 0.58,
+      "ask": 0.57,
       "bid": 0.56,
       "volume": 11.363637,
       "fee": {
@@ -13363,7 +13363,7 @@
       "tokenId": "40074377408348951923913457291862213050562862327613377927346334752511156770221",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
+      "ask": 0.25,
       "bid": 0.22,
       "volume": null,
       "fee": {
@@ -13382,7 +13382,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.78,
-      "bid": 0.76,
+      "bid": 0.75,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13435,7 +13435,7 @@
       "tokenId": "57666115916573126897990876430185578176533878952900410114156461630087559778625",
       "status": "open",
       "periodType": null,
-      "ask": 0.23,
+      "ask": 0.17,
       "bid": 0.08,
       "volume": null,
       "fee": {
@@ -13454,7 +13454,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.92,
-      "bid": 0.77,
+      "bid": 0.83,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13579,7 +13579,7 @@
       "tokenId": "9157036684350231136323578684994700733787404234302952638193031787383223561144",
       "status": "open",
       "periodType": null,
-      "ask": 0.45,
+      "ask": 0.4,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -13598,7 +13598,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.55,
+      "bid": 0.6,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13652,7 +13652,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.86,
-      "bid": 0.83,
+      "bid": 0.84,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -13669,7 +13669,7 @@
       "tokenId": "51136457063141734379505989426331253478803930483939257980766170483935168560984",
       "status": "open",
       "periodType": null,
-      "ask": 0.17,
+      "ask": 0.16,
       "bid": 0.14,
       "volume": null,
       "fee": {
@@ -13751,11 +13751,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -14094,12 +14094,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.8476,
-      2.9976
+      2.8475,
+      2.9978
      ],
      "adjustedGoals": [
-      2.838244311883082,
-      3.0121349978658682
+      2.8381446404295114,
+      3.012335967641546
      ],
      "featureDelta": [
       -0.07783645900233499,
@@ -14365,22 +14365,22 @@
        "label": "unadjusted team baseline",
        "rates": [
         2.5514,
-        2.6859
+        2.686
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 2.8382,
-    "lh": 3.0121,
-    "ra": 2.5431,
-    "rh": 2.6989,
+    "la": 2.8381,
+    "lh": 3.0123,
+    "ra": 2.543,
+    "rh": 2.6991,
     "sim": {
      "pull3": 0.4
     },
@@ -14388,15 +14388,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.5445765715054236,
-       2.7054277592257283
+       2.5446817967529185,
+       2.7061857347570166
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Sebastian Cossa",
@@ -14514,17 +14514,17 @@
       "xa": 0.983
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.8476,
-      2.9976
+      2.8475,
+      2.9978
      ],
      "adjustedGoals": [
-      2.838244311883082,
-      3.0121349978658682
+      2.8381446404295114,
+      3.012335967641546
      ],
      "featureDelta": [
       -0.07783645900233499,
@@ -14790,7 +14790,7 @@
        "label": "unadjusted team baseline",
        "rates": [
         2.5514,
-        2.6859
+        2.686
        ]
       }
      ]
@@ -15027,7 +15027,7 @@
       "tokenId": "33552893741437308830461845925165597459683935286251268914985545250416509954206",
       "status": "open",
       "periodType": null,
-      "ask": 0.35,
+      "ask": 0.36,
       "bid": 0.34,
       "volume": null,
       "fee": {
@@ -15046,7 +15046,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.66,
-      "bid": 0.65,
+      "bid": 0.64,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -15063,8 +15063,8 @@
       "tokenId": "7614654935392241061665837693628562903703219263523650063863978600096802852430",
       "status": "open",
       "periodType": null,
-      "ask": 0.23,
-      "bid": 0.08,
+      "ask": 0.14,
+      "bid": 0.07,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -15081,8 +15081,8 @@
       "tokenId": "70664597070840558188971518665962408127428705318057855909780128198690314783775",
       "status": "open",
       "periodType": null,
-      "ask": 0.92,
-      "bid": 0.77,
+      "ask": 0.93,
+      "bid": 0.86,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -15136,7 +15136,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.23,
-      "bid": 0.21,
+      "bid": 0.22,
       "volume": 98.695653,
       "fee": {
        "rate": 0.05,
@@ -15153,7 +15153,7 @@
       "tokenId": "10503723040507747933318817538777573389241304255606780559568159493772304404137",
       "status": "open",
       "periodType": null,
-      "ask": 0.79,
+      "ask": 0.78,
       "bid": 0.77,
       "volume": 98.695653,
       "fee": {
@@ -15207,7 +15207,7 @@
       "tokenId": "50774916376884627733826711102465283971195570655612645878143179402052866719478",
       "status": "open",
       "periodType": null,
-      "ask": 0.48,
+      "ask": 0.38,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -15226,7 +15226,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.52,
+      "bid": 0.62,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -15279,8 +15279,8 @@
       "tokenId": "84026041376773163563339468848688733080032362645510579992417510795463207836693",
       "status": "open",
       "periodType": null,
-      "ask": 0.9,
-      "bid": 0.88,
+      "ask": 0.91,
+      "bid": 0.87,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -15297,8 +15297,8 @@
       "tokenId": "53464742130639081014859438050818796491739405806256199570890023959859019297564",
       "status": "open",
       "periodType": null,
-      "ask": 0.12,
-      "bid": 0.1,
+      "ask": 0.13,
+      "bid": 0.09,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -15315,8 +15315,8 @@
       "tokenId": "115168378367557341087754719223597560431798062468593525473737868680155115376788",
       "status": "open",
       "periodType": null,
-      "ask": 0.21,
-      "bid": 0.19,
+      "ask": 0.22,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -15333,8 +15333,8 @@
       "tokenId": "23058183820640664727794022796821119144516694283892695423142039120894492229494",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
-      "bid": 0.79,
+      "ask": 0.82,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -15379,11 +15379,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -15689,12 +15689,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.0676,
-      3.053
+      3.0678,
+      3.0531
      ],
      "adjustedGoals": [
-      3.067870875158483,
-      3.0964118054125698
+      3.0680708928188793,
+      3.0965132273518234
      ],
      "featureDelta": [
       0.054762424413254296,
@@ -15939,23 +15939,23 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7486,
-        2.7355
+        2.7488,
+        2.7356
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 3.0679,
-    "lh": 3.0964,
-    "ra": 2.7488,
-    "rh": 2.7744,
+    "la": 3.0681,
+    "lh": 3.0965,
+    "ra": 2.749,
+    "rh": 2.7745,
     "sim": {
      "pull3": 0.4
     },
@@ -15963,15 +15963,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.7371186735830335,
-       2.732665029749914
+       2.737240179645728,
+       2.732814949185427
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Lukas Dostal",
@@ -16083,17 +16083,17 @@
       "xa": 0.966
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.0676,
-      3.053
+      3.0678,
+      3.0531
      ],
      "adjustedGoals": [
-      3.067870875158483,
-      3.0964118054125698
+      3.0680708928188793,
+      3.0965132273518234
      ],
      "featureDelta": [
       0.054762424413254296,
@@ -16338,8 +16338,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.7486,
-        2.7355
+        2.7488,
+        2.7356
        ]
       }
      ]
@@ -16399,7 +16399,7 @@
       "periodType": null,
       "ask": 0.31,
       "bid": 0.3,
-      "volume": 234.98321099999998,
+      "volume": 472.983211,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -16414,7 +16414,7 @@
       "periodType": null,
       "ask": 0.7,
       "bid": 0.69,
-      "volume": 234.98321099999998,
+      "volume": 472.983211,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -16612,8 +16612,8 @@
       "tokenId": "26518656680627287280680597850022304542920762396060812576658749541130117309909",
       "status": "open",
       "periodType": null,
-      "ask": 0.24,
-      "bid": 0.19,
+      "ask": 0.22,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -16630,8 +16630,8 @@
       "tokenId": "11994907836655524215178403680928338341996756251963990245223113530861323419199",
       "status": "open",
       "periodType": null,
-      "ask": 0.81,
-      "bid": 0.76,
+      "ask": 0.82,
+      "bid": 0.78,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -16829,7 +16829,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.91,
-      "bid": 0.89,
+      "bid": 0.88,
       "volume": 72.0,
       "fee": {
        "rate": 0.05,
@@ -16846,7 +16846,7 @@
       "tokenId": "67723338794210639653228472012122784778117038123490047133929620455647455484547",
       "status": "open",
       "periodType": null,
-      "ask": 0.11,
+      "ask": 0.12,
       "bid": 0.09,
       "volume": 72.0,
       "fee": {
@@ -16900,8 +16900,8 @@
       "tokenId": "86498558985947296326309620133565537969628972891657689552168320940453198113715",
       "status": "open",
       "periodType": null,
-      "ask": 0.11,
-      "bid": 0.09,
+      "ask": 0.13,
+      "bid": 0.08,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -16918,8 +16918,8 @@
       "tokenId": "60924578399954161237580645596261284913983442406066089049908266454648367105835",
       "status": "open",
       "periodType": null,
-      "ask": 0.91,
-      "bid": 0.89,
+      "ask": 0.92,
+      "bid": 0.87,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -16928,11 +16928,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -17268,12 +17268,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.5939,
-      4.1848
+      2.5935,
+      4.1854
      ],
      "adjustedGoals": [
-      2.6165046766009,
-      4.066178239550608
+      2.6161011907800744,
+      4.066761232033816
      ],
      "featureDelta": [
       0.14607298953903866,
@@ -17546,23 +17546,23 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.3241,
-        3.7496
+        2.3237,
+        3.7501
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 2.6165,
-    "lh": 4.0662,
-    "ra": 2.3444,
-    "rh": 3.6433,
+    "la": 2.6161,
+    "lh": 4.0668,
+    "ra": 2.344,
+    "rh": 3.6438,
     "sim": {
      "pull3": 0.4
     },
@@ -17570,15 +17570,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.3375369671706165,
-       3.757127395092445
+       2.3374947390377816,
+       3.7565710323423964
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Alex Nedeljkovic",
@@ -17696,17 +17696,17 @@
       "xa": 0.946
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      2.5939,
-      4.1848
+      2.5935,
+      4.1854
      ],
      "adjustedGoals": [
-      2.6165046766009,
-      4.066178239550608
+      2.6161011907800744,
+      4.066761232033816
      ],
      "featureDelta": [
       0.14607298953903866,
@@ -17979,8 +17979,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.3241,
-        3.7496
+        2.3237,
+        3.7501
        ]
       }
      ]
@@ -18073,8 +18073,8 @@
       "tokenId": "33890440316195135231379096454863745102676393140134260344233998114050869853585",
       "status": "open",
       "periodType": null,
-      "ask": 0.83,
-      "bid": 0.81,
+      "ask": 0.82,
+      "bid": 0.8,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -18091,8 +18091,8 @@
       "tokenId": "104162671394403120753430230760189163852870082302530118672444555264941584743929",
       "status": "open",
       "periodType": null,
-      "ask": 0.19,
-      "bid": 0.17,
+      "ask": 0.2,
+      "bid": 0.18,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -18110,8 +18110,8 @@
       "status": "open",
       "periodType": null,
       "ask": 0.63,
-      "bid": 0.62,
-      "volume": null,
+      "bid": 0.61,
+      "volume": 2.564103,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -18127,9 +18127,9 @@
       "tokenId": "6482887656548052067882012269939048171242979734003116811417198970464501246851",
       "status": "open",
       "periodType": null,
-      "ask": 0.38,
+      "ask": 0.39,
       "bid": 0.37,
-      "volume": null,
+      "volume": 2.564103,
       "fee": {
        "rate": 0.05,
        "exponent": 1.0
@@ -18146,7 +18146,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.52,
-      "bid": 0.51,
+      "bid": 0.5,
       "volume": 9.615385,
       "fee": {
        "rate": 0.05,
@@ -18163,7 +18163,7 @@
       "tokenId": "12376025941016885484474637553709842564373543879384728007422721966144468133647",
       "status": "open",
       "periodType": null,
-      "ask": 0.49,
+      "ask": 0.5,
       "bid": 0.48,
       "volume": 9.615385,
       "fee": {
@@ -18253,7 +18253,7 @@
       "tokenId": "29038939231648790785338855724320159085326386431841174161211299354341891881126",
       "status": "open",
       "periodType": null,
-      "ask": 0.39,
+      "ask": 0.31,
       "bid": 0.03,
       "volume": null,
       "fee": {
@@ -18272,7 +18272,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.97,
-      "bid": 0.61,
+      "bid": 0.69,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -18398,7 +18398,7 @@
       "status": "open",
       "periodType": null,
       "ask": 0.15,
-      "bid": 0.03,
+      "bid": 0.04,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -18415,7 +18415,7 @@
       "tokenId": "94778687576426444945103840225284160762439974378105244518815226724198050810913",
       "status": "open",
       "periodType": null,
-      "ask": 0.97,
+      "ask": 0.96,
       "bid": 0.85,
       "volume": null,
       "fee": {
@@ -18541,8 +18541,8 @@
       "tokenId": "18076880556199707527313329811302804771817799600116441101343204285216877273889",
       "status": "open",
       "periodType": null,
-      "ask": 0.12,
-      "bid": 0.1,
+      "ask": 0.13,
+      "bid": 0.09,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -18559,8 +18559,8 @@
       "tokenId": "105912831481854047653707380902621568117293943654242873380678182043578773881641",
       "status": "open",
       "periodType": null,
-      "ask": 0.9,
-      "bid": 0.88,
+      "ask": 0.91,
+      "bid": 0.87,
       "volume": null,
       "fee": {
        "rate": 0.05,
@@ -18569,11 +18569,11 @@
      }
     ],
     "extraIncludesOTSO": true,
-    "fetchedAt": "2026-11-28T04:37:46Z",
+    "fetchedAt": "2026-11-28T05:46:34Z",
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-28T04:37:47.218752+00:00",
+    "checkedAt": "2026-11-28T05:46:34.744177+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -18908,12 +18908,12 @@
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.2806,
-      3.0378
+      3.2826,
+      3.0373
      ],
      "adjustedGoals": [
-      3.2807316657503627,
-      3.021379363207235
+      3.282731746019673,
+      3.0208820659257802
      ],
      "featureDelta": [
       -0.018868995013968992,
@@ -19172,23 +19172,23 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9394,
-        2.7219
+        2.9412,
+        2.7215
        ]
       }
      ]
     },
     "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-28T04:37:53.147216+00:00",
+    "skaterCheckedAt": "2026-11-28T05:46:37.649865+00:00",
     "skaterNote": null,
     "blockReason": null
    },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
-    "la": 3.2807,
-    "lh": 3.0214,
-    "ra": 2.9395,
-    "rh": 2.7072,
+    "la": 3.2827,
+    "lh": 3.0209,
+    "ra": 2.9413,
+    "rh": 2.7067,
     "sim": {
      "pull3": 0.4
     },
@@ -19196,15 +19196,15 @@
      {
       "label": "legacy team-shot-share goalie proxy",
       "rates": [
-       2.9334654421328383,
-       2.727313650535448
+       2.933559682595373,
+       2.7275724747461
       ]
      }
     ],
     "goalieQualityPolicy": "goalie-specific-xga-v1",
     "goalieIdentityPolicy": "current-roster-id-v1",
-    "betaGq": 0.40561,
-    "calib": 1.0149,
+    "betaGq": 0.40966,
+    "calib": 1.015,
     "goalies": {
      "away": {
       "name": "Devon Levi",
@@ -19329,17 +19329,17 @@
       "xa": 1.032
      }
     },
-    "at": "2026-11-28T04:37:53Z",
+    "at": "2026-11-28T05:46:37Z",
     "skaterAdjustment": {
      "policy": "skater-context-sensitivity-v1",
      "dataThrough": "2026-11-27",
      "baseGoals": [
-      3.2806,
-      3.0378
+      3.2826,
+      3.0373
      ],
      "adjustedGoals": [
-      3.2807316657503627,
-      3.021379363207235
+      3.282731746019673,
+      3.0208820659257802
      ],
      "featureDelta": [
       -0.018868995013968992,
@@ -19598,8 +19598,8 @@
       {
        "label": "unadjusted team baseline",
        "rates": [
-        2.9394,
-        2.7219
+        2.9412,
+        2.7215
        ]
       }
      ]
