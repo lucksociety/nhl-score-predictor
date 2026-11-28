@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generatedAt": "2026-11-27T22:35:21Z",
+ "generatedAt": "2026-11-28T03:28:28Z",
  "source": "api-web.nhle.com schedule + ESPN scoreboard (odds: Draft Kings)",
  "games": [
   {
@@ -742,7 +742,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2067,7 +2067,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -2075,8 +2075,8 @@
        {
         "name": "Chris Tanev",
         "position": "D",
-        "status": "Day-To-Day",
-        "updatedAt": "2026-11-27T20:20Z"
+        "status": "Out",
+        "updatedAt": "2026-11-27T23:09Z"
        },
        {
         "name": "Dakota Joshua",
@@ -2428,7 +2428,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "TOR recent skater absences not individually modeled: Dakota Joshua, Jack Roslovic"
+    "blockReason": "TOR recent skater absences not individually modeled: Chris Tanev, Dakota Joshua, Jack Roslovic"
    }
   },
   {
@@ -3421,7 +3421,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -4765,7 +4765,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -5107,7 +5107,7 @@
    "awayName": "Detroit Red Wings",
    "homeName": "Columbus Blue Jackets",
    "venue": "Nationwide Arena",
-   "state": "FINAL",
+   "state": "OFF",
    "final": [
     2,
     0,
@@ -6076,7 +6076,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -6369,8 +6369,12 @@
    "awayName": "Florida Panthers",
    "homeName": "Washington Capitals",
    "venue": "Capital One Arena",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    3,
+    2,
+    "REG"
+   ],
    "espnId": "401892801",
    "odds": {
     "provider": "DraftKings",
@@ -7089,11 +7093,17 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
       "injuries": [
+       {
+        "name": "Garnet Hathaway",
+        "position": "RW",
+        "status": "Out",
+        "updatedAt": "2026-11-27T23:19Z"
+       },
        {
         "name": "Jonah Gadjovich",
         "position": "LW",
@@ -7365,7 +7375,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "WSH recent skater absences not individually modeled: Jordan Kyrou"
+    "blockReason": "FLA recent skater absences not individually modeled: Garnet Hathaway; WSH recent skater absences not individually modeled: Jordan Kyrou"
    }
   },
   {
@@ -7376,8 +7386,12 @@
    "awayName": "Ottawa Senators",
    "homeName": "Tampa Bay Lightning",
    "venue": "Benchmark International Arena",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    6,
+    2,
+    "REG"
+   ],
    "espnId": "401892799",
    "odds": {
     "provider": "DraftKings",
@@ -8390,7 +8404,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -8528,6 +8542,12 @@
      },
      "home": {
       "injuries": [
+       {
+        "name": "Victor Hedman",
+        "position": "D",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-27T23:15Z"
+       },
        {
         "name": "Erik Cernak",
         "position": "D",
@@ -8684,8 +8704,12 @@
    "awayName": "Vancouver Canucks",
    "homeName": "Philadelphia Flyers",
    "venue": "Xfinity Mobile Arena",
-   "state": "CRIT",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    2,
+    5,
+    "REG"
+   ],
    "espnId": "401892800",
    "odds": {
     "provider": "DraftKings",
@@ -9670,7 +9694,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -9854,12 +9878,6 @@
         "updatedAt": "2026-11-27T21:10Z"
        },
        {
-        "name": "Matvei Michkov",
-        "position": "RW",
-        "status": "Out",
-        "updatedAt": "2026-11-27T18:32Z"
-       },
-       {
         "name": "Nikita Grebenkin",
         "position": "RW",
         "status": "Injured Reserve",
@@ -9992,7 +10010,7 @@
     },
     "problems": [],
     "skaterNote": null,
-    "blockReason": "PHI recent skater absences not individually modeled: Owen Tippett, Matvei Michkov"
+    "blockReason": "PHI recent skater absences not individually modeled: Owen Tippett"
    }
   },
   {
@@ -10003,8 +10021,12 @@
    "awayName": "Colorado Avalanche",
    "homeName": "Minnesota Wild",
    "venue": "Grand Casino Arena",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    4,
+    3,
+    "SO"
+   ],
    "espnId": "401892803",
    "odds": {
     "provider": "DraftKings",
@@ -11002,7 +11024,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -11323,8 +11345,12 @@
    "awayName": "Los Angeles Kings",
    "homeName": "Anaheim Ducks",
    "venue": "Honda Center",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    5,
+    3,
+    "REG"
+   ],
    "espnId": "401892804",
    "odds": {
     "provider": "DraftKings",
@@ -12304,7 +12330,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -12618,8 +12644,12 @@
    "awayName": "Vegas Golden Knights",
    "homeName": "San Jose Sharks",
    "venue": "SAP Center at San Jose",
-   "state": "LIVE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    4,
+    "REG"
+   ],
    "espnId": "401892805",
    "odds": {
     "provider": "DraftKings",
@@ -13605,7 +13635,7 @@
     "frozen": true
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -13898,8 +13928,12 @@
    "awayName": "New York Rangers",
    "homeName": "Chicago Blackhawks",
    "venue": "United Center",
-   "state": "PRE",
-   "final": null,
+   "state": "OFF",
+   "final": [
+    1,
+    2,
+    "REG"
+   ],
    "espnId": "401892806",
    "odds": {
     "provider": "Draft Kings",
@@ -14476,7 +14510,7 @@
     "host": "https://gamma-api.polymarket.com"
    },
    "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
     "source": "ESPN live injuries + NHL current rosters",
     "sides": {
      "away": {
@@ -14681,6 +14715,12 @@
      "home": {
       "injuries": [
        {
+        "name": "Jordan Greenway",
+        "position": "LW",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-28T01:44Z"
+       },
+       {
         "name": "Tyler Bertuzzi",
         "position": "LW",
         "status": "Out",
@@ -14858,8 +14898,12 @@
    "awayName": "Winnipeg Jets",
    "homeName": "New York Islanders",
    "venue": "UBS Arena",
-   "state": "FUT",
-   "final": null,
+   "state": "FINAL",
+   "final": [
+    3,
+    1,
+    "REG"
+   ],
    "espnId": "401892807",
    "odds": {
     "provider": "Draft Kings",
@@ -15435,594 +15479,6 @@
     "fetchedAt": "2026-11-27T22:35:21Z",
     "host": "https://gamma-api.polymarket.com"
    },
-   "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
-    "source": "ESPN live injuries + NHL current rosters",
-    "sides": {
-     "away": {
-      "injuries": [
-       {
-        "name": "Dylan DeMelo",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-19T16:39Z"
-       },
-       {
-        "name": "Isak Rosen",
-        "position": "RW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-17T15:15Z"
-       },
-       {
-        "name": "Vladislav Namestnikov",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-23T18:11Z"
-       },
-       {
-        "name": "Nick Bjugstad",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-23T16:48Z"
-       }
-      ],
-      "roster": [
-       {
-        "id": 8480289,
-        "position": "C",
-        "name": "Morgan Barron"
-       },
-       {
-        "id": 8486025,
-        "position": "C",
-        "name": "Viggo Bj\u00f6rck"
-       },
-       {
-        "id": 8478398,
-        "position": "L",
-        "name": "Kyle Connor"
-       },
-       {
-        "id": 8480113,
-        "position": "L",
-        "name": "Alex Iafallo"
-       },
-       {
-        "id": 8481043,
-        "position": "L",
-        "name": "Cole Koepke"
-       },
-       {
-        "id": 8476392,
-        "position": "C",
-        "name": "Adam Lowry"
-       },
-       {
-        "id": 8482110,
-        "position": "C",
-        "name": "Dawson Mercer"
-       },
-       {
-        "id": 8476480,
-        "position": "C",
-        "name": "Vladislav Namestnikov"
-       },
-       {
-        "id": 8475799,
-        "position": "R",
-        "name": "Nino Niederreiter"
-       },
-       {
-        "id": 8482149,
-        "position": "C",
-        "name": "Cole Perfetti"
-       },
-       {
-        "id": 8482765,
-        "position": "R",
-        "name": "Isak Rosen"
-       },
-       {
-        "id": 8476460,
-        "position": "C",
-        "name": "Mark Scheifele"
-       },
-       {
-        "id": 8480014,
-        "position": "C",
-        "name": "Gabriel Vilardi"
-       },
-       {
-        "id": 8484242,
-        "position": "C",
-        "name": "Brayden Yager"
-       },
-       {
-        "id": 8482459,
-        "position": "D",
-        "name": "Tyrel Bauer"
-       },
-       {
-        "id": 8476331,
-        "position": "D",
-        "name": "Dylan DeMelo"
-       },
-       {
-        "id": 8479983,
-        "position": "D",
-        "name": "Mario Ferraro"
-       },
-       {
-        "id": 8477938,
-        "position": "D",
-        "name": "Haydn Fleury"
-       },
-       {
-        "id": 8477504,
-        "position": "D",
-        "name": "Josh Morrissey"
-       },
-       {
-        "id": 8480145,
-        "position": "D",
-        "name": "Neal Pionk"
-       },
-       {
-        "id": 8483510,
-        "position": "D",
-        "name": "Elias Salomonsson"
-       },
-       {
-        "id": 8480049,
-        "position": "D",
-        "name": "Dylan Samberg"
-       },
-       {
-        "id": 8481567,
-        "position": "D",
-        "name": "Henry Thrun"
-       },
-       {
-        "id": 8482076,
-        "position": "G",
-        "name": "Nico Daws"
-       },
-       {
-        "id": 8479973,
-        "position": "G",
-        "name": "Stuart Skinner"
-       }
-      ]
-     },
-     "home": {
-      "injuries": [
-       {
-        "name": "Kyle Palmieri",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-27T15:49Z"
-       },
-       {
-        "name": "Ryan Pulock",
-        "position": "D",
-        "status": "Out",
-        "updatedAt": "2026-11-24T17:11Z"
-       },
-       {
-        "name": "Alexander Romanov",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-19T13:56Z"
-       }
-      ],
-      "roster": [
-       {
-        "id": 8478445,
-        "position": "C",
-        "name": "Mathew Barzal"
-       },
-       {
-        "id": 8482070,
-        "position": "R",
-        "name": "Mitchell Chaffee"
-       },
-       {
-        "id": 8475231,
-        "position": "C",
-        "name": "Casey Cizikas"
-       },
-       {
-        "id": 8477407,
-        "position": "L",
-        "name": "Anthony Duclair"
-       },
-       {
-        "id": 8485388,
-        "position": "R",
-        "name": "Victor Eklund"
-       },
-       {
-        "id": 8482476,
-        "position": "L",
-        "name": "Emil Heineman"
-       },
-       {
-        "id": 8481601,
-        "position": "R",
-        "name": "Simon Holmstrom"
-       },
-       {
-        "id": 8477500,
-        "position": "C",
-        "name": "Bo Horvat"
-       },
-       {
-        "id": 8481711,
-        "position": "L",
-        "name": "Matias Maccelli"
-       },
-       {
-        "id": 8476419,
-        "position": "C",
-        "name": "Jean-Gabriel Pageau"
-       },
-       {
-        "id": 8476292,
-        "position": "L",
-        "name": "Ondrej Palat"
-       },
-       {
-        "id": 8475151,
-        "position": "C",
-        "name": "Kyle Palmieri"
-       },
-       {
-        "id": 8484221,
-        "position": "C",
-        "name": "Calum Ritchie"
-       },
-       {
-        "id": 8475170,
-        "position": "C",
-        "name": "Brayden Schenn"
-       },
-       {
-        "id": 8477950,
-        "position": "D",
-        "name": "Tony DeAngelo"
-       },
-       {
-        "id": 8477018,
-        "position": "D",
-        "name": "Ben Hutton"
-       },
-       {
-        "id": 8482516,
-        "position": "D",
-        "name": "Matthew Kessel"
-       },
-       {
-        "id": 8476429,
-        "position": "D",
-        "name": "Scott Mayfield"
-       },
-       {
-        "id": 8476917,
-        "position": "D",
-        "name": "Adam Pelech"
-       },
-       {
-        "id": 8477506,
-        "position": "D",
-        "name": "Ryan Pulock"
-       },
-       {
-        "id": 8481014,
-        "position": "D",
-        "name": "Alexander Romanov"
-       },
-       {
-        "id": 8485366,
-        "position": "D",
-        "name": "Matthew Schaefer"
-       },
-       {
-        "id": 8479378,
-        "position": "D",
-        "name": "Logan Stanley"
-       },
-       {
-        "id": 8478009,
-        "position": "G",
-        "name": "Ilya Sorokin"
-       },
-       {
-        "id": 8473575,
-        "position": "G",
-        "name": "Semyon Varlamov"
-       }
-      ]
-     }
-    },
-    "problems": [],
-    "skaterAdjustment": {
-     "policy": "skater-context-sensitivity-v1",
-     "dataThrough": "2026-11-25",
-     "baseGoals": [
-      2.9716,
-      3.2059
-     ],
-     "adjustedGoals": [
-      2.9886080855995747,
-      3.2276112225832074
-     ],
-     "featureDelta": [
-      0.1909500295601323,
-      0.21741099738661418
-     ],
-     "priorOnlyPlayers": {
-      "away": [],
-      "home": []
-     },
-     "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
-     "sides": {
-      "away": {
-       "players": [
-        {
-         "id": 8476460,
-         "position": "C",
-         "name": "Mark Scheifele"
-        },
-        {
-         "id": 8478398,
-         "position": "L",
-         "name": "Kyle Connor"
-        },
-        {
-         "id": 8480014,
-         "position": "C",
-         "name": "Gabriel Vilardi"
-        },
-        {
-         "id": 8482110,
-         "position": "C",
-         "name": "Dawson Mercer"
-        },
-        {
-         "id": 8482149,
-         "position": "C",
-         "name": "Cole Perfetti"
-        },
-        {
-         "id": 8476392,
-         "position": "C",
-         "name": "Adam Lowry"
-        },
-        {
-         "id": 8486025,
-         "position": "C",
-         "name": "Viggo Bj\u00f6rck"
-        },
-        {
-         "id": 8480113,
-         "position": "L",
-         "name": "Alex Iafallo"
-        },
-        {
-         "id": 8475799,
-         "position": "R",
-         "name": "Nino Niederreiter"
-        },
-        {
-         "id": 8480289,
-         "position": "C",
-         "name": "Morgan Barron"
-        },
-        {
-         "id": 8484242,
-         "position": "C",
-         "name": "Brayden Yager"
-        },
-        {
-         "id": 8481043,
-         "position": "L",
-         "name": "Cole Koepke"
-        },
-        {
-         "id": 8477504,
-         "position": "D",
-         "name": "Josh Morrissey"
-        },
-        {
-         "id": 8480145,
-         "position": "D",
-         "name": "Neal Pionk"
-        },
-        {
-         "id": 8480049,
-         "position": "D",
-         "name": "Dylan Samberg"
-        },
-        {
-         "id": 8479983,
-         "position": "D",
-         "name": "Mario Ferraro"
-        },
-        {
-         "id": 8483510,
-         "position": "D",
-         "name": "Elias Salomonsson"
-        },
-        {
-         "id": 8481567,
-         "position": "D",
-         "name": "Henry Thrun"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Dylan DeMelo",
-         "id": 8476331,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.7637,
-         "productionAbovePositionMean": -0.0499
-        },
-        {
-         "name": "Isak Rosen",
-         "id": 8482765,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.623,
-         "productionAbovePositionMean": -0.1535
-        },
-        {
-         "name": "Vladislav Namestnikov",
-         "id": 8476480,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.2486,
-         "productionAbovePositionMean": -0.1075
-        },
-        {
-         "name": "Nick Bjugstad",
-         "id": 8475760,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0,
-         "productionAbovePositionMean": -0.1648
-        }
-       ]
-      },
-      "home": {
-       "players": [
-        {
-         "id": 8477500,
-         "position": "C",
-         "name": "Bo Horvat"
-        },
-        {
-         "id": 8478445,
-         "position": "C",
-         "name": "Mathew Barzal"
-        },
-        {
-         "id": 8481601,
-         "position": "R",
-         "name": "Simon Holmstrom"
-        },
-        {
-         "id": 8475170,
-         "position": "C",
-         "name": "Brayden Schenn"
-        },
-        {
-         "id": 8476419,
-         "position": "C",
-         "name": "Jean-Gabriel Pageau"
-        },
-        {
-         "id": 8482476,
-         "position": "L",
-         "name": "Emil Heineman"
-        },
-        {
-         "id": 8485388,
-         "position": "R",
-         "name": "Victor Eklund"
-        },
-        {
-         "id": 8481711,
-         "position": "L",
-         "name": "Matias Maccelli"
-        },
-        {
-         "id": 8477407,
-         "position": "L",
-         "name": "Anthony Duclair"
-        },
-        {
-         "id": 8476292,
-         "position": "L",
-         "name": "Ondrej Palat"
-        },
-        {
-         "id": 8484221,
-         "position": "C",
-         "name": "Calum Ritchie"
-        },
-        {
-         "id": 8475231,
-         "position": "C",
-         "name": "Casey Cizikas"
-        },
-        {
-         "id": 8485366,
-         "position": "D",
-         "name": "Matthew Schaefer"
-        },
-        {
-         "id": 8476917,
-         "position": "D",
-         "name": "Adam Pelech"
-        },
-        {
-         "id": 8477950,
-         "position": "D",
-         "name": "Tony DeAngelo"
-        },
-        {
-         "id": 8479378,
-         "position": "D",
-         "name": "Logan Stanley"
-        },
-        {
-         "id": 8476429,
-         "position": "D",
-         "name": "Scott Mayfield"
-        },
-        {
-         "id": 8477018,
-         "position": "D",
-         "name": "Ben Hutton"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Kyle Palmieri",
-         "id": 8475151,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.7617,
-         "productionAbovePositionMean": 0.0243
-        },
-        {
-         "name": "Ryan Pulock",
-         "id": 8477506,
-         "status": "Out",
-         "baselineParticipation": 0.7083,
-         "productionAbovePositionMean": -0.022
-        },
-        {
-         "name": "Alexander Romanov",
-         "id": 8481014,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.091,
-         "productionAbovePositionMean": -0.0478
-        }
-       ]
-      }
-     },
-     "scenarios": [
-      {
-       "label": "unadjusted team baseline",
-       "rates": [
-        2.6625,
-        2.8725
-       ]
-      }
-     ]
-    },
-    "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-27T22:35:29.903879+00:00",
-    "skaterNote": null,
-    "blockReason": null
-   },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
     "la": 2.9886,
@@ -16416,7 +15872,321 @@
        ]
       }
      ]
-    }
+    },
+    "frozen": true
+   },
+   "availability": {
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
+    "source": "ESPN live injuries + NHL current rosters",
+    "sides": {
+     "away": {
+      "injuries": [
+       {
+        "name": "Dylan DeMelo",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-19T16:39Z"
+       },
+       {
+        "name": "Isak Rosen",
+        "position": "RW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-17T15:15Z"
+       },
+       {
+        "name": "Vladislav Namestnikov",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-23T18:11Z"
+       },
+       {
+        "name": "Nick Bjugstad",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-23T16:48Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8480289,
+        "position": "C",
+        "name": "Morgan Barron"
+       },
+       {
+        "id": 8486025,
+        "position": "C",
+        "name": "Viggo Bj\u00f6rck"
+       },
+       {
+        "id": 8478398,
+        "position": "L",
+        "name": "Kyle Connor"
+       },
+       {
+        "id": 8480113,
+        "position": "L",
+        "name": "Alex Iafallo"
+       },
+       {
+        "id": 8481043,
+        "position": "L",
+        "name": "Cole Koepke"
+       },
+       {
+        "id": 8476392,
+        "position": "C",
+        "name": "Adam Lowry"
+       },
+       {
+        "id": 8482110,
+        "position": "C",
+        "name": "Dawson Mercer"
+       },
+       {
+        "id": 8476480,
+        "position": "C",
+        "name": "Vladislav Namestnikov"
+       },
+       {
+        "id": 8475799,
+        "position": "R",
+        "name": "Nino Niederreiter"
+       },
+       {
+        "id": 8482149,
+        "position": "C",
+        "name": "Cole Perfetti"
+       },
+       {
+        "id": 8482765,
+        "position": "R",
+        "name": "Isak Rosen"
+       },
+       {
+        "id": 8476460,
+        "position": "C",
+        "name": "Mark Scheifele"
+       },
+       {
+        "id": 8480014,
+        "position": "C",
+        "name": "Gabriel Vilardi"
+       },
+       {
+        "id": 8484242,
+        "position": "C",
+        "name": "Brayden Yager"
+       },
+       {
+        "id": 8482459,
+        "position": "D",
+        "name": "Tyrel Bauer"
+       },
+       {
+        "id": 8476331,
+        "position": "D",
+        "name": "Dylan DeMelo"
+       },
+       {
+        "id": 8479983,
+        "position": "D",
+        "name": "Mario Ferraro"
+       },
+       {
+        "id": 8477938,
+        "position": "D",
+        "name": "Haydn Fleury"
+       },
+       {
+        "id": 8477504,
+        "position": "D",
+        "name": "Josh Morrissey"
+       },
+       {
+        "id": 8480145,
+        "position": "D",
+        "name": "Neal Pionk"
+       },
+       {
+        "id": 8483510,
+        "position": "D",
+        "name": "Elias Salomonsson"
+       },
+       {
+        "id": 8480049,
+        "position": "D",
+        "name": "Dylan Samberg"
+       },
+       {
+        "id": 8481567,
+        "position": "D",
+        "name": "Henry Thrun"
+       },
+       {
+        "id": 8482076,
+        "position": "G",
+        "name": "Nico Daws"
+       },
+       {
+        "id": 8479973,
+        "position": "G",
+        "name": "Stuart Skinner"
+       }
+      ]
+     },
+     "home": {
+      "injuries": [
+       {
+        "name": "Kyle Palmieri",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-27T15:49Z"
+       },
+       {
+        "name": "Ryan Pulock",
+        "position": "D",
+        "status": "Out",
+        "updatedAt": "2026-11-24T17:11Z"
+       },
+       {
+        "name": "Alexander Romanov",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-19T13:56Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8478445,
+        "position": "C",
+        "name": "Mathew Barzal"
+       },
+       {
+        "id": 8482070,
+        "position": "R",
+        "name": "Mitchell Chaffee"
+       },
+       {
+        "id": 8475231,
+        "position": "C",
+        "name": "Casey Cizikas"
+       },
+       {
+        "id": 8477407,
+        "position": "L",
+        "name": "Anthony Duclair"
+       },
+       {
+        "id": 8485388,
+        "position": "R",
+        "name": "Victor Eklund"
+       },
+       {
+        "id": 8482476,
+        "position": "L",
+        "name": "Emil Heineman"
+       },
+       {
+        "id": 8481601,
+        "position": "R",
+        "name": "Simon Holmstrom"
+       },
+       {
+        "id": 8477500,
+        "position": "C",
+        "name": "Bo Horvat"
+       },
+       {
+        "id": 8481711,
+        "position": "L",
+        "name": "Matias Maccelli"
+       },
+       {
+        "id": 8476419,
+        "position": "C",
+        "name": "Jean-Gabriel Pageau"
+       },
+       {
+        "id": 8476292,
+        "position": "L",
+        "name": "Ondrej Palat"
+       },
+       {
+        "id": 8475151,
+        "position": "C",
+        "name": "Kyle Palmieri"
+       },
+       {
+        "id": 8484221,
+        "position": "C",
+        "name": "Calum Ritchie"
+       },
+       {
+        "id": 8475170,
+        "position": "C",
+        "name": "Brayden Schenn"
+       },
+       {
+        "id": 8477950,
+        "position": "D",
+        "name": "Tony DeAngelo"
+       },
+       {
+        "id": 8477018,
+        "position": "D",
+        "name": "Ben Hutton"
+       },
+       {
+        "id": 8482516,
+        "position": "D",
+        "name": "Matthew Kessel"
+       },
+       {
+        "id": 8476429,
+        "position": "D",
+        "name": "Scott Mayfield"
+       },
+       {
+        "id": 8476917,
+        "position": "D",
+        "name": "Adam Pelech"
+       },
+       {
+        "id": 8477506,
+        "position": "D",
+        "name": "Ryan Pulock"
+       },
+       {
+        "id": 8481014,
+        "position": "D",
+        "name": "Alexander Romanov"
+       },
+       {
+        "id": 8485366,
+        "position": "D",
+        "name": "Matthew Schaefer"
+       },
+       {
+        "id": 8479378,
+        "position": "D",
+        "name": "Logan Stanley"
+       },
+       {
+        "id": 8478009,
+        "position": "G",
+        "name": "Ilya Sorokin"
+       },
+       {
+        "id": 8473575,
+        "position": "G",
+        "name": "Semyon Varlamov"
+       }
+      ]
+     }
+    },
+    "problems": [],
+    "skaterNote": null,
+    "blockReason": "NYI recent skater absences not individually modeled: Kyle Palmieri"
    }
   },
   {
@@ -16427,7 +16197,7 @@
    "awayName": "Pittsburgh Penguins",
    "homeName": "Buffalo Sabres",
    "venue": "KeyBank Center",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892808",
    "odds": {
@@ -17004,653 +16774,6 @@
     "fetchedAt": "2026-11-27T22:35:21Z",
     "host": "https://gamma-api.polymarket.com"
    },
-   "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
-    "source": "ESPN live injuries + NHL current rosters",
-    "sides": {
-     "away": {
-      "injuries": [
-       {
-        "name": "Egor Chinakhov",
-        "position": "RW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-26T03:11Z"
-       },
-       {
-        "name": "Bryan Rust",
-        "position": "RW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-20T16:56Z"
-       },
-       {
-        "name": "Nick Robertson",
-        "position": "LW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-20T16:08Z"
-       },
-       {
-        "name": "Elmer Soderblom",
-        "position": "LW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-02T15:52Z"
-       },
-       {
-        "name": "Ryan Graves",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-09-27T15:21Z"
-       }
-      ],
-      "roster": [
-       {
-        "id": 8479638,
-        "position": "R",
-        "name": "Justin Brazeau"
-       },
-       {
-        "id": 8483833,
-        "position": "C",
-        "name": "Atley Calvert"
-       },
-       {
-        "id": 8482475,
-        "position": "R",
-        "name": "Egor Chinakhov"
-       },
-       {
-        "id": 8471675,
-        "position": "C",
-        "name": "Sidney Crosby"
-       },
-       {
-        "id": 8480980,
-        "position": "C",
-        "name": "Connor Dewar"
-       },
-       {
-        "id": 8482993,
-        "position": "R",
-        "name": "Avery Hayes"
-       },
-       {
-        "id": 8485414,
-        "position": "C",
-        "name": "Ben Kindel"
-       },
-       {
-        "id": 8482758,
-        "position": "R",
-        "name": "Ville Koivunen"
-       },
-       {
-        "id": 8483808,
-        "position": "L",
-        "name": "Andrei Kuzmenko"
-       },
-       {
-        "id": 8482148,
-        "position": "C",
-        "name": "Hendrix Lapierre"
-       },
-       {
-        "id": 8481481,
-        "position": "C",
-        "name": "Blake Lizotte"
-       },
-       {
-        "id": 8471215,
-        "position": "C",
-        "name": "Evgeni Malkin"
-       },
-       {
-        "id": 8483487,
-        "position": "R",
-        "name": "Rutger McGroarty"
-       },
-       {
-        "id": 8478438,
-        "position": "C",
-        "name": "Tommy Novak"
-       },
-       {
-        "id": 8476483,
-        "position": "R",
-        "name": "Rickard Rakell"
-       },
-       {
-        "id": 8481582,
-        "position": "L",
-        "name": "Nick Robertson"
-       },
-       {
-        "id": 8475810,
-        "position": "R",
-        "name": "Bryan Rust"
-       },
-       {
-        "id": 8481725,
-        "position": "L",
-        "name": "Elmer Soderblom"
-       },
-       {
-        "id": 8483398,
-        "position": "D",
-        "name": "Declan Carlile"
-       },
-       {
-        "id": 8479398,
-        "position": "D",
-        "name": "Samuel Girard"
-       },
-       {
-        "id": 8474578,
-        "position": "D",
-        "name": "Erik Karlsson"
-       },
-       {
-        "id": 8481527,
-        "position": "D",
-        "name": "Kaedan Korczak"
-       },
-       {
-        "id": 8471724,
-        "position": "D",
-        "name": "Kris Letang"
-       },
-       {
-        "id": 8481056,
-        "position": "D",
-        "name": "Spencer Stastney"
-       },
-       {
-        "id": 8477845,
-        "position": "D",
-        "name": "Trevor van Riemsdyk"
-       },
-       {
-        "id": 8483703,
-        "position": "G",
-        "name": "Sergei Murashov"
-       },
-       {
-        "id": 8481668,
-        "position": "G",
-        "name": "Arturs Silovs"
-       }
-      ]
-     },
-     "home": {
-      "injuries": [
-       {
-        "name": "Noah Ostlund",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-27T19:45Z"
-       },
-       {
-        "name": "Tyson Kozak",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-27T19:25Z"
-       },
-       {
-        "name": "Zach Benson",
-        "position": "LW",
-        "status": "Out",
-        "updatedAt": "2026-11-27T16:30Z"
-       },
-       {
-        "name": "Konsta Helenius",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-12T21:00Z"
-       },
-       {
-        "name": "Matt Grzelcyk",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-13T20:51Z"
-       }
-      ],
-      "roster": [
-       {
-        "id": 8484145,
-        "position": "L",
-        "name": "Zach Benson"
-       },
-       {
-        "id": 8475842,
-        "position": "C",
-        "name": "Sam Carrick"
-       },
-       {
-        "id": 8479941,
-        "position": "R",
-        "name": "Justin Danforth"
-       },
-       {
-        "id": 8482659,
-        "position": "R",
-        "name": "Josh Doan"
-       },
-       {
-        "id": 8484797,
-        "position": "C",
-        "name": "Konsta Helenius"
-       },
-       {
-        "id": 8482896,
-        "position": "C",
-        "name": "Tyson Kozak"
-       },
-       {
-        "id": 8481522,
-        "position": "C",
-        "name": "Peyton Krebs"
-       },
-       {
-        "id": 8483468,
-        "position": "C",
-        "name": "Jiri Kulich"
-       },
-       {
-        "id": 8479359,
-        "position": "L",
-        "name": "Beck Malenstyn"
-       },
-       {
-        "id": 8480802,
-        "position": "C",
-        "name": "Ryan McLeod"
-       },
-       {
-        "id": 8480064,
-        "position": "C",
-        "name": "Josh Norris"
-       },
-       {
-        "id": 8483500,
-        "position": "C",
-        "name": "Noah Ostlund"
-       },
-       {
-        "id": 8482097,
-        "position": "R",
-        "name": "Jack Quinn"
-       },
-       {
-        "id": 8477839,
-        "position": "L",
-        "name": "Conor Sheary"
-       },
-       {
-        "id": 8479420,
-        "position": "C",
-        "name": "Tage Thompson"
-       },
-       {
-        "id": 8475722,
-        "position": "L",
-        "name": "Jason Zucker"
-       },
-       {
-        "id": 8481806,
-        "position": "D",
-        "name": "Louis Crevier"
-       },
-       {
-        "id": 8480839,
-        "position": "D",
-        "name": "Rasmus Dahlin"
-       },
-       {
-        "id": 8476891,
-        "position": "D",
-        "name": "Matt Grzelcyk"
-       },
-       {
-        "id": 8484305,
-        "position": "D",
-        "name": "Zach Metsa"
-       },
-       {
-        "id": 8482671,
-        "position": "D",
-        "name": "Owen Power"
-       },
-       {
-        "id": 8480807,
-        "position": "D",
-        "name": "Mattias Samuelsson"
-       },
-       {
-        "id": 8479982,
-        "position": "D",
-        "name": "Conor Timmins"
-       },
-       {
-        "id": 8482803,
-        "position": "D",
-        "name": "Olen Zellweger"
-       },
-       {
-        "id": 8481551,
-        "position": "G",
-        "name": "Colten Ellis"
-       },
-       {
-        "id": 8480045,
-        "position": "G",
-        "name": "Ukko-Pekka Luukkonen"
-       },
-       {
-        "id": 8479312,
-        "position": "G",
-        "name": "Alex Lyon"
-       }
-      ]
-     }
-    },
-    "problems": [],
-    "skaterAdjustment": {
-     "policy": "skater-context-sensitivity-v1",
-     "dataThrough": "2026-11-25",
-     "baseGoals": [
-      3.2897,
-      3.5709
-     ],
-     "adjustedGoals": [
-      3.287582421189023,
-      3.5550157600513344
-     ],
-     "featureDelta": [
-      -0.035208961203646943,
-      -0.132049931506131
-     ],
-     "priorOnlyPlayers": {
-      "away": [],
-      "home": []
-     },
-     "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
-     "sides": {
-      "away": {
-       "players": [
-        {
-         "id": 8471675,
-         "position": "C",
-         "name": "Sidney Crosby"
-        },
-        {
-         "id": 8476483,
-         "position": "R",
-         "name": "Rickard Rakell"
-        },
-        {
-         "id": 8471215,
-         "position": "C",
-         "name": "Evgeni Malkin"
-        },
-        {
-         "id": 8485414,
-         "position": "C",
-         "name": "Ben Kindel"
-        },
-        {
-         "id": 8483808,
-         "position": "L",
-         "name": "Andrei Kuzmenko"
-        },
-        {
-         "id": 8478438,
-         "position": "C",
-         "name": "Tommy Novak"
-        },
-        {
-         "id": 8482758,
-         "position": "R",
-         "name": "Ville Koivunen"
-        },
-        {
-         "id": 8481481,
-         "position": "C",
-         "name": "Blake Lizotte"
-        },
-        {
-         "id": 8480980,
-         "position": "C",
-         "name": "Connor Dewar"
-        },
-        {
-         "id": 8483487,
-         "position": "R",
-         "name": "Rutger McGroarty"
-        },
-        {
-         "id": 8479638,
-         "position": "R",
-         "name": "Justin Brazeau"
-        },
-        {
-         "id": 8482993,
-         "position": "R",
-         "name": "Avery Hayes"
-        },
-        {
-         "id": 8474578,
-         "position": "D",
-         "name": "Erik Karlsson"
-        },
-        {
-         "id": 8471724,
-         "position": "D",
-         "name": "Kris Letang"
-        },
-        {
-         "id": 8479398,
-         "position": "D",
-         "name": "Samuel Girard"
-        },
-        {
-         "id": 8477845,
-         "position": "D",
-         "name": "Trevor van Riemsdyk"
-        },
-        {
-         "id": 8481527,
-         "position": "D",
-         "name": "Kaedan Korczak"
-        },
-        {
-         "id": 8483398,
-         "position": "D",
-         "name": "Declan Carlile"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Egor Chinakhov",
-         "id": 8482475,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.7777,
-         "productionAbovePositionMean": 0.0153
-        },
-        {
-         "name": "Bryan Rust",
-         "id": 8475810,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.383,
-         "productionAbovePositionMean": 0.2371
-        },
-        {
-         "name": "Nick Robertson",
-         "id": 8481582,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.6061,
-         "productionAbovePositionMean": -0.0537
-        },
-        {
-         "name": "Elmer Soderblom",
-         "id": 8481725,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.272,
-         "productionAbovePositionMean": -0.1355
-        },
-        {
-         "name": "Ryan Graves",
-         "id": 8477435,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0509,
-         "productionAbovePositionMean": -0.1148
-        }
-       ]
-      },
-      "home": {
-       "players": [
-        {
-         "id": 8479420,
-         "position": "C",
-         "name": "Tage Thompson"
-        },
-        {
-         "id": 8480802,
-         "position": "C",
-         "name": "Ryan McLeod"
-        },
-        {
-         "id": 8480064,
-         "position": "C",
-         "name": "Josh Norris"
-        },
-        {
-         "id": 8482097,
-         "position": "R",
-         "name": "Jack Quinn"
-        },
-        {
-         "id": 8475722,
-         "position": "L",
-         "name": "Jason Zucker"
-        },
-        {
-         "id": 8482659,
-         "position": "R",
-         "name": "Josh Doan"
-        },
-        {
-         "id": 8483468,
-         "position": "C",
-         "name": "Jiri Kulich"
-        },
-        {
-         "id": 8481522,
-         "position": "C",
-         "name": "Peyton Krebs"
-        },
-        {
-         "id": 8477839,
-         "position": "L",
-         "name": "Conor Sheary"
-        },
-        {
-         "id": 8479941,
-         "position": "R",
-         "name": "Justin Danforth"
-        },
-        {
-         "id": 8479359,
-         "position": "L",
-         "name": "Beck Malenstyn"
-        },
-        {
-         "id": 8475842,
-         "position": "C",
-         "name": "Sam Carrick"
-        },
-        {
-         "id": 8480839,
-         "position": "D",
-         "name": "Rasmus Dahlin"
-        },
-        {
-         "id": 8482671,
-         "position": "D",
-         "name": "Owen Power"
-        },
-        {
-         "id": 8480807,
-         "position": "D",
-         "name": "Mattias Samuelsson"
-        },
-        {
-         "id": 8479982,
-         "position": "D",
-         "name": "Conor Timmins"
-        },
-        {
-         "id": 8482803,
-         "position": "D",
-         "name": "Olen Zellweger"
-        },
-        {
-         "id": 8481806,
-         "position": "D",
-         "name": "Louis Crevier"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Noah Ostlund",
-         "id": 8483500,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.9251,
-         "productionAbovePositionMean": -0.0298
-        },
-        {
-         "name": "Tyson Kozak",
-         "id": 8482896,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.6109,
-         "productionAbovePositionMean": -0.1784
-        },
-        {
-         "name": "Zach Benson",
-         "id": 8484145,
-         "status": "Out",
-         "baselineParticipation": 0.9741,
-         "productionAbovePositionMean": 0.0281
-        },
-        {
-         "name": "Konsta Helenius",
-         "id": 8484797,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.3098,
-         "productionAbovePositionMean": -0.0696
-        },
-        {
-         "name": "Matt Grzelcyk",
-         "id": 8476891,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.022,
-         "productionAbovePositionMean": -0.0398
-        }
-       ]
-      }
-     },
-     "scenarios": [
-      {
-       "label": "unadjusted team baseline",
-       "rates": [
-        2.9476,
-        3.1995
-       ]
-      }
-     ]
-    },
-    "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-27T22:35:29.903879+00:00",
-    "skaterNote": null,
-    "blockReason": null
-   },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
     "la": 3.2876,
@@ -18065,7 +17188,359 @@
        ]
       }
      ]
-    }
+    },
+    "frozen": true
+   },
+   "availability": {
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
+    "source": "ESPN live injuries + NHL current rosters",
+    "sides": {
+     "away": {
+      "injuries": [
+       {
+        "name": "Egor Chinakhov",
+        "position": "RW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-26T03:11Z"
+       },
+       {
+        "name": "Bryan Rust",
+        "position": "RW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-20T16:56Z"
+       },
+       {
+        "name": "Nick Robertson",
+        "position": "LW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-20T16:08Z"
+       },
+       {
+        "name": "Elmer Soderblom",
+        "position": "LW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-02T15:52Z"
+       },
+       {
+        "name": "Ryan Graves",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-27T15:21Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8479638,
+        "position": "R",
+        "name": "Justin Brazeau"
+       },
+       {
+        "id": 8483833,
+        "position": "C",
+        "name": "Atley Calvert"
+       },
+       {
+        "id": 8482475,
+        "position": "R",
+        "name": "Egor Chinakhov"
+       },
+       {
+        "id": 8471675,
+        "position": "C",
+        "name": "Sidney Crosby"
+       },
+       {
+        "id": 8480980,
+        "position": "C",
+        "name": "Connor Dewar"
+       },
+       {
+        "id": 8482993,
+        "position": "R",
+        "name": "Avery Hayes"
+       },
+       {
+        "id": 8485414,
+        "position": "C",
+        "name": "Ben Kindel"
+       },
+       {
+        "id": 8482758,
+        "position": "R",
+        "name": "Ville Koivunen"
+       },
+       {
+        "id": 8483808,
+        "position": "L",
+        "name": "Andrei Kuzmenko"
+       },
+       {
+        "id": 8482148,
+        "position": "C",
+        "name": "Hendrix Lapierre"
+       },
+       {
+        "id": 8481481,
+        "position": "C",
+        "name": "Blake Lizotte"
+       },
+       {
+        "id": 8471215,
+        "position": "C",
+        "name": "Evgeni Malkin"
+       },
+       {
+        "id": 8483487,
+        "position": "R",
+        "name": "Rutger McGroarty"
+       },
+       {
+        "id": 8478438,
+        "position": "C",
+        "name": "Tommy Novak"
+       },
+       {
+        "id": 8476483,
+        "position": "R",
+        "name": "Rickard Rakell"
+       },
+       {
+        "id": 8481582,
+        "position": "L",
+        "name": "Nick Robertson"
+       },
+       {
+        "id": 8475810,
+        "position": "R",
+        "name": "Bryan Rust"
+       },
+       {
+        "id": 8481725,
+        "position": "L",
+        "name": "Elmer Soderblom"
+       },
+       {
+        "id": 8483398,
+        "position": "D",
+        "name": "Declan Carlile"
+       },
+       {
+        "id": 8479398,
+        "position": "D",
+        "name": "Samuel Girard"
+       },
+       {
+        "id": 8474578,
+        "position": "D",
+        "name": "Erik Karlsson"
+       },
+       {
+        "id": 8481527,
+        "position": "D",
+        "name": "Kaedan Korczak"
+       },
+       {
+        "id": 8471724,
+        "position": "D",
+        "name": "Kris Letang"
+       },
+       {
+        "id": 8481056,
+        "position": "D",
+        "name": "Spencer Stastney"
+       },
+       {
+        "id": 8477845,
+        "position": "D",
+        "name": "Trevor van Riemsdyk"
+       },
+       {
+        "id": 8483703,
+        "position": "G",
+        "name": "Sergei Murashov"
+       },
+       {
+        "id": 8481668,
+        "position": "G",
+        "name": "Arturs Silovs"
+       }
+      ]
+     },
+     "home": {
+      "injuries": [
+       {
+        "name": "Noah Ostlund",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-27T19:45Z"
+       },
+       {
+        "name": "Tyson Kozak",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-27T19:25Z"
+       },
+       {
+        "name": "Zach Benson",
+        "position": "LW",
+        "status": "Out",
+        "updatedAt": "2026-11-27T16:30Z"
+       },
+       {
+        "name": "Konsta Helenius",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-12T21:00Z"
+       },
+       {
+        "name": "Matt Grzelcyk",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-13T20:51Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8484145,
+        "position": "L",
+        "name": "Zach Benson"
+       },
+       {
+        "id": 8475842,
+        "position": "C",
+        "name": "Sam Carrick"
+       },
+       {
+        "id": 8479941,
+        "position": "R",
+        "name": "Justin Danforth"
+       },
+       {
+        "id": 8482659,
+        "position": "R",
+        "name": "Josh Doan"
+       },
+       {
+        "id": 8484797,
+        "position": "C",
+        "name": "Konsta Helenius"
+       },
+       {
+        "id": 8482896,
+        "position": "C",
+        "name": "Tyson Kozak"
+       },
+       {
+        "id": 8481522,
+        "position": "C",
+        "name": "Peyton Krebs"
+       },
+       {
+        "id": 8483468,
+        "position": "C",
+        "name": "Jiri Kulich"
+       },
+       {
+        "id": 8479359,
+        "position": "L",
+        "name": "Beck Malenstyn"
+       },
+       {
+        "id": 8480802,
+        "position": "C",
+        "name": "Ryan McLeod"
+       },
+       {
+        "id": 8480064,
+        "position": "C",
+        "name": "Josh Norris"
+       },
+       {
+        "id": 8483500,
+        "position": "C",
+        "name": "Noah Ostlund"
+       },
+       {
+        "id": 8482097,
+        "position": "R",
+        "name": "Jack Quinn"
+       },
+       {
+        "id": 8477839,
+        "position": "L",
+        "name": "Conor Sheary"
+       },
+       {
+        "id": 8479420,
+        "position": "C",
+        "name": "Tage Thompson"
+       },
+       {
+        "id": 8475722,
+        "position": "L",
+        "name": "Jason Zucker"
+       },
+       {
+        "id": 8481806,
+        "position": "D",
+        "name": "Louis Crevier"
+       },
+       {
+        "id": 8480839,
+        "position": "D",
+        "name": "Rasmus Dahlin"
+       },
+       {
+        "id": 8476891,
+        "position": "D",
+        "name": "Matt Grzelcyk"
+       },
+       {
+        "id": 8484305,
+        "position": "D",
+        "name": "Zach Metsa"
+       },
+       {
+        "id": 8482671,
+        "position": "D",
+        "name": "Owen Power"
+       },
+       {
+        "id": 8480807,
+        "position": "D",
+        "name": "Mattias Samuelsson"
+       },
+       {
+        "id": 8479982,
+        "position": "D",
+        "name": "Conor Timmins"
+       },
+       {
+        "id": 8482803,
+        "position": "D",
+        "name": "Olen Zellweger"
+       },
+       {
+        "id": 8481551,
+        "position": "G",
+        "name": "Colten Ellis"
+       },
+       {
+        "id": 8480045,
+        "position": "G",
+        "name": "Ukko-Pekka Luukkonen"
+       },
+       {
+        "id": 8479312,
+        "position": "G",
+        "name": "Alex Lyon"
+       }
+      ]
+     }
+    },
+    "problems": [],
+    "skaterNote": null,
+    "blockReason": "PIT recent skater absences not individually modeled: Egor Chinakhov; BUF recent skater absences not individually modeled: Noah Ostlund, Tyson Kozak, Zach Benson"
    }
   },
   {
@@ -18076,7 +17551,7 @@
    "awayName": "Seattle Kraken",
    "homeName": "Edmonton Oilers",
    "venue": "Rogers Place",
-   "state": "FUT",
+   "state": "LIVE",
    "final": null,
    "espnId": "401892809",
    "odds": {
@@ -18653,611 +18128,6 @@
     "fetchedAt": "2026-11-27T22:35:21Z",
     "host": "https://gamma-api.polymarket.com"
    },
-   "availability": {
-    "checkedAt": "2026-11-27T22:35:22.042234+00:00",
-    "source": "ESPN live injuries + NHL current rosters",
-    "sides": {
-     "away": {
-      "injuries": [
-       {
-        "name": "Jake O'Brien",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-11-19T20:30Z"
-       },
-       {
-        "name": "Jared McCann",
-        "position": "LW",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-25T17:08Z"
-       }
-      ],
-      "roster": [
-       {
-        "id": 8482665,
-        "position": "C",
-        "name": "Matty Beniers"
-       },
-       {
-        "id": 8484800,
-        "position": "C",
-        "name": "Berkly Catton"
-       },
-       {
-        "id": 8480876,
-        "position": "C",
-        "name": "Curtis Douglas"
-       },
-       {
-        "id": 8474586,
-        "position": "R",
-        "name": "Jordan Eberle"
-       },
-       {
-        "id": 8477919,
-        "position": "C",
-        "name": "Frederick Gaudreau"
-       },
-       {
-        "id": 8481554,
-        "position": "R",
-        "name": "Kaapo Kakko"
-       },
-       {
-        "id": 8477955,
-        "position": "L",
-        "name": "Jared McCann"
-       },
-       {
-        "id": 8482259,
-        "position": "C",
-        "name": "Bobby McMann"
-       },
-       {
-        "id": 8482874,
-        "position": "R",
-        "name": "Jacob Melanson"
-       },
-       {
-        "id": 8483570,
-        "position": "C",
-        "name": "Ben Meyers"
-       },
-       {
-        "id": 8485383,
-        "position": "C",
-        "name": "Jake O'Brien"
-       },
-       {
-        "id": 8482713,
-        "position": "R",
-        "name": "Mackie Samoskevich"
-       },
-       {
-        "id": 8476905,
-        "position": "C",
-        "name": "Chandler Stephenson"
-       },
-       {
-        "id": 8482751,
-        "position": "C",
-        "name": "Ryan Winterton"
-       },
-       {
-        "id": 8484241,
-        "position": "R",
-        "name": "Matthew Wood"
-       },
-       {
-        "id": 8478407,
-        "position": "D",
-        "name": "Vince Dunn"
-       },
-       {
-        "id": 8482858,
-        "position": "D",
-        "name": "Ryker Evans"
-       },
-       {
-        "id": 8479985,
-        "position": "D",
-        "name": "Cale Fleury"
-       },
-       {
-        "id": 8476457,
-        "position": "D",
-        "name": "Adam Larsson"
-       },
-       {
-        "id": 8479324,
-        "position": "D",
-        "name": "Ryan Lindgren"
-       },
-       {
-        "id": 8479372,
-        "position": "D",
-        "name": "Josh Mahura"
-       },
-       {
-        "id": 8477986,
-        "position": "D",
-        "name": "Brandon Montour"
-       },
-       {
-        "id": 8482866,
-        "position": "D",
-        "name": "Ville Ottavainen"
-       },
-       {
-        "id": 8478916,
-        "position": "G",
-        "name": "Joey Daccord"
-       },
-       {
-        "id": 8475831,
-        "position": "G",
-        "name": "Philipp Grubauer"
-       }
-      ]
-     },
-     "home": {
-      "injuries": [
-       {
-        "name": "Filip Hallander",
-        "position": "C",
-        "status": "Out",
-        "updatedAt": "2026-11-27T18:45Z"
-       },
-       {
-        "name": "Zach Hyman",
-        "position": "LW",
-        "status": "Out",
-        "updatedAt": "2026-11-27T18:38Z"
-       },
-       {
-        "name": "Alec Regula",
-        "position": "D",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-01T14:11Z"
-       },
-       {
-        "name": "Matt Savoie",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-10-01T14:05Z"
-       },
-       {
-        "name": "Frederik Andersen",
-        "position": "G",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-09-29T17:53Z"
-       },
-       {
-        "name": "Mattias Janmark",
-        "position": "C",
-        "status": "Injured Reserve",
-        "updatedAt": "2026-09-29T17:52Z"
-       }
-      ],
-      "roster": [
-       {
-        "id": 8482703,
-        "position": "C",
-        "name": "Colton Dach"
-       },
-       {
-        "id": 8477450,
-        "position": "C",
-        "name": "Jason Dickinson"
-       },
-       {
-        "id": 8477934,
-        "position": "C",
-        "name": "Leon Draisaitl"
-       },
-       {
-        "id": 8480029,
-        "position": "L",
-        "name": "Alex Formenton"
-       },
-       {
-        "id": 8479365,
-        "position": "C",
-        "name": "Trent Frederic"
-       },
-       {
-        "id": 8480842,
-        "position": "C",
-        "name": "Filip Hallander"
-       },
-       {
-        "id": 8475786,
-        "position": "L",
-        "name": "Zach Hyman"
-       },
-       {
-        "id": 8477406,
-        "position": "C",
-        "name": "Mattias Janmark"
-       },
-       {
-        "id": 8479368,
-        "position": "L",
-        "name": "Max Jones"
-       },
-       {
-        "id": 8478472,
-        "position": "R",
-        "name": "Mathieu Joseph"
-       },
-       {
-        "id": 8477953,
-        "position": "R",
-        "name": "Kasperi Kapanen"
-       },
-       {
-        "id": 8478402,
-        "position": "C",
-        "name": "Connor McDavid"
-       },
-       {
-        "id": 8486161,
-        "position": "R",
-        "name": "Owen Michaels"
-       },
-       {
-        "id": 8476454,
-        "position": "C",
-        "name": "Ryan Nugent-Hopkins"
-       },
-       {
-        "id": 8481617,
-        "position": "R",
-        "name": "Vasily Podkolzin"
-       },
-       {
-        "id": 8483512,
-        "position": "C",
-        "name": "Matt Savoie"
-       },
-       {
-        "id": 8480803,
-        "position": "D",
-        "name": "Evan Bouchard"
-       },
-       {
-        "id": 8475218,
-        "position": "D",
-        "name": "Mattias Ekholm"
-       },
-       {
-        "id": 8480834,
-        "position": "D",
-        "name": "Ty Emberson"
-       },
-       {
-        "id": 8482166,
-        "position": "D",
-        "name": "Shakir Mukhamadullin"
-       },
-       {
-        "id": 8476473,
-        "position": "D",
-        "name": "Connor Murphy"
-       },
-       {
-        "id": 8480831,
-        "position": "D",
-        "name": "Alec Regula"
-       },
-       {
-        "id": 8478854,
-        "position": "D",
-        "name": "Ryan Shea"
-       },
-       {
-        "id": 8478013,
-        "position": "D",
-        "name": "Jake Walman"
-       },
-       {
-        "id": 8475883,
-        "position": "G",
-        "name": "Frederik Andersen"
-       },
-       {
-        "id": 8477465,
-        "position": "G",
-        "name": "Tristan Jarry"
-       },
-       {
-        "id": 8482221,
-        "position": "G",
-        "name": "Devon Levi"
-       }
-      ]
-     }
-    },
-    "problems": [],
-    "skaterAdjustment": {
-     "policy": "skater-context-sensitivity-v1",
-     "dataThrough": "2026-11-25",
-     "baseGoals": [
-      2.8419,
-      3.6175
-     ],
-     "adjustedGoals": [
-      2.826118724538653,
-      3.61831396710023
-     ],
-     "featureDelta": [
-      -0.16113425733856981,
-      -0.014041268652628336
-     ],
-     "priorOnlyPlayers": {
-      "away": [],
-      "home": []
-     },
-     "lineupStatus": "EXPECTED \u2014 ranked by prior ice time; not confirmed game-day actives",
-     "sides": {
-      "away": {
-       "players": [
-        {
-         "id": 8476905,
-         "position": "C",
-         "name": "Chandler Stephenson"
-        },
-        {
-         "id": 8482665,
-         "position": "C",
-         "name": "Matty Beniers"
-        },
-        {
-         "id": 8474586,
-         "position": "R",
-         "name": "Jordan Eberle"
-        },
-        {
-         "id": 8477919,
-         "position": "C",
-         "name": "Frederick Gaudreau"
-        },
-        {
-         "id": 8482259,
-         "position": "C",
-         "name": "Bobby McMann"
-        },
-        {
-         "id": 8481554,
-         "position": "R",
-         "name": "Kaapo Kakko"
-        },
-        {
-         "id": 8482713,
-         "position": "R",
-         "name": "Mackie Samoskevich"
-        },
-        {
-         "id": 8484800,
-         "position": "C",
-         "name": "Berkly Catton"
-        },
-        {
-         "id": 8484241,
-         "position": "R",
-         "name": "Matthew Wood"
-        },
-        {
-         "id": 8482751,
-         "position": "C",
-         "name": "Ryan Winterton"
-        },
-        {
-         "id": 8483570,
-         "position": "C",
-         "name": "Ben Meyers"
-        },
-        {
-         "id": 8482874,
-         "position": "R",
-         "name": "Jacob Melanson"
-        },
-        {
-         "id": 8477986,
-         "position": "D",
-         "name": "Brandon Montour"
-        },
-        {
-         "id": 8478407,
-         "position": "D",
-         "name": "Vince Dunn"
-        },
-        {
-         "id": 8476457,
-         "position": "D",
-         "name": "Adam Larsson"
-        },
-        {
-         "id": 8482858,
-         "position": "D",
-         "name": "Ryker Evans"
-        },
-        {
-         "id": 8479324,
-         "position": "D",
-         "name": "Ryan Lindgren"
-        },
-        {
-         "id": 8479985,
-         "position": "D",
-         "name": "Cale Fleury"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Jake O'Brien",
-         "id": 8485383,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0,
-         "productionAbovePositionMean": 0.0,
-         "note": "no recorded contribution in team baseline; position-average prior, not an estimated individual impact"
-        },
-        {
-         "name": "Jared McCann",
-         "id": 8477955,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.498,
-         "productionAbovePositionMean": 0.1367
-        }
-       ]
-      },
-      "home": {
-       "players": [
-        {
-         "id": 8478402,
-         "position": "C",
-         "name": "Connor McDavid"
-        },
-        {
-         "id": 8477934,
-         "position": "C",
-         "name": "Leon Draisaitl"
-        },
-        {
-         "id": 8476454,
-         "position": "C",
-         "name": "Ryan Nugent-Hopkins"
-        },
-        {
-         "id": 8481617,
-         "position": "R",
-         "name": "Vasily Podkolzin"
-        },
-        {
-         "id": 8477450,
-         "position": "C",
-         "name": "Jason Dickinson"
-        },
-        {
-         "id": 8477953,
-         "position": "R",
-         "name": "Kasperi Kapanen"
-        },
-        {
-         "id": 8480029,
-         "position": "L",
-         "name": "Alex Formenton"
-        },
-        {
-         "id": 8482703,
-         "position": "C",
-         "name": "Colton Dach"
-        },
-        {
-         "id": 8478472,
-         "position": "R",
-         "name": "Mathieu Joseph"
-        },
-        {
-         "id": 8479365,
-         "position": "C",
-         "name": "Trent Frederic"
-        },
-        {
-         "id": 8486161,
-         "position": "R",
-         "name": "Owen Michaels"
-        },
-        {
-         "id": 8479368,
-         "position": "L",
-         "name": "Max Jones"
-        },
-        {
-         "id": 8480803,
-         "position": "D",
-         "name": "Evan Bouchard"
-        },
-        {
-         "id": 8475218,
-         "position": "D",
-         "name": "Mattias Ekholm"
-        },
-        {
-         "id": 8478013,
-         "position": "D",
-         "name": "Jake Walman"
-        },
-        {
-         "id": 8478854,
-         "position": "D",
-         "name": "Ryan Shea"
-        },
-        {
-         "id": 8476473,
-         "position": "D",
-         "name": "Connor Murphy"
-        },
-        {
-         "id": 8482166,
-         "position": "D",
-         "name": "Shakir Mukhamadullin"
-        }
-       ],
-       "absences": [
-        {
-         "name": "Filip Hallander",
-         "id": 8480842,
-         "status": "Out",
-         "baselineParticipation": 0.4708,
-         "productionAbovePositionMean": -0.1046
-        },
-        {
-         "name": "Zach Hyman",
-         "id": 8475786,
-         "status": "Out",
-         "baselineParticipation": 0.5919,
-         "productionAbovePositionMean": 0.1658
-        },
-        {
-         "name": "Alec Regula",
-         "id": 8480831,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0414,
-         "productionAbovePositionMean": -0.0787
-        },
-        {
-         "name": "Matt Savoie",
-         "id": 8483512,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.1938,
-         "productionAbovePositionMean": -0.0287
-        },
-        {
-         "name": "Mattias Janmark",
-         "id": 8477406,
-         "status": "Injured Reserve",
-         "baselineParticipation": 0.0851,
-         "productionAbovePositionMean": -0.1945
-        }
-       ]
-      }
-     },
-     "scenarios": [
-      {
-       "label": "unadjusted team baseline",
-       "rates": [
-        2.5463,
-        3.2413
-       ]
-      }
-     ]
-    },
-    "skaterModelStatus": "adjusted",
-    "skaterCheckedAt": "2026-11-27T22:35:29.903879+00:00",
-    "skaterNote": null,
-    "blockReason": null
-   },
    "v4": {
     "version": "v4.2-independent-goalie-xga-skater-v1",
     "la": 2.8261,
@@ -19652,7 +18522,343 @@
        ]
       }
      ]
-    }
+    },
+    "frozen": true
+   },
+   "availability": {
+    "checkedAt": "2026-11-28T03:28:28.687240+00:00",
+    "source": "ESPN live injuries + NHL current rosters",
+    "sides": {
+     "away": {
+      "injuries": [
+       {
+        "name": "Philipp Grubauer",
+        "position": "G",
+        "status": "Day-To-Day",
+        "updatedAt": "2026-11-28T03:10Z"
+       },
+       {
+        "name": "Jake O'Brien",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-11-19T20:30Z"
+       },
+       {
+        "name": "Jared McCann",
+        "position": "LW",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-25T17:08Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8482665,
+        "position": "C",
+        "name": "Matty Beniers"
+       },
+       {
+        "id": 8484800,
+        "position": "C",
+        "name": "Berkly Catton"
+       },
+       {
+        "id": 8480876,
+        "position": "C",
+        "name": "Curtis Douglas"
+       },
+       {
+        "id": 8474586,
+        "position": "R",
+        "name": "Jordan Eberle"
+       },
+       {
+        "id": 8477919,
+        "position": "C",
+        "name": "Frederick Gaudreau"
+       },
+       {
+        "id": 8481554,
+        "position": "R",
+        "name": "Kaapo Kakko"
+       },
+       {
+        "id": 8477955,
+        "position": "L",
+        "name": "Jared McCann"
+       },
+       {
+        "id": 8482259,
+        "position": "C",
+        "name": "Bobby McMann"
+       },
+       {
+        "id": 8482874,
+        "position": "R",
+        "name": "Jacob Melanson"
+       },
+       {
+        "id": 8483570,
+        "position": "C",
+        "name": "Ben Meyers"
+       },
+       {
+        "id": 8485383,
+        "position": "C",
+        "name": "Jake O'Brien"
+       },
+       {
+        "id": 8482713,
+        "position": "R",
+        "name": "Mackie Samoskevich"
+       },
+       {
+        "id": 8476905,
+        "position": "C",
+        "name": "Chandler Stephenson"
+       },
+       {
+        "id": 8482751,
+        "position": "C",
+        "name": "Ryan Winterton"
+       },
+       {
+        "id": 8484241,
+        "position": "R",
+        "name": "Matthew Wood"
+       },
+       {
+        "id": 8478407,
+        "position": "D",
+        "name": "Vince Dunn"
+       },
+       {
+        "id": 8482858,
+        "position": "D",
+        "name": "Ryker Evans"
+       },
+       {
+        "id": 8479985,
+        "position": "D",
+        "name": "Cale Fleury"
+       },
+       {
+        "id": 8476457,
+        "position": "D",
+        "name": "Adam Larsson"
+       },
+       {
+        "id": 8479324,
+        "position": "D",
+        "name": "Ryan Lindgren"
+       },
+       {
+        "id": 8479372,
+        "position": "D",
+        "name": "Josh Mahura"
+       },
+       {
+        "id": 8477986,
+        "position": "D",
+        "name": "Brandon Montour"
+       },
+       {
+        "id": 8482866,
+        "position": "D",
+        "name": "Ville Ottavainen"
+       },
+       {
+        "id": 8478916,
+        "position": "G",
+        "name": "Joey Daccord"
+       },
+       {
+        "id": 8475831,
+        "position": "G",
+        "name": "Philipp Grubauer"
+       }
+      ]
+     },
+     "home": {
+      "injuries": [
+       {
+        "name": "Filip Hallander",
+        "position": "C",
+        "status": "Out",
+        "updatedAt": "2026-11-27T18:45Z"
+       },
+       {
+        "name": "Zach Hyman",
+        "position": "LW",
+        "status": "Out",
+        "updatedAt": "2026-11-27T18:38Z"
+       },
+       {
+        "name": "Alec Regula",
+        "position": "D",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-01T14:11Z"
+       },
+       {
+        "name": "Matt Savoie",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-10-01T14:05Z"
+       },
+       {
+        "name": "Frederik Andersen",
+        "position": "G",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-29T17:53Z"
+       },
+       {
+        "name": "Mattias Janmark",
+        "position": "C",
+        "status": "Injured Reserve",
+        "updatedAt": "2026-09-29T17:52Z"
+       }
+      ],
+      "roster": [
+       {
+        "id": 8482703,
+        "position": "C",
+        "name": "Colton Dach"
+       },
+       {
+        "id": 8477450,
+        "position": "C",
+        "name": "Jason Dickinson"
+       },
+       {
+        "id": 8477934,
+        "position": "C",
+        "name": "Leon Draisaitl"
+       },
+       {
+        "id": 8480029,
+        "position": "L",
+        "name": "Alex Formenton"
+       },
+       {
+        "id": 8479365,
+        "position": "C",
+        "name": "Trent Frederic"
+       },
+       {
+        "id": 8480842,
+        "position": "C",
+        "name": "Filip Hallander"
+       },
+       {
+        "id": 8475786,
+        "position": "L",
+        "name": "Zach Hyman"
+       },
+       {
+        "id": 8477406,
+        "position": "C",
+        "name": "Mattias Janmark"
+       },
+       {
+        "id": 8479368,
+        "position": "L",
+        "name": "Max Jones"
+       },
+       {
+        "id": 8478472,
+        "position": "R",
+        "name": "Mathieu Joseph"
+       },
+       {
+        "id": 8477953,
+        "position": "R",
+        "name": "Kasperi Kapanen"
+       },
+       {
+        "id": 8478402,
+        "position": "C",
+        "name": "Connor McDavid"
+       },
+       {
+        "id": 8486161,
+        "position": "R",
+        "name": "Owen Michaels"
+       },
+       {
+        "id": 8476454,
+        "position": "C",
+        "name": "Ryan Nugent-Hopkins"
+       },
+       {
+        "id": 8481617,
+        "position": "R",
+        "name": "Vasily Podkolzin"
+       },
+       {
+        "id": 8483512,
+        "position": "C",
+        "name": "Matt Savoie"
+       },
+       {
+        "id": 8480803,
+        "position": "D",
+        "name": "Evan Bouchard"
+       },
+       {
+        "id": 8475218,
+        "position": "D",
+        "name": "Mattias Ekholm"
+       },
+       {
+        "id": 8480834,
+        "position": "D",
+        "name": "Ty Emberson"
+       },
+       {
+        "id": 8482166,
+        "position": "D",
+        "name": "Shakir Mukhamadullin"
+       },
+       {
+        "id": 8476473,
+        "position": "D",
+        "name": "Connor Murphy"
+       },
+       {
+        "id": 8480831,
+        "position": "D",
+        "name": "Alec Regula"
+       },
+       {
+        "id": 8478854,
+        "position": "D",
+        "name": "Ryan Shea"
+       },
+       {
+        "id": 8478013,
+        "position": "D",
+        "name": "Jake Walman"
+       },
+       {
+        "id": 8475883,
+        "position": "G",
+        "name": "Frederik Andersen"
+       },
+       {
+        "id": 8477465,
+        "position": "G",
+        "name": "Tristan Jarry"
+       },
+       {
+        "id": 8482221,
+        "position": "G",
+        "name": "Devon Levi"
+       }
+      ]
+     }
+    },
+    "problems": [],
+    "skaterNote": null,
+    "blockReason": "EDM recent skater absences not individually modeled: Filip Hallander, Zach Hyman"
    }
   }
  ]
